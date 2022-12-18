@@ -9,7 +9,7 @@ filter_file_name = "filter.txt"
 filter_print_params = True
 filter_frame_ispano = 0
 filter_object_keys = []
-filter_object_labels = []
+filter_object_labels = ["regulatory--stop--g1"]
 filter_object_properties = False
 filter_object_barrier = 0
 filter_object_occluded = 0
@@ -22,3 +22,6 @@ filter_object_highway = 0
 filter_object_dummy = 0
 
 log_level = logger.LogLevel.trace
+
+viewer_file_extension = ".jpg"
+viewer_window_height = 540
