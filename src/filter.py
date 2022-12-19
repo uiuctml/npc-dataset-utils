@@ -37,9 +37,9 @@ def main():
 
     for file_name_annotations in dataset_annotations_dir_list:
         if (file_annotations_counter >= len(dataset_annotations_dir_list)):
-            logger.log_info("Processing", file_name_annotations.split(".")[0], "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...")
+            logger.log_info("Processing", file_name_annotations, "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...")
         else:
-            logger.log_info("Processing", file_name_annotations.split(".")[0], "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...", end = "\r")
+            logger.log_info("Processing", file_name_annotations, "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...", end = "\r")
 
         file_annotations_counter += 1
         file_path_annotations = os.path.join(header.dataset_annotations_dir, file_name_annotations)

@@ -27,12 +27,21 @@ def resize(image, width = None, height = None, inter = cv2.INTER_AREA):
 
 def main():
     file_filter = open(header.filter_file_name, "r")
+    file_filter_lines = file_filter.readlines()
+    file_images_counter = 1
     cv2.namedWindow(header.dataset_images_dir, cv2.WINDOW_NORMAL)
 
-    for line in file_filter:
+    for line in file_filter_lines:
         line = line.strip()
         file_name_images = line + header.viewer_file_extension
         file_path_images = os.path.join(header.dataset_images_dir, file_name_images)
+
+        if (file_images_counter >= len(file_filter_lines)):
+            logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...")
+        else:
+            logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...", end = "\r")
+
+        file_images_counter += 1
 
         if (not os.path.isfile(file_path_images)):
             continue
