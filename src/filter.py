@@ -31,9 +31,14 @@ def main():
         logger.log_error("Invalid dataset annotations directory.")
         return
 
+    dataset_annotations_dir_list = os.listdir(header.dataset_annotations_dir)
     file_filter = open(header.filter_file_name, "w")
+    file_annotations_counter = 1
 
-    for file_name_annotations in os.listdir(header.dataset_annotations_dir):
+    for file_name_annotations in dataset_annotations_dir_list:
+        logger.log_info("Processing", file_name_annotations.split(".")[0], "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...")
+
+        file_annotations_counter += 1
         file_path_annotations = os.path.join(header.dataset_annotations_dir, file_name_annotations)
 
         if (not os.path.isfile(file_path_annotations)):
@@ -118,6 +123,8 @@ def main():
             continue
     
         file_filter.write(file_name_annotations.split(".")[0] + "\n")
+
+    logger.log_info("Filter saved to \"" + header.filter_file_name + "\".")
 
     file_filter.close()
 
