@@ -24,4 +24,4 @@ filter_object_dummy = 0
 log_level = logger.LogLevel.trace
 
 viewer_file_extension = ".jpg"
-viewer_window_height = 540
+viewer_window_height = 720

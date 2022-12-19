@@ -27,7 +27,7 @@ def resize(image, width = None, height = None, inter = cv2.INTER_AREA):
 
 def main():
     file_filter = open(header.filter_file_name, "r")
-    cv2.namedWindow(header.dataset_images_dir, cv2.WINDOW_AUTOSIZE)
+    cv2.namedWindow(header.dataset_images_dir, cv2.WINDOW_NORMAL)
 
     for line in file_filter:
         line = line.strip()
