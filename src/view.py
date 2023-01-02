@@ -28,6 +28,8 @@ def resize(image, width = None, height = None, inter = cv2.INTER_AREA):
 def main():
     file_filter = open(header.filter_file_name, "r")
     file_filter_lines = file_filter.readlines()
+    file_filter.close()
+
     file_images_counter = 1
     cv2.namedWindow(header.dataset_images_dir, cv2.WINDOW_NORMAL)
 

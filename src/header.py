@@ -49,6 +49,8 @@ generate_datasets = [
     generate_dataset_text
 ]
 
+label_file_name = "label.txt"
+
 log_level = logger.LogLevel.trace
 
 view_file_extension = ".jpg"

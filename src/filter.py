@@ -49,13 +49,14 @@ def main():
 
         file_annotations = open(file_path_annotations, "r")
         annotations = json.load(file_annotations)
+        file_annotations.close()
+
         ispano = annotations["ispano"]
         objects = annotations["objects"]
         match = False
 
         if ((header.filter_frame_ispano > 0 and ispano == False) or
             (header.filter_frame_ispano < 0 and ispano == True)):
-            file_annotations.close()
             continue
 
         for object in objects:
@@ -120,16 +121,14 @@ def main():
             match = True
             break
 
-        file_annotations.close()
-
         if (match == False):
             continue
     
         file_filter.write(file_name_annotations.split(".")[0] + "\n")
 
-    logger.log_info("Filter saved to \"" + header.filter_file_name + "\".")
-
     file_filter.close()
+
+    logger.log_info("Filter saved to \"" + header.filter_file_name + "\".")
 
     return
 
