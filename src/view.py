@@ -33,7 +33,7 @@ def main():
 
     for line in file_filter_lines:
         line = line.strip()
-        file_name_images = line + header.viewer_file_extension
+        file_name_images = line + header.view_file_extension
         file_path_images = os.path.join(header.dataset_images_dir, file_name_images)
 
         if (file_images_counter >= len(file_filter_lines)):
@@ -47,7 +47,7 @@ def main():
             continue
 
         file_images = cv2.imread(file_path_images, cv2.IMREAD_COLOR)
-        file_images = resize(file_images, height = header.viewer_window_height)
+        file_images = resize(file_images, height = header.view_window_height)
 
         cv2.imshow(header.dataset_images_dir, file_images)
         cv2.waitKey(0)
