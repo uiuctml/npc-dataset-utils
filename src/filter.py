@@ -27,22 +27,22 @@ def main():
     if (header.filter_print_params):
         print_params()
 
-    if (not os.path.isdir(header.dataset_annotations_dir)):
-        logger.log_error("Invalid dataset annotations directory.")
+    if (not os.path.isdir(header.dataset_annotations_original_dir)):
+        logger.log_error("Invalid original dataset annotations directory.")
         return
 
-    dataset_annotations_dir_list = os.listdir(header.dataset_annotations_dir)
+    dataset_annotations_original_dir_list = os.listdir(header.dataset_annotations_original_dir)
     file_filter = open(header.filter_file_name, "w")
     file_annotations_counter = 1
 
-    for file_name_annotations in dataset_annotations_dir_list:
-        if (file_annotations_counter >= len(dataset_annotations_dir_list)):
-            logger.log_info("Processing", file_name_annotations, "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...")
+    for file_name_annotations in dataset_annotations_original_dir_list:
+        if (file_annotations_counter >= len(dataset_annotations_original_dir_list)):
+            logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_original_dir_list)) + ")...")
         else:
-            logger.log_info("Processing", file_name_annotations, "(" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_dir_list)) + ")...", end = "\r")
+            logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_original_dir_list)) + ")...", end = "\r")
 
         file_annotations_counter += 1
-        file_path_annotations = os.path.join(header.dataset_annotations_dir, file_name_annotations)
+        file_path_annotations = os.path.join(header.dataset_annotations_original_dir, file_name_annotations)
 
         if (not os.path.isfile(file_path_annotations)):
             continue
