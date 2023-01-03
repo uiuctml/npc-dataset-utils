@@ -6,6 +6,8 @@ dataset_annotations_generated_dir = dataset_annotations_dir + "/generated"
 dataset_annotations_original_dir = dataset_annotations_dir + "/original"
 dataset_images_dir = dataset_dir + "/images"
 dataset_splits_dir = dataset_dir + "/splits"
+dataset_file_extension_annotations = ".json"
+dataset_file_extension_images = ".jpg"
 
 filter_file_name = "filter.txt"
 filter_print_params = True
@@ -53,5 +55,4 @@ label_file_name = "label.txt"
 
 log_level = logger.LogLevel.trace
 
-view_file_extension = ".jpg"
 view_window_height = 720

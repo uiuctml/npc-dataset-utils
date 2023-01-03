@@ -35,7 +35,7 @@ def main():
 
     for line in file_filter_lines:
         line = line.strip()
-        file_name_images = line + header.view_file_extension
+        file_name_images = line + header.dataset_file_extension_images
         file_path_images = os.path.join(header.dataset_images_dir, file_name_images)
 
         if (file_images_counter >= len(file_filter_lines)):
