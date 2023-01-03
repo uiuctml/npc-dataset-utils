@@ -55,4 +55,10 @@ label_file_name = "label.txt"
 
 log_level = logger.LogLevel.trace
 
-view_window_height = 720
+view_bounding_box_color = (0, 255, 0)
+view_bounding_box_text_color = (0, 0, 0)
+view_bounding_box_text_margin_x = 10
+view_bounding_box_text_margin_y = 10
+view_bounding_box_text_size = 1
+view_bounding_box_thickness = 3
+view_window_height = 900
