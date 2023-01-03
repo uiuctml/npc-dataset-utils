@@ -1,11 +1,11 @@
 import logger
 
 dataset_dir = "../data"
-dataset_annotations_dir = dataset_dir + "/annotations"
-dataset_annotations_generated_dir = dataset_annotations_dir + "/generated"
-dataset_annotations_original_dir = dataset_annotations_dir + "/original"
-dataset_images_dir = dataset_dir + "/images"
-dataset_splits_dir = dataset_dir + "/splits"
+dataset_dir_annotations = dataset_dir + "/annotations"
+dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
+dataset_dir_annotations_original = dataset_dir_annotations + "/original"
+dataset_dir_images = dataset_dir + "/images"
+dataset_dir_splits = dataset_dir + "/splits"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
 

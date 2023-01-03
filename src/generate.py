@@ -7,43 +7,43 @@ import os
 import shutil
 
 def initialize():
-    if (not os.path.isdir(header.dataset_annotations_generated_dir)):
-        os.mkdir(header.dataset_annotations_generated_dir)
+    if (not os.path.isdir(header.dataset_dir_annotations_generated)):
+        os.mkdir(header.dataset_dir_annotations_generated)
 
-    dataset_annotations_original_dir_list = os.listdir(header.dataset_annotations_original_dir)
+    dataset_dir_annotations_original_list = os.listdir(header.dataset_dir_annotations_original)
 
     for dataset in header.generate_datasets:
         dataset_name = dataset["name"]
-        dataset_annotations_generated_dataset_dir = os.path.join(header.dataset_annotations_generated_dir, dataset_name)
+        dataset_dir_annotations_generated_dataset = os.path.join(header.dataset_dir_annotations_generated, dataset_name)
         file_annotations_counter = 1
 
-        if (os.path.isdir(dataset_annotations_generated_dataset_dir)):
+        if (os.path.isdir(dataset_dir_annotations_generated_dataset)):
             continue
 
-        os.mkdir(dataset_annotations_generated_dataset_dir)
+        os.mkdir(dataset_dir_annotations_generated_dataset)
 
-        for file_name_annotations in dataset_annotations_original_dir_list:
-            if (file_annotations_counter >= len(dataset_annotations_original_dir_list)):
-                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_original_dir_list)) + ")...")
+        for file_name_annotations in dataset_dir_annotations_original_list:
+            if (file_annotations_counter >= len(dataset_dir_annotations_original_list)):
+                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_original_list)) + ")...")
             else:
-                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_original_dir_list)) + ")...", end = "\r")
+                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_original_list)) + ")...", end = "\r")
 
             file_annotations_counter += 1
-            file_path_annotations_original = os.path.join(header.dataset_annotations_original_dir, file_name_annotations)
+            file_path_annotations_original = os.path.join(header.dataset_dir_annotations_original, file_name_annotations)
 
             if (not os.path.isfile(file_path_annotations_original)):
                 continue
 
-            shutil.copy(file_path_annotations_original, dataset_annotations_generated_dataset_dir)
+            shutil.copy(file_path_annotations_original, dataset_dir_annotations_generated_dataset)
 
     return
 
 def main():
-    if (not os.path.isdir(header.dataset_annotations_dir)):
+    if (not os.path.isdir(header.dataset_dir_annotations)):
         logger.log_error("Invalid dataset annotations directory.")
         return
 
-    if (not os.path.isdir(header.dataset_annotations_original_dir)):
+    if (not os.path.isdir(header.dataset_dir_annotations_original)):
         logger.log_error("Invalid original dataset annotations directory.")
         return
 
@@ -51,22 +51,23 @@ def main():
 
     for dataset in header.generate_datasets:
         dataset_name = dataset["name"]
-        dataset_annotations_generated_dataset_dir = os.path.join(header.dataset_annotations_generated_dir, dataset_name)
-        dataset_annotations_generated_dataset_dir_list = os.listdir(dataset_annotations_generated_dataset_dir)
-        file_annotations_counter = 1
+        dataset_dir_annotations_generated_dataset = os.path.join(header.dataset_dir_annotations_generated, dataset_name)
 
-        if (not os.path.isdir(dataset_annotations_generated_dataset_dir)):
+        if (not os.path.isdir(dataset_dir_annotations_generated_dataset)):
             logger.log_error("Invalid generated dataset annotations directory.")
             continue
 
-        for file_name_annotations in dataset_annotations_generated_dataset_dir_list:
-            if (file_annotations_counter >= len(dataset_annotations_generated_dataset_dir_list)):
-                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_generated_dataset_dir_list)) + ")...")
+        dataset_dir_annotations_generated_dataset_list = os.listdir(dataset_dir_annotations_generated_dataset)
+        file_annotations_counter = 1
+
+        for file_name_annotations in dataset_dir_annotations_generated_dataset_list:
+            if (file_annotations_counter >= len(dataset_dir_annotations_generated_dataset_list)):
+                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_generated_dataset_list)) + ")...")
             else:
-                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_annotations_generated_dataset_dir_list)) + ")...", end = "\r")
+                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_generated_dataset_list)) + ")...", end = "\r")
 
             file_annotations_counter += 1
-            file_path_annotations = os.path.join(dataset_annotations_generated_dataset_dir, file_name_annotations)
+            file_path_annotations = os.path.join(dataset_dir_annotations_generated_dataset, file_name_annotations)
 
             if (not os.path.isfile(file_path_annotations)):
                 continue

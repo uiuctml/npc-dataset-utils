@@ -31,12 +31,12 @@ def main():
     file_filter.close()
 
     file_images_counter = 1
-    cv2.namedWindow(header.dataset_images_dir, cv2.WINDOW_NORMAL)
+    cv2.namedWindow(header.dataset_dir_images, cv2.WINDOW_NORMAL)
 
     for line in file_filter_lines:
         line = line.strip()
         file_name_images = line + header.dataset_file_extension_images
-        file_path_images = os.path.join(header.dataset_images_dir, file_name_images)
+        file_path_images = os.path.join(header.dataset_dir_images, file_name_images)
 
         if (file_images_counter >= len(file_filter_lines)):
             logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...")
@@ -51,7 +51,7 @@ def main():
         file_images = cv2.imread(file_path_images, cv2.IMREAD_COLOR)
         file_images = resize(file_images, height = header.view_window_height)
 
-        cv2.imshow(header.dataset_images_dir, file_images)
+        cv2.imshow(header.dataset_dir_images, file_images)
         cv2.waitKey(0)
 
     cv2.destroyAllWindows()
