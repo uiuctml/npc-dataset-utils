@@ -1,6 +1,6 @@
 import logger
 
-dataset_dir = "../data"
+dataset_dir = "../dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
 dataset_dir_annotations_original = dataset_dir_annotations + "/original"
