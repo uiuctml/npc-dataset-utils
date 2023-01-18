@@ -60,6 +60,7 @@ label_file_name = "label.txt"
 log_level = logger.LogLevel.trace
 
 slice_dataset_dir_annotations = dataset_dir_annotations_original
+slice_dataset_dir_images = dataset_dir_images_original
 
 view_bounding_box_color = (0, 255, 0)
 view_bounding_box_text_color = (0, 0, 0)
