@@ -2,8 +2,11 @@ import logger
 
 dataset_dir = "../dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
+dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
 dataset_dir_annotations_original = dataset_dir_annotations + "/original"
 dataset_dir_images = dataset_dir + "/images"
+dataset_dir_images_original = dataset_dir_images + "/original"
+dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_splits = dataset_dir + "/splits"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
@@ -56,6 +59,8 @@ label_file_name = "label.txt"
 
 log_level = logger.LogLevel.trace
 
+slice_dataset_dir_annotations = dataset_dir_annotations_original
+
 view_bounding_box_color = (0, 255, 0)
 view_bounding_box_text_color = (0, 0, 0)
 view_bounding_box_text_margin_x = 10
@@ -63,5 +68,6 @@ view_bounding_box_text_margin_y = 10
 view_bounding_box_text_size = 1
 view_bounding_box_thickness = 3
 view_dataset_dir_annotations = dataset_dir_annotations_original
+view_dataset_dir_images = dataset_dir_images_original
 view_filter_file_name = "filter_" + filter_dataset_dir_annotations.split("/")[-1] + ".txt"
 view_window_height = 900
