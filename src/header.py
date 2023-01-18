@@ -2,14 +2,14 @@ import logger
 
 dataset_dir = "../dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
-dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
 dataset_dir_annotations_original = dataset_dir_annotations + "/original"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_splits = dataset_dir + "/splits"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
 
-filter_file_name = "filter.txt"
+filter_dataset_dir_annotations = dataset_dir_annotations_original
+filter_file_name = "filter_" + filter_dataset_dir_annotations.split("/")[-1] + ".txt"
 filter_print_params = True
 filter_frame_ispano = 0
 filter_object_keys = []
@@ -51,6 +51,7 @@ generate_datasets = [
     generate_dataset_text
 ]
 
+label_dataset_dir_annotations = dataset_dir_annotations_original
 label_file_name = "label.txt"
 
 log_level = logger.LogLevel.trace
@@ -61,4 +62,6 @@ view_bounding_box_text_margin_x = 10
 view_bounding_box_text_margin_y = 10
 view_bounding_box_text_size = 1
 view_bounding_box_thickness = 3
+view_dataset_dir_annotations = dataset_dir_annotations_original
+view_filter_file_name = "filter_" + filter_dataset_dir_annotations.split("/")[-1] + ".txt"
 view_window_height = 900

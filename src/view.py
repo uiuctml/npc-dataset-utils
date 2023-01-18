@@ -70,7 +70,7 @@ def resize(image, width = None, height = None, inter = cv2.INTER_AREA):
     return cv2.resize(image, (width_resize, height_resize), interpolation=inter)
 
 def main():
-    file_filter = open(header.filter_file_name, "r")
+    file_filter = open(header.view_filter_file_name, "r")
     file_filter_lines = file_filter.readlines()
     file_filter.close()
 
