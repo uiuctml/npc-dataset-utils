@@ -1,5 +1,6 @@
 import logger
 
+config_dir = "../config"
 dataset_dir = "../dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
@@ -28,34 +29,15 @@ filter_object_direction_or_information = 0
 filter_object_highway = 0
 filter_object_dummy = 0
 
-generate_dataset_color = {
-    "name": "color",
-    "regulatory--one-way-left--g1": "color--blue",
-    "regulatory--one-way-right--g1": "color--blue"
-}
-generate_dataset_shape = {
-    "name": "shape",
-    "regulatory--one-way-left--g1": "shape--rectangle--wide",
-    "regulatory--one-way-right--g1": "shape--rectangle--wide"
-}
-generate_dataset_symbol = {
-    "name": "symbol",
-    "regulatory--one-way-left--g1": "symbol--arrow--left",
-    "regulatory--one-way-right--g1": "symbol--arrow--right"
-}
-generate_dataset_text = {
-    "name": "text",
-    "regulatory--stop--g1": "text--stop"
-}
-generate_datasets = [
-    generate_dataset_color,
-    generate_dataset_shape,
-    generate_dataset_symbol,
-    generate_dataset_text
-]
+generate_config_file_name = "generate.config"
 
-label_dataset_dir_annotations = dataset_dir_annotations_original
-label_file_name = "label.txt"
+label_combo_box_width = 250
+label_config_file_name = "label.config"
+label_viewer_height = 150
+label_viewer_width = 150
+label_line_edit_width = 250
+label_viewer_items = 15
+label_viewer_items_row = 5
 
 log_level = logger.LogLevel.trace
 
