@@ -24,10 +24,10 @@ def print_params():
     return
 
 def main():
-    if (header.filter_print_params):
+    if header.filter_print_params:
         print_params()
 
-    if (not os.path.isdir(header.filter_dataset_dir_annotations)):
+    if not os.path.isdir(header.filter_dataset_dir_annotations):
         logger.log_error("Invalid dataset annotations directory.")
         return
 
@@ -36,7 +36,7 @@ def main():
     file_annotations_counter = 1
 
     for file_name_annotations in dataset_dir_annotations_list:
-        if (file_annotations_counter >= len(dataset_dir_annotations_list)):
+        if file_annotations_counter >= len(dataset_dir_annotations_list):
             logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...")
         else:
             logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...", end = "\r")
@@ -44,7 +44,7 @@ def main():
         file_annotations_counter += 1
         file_path_annotations = os.path.join(header.filter_dataset_dir_annotations, file_name_annotations)
 
-        if (not os.path.isfile(file_path_annotations)):
+        if not os.path.isfile(file_path_annotations):
             continue
 
         file_annotations = open(file_path_annotations, "r")
@@ -81,7 +81,7 @@ def main():
                 (label not in header.filter_object_labels)):
                 continue
 
-            if (header.filter_object_properties == True):
+            if header.filter_object_properties == True:
                 if ((header.filter_object_barrier > 0 and barrier == False) or
                     (header.filter_object_barrier < 0 and barrier == True)):
                     continue
@@ -121,7 +121,7 @@ def main():
             match = True
             break
 
-        if (match == False):
+        if match == False:
             continue
     
         file_filter.write(file_name_annotations.split(".")[0] + "\n")

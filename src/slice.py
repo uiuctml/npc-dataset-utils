@@ -7,7 +7,7 @@ import logger
 import os
 
 def main():
-    if (not os.path.isdir(header.slice_dataset_dir_annotations)):
+    if not os.path.isdir(header.slice_dataset_dir_annotations):
         logger.log_error("Invalid dataset annotations directory.")
         return
 
@@ -19,7 +19,7 @@ def main():
         file_name_images = file_key + header.dataset_file_extension_images
         file_path_images = os.path.join(header.slice_dataset_dir_images, file_name_images)
 
-        if (file_annotations_counter >= len(dataset_dir_annotations_list)):
+        if file_annotations_counter >= len(dataset_dir_annotations_list):
             logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...")
         else:
             logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...", end = "\r")
@@ -27,10 +27,10 @@ def main():
         file_annotations_counter += 1
         file_path_annotations = os.path.join(header.slice_dataset_dir_annotations, file_name_annotations)
 
-        if (not os.path.isfile(file_path_annotations)):
+        if not os.path.isfile(file_path_annotations):
             continue
 
-        if (not os.path.isfile(file_path_images)):
+        if not os.path.isfile(file_path_images):
             continue
 
         file_annotations = open(file_path_annotations, "r")
@@ -54,10 +54,10 @@ def main():
 
             dataset_dir_images_sliced_label = os.path.join(header.dataset_dir_images_sliced, header.slice_dataset_dir_annotations.split("/")[-1], label)
 
-            if (not os.path.isdir(dataset_dir_images_sliced_label)):
+            if not os.path.isdir(dataset_dir_images_sliced_label):
                 os.makedirs(dataset_dir_images_sliced_label)
 
-            if (not ispano):
+            if not ispano:
                 file_images_bounding_box = file_images[bounding_box_upper_left_y:bounding_box_lower_right_y, bounding_box_upper_left_x:bounding_box_lower_right_x]
                 cv2.imwrite(dataset_dir_images_sliced_label + "/" + key + header.dataset_file_extension_images, file_images_bounding_box)
 

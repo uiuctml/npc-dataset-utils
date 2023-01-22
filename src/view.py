@@ -55,10 +55,10 @@ def resize(image, width = None, height = None, inter = cv2.INTER_AREA):
     height_image = image.shape[0]
     height_resize = image.shape[0]
 
-    if (width is None and height is None):
+    if width is None and height is None:
         return image
 
-    if (width is None):
+    if width is None:
         resize_ratio = height / height_image
         width_resize = int(width_image * resize_ratio)
         height_resize = height
@@ -82,14 +82,14 @@ def main():
         file_name_images = file_key + header.dataset_file_extension_images
         file_path_images = os.path.join(header.view_dataset_dir_images, file_name_images)
 
-        if (file_images_counter >= len(file_filter_lines)):
+        if file_images_counter >= len(file_filter_lines):
             logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...")
         else:
             logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...", end = "\r")
 
         file_images_counter += 1
 
-        if (not os.path.isfile(file_path_images)):
+        if not os.path.isfile(file_path_images):
             continue
 
         file_images = cv2.imread(file_path_images, cv2.IMREAD_COLOR)
