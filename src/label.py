@@ -3,21 +3,52 @@
 import functools
 import header
 import json
-import logger
 import os
 import PyQt5.QtCore
 import PyQt5.QtGui
 import PyQt5.QtWidgets
 
-file_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r+")
-config = json.load(file_config)
+def addLabel(dataset_name, combo_box, line_edit):
+    label = line_edit.text().lower()
 
-def addLabel(combo_box, line_edit):
-    logger.log_debug("addLabel", combo_box.currentText())
+    if (label == dataset_name + "--" or
+        combo_box.findText(label, PyQt5.QtCore.Qt.MatchExactly) >= 0):
+        return
+
+    file_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
+    config = json.load(file_config)
+    file_config.close()
+
+    for dataset in config["datasets"]:
+        if dataset["name"] == dataset_name:
+            dataset["labels"].append(label)
+
+            with open(os.path.join(header.config_dir, header.label_config_file_name), "w") as file_config:
+                json.dump(config, file_config, indent = 4)
+
+    combo_box.addItem(label)
+
     return
 
-def removeLabel(combo_box):
-    logger.log_debug("removeLabel", combo_box.currentText())
+def removeLabel(dataset_name, combo_box):
+    label = combo_box.currentText()
+
+    if label == "":
+        return
+
+    file_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
+    config = json.load(file_config)
+    file_config.close()
+
+    for dataset in config["datasets"]:
+        if dataset["name"] == dataset_name:
+            dataset["labels"].remove(label)
+
+            with open(os.path.join(header.config_dir, header.label_config_file_name), "w") as file_config:
+                json.dump(config, file_config, indent = 4)
+
+    combo_box.removeItem(combo_box.currentIndex())
+
     return
 
 def createViewer():
@@ -45,6 +76,10 @@ def createLabelingControls():
     group_box_labeling_controls.setLayout(layout_labeling_controls)
     group_box_labeling_controls.setTitle("Labeling Controls")
 
+    file_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
+    config = json.load(file_config)
+    file_config.close()
+
     for dataset in config["datasets"]:
         combo_box = PyQt5.QtWidgets.QComboBox()
         group_box_control = PyQt5.QtWidgets.QGroupBox()
@@ -66,9 +101,9 @@ def createLabelingControls():
         layout_labeling_controls.addWidget(group_box_control)
         line_edit.setFixedWidth(header.label_line_edit_width)
         line_edit.setText(dataset["name"] + "--")
-        push_button_add_label.clicked.connect(functools.partial(addLabel, combo_box, line_edit))
+        push_button_add_label.clicked.connect(functools.partial(addLabel, dataset["name"], combo_box, line_edit))
         push_button_add_label.setText("Add Label")
-        push_button_remove_label.clicked.connect(functools.partial(removeLabel, combo_box))
+        push_button_remove_label.clicked.connect(functools.partial(removeLabel, dataset["name"], combo_box))
         push_button_remove_label.setText("Remove Label")
 
     return group_box_labeling_controls
@@ -120,8 +155,6 @@ def main():
     window.show()
 
     status = application.exec()
-
-    file_config.close()
 
     return status
 
