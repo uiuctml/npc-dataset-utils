@@ -209,6 +209,7 @@ def main():
     window.setLayout(createWindowLayout())
     window.setWindowTitle("Mapillary Dataset Labeling Tool")
     window.show()
+    window.setFixedSize(window.size())
 
     exit(application.exec())
 
