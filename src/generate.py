@@ -5,6 +5,7 @@ import json
 import logger
 import os
 import shutil
+import tqdm
 
 def initialize():
     if not os.path.isdir(header.dataset_dir_annotations_generated):
@@ -16,6 +17,7 @@ def initialize():
         dataset_name = dataset["name"]
         dataset_dir_annotations_generated_dataset = os.path.join(header.dataset_dir_annotations_generated, dataset_name)
         file_annotations_counter = 1
+        progress_bar = tqdm.tqdm(total = len(dataset_dir_annotations_original_list))
 
         if os.path.isdir(dataset_dir_annotations_generated_dataset):
             continue
@@ -23,10 +25,9 @@ def initialize():
         os.mkdir(dataset_dir_annotations_generated_dataset)
 
         for file_name_annotations in dataset_dir_annotations_original_list:
-            if file_annotations_counter >= len(dataset_dir_annotations_original_list):
-                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_original_list)) + ")...")
-            else:
-                logger.log_info("Initializing dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_original_list)) + ")...", end = "\r")
+            progress_bar.set_description_str("Initializing dataset \"" + dataset_name + "\"")
+            progress_bar.n = file_annotations_counter
+            progress_bar.refresh()
 
             file_annotations_counter += 1
             file_path_annotations_original = os.path.join(header.dataset_dir_annotations_original, file_name_annotations)
@@ -35,6 +36,8 @@ def initialize():
                 continue
 
             shutil.copy(file_path_annotations_original, dataset_dir_annotations_generated_dataset)
+
+        progress_bar.close()
 
     return
 
@@ -59,12 +62,12 @@ def main():
 
         dataset_dir_annotations_generated_dataset_list = os.listdir(dataset_dir_annotations_generated_dataset)
         file_annotations_counter = 1
+        progress_bar = tqdm.tqdm(total = len(dataset_dir_annotations_generated_dataset_list))
 
         for file_name_annotations in dataset_dir_annotations_generated_dataset_list:
-            if file_annotations_counter >= len(dataset_dir_annotations_generated_dataset_list):
-                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_generated_dataset_list)) + ")...")
-            else:
-                logger.log_info("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_generated_dataset_list)) + ")...", end = "\r")
+            progress_bar.set_description_str("Processing \"" + file_name_annotations + "\" for dataset \"" + dataset_name + "\"")
+            progress_bar.n = file_annotations_counter
+            progress_bar.refresh()
 
             file_annotations_counter += 1
             file_path_annotations = os.path.join(dataset_dir_annotations_generated_dataset, file_name_annotations)
@@ -88,6 +91,8 @@ def main():
             file_annotations = open(file_path_annotations, "w")
             json.dump(annotations, file_annotations, indent = 2)
             file_annotations.close()
+
+        progress_bar.close()
 
     return
 

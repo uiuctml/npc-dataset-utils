@@ -62,6 +62,9 @@ def monitor():
 
         done = int(readFromSharedMemory(shared_memory, header.slice_process_count, 0))
 
+    for process_id in range(0, header.slice_process_count):
+        progress_bars[process_id].close()
+
     return
 
 def slice(process_id, dataset_dir_annotations_list):

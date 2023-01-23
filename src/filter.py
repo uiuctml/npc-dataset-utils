@@ -4,6 +4,7 @@ import header
 import json
 import logger
 import os
+import tqdm
 
 def print_params():
     logger.log_info("Filter parameters:")
@@ -34,12 +35,12 @@ def main():
     dataset_dir_annotations_list = os.listdir(header.filter_dataset_dir_annotations)
     file_filter = open(header.filter_file_name, "w")
     file_annotations_counter = 1
+    progress_bar = tqdm.tqdm(total = len(dataset_dir_annotations_list))
 
     for file_name_annotations in dataset_dir_annotations_list:
-        if file_annotations_counter >= len(dataset_dir_annotations_list):
-            logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...")
-        else:
-            logger.log_info("Processing \"" + file_name_annotations + "\" (" + str(file_annotations_counter) + "/" + str(len(dataset_dir_annotations_list)) + ")...", end = "\r")
+        progress_bar.set_description_str("Processing \"" + file_name_annotations + "\"")
+        progress_bar.n = file_annotations_counter
+        progress_bar.refresh()
 
         file_annotations_counter += 1
         file_path_annotations = os.path.join(header.filter_dataset_dir_annotations, file_name_annotations)
@@ -127,6 +128,7 @@ def main():
         file_filter.write(file_name_annotations.split(".")[0] + "\n")
 
     file_filter.close()
+    progress_bar.close()
 
     logger.log_info("Filter saved to \"" + header.filter_file_name + "\".")
 

@@ -5,6 +5,7 @@ import header
 import json
 import logger
 import os
+import tqdm
 
 def annotate(image, file_key):
     file_name_annotations = file_key + header.dataset_file_extension_annotations
@@ -75,6 +76,8 @@ def main():
     file_filter.close()
 
     file_images_counter = 1
+    progress_bar = tqdm.tqdm(total = len(file_filter_lines))
+
     cv2.namedWindow(header.view_dataset_dir_images, cv2.WINDOW_NORMAL)
 
     for line in file_filter_lines:
@@ -82,10 +85,9 @@ def main():
         file_name_images = file_key + header.dataset_file_extension_images
         file_path_images = os.path.join(header.view_dataset_dir_images, file_name_images)
 
-        if file_images_counter >= len(file_filter_lines):
-            logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...")
-        else:
-            logger.log_info("Showing", file_name_images, "(" + str(file_images_counter) + "/" + str(len(file_filter_lines)) + ")...", end = "\r")
+        progress_bar.set_description_str("Showing \"" + file_name_images + "\"")
+        progress_bar.n = file_images_counter
+        progress_bar.refresh()
 
         file_images_counter += 1
 
@@ -100,6 +102,7 @@ def main():
         cv2.waitKey(0)
 
     cv2.destroyAllWindows()
+    progress_bar.close()
 
     return
 
