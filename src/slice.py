@@ -4,6 +4,7 @@ import cv2
 import header
 import json
 import logger
+import numpy
 import os
 
 def main():
@@ -39,7 +40,6 @@ def main():
 
         file_images = cv2.imread(file_path_images, cv2.IMREAD_COLOR)
 
-        ispano = annotations["ispano"]
         objects = annotations["objects"]
 
         for object in objects:
@@ -57,7 +57,21 @@ def main():
             if not os.path.isdir(dataset_dir_images_sliced_label):
                 os.makedirs(dataset_dir_images_sliced_label)
 
-            if not ispano:
+            if "cross_boundary" in bbox:
+                bounding_box_left_upper_left_x = int(bbox["cross_boundary"]["left"]["xmin"])
+                bounding_box_left_upper_left_y = int(bbox["cross_boundary"]["left"]["ymin"])
+                bounding_box_left_lower_right_x = int(bbox["cross_boundary"]["left"]["xmax"])
+                bounding_box_left_lower_right_y = int(bbox["cross_boundary"]["left"]["ymax"])
+                bounding_box_right_upper_left_x = int(bbox["cross_boundary"]["right"]["xmin"])
+                bounding_box_right_upper_left_y = int(bbox["cross_boundary"]["right"]["ymin"])
+                bounding_box_right_lower_right_x = int(bbox["cross_boundary"]["right"]["xmax"])
+                bounding_box_right_lower_right_y = int(bbox["cross_boundary"]["right"]["ymax"])
+
+                file_images_bounding_box_left = file_images[bounding_box_left_upper_left_y:bounding_box_left_lower_right_y, bounding_box_left_upper_left_x:bounding_box_left_lower_right_x]
+                file_images_bounding_box_right = file_images[bounding_box_right_upper_left_y:bounding_box_right_lower_right_y, bounding_box_right_upper_left_x:bounding_box_right_lower_right_x]
+                file_images_bounding_box = numpy.concatenate((file_images_bounding_box_left, file_images_bounding_box_right), axis = 1)
+                cv2.imwrite(dataset_dir_images_sliced_label + "/" + key + header.dataset_file_extension_images, file_images_bounding_box)
+            else:
                 file_images_bounding_box = file_images[bounding_box_upper_left_y:bounding_box_lower_right_y, bounding_box_upper_left_x:bounding_box_lower_right_x]
                 cv2.imwrite(dataset_dir_images_sliced_label + "/" + key + header.dataset_file_extension_images, file_images_bounding_box)
 
