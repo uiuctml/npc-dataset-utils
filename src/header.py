@@ -2,6 +2,7 @@ import logger
 import multiprocessing
 
 config_dir = "../config"
+dataset_config_file_name = "dataset.config"
 dataset_dir = "../dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
@@ -33,7 +34,7 @@ filter_object_dummy = 0
 generate_config_file_name = "generate.config"
 
 label_combo_box_width = 250
-label_config_file_name = "label.config"
+label_config_file_name = dataset_config_file_name
 label_dataset_dir_images = dataset_dir_images_sliced + "/original"
 label_viewer_height = 150
 label_viewer_width = 150
