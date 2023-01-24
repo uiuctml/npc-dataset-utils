@@ -110,7 +110,7 @@ def slice(process_id, dataset_dir_annotations_list):
             dataset_dir_images_sliced_label = os.path.join(header.dataset_dir_images_sliced, header.slice_dataset_dir_annotations.split("/")[-1], label)
 
             if not os.path.isdir(dataset_dir_images_sliced_label):
-                os.makedirs(dataset_dir_images_sliced_label)
+                os.makedirs(dataset_dir_images_sliced_label, exist_ok = True)
 
             if "cross_boundary" in bbox:
                 bounding_box_left_upper_left_x = int(bbox["cross_boundary"]["left"]["xmin"])
