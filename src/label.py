@@ -58,6 +58,12 @@ def updateViewerWidget():
     file_path_images = os.path.join(header.label_dataset_dir_images, label_text)
 
     if not os.path.isdir(file_path_images):
+        for i in range(0, header.label_viewer_count):
+            label = group_box_viewer.layout().itemAt(i).widget()
+            pixmap = PyQt5.QtGui.QPixmap(header.label_viewer_width, header.label_viewer_height)
+            pixmap.fill(PyQt5.QtCore.Qt.black)
+            label.setPixmap(pixmap)
+
         return
 
     file_names_images = sorted(os.listdir(file_path_images))
