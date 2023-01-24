@@ -13,15 +13,19 @@ def initialize():
 
     dataset_dir_annotations_original_list = os.listdir(header.dataset_dir_annotations_original)
 
-    for dataset in header.generate_datasets:
+    file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
+    dataset_config = json.load(file_dataset_config)
+    file_dataset_config.close()
+
+    for dataset in dataset_config["datasets"]:
         dataset_name = dataset["name"]
         dataset_dir_annotations_generated_dataset = os.path.join(header.dataset_dir_annotations_generated, dataset_name)
         file_annotations_counter = 1
-        progress_bar = tqdm.tqdm(total = len(dataset_dir_annotations_original_list))
 
         if os.path.isdir(dataset_dir_annotations_generated_dataset):
             continue
 
+        progress_bar = tqdm.tqdm(total = len(dataset_dir_annotations_original_list))
         os.mkdir(dataset_dir_annotations_generated_dataset)
 
         for file_name_annotations in dataset_dir_annotations_original_list:
@@ -52,7 +56,15 @@ def main():
 
     initialize()
 
-    for dataset in header.generate_datasets:
+    file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
+    dataset_config = json.load(file_dataset_config)
+    file_dataset_config.close()
+
+    file_generate_config = open(os.path.join(header.config_dir, header.generate_config_file_name), "r")
+    generate_config = json.load(file_generate_config)
+    file_generate_config.close()
+
+    for dataset in dataset_config["datasets"]:
         dataset_name = dataset["name"]
         dataset_dir_annotations_generated_dataset = os.path.join(header.dataset_dir_annotations_generated, dataset_name)
 
@@ -80,13 +92,19 @@ def main():
             file_annotations.close()
 
             for object in annotations["objects"]:
-                if object["label"] in dataset.values():
+                if object["label"] not in generate_config.keys():
                     continue
-
-                if object["label"] in dataset:
-                    object["label"] = dataset[object["label"]]
+                elif dataset_name not in generate_config[object["label"]].keys():
+                    logger.log_warn("\"" + object["label"] + "\" does not contain any label for dataset \"" + dataset_name + "\".")
+                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
+                elif generate_config[object["label"]][dataset_name] == "":
+                    logger.log_warn("\"" + object["label"] + "\" contains an empty label for dataset \"" + dataset_name + "\".")
+                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
+                elif generate_config[object["label"]][dataset_name].split(header.dataset_label_delimiter)[0] != dataset_name:
+                    logger.log_warn("\"" + object["label"] + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
+                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
                 else:
-                    object["label"] = dataset_name + "--" + "undefined"
+                    object["label"] = generate_config[object["label"]][dataset_name]
 
             file_annotations = open(file_path_annotations, "w")
             json.dump(annotations, file_annotations, indent = 2)

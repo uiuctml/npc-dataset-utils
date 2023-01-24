@@ -13,6 +13,8 @@ dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_splits = dataset_dir + "/splits"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
+dataset_label_delimiter = "--"
+dataset_label_undefined_keyword = "undefined"
 
 filter_dataset_dir_annotations = dataset_dir_annotations_original
 filter_file_name = "filter_" + filter_dataset_dir_annotations.split("/")[-1] + ".txt"
