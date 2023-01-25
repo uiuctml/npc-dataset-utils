@@ -11,8 +11,14 @@ dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
 dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_splits = dataset_dir + "/splits"
+dataset_dir_splits_resplit = dataset_dir_splits + "/resplit"
+dataset_dir_splits_objects = dataset_dir_splits + "/objects"
+dataset_dir_splits_original = dataset_dir_splits + "/original"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
+dataset_file_name_split_train = "train.txt"
+dataset_file_name_split_validation = "val.txt"
+dataset_file_name_split_test = "test.txt"
 dataset_label_delimiter = "--"
 dataset_label_undefined_keyword = "undefined"
 
@@ -53,6 +59,9 @@ slice_shared_memory_name = "slice"
 slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
+
+split_resplit_training_percentage_training = 0.8
+split_resplit_training_percentage_validation = 1 - split_resplit_training_percentage_training
 
 view_bounding_box_color = (0, 255, 0)
 view_bounding_box_text_color = (0, 0, 0)
