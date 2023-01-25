@@ -133,6 +133,9 @@ def slice(process_id, dataset_dir_annotations_list):
     return
 
 def main():
+    if os.path.isdir(header.dataset_dir_images_sliced):
+        return
+
     if not os.path.isdir(header.slice_dataset_dir_annotations):
         logger.log_error("Invalid dataset annotations directory.")
         return

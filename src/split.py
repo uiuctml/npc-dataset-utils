@@ -108,7 +108,7 @@ def createSplitSymlinks(dataset_file_name_split):
             file_key = file_name_image.split(".")[0]
 
             if file_key in file_split_object_lines:
-                os.symlink(os.path.join(header.split_dataset_dir_images, dataset_dir_labels, file_name_image), os.path.join(dataset_dir_labels_split, file_name_image))
+                os.symlink(os.path.abspath(os.path.join(header.split_dataset_dir_images, dataset_dir_labels, file_name_image)), os.path.join(dataset_dir_labels_split, file_name_image))
 
     return
 
