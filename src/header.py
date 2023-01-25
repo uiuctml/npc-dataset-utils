@@ -3,7 +3,7 @@ import multiprocessing
 
 config_dir = "../config"
 dataset_config_file_name = "dataset.config"
-dataset_dir = "../dataset"
+dataset_dir = "../../mapillary-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
 dataset_dir_annotations_original = dataset_dir_annotations + "/original"
