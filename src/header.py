@@ -12,7 +12,7 @@ dataset_dir_images_original = dataset_dir_images + "/original"
 dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_splits = dataset_dir + "/splits"
 dataset_dir_splits_resplit = dataset_dir_splits + "/resplit"
-dataset_dir_splits_objects = dataset_dir_splits + "/objects"
+dataset_dir_splits_object = dataset_dir_splits + "/object"
 dataset_dir_splits_original = dataset_dir_splits + "/original"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
@@ -60,6 +60,7 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
+split_dataset_dir_annotations = dataset_dir_annotations_original
 split_resplit_training_percentage_training = 0.8
 split_resplit_training_percentage_validation = 1 - split_resplit_training_percentage_training
 

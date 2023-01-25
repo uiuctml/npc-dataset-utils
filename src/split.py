@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 import header
-import logger
+import json
 import os
 import random
+import tqdm
 
 def resplit():
     if not os.path.isdir(header.dataset_dir_splits_resplit):
@@ -31,11 +32,48 @@ def resplit():
 
     return
 
-def createObjectSplits():
+def createObjectSplits(dataset_file_name_split):
+    file_split_resplit = open(os.path.join(header.dataset_dir_splits_resplit, dataset_file_name_split), "r")
+    file_split_resplit_lines = file_split_resplit.readlines()
+    file_split_resplit.close()
+
+    if not os.path.isdir(header.dataset_dir_splits_object):
+        os.makedirs(header.dataset_dir_splits_object, exist_ok = True)
+
+    file_split_object = open(os.path.join(header.dataset_dir_splits_object, dataset_file_name_split), "w")
+    line_counter = 1
+    progress_bar = tqdm.tqdm(total = len(file_split_resplit_lines))
+
+    for line in file_split_resplit_lines:
+        file_key = line.strip()
+        file_name_annotations = file_key + header.dataset_file_extension_annotations
+        progress_bar.set_description_str("Processing \"" + file_name_annotations + "\" in \"" + dataset_file_name_split + "\"")
+        progress_bar.n = line_counter
+        progress_bar.refresh()
+
+        line_counter += 1
+        file_path_annotations = os.path.join(header.split_dataset_dir_annotations, file_name_annotations)
+
+        if not os.path.isfile(file_path_annotations):
+            continue
+
+        file_annotations = open(file_path_annotations, "r")
+        annotations = json.load(file_annotations)
+        file_annotations.close()
+
+        for object in annotations["objects"]:
+            file_split_object.write(object["key"] + "\n")
+
+    file_split_object.close()
+
     return
 
 def main():
     resplit()
+
+    createObjectSplits(header.dataset_file_name_split_train)
+    createObjectSplits(header.dataset_file_name_split_validation)
+    createObjectSplits(header.dataset_file_name_split_test)
 
     return
 
