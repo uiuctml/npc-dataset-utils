@@ -46,7 +46,7 @@ def monitor():
         file_annotations_counter = int(readFromSharedMemory(shared_memory, process_id, 1))
         dataset_dir_annotations_list_size = int(readFromSharedMemory(shared_memory, process_id, 2))
 
-        progress_bar = tqdm.tqdm(total = dataset_dir_annotations_list_size, position = process_id)
+        progress_bar = tqdm.tqdm(total = dataset_dir_annotations_list_size, position = process_id, leave = False)
         progress_bar.set_description_str("Processing \"" + file_name_annotations + "\"")
         progress_bars.append(progress_bar)
 
