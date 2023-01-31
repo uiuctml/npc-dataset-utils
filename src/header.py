@@ -63,8 +63,7 @@ slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_proce
 
 split_dataset_dir_annotations = dataset_dir_annotations_original
 split_dataset_dir_images = dataset_dir_images_sliced + "/original"
-split_resplit_training_percentage_training = 0.8
-split_resplit_training_percentage_validation = 1 - split_resplit_training_percentage_training
+split_file_name_resplit_train_validation = "train_val.txt"
 
 view_bounding_box_color = (0, 255, 0)
 view_bounding_box_text_color = (0, 0, 0)

@@ -12,25 +12,27 @@ def resplit():
     else:
         return
 
-    file_split_original_train = open(os.path.join(header.dataset_dir_splits_original, header.dataset_file_name_split_train), "r")
-    file_split_original_train_lines = file_split_original_train.readlines()
-    file_split_original_train.close()
-
-    random.shuffle(file_split_original_train_lines)
-    resplit_point = int(len(file_split_original_train_lines) * header.split_resplit_training_percentage_training)
-
-    with open(os.path.join(header.dataset_dir_splits_resplit, header.dataset_file_name_split_train), "w") as file_split_resplit_train:
-        file_split_resplit_train.writelines(file_split_original_train_lines[0:resplit_point])
-
-    with open(os.path.join(header.dataset_dir_splits_resplit, header.dataset_file_name_split_validation), "w") as file_split_resplit_validation:
-        file_split_resplit_validation.writelines(file_split_original_train_lines[resplit_point:-1])
-
     file_split_original_validation = open(os.path.join(header.dataset_dir_splits_original, header.dataset_file_name_split_validation), "r")
     file_split_original_validation_lines = file_split_original_validation.readlines()
     file_split_original_validation.close()
 
     with open(os.path.join(header.dataset_dir_splits_resplit, header.dataset_file_name_split_test), "w") as file_split_resplit_test:
         file_split_resplit_test.writelines(file_split_original_validation_lines)
+
+    for i in range(0, len(file_split_original_validation_lines)):
+        file_split_original_validation_lines[i] = file_split_original_validation_lines[i].strip()
+
+    dataset_dir_annotations_list = os.listdir(header.split_dataset_dir_annotations)
+    file_split_resplit_test_lines = set(file_split_original_validation_lines)
+    file_split_resplit_train_validation = open(os.path.join(header.dataset_dir_splits_resplit, header.split_file_name_resplit_train_validation), "w")
+
+    for file_name_annotations in dataset_dir_annotations_list:
+        file_key = file_name_annotations.split(".")[0]
+
+        if file_key not in file_split_resplit_test_lines:
+            file_split_resplit_train_validation.write(file_key + "\n")
+
+    file_split_resplit_train_validation.close()
 
     return
 
@@ -47,7 +49,7 @@ def createObjectSplits(dataset_file_name_split):
 
     file_split_object = open(os.path.join(header.dataset_dir_splits_object, dataset_file_name_split), "w")
     line_counter = 1
-    progress_bar = tqdm.tqdm(total = len(file_split_resplit_lines))
+    progress_bar = tqdm.tqdm(total = len(file_split_resplit_lines), leave = False)
 
     for line in file_split_resplit_lines:
         file_key = line.strip()
@@ -90,7 +92,7 @@ def createSplitSymlinks(dataset_file_name_split):
     file_split_object_lines = set(file_split_object_lines)
 
     dataset_dir_labels_counter = 1
-    progress_bar = tqdm.tqdm(total = len(dataset_dir_images_list))
+    progress_bar = tqdm.tqdm(total = len(dataset_dir_images_list), leave = False)
 
     for dataset_dir_labels in dataset_dir_images_list:
         dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
@@ -115,12 +117,10 @@ def createSplitSymlinks(dataset_file_name_split):
 def main():
     resplit()
 
-    createObjectSplits(header.dataset_file_name_split_train)
-    createObjectSplits(header.dataset_file_name_split_validation)
+    createObjectSplits(header.split_file_name_resplit_train_validation)
     createObjectSplits(header.dataset_file_name_split_test)
 
-    createSplitSymlinks(header.dataset_file_name_split_train)
-    createSplitSymlinks(header.dataset_file_name_split_validation)
+    createSplitSymlinks(header.split_file_name_resplit_train_validation)
     createSplitSymlinks(header.dataset_file_name_split_test)
 
     return
