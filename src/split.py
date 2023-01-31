@@ -105,16 +105,16 @@ def createSplitSymlinks(dataset_file_name_split):
         dataset_dir_labels_counter += 1
         dataset_images_list = os.listdir(os.path.join(header.split_dataset_dir_images, dataset_dir_labels))
 
+        if not os.path.isdir(dataset_dir_labels_split):
+            os.makedirs(dataset_dir_labels_split, exist_ok = True)
+
         for file_name_image in dataset_images_list:
             file_key = file_name_image.split(".")[0]
 
             if file_key in file_split_object_lines:
-                if not os.path.isdir(dataset_dir_labels_split):
-                    os.makedirs(dataset_dir_labels_split, exist_ok = True)
-
                 os.symlink(os.path.abspath(os.path.join(header.split_dataset_dir_images, dataset_dir_labels, file_name_image)), os.path.join(dataset_dir_labels_split, file_name_image))
 
-        if not os.path.isdir(dataset_dir_labels_split):
+        if len(os.listdir(dataset_dir_labels_split)) == 0:
             labels_empty.append(dataset_dir_labels)
 
     progress_bar.close()
