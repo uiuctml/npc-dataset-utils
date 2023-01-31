@@ -120,7 +120,7 @@ def createSplitSymlinks(dataset_file_name_split):
     progress_bar.close()
 
     for label_empty in labels_empty:
-        logger.log_warn("\"" + label_empty + "\" has no data for dataset \"" + dataset_name_split + "\".")
+        logger.log_warn("\"" + label_empty + "\" has no data for split dataset \"" + dataset_name_split + "\".")
 
     return
 
