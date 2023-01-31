@@ -2,8 +2,8 @@
 
 import header
 import json
+import logger
 import os
-import random
 import tqdm
 
 def resplit():
@@ -49,7 +49,7 @@ def createObjectSplits(dataset_file_name_split):
 
     file_split_object = open(os.path.join(header.dataset_dir_splits_object, dataset_file_name_split), "w")
     line_counter = 1
-    progress_bar = tqdm.tqdm(total = len(file_split_resplit_lines), leave = False)
+    progress_bar = tqdm.tqdm(total = len(file_split_resplit_lines))
 
     for line in file_split_resplit_lines:
         file_key = line.strip()
@@ -72,6 +72,7 @@ def createObjectSplits(dataset_file_name_split):
             file_split_object.write(object["key"] + "\n")
 
     file_split_object.close()
+    progress_bar.close()
 
     return
 
@@ -92,7 +93,8 @@ def createSplitSymlinks(dataset_file_name_split):
     file_split_object_lines = set(file_split_object_lines)
 
     dataset_dir_labels_counter = 1
-    progress_bar = tqdm.tqdm(total = len(dataset_dir_images_list), leave = False)
+    labels_empty = []
+    progress_bar = tqdm.tqdm(total = len(dataset_dir_images_list))
 
     for dataset_dir_labels in dataset_dir_images_list:
         dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
@@ -103,14 +105,22 @@ def createSplitSymlinks(dataset_file_name_split):
         dataset_dir_labels_counter += 1
         dataset_images_list = os.listdir(os.path.join(header.split_dataset_dir_images, dataset_dir_labels))
 
-        if not os.path.isdir(dataset_dir_labels_split):
-            os.makedirs(dataset_dir_labels_split, exist_ok = True)
-
         for file_name_image in dataset_images_list:
             file_key = file_name_image.split(".")[0]
 
             if file_key in file_split_object_lines:
+                if not os.path.isdir(dataset_dir_labels_split):
+                    os.makedirs(dataset_dir_labels_split, exist_ok = True)
+
                 os.symlink(os.path.abspath(os.path.join(header.split_dataset_dir_images, dataset_dir_labels, file_name_image)), os.path.join(dataset_dir_labels_split, file_name_image))
+
+        if not os.path.isdir(dataset_dir_labels_split):
+            labels_empty.append(dataset_dir_labels)
+
+    progress_bar.close()
+
+    for label_empty in labels_empty:
+        logger.log_warn("\"" + label_empty + "\" has no data for dataset \"" + dataset_name_split + "\".")
 
     return
 
