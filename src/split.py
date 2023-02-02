@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
+import cv2
 import header
 import json
 import logger
+import numpy
 import os
 import tqdm
 
@@ -116,11 +118,14 @@ def createSplitSymlinks(dataset_file_name_split):
 
         if len(os.listdir(dataset_dir_labels_split)) == 0:
             labels_empty.append(dataset_dir_labels)
+            image_placeholder = numpy.zeros(header.split_file_symlink_placeholder_shape, numpy.uint8)
+            image_placeholder[:][:] = header.split_file_symlink_placeholder_color
+            cv2.imwrite(os.path.join(dataset_dir_labels_split, header.split_file_name_symlink_placeholder), image_placeholder)
 
     progress_bar.close()
 
     for label_empty in labels_empty:
-        logger.log_warn("\"" + label_empty + "\" has no data for split dataset \"" + dataset_name_split + "\".")
+        logger.log_warn("\"" + label_empty + "\" has placeholder data for split dataset \"" + dataset_name_split + "\".")
 
     return
 
