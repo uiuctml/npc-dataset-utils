@@ -2,7 +2,7 @@ import logger
 import multiprocessing
 
 config_dir = "../config"
-dataset_config_file_name = "dataset.config"
+dataset_config_file_name = "dataset.json"
 dataset_dir = "../../mapillary-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
@@ -40,7 +40,7 @@ filter_object_direction_or_information = 0
 filter_object_highway = 0
 filter_object_dummy = 0
 
-generate_config_file_name = "generate.config"
+generate_config_file_name = "generate.json"
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
