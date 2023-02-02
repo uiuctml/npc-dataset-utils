@@ -27,14 +27,14 @@ def main():
     logger.log_info_raw("\n")
     logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
 
-    if os.path.isdir(header.dataset_dir_images_split):
-        dataset_dir_images_split_list = os.listdir(header.dataset_dir_images_split)
+    if os.path.isdir(header.verify_dataset_dir_images_split):
+        dataset_dir_images_split_list = os.listdir(header.verify_dataset_dir_images_split)
 
         for dataset_name_split in dataset_dir_images_split_list:
-            dataset_split = os.listdir(os.path.join(header.dataset_dir_images_split, dataset_name_split))
+            dataset_split = os.listdir(os.path.join(header.verify_dataset_dir_images_split, dataset_name_split))
 
             for dataset_dir_labels in dataset_split:
-                dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
+                dataset_dir_labels_split = os.path.join(header.verify_dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
                 dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
                 if len(dataset_dir_labels_split_list) == 0:
