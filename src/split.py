@@ -56,7 +56,7 @@ def createObjectSplits(dataset_file_name_split):
     for line in file_split_resplit_lines:
         file_key = line.strip()
         file_name_annotations = file_key + header.dataset_file_extension_annotations
-        progress_bar.set_description_str("Processing \"" + file_name_annotations + "\" in \"" + dataset_file_name_split + "\"")
+        progress_bar.set_description_str("Processing \"" + file_key + "\" in \"" + dataset_file_name_split + "\"")
         progress_bar.n = line_counter
         progress_bar.refresh()
 
@@ -99,7 +99,8 @@ def createSplitSymlinks(dataset_file_name_split):
     progress_bar = tqdm.tqdm(total = len(dataset_dir_images_list))
 
     for dataset_dir_labels in dataset_dir_images_list:
-        dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
+        dataset_name = header.split_dataset_dir_images.split("/")[-1]
+        dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name, dataset_name_split, dataset_dir_labels)
         progress_bar.set_description_str("Processing \"" + dataset_dir_labels + "\" for \"" + dataset_name_split + "\" dataset split")
         progress_bar.n = dataset_dir_labels_counter
         progress_bar.refresh()
