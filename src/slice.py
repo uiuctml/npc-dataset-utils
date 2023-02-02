@@ -133,7 +133,7 @@ def slice(process_id, dataset_dir_annotations_list):
     return
 
 def main():
-    if os.path.isdir(header.dataset_dir_images_sliced):
+    if os.path.isdir(os.path.join(header.dataset_dir_images_sliced, header.slice_dataset_dir_annotations.split("/")[-1])):
         return
 
     if not os.path.isdir(header.slice_dataset_dir_annotations):
