@@ -35,9 +35,12 @@ def main():
 
             for dataset_dir_labels in dataset_split:
                 dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split, dataset_name_split, dataset_dir_labels)
+                dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
-                if len(os.listdir(dataset_dir_labels_split)) == 0:
+                if len(dataset_dir_labels_split_list) == 0:
                     logger.log_error("\"" + dataset_dir_labels + "\" has no data for split dataset \"" + dataset_name_split + "\".")
+                elif len(dataset_dir_labels_split_list) == 1 and dataset_dir_labels_split_list[-1] == header.split_file_name_symlink_placeholder:
+                    logger.log_warn("\"" + dataset_dir_labels + "\" has placeholder data for split dataset \"" + dataset_name_split + "\".")
 
     return
 
