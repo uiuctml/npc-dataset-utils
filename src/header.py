@@ -44,7 +44,7 @@ generate_config_file_name = "generate.json"
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
-label_dataset_dir_images = dataset_dir_images_sliced
+label_dataset_dir_images = dataset_dir_images_sliced + "/original"
 label_viewer_height = 150
 label_viewer_width = 150
 label_line_edit_width = 250
@@ -62,7 +62,7 @@ slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
 split_dataset_dir_annotations = dataset_dir_annotations_original
-split_dataset_dir_images = dataset_dir_images_sliced
+split_dataset_dir_images = dataset_dir_images_sliced + "/original"
 split_file_name_resplit_train_validation = "train_val.txt"
 split_file_name_symlink_placeholder = "placeholder" + dataset_file_extension_images
 split_file_symlink_placeholder_shape = (500, 500, 3)
