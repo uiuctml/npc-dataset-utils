@@ -35,11 +35,12 @@ def initialize():
 
             file_annotations_counter += 1
             file_path_annotations_original = os.path.join(header.dataset_dir_annotations_original, file_name_annotations)
+            file_path_annotations_generated = os.path.join(dataset_dir_annotations_generated_dataset, file_name_annotations)
 
             if not os.path.isfile(file_path_annotations_original):
                 continue
 
-            shutil.copy(file_path_annotations_original, dataset_dir_annotations_generated_dataset)
+            shutil.copyfile(file_path_annotations_original, file_path_annotations_generated)
 
         progress_bar.close()
 

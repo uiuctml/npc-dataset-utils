@@ -4,7 +4,6 @@
             "name": "color",
             "labels": [
                 "",
-                "color--black--white",
                 "color--white-black",
                 "color--yellow-black",
                 "color--black-yellow",
