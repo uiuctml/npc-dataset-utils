@@ -552,7 +552,7 @@
         "text": "text--bike-lane"
     },
     "regulatory--bicycles-only--g3": {
-        "color": "color--black--white",
+        "color": "color--black-white",
         "shape": "shape--rectangle--wide",
         "symbol": "symbol--bicycle",
         "text": "text--bike-lane"
@@ -714,7 +714,7 @@
         "text": "text--undefined"
     },
     "regulatory--go-straight-or-turn-right--g1": {
-        "color": "color--black-white",
+        "color": "color--blue-white",
         "shape": "shape--circle",
         "symbol": "symbol--arrow--up--curved--right",
         "text": "text--undefined"
@@ -1308,7 +1308,7 @@
         "text": "text--one-way"
     },
     "regulatory--one-way-left--g3": {
-        "color": "color--black--white",
+        "color": "color--black-white",
         "shape": "shape--rectangle--wide",
         "symbol": "symbol--arrow--left",
         "text": "text--one-way"
@@ -1326,7 +1326,7 @@
         "text": "text--one-way"
     },
     "regulatory--one-way-right--g3": {
-        "color": "color--black--white",
+        "color": "color--black-white",
         "shape": "shape--rectangle--wide",
         "symbol": "symbol--arrow--right",
         "text": "text--one-way"
