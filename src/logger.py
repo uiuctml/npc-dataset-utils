@@ -1,110 +1,80 @@
-import enum
 import header
-
-class LogLevel(enum.Enum):
-    all = 6
-    trace = 5
-    debug = 4
-    info = 3
-    warn = 2
-    error = 1
-    fatal = 0
-    off = -1
-
-    def __ge__(self, other):
-        if self.__class__ is other.__class__:
-            return self.value >= other.value
-        return NotImplemented
-
-    def __gt__(self, other):
-        if self.__class__ is other.__class__:
-            return self.value > other.value
-        return NotImplemented
-
-    def __le__(self, other):
-        if self.__class__ is other.__class__:
-            return self.value <= other.value
-        return NotImplemented
-
-    def __lt__(self, other):
-        if self.__class__ is other.__class__:
-            return self.value < other.value
-        return NotImplemented
+import type
 
 def log_trace(*args, **kwargs):
-    if header.log_level >= LogLevel.trace:
+    if header.log_level >= type.LogLevel.trace:
         print("[TRACE]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_debug(*args, **kwargs):
-    if header.log_level >= LogLevel.debug:
+    if header.log_level >= type.LogLevel.debug:
         print("[DEBUG]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_info(*args, **kwargs):
-    if header.log_level >= LogLevel.info:
+    if header.log_level >= type.LogLevel.info:
         print("[INFO]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_warn(*args, **kwargs):
-    if header.log_level >= LogLevel.warn:
+    if header.log_level >= type.LogLevel.warn:
         print("[WARN]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_error(*args, **kwargs):
-    if header.log_level >= LogLevel.error:
+    if header.log_level >= type.LogLevel.error:
         print("[ERROR]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_fatal(*args, **kwargs):
-    if header.log_level >= LogLevel.fatal:
+    if header.log_level >= type.LogLevel.fatal:
         print("[FATAL]: ", end = "")
         print(*args, **kwargs)
 
     return
 
 def log_trace_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.trace:
+    if header.log_level >= type.LogLevel.trace:
         print(*args, **kwargs)
 
     return
 
 def log_debug_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.debug:
+    if header.log_level >= type.LogLevel.debug:
         print(*args, **kwargs)
 
     return
 
 def log_info_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.info:
+    if header.log_level >= type.LogLevel.info:
         print(*args, **kwargs)
 
     return
 
 def log_warn_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.warn:
+    if header.log_level >= type.LogLevel.warn:
         print(*args, **kwargs)
 
     return
 
 def log_error_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.error:
+    if header.log_level >= type.LogLevel.error:
         print(*args, **kwargs)
 
     return
 
 def log_fatal_raw(*args, **kwargs):
-    if header.log_level >= LogLevel.fatal:
+    if header.log_level >= type.LogLevel.fatal:
         print(*args, **kwargs)
 
     return

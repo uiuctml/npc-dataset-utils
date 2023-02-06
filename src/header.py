@@ -1,5 +1,5 @@
-import logger
 import multiprocessing
+import type
 
 config_dir = "../config"
 dataset_config_file_name = "dataset.json"
@@ -51,7 +51,7 @@ label_line_edit_width = 250
 label_viewer_count = 15
 label_viewer_count_row = 5
 
-log_level = logger.LogLevel.trace
+log_level = type.LogLevel.trace
 
 slice_dataset_dir_annotations = dataset_dir_annotations_generated + "/color"
 slice_dataset_dir_images = dataset_dir_images_original
