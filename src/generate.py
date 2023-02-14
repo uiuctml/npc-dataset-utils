@@ -4,6 +4,7 @@ import header
 import json
 import logger
 import os
+import shutil
 import tqdm
 
 def main():
@@ -53,6 +54,8 @@ def main():
             file_name_image_generated = label_combined + header.dataset_delimiter_file_name + file_key + header.dataset_file_extension_images
 
             os.symlink(os.path.abspath(os.path.join(dataset_dir_images_original_label, file_name_image)), os.path.join(header.dataset_dir_images_sliced_generated, file_name_image_generated))
+
+        shutil.copyfile(os.path.join(header.config_dir, header.dataset_config_file_name), os.path.join(header.dataset_dir_images_sliced_generated, header.dataset_config_file_name))
 
     progress_bar.close()
 
