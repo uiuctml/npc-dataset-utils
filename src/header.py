@@ -53,7 +53,7 @@ label_viewer_count_row = 5
 
 log_level = type.LogLevel.trace
 
-slice_dataset_dir_annotations = dataset_dir_annotations_generated + "/color"
+slice_dataset_dir_annotations = dataset_dir_annotations_original
 slice_dataset_dir_images = dataset_dir_images_original
 slice_process_count = multiprocessing.cpu_count()
 slice_shared_memory_name = "slice"
@@ -61,7 +61,7 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
-split_dataset_dir_annotations = dataset_dir_annotations_generated + "/color"
+split_dataset_dir_annotations = dataset_dir_annotations_original
 split_dataset_dir_images = dataset_dir_images_sliced + "/color"
 split_file_name_resplit_train_validation = "train_val.txt"
 split_file_name_symlink_placeholder = "placeholder" + dataset_file_extension_images
