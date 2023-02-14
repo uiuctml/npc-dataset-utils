@@ -10,6 +10,8 @@ dataset_dir_annotations_original = dataset_dir_annotations + "/original"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
 dataset_dir_images_sliced = dataset_dir_images + "/sliced"
+dataset_dir_images_sliced_generated = dataset_dir_images_sliced + "/generated"
+dataset_dir_images_sliced_original = dataset_dir_images_sliced + "/original"
 dataset_dir_images_split = dataset_dir_images + "/split"
 dataset_dir_splits = dataset_dir + "/splits"
 dataset_dir_splits_resplit = dataset_dir_splits + "/resplit"
@@ -20,6 +22,7 @@ dataset_file_extension_images = ".jpg"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validation = "val.txt"
 dataset_file_name_split_test = "test.txt"
+dataset_delimiter = "---"
 dataset_label_delimiter = "--"
 dataset_label_undefined_keyword = "undefined"
 
@@ -41,6 +44,7 @@ filter_object_highway = 0
 filter_object_dummy = 0
 
 generate_config_file_name = "generate.json"
+generate_dataset_dir_images = dataset_dir_images_sliced + "/original"
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
