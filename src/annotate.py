@@ -97,13 +97,13 @@ def main():
                     continue
                 elif dataset_name not in generate_config[object["label"]].keys():
                     logger.log_warn("\"" + object["label"] + "\" does not contain any label for dataset \"" + dataset_name + "\".")
-                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
+                    object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
                 elif generate_config[object["label"]][dataset_name] == "":
                     logger.log_warn("\"" + object["label"] + "\" contains an empty label for dataset \"" + dataset_name + "\".")
-                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
-                elif generate_config[object["label"]][dataset_name].split(header.dataset_label_delimiter)[0] != dataset_name:
+                    object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
+                elif generate_config[object["label"]][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_warn("\"" + object["label"] + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
-                    object["label"] = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
+                    object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
                 else:
                     object["label"] = generate_config[object["label"]][dataset_name]
 

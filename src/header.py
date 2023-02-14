@@ -3,6 +3,8 @@ import type
 
 config_dir = "../config"
 dataset_config_file_name = "dataset.json"
+dataset_delimiter_file_name = "---"
+dataset_delimiter_label = "--"
 dataset_dir = "../../mapillary-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
@@ -22,8 +24,6 @@ dataset_file_extension_images = ".jpg"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validation = "val.txt"
 dataset_file_name_split_test = "test.txt"
-dataset_delimiter = "---"
-dataset_label_delimiter = "--"
 dataset_label_undefined_keyword = "undefined"
 
 filter_dataset_dir_annotations = dataset_dir_annotations_original

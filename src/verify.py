@@ -21,7 +21,7 @@ def main():
             for dataset_name in generate_config[label].keys():
                 if generate_config[label][dataset_name] == "":
                     logger.log_error("\"" + label + "\" contains an empty label for dataset \"" + dataset_name + "\".")
-                elif generate_config[label][dataset_name].split(header.dataset_label_delimiter)[0] != dataset_name:
+                elif generate_config[label][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_error("\"" + label + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
 
     logger.log_info_raw("\n")

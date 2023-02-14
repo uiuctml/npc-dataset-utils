@@ -32,25 +32,27 @@ def main():
 
             if label == "":
                 logger.log_warn("\"" + dataset_dir_labels + "\" contains an empty label for dataset \"" + dataset_name + "\".")
-                label = dataset_name + header.dataset_label_delimiter + header.dataset_label_undefined_keyword
+                label = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
 
             if label_combined != "":
-                label_combined += header.dataset_delimiter
+                label_combined += header.dataset_delimiter_file_name
 
             label_combined += label
 
-        dataset_dir_images_generated_label = os.path.join(header.dataset_dir_images_sliced_generated, label_combined)
         dataset_dir_images_original_label = os.path.join(header.generate_dataset_dir_images, dataset_dir_labels)
         dataset_images_list = os.listdir(dataset_dir_images_original_label)
 
         if len(dataset_images_list) == 0:
             logger.log_warn("\"" + dataset_dir_labels + "\" has no data.")
 
-        if not os.path.isdir(dataset_dir_images_generated_label):
-            os.makedirs(dataset_dir_images_generated_label, exist_ok = True)
+        if not os.path.isdir(header.dataset_dir_images_sliced_generated):
+            os.makedirs(header.dataset_dir_images_sliced_generated, exist_ok = True)
 
         for file_name_image in dataset_images_list:
-            os.symlink(os.path.abspath(os.path.join(dataset_dir_images_original_label, file_name_image)), os.path.join(dataset_dir_images_generated_label, file_name_image))
+            file_key = file_name_image.split(".")[0]
+            file_name_image_generated = label_combined + header.dataset_delimiter_file_name + file_key + header.dataset_file_extension_images
+
+            os.symlink(os.path.abspath(os.path.join(dataset_dir_images_original_label, file_name_image)), os.path.join(header.dataset_dir_images_sliced_generated, file_name_image_generated))
 
     progress_bar.close()
 
