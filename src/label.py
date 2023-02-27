@@ -14,6 +14,7 @@ application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
 combo_box_reduction_labeling_control = PyQt5.QtWidgets.QComboBox()
 combo_boxes_label_labeling_control = {}
+double_spin_boxes_weight_labeling_control = {}
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
 
 file_generate_config = open(os.path.join(header.config_dir, header.generate_config_file_name), "r")
@@ -53,6 +54,26 @@ def updateLabelingControlWidget():
                     updateLabelConfig()
 
         combo_boxes_label_labeling_control[dataset_name].setCurrentText(label_text)
+
+    for dataset_name in double_spin_boxes_weight_labeling_control.keys():
+        if dataset_name not in generate_config[combo_box_application_control.currentText()]["weights"]:
+            double_spin_boxes_weight_labeling_control[dataset_name].setValue(0)
+            continue
+
+        weight_value = generate_config[combo_box_application_control.currentText()]["weights"][dataset_name]
+        double_spin_boxes_weight_labeling_control[dataset_name].setValue(weight_value)
+
+    if "reduction" not in generate_config[combo_box_application_control.currentText()]:
+        combo_box_reduction_labeling_control.setCurrentText("")
+    else:
+        reduction_text = generate_config[combo_box_application_control.currentText()]["reduction"]
+
+        if combo_box_reduction_labeling_control.findText(reduction_text) == -1:
+            combo_box_reduction_labeling_control.addItem(reduction_text)
+            label_config["reductions"].append(reduction_text)
+            updateLabelConfig()
+
+        combo_box_reduction_labeling_control.setCurrentText(reduction_text)
 
     return
 
@@ -130,6 +151,11 @@ def pushButtonAddReductionSlot(combo_box, line_edit):
 def pushButtonSaveSlot():
     for dataset_name in combo_boxes_label_labeling_control.keys():
         generate_config[combo_box_application_control.currentText()]["labels"][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
+
+    for dataset_name in double_spin_boxes_weight_labeling_control.keys():
+        generate_config[combo_box_application_control.currentText()]["weights"][dataset_name] = double_spin_boxes_weight_labeling_control[dataset_name].value()
+
+    generate_config[combo_box_application_control.currentText()]["reduction"] = combo_box_reduction_labeling_control.currentText()
 
     updateGenerateConfig()
 
@@ -291,6 +317,7 @@ def createLabelingControlWidget():
         push_button_remove_label.setText("Remove Label")
 
         combo_boxes_label_labeling_control[dataset["name"]] = combo_box_label
+        double_spin_boxes_weight_labeling_control[dataset["name"]] = double_spin_box_weight
 
     return group_box_labeling_control
 
