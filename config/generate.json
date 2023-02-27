@@ -48,7 +48,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--left",
+            "symbol": "symbol--chevron--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -63,7 +63,7 @@
         "labels": {
             "color": "color--black-yellow",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--left",
+            "symbol": "symbol--chevron--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -1069,7 +1069,7 @@
             "color": "color--blue-white",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--number"
+            "text": "text--40"
         },
         "weights": {
             "color": 0.0,
@@ -1489,7 +1489,7 @@
             "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--curve--left",
-            "text": "text--only"
+            "text": "text--no-u-turn"
         },
         "weights": {
             "color": 0.0,
@@ -1563,7 +1563,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle",
+            "symbol": "symbol--bicycle--red-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -1578,7 +1578,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--bus--red-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -1593,7 +1593,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--black-slash",
             "text": "text--number"
         },
         "weights": {
@@ -1608,7 +1608,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--black-slash",
             "text": "text--number"
         },
         "weights": {
@@ -1623,7 +1623,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--black-slash",
             "text": "text--number"
         },
         "weights": {
@@ -1638,7 +1638,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--triple-grey-slash",
+            "symbol": "symbol--black-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -1653,7 +1653,7 @@
         "labels": {
             "color": "color--white-yellow",
             "shape": "shape--diamond",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--black-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -1668,7 +1668,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--black-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -1684,7 +1684,7 @@
             "color": "color--white-black",
             "shape": "shape--rectangle--tall",
             "symbol": "symbol--triple-grey-slash",
-            "text": "text--number"
+            "text": "text--zone"
         },
         "weights": {
             "color": 0.0,
@@ -3798,7 +3798,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--curved--right",
+            "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
         "weights": {

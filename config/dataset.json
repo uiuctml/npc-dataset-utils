@@ -196,7 +196,10 @@
                 "symbol--human--stairs",
                 "symbol--arrow--left-or--right",
                 "symbol--x--barrier",
-                "symbol--winding-arrow--up"
+                "symbol--winding-arrow--up",
+                "symbol--bicycle--red-slash",
+                "symbol--bus--red-slash",
+                "symbol--black-slash"
             ]
         },
         {
@@ -274,7 +277,9 @@
                 "text--70-kmh",
                 "text--75-kmh",
                 "text--detour--spanish",
-                "text--2"
+                "text--2",
+                "text--no-u-turn",
+                "text--zone"
             ]
         }
     ],
