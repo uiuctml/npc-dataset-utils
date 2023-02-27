@@ -6,7 +6,13 @@
             "symbol": "symbol--car-crash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--both-directions--g1": {
         "labels": {
@@ -15,7 +21,13 @@
             "symbol": "symbol--arrow--double-sided",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--buses--g1": {
         "labels": {
@@ -24,7 +36,13 @@
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-left--g1": {
         "labels": {
@@ -33,7 +51,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-left--g2": {
         "labels": {
@@ -42,7 +66,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-left--g3": {
         "labels": {
@@ -51,7 +81,13 @@
             "symbol": "symbol--chevron--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-left--g4": {
         "labels": {
@@ -60,7 +96,13 @@
             "symbol": "symbol--chevron--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-left--g5": {
         "labels": {
@@ -69,7 +111,13 @@
             "symbol": "symbol--chevron--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-right--g1": {
         "labels": {
@@ -78,7 +126,13 @@
             "symbol": "symbol--chevron--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-right--g3": {
         "labels": {
@@ -87,7 +141,13 @@
             "symbol": "symbol--chevron--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-right--g4": {
         "labels": {
@@ -96,7 +156,13 @@
             "symbol": "symbol--chevron--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-right--g5": {
         "labels": {
@@ -105,7 +171,13 @@
             "symbol": "symbol--chevron--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--chevron-right-unsure--g6": {
         "labels": {
@@ -114,7 +186,13 @@
             "symbol": "symbol--chevron--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--distance--g1": {
         "labels": {
@@ -123,7 +201,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--distance--g2": {
         "labels": {
@@ -132,7 +216,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--distance--g3": {
         "labels": {
@@ -141,7 +231,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--except-bicycles--g1": {
         "labels": {
@@ -150,7 +246,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--free--german"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--extent-of-prohibition-area-both-direction--g1": {
         "labels": {
@@ -159,7 +261,13 @@
             "symbol": "symbol--arrow--double-sided",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--go-left--g1": {
         "labels": {
@@ -168,7 +276,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--go-right--g1": {
         "labels": {
@@ -177,7 +291,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--go-right--g2": {
         "labels": {
@@ -186,7 +306,13 @@
             "symbol": "symbol--arrow--up-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--keep-left--g1": {
         "labels": {
@@ -195,7 +321,13 @@
             "symbol": "symbol--arrow--down-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--keep-right--g1": {
         "labels": {
@@ -204,7 +336,13 @@
             "symbol": "symbol--arrow--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-15--g1": {
         "labels": {
@@ -213,7 +351,13 @@
             "symbol": "symbol--undefined",
             "text": "text--15-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-20--g1": {
         "labels": {
@@ -222,7 +366,13 @@
             "symbol": "symbol--undefined",
             "text": "text--20-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-25--g1": {
         "labels": {
@@ -231,7 +381,13 @@
             "symbol": "symbol--undefined",
             "text": "text--25-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-30--g1": {
         "labels": {
@@ -240,7 +396,13 @@
             "symbol": "symbol--undefined",
             "text": "text--30-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-35--g1": {
         "labels": {
@@ -249,7 +411,13 @@
             "symbol": "symbol--undefined",
             "text": "text--35-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-40--g1": {
         "labels": {
@@ -258,7 +426,13 @@
             "symbol": "symbol--undefined",
             "text": "text--40-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-45--g1": {
         "labels": {
@@ -267,7 +441,13 @@
             "symbol": "symbol--undefined",
             "text": "text--45-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-50--g1": {
         "labels": {
@@ -276,7 +456,13 @@
             "symbol": "symbol--undefined",
             "text": "text--50-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-55--g1": {
         "labels": {
@@ -285,7 +471,13 @@
             "symbol": "symbol--undefined",
             "text": "text--55-mph"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-70--g1": {
         "labels": {
@@ -294,7 +486,13 @@
             "symbol": "symbol--undefined",
             "text": "text--70-kmh"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--maximum-speed-limit-75--g1": {
         "labels": {
@@ -303,7 +501,13 @@
             "symbol": "symbol--undefined",
             "text": "text--75-kmh"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--obstacle-delineator--g1": {
         "labels": {
@@ -312,7 +516,13 @@
             "symbol": "symbol--chevron--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--obstacle-delineator--g2": {
         "labels": {
@@ -321,7 +531,13 @@
             "symbol": "symbol--stripe--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--one-direction-left--g1": {
         "labels": {
@@ -330,7 +546,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--one-direction-right--g1": {
         "labels": {
@@ -339,7 +561,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--pass-right--g1": {
         "labels": {
@@ -348,7 +576,13 @@
             "symbol": "symbol--arrow--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--priority-route-at-intersection--g1": {
         "labels": {
@@ -357,7 +591,13 @@
             "symbol": "symbol--priority-route",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--tow-away-zone--g1": {
         "labels": {
@@ -366,7 +606,13 @@
             "symbol": "symbol--towed-car",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--trucks--g1": {
         "labels": {
@@ -375,7 +621,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--trucks-turn-right--g1": {
         "labels": {
@@ -384,7 +636,13 @@
             "symbol": "symbol--vehicle--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--turn-left--g2": {
         "labels": {
@@ -393,7 +651,13 @@
             "symbol": "symbol--curve--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "complementary--turn-right--g2": {
         "labels": {
@@ -402,7 +666,13 @@
             "symbol": "symbol--curve--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--airport--g1": {
         "labels": {
@@ -411,7 +681,13 @@
             "symbol": "symbol--airplane",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--airport--g2": {
         "labels": {
@@ -420,7 +696,13 @@
             "symbol": "symbol--airplane",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--bike-route--g1": {
         "labels": {
@@ -429,7 +711,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--bike-route"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--bus-stop--g1": {
         "labels": {
@@ -438,7 +726,13 @@
             "symbol": "symbol--undefined",
             "text": "text--h"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--camp--g1": {
         "labels": {
@@ -447,7 +741,13 @@
             "symbol": "symbol--camp",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--central-lane--g1": {
         "labels": {
@@ -456,7 +756,13 @@
             "symbol": "symbol--arrow--down",
             "text": "text--central-lane--chinese"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--children--g1": {
         "labels": {
@@ -465,7 +771,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--dead-end--g1": {
         "labels": {
@@ -474,7 +786,13 @@
             "symbol": "symbol--dead-end",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--dead-end-except-bicycles--g1": {
         "labels": {
@@ -483,7 +801,13 @@
             "symbol": "symbol--rectangle--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--disabled-persons--g1": {
         "labels": {
@@ -492,7 +816,13 @@
             "symbol": "symbol--disabled-person",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--emergency-facility--g2": {
         "labels": {
@@ -501,7 +831,13 @@
             "symbol": "symbol--red-cross",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--end-of-built-up-area--g1": {
         "labels": {
@@ -510,7 +846,13 @@
             "symbol": "symbol--building",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--end-of-limited-access-road--g1": {
         "labels": {
@@ -519,7 +861,13 @@
             "symbol": "symbol--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--end-of-living-street--g1": {
         "labels": {
@@ -528,7 +876,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--end-of-motorway--g1": {
         "labels": {
@@ -537,7 +891,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--end-of-pedestrians-only--g2": {
         "labels": {
@@ -546,7 +906,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--food--g2": {
         "labels": {
@@ -555,7 +921,13 @@
             "symbol": "symbol--utensil",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--gas-station--g1": {
         "labels": {
@@ -564,7 +936,13 @@
             "symbol": "symbol--gasoline-pump",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--gas-station--g3": {
         "labels": {
@@ -573,7 +951,13 @@
             "symbol": "symbol--gasoline-pump",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--highway-exit--g1": {
         "labels": {
@@ -582,7 +966,13 @@
             "symbol": "symbol--arrow--up-right",
             "text": "text--exit"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--highway-interstate-route--g2": {
         "labels": {
@@ -591,7 +981,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--hospital--g1": {
         "labels": {
@@ -600,7 +996,13 @@
             "symbol": "symbol--undefined",
             "text": "text--h"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--interstate-route--g1": {
         "labels": {
@@ -609,7 +1011,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--limited-access-road--g1": {
         "labels": {
@@ -618,7 +1026,13 @@
             "symbol": "symbol--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--living-street--g1": {
         "labels": {
@@ -627,7 +1041,13 @@
             "symbol": "symbol--human--vehicle--house",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--lodging--g1": {
         "labels": {
@@ -636,7 +1056,13 @@
             "symbol": "symbol--lodging",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--minimum-speed-40--g1": {
         "labels": {
@@ -645,7 +1071,13 @@
             "symbol": "symbol--undefined",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--motorway--g1": {
         "labels": {
@@ -654,7 +1086,13 @@
             "symbol": "symbol--motorway",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--no-parking--g3": {
         "labels": {
@@ -663,7 +1101,13 @@
             "symbol": "symbol--slash",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g1": {
         "labels": {
@@ -672,7 +1116,13 @@
             "symbol": "symbol--undefined",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g2": {
         "labels": {
@@ -681,7 +1131,13 @@
             "symbol": "symbol--hat",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g3": {
         "labels": {
@@ -690,7 +1146,13 @@
             "symbol": "symbol--undefined",
             "text": "text--e"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g45": {
         "labels": {
@@ -699,7 +1161,13 @@
             "symbol": "symbol--undefined",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g5": {
         "labels": {
@@ -708,7 +1176,13 @@
             "symbol": "symbol--undefined",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--parking--g6": {
         "labels": {
@@ -717,7 +1191,13 @@
             "symbol": "symbol--undefined",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--pedestrians-crossing--g1": {
         "labels": {
@@ -726,7 +1206,13 @@
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--pedestrians-crossing--g2": {
         "labels": {
@@ -735,7 +1221,13 @@
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--road-bump--g1": {
         "labels": {
@@ -744,7 +1236,13 @@
             "symbol": "symbol--road-bump",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--safety-area--g2": {
         "labels": {
@@ -753,7 +1251,13 @@
             "symbol": "symbol--safety-area",
             "text": "text--safety-area--chinese"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--stairs--g1": {
         "labels": {
@@ -762,7 +1266,13 @@
             "symbol": "symbol--human--stairs",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--telephone--g1": {
         "labels": {
@@ -771,7 +1281,13 @@
             "symbol": "symbol--telephone",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--telephone--g2": {
         "labels": {
@@ -780,7 +1296,13 @@
             "symbol": "symbol--telephone",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--trailer-camping--g1": {
         "labels": {
@@ -789,7 +1311,13 @@
             "symbol": "symbol--trailer-camping",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "information--tram-bus-stop--g2": {
         "labels": {
@@ -798,7 +1326,13 @@
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "other-sign": {
         "labels": {
@@ -807,7 +1341,13 @@
             "symbol": "symbol--undefined",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--bicycles-only--g1": {
         "labels": {
@@ -816,7 +1356,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--bicycles-only--g2": {
         "labels": {
@@ -825,7 +1371,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--bike-lane"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--bicycles-only--g3": {
         "labels": {
@@ -834,7 +1386,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--bike-lane"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--buses-only--g1": {
         "labels": {
@@ -843,7 +1401,13 @@
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--detour-left--g1": {
         "labels": {
@@ -852,7 +1416,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--detour--spanish"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--do-not-block-intersection--g1": {
         "labels": {
@@ -861,7 +1431,13 @@
             "symbol": "symbol--undefined",
             "text": "text--do-not-block"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--do-not-stop-on-tracks--g1": {
         "labels": {
@@ -870,7 +1446,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-lanes-go-straight-on-left--g1": {
         "labels": {
@@ -879,7 +1461,13 @@
             "symbol": "symbol--arrow--curved--left--straight--arrow--curved--right",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-lanes-go-straight-on-right--g1": {
         "labels": {
@@ -888,7 +1476,13 @@
             "symbol": "symbol--arrow--curved--left--arrow--curved--right--straight",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-lanes-turn-left-no-u-turn--g1": {
         "labels": {
@@ -897,7 +1491,13 @@
             "symbol": "symbol--curve--left",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-lanes-turn-left-or-straight--g1": {
         "labels": {
@@ -906,7 +1506,13 @@
             "symbol": "symbol--arrow--curved--left--arrow--curved--left--straight",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-lanes-turn-right-or-straight--g1": {
         "labels": {
@@ -915,7 +1521,13 @@
             "symbol": "symbol--dual-arrow--curved--right",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-path-bicycles-and-pedestrians--g1": {
         "labels": {
@@ -924,7 +1536,13 @@
             "symbol": "symbol--bicycle--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--dual-path-pedestrians-and-bicycles--g1": {
         "labels": {
@@ -933,7 +1551,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-bicycles-only--g1": {
         "labels": {
@@ -942,7 +1566,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-buses-only--g1": {
         "labels": {
@@ -951,7 +1581,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-maximum-speed-limit-30--g2": {
         "labels": {
@@ -960,7 +1596,13 @@
             "symbol": "symbol--slash",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-maximum-speed-limit-70--g1": {
         "labels": {
@@ -969,7 +1611,13 @@
             "symbol": "symbol--slash",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-maximum-speed-limit-70--g2": {
         "labels": {
@@ -978,7 +1626,13 @@
             "symbol": "symbol--slash",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-no-parking--g1": {
         "labels": {
@@ -987,7 +1641,13 @@
             "symbol": "symbol--triple-grey-slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-priority-road--g1": {
         "labels": {
@@ -996,7 +1656,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-prohibition--g1": {
         "labels": {
@@ -1005,7 +1671,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--end-of-speed-limit-zone--g1": {
         "labels": {
@@ -1014,7 +1686,13 @@
             "symbol": "symbol--triple-grey-slash",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--give-way-to-oncoming-traffic--g1": {
         "labels": {
@@ -1023,7 +1701,13 @@
             "symbol": "symbol--arrow--down--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight--g1": {
         "labels": {
@@ -1032,7 +1716,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight--g3": {
         "labels": {
@@ -1041,7 +1731,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight-or-turn-left--g1": {
         "labels": {
@@ -1050,7 +1746,13 @@
             "symbol": "symbol--arrow--up--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight-or-turn-left--g2": {
         "labels": {
@@ -1059,7 +1761,13 @@
             "symbol": "symbol--arrow--up--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight-or-turn-left--g3": {
         "labels": {
@@ -1068,7 +1776,13 @@
             "symbol": "symbol--arrow--up--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight-or-turn-right--g1": {
         "labels": {
@@ -1077,7 +1791,13 @@
             "symbol": "symbol--arrow--up--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--go-straight-or-turn-right--g3": {
         "labels": {
@@ -1086,7 +1806,13 @@
             "symbol": "symbol--arrow--up--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--height-limit--g1": {
         "labels": {
@@ -1095,7 +1821,13 @@
             "symbol": "symbol--mini-triangle--top--bottom",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-left--g1": {
         "labels": {
@@ -1104,7 +1836,13 @@
             "symbol": "symbol--arrow--down-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-left--g2": {
         "labels": {
@@ -1113,7 +1851,13 @@
             "symbol": "symbol--arrow--down-left",
             "text": "text--keep-left"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-right--g1": {
         "labels": {
@@ -1122,7 +1866,13 @@
             "symbol": "symbol--arrow--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-right--g2": {
         "labels": {
@@ -1131,7 +1881,13 @@
             "symbol": "symbol--arrow--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-right--g4": {
         "labels": {
@@ -1140,7 +1896,13 @@
             "symbol": "symbol--keep-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--keep-right--g6": {
         "labels": {
@@ -1149,7 +1911,13 @@
             "symbol": "symbol--arrow--truck-back",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--lane-control--g1": {
         "labels": {
@@ -1158,7 +1926,13 @@
             "symbol": "symbol--undefined",
             "text": "text--left-lane-must-turn-left"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--left-turn-yield-on-green--g1": {
         "labels": {
@@ -1167,7 +1941,13 @@
             "symbol": "symbol--green-circle",
             "text": "text--left-turn-yield-on-green"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-10--g1": {
         "labels": {
@@ -1176,7 +1956,13 @@
             "symbol": "symbol--undefined",
             "text": "text--10"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-100--g1": {
         "labels": {
@@ -1185,7 +1971,13 @@
             "symbol": "symbol--undefined",
             "text": "text--100"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-100--g3": {
         "labels": {
@@ -1194,7 +1986,13 @@
             "symbol": "symbol--undefined",
             "text": "text--maximum--100"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-110--g1": {
         "labels": {
@@ -1203,7 +2001,13 @@
             "symbol": "symbol--undefined",
             "text": "text--110"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-120--g1": {
         "labels": {
@@ -1212,7 +2016,13 @@
             "symbol": "symbol--undefined",
             "text": "text--120"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-15--g1": {
         "labels": {
@@ -1221,7 +2031,13 @@
             "symbol": "symbol--undefined",
             "text": "text--15"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-20--g1": {
         "labels": {
@@ -1230,7 +2046,13 @@
             "symbol": "symbol--undefined",
             "text": "text--20"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-25--g1": {
         "labels": {
@@ -1239,7 +2061,13 @@
             "symbol": "symbol--undefined",
             "text": "text--25"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-25--g2": {
         "labels": {
@@ -1248,7 +2076,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--25"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-30--g1": {
         "labels": {
@@ -1257,7 +2091,13 @@
             "symbol": "symbol--undefined",
             "text": "text--30"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-30--g3": {
         "labels": {
@@ -1266,7 +2106,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--30"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-35--g2": {
         "labels": {
@@ -1275,7 +2121,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--35"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-40--g1": {
         "labels": {
@@ -1284,7 +2136,13 @@
             "symbol": "symbol--undefined",
             "text": "text--40"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-40--g3": {
         "labels": {
@@ -1293,7 +2151,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--40"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-40--g6": {
         "labels": {
@@ -1302,7 +2166,13 @@
             "symbol": "symbol--undefined",
             "text": "text--minimum--40"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-45--g1": {
         "labels": {
@@ -1311,7 +2181,13 @@
             "symbol": "symbol--undefined",
             "text": "text--45"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-45--g3": {
         "labels": {
@@ -1320,7 +2196,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--45"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-5--g1": {
         "labels": {
@@ -1329,7 +2211,13 @@
             "symbol": "symbol--undefined",
             "text": "text--5"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-50--g1": {
         "labels": {
@@ -1338,7 +2226,13 @@
             "symbol": "symbol--undefined",
             "text": "text--50"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-50--g6": {
         "labels": {
@@ -1347,7 +2241,13 @@
             "symbol": "symbol--undefined",
             "text": "text--maximum--50"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-55--g2": {
         "labels": {
@@ -1356,7 +2256,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--55"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-60--g1": {
         "labels": {
@@ -1365,7 +2271,13 @@
             "symbol": "symbol--undefined",
             "text": "text--60"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-65--g2": {
         "labels": {
@@ -1374,7 +2286,13 @@
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--65"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-70--g1": {
         "labels": {
@@ -1383,7 +2301,13 @@
             "symbol": "symbol--undefined",
             "text": "text--70"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-80--g1": {
         "labels": {
@@ -1392,7 +2316,13 @@
             "symbol": "symbol--undefined",
             "text": "text--80"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-90--g1": {
         "labels": {
@@ -1401,7 +2331,13 @@
             "symbol": "symbol--undefined",
             "text": "text--90"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-led-100--g1": {
         "labels": {
@@ -1410,7 +2346,13 @@
             "symbol": "symbol--undefined",
             "text": "text--100"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-led-60--g1": {
         "labels": {
@@ -1419,7 +2361,13 @@
             "symbol": "symbol--undefined",
             "text": "text--60"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--maximum-speed-limit-led-80--g1": {
         "labels": {
@@ -1428,7 +2376,13 @@
             "symbol": "symbol--undefined",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--minimum-safe-distance--g1": {
         "labels": {
@@ -1437,7 +2391,13 @@
             "symbol": "symbol--dual-vehicle",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--mopeds-and-bicycles-only--g1": {
         "labels": {
@@ -1446,7 +2406,13 @@
             "symbol": "symbol--motocycle--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-bicycles--g1": {
         "labels": {
@@ -1455,7 +2421,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-bicycles--g2": {
         "labels": {
@@ -1464,7 +2436,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-bicycles--g3": {
         "labels": {
@@ -1473,7 +2451,13 @@
             "symbol": "symbol--bicycle--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-buses--g3": {
         "labels": {
@@ -1482,7 +2466,13 @@
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-entry--g1": {
         "labels": {
@@ -1491,7 +2481,13 @@
             "symbol": "symbol--rectangle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-hawkers--g1": {
         "labels": {
@@ -1500,7 +2496,13 @@
             "symbol": "symbol--human--table--parasols",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-heavy-goods-vehicles--g1": {
         "labels": {
@@ -1509,7 +2511,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-heavy-goods-vehicles--g2": {
         "labels": {
@@ -1518,7 +2526,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-heavy-goods-vehicles--g4": {
         "labels": {
@@ -1527,7 +2541,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-heavy-goods-vehicles--g5": {
         "labels": {
@@ -1536,7 +2556,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-heavy-goods-vehicles-or-buses--g1": {
         "labels": {
@@ -1545,7 +2571,13 @@
             "symbol": "symbol--box-truck--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-left-turn--g1": {
         "labels": {
@@ -1554,7 +2586,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-left-turn--g2": {
         "labels": {
@@ -1563,7 +2601,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-left-turn--g3": {
         "labels": {
@@ -1572,7 +2616,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-mopeds-or-bicycles--g1": {
         "labels": {
@@ -1581,7 +2631,13 @@
             "symbol": "symbol--motocycle--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motor-vehicle-trailers--g1": {
         "labels": {
@@ -1590,7 +2646,13 @@
             "symbol": "symbol--vehicle-trailer",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motor-vehicles--g1": {
         "labels": {
@@ -1599,7 +2661,13 @@
             "symbol": "symbol--motorcycle--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motor-vehicles--g4": {
         "labels": {
@@ -1608,7 +2676,13 @@
             "symbol": "symbol--motorcycle--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g1": {
         "labels": {
@@ -1617,7 +2691,13 @@
             "symbol": "symbol--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g2": {
         "labels": {
@@ -1626,7 +2706,13 @@
             "symbol": "symbol--vehicle-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motorcycles--g1": {
         "labels": {
@@ -1635,7 +2721,13 @@
             "symbol": "symbol--human--motorcycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-motorcycles--g2": {
         "labels": {
@@ -1644,7 +2736,13 @@
             "symbol": "symbol--motorcycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-overtaking--g1": {
         "labels": {
@@ -1653,7 +2751,13 @@
             "symbol": "symbol--dual-vehicle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-overtaking--g2": {
         "labels": {
@@ -1662,7 +2766,13 @@
             "symbol": "symbol--arrow-overtaking",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-overtaking--g4": {
         "labels": {
@@ -1671,7 +2781,13 @@
             "symbol": "symbol--dual-vehicle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-overtaking--g5": {
         "labels": {
@@ -1680,7 +2796,13 @@
             "symbol": "symbol--dual-vehicle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-overtaking-by-heavy-goods-vehicles--g1": {
         "labels": {
@@ -1689,7 +2811,13 @@
             "symbol": "symbol--vehicle--heavey-goods",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking--g1": {
         "labels": {
@@ -1698,7 +2826,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking--g2": {
         "labels": {
@@ -1707,7 +2841,13 @@
             "symbol": "symbol--slash",
             "text": "text--p"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking--g5": {
         "labels": {
@@ -1716,7 +2856,13 @@
             "symbol": "symbol--slash",
             "text": "text--e"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking-or-no-stopping--g1": {
         "labels": {
@@ -1725,7 +2871,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-parking-or-no-stopping"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking-or-no-stopping--g2": {
         "labels": {
@@ -1734,7 +2886,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-parking-or-no-stopping"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-parking-or-no-stopping--g3": {
         "labels": {
@@ -1743,7 +2901,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-parking-or-no-stopping"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-pedestrians--g1": {
         "labels": {
@@ -1752,7 +2916,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-pedestrians--g2": {
         "labels": {
@@ -1761,7 +2931,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-pedestrians--g3": {
         "labels": {
@@ -1770,7 +2946,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-pedestrians-or-bicycles--g1": {
         "labels": {
@@ -1779,7 +2961,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-right-turn--g1": {
         "labels": {
@@ -1788,7 +2976,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-right-turn--g2": {
         "labels": {
@@ -1797,7 +2991,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-right-turn--g3": {
         "labels": {
@@ -1806,7 +3006,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-stopping--g15": {
         "labels": {
@@ -1815,7 +3021,13 @@
             "symbol": "symbol--x",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-stopping--g2": {
         "labels": {
@@ -1824,7 +3036,13 @@
             "symbol": "symbol--x",
             "text": "text--e"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-stopping--g4": {
         "labels": {
@@ -1833,7 +3051,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-parking-or-no-stopping"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-stopping--g5": {
         "labels": {
@@ -1842,7 +3066,13 @@
             "symbol": "symbol--slash",
             "text": "text--s"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-stopping--g8": {
         "labels": {
@@ -1851,7 +3081,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-straight-through--g1": {
         "labels": {
@@ -1860,7 +3096,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-straight-through--g2": {
         "labels": {
@@ -1869,7 +3111,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-turn-on-red--g1": {
         "labels": {
@@ -1878,7 +3126,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-turn-on-red"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-turn-on-red--g2": {
         "labels": {
@@ -1887,7 +3141,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-turn-on-red"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-turn-on-red--g3": {
         "labels": {
@@ -1896,7 +3156,13 @@
             "symbol": "symbol--circle",
             "text": "text--no-turn-on-red"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-turns--g1": {
         "labels": {
@@ -1905,7 +3171,13 @@
             "symbol": "symbol--undefined",
             "text": "text--no-turn"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-u-turn--g1": {
         "labels": {
@@ -1914,7 +3186,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-u-turn--g2": {
         "labels": {
@@ -1923,7 +3201,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-u-turn--g3": {
         "labels": {
@@ -1932,7 +3216,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--no-vehicles-carrying-dangerous-goods--g1": {
         "labels": {
@@ -1941,7 +3231,13 @@
             "symbol": "symbol--vehicle--dangerous-goods",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-left--g1": {
         "labels": {
@@ -1950,7 +3246,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-left--g2": {
         "labels": {
@@ -1959,7 +3261,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--one-way"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-left--g3": {
         "labels": {
@@ -1968,7 +3276,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--one-way"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-right--g1": {
         "labels": {
@@ -1977,7 +3291,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-right--g2": {
         "labels": {
@@ -1986,7 +3306,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--one-way"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-right--g3": {
         "labels": {
@@ -1995,7 +3321,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--one-way"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--one-way-straight--g1": {
         "labels": {
@@ -2004,7 +3336,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--parking-restrictions--g2": {
         "labels": {
@@ -2013,7 +3351,13 @@
             "symbol": "symbol--undefined",
             "text": "text--2"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--pass-on-either-side--g1": {
         "labels": {
@@ -2022,7 +3366,13 @@
             "symbol": "symbol--arrow--down-left--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--pass-on-either-side--g2": {
         "labels": {
@@ -2031,7 +3381,13 @@
             "symbol": "symbol--arrow--double-sided",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--passing-lane-ahead--g1": {
         "labels": {
@@ -2040,7 +3396,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--pedestrians-only--g1": {
         "labels": {
@@ -2049,7 +3411,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--pedestrians-only--g2": {
         "labels": {
@@ -2058,7 +3426,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--priority-over-oncoming-vehicles--g1": {
         "labels": {
@@ -2067,7 +3441,13 @@
             "symbol": "symbol--arrow--down--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--priority-road--g4": {
         "labels": {
@@ -2076,7 +3456,13 @@
             "symbol": "symbol--diamond",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--radar-enforced--g1": {
         "labels": {
@@ -2085,7 +3471,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--reversible-lanes--g2": {
         "labels": {
@@ -2094,7 +3486,13 @@
             "symbol": "symbol--arrow--curved--left--arrow--curved--right",
             "text": "text--center-lane-only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--road-closed--g1": {
         "labels": {
@@ -2103,7 +3501,13 @@
             "symbol": "symbol--x",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--road-closed--g2": {
         "labels": {
@@ -2112,7 +3516,13 @@
             "symbol": "symbol--undefined",
             "text": "text--road-closed"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--road-closed-to-vehicles--g1": {
         "labels": {
@@ -2121,7 +3531,13 @@
             "symbol": "symbol--slash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--road-closed-to-vehicles--g3": {
         "labels": {
@@ -2130,7 +3546,13 @@
             "symbol": "symbol--undefined",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--roundabout--g1": {
         "labels": {
@@ -2139,7 +3561,13 @@
             "symbol": "symbol--roundabout",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--roundabout--g2": {
         "labels": {
@@ -2148,7 +3576,13 @@
             "symbol": "symbol--roundabout",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--shared-path-bicycles-and-pedestrians--g1": {
         "labels": {
@@ -2157,7 +3591,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--shared-path-pedestrians-and-bicycles--g1": {
         "labels": {
@@ -2166,7 +3606,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop--g1": {
         "labels": {
@@ -2175,7 +3621,13 @@
             "symbol": "symbol--undefined",
             "text": "text--stop"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop--g10": {
         "labels": {
@@ -2184,7 +3636,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop--g2": {
         "labels": {
@@ -2193,7 +3651,13 @@
             "symbol": "symbol--undefined",
             "text": "text--stop--japanese"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop-here-on-red-or-flashing-light--g1": {
         "labels": {
@@ -2202,7 +3666,13 @@
             "symbol": "symbol--arrow--down-left",
             "text": "text--stop-here-on-red"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop-here-on-red-or-flashing-light--g2": {
         "labels": {
@@ -2211,7 +3681,13 @@
             "symbol": "symbol--arrow--curved--down-left",
             "text": "text--stop-here-on-red"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--stop-signals--g1": {
         "labels": {
@@ -2220,7 +3696,13 @@
             "symbol": "symbol--bar--horizontal",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--text-four-lines--g1": {
         "labels": {
@@ -2229,7 +3711,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--triple-lanes-turn-left-center-lane--g1": {
         "labels": {
@@ -2238,7 +3726,13 @@
             "symbol": "symbol--triple-arrow--center-lane-turn-left",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--truck-speed-limit-60--g1": {
         "labels": {
@@ -2247,7 +3741,13 @@
             "symbol": "symbol--undefined",
             "text": "text--60"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-left--g1": {
         "labels": {
@@ -2256,7 +3756,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-left--g2": {
         "labels": {
@@ -2265,7 +3771,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-left--g3": {
         "labels": {
@@ -2274,7 +3786,13 @@
             "symbol": "symbol--arrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-left-ahead--g1": {
         "labels": {
@@ -2283,7 +3801,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-right--g1": {
         "labels": {
@@ -2292,7 +3816,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-right--g2": {
         "labels": {
@@ -2301,7 +3831,13 @@
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-right--g3": {
         "labels": {
@@ -2310,7 +3846,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--only"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-right-ahead--g1": {
         "labels": {
@@ -2319,7 +3861,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turn-right-ahead--g2": {
         "labels": {
@@ -2328,7 +3876,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--turning-vehicles-yield-to-pedestrians--g1": {
         "labels": {
@@ -2337,7 +3891,13 @@
             "symbol": "symbol--human--nabla",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--u-turn--g1": {
         "labels": {
@@ -2346,7 +3906,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--weight-limit--g1": {
         "labels": {
@@ -2355,7 +3921,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--weight-limit-with-trucks--g1": {
         "labels": {
@@ -2364,7 +3936,13 @@
             "symbol": "symbol--vehicle",
             "text": "text--weight-limit"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--width-limit--g1": {
         "labels": {
@@ -2373,7 +3951,13 @@
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--wrong-way--g1": {
         "labels": {
@@ -2382,7 +3966,13 @@
             "symbol": "symbol--undefined",
             "text": "text--wrong-way"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "regulatory--yield--g1": {
         "labels": {
@@ -2391,7 +3981,13 @@
             "symbol": "symbol--nabla",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--accidental-area-unsure--g2": {
         "labels": {
@@ -2400,7 +3996,13 @@
             "symbol": "symbol--car-crash",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--added-lane-right--g1": {
         "labels": {
@@ -2409,7 +4011,13 @@
             "symbol": "symbol--added-lane-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--bicycles-crossing--g1": {
         "labels": {
@@ -2418,7 +4026,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--bicycles-crossing--g2": {
         "labels": {
@@ -2427,7 +4041,13 @@
             "symbol": "symbol--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--bicycles-crossing--g3": {
         "labels": {
@@ -2436,7 +4056,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--bus-stop-ahead--g3": {
         "labels": {
@@ -2445,7 +4071,13 @@
             "symbol": "symbol--human--bus",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--children--g1": {
         "labels": {
@@ -2454,7 +4086,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--children--g2": {
         "labels": {
@@ -2463,7 +4101,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--crossroads--g1": {
         "labels": {
@@ -2472,7 +4116,13 @@
             "symbol": "symbol--crossroads",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--crossroads--g3": {
         "labels": {
@@ -2481,7 +4131,13 @@
             "symbol": "symbol--cross",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--crossroads-with-priority-to-the-right--g1": {
         "labels": {
@@ -2490,7 +4146,13 @@
             "symbol": "symbol--x",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--curve-left--g1": {
         "labels": {
@@ -2499,7 +4161,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--curve-left--g2": {
         "labels": {
@@ -2508,7 +4176,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--curve-right--g1": {
         "labels": {
@@ -2517,7 +4191,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--curve-right--g2": {
         "labels": {
@@ -2526,7 +4206,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--dip--g2": {
         "labels": {
@@ -2535,7 +4221,13 @@
             "symbol": "symbol--dip",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--divided-highway-ends--g1": {
         "labels": {
@@ -2544,7 +4236,13 @@
             "symbol": "symbol--divided-highway-ends",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--divided-highway-ends--g2": {
         "labels": {
@@ -2553,7 +4251,13 @@
             "symbol": "symbol--divided-highway-ends",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--domestic-animals--g1": {
         "labels": {
@@ -2562,7 +4266,13 @@
             "symbol": "symbol--animal",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--domestic-animals--g3": {
         "labels": {
@@ -2571,7 +4281,13 @@
             "symbol": "symbol--animal",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-curve-first-left--g1": {
         "labels": {
@@ -2580,7 +4296,13 @@
             "symbol": "symbol--double-curve--first-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-curve-first-left--g2": {
         "labels": {
@@ -2589,7 +4311,13 @@
             "symbol": "symbol--double-curve--first-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-curve-first-right--g1": {
         "labels": {
@@ -2598,7 +4326,13 @@
             "symbol": "symbol--double-curve--first-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-curve-first-right--g2": {
         "labels": {
@@ -2607,7 +4341,13 @@
             "symbol": "symbol--double-curve--first-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-reverse-curve-right--g1": {
         "labels": {
@@ -2616,7 +4356,13 @@
             "symbol": "symbol--dual-arrow--reverse-curve--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--double-turn-first-right--g1": {
         "labels": {
@@ -2625,7 +4371,13 @@
             "symbol": "symbol--double-turn--first-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--dual-lanes-right-turn-or-go-straight--g1": {
         "labels": {
@@ -2634,7 +4386,13 @@
             "symbol": "symbol--arrow--up--dual-arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--emergency-vehicles--g1": {
         "labels": {
@@ -2643,7 +4401,13 @@
             "symbol": "symbol--truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--equestrians-crossing--g2": {
         "labels": {
@@ -2652,7 +4416,13 @@
             "symbol": "symbol--human--horse",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--falling-rocks-or-debris-right--g1": {
         "labels": {
@@ -2661,7 +4431,13 @@
             "symbol": "symbol--falling-rocks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--falling-rocks-or-debris-right--g2": {
         "labels": {
@@ -2670,7 +4446,13 @@
             "symbol": "symbol--vehicle-back--falling-rocks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--falling-rocks-or-debris-right--g4": {
         "labels": {
@@ -2679,7 +4461,13 @@
             "symbol": "symbol--falling-rocks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--flaggers-in-road--g1": {
         "labels": {
@@ -2688,7 +4476,13 @@
             "symbol": "symbol--human--sign",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--hairpin-curve-left--g1": {
         "labels": {
@@ -2697,7 +4491,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--hairpin-curve-left--g3": {
         "labels": {
@@ -2706,7 +4506,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--hairpin-curve-right--g1": {
         "labels": {
@@ -2715,7 +4521,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--hairpin-curve-right--g4": {
         "labels": {
@@ -2724,7 +4536,13 @@
             "symbol": "symbol--arrow--u-shape--down",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--height-restriction--g2": {
         "labels": {
@@ -2733,7 +4551,13 @@
             "symbol": "symbol--arrow--down--arrow--up",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--horizontal-alignment-left--g1": {
         "labels": {
@@ -2742,7 +4566,13 @@
             "symbol": "symbol--horizontal-alignment-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--horizontal-alignment-right--g1": {
         "labels": {
@@ -2751,7 +4581,13 @@
             "symbol": "symbol--horizontal-alignment-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--horizontal-alignment-right--g3": {
         "labels": {
@@ -2760,7 +4596,13 @@
             "symbol": "symbol--horizontal-alignment-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-acute-left--g1": {
         "labels": {
@@ -2769,7 +4611,13 @@
             "symbol": "symbol--juction--road-acute-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-acute-right--g1": {
         "labels": {
@@ -2778,7 +4626,13 @@
             "symbol": "symbol--juction--road-acute-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-perpendicular-left--g1": {
         "labels": {
@@ -2787,7 +4641,13 @@
             "symbol": "symbol--junction--road-perpendicular-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-perpendicular-left--g3": {
         "labels": {
@@ -2796,7 +4656,13 @@
             "symbol": "symbol--junction--road-perpendicular-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-perpendicular-left--g4": {
         "labels": {
@@ -2805,7 +4671,13 @@
             "symbol": "symbol--junction--road-perpendicular-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-perpendicular-right--g1": {
         "labels": {
@@ -2814,7 +4686,13 @@
             "symbol": "symbol--junction--road-perpendicular-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--junction-with-a-side-road-perpendicular-right--g3": {
         "labels": {
@@ -2823,7 +4701,13 @@
             "symbol": "symbol--junction--road-perpendicular-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--kangaloo-crossing--g1": {
         "labels": {
@@ -2832,7 +4716,13 @@
             "symbol": "symbol--kangaroo",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--loop-270-degree--g1": {
         "labels": {
@@ -2841,7 +4731,13 @@
             "symbol": "symbol--loop-270-degree",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--narrow-bridge--g1": {
         "labels": {
@@ -2850,7 +4746,13 @@
             "symbol": "symbol--narrow-bridge",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--narrow-bridge--g3": {
         "labels": {
@@ -2859,7 +4761,13 @@
             "symbol": "symbol--narrow-bridge",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--offset-roads--g3": {
         "labels": {
@@ -2868,7 +4776,13 @@
             "symbol": "symbol--offset-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--other-danger--g1": {
         "labels": {
@@ -2877,7 +4791,13 @@
             "symbol": "symbol--exclamation-mark",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--other-danger--g3": {
         "labels": {
@@ -2886,7 +4806,13 @@
             "symbol": "symbol--exclamation-mark",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pass-left-or-right--g1": {
         "labels": {
@@ -2895,7 +4821,13 @@
             "symbol": "symbol--arrow--left-or--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pass-left-or-right--g2": {
         "labels": {
@@ -2904,7 +4836,13 @@
             "symbol": "symbol--arrow--down-left--arrow--down-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrian-stumble-train--g1": {
         "labels": {
@@ -2913,7 +4851,13 @@
             "symbol": "symbol--human--train-font",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g1": {
         "labels": {
@@ -2922,7 +4866,13 @@
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g10": {
         "labels": {
@@ -2931,7 +4881,13 @@
             "symbol": "symbol--leg",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g11": {
         "labels": {
@@ -2940,7 +4896,13 @@
             "symbol": "symbol--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g12": {
         "labels": {
@@ -2949,7 +4911,13 @@
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g4": {
         "labels": {
@@ -2958,7 +4926,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g5": {
         "labels": {
@@ -2967,7 +4941,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--pedestrians-crossing--g9": {
         "labels": {
@@ -2976,7 +4956,13 @@
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--playground--g1": {
         "labels": {
@@ -2985,7 +4971,13 @@
             "symbol": "symbol--human--ball",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--playground--g3": {
         "labels": {
@@ -2994,7 +4986,13 @@
             "symbol": "symbol--human--seesaw",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing--g1": {
         "labels": {
@@ -3003,7 +5001,13 @@
             "symbol": "symbol--x",
             "text": "text--r"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing--g3": {
         "labels": {
@@ -3012,7 +5016,13 @@
             "symbol": "symbol--railroad-crossing",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing--g4": {
         "labels": {
@@ -3021,7 +5031,13 @@
             "symbol": "symbol--x",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-with-barriers--g1": {
         "labels": {
@@ -3030,7 +5046,13 @@
             "symbol": "symbol--fence",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-with-barriers--g2": {
         "labels": {
@@ -3039,7 +5061,13 @@
             "symbol": "symbol--x--barrier",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-with-barriers--g4": {
         "labels": {
@@ -3048,7 +5076,13 @@
             "symbol": "symbol--fence",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-without-barriers--g1": {
         "labels": {
@@ -3057,7 +5091,13 @@
             "symbol": "symbol--train-front",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-without-barriers--g3": {
         "labels": {
@@ -3066,7 +5106,13 @@
             "symbol": "symbol--train--steam",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-crossing-without-barriers--g4": {
         "labels": {
@@ -3075,7 +5121,13 @@
             "symbol": "symbol--train--steam",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-intersection--g3": {
         "labels": {
@@ -3084,7 +5136,13 @@
             "symbol": "symbol--railroad-intersection",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--railroad-intersection--g4": {
         "labels": {
@@ -3093,7 +5151,13 @@
             "symbol": "symbol--railroad-intersection",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--restricted-zone--g1": {
         "labels": {
@@ -3102,7 +5166,13 @@
             "symbol": "symbol--undefined",
             "text": "text--r"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-bump--g1": {
         "labels": {
@@ -3111,7 +5181,13 @@
             "symbol": "symbol--bump",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-bump--g2": {
         "labels": {
@@ -3120,7 +5196,13 @@
             "symbol": "symbol--bump",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows--g1": {
         "labels": {
@@ -3129,7 +5211,13 @@
             "symbol": "symbol--road-narrow",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows--g2": {
         "labels": {
@@ -3138,7 +5226,13 @@
             "symbol": "symbol--road-narrow",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows-left--g1": {
         "labels": {
@@ -3147,7 +5241,13 @@
             "symbol": "symbol--road-narrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows-left--g2": {
         "labels": {
@@ -3156,7 +5256,13 @@
             "symbol": "symbol--road-narrow--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows-right--g1": {
         "labels": {
@@ -3165,7 +5271,13 @@
             "symbol": "symbol--road-narrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-narrows-right--g2": {
         "labels": {
@@ -3174,7 +5286,13 @@
             "symbol": "symbol--road-narrow--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-widens--g1": {
         "labels": {
@@ -3183,7 +5301,13 @@
             "symbol": "symbol--road-widen",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--road-widens-right--g1": {
         "labels": {
@@ -3192,7 +5316,13 @@
             "symbol": "symbol--road-widen--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roadworks--g1": {
         "labels": {
@@ -3201,7 +5331,13 @@
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roadworks--g2": {
         "labels": {
@@ -3210,7 +5346,13 @@
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roadworks--g3": {
         "labels": {
@@ -3219,7 +5361,13 @@
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roadworks--g4": {
         "labels": {
@@ -3228,7 +5376,13 @@
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roadworks--g6": {
         "labels": {
@@ -3237,7 +5391,13 @@
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roundabout--g1": {
         "labels": {
@@ -3246,7 +5406,13 @@
             "symbol": "symbol--roundabout",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--roundabout--g25": {
         "labels": {
@@ -3255,7 +5421,13 @@
             "symbol": "symbol--roundabout",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--school-zone--g2": {
         "labels": {
@@ -3264,7 +5436,13 @@
             "symbol": "symbol--human",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--shared-lane-motorcycles-bicycles--g1": {
         "labels": {
@@ -3273,7 +5451,13 @@
             "symbol": "symbol--vehicle-front--human",
             "text": "text--share-the-road"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--slippery-motorcycles--g1": {
         "labels": {
@@ -3282,7 +5466,13 @@
             "symbol": "symbol--slippery-motocycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--slippery-road-surface--g1": {
         "labels": {
@@ -3291,7 +5481,13 @@
             "symbol": "symbol--slippery-road-surface",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--slippery-road-surface--g2": {
         "labels": {
@@ -3300,7 +5496,13 @@
             "symbol": "symbol--slippery-road-surface",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--steep-ascent--g7": {
         "labels": {
@@ -3309,7 +5511,13 @@
             "symbol": "symbol--steep-ascent",
             "text": "text--number"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--stop-ahead--g9": {
         "labels": {
@@ -3318,7 +5526,13 @@
             "symbol": "symbol--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--t-roads--g1": {
         "labels": {
@@ -3327,7 +5541,13 @@
             "symbol": "symbol--t-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--t-roads--g2": {
         "labels": {
@@ -3336,7 +5556,13 @@
             "symbol": "symbol--t-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--texts--g1": {
         "labels": {
@@ -3345,7 +5571,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--texts--g2": {
         "labels": {
@@ -3354,7 +5586,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--texts--g3": {
         "labels": {
@@ -3363,7 +5601,13 @@
             "symbol": "symbol--undefined",
             "text": ""
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-merges-left--g1": {
         "labels": {
@@ -3372,7 +5616,13 @@
             "symbol": "symbol--traffic-merges-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-merges-left--g2": {
         "labels": {
@@ -3381,7 +5631,13 @@
             "symbol": "symbol--traffic-merges-left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-merges-right--g1": {
         "labels": {
@@ -3390,7 +5646,13 @@
             "symbol": "symbol--traffic-merges-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-merges-right--g2": {
         "labels": {
@@ -3399,7 +5661,13 @@
             "symbol": "symbol--traffic-merges-right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-signals--g1": {
         "labels": {
@@ -3408,7 +5676,13 @@
             "symbol": "symbol--traffic-signals",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-signals--g2": {
         "labels": {
@@ -3417,7 +5691,13 @@
             "symbol": "symbol--traffic-signals",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-signals--g3": {
         "labels": {
@@ -3426,7 +5706,13 @@
             "symbol": "symbol--traffic-signals",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--traffic-signals--g4": {
         "labels": {
@@ -3435,7 +5721,13 @@
             "symbol": "symbol--traffic-signals",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--trail-crossing--g2": {
         "labels": {
@@ -3444,7 +5736,13 @@
             "symbol": "symbol--human--bicycle",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--trams-crossing--g1": {
         "labels": {
@@ -3453,7 +5751,13 @@
             "symbol": "symbol--tram",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--trucks-crossing--g1": {
         "labels": {
@@ -3462,7 +5766,13 @@
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--turn-left--g1": {
         "labels": {
@@ -3471,7 +5781,13 @@
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--turn-right--g1": {
         "labels": {
@@ -3480,7 +5796,13 @@
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--turn-right--g2": {
         "labels": {
@@ -3489,7 +5811,13 @@
             "symbol": "symbol--curve--right",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--two-way-traffic--g1": {
         "labels": {
@@ -3498,7 +5826,13 @@
             "symbol": "symbol--arrow--down--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--two-way-traffic--g2": {
         "labels": {
@@ -3507,7 +5841,13 @@
             "symbol": "symbol--arrow--down--arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--uneven-road--g2": {
         "labels": {
@@ -3516,7 +5856,13 @@
             "symbol": "symbol--uneven-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--uneven-road--g6": {
         "labels": {
@@ -3525,7 +5871,13 @@
             "symbol": "symbol--uneven-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--uneven-roads-ahead--g1": {
         "labels": {
@@ -3534,7 +5886,13 @@
             "symbol": "symbol--uneven-road",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--wild-animals--g1": {
         "labels": {
@@ -3543,7 +5901,13 @@
             "symbol": "symbol--deer",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--wild-animals--g4": {
         "labels": {
@@ -3552,7 +5916,13 @@
             "symbol": "symbol--deer",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--winding-road-first-left--g1": {
         "labels": {
@@ -3561,7 +5931,13 @@
             "symbol": "symbol--arrow--up--winding",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--winding-road-first-left--g2": {
         "labels": {
@@ -3570,7 +5946,13 @@
             "symbol": "symbol--arrow--up--winding",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--winding-road-first-right--g1": {
         "labels": {
@@ -3579,7 +5961,13 @@
             "symbol": "symbol--arrow--up--winding",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--winding-road-first-right--g3": {
         "labels": {
@@ -3588,7 +5976,13 @@
             "symbol": "symbol--winding-arrow--up",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--wombat-crossing--g1": {
         "labels": {
@@ -3597,7 +5991,13 @@
             "symbol": "symbol--wombat",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     },
     "warning--y-roads--g1": {
         "labels": {
@@ -3606,6 +6006,12 @@
             "symbol": "symbol--y",
             "text": "text--undefined"
         },
-        "weights": {}
+        "weights": {
+            "color": 0.0,
+            "shape": 0.0,
+            "symbol": 0.0,
+            "text": 0.0
+        },
+        "reduction": ""
     }
 }
