@@ -7,6 +7,7 @@ import os
 import PyQt5.QtCore
 import PyQt5.QtGui
 import PyQt5.QtWidgets
+import random
 
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
@@ -67,6 +68,7 @@ def updateViewerWidget():
         return
 
     file_names_images = sorted(os.listdir(file_path_images))
+    file_names_images = random.sample(file_names_images, len(file_names_images))
 
     for file_name_images in file_names_images:
         file_path_image = os.path.join(header.label_dataset_dir_images, label_text, file_name_images)
