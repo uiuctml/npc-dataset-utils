@@ -242,7 +242,7 @@ def createViewerWidget():
         pixmap = PyQt5.QtGui.QPixmap(header.label_viewer_width, header.label_viewer_height)
         pixmap.fill(PyQt5.QtCore.Qt.black)
         label.setPixmap(pixmap)
-        layout_viewer.addWidget(label, i // header.label_viewer_count_row, i % header.label_viewer_count_row)
+        layout_viewer.addWidget(label, i // header.label_viewer_count_col, i % header.label_viewer_count_col)
 
     return group_box_viewer
 
