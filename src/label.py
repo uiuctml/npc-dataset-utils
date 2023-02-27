@@ -244,6 +244,13 @@ def createLabelingControlWidget():
     push_button_remove_reduction.clicked.connect(functools.partial(pushButtonRemoveReductionSlot, combo_box_reduction_labeling_control))
     push_button_remove_reduction.setText("Remove Reduction")
 
+    if "" not in label_config["reductions"]:
+        label_config["reductions"].insert(0, "")
+        updateLabelConfig()
+
+    for reduction_text in label_config["reductions"]:
+        combo_box_reduction_labeling_control.addItem(reduction_text)
+
     for (i, dataset) in enumerate(label_config["datasets"]):
         combo_box_label = PyQt5.QtWidgets.QComboBox()
         double_spin_box_weight = PyQt5.QtWidgets.QDoubleSpinBox()
