@@ -38,11 +38,11 @@ def updateLabelConfig():
 
 def updateLabelingControlWidget():
     for dataset_name in combo_boxes_label_labeling_control.keys():
-        if dataset_name not in generate_config[combo_box_application_control.currentText()]:
+        if dataset_name not in generate_config[combo_box_application_control.currentText()]["labels"]:
             combo_boxes_label_labeling_control[dataset_name].setCurrentText("")
             continue
 
-        label_text = generate_config[combo_box_application_control.currentText()][dataset_name]
+        label_text = generate_config[combo_box_application_control.currentText()]["labels"][dataset_name]
 
         if combo_boxes_label_labeling_control[dataset_name].findText(label_text) == -1:
             combo_boxes_label_labeling_control[dataset_name].addItem(label_text)
@@ -129,7 +129,7 @@ def pushButtonAddReductionSlot(combo_box, line_edit):
 
 def pushButtonSaveSlot():
     for dataset_name in combo_boxes_label_labeling_control.keys():
-        generate_config[combo_box_application_control.currentText()][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
+        generate_config[combo_box_application_control.currentText()]["labels"][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
 
     updateGenerateConfig()
 

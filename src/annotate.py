@@ -95,17 +95,17 @@ def main():
             for object in annotations["objects"]:
                 if object["label"] not in generate_config.keys():
                     continue
-                elif dataset_name not in generate_config[object["label"]].keys():
+                elif dataset_name not in generate_config[object["label"]]["labels"].keys():
                     logger.log_warn("\"" + object["label"] + "\" does not contain any label for dataset \"" + dataset_name + "\".")
                     object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
-                elif generate_config[object["label"]][dataset_name] == "":
+                elif generate_config[object["label"]]["labels"][dataset_name] == "":
                     logger.log_warn("\"" + object["label"] + "\" contains an empty label for dataset \"" + dataset_name + "\".")
                     object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
-                elif generate_config[object["label"]][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
+                elif generate_config[object["label"]]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_warn("\"" + object["label"] + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
                     object["label"] = dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword
                 else:
-                    object["label"] = generate_config[object["label"]][dataset_name]
+                    object["label"] = generate_config[object["label"]]["labels"][dataset_name]
 
             file_annotations = open(file_path_annotations, "w")
             json.dump(annotations, file_annotations, indent = 2)

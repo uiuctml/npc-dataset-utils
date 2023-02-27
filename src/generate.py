@@ -28,8 +28,8 @@ def main():
 
         label_combined = ""
 
-        for dataset_name in generate_config[dataset_dir_labels].keys():
-            label = generate_config[dataset_dir_labels][dataset_name]
+        for dataset_name in generate_config[dataset_dir_labels]["labels"].keys():
+            label = generate_config[dataset_dir_labels]["labels"][dataset_name]
 
             if label == "":
                 logger.log_warn("\"" + dataset_dir_labels + "\" contains an empty label for dataset \"" + dataset_name + "\".")

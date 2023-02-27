@@ -15,13 +15,13 @@ def main():
     file_generate_config.close()
 
     for label in generate_config.keys():
-        if len(generate_config[label]) == 0:
+        if len(generate_config[label]["labels"]) == 0:
             logger.log_error("\"" + label + "\" does not contain any label.")
         else:
-            for dataset_name in generate_config[label].keys():
-                if generate_config[label][dataset_name] == "":
+            for dataset_name in generate_config[label]["labels"].keys():
+                if generate_config[label]["labels"][dataset_name] == "":
                     logger.log_error("\"" + label + "\" contains an empty label for dataset \"" + dataset_name + "\".")
-                elif generate_config[label][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
+                elif generate_config[label]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_error("\"" + label + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
 
     logger.log_info_raw("\n")
