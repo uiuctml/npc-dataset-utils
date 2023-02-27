@@ -8,10 +8,12 @@ import PyQt5.QtCore
 import PyQt5.QtGui
 import PyQt5.QtWidgets
 import random
+import sys
 
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
-combo_boxes_labeling_control = {}
+combo_box_reduction_labeling_control = PyQt5.QtWidgets.QComboBox()
+combo_boxes_label_labeling_control = {}
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
 
 file_generate_config = open(os.path.join(header.config_dir, header.generate_config_file_name), "r")
@@ -35,22 +37,22 @@ def updateLabelConfig():
     return
 
 def updateLabelingControlWidget():
-    for dataset_name in combo_boxes_labeling_control.keys():
+    for dataset_name in combo_boxes_label_labeling_control.keys():
         if dataset_name not in generate_config[combo_box_application_control.currentText()]:
-            combo_boxes_labeling_control[dataset_name].setCurrentText("")
+            combo_boxes_label_labeling_control[dataset_name].setCurrentText("")
             continue
 
         label_text = generate_config[combo_box_application_control.currentText()][dataset_name]
 
-        if combo_boxes_labeling_control[dataset_name].findText(label_text) == -1:
-            combo_boxes_labeling_control[dataset_name].addItem(label_text)
+        if combo_boxes_label_labeling_control[dataset_name].findText(label_text) == -1:
+            combo_boxes_label_labeling_control[dataset_name].addItem(label_text)
 
             for dataset in label_config["datasets"]:
                 if dataset["name"] == dataset_name:
                     dataset["labels"].append(label_text)
                     updateLabelConfig()
 
-        combo_boxes_labeling_control[dataset_name].setCurrentText(label_text)
+        combo_boxes_label_labeling_control[dataset_name].setCurrentText(label_text)
 
     return
 
@@ -112,9 +114,22 @@ def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
 
     return
 
+def pushButtonAddReductionSlot(combo_box, line_edit):
+    reduction_text = line_edit.text().lower()
+
+    if (combo_box.findText(reduction_text, PyQt5.QtCore.Qt.MatchExactly) >= 0):
+        return
+
+    label_config["reductions"].append(reduction_text)
+    updateLabelConfig()
+
+    combo_box.addItem(reduction_text)
+
+    return
+
 def pushButtonSaveSlot():
-    for dataset_name in combo_boxes_labeling_control.keys():
-        generate_config[combo_box_application_control.currentText()][dataset_name] = combo_boxes_labeling_control[dataset_name].currentText()
+    for dataset_name in combo_boxes_label_labeling_control.keys():
+        generate_config[combo_box_application_control.currentText()][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
 
     updateGenerateConfig()
 
@@ -155,6 +170,19 @@ def pushButtonRemoveLabelSlot(dataset_name, combo_box):
 
     return
 
+def pushButtonRemoveReductionSlot(combo_box):
+    reduction_text = combo_box.currentText()
+
+    if reduction_text == "":
+        return
+
+    label_config["reductions"].remove(reduction_text)
+    updateLabelConfig()
+
+    combo_box.removeItem(combo_box.currentIndex())
+
+    return
+
 def createApplicationControlWidget():
     group_box_application_control = PyQt5.QtWidgets.QGroupBox()
     layout_application_control = PyQt5.QtWidgets.QGridLayout()
@@ -189,17 +217,41 @@ def createApplicationControlWidget():
 
 def createLabelingControlWidget():
     group_box_labeling_control = PyQt5.QtWidgets.QGroupBox()
-    layout_labeling_control = PyQt5.QtWidgets.QGridLayout()
+    group_box_reduction = PyQt5.QtWidgets.QGroupBox()
+    layout_dataset = PyQt5.QtWidgets.QGridLayout()
+    layout_labeling_control = PyQt5.QtWidgets.QVBoxLayout()
+    layout_reduction = PyQt5.QtWidgets.QGridLayout()
+    line_edit_reduction = PyQt5.QtWidgets.QLineEdit()
+    push_button_add_reduction = PyQt5.QtWidgets.QPushButton()
+    push_button_remove_reduction = PyQt5.QtWidgets.QPushButton()
 
     group_box_labeling_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_labeling_control.setLayout(layout_labeling_control)
     group_box_labeling_control.setTitle("Labeling Control")
+    group_box_reduction.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
+    group_box_reduction.setLayout(layout_reduction)
+    group_box_reduction.setTitle("Reduction")
 
-    for dataset in label_config["datasets"]:
-        combo_box = PyQt5.QtWidgets.QComboBox()
-        group_box = PyQt5.QtWidgets.QGroupBox()
-        layout = PyQt5.QtWidgets.QGridLayout()
-        line_edit = PyQt5.QtWidgets.QLineEdit()
+    layout_labeling_control.addLayout(layout_dataset)
+    layout_labeling_control.addWidget(group_box_reduction)
+    layout_reduction.addWidget(combo_box_reduction_labeling_control, 0, 0)
+    layout_reduction.addWidget(line_edit_reduction, 0, 1)
+    layout_reduction.addWidget(push_button_add_reduction, 0, 2)
+    layout_reduction.addWidget(push_button_remove_reduction, 0, 3)
+    line_edit_reduction.setFixedWidth(header.label_line_edit_width)
+    push_button_add_reduction.clicked.connect(functools.partial(pushButtonAddReductionSlot, combo_box_reduction_labeling_control, line_edit_reduction))
+    push_button_add_reduction.setText("Add Reduction")
+    push_button_remove_reduction.clicked.connect(functools.partial(pushButtonRemoveReductionSlot, combo_box_reduction_labeling_control))
+    push_button_remove_reduction.setText("Remove Reduction")
+
+    for (i, dataset) in enumerate(label_config["datasets"]):
+        combo_box_label = PyQt5.QtWidgets.QComboBox()
+        double_spin_box_weight = PyQt5.QtWidgets.QDoubleSpinBox()
+        group_box_label = PyQt5.QtWidgets.QGroupBox()
+        group_box_weight = PyQt5.QtWidgets.QGroupBox()
+        layout_label = PyQt5.QtWidgets.QGridLayout()
+        layout_weight = PyQt5.QtWidgets.QGridLayout()
+        line_edit_label = PyQt5.QtWidgets.QLineEdit()
         push_button_add_label = PyQt5.QtWidgets.QPushButton()
         push_button_remove_label = PyQt5.QtWidgets.QPushButton()
 
@@ -208,25 +260,30 @@ def createLabelingControlWidget():
             updateLabelConfig()
 
         for label_text in dataset["labels"]:
-            combo_box.addItem(label_text)
+            combo_box_label.addItem(label_text)
 
-        combo_box.setFixedWidth(header.label_combo_box_width)
-        combo_box.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
-        group_box.setLayout(layout)
-        group_box.setTitle("Dataset \"" + dataset["name"] + "\"")
-        layout.addWidget(combo_box, 0, 0)
-        layout.addWidget(line_edit, 0, 1)
-        layout.addWidget(push_button_add_label, 0, 2)
-        layout.addWidget(push_button_remove_label, 0, 3)
-        layout_labeling_control.addWidget(group_box)
-        line_edit.setFixedWidth(header.label_line_edit_width)
-        line_edit.setText(dataset["name"] + "--")
-        push_button_add_label.clicked.connect(functools.partial(pushButtonAddLabelSlot, dataset["name"], combo_box, line_edit))
+        combo_box_label.setFixedWidth(header.label_combo_box_width)
+        combo_box_label.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
+        double_spin_box_weight.setMinimum(-1 * sys.float_info.max)
+        group_box_label.setLayout(layout_label)
+        group_box_label.setTitle("Label for \"" + dataset["name"] + "\"")
+        group_box_weight.setLayout(layout_weight)
+        group_box_weight.setTitle("Weight for \"" + dataset["name"] + "\"")
+        layout_label.addWidget(combo_box_label, 0, 0)
+        layout_label.addWidget(line_edit_label, 0, 1)
+        layout_label.addWidget(push_button_add_label, 0, 2)
+        layout_label.addWidget(push_button_remove_label, 0, 3)
+        layout_dataset.addWidget(group_box_label, i, 0)
+        layout_dataset.addWidget(group_box_weight, i, 1)
+        layout_weight.addWidget(double_spin_box_weight)
+        line_edit_label.setFixedWidth(header.label_line_edit_width)
+        line_edit_label.setText(dataset["name"] + "--")
+        push_button_add_label.clicked.connect(functools.partial(pushButtonAddLabelSlot, dataset["name"], combo_box_label, line_edit_label))
         push_button_add_label.setText("Add Label")
-        push_button_remove_label.clicked.connect(functools.partial(pushButtonRemoveLabelSlot, dataset["name"], combo_box))
+        push_button_remove_label.clicked.connect(functools.partial(pushButtonRemoveLabelSlot, dataset["name"], combo_box_label))
         push_button_remove_label.setText("Remove Label")
 
-        combo_boxes_labeling_control[dataset["name"]] = combo_box
+        combo_boxes_label_labeling_control[dataset["name"]] = combo_box_label
 
     return group_box_labeling_control
 
