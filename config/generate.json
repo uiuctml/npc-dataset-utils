@@ -1,2408 +1,3611 @@
 {
     "complementary--accident-area--g3": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--car-crash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--car-crash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--both-directions--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--double-sided",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--double-sided",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--buses--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-left--g2": {
-        "color": "color--black-yellow",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--black-yellow",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-left--g3": {
-        "color": "color--black-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--chevron--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--black-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--chevron--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-left--g4": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--chevron--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--chevron--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-left--g5": {
-        "color": "color--white-red",
-        "shape": "shape--square",
-        "symbol": "symbol--chevron--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--square",
+            "symbol": "symbol--chevron--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--chevron--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--chevron--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-right--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--chevron--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--chevron--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-right--g4": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--chevron--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--chevron--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-right--g5": {
-        "color": "color--white-red",
-        "shape": "shape--square",
-        "symbol": "symbol--chevron--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--square",
+            "symbol": "symbol--chevron--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--chevron-right-unsure--g6": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--chevron--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--chevron--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--distance--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--up",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--up",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "complementary--distance--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "complementary--distance--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "complementary--except-bicycles--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--bicycle",
-        "text": "text--free--german"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--bicycle",
+            "text": "text--free--german"
+        },
+        "weights": {}
     },
     "complementary--extent-of-prohibition-area-both-direction--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--double-sided",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--double-sided",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--go-left--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--go-right--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--go-right--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--up-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--up-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--keep-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--down-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--down-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--keep-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-15--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--15-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--15-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-20--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--20-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--20-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-25--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--25-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--25-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-30--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--30-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--30-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-35--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--35-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--35-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-40--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--40-mph"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--40-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-45--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--45-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--45-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-50--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--50-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--50-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-55--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--55-mph"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--55-mph"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-70--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--70-kmh"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--70-kmh"
+        },
+        "weights": {}
     },
     "complementary--maximum-speed-limit-75--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--75-kmh"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--75-kmh"
+        },
+        "weights": {}
     },
     "complementary--obstacle-delineator--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--chevron--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--chevron--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--obstacle-delineator--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--stripe--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--stripe--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--one-direction-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--one-direction-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--pass-right--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--priority-route-at-intersection--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--priority-route",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--priority-route",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--tow-away-zone--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--towed-car",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--towed-car",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--trucks--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--trucks-turn-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--vehicle--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--vehicle--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--turn-left--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--curve--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--curve--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "complementary--turn-right--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--curve--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--curve--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--airport--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--airplane",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--airplane",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--airport--g2": {
-        "color": "color--green-white",
-        "shape": "shape--square",
-        "symbol": "symbol--airplane",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--green-white",
+            "shape": "shape--square",
+            "symbol": "symbol--airplane",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--bike-route--g1": {
-        "color": "color--green-white",
-        "shape": "shape--square",
-        "symbol": "symbol--bicycle",
-        "text": "text--bike-route"
+        "labels": {
+            "color": "color--green-white",
+            "shape": "shape--square",
+            "symbol": "symbol--bicycle",
+            "text": "text--bike-route"
+        },
+        "weights": {}
     },
     "information--bus-stop--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--h"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--h"
+        },
+        "weights": {}
     },
     "information--camp--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--camp",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--camp",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--central-lane--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--down",
-        "text": "text--central-lane--chinese"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--down",
+            "text": "text--central-lane--chinese"
+        },
+        "weights": {}
     },
     "information--children--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--triangle--extended-bottom",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--triangle--extended-bottom",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--dead-end--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--dead-end",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--dead-end",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--dead-end-except-bicycles--g1": {
-        "color": "color--blue-red",
-        "shape": "shape--square",
-        "symbol": "symbol--rectangle--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-red",
+            "shape": "shape--square",
+            "symbol": "symbol--rectangle--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--disabled-persons--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--disabled-person",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--disabled-person",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--emergency-facility--g2": {
-        "color": "color--white-red",
-        "shape": "shape--square",
-        "symbol": "symbol--red-cross",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--square",
+            "symbol": "symbol--red-cross",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--end-of-built-up-area--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--building",
-        "text": ""
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--building",
+            "text": ""
+        },
+        "weights": {}
     },
     "information--end-of-limited-access-road--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--end-of-living-street--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--end-of-motorway--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--end-of-pedestrians-only--g2": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--food--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--utensil",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--utensil",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--gas-station--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--gasoline-pump",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--gasoline-pump",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--gas-station--g3": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--gasoline-pump",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--gasoline-pump",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--highway-exit--g1": {
-        "color": "color--green-white",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--up-right",
-        "text": "text--exit"
+        "labels": {
+            "color": "color--green-white",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--up-right",
+            "text": "text--exit"
+        },
+        "weights": {}
     },
     "information--highway-interstate-route--g2": {
-        "color": "color--green-white",
-        "shape": "shape--shield-upside-down",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--green-white",
+            "shape": "shape--shield-upside-down",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "information--hospital--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--h"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--h"
+        },
+        "weights": {}
     },
     "information--interstate-route--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--shield",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--shield",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "information--limited-access-road--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--living-street--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--human--vehicle--house",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--human--vehicle--house",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--lodging--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--lodging",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--lodging",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--minimum-speed-40--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--number"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "information--motorway--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--motorway",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--motorway",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--no-parking--g3": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--p"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--parking--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--p"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--parking--g2": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--hat",
-        "text": "text--p"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--hat",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--parking--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--e"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--e"
+        },
+        "weights": {}
     },
     "information--parking--g45": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--p"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--parking--g5": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--p"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--parking--g6": {
-        "color": "color--white-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--p"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "information--pedestrians-crossing--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--human--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--human--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--pedestrians-crossing--g2": {
-        "color": "color--blue-white",
-        "shape": "shape--triangle--extended-bottom",
-        "symbol": "symbol--human--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--triangle--extended-bottom",
+            "symbol": "symbol--human--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--road-bump--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--road-bump",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--road-bump",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--safety-area--g2": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--safety-area",
-        "text": "text--safety-area--chinese"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--safety-area",
+            "text": "text--safety-area--chinese"
+        },
+        "weights": {}
     },
     "information--stairs--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--human--stairs",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--human--stairs",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--telephone--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--telephone",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--telephone",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--telephone--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--telephone",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--telephone",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--trailer-camping--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--trailer-camping",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--trailer-camping",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "information--tram-bus-stop--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "other-sign": {
-        "color": "color--undefined",
-        "shape": "shape--undefined",
-        "symbol": "symbol--undefined",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--undefined",
+            "shape": "shape--undefined",
+            "symbol": "symbol--undefined",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--bicycles-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--bicycles-only--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--bicycle",
-        "text": "text--bike-lane"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--bicycle",
+            "text": "text--bike-lane"
+        },
+        "weights": {}
     },
     "regulatory--bicycles-only--g3": {
-        "color": "color--black-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--bicycle",
-        "text": "text--bike-lane"
+        "labels": {
+            "color": "color--black-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--bicycle",
+            "text": "text--bike-lane"
+        },
+        "weights": {}
     },
     "regulatory--buses-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--detour-left--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--left",
-        "text": "text--detour--spanish"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--left",
+            "text": "text--detour--spanish"
+        },
+        "weights": {}
     },
     "regulatory--do-not-block-intersection--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--do-not-block"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--do-not-block"
+        },
+        "weights": {}
     },
     "regulatory--do-not-stop-on-tracks--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--dual-lanes-go-straight-on-left--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--curved--left--straight--arrow--curved--right",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--curved--left--straight--arrow--curved--right",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--dual-lanes-go-straight-on-right--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--curved--left--arrow--curved--right--straight",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--curved--left--arrow--curved--right--straight",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--dual-lanes-turn-left-no-u-turn--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--curve--left",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--curve--left",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--dual-lanes-turn-left-or-straight--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--curved--left--arrow--curved--left--straight",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--curved--left--arrow--curved--left--straight",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--dual-lanes-turn-right-or-straight--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--dual-arrow--curved--right",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--dual-arrow--curved--right",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--dual-path-bicycles-and-pedestrians--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--dual-path-pedestrians-and-bicycles--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-bicycles-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-buses-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-maximum-speed-limit-30--g2": {
-        "color": "color--white-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--number"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "regulatory--end-of-maximum-speed-limit-70--g1": {
-        "color": "color--white-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--number"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "regulatory--end-of-maximum-speed-limit-70--g2": {
-        "color": "color--white-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--number"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "regulatory--end-of-no-parking--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--triple-grey-slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--triple-grey-slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-priority-road--g1": {
-        "color": "color--white-yellow",
-        "shape": "shape--diamond",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-yellow",
+            "shape": "shape--diamond",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-prohibition--g1": {
-        "color": "color--white-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--end-of-speed-limit-zone--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--triple-grey-slash",
-        "text": "text--number"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--triple-grey-slash",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "regulatory--give-way-to-oncoming-traffic--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--down--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--down--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight--g3": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--up",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--up",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--go-straight-or-turn-left--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight-or-turn-left--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--up--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--up--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight-or-turn-left--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight-or-turn-right--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--go-straight-or-turn-right--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--height-limit--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--mini-triangle--top--bottom",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--mini-triangle--top--bottom",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "regulatory--keep-left--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--down-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--down-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--keep-left--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--down-left",
-        "text": "text--keep-left"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--down-left",
+            "text": "text--keep-left"
+        },
+        "weights": {}
     },
     "regulatory--keep-right--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--keep-right--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--keep-right--g4": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--keep-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--keep-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--keep-right--g6": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--truck-back",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--truck-back",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--lane-control--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--left-lane-must-turn-left"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--left-lane-must-turn-left"
+        },
+        "weights": {}
     },
     "regulatory--left-turn-yield-on-green--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--green-circle",
-        "text": "text--left-turn-yield-on-green"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--green-circle",
+            "text": "text--left-turn-yield-on-green"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-10--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--10"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--10"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-100--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--100"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--100"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-100--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--maximum--100"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--maximum--100"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-110--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--110"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--110"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-120--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--120"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--120"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-15--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--15"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--15"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-20--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--20"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--20"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-25--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--25"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--25"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-25--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--25"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--25"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-30--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--30"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--30"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-30--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--30"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--30"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-35--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--35"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--35"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-40--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--40"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--40"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-40--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--40"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--40"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-40--g6": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--minimum--40"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--minimum--40"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-45--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--45"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--45"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-45--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--45"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--45"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-5--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--5"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--5"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-50--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--50"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--50"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-50--g6": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--maximum--50"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--maximum--50"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-55--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--55"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--55"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-60--g1": {
-        "color": "color--red-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--60"
+        "labels": {
+            "color": "color--red-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--60"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-65--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--speed-limit--65"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--speed-limit--65"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-70--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--70"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--70"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-80--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--80"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--80"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-90--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--90"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--90"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-led-100--g1": {
-        "color": "color--red-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--100"
+        "labels": {
+            "color": "color--red-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--100"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-led-60--g1": {
-        "color": "color--red-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--60"
+        "labels": {
+            "color": "color--red-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--60"
+        },
+        "weights": {}
     },
     "regulatory--maximum-speed-limit-led-80--g1": {
-        "color": "color--red-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--number"
+        "labels": {
+            "color": "color--red-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "regulatory--minimum-safe-distance--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--dual-vehicle",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--dual-vehicle",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "regulatory--mopeds-and-bicycles-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--motocycle--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--motocycle--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-bicycles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-bicycles--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-bicycles--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bicycle--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bicycle--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-buses--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-entry--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--rectangle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--rectangle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-hawkers--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--table--parasols",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--table--parasols",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-heavy-goods-vehicles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-heavy-goods-vehicles--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-heavy-goods-vehicles--g4": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-heavy-goods-vehicles--g5": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-heavy-goods-vehicles-or-buses--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--box-truck--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--box-truck--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-left-turn--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-left-turn--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-left-turn--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-mopeds-or-bicycles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--motocycle--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--motocycle--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motor-vehicle-trailers--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle-trailer",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle-trailer",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motor-vehicles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--motorcycle--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--motorcycle--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motor-vehicles--g4": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--motorcycle--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--motorcycle--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motorcycles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--motorcycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--motorcycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-motorcycles--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--motorcycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--motorcycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-overtaking--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--dual-vehicle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--dual-vehicle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-overtaking--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow-overtaking",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow-overtaking",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-overtaking--g4": {
-        "color": "color--red-yellow",
-        "shape": "shape--circle",
-        "symbol": "symbol--dual-vehicle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-yellow",
+            "shape": "shape--circle",
+            "symbol": "symbol--dual-vehicle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-overtaking--g5": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--dual-vehicle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--dual-vehicle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-overtaking-by-heavy-goods-vehicles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle--heavey-goods",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle--heavey-goods",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-parking--g1": {
-        "color": "color--red-blue",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-blue",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-parking--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--p"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--p"
+        },
+        "weights": {}
     },
     "regulatory--no-parking--g5": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--e"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--e"
+        },
+        "weights": {}
     },
     "regulatory--no-parking-or-no-stopping--g1": {
-        "color": "color--white-red",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--no-parking-or-no-stopping"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--no-parking-or-no-stopping"
+        },
+        "weights": {}
     },
     "regulatory--no-parking-or-no-stopping--g2": {
-        "color": "color--white-red",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--no-parking-or-no-stopping"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--no-parking-or-no-stopping"
+        },
+        "weights": {}
     },
     "regulatory--no-parking-or-no-stopping--g3": {
-        "color": "color--white-red",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--no-parking-or-no-stopping"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--no-parking-or-no-stopping"
+        },
+        "weights": {}
     },
     "regulatory--no-pedestrians--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-pedestrians--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-pedestrians--g3": {
-        "color": "color--red-white",
-        "shape": "shape--square",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--square",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-pedestrians-or-bicycles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-right-turn--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-right-turn--g2": {
-        "color": "color--white-red",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-right-turn--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-stopping--g15": {
-        "color": "color--red-blue",
-        "shape": "shape--circle",
-        "symbol": "symbol--x",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-blue",
+            "shape": "shape--circle",
+            "symbol": "symbol--x",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-stopping--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--x",
-        "text": "text--e"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--x",
+            "text": "text--e"
+        },
+        "weights": {}
     },
     "regulatory--no-stopping--g4": {
-        "color": "color--white-red",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--no-parking-or-no-stopping"
+        "labels": {
+            "color": "color--white-red",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--no-parking-or-no-stopping"
+        },
+        "weights": {}
     },
     "regulatory--no-stopping--g5": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--s"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--s"
+        },
+        "weights": {}
     },
     "regulatory--no-stopping--g8": {
-        "color": "color--red-blue",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-blue",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-straight-through--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-straight-through--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-turn-on-red--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": "text--no-turn-on-red"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": "text--no-turn-on-red"
+        },
+        "weights": {}
     },
     "regulatory--no-turn-on-red--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--no-turn-on-red"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--no-turn-on-red"
+        },
+        "weights": {}
     },
     "regulatory--no-turn-on-red--g3": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--circle",
-        "text": "text--no-turn-on-red"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--circle",
+            "text": "text--no-turn-on-red"
+        },
+        "weights": {}
     },
     "regulatory--no-turns--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--no-turn"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--no-turn"
+        },
+        "weights": {}
     },
     "regulatory--no-u-turn--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-u-turn--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-u-turn--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--no-vehicles-carrying-dangerous-goods--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--vehicle--dangerous-goods",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--vehicle--dangerous-goods",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--one-way-left--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--one-way-left--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--left",
-        "text": "text--one-way"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--left",
+            "text": "text--one-way"
+        },
+        "weights": {}
     },
     "regulatory--one-way-left--g3": {
-        "color": "color--black-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--left",
-        "text": "text--one-way"
+        "labels": {
+            "color": "color--black-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--left",
+            "text": "text--one-way"
+        },
+        "weights": {}
     },
     "regulatory--one-way-right--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--one-way-right--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--right",
-        "text": "text--one-way"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--right",
+            "text": "text--one-way"
+        },
+        "weights": {}
     },
     "regulatory--one-way-right--g3": {
-        "color": "color--black-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--right",
-        "text": "text--one-way"
+        "labels": {
+            "color": "color--black-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--right",
+            "text": "text--one-way"
+        },
+        "weights": {}
     },
     "regulatory--one-way-straight--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--parking-restrictions--g2": {
-        "color": "color--white-green",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--2"
+        "labels": {
+            "color": "color--white-green",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--2"
+        },
+        "weights": {}
     },
     "regulatory--pass-on-either-side--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--down-left--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--down-left--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--pass-on-either-side--g2": {
-        "color": "color--green-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--arrow--double-sided",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--green-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--arrow--double-sided",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--passing-lane-ahead--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--pedestrians-only--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--pedestrians-only--g2": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--priority-over-oncoming-vehicles--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--down--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--down--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--priority-road--g4": {
-        "color": "color--white-yellow",
-        "shape": "shape--diamond",
-        "symbol": "symbol--diamond",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-yellow",
+            "shape": "shape--diamond",
+            "symbol": "symbol--diamond",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--radar-enforced--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--reversible-lanes--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--curved--left--arrow--curved--right",
-        "text": "text--center-lane-only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--curved--left--arrow--curved--right",
+            "text": "text--center-lane-only"
+        },
+        "weights": {}
     },
     "regulatory--road-closed--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--x",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--x",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--road-closed--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": "text--road-closed"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": "text--road-closed"
+        },
+        "weights": {}
     },
     "regulatory--road-closed-to-vehicles--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--slash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--slash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--road-closed-to-vehicles--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--roundabout--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--roundabout",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--roundabout",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--roundabout--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--roundabout",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--roundabout",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--shared-path-bicycles-and-pedestrians--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--shared-path-pedestrians-and-bicycles--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--stop--g1": {
-        "color": "color--red-white",
-        "shape": "shape--octagon",
-        "symbol": "symbol--undefined",
-        "text": "text--stop"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--octagon",
+            "symbol": "symbol--undefined",
+            "text": "text--stop"
+        },
+        "weights": {}
     },
     "regulatory--stop--g10": {
-        "color": "color--red-white",
-        "shape": "shape--octagon",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--octagon",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--stop--g2": {
-        "color": "color--red-white",
-        "shape": "shape--nabla",
-        "symbol": "symbol--undefined",
-        "text": "text--stop--japanese"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--nabla",
+            "symbol": "symbol--undefined",
+            "text": "text--stop--japanese"
+        },
+        "weights": {}
     },
     "regulatory--stop-here-on-red-or-flashing-light--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--down-left",
-        "text": "text--stop-here-on-red"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--down-left",
+            "text": "text--stop-here-on-red"
+        },
+        "weights": {}
     },
     "regulatory--stop-here-on-red-or-flashing-light--g2": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--curved--down-left",
-        "text": "text--stop-here-on-red"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--curved--down-left",
+            "text": "text--stop-here-on-red"
+        },
+        "weights": {}
     },
     "regulatory--stop-signals--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--bar--horizontal",
-        "text": ""
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--bar--horizontal",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--text-four-lines--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "regulatory--triple-lanes-turn-left-center-lane--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--triple-arrow--center-lane-turn-left",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--triple-arrow--center-lane-turn-left",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--truck-speed-limit-60--g1": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--undefined",
-        "text": "text--60"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--undefined",
+            "text": "text--60"
+        },
+        "weights": {}
     },
     "regulatory--turn-left--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-left--g2": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--turn-left--g3": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-left-ahead--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-right--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-right--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-right--g3": {
-        "color": "color--white-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--only"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--only"
+        },
+        "weights": {}
     },
     "regulatory--turn-right-ahead--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turn-right-ahead--g2": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--turning-vehicles-yield-to-pedestrians--g1": {
-        "color": "color--yellow-white",
-        "shape": "shape--square",
-        "symbol": "symbol--human--nabla",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-white",
+            "shape": "shape--square",
+            "symbol": "symbol--human--nabla",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--u-turn--g1": {
-        "color": "color--blue-white",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--blue-white",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "regulatory--weight-limit--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "regulatory--weight-limit-with-trucks--g1": {
-        "color": "color--white-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--vehicle",
-        "text": "text--weight-limit"
+        "labels": {
+            "color": "color--white-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--vehicle",
+            "text": "text--weight-limit"
+        },
+        "weights": {}
     },
     "regulatory--width-limit--g1": {
-        "color": "color--red-white",
-        "shape": "shape--circle",
-        "symbol": "symbol--undefined",
-        "text": "text--alphanumeric"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--circle",
+            "symbol": "symbol--undefined",
+            "text": "text--alphanumeric"
+        },
+        "weights": {}
     },
     "regulatory--wrong-way--g1": {
-        "color": "color--red-white",
-        "shape": "shape--rectangle--wide",
-        "symbol": "symbol--undefined",
-        "text": "text--wrong-way"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--rectangle--wide",
+            "symbol": "symbol--undefined",
+            "text": "text--wrong-way"
+        },
+        "weights": {}
     },
     "regulatory--yield--g1": {
-        "color": "color--red-white",
-        "shape": "shape--nabla",
-        "symbol": "symbol--nabla",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--nabla",
+            "symbol": "symbol--nabla",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--accidental-area-unsure--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--car-crash",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--car-crash",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--added-lane-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--added-lane-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--added-lane-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--bicycles-crossing--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--bicycles-crossing--g2": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--bicycles-crossing--g3": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--bus-stop-ahead--g3": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--bus",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--bus",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--children--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--children--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--crossroads--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--crossroads",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--crossroads",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--crossroads--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--cross",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--cross",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--crossroads-with-priority-to-the-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--x",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--x",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--curve-left--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--curve-left--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--curve-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--curve-right--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--dip--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--dip",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--dip",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--divided-highway-ends--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--divided-highway-ends",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--divided-highway-ends",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--divided-highway-ends--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--divided-highway-ends",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--divided-highway-ends",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--domestic-animals--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--animal",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--animal",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--domestic-animals--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--animal",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--animal",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-curve-first-left--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--double-curve--first-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--double-curve--first-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-curve-first-left--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--double-curve--first-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--double-curve--first-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-curve-first-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--double-curve--first-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--double-curve--first-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-curve-first-right--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--double-curve--first-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--double-curve--first-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-reverse-curve-right--g1": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--dual-arrow--reverse-curve--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--dual-arrow--reverse-curve--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--double-turn-first-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--double-turn--first-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--double-turn--first-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--dual-lanes-right-turn-or-go-straight--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--square",
-        "symbol": "symbol--arrow--up--dual-arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--square",
+            "symbol": "symbol--arrow--up--dual-arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--emergency-vehicles--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--equestrians-crossing--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--horse",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--horse",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--falling-rocks-or-debris-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--falling-rocks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--falling-rocks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--falling-rocks-or-debris-right--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--vehicle-back--falling-rocks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--vehicle-back--falling-rocks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--falling-rocks-or-debris-right--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--falling-rocks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--falling-rocks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--flaggers-in-road--g1": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--sign",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--sign",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--hairpin-curve-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--hairpin-curve-left--g3": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--hairpin-curve-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--hairpin-curve-right--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--rectangle--tall",
-        "symbol": "symbol--arrow--u-shape--down",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--rectangle--tall",
+            "symbol": "symbol--arrow--u-shape--down",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--height-restriction--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--down--arrow--up",
-        "text": "text--number"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--down--arrow--up",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "warning--horizontal-alignment-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--horizontal-alignment-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--horizontal-alignment-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--horizontal-alignment-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--horizontal-alignment-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--horizontal-alignment-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--horizontal-alignment-right--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--horizontal-alignment-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--horizontal-alignment-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-acute-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--juction--road-acute-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--juction--road-acute-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-acute-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--juction--road-acute-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--juction--road-acute-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-perpendicular-left--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--junction--road-perpendicular-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--junction--road-perpendicular-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-perpendicular-left--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--junction--road-perpendicular-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--junction--road-perpendicular-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-perpendicular-left--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--triangle",
-        "symbol": "symbol--junction--road-perpendicular-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--triangle",
+            "symbol": "symbol--junction--road-perpendicular-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-perpendicular-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--junction--road-perpendicular-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--junction--road-perpendicular-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--junction-with-a-side-road-perpendicular-right--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--junction--road-perpendicular-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--junction--road-perpendicular-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--kangaloo-crossing--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--kangaroo",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--kangaroo",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--loop-270-degree--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--loop-270-degree",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--loop-270-degree",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--narrow-bridge--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--narrow-bridge",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--narrow-bridge",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--narrow-bridge--g3": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--narrow-bridge",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--narrow-bridge",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--offset-roads--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--offset-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--offset-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--other-danger--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--exclamation-mark",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--exclamation-mark",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--other-danger--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--exclamation-mark",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--exclamation-mark",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pass-left-or-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--left-or--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--left-or--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pass-left-or-right--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--down-left--arrow--down-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--down-left--arrow--down-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrian-stumble-train--g1": {
-        "color": "color--black-yellow",
-        "shape": "shape--triangle",
-        "symbol": "symbol--human--train-font",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--black-yellow",
+            "shape": "shape--triangle",
+            "symbol": "symbol--human--train-font",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--human--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--human--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g10": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--leg",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--leg",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g11": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g12": {
-        "color": "color--yellow-black",
-        "shape": "shape--triangle",
-        "symbol": "symbol--human--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--triangle",
+            "symbol": "symbol--human--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g5": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--pedestrians-crossing--g9": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--crossroad",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--crossroad",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--playground--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--ball",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--ball",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--playground--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--seesaw",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--seesaw",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--circle",
-        "symbol": "symbol--x",
-        "text": "text--r"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--circle",
+            "symbol": "symbol--x",
+            "text": "text--r"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--railroad-crossing",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--railroad-crossing",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing--g4": {
-        "color": "color--red-white",
-        "shape": "shape--x",
-        "symbol": "symbol--x",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--x",
+            "symbol": "symbol--x",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-with-barriers--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--fence",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--fence",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-with-barriers--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--x--barrier",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--x--barrier",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-with-barriers--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--fence",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--fence",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-without-barriers--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--train-front",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--train-front",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-without-barriers--g3": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--train--steam",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--train--steam",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-crossing-without-barriers--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--train--steam",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--train--steam",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-intersection--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--railroad-intersection",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--railroad-intersection",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--railroad-intersection--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--railroad-intersection",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--railroad-intersection",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--restricted-zone--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--undefined",
-        "text": "text--r"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--undefined",
+            "text": "text--r"
+        },
+        "weights": {}
     },
     "warning--road-bump--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--bump",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--bump",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-bump--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--bump",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--bump",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--road-narrow",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--road-narrow",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--road-narrow",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--road-narrow",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows-left--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--road-narrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--road-narrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows-left--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--road-narrow--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--road-narrow--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows-right--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--road-narrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--road-narrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-narrows-right--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--road-narrow--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--road-narrow--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-widens--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--road-widen",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--road-widen",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--road-widens-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--road-widen--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--road-widen--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roadworks--g1": {
-        "color": "color--red-yellow",
-        "shape": "shape--triangle",
-        "symbol": "symbol--roadworks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-yellow",
+            "shape": "shape--triangle",
+            "symbol": "symbol--roadworks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roadworks--g2": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--roadworks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--roadworks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roadworks--g3": {
-        "color": "color--red-yellow",
-        "shape": "shape--triangle",
-        "symbol": "symbol--roadworks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-yellow",
+            "shape": "shape--triangle",
+            "symbol": "symbol--roadworks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roadworks--g4": {
-        "color": "color--orange-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--roadworks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--orange-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--roadworks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roadworks--g6": {
-        "color": "color--red-black",
-        "shape": "shape--triangle",
-        "symbol": "symbol--roadworks",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-black",
+            "shape": "shape--triangle",
+            "symbol": "symbol--roadworks",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roundabout--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--roundabout",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--roundabout",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--roundabout--g25": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--roundabout",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--roundabout",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--school-zone--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--triangle--extended-bottom",
-        "symbol": "symbol--human",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--triangle--extended-bottom",
+            "symbol": "symbol--human",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--shared-lane-motorcycles-bicycles--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--vehicle-front--human",
-        "text": "text--share-the-road"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--vehicle-front--human",
+            "text": "text--share-the-road"
+        },
+        "weights": {}
     },
     "warning--slippery-motorcycles--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--slippery-motocycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--slippery-motocycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--slippery-road-surface--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--slippery-road-surface",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--slippery-road-surface",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--slippery-road-surface--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--slippery-road-surface",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--slippery-road-surface",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--steep-ascent--g7": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--steep-ascent",
-        "text": "text--number"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--steep-ascent",
+            "text": "text--number"
+        },
+        "weights": {}
     },
     "warning--stop-ahead--g9": {
-        "color": "color--yellow-red",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-red",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--t-roads--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--t-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--t-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--t-roads--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--t-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--t-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--texts--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "warning--texts--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "warning--texts--g3": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--undefined",
-        "text": ""
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--undefined",
+            "text": ""
+        },
+        "weights": {}
     },
     "warning--traffic-merges-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--traffic-merges-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--traffic-merges-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-merges-left--g2": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--traffic-merges-left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--traffic-merges-left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-merges-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--traffic-merges-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--traffic-merges-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-merges-right--g2": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--traffic-merges-right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--traffic-merges-right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-signals--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--traffic-signals",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--traffic-signals",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-signals--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--traffic-signals",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--traffic-signals",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-signals--g3": {
-        "color": "color--black-yellow",
-        "shape": "shape--diamond",
-        "symbol": "symbol--traffic-signals",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--black-yellow",
+            "shape": "shape--diamond",
+            "symbol": "symbol--traffic-signals",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--traffic-signals--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--traffic-signals",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--traffic-signals",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--trail-crossing--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--human--bicycle",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--human--bicycle",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--trams-crossing--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--tram",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--tram",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--trucks-crossing--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--box-truck",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--box-truck",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--turn-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--curved--left",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--curved--left",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--turn-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--curved--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--curved--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--turn-right--g2": {
-        "color": "color--black-yellow",
-        "shape": "shape--triangle",
-        "symbol": "symbol--curve--right",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--black-yellow",
+            "shape": "shape--triangle",
+            "symbol": "symbol--curve--right",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--two-way-traffic--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--arrow--down--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--arrow--down--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--two-way-traffic--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--down--arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--down--arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--uneven-road--g2": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--uneven-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--uneven-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--uneven-road--g6": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--uneven-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--uneven-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--uneven-roads-ahead--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--uneven-road",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--uneven-road",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--wild-animals--g1": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--deer",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--deer",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--wild-animals--g4": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--deer",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--deer",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--winding-road-first-left--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--up--winding",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--up--winding",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--winding-road-first-left--g2": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--arrow--up--winding",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--arrow--up--winding",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--winding-road-first-right--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--arrow--up--winding",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--arrow--up--winding",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--winding-road-first-right--g3": {
-        "color": "color--red-white",
-        "shape": "shape--triangle",
-        "symbol": "symbol--winding-arrow--up",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--red-white",
+            "shape": "shape--triangle",
+            "symbol": "symbol--winding-arrow--up",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--wombat-crossing--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--wombat",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--wombat",
+            "text": "text--undefined"
+        },
+        "weights": {}
     },
     "warning--y-roads--g1": {
-        "color": "color--yellow-black",
-        "shape": "shape--diamond",
-        "symbol": "symbol--y",
-        "text": "text--undefined"
+        "labels": {
+            "color": "color--yellow-black",
+            "shape": "shape--diamond",
+            "symbol": "symbol--y",
+            "text": "text--undefined"
+        },
+        "weights": {}
     }
 }
