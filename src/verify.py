@@ -16,13 +16,33 @@ def main():
 
     for label in generate_config.keys():
         if len(generate_config[label]["labels"]) == 0:
-            logger.log_error("\"" + label + "\" does not contain any label.")
+            logger.log_error("\"" + label + "\" does not contain any labels.")
         else:
             for dataset_name in generate_config[label]["labels"].keys():
                 if generate_config[label]["labels"][dataset_name] == "":
                     logger.log_error("\"" + label + "\" contains an empty label for dataset \"" + dataset_name + "\".")
                 elif generate_config[label]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_error("\"" + label + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
+
+        if len(generate_config[label]["weights"]) == 0:
+            logger.log_error("\"" + label + "\" does not contain any weights.")
+        else:
+            weights_sum = 0
+
+            for dataset_name in generate_config[label]["weights"].keys():
+                weights_sum += generate_config[label]["weights"][dataset_name]
+
+            if weights_sum == 0:
+                logger.log_error("\"" + label + "\" contains zero weights.")
+            elif weights_sum < 1:
+                logger.log_error("\"" + label + "\" contains weights summing up less than one.")
+            elif weights_sum > 1:
+                logger.log_error("\"" + label + "\" contains weights summing up greater than one.")
+
+        reduction = generate_config[label]["reduction"]
+
+        if reduction == "":
+            logger.log_error("\"" + label + "\" contains an empty reduction.")
 
     logger.log_info_raw("\n")
     logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
