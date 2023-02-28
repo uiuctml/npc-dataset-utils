@@ -69,6 +69,12 @@ def splitOriginal():
     if os.path.isdir(header.dataset_dir_images_split_original):
         return
 
+    os.makedirs(header.dataset_dir_images_split_original_test, exist_ok = True)
+    os.makedirs(header.dataset_dir_images_split_original_train, exist_ok = True)
+    os.makedirs(header.dataset_dir_images_split_original_validate, exist_ok = True)
+
+    # TODO finish split for original
+
     return
 
 def main():
