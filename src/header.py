@@ -15,15 +15,19 @@ dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_images_sliced_generated = dataset_dir_images_sliced + "/generated"
 dataset_dir_images_sliced_original = dataset_dir_images_sliced + "/original"
 dataset_dir_images_split = dataset_dir_images + "/split"
-dataset_dir_splits = dataset_dir + "/splits"
-dataset_dir_splits_resplit = dataset_dir_splits + "/resplit"
-dataset_dir_splits_object = dataset_dir_splits + "/object"
-dataset_dir_splits_original = dataset_dir_splits + "/original"
+dataset_dir_images_split_generated = dataset_dir_images_split + "/generated"
+dataset_dir_images_split_generated_test = dataset_dir_images_split_generated + "/test"
+dataset_dir_images_split_generated_train = dataset_dir_images_split_generated + "/train"
+dataset_dir_images_split_generated_validate = dataset_dir_images_split_generated + "/validate"
+dataset_dir_images_split_original = dataset_dir_images_split + "/original"
+dataset_dir_images_split_original_test = dataset_dir_images_split_original + "/test"
+dataset_dir_images_split_original_train = dataset_dir_images_split_original + "/train"
+dataset_dir_images_split_original_validate = dataset_dir_images_split_original + "/validate"
 dataset_file_extension_annotations = ".json"
 dataset_file_extension_images = ".jpg"
-dataset_file_name_split_train = "train.txt"
-dataset_file_name_split_validation = "val.txt"
 dataset_file_name_split_test = "test.txt"
+dataset_file_name_split_train = "train.txt"
+dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
 filter_dataset_dir_annotations = dataset_dir_annotations_original
@@ -65,12 +69,10 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
-split_dataset_dir_annotations = dataset_dir_annotations_original
-split_dataset_dir_images = dataset_dir_images_sliced + "/original"
-split_file_name_resplit_train_validation = "train_val.txt"
-split_file_name_symlink_placeholder = "placeholder" + dataset_file_extension_images
-split_file_symlink_placeholder_shape = (500, 500, 3)
-split_file_symlink_placeholder_color = (0, 0, 255)
+split_generated_percentage_train = 0.8
+split_generated_percentage_validate = 0.1
+split_original_percentage_train = 0.8
+split_original_percentage_validate = 0.1
 
 verify_dataset_dir_images_split = dataset_dir_images_split + "/original"
 
