@@ -768,7 +768,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--triangle--extended-bottom",
-            "symbol": "symbol--human",
+            "symbol": "symbol--children--two",
             "text": "text--undefined"
         },
         "weights": {
@@ -798,7 +798,7 @@
         "labels": {
             "color": "color--blue-red",
             "shape": "shape--square",
-            "symbol": "symbol--rectangle--bicycle",
+            "symbol": "symbol--bicycle--rectangle--red",
             "text": "text--undefined"
         },
         "weights": {
@@ -843,8 +843,8 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--wide",
-            "symbol": "symbol--building",
-            "text": ""
+            "symbol": "symbol--red-slash--building",
+            "text": "text--undefined"
         },
         "weights": {
             "color": 0.0,
@@ -858,7 +858,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--vehicle-front",
+            "symbol": "symbol--red-slash--vehicle-front",
             "text": "text--undefined"
         },
         "weights": {
@@ -873,7 +873,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash--living-street",
             "text": "text--undefined"
         },
         "weights": {
@@ -888,7 +888,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash--motorway",
             "text": "text--undefined"
         },
         "weights": {
@@ -903,7 +903,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash--pedestrian",
             "text": "text--undefined"
         },
         "weights": {
@@ -977,7 +977,7 @@
     "information--highway-interstate-route--g2": {
         "labels": {
             "color": "color--green-white",
-            "shape": "shape--shield-upside-down",
+            "shape": "shape--shield--inverted",
             "symbol": "symbol--undefined",
             "text": "text--alphanumeric"
         },
@@ -1038,7 +1038,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--human--vehicle--house",
+            "symbol": "symbol--living-street",
             "text": "text--undefined"
         },
         "weights": {
@@ -1066,7 +1066,7 @@
     },
     "information--minimum-speed-40--g1": {
         "labels": {
-            "color": "color--blue-white",
+            "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--40"
@@ -1098,7 +1098,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--p"
         },
         "weights": {
@@ -1158,7 +1158,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--undefined",
+            "symbol": "symbol--arrow--vehicle-front",
             "text": "text--p"
         },
         "weights": {
@@ -1173,7 +1173,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--undefined",
+            "symbol": "symbol--arrow",
             "text": "text--p"
         },
         "weights": {
@@ -1203,7 +1203,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--human--crossroad",
+            "symbol": "symbol--pedestrian--crossroad",
             "text": "text--undefined"
         },
         "weights": {
@@ -1218,7 +1218,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--triangle--extended-bottom",
-            "symbol": "symbol--human--crossroad",
+            "symbol": "symbol--pedestrain-crossing",
             "text": "text--undefined"
         },
         "weights": {
@@ -1263,7 +1263,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--human--stairs",
+            "symbol": "symbol--human--stair",
             "text": "text--undefined"
         },
         "weights": {
@@ -1321,8 +1321,8 @@
     },
     "information--tram-bus-stop--g2": {
         "labels": {
-            "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "color": "color--blue-white",
+            "shape": "shape--square",
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
@@ -1367,7 +1367,7 @@
     "regulatory--bicycles-only--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--square",
             "symbol": "symbol--bicycle",
             "text": "text--bike-lane"
         },
@@ -1382,7 +1382,7 @@
     "regulatory--bicycles-only--g3": {
         "labels": {
             "color": "color--black-white",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--square",
             "symbol": "symbol--bicycle",
             "text": "text--bike-lane"
         },
