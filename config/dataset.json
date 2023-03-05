@@ -64,8 +64,6 @@
                 "symbol--stripe--right",
                 "symbol--towed-car",
                 "symbol--box-truck",
-                "symbol--curve--left",
-                "symbol--curve--right",
                 "symbol--airplane",
                 "symbol--camp",
                 "symbol--arrow--down",
@@ -190,7 +188,6 @@
                 "symbol--motorway",
                 "symbol--red-cross",
                 "symbol--dead-end",
-                "symbol--vehicle--arrow--curved--right",
                 "symbol--priority-route",
                 "symbol--rectangle--bicycle",
                 "symbol--human--stairs",
@@ -199,7 +196,8 @@
                 "symbol--winding-arrow--up",
                 "symbol--bicycle--red-slash",
                 "symbol--bus--red-slash",
-                "symbol--black-slash"
+                "symbol--black-slash",
+                "symbol--box-truck--arrow--curved--right"
             ]
         },
         {
@@ -274,12 +272,12 @@
                 "text--45-mph",
                 "text--50-mph",
                 "text--55-mph",
-                "text--70-kmh",
-                "text--75-kmh",
                 "text--detour--spanish",
                 "text--2",
                 "text--no-u-turn",
-                "text--zone"
+                "text--zone",
+                "text--75-km/h",
+                "text--70-km/h"
             ]
         }
     ],

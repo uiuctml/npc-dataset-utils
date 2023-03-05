@@ -287,7 +287,7 @@
     "complementary--go-right--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--square",
             "symbol": "symbol--arrow--right",
             "text": "text--undefined"
         },
@@ -484,7 +484,7 @@
             "color": "color--yellow-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--70-kmh"
+            "text": "text--70-km/h"
         },
         "weights": {
             "color": 0.0,
@@ -499,7 +499,7 @@
             "color": "color--yellow-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--75-kmh"
+            "text": "text--75-km/h"
         },
         "weights": {
             "color": 0.0,
@@ -633,7 +633,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--vehicle--arrow--curved--right",
+            "symbol": "symbol--box-truck--arrow--curved--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -648,7 +648,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--curve--left",
+            "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -663,7 +663,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--curve--right",
+            "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
         },
         "weights": {
