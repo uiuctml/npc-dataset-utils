@@ -45,7 +45,7 @@ def main():
             logger.log_error("\"" + label + "\" contains an empty reduction.")
 
     logger.log_info_raw("\n")
-    logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
+    logger.log_info("Verifying \"" + header.verify_dataset_dir_images_split + "\"...")
 
     if os.path.isdir(header.verify_dataset_dir_images_split):
         dataset_dir_images_split_list = os.listdir(header.verify_dataset_dir_images_split)
@@ -58,9 +58,7 @@ def main():
                 dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
                 if len(dataset_dir_labels_split_list) == 0:
-                    logger.log_error("\"" + dataset_dir_labels + "\" has no data for split dataset \"" + dataset_name_split + "\".")
-                elif len(dataset_dir_labels_split_list) == 1 and dataset_dir_labels_split_list[-1] == header.split_file_name_symlink_placeholder:
-                    logger.log_warn("\"" + dataset_dir_labels + "\" has placeholder data for split dataset \"" + dataset_name_split + "\".")
+                    logger.log_error("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
 
     return
 
