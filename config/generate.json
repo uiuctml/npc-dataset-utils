@@ -1397,7 +1397,7 @@
     "regulatory--buses-only--g1": {
         "labels": {
             "color": "color--blue-white",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--circle",
             "symbol": "symbol--bus",
             "text": "text--undefined"
         },
@@ -1429,7 +1429,7 @@
             "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--do-not-block"
+            "text": "text--do-not-block-intersection"
         },
         "weights": {
             "color": 0.0,
@@ -1442,9 +1442,9 @@
     "regulatory--do-not-stop-on-tracks--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--do-not-stop-on-tracks"
         },
         "weights": {
             "color": 0.0,
@@ -1458,7 +1458,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--curved--left--straight--arrow--curved--right",
+            "symbol": "symbol--arrow--up--curved--left--arrow--curved--right",
             "text": "text--only"
         },
         "weights": {
@@ -1473,7 +1473,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--curved--left--arrow--curved--right--straight",
+            "symbol": "symbol--arrow--curved--left--arrow--up--curved--right",
             "text": "text--only"
         },
         "weights": {
@@ -1488,7 +1488,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--curve--left",
+            "symbol": "symbol--double-arrow--curved--left",
             "text": "text--no-u-turn"
         },
         "weights": {
@@ -1503,7 +1503,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--curved--left--arrow--curved--left--straight",
+            "symbol": "symbol--arrow--curved--left--arrow--up--curved--left",
             "text": "text--only"
         },
         "weights": {
@@ -1518,7 +1518,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--dual-arrow--curved--right",
+            "symbol": "symbol--arrow--up--curved--right--arrow--curved--right",
             "text": "text--only"
         },
         "weights": {
@@ -1533,7 +1533,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle--human",
+            "symbol": "symbol--bicycle--adult--child",
             "text": "text--undefined"
         },
         "weights": {
@@ -1548,7 +1548,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human--bicycle",
+            "symbol": "symbol--adult--child--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -1563,7 +1563,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle--red-slash",
+            "symbol": "symbol--red-slash--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -1578,7 +1578,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bus--red-slash",
+            "symbol": "symbol--red-slash--bus",
             "text": "text--undefined"
         },
         "weights": {
@@ -1594,7 +1594,7 @@
             "color": "color--white-black",
             "shape": "shape--circle",
             "symbol": "symbol--black-slash",
-            "text": "text--number"
+            "text": "text--30"
         },
         "weights": {
             "color": 0.0,
@@ -1609,7 +1609,7 @@
             "color": "color--white-black",
             "shape": "shape--circle",
             "symbol": "symbol--black-slash",
-            "text": "text--number"
+            "text": "text--70"
         },
         "weights": {
             "color": 0.0,
@@ -1624,7 +1624,7 @@
             "color": "color--white-black",
             "shape": "shape--circle",
             "symbol": "symbol--black-slash",
-            "text": "text--number"
+            "text": "text--70"
         },
         "weights": {
             "color": 0.0,
@@ -1637,9 +1637,9 @@
     "regulatory--end-of-no-parking--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
-            "symbol": "symbol--black-slash",
-            "text": "text--undefined"
+            "shape": "shape--square",
+            "symbol": "symbol--black-slash--no-parking",
+            "text": "text--zone"
         },
         "weights": {
             "color": 0.0,
@@ -1653,7 +1653,7 @@
         "labels": {
             "color": "color--white-yellow",
             "shape": "shape--diamond",
-            "symbol": "symbol--black-slash",
+            "symbol": "symbol--black-slash--yellow-diamond",
             "text": "text--undefined"
         },
         "weights": {
@@ -1683,8 +1683,8 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--triple-grey-slash",
-            "text": "text--zone"
+            "symbol": "symbol--black-slash",
+            "text": "text--zone--30"
         },
         "weights": {
             "color": 0.0,
@@ -1698,7 +1698,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--down--up",
+            "symbol": "symbol--arrow--down--arrow--up",
             "text": "text--undefined"
         },
         "weights": {
@@ -1757,7 +1757,7 @@
     "regulatory--go-straight-or-turn-left--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--arrow--up--curved--left",
             "text": "text--undefined"
         },
@@ -1892,7 +1892,7 @@
     "regulatory--keep-right--g4": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--keep-right",
             "text": "text--undefined"
         },
@@ -1908,7 +1908,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--truck-back",
+            "symbol": "symbol--arrow--right--truck-back",
             "text": "text--undefined"
         },
         "weights": {
@@ -1937,7 +1937,7 @@
     "regulatory--left-turn-yield-on-green--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--green-circle",
             "text": "text--left-turn-yield-on-green"
         },
@@ -1982,7 +1982,7 @@
     "regulatory--maximum-speed-limit-100--g3": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--maximum--100"
         },
@@ -2072,7 +2072,7 @@
     "regulatory--maximum-speed-limit-25--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--25"
         },
@@ -2102,7 +2102,7 @@
     "regulatory--maximum-speed-limit-30--g3": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--30"
         },
@@ -2117,7 +2117,7 @@
     "regulatory--maximum-speed-limit-35--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--35"
         },
@@ -2147,7 +2147,7 @@
     "regulatory--maximum-speed-limit-40--g3": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--40"
         },
@@ -2192,7 +2192,7 @@
     "regulatory--maximum-speed-limit-45--g3": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--45"
         },
@@ -2237,7 +2237,7 @@
     "regulatory--maximum-speed-limit-50--g6": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--maximum--50"
         },
@@ -2252,7 +2252,7 @@
     "regulatory--maximum-speed-limit-55--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--55"
         },
@@ -2266,7 +2266,7 @@
     },
     "regulatory--maximum-speed-limit-60--g1": {
         "labels": {
-            "color": "color--red-black",
+            "color": "color--red-white",
             "shape": "shape--circle",
             "symbol": "symbol--undefined",
             "text": "text--60"
@@ -2282,7 +2282,7 @@
     "regulatory--maximum-speed-limit-65--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": "text--speed-limit--65"
         },
@@ -2374,7 +2374,7 @@
             "color": "color--red-black",
             "shape": "shape--circle",
             "symbol": "symbol--undefined",
-            "text": "text--number"
+            "text": "text--80"
         },
         "weights": {
             "color": 0.0,
@@ -2388,7 +2388,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--dual-vehicle",
+            "symbol": "symbol--minimum-safe-distance",
             "text": "text--alphanumeric"
         },
         "weights": {
@@ -2433,7 +2433,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle",
+            "symbol": "symbol--red-slash--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2448,7 +2448,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle--human",
+            "symbol": "symbol--red-slash--human--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2463,7 +2463,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bus",
+            "symbol": "symbol--red-slash--bus",
             "text": "text--undefined"
         },
         "weights": {
@@ -2478,7 +2478,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--rectangle",
+            "symbol": "symbol--rectangle--wide--white",
             "text": "text--undefined"
         },
         "weights": {
@@ -2523,7 +2523,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--box-truck",
+            "symbol": "symbol--red-slash--box-truck--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -2538,7 +2538,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--box-truck",
+            "symbol": "symbol--red-slash--box-truck--g4",
             "text": "text--undefined"
         },
         "weights": {
@@ -2553,7 +2553,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--box-truck",
+            "symbol": "symbol--red-slash--cargo-truck",
             "text": "text--undefined"
         },
         "weights": {
@@ -2568,7 +2568,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--box-truck--bus",
+            "symbol": "symbol--red-slash--box-truck--bus",
             "text": "text--undefined"
         },
         "weights": {
@@ -2583,7 +2583,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--curved--left",
+            "symbol": "symbol--red-slash--arrow--curved--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -2598,7 +2598,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--curved--left",
+            "symbol": "symbol--red-slash--arrow--curved--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -2613,7 +2613,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--left",
+            "symbol": "symbol--red-slash--arrow--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -2628,7 +2628,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--motocycle--bicycle",
+            "symbol": "symbol--moped--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2673,7 +2673,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--motorcycle--vehicle-front",
+            "symbol": "symbol--vehicle-front--motorcycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2703,7 +2703,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--vehicle-front",
+            "symbol": "symbol--red-slash--vehicle-front",
             "text": "text--undefined"
         },
         "weights": {
@@ -2718,7 +2718,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human--motorcycle",
+            "symbol": "symbol--red-slash--human--motorcycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2733,7 +2733,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--motorcycle",
+            "symbol": "symbol--red-slash--motorcycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2763,7 +2763,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow-overtaking",
+            "symbol": "symbol--red-slash--arrow--overtaking",
             "text": "text--undefined"
         },
         "weights": {
@@ -2778,7 +2778,7 @@
         "labels": {
             "color": "color--red-yellow",
             "shape": "shape--circle",
-            "symbol": "symbol--dual-vehicle",
+            "symbol": "symbol--red-slash--dual-vehicle--g4",
             "text": "text--undefined"
         },
         "weights": {
@@ -2793,7 +2793,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--dual-vehicle",
+            "symbol": "symbol--red-slash--dual-vehicle--g5",
             "text": "text--undefined"
         },
         "weights": {
@@ -2808,7 +2808,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--vehicle--heavey-goods",
+            "symbol": "symbol--vehicle--heavy-goods--vehicle",
             "text": "text--undefined"
         },
         "weights": {
@@ -2823,7 +2823,7 @@
         "labels": {
             "color": "color--red-blue",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -2838,7 +2838,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--p"
         },
         "weights": {
@@ -2853,7 +2853,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--e"
         },
         "weights": {
@@ -2867,9 +2867,9 @@
     "regulatory--no-parking-or-no-stopping--g1": {
         "labels": {
             "color": "color--white-red",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--no-parking-or-no-stopping"
+            "text": "text--no-parking-or-no-stopping--g1"
         },
         "weights": {
             "color": 0.0,
@@ -2882,9 +2882,9 @@
     "regulatory--no-parking-or-no-stopping--g2": {
         "labels": {
             "color": "color--white-red",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--no-parking-or-no-stopping"
+            "text": "text--no-parking-or-no-stopping--g2"
         },
         "weights": {
             "color": 0.0,
@@ -2899,7 +2899,7 @@
             "color": "color--white-red",
             "shape": "shape--rectangle--tall",
             "symbol": "symbol--undefined",
-            "text": "text--no-parking-or-no-stopping"
+            "text": "text--no-parking-or-no-stopping--g3"
         },
         "weights": {
             "color": 0.0,
@@ -2928,7 +2928,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human",
+            "symbol": "symbol--red-slash--human",
             "text": "text--undefined"
         },
         "weights": {
@@ -2943,7 +2943,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--square",
-            "symbol": "symbol--human",
+            "symbol": "symbol--red-slash--human",
             "text": "text--undefined"
         },
         "weights": {
@@ -2973,7 +2973,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--curved--right",
+            "symbol": "symbol--red-slash--arrow--curved--right--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -2988,7 +2988,7 @@
         "labels": {
             "color": "color--white-red",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--curved--right",
+            "symbol": "symbol--red-slash--arrow--curved--right--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -3003,7 +3003,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash--arrow--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -3018,7 +3018,7 @@
         "labels": {
             "color": "color--red-blue",
             "shape": "shape--circle",
-            "symbol": "symbol--x",
+            "symbol": "symbol--red-x",
             "text": "text--undefined"
         },
         "weights": {
@@ -3033,7 +3033,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--x",
+            "symbol": "symbol--red-x",
             "text": "text--e"
         },
         "weights": {
@@ -3049,7 +3049,7 @@
             "color": "color--white-red",
             "shape": "shape--rectangle--tall",
             "symbol": "symbol--undefined",
-            "text": "text--no-parking-or-no-stopping"
+            "text": "text--no-parking"
         },
         "weights": {
             "color": 0.0,
@@ -3063,7 +3063,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--s"
         },
         "weights": {
@@ -3078,7 +3078,7 @@
         "labels": {
             "color": "color--red-blue",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -3093,7 +3093,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--up",
+            "symbol": "symbol--red-slash--arrow--up",
             "text": "text--undefined"
         },
         "weights": {
@@ -3122,9 +3122,9 @@
     "regulatory--no-turn-on-red--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--no-turn-on-red"
+            "text": "text--no-turn-on-red--g1"
         },
         "weights": {
             "color": 0.0,
@@ -3139,7 +3139,7 @@
             "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--no-turn-on-red"
+            "text": "text--no-turn-on-red--g2"
         },
         "weights": {
             "color": 0.0,
@@ -3152,8 +3152,8 @@
     "regulatory--no-turn-on-red--g3": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
-            "symbol": "symbol--circle",
+            "shape": "shape--square",
+            "symbol": "symbol--circle--red",
             "text": "text--no-turn-on-red"
         },
         "weights": {
@@ -3183,7 +3183,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--red-slash--arrow--u-shape--down--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -3213,7 +3213,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--red-slash--arrow--u-shape--down--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -3257,7 +3257,7 @@
     "regulatory--one-way-left--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--arrow--left",
             "text": "text--one-way"
         },
@@ -3302,7 +3302,7 @@
     "regulatory--one-way-right--g2": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--arrow--right",
             "text": "text--one-way"
         },
@@ -3363,7 +3363,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--down-left--down-right",
+            "symbol": "symbol--arrow--down-left--arrow--down-right",
             "text": "text--undefined"
         },
         "weights": {
@@ -3377,7 +3377,7 @@
     "regulatory--pass-on-either-side--g2": {
         "labels": {
             "color": "color--green-white",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--square",
             "symbol": "symbol--arrow--double-sided",
             "text": "text--undefined"
         },
@@ -3392,7 +3392,7 @@
     "regulatory--passing-lane-ahead--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--wide",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
             "text": ""
         },
@@ -3408,7 +3408,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human",
+            "symbol": "symbol--adult--child",
             "text": "text--undefined"
         },
         "weights": {
@@ -3438,7 +3438,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--down--up",
+            "symbol": "symbol--arrow--priority",
             "text": "text--undefined"
         },
         "weights": {
@@ -3453,7 +3453,7 @@
         "labels": {
             "color": "color--white-yellow",
             "shape": "shape--diamond",
-            "symbol": "symbol--diamond",
+            "symbol": "symbol--diamond--yellow",
             "text": "text--undefined"
         },
         "weights": {
@@ -3483,7 +3483,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--arrow--curved--left--arrow--curved--right",
+            "symbol": "symbol--arrow--reversible",
             "text": "text--center-lane-only"
         },
         "weights": {
@@ -3496,9 +3496,9 @@
     },
     "regulatory--road-closed--g1": {
         "labels": {
-            "color": "color--red-white",
+            "color": "color--red-yellow",
             "shape": "shape--circle",
-            "symbol": "symbol--x",
+            "symbol": "symbol--red-x",
             "text": "text--undefined"
         },
         "weights": {
@@ -3528,7 +3528,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--slash",
+            "symbol": "symbol--red-slash",
             "text": "text--undefined"
         },
         "weights": {
@@ -3588,7 +3588,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human--bicycle",
+            "symbol": "symbol--bicycle--adult--child",
             "text": "text--undefined"
         },
         "weights": {
@@ -3603,7 +3603,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--human--bicycle",
+            "symbol": "symbol--adult--child--bicycle",
             "text": "text--undefined"
         },
         "weights": {
@@ -3634,7 +3634,7 @@
             "color": "color--red-white",
             "shape": "shape--octagon",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--stop--g10"
         },
         "weights": {
             "color": 0.0,
@@ -3647,7 +3647,7 @@
     "regulatory--stop--g2": {
         "labels": {
             "color": "color--red-white",
-            "shape": "shape--nabla",
+            "shape": "shape--triangle--inverted",
             "symbol": "symbol--undefined",
             "text": "text--stop--japanese"
         },
@@ -3693,8 +3693,8 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bar--horizontal",
-            "text": ""
+            "symbol": "symbol--bar--horizontal--black",
+            "text": "text--stop-signal"
         },
         "weights": {
             "color": 0.0,
@@ -3707,9 +3707,9 @@
     "regulatory--text-four-lines--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
+            "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--four-lines"
         },
         "weights": {
             "color": 0.0,
@@ -3723,7 +3723,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--wide",
-            "symbol": "symbol--triple-arrow--center-lane-turn-left",
+            "symbol": "symbol--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
             "text": "text--only"
         },
         "weights": {
@@ -3739,7 +3739,7 @@
             "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--60"
+            "text": "text--maximum--60"
         },
         "weights": {
             "color": 0.0,
@@ -3919,7 +3919,7 @@
             "color": "color--red-white",
             "shape": "shape--circle",
             "symbol": "symbol--undefined",
-            "text": "text--alphanumeric"
+            "text": "text--number--t"
         },
         "weights": {
             "color": 0.0,
@@ -3932,8 +3932,8 @@
     "regulatory--weight-limit-with-trucks--g1": {
         "labels": {
             "color": "color--white-black",
-            "shape": "shape--rectangle--tall",
-            "symbol": "symbol--vehicle",
+            "shape": "shape--square",
+            "symbol": "symbol---triple-truck--verticle",
             "text": "text--weight-limit"
         },
         "weights": {
@@ -3948,8 +3948,8 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--undefined",
-            "text": "text--alphanumeric"
+            "symbol": "symbol---mini-triangle--left--right",
+            "text": "text--number--m"
         },
         "weights": {
             "color": 0.0,
@@ -3977,8 +3977,8 @@
     "regulatory--yield--g1": {
         "labels": {
             "color": "color--red-white",
-            "shape": "shape--nabla",
-            "symbol": "symbol--nabla",
+            "shape": "shape--triangle--inverted",
+            "symbol": "symbol--undefined",
             "text": "text--undefined"
         },
         "weights": {
