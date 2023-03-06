@@ -73,7 +73,7 @@ split_generated_percentage_train = 0.8
 split_generated_percentage_validate = 0.1
 split_original_percentage_train = 0.8
 split_original_percentage_validate = 0.1
-split_random_seed = 10241048
+split_random_seed = 80241652
 
 verify_dataset_dir_images_split = dataset_dir_images_split + "/original"
 
