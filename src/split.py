@@ -5,6 +5,12 @@ import os
 import random
 import tqdm
 
+def shuffleUniform(file_names):
+    random.seed(header.split_random_seed)
+    random.shuffle(file_names)
+
+    return file_names
+
 def splitGenerated():
     if os.path.isdir(header.dataset_dir_images_split_generated):
         return
@@ -17,7 +23,7 @@ def splitGenerated():
     split_point_validate_test = int(len(file_names) * (header.split_generated_percentage_train + header.split_generated_percentage_validate))
     split_point_train_validate = int(len(file_names) * header.split_generated_percentage_train)
 
-    random.shuffle(file_names)
+    shuffleUniform(file_names)
 
     file_names_test = file_names[split_point_validate_test:]
     file_names_train = file_names[:split_point_train_validate]
