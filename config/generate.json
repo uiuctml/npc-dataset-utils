@@ -7,12 +7,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--both-directions--g1": {
         "labels": {
@@ -22,12 +22,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--buses--g1": {
         "labels": {
@@ -37,12 +37,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-left--g1": {
         "labels": {
@@ -52,12 +52,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-left--g2": {
         "labels": {
@@ -67,12 +67,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-left--g3": {
         "labels": {
@@ -82,12 +82,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-left--g4": {
         "labels": {
@@ -97,12 +97,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-left--g5": {
         "labels": {
@@ -112,12 +112,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-right--g1": {
         "labels": {
@@ -127,12 +127,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-right--g3": {
         "labels": {
@@ -142,12 +142,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-right--g4": {
         "labels": {
@@ -157,12 +157,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-right--g5": {
         "labels": {
@@ -172,12 +172,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--chevron-right-unsure--g6": {
         "labels": {
@@ -187,12 +187,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--distance--g1": {
         "labels": {
@@ -202,12 +202,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--distance--g2": {
         "labels": {
@@ -217,12 +217,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--distance--g3": {
         "labels": {
@@ -232,12 +232,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--except-bicycles--g1": {
         "labels": {
@@ -247,12 +247,12 @@
             "text": "text--free--german"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--extent-of-prohibition-area-both-direction--g1": {
         "labels": {
@@ -262,12 +262,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--go-left--g1": {
         "labels": {
@@ -277,12 +277,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--go-right--g1": {
         "labels": {
@@ -292,12 +292,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--go-right--g2": {
         "labels": {
@@ -307,12 +307,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--keep-left--g1": {
         "labels": {
@@ -322,12 +322,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--keep-right--g1": {
         "labels": {
@@ -337,12 +337,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-15--g1": {
         "labels": {
@@ -352,12 +352,12 @@
             "text": "text--15-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-20--g1": {
         "labels": {
@@ -367,12 +367,12 @@
             "text": "text--20-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-25--g1": {
         "labels": {
@@ -382,12 +382,12 @@
             "text": "text--25-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-30--g1": {
         "labels": {
@@ -397,12 +397,12 @@
             "text": "text--30-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-35--g1": {
         "labels": {
@@ -412,12 +412,12 @@
             "text": "text--35-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-40--g1": {
         "labels": {
@@ -427,12 +427,12 @@
             "text": "text--40-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-45--g1": {
         "labels": {
@@ -442,12 +442,12 @@
             "text": "text--45-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-50--g1": {
         "labels": {
@@ -457,12 +457,12 @@
             "text": "text--50-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-55--g1": {
         "labels": {
@@ -472,12 +472,12 @@
             "text": "text--55-mph"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-70--g1": {
         "labels": {
@@ -487,12 +487,12 @@
             "text": "text--70-km/h"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--maximum-speed-limit-75--g1": {
         "labels": {
@@ -502,12 +502,12 @@
             "text": "text--75-km/h"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--obstacle-delineator--g1": {
         "labels": {
@@ -517,12 +517,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--obstacle-delineator--g2": {
         "labels": {
@@ -532,12 +532,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--one-direction-left--g1": {
         "labels": {
@@ -547,12 +547,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--one-direction-right--g1": {
         "labels": {
@@ -562,12 +562,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--pass-right--g1": {
         "labels": {
@@ -577,12 +577,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--priority-route-at-intersection--g1": {
         "labels": {
@@ -592,12 +592,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--tow-away-zone--g1": {
         "labels": {
@@ -607,12 +607,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--trucks--g1": {
         "labels": {
@@ -622,12 +622,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--trucks-turn-right--g1": {
         "labels": {
@@ -637,12 +637,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--turn-left--g2": {
         "labels": {
@@ -652,12 +652,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "complementary--turn-right--g2": {
         "labels": {
@@ -667,12 +667,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--airport--g1": {
         "labels": {
@@ -682,12 +682,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--airport--g2": {
         "labels": {
@@ -697,12 +697,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--bike-route--g1": {
         "labels": {
@@ -712,12 +712,12 @@
             "text": "text--bike-route"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--bus-stop--g1": {
         "labels": {
@@ -727,12 +727,12 @@
             "text": "text--h"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--camp--g1": {
         "labels": {
@@ -742,12 +742,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--central-lane--g1": {
         "labels": {
@@ -757,12 +757,12 @@
             "text": "text--central-lane--chinese"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--children--g1": {
         "labels": {
@@ -772,12 +772,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--dead-end--g1": {
         "labels": {
@@ -787,12 +787,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--dead-end-except-bicycles--g1": {
         "labels": {
@@ -802,12 +802,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--disabled-persons--g1": {
         "labels": {
@@ -817,12 +817,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--emergency-facility--g2": {
         "labels": {
@@ -832,12 +832,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--end-of-built-up-area--g1": {
         "labels": {
@@ -847,12 +847,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--end-of-limited-access-road--g1": {
         "labels": {
@@ -862,12 +862,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--end-of-living-street--g1": {
         "labels": {
@@ -877,12 +877,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--end-of-motorway--g1": {
         "labels": {
@@ -892,12 +892,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--end-of-pedestrians-only--g2": {
         "labels": {
@@ -907,12 +907,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--food--g2": {
         "labels": {
@@ -922,12 +922,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--gas-station--g1": {
         "labels": {
@@ -937,12 +937,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--gas-station--g3": {
         "labels": {
@@ -952,12 +952,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--highway-exit--g1": {
         "labels": {
@@ -967,12 +967,12 @@
             "text": "text--exit"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--highway-interstate-route--g2": {
         "labels": {
@@ -982,12 +982,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--hospital--g1": {
         "labels": {
@@ -997,12 +997,12 @@
             "text": "text--h"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--interstate-route--g1": {
         "labels": {
@@ -1012,12 +1012,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--limited-access-road--g1": {
         "labels": {
@@ -1027,12 +1027,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--living-street--g1": {
         "labels": {
@@ -1042,12 +1042,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--lodging--g1": {
         "labels": {
@@ -1057,12 +1057,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--minimum-speed-40--g1": {
         "labels": {
@@ -1072,12 +1072,12 @@
             "text": "text--40"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--motorway--g1": {
         "labels": {
@@ -1087,12 +1087,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--no-parking--g3": {
         "labels": {
@@ -1102,12 +1102,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g1": {
         "labels": {
@@ -1117,12 +1117,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g2": {
         "labels": {
@@ -1132,12 +1132,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g3": {
         "labels": {
@@ -1147,12 +1147,12 @@
             "text": "text--e"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g45": {
         "labels": {
@@ -1162,12 +1162,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g5": {
         "labels": {
@@ -1177,12 +1177,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--parking--g6": {
         "labels": {
@@ -1192,12 +1192,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--pedestrians-crossing--g1": {
         "labels": {
@@ -1207,12 +1207,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--pedestrians-crossing--g2": {
         "labels": {
@@ -1222,12 +1222,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--road-bump--g1": {
         "labels": {
@@ -1237,12 +1237,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--safety-area--g2": {
         "labels": {
@@ -1252,12 +1252,12 @@
             "text": "text--safety-area--chinese"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--stairs--g1": {
         "labels": {
@@ -1267,12 +1267,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--telephone--g1": {
         "labels": {
@@ -1282,12 +1282,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--telephone--g2": {
         "labels": {
@@ -1297,12 +1297,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--trailer-camping--g1": {
         "labels": {
@@ -1312,12 +1312,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "information--tram-bus-stop--g2": {
         "labels": {
@@ -1327,12 +1327,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "other-sign": {
         "labels": {
@@ -1342,12 +1342,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--bicycles-only--g1": {
         "labels": {
@@ -1357,12 +1357,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--bicycles-only--g2": {
         "labels": {
@@ -1372,12 +1372,12 @@
             "text": "text--bike-lane"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--bicycles-only--g3": {
         "labels": {
@@ -1387,12 +1387,12 @@
             "text": "text--bike-lane"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--buses-only--g1": {
         "labels": {
@@ -1402,12 +1402,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--detour-left--g1": {
         "labels": {
@@ -1417,12 +1417,12 @@
             "text": "text--detour--spanish"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--do-not-block-intersection--g1": {
         "labels": {
@@ -1432,12 +1432,12 @@
             "text": "text--do-not-block-intersection"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--do-not-stop-on-tracks--g1": {
         "labels": {
@@ -1447,12 +1447,12 @@
             "text": "text--do-not-stop-on-tracks"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-lanes-go-straight-on-left--g1": {
         "labels": {
@@ -1462,12 +1462,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-lanes-go-straight-on-right--g1": {
         "labels": {
@@ -1477,12 +1477,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-lanes-turn-left-no-u-turn--g1": {
         "labels": {
@@ -1492,12 +1492,12 @@
             "text": "text--no-u-turn"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-lanes-turn-left-or-straight--g1": {
         "labels": {
@@ -1507,12 +1507,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-lanes-turn-right-or-straight--g1": {
         "labels": {
@@ -1522,12 +1522,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-path-bicycles-and-pedestrians--g1": {
         "labels": {
@@ -1537,12 +1537,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--dual-path-pedestrians-and-bicycles--g1": {
         "labels": {
@@ -1552,12 +1552,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-bicycles-only--g1": {
         "labels": {
@@ -1567,12 +1567,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-buses-only--g1": {
         "labels": {
@@ -1582,12 +1582,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-maximum-speed-limit-30--g2": {
         "labels": {
@@ -1597,12 +1597,12 @@
             "text": "text--30"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-maximum-speed-limit-70--g1": {
         "labels": {
@@ -1612,12 +1612,12 @@
             "text": "text--70"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-maximum-speed-limit-70--g2": {
         "labels": {
@@ -1627,12 +1627,12 @@
             "text": "text--70"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-no-parking--g1": {
         "labels": {
@@ -1642,12 +1642,12 @@
             "text": "text--zone"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-priority-road--g1": {
         "labels": {
@@ -1657,12 +1657,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-prohibition--g1": {
         "labels": {
@@ -1672,12 +1672,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--end-of-speed-limit-zone--g1": {
         "labels": {
@@ -1687,12 +1687,12 @@
             "text": "text--zone--30"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--give-way-to-oncoming-traffic--g1": {
         "labels": {
@@ -1702,12 +1702,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight--g1": {
         "labels": {
@@ -1717,12 +1717,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight--g3": {
         "labels": {
@@ -1732,12 +1732,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight-or-turn-left--g1": {
         "labels": {
@@ -1747,12 +1747,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight-or-turn-left--g2": {
         "labels": {
@@ -1762,12 +1762,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight-or-turn-left--g3": {
         "labels": {
@@ -1777,12 +1777,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight-or-turn-right--g1": {
         "labels": {
@@ -1792,12 +1792,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--go-straight-or-turn-right--g3": {
         "labels": {
@@ -1807,12 +1807,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--height-limit--g1": {
         "labels": {
@@ -1822,12 +1822,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-left--g1": {
         "labels": {
@@ -1837,12 +1837,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-left--g2": {
         "labels": {
@@ -1852,12 +1852,12 @@
             "text": "text--keep-left"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-right--g1": {
         "labels": {
@@ -1867,12 +1867,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-right--g2": {
         "labels": {
@@ -1882,12 +1882,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-right--g4": {
         "labels": {
@@ -1897,12 +1897,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--keep-right--g6": {
         "labels": {
@@ -1912,12 +1912,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--lane-control--g1": {
         "labels": {
@@ -1927,12 +1927,12 @@
             "text": "text--left-lane-must-turn-left"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--left-turn-yield-on-green--g1": {
         "labels": {
@@ -1942,12 +1942,12 @@
             "text": "text--left-turn-yield-on-green"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-10--g1": {
         "labels": {
@@ -1957,12 +1957,12 @@
             "text": "text--10"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-100--g1": {
         "labels": {
@@ -1972,12 +1972,12 @@
             "text": "text--100"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-100--g3": {
         "labels": {
@@ -1987,12 +1987,12 @@
             "text": "text--maximum--100"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-110--g1": {
         "labels": {
@@ -2002,12 +2002,12 @@
             "text": "text--110"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-120--g1": {
         "labels": {
@@ -2017,12 +2017,12 @@
             "text": "text--120"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-15--g1": {
         "labels": {
@@ -2032,12 +2032,12 @@
             "text": "text--15"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-20--g1": {
         "labels": {
@@ -2047,12 +2047,12 @@
             "text": "text--20"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-25--g1": {
         "labels": {
@@ -2062,12 +2062,12 @@
             "text": "text--25"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-25--g2": {
         "labels": {
@@ -2077,12 +2077,12 @@
             "text": "text--speed-limit--25"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-30--g1": {
         "labels": {
@@ -2092,12 +2092,12 @@
             "text": "text--30"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-30--g3": {
         "labels": {
@@ -2107,12 +2107,12 @@
             "text": "text--speed-limit--30"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-35--g2": {
         "labels": {
@@ -2122,12 +2122,12 @@
             "text": "text--speed-limit--35"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-40--g1": {
         "labels": {
@@ -2137,12 +2137,12 @@
             "text": "text--40"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-40--g3": {
         "labels": {
@@ -2152,12 +2152,12 @@
             "text": "text--speed-limit--40"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-40--g6": {
         "labels": {
@@ -2167,12 +2167,12 @@
             "text": "text--minimum--40"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-45--g1": {
         "labels": {
@@ -2182,12 +2182,12 @@
             "text": "text--45"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-45--g3": {
         "labels": {
@@ -2197,12 +2197,12 @@
             "text": "text--speed-limit--45"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-5--g1": {
         "labels": {
@@ -2212,12 +2212,12 @@
             "text": "text--5"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-50--g1": {
         "labels": {
@@ -2227,12 +2227,12 @@
             "text": "text--50"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-50--g6": {
         "labels": {
@@ -2242,12 +2242,12 @@
             "text": "text--maximum--50"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-55--g2": {
         "labels": {
@@ -2257,12 +2257,12 @@
             "text": "text--speed-limit--55"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-60--g1": {
         "labels": {
@@ -2272,12 +2272,12 @@
             "text": "text--60"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-65--g2": {
         "labels": {
@@ -2287,12 +2287,12 @@
             "text": "text--speed-limit--65"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-70--g1": {
         "labels": {
@@ -2302,12 +2302,12 @@
             "text": "text--70"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-80--g1": {
         "labels": {
@@ -2317,12 +2317,12 @@
             "text": "text--80"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-90--g1": {
         "labels": {
@@ -2332,12 +2332,12 @@
             "text": "text--90"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-led-100--g1": {
         "labels": {
@@ -2347,12 +2347,12 @@
             "text": "text--100"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-led-60--g1": {
         "labels": {
@@ -2362,12 +2362,12 @@
             "text": "text--60"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--maximum-speed-limit-led-80--g1": {
         "labels": {
@@ -2377,12 +2377,12 @@
             "text": "text--80"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--minimum-safe-distance--g1": {
         "labels": {
@@ -2392,12 +2392,12 @@
             "text": "text--alphanumeric"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--mopeds-and-bicycles-only--g1": {
         "labels": {
@@ -2407,12 +2407,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-bicycles--g1": {
         "labels": {
@@ -2422,12 +2422,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-bicycles--g2": {
         "labels": {
@@ -2437,12 +2437,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-bicycles--g3": {
         "labels": {
@@ -2452,12 +2452,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-buses--g3": {
         "labels": {
@@ -2467,12 +2467,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-entry--g1": {
         "labels": {
@@ -2482,12 +2482,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-hawkers--g1": {
         "labels": {
@@ -2497,12 +2497,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-heavy-goods-vehicles--g1": {
         "labels": {
@@ -2512,12 +2512,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-heavy-goods-vehicles--g2": {
         "labels": {
@@ -2527,12 +2527,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-heavy-goods-vehicles--g4": {
         "labels": {
@@ -2542,12 +2542,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-heavy-goods-vehicles--g5": {
         "labels": {
@@ -2557,12 +2557,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-heavy-goods-vehicles-or-buses--g1": {
         "labels": {
@@ -2572,12 +2572,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-left-turn--g1": {
         "labels": {
@@ -2587,12 +2587,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-left-turn--g2": {
         "labels": {
@@ -2602,12 +2602,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-left-turn--g3": {
         "labels": {
@@ -2617,12 +2617,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-mopeds-or-bicycles--g1": {
         "labels": {
@@ -2632,12 +2632,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motor-vehicle-trailers--g1": {
         "labels": {
@@ -2647,12 +2647,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motor-vehicles--g1": {
         "labels": {
@@ -2662,12 +2662,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motor-vehicles--g4": {
         "labels": {
@@ -2677,12 +2677,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g1": {
         "labels": {
@@ -2692,12 +2692,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motor-vehicles-except-motorcycles--g2": {
         "labels": {
@@ -2707,12 +2707,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motorcycles--g1": {
         "labels": {
@@ -2722,12 +2722,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-motorcycles--g2": {
         "labels": {
@@ -2737,12 +2737,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-overtaking--g1": {
         "labels": {
@@ -2752,12 +2752,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-overtaking--g2": {
         "labels": {
@@ -2767,12 +2767,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-overtaking--g4": {
         "labels": {
@@ -2782,12 +2782,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-overtaking--g5": {
         "labels": {
@@ -2797,12 +2797,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-overtaking-by-heavy-goods-vehicles--g1": {
         "labels": {
@@ -2812,12 +2812,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking--g1": {
         "labels": {
@@ -2827,12 +2827,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking--g2": {
         "labels": {
@@ -2842,12 +2842,12 @@
             "text": "text--p"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking--g5": {
         "labels": {
@@ -2857,12 +2857,12 @@
             "text": "text--e"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking-or-no-stopping--g1": {
         "labels": {
@@ -2872,12 +2872,12 @@
             "text": "text--no-parking-or-no-stopping--g1"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking-or-no-stopping--g2": {
         "labels": {
@@ -2887,12 +2887,12 @@
             "text": "text--no-parking-or-no-stopping--g2"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-parking-or-no-stopping--g3": {
         "labels": {
@@ -2902,12 +2902,12 @@
             "text": "text--no-parking-or-no-stopping--g3"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-pedestrians--g1": {
         "labels": {
@@ -2917,12 +2917,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-pedestrians--g2": {
         "labels": {
@@ -2932,12 +2932,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-pedestrians--g3": {
         "labels": {
@@ -2947,12 +2947,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-pedestrians-or-bicycles--g1": {
         "labels": {
@@ -2962,12 +2962,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-right-turn--g1": {
         "labels": {
@@ -2977,12 +2977,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-right-turn--g2": {
         "labels": {
@@ -2992,12 +2992,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-right-turn--g3": {
         "labels": {
@@ -3007,12 +3007,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-stopping--g15": {
         "labels": {
@@ -3022,12 +3022,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-stopping--g2": {
         "labels": {
@@ -3037,12 +3037,12 @@
             "text": "text--e"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-stopping--g4": {
         "labels": {
@@ -3052,12 +3052,12 @@
             "text": "text--no-parking"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-stopping--g5": {
         "labels": {
@@ -3067,12 +3067,12 @@
             "text": "text--s"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-stopping--g8": {
         "labels": {
@@ -3082,12 +3082,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-straight-through--g1": {
         "labels": {
@@ -3097,12 +3097,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-straight-through--g2": {
         "labels": {
@@ -3112,12 +3112,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-turn-on-red--g1": {
         "labels": {
@@ -3127,12 +3127,12 @@
             "text": "text--no-turn-on-red--g1"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-turn-on-red--g2": {
         "labels": {
@@ -3142,12 +3142,12 @@
             "text": "text--no-turn-on-red--g2"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-turn-on-red--g3": {
         "labels": {
@@ -3157,12 +3157,12 @@
             "text": "text--no-turn-on-red"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-turns--g1": {
         "labels": {
@@ -3172,12 +3172,12 @@
             "text": "text--no-turn"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-u-turn--g1": {
         "labels": {
@@ -3187,12 +3187,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-u-turn--g2": {
         "labels": {
@@ -3202,12 +3202,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-u-turn--g3": {
         "labels": {
@@ -3217,12 +3217,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--no-vehicles-carrying-dangerous-goods--g1": {
         "labels": {
@@ -3232,12 +3232,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-left--g1": {
         "labels": {
@@ -3247,12 +3247,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-left--g2": {
         "labels": {
@@ -3262,12 +3262,12 @@
             "text": "text--one-way"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-left--g3": {
         "labels": {
@@ -3277,12 +3277,12 @@
             "text": "text--one-way"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-right--g1": {
         "labels": {
@@ -3292,12 +3292,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-right--g2": {
         "labels": {
@@ -3307,12 +3307,12 @@
             "text": "text--one-way"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-right--g3": {
         "labels": {
@@ -3322,12 +3322,12 @@
             "text": "text--one-way"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--one-way-straight--g1": {
         "labels": {
@@ -3337,12 +3337,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--parking-restrictions--g2": {
         "labels": {
@@ -3352,12 +3352,12 @@
             "text": "text--2"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--pass-on-either-side--g1": {
         "labels": {
@@ -3367,12 +3367,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--pass-on-either-side--g2": {
         "labels": {
@@ -3382,12 +3382,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--passing-lane-ahead--g1": {
         "labels": {
@@ -3397,12 +3397,12 @@
             "text": ""
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--pedestrians-only--g1": {
         "labels": {
@@ -3412,12 +3412,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--pedestrians-only--g2": {
         "labels": {
@@ -3427,12 +3427,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--priority-over-oncoming-vehicles--g1": {
         "labels": {
@@ -3442,12 +3442,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--priority-road--g4": {
         "labels": {
@@ -3457,12 +3457,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--radar-enforced--g1": {
         "labels": {
@@ -3472,12 +3472,12 @@
             "text": ""
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--reversible-lanes--g2": {
         "labels": {
@@ -3487,12 +3487,12 @@
             "text": "text--center-lane-only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--road-closed--g1": {
         "labels": {
@@ -3502,12 +3502,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--road-closed--g2": {
         "labels": {
@@ -3517,12 +3517,12 @@
             "text": "text--road-closed"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--road-closed-to-vehicles--g1": {
         "labels": {
@@ -3532,12 +3532,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--road-closed-to-vehicles--g3": {
         "labels": {
@@ -3547,12 +3547,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--roundabout--g1": {
         "labels": {
@@ -3562,12 +3562,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--roundabout--g2": {
         "labels": {
@@ -3577,12 +3577,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--shared-path-bicycles-and-pedestrians--g1": {
         "labels": {
@@ -3592,12 +3592,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--shared-path-pedestrians-and-bicycles--g1": {
         "labels": {
@@ -3607,12 +3607,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop--g1": {
         "labels": {
@@ -3622,12 +3622,12 @@
             "text": "text--stop"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop--g10": {
         "labels": {
@@ -3637,12 +3637,12 @@
             "text": "text--stop--g10"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop--g2": {
         "labels": {
@@ -3652,12 +3652,12 @@
             "text": "text--stop--japanese"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop-here-on-red-or-flashing-light--g1": {
         "labels": {
@@ -3667,12 +3667,12 @@
             "text": "text--stop-here-on-red"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop-here-on-red-or-flashing-light--g2": {
         "labels": {
@@ -3682,12 +3682,12 @@
             "text": "text--stop-here-on-red"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--stop-signals--g1": {
         "labels": {
@@ -3697,12 +3697,12 @@
             "text": "text--stop-signal"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--text-four-lines--g1": {
         "labels": {
@@ -3712,12 +3712,12 @@
             "text": "text--four-lines"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--triple-lanes-turn-left-center-lane--g1": {
         "labels": {
@@ -3727,12 +3727,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--truck-speed-limit-60--g1": {
         "labels": {
@@ -3742,12 +3742,12 @@
             "text": "text--maximum--60"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-left--g1": {
         "labels": {
@@ -3757,12 +3757,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-left--g2": {
         "labels": {
@@ -3772,12 +3772,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-left--g3": {
         "labels": {
@@ -3787,12 +3787,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-left-ahead--g1": {
         "labels": {
@@ -3802,12 +3802,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-right--g1": {
         "labels": {
@@ -3817,12 +3817,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-right--g2": {
         "labels": {
@@ -3832,12 +3832,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-right--g3": {
         "labels": {
@@ -3847,12 +3847,12 @@
             "text": "text--only"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-right-ahead--g1": {
         "labels": {
@@ -3862,12 +3862,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turn-right-ahead--g2": {
         "labels": {
@@ -3877,12 +3877,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--turning-vehicles-yield-to-pedestrians--g1": {
         "labels": {
@@ -3892,12 +3892,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--u-turn--g1": {
         "labels": {
@@ -3907,12 +3907,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--weight-limit--g1": {
         "labels": {
@@ -3922,12 +3922,12 @@
             "text": "text--number--t"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--weight-limit-with-trucks--g1": {
         "labels": {
@@ -3937,12 +3937,12 @@
             "text": "text--weight-limit"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--width-limit--g1": {
         "labels": {
@@ -3952,12 +3952,12 @@
             "text": "text--number--m"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--wrong-way--g1": {
         "labels": {
@@ -3967,12 +3967,12 @@
             "text": "text--wrong-way"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "regulatory--yield--g1": {
         "labels": {
@@ -3982,12 +3982,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--accidental-area-unsure--g2": {
         "labels": {
@@ -3997,12 +3997,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--added-lane-right--g1": {
         "labels": {
@@ -4012,12 +4012,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--bicycles-crossing--g1": {
         "labels": {
@@ -4027,12 +4027,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--bicycles-crossing--g2": {
         "labels": {
@@ -4042,12 +4042,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--bicycles-crossing--g3": {
         "labels": {
@@ -4057,12 +4057,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--bus-stop-ahead--g3": {
         "labels": {
@@ -4072,12 +4072,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--children--g1": {
         "labels": {
@@ -4087,12 +4087,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--children--g2": {
         "labels": {
@@ -4102,12 +4102,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--crossroads--g1": {
         "labels": {
@@ -4117,12 +4117,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--crossroads--g3": {
         "labels": {
@@ -4132,12 +4132,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--crossroads-with-priority-to-the-right--g1": {
         "labels": {
@@ -4147,12 +4147,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--curve-left--g1": {
         "labels": {
@@ -4162,12 +4162,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--curve-left--g2": {
         "labels": {
@@ -4177,12 +4177,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--curve-right--g1": {
         "labels": {
@@ -4192,12 +4192,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--curve-right--g2": {
         "labels": {
@@ -4207,12 +4207,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--dip--g2": {
         "labels": {
@@ -4222,12 +4222,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--divided-highway-ends--g1": {
         "labels": {
@@ -4237,12 +4237,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--divided-highway-ends--g2": {
         "labels": {
@@ -4252,12 +4252,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--domestic-animals--g1": {
         "labels": {
@@ -4267,12 +4267,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--domestic-animals--g3": {
         "labels": {
@@ -4282,12 +4282,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-curve-first-left--g1": {
         "labels": {
@@ -4297,12 +4297,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-curve-first-left--g2": {
         "labels": {
@@ -4312,12 +4312,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-curve-first-right--g1": {
         "labels": {
@@ -4327,12 +4327,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-curve-first-right--g2": {
         "labels": {
@@ -4342,12 +4342,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-reverse-curve-right--g1": {
         "labels": {
@@ -4357,12 +4357,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--double-turn-first-right--g1": {
         "labels": {
@@ -4372,12 +4372,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--dual-lanes-right-turn-or-go-straight--g1": {
         "labels": {
@@ -4387,12 +4387,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--emergency-vehicles--g1": {
         "labels": {
@@ -4402,12 +4402,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--equestrians-crossing--g2": {
         "labels": {
@@ -4417,12 +4417,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--falling-rocks-or-debris-right--g1": {
         "labels": {
@@ -4432,12 +4432,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--falling-rocks-or-debris-right--g2": {
         "labels": {
@@ -4447,12 +4447,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--falling-rocks-or-debris-right--g4": {
         "labels": {
@@ -4462,12 +4462,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--flaggers-in-road--g1": {
         "labels": {
@@ -4477,12 +4477,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--hairpin-curve-left--g1": {
         "labels": {
@@ -4492,12 +4492,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--hairpin-curve-left--g3": {
         "labels": {
@@ -4507,12 +4507,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--hairpin-curve-right--g1": {
         "labels": {
@@ -4522,12 +4522,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--hairpin-curve-right--g4": {
         "labels": {
@@ -4537,12 +4537,12 @@
             "text": "text--300u"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--height-restriction--g2": {
         "labels": {
@@ -4552,12 +4552,12 @@
             "text": "text--number"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--horizontal-alignment-left--g1": {
         "labels": {
@@ -4567,12 +4567,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--horizontal-alignment-right--g1": {
         "labels": {
@@ -4582,12 +4582,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--horizontal-alignment-right--g3": {
         "labels": {
@@ -4597,12 +4597,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-acute-left--g1": {
         "labels": {
@@ -4612,12 +4612,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-acute-right--g1": {
         "labels": {
@@ -4627,12 +4627,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-perpendicular-left--g1": {
         "labels": {
@@ -4642,12 +4642,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-perpendicular-left--g3": {
         "labels": {
@@ -4657,12 +4657,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-perpendicular-left--g4": {
         "labels": {
@@ -4672,12 +4672,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-perpendicular-right--g1": {
         "labels": {
@@ -4687,12 +4687,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--junction-with-a-side-road-perpendicular-right--g3": {
         "labels": {
@@ -4702,12 +4702,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--kangaloo-crossing--g1": {
         "labels": {
@@ -4717,12 +4717,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--loop-270-degree--g1": {
         "labels": {
@@ -4732,12 +4732,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--narrow-bridge--g1": {
         "labels": {
@@ -4747,12 +4747,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--narrow-bridge--g3": {
         "labels": {
@@ -4762,12 +4762,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--offset-roads--g3": {
         "labels": {
@@ -4777,12 +4777,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--other-danger--g1": {
         "labels": {
@@ -4792,12 +4792,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--other-danger--g3": {
         "labels": {
@@ -4807,12 +4807,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pass-left-or-right--g1": {
         "labels": {
@@ -4822,12 +4822,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pass-left-or-right--g2": {
         "labels": {
@@ -4837,12 +4837,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrian-stumble-train--g1": {
         "labels": {
@@ -4852,12 +4852,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g1": {
         "labels": {
@@ -4867,12 +4867,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g10": {
         "labels": {
@@ -4882,12 +4882,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g11": {
         "labels": {
@@ -4897,12 +4897,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g12": {
         "labels": {
@@ -4912,12 +4912,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g4": {
         "labels": {
@@ -4927,12 +4927,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g5": {
         "labels": {
@@ -4942,12 +4942,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--pedestrians-crossing--g9": {
         "labels": {
@@ -4957,12 +4957,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--playground--g1": {
         "labels": {
@@ -4972,12 +4972,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--playground--g3": {
         "labels": {
@@ -4987,12 +4987,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing--g1": {
         "labels": {
@@ -5002,12 +5002,12 @@
             "text": "text--r--left--r--right"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing--g3": {
         "labels": {
@@ -5017,12 +5017,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing--g4": {
         "labels": {
@@ -5032,12 +5032,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-with-barriers--g1": {
         "labels": {
@@ -5047,12 +5047,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-with-barriers--g2": {
         "labels": {
@@ -5062,12 +5062,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-with-barriers--g4": {
         "labels": {
@@ -5077,12 +5077,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-without-barriers--g1": {
         "labels": {
@@ -5092,12 +5092,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-without-barriers--g3": {
         "labels": {
@@ -5107,12 +5107,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-crossing-without-barriers--g4": {
         "labels": {
@@ -5122,12 +5122,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-intersection--g3": {
         "labels": {
@@ -5137,12 +5137,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--railroad-intersection--g4": {
         "labels": {
@@ -5152,12 +5152,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--restricted-zone--g1": {
         "labels": {
@@ -5167,12 +5167,12 @@
             "text": "text--r"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-bump--g1": {
         "labels": {
@@ -5182,12 +5182,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-bump--g2": {
         "labels": {
@@ -5197,12 +5197,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows--g1": {
         "labels": {
@@ -5212,12 +5212,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows--g2": {
         "labels": {
@@ -5227,12 +5227,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows-left--g1": {
         "labels": {
@@ -5242,12 +5242,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows-left--g2": {
         "labels": {
@@ -5257,12 +5257,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows-right--g1": {
         "labels": {
@@ -5272,12 +5272,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-narrows-right--g2": {
         "labels": {
@@ -5287,12 +5287,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-widens--g1": {
         "labels": {
@@ -5302,12 +5302,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--road-widens-right--g1": {
         "labels": {
@@ -5317,12 +5317,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roadworks--g1": {
         "labels": {
@@ -5332,12 +5332,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roadworks--g2": {
         "labels": {
@@ -5347,12 +5347,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roadworks--g3": {
         "labels": {
@@ -5362,12 +5362,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roadworks--g4": {
         "labels": {
@@ -5377,12 +5377,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roadworks--g6": {
         "labels": {
@@ -5392,12 +5392,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roundabout--g1": {
         "labels": {
@@ -5407,12 +5407,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--roundabout--g25": {
         "labels": {
@@ -5422,12 +5422,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--school-zone--g2": {
         "labels": {
@@ -5437,12 +5437,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--shared-lane-motorcycles-bicycles--g1": {
         "labels": {
@@ -5452,12 +5452,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--slippery-motorcycles--g1": {
         "labels": {
@@ -5467,12 +5467,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--slippery-road-surface--g1": {
         "labels": {
@@ -5482,12 +5482,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--slippery-road-surface--g2": {
         "labels": {
@@ -5497,12 +5497,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--steep-ascent--g7": {
         "labels": {
@@ -5512,12 +5512,12 @@
             "text": "text--number"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--stop-ahead--g9": {
         "labels": {
@@ -5527,12 +5527,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--t-roads--g1": {
         "labels": {
@@ -5542,12 +5542,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--t-roads--g2": {
         "labels": {
@@ -5557,12 +5557,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--texts--g1": {
         "labels": {
@@ -5572,12 +5572,12 @@
             "text": "text--text--g1"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--texts--g2": {
         "labels": {
@@ -5587,12 +5587,12 @@
             "text": "text--text--g2"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--texts--g3": {
         "labels": {
@@ -5602,12 +5602,12 @@
             "text": "text--text--g3"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-merges-left--g1": {
         "labels": {
@@ -5617,12 +5617,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-merges-left--g2": {
         "labels": {
@@ -5632,12 +5632,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-merges-right--g1": {
         "labels": {
@@ -5647,12 +5647,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-merges-right--g2": {
         "labels": {
@@ -5662,12 +5662,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-signals--g1": {
         "labels": {
@@ -5677,12 +5677,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-signals--g2": {
         "labels": {
@@ -5692,12 +5692,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-signals--g3": {
         "labels": {
@@ -5707,12 +5707,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--traffic-signals--g4": {
         "labels": {
@@ -5722,12 +5722,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--trail-crossing--g2": {
         "labels": {
@@ -5737,12 +5737,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--trams-crossing--g1": {
         "labels": {
@@ -5752,12 +5752,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--trucks-crossing--g1": {
         "labels": {
@@ -5767,12 +5767,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--turn-left--g1": {
         "labels": {
@@ -5782,12 +5782,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--turn-right--g1": {
         "labels": {
@@ -5797,12 +5797,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--turn-right--g2": {
         "labels": {
@@ -5812,12 +5812,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--two-way-traffic--g1": {
         "labels": {
@@ -5827,12 +5827,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--two-way-traffic--g2": {
         "labels": {
@@ -5842,12 +5842,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--uneven-road--g2": {
         "labels": {
@@ -5857,12 +5857,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--uneven-road--g6": {
         "labels": {
@@ -5872,12 +5872,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--uneven-roads-ahead--g1": {
         "labels": {
@@ -5887,12 +5887,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--wild-animals--g1": {
         "labels": {
@@ -5902,12 +5902,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--wild-animals--g4": {
         "labels": {
@@ -5917,12 +5917,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--winding-road-first-left--g1": {
         "labels": {
@@ -5932,12 +5932,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--winding-road-first-left--g2": {
         "labels": {
@@ -5947,12 +5947,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--winding-road-first-right--g1": {
         "labels": {
@@ -5962,12 +5962,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--winding-road-first-right--g3": {
         "labels": {
@@ -5977,12 +5977,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--wombat-crossing--g1": {
         "labels": {
@@ -5992,12 +5992,12 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     },
     "warning--y-roads--g1": {
         "labels": {
@@ -6007,11 +6007,11 @@
             "text": "text--undefined"
         },
         "weights": {
-            "color": 0.0,
-            "shape": 0.0,
-            "symbol": 0.0,
-            "text": 0.0
+            "color": 1.0,
+            "shape": 1.0,
+            "symbol": 1.0,
+            "text": 1.0
         },
-        "reduction": ""
+        "reduction": "multiplication"
     }
 }
