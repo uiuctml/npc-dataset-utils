@@ -49,10 +49,6 @@ def verifyGenerateConfigWeights(generate_config, label):
 
         if weights_sum == 0:
             logger.log_error("\"" + label + "\" contains zero weights.")
-        elif weights_sum < 1:
-            logger.log_error("\"" + label + "\" contains weights summing up less than one.")
-        elif weights_sum > 1:
-            logger.log_error("\"" + label + "\" contains weights summing up greater than one.")
 
     return
 
