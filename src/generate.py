@@ -40,6 +40,9 @@ def main():
 
             label_combined += label
 
+        label_combined += header.dataset_delimiter_file_name
+        label_combined += dataset_dir_labels
+
         dataset_dir_images_original_label = os.path.join(header.generate_dataset_dir_images, dataset_dir_labels)
         dataset_images_list = os.listdir(dataset_dir_images_original_label)
 
