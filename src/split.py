@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import gzip
 import header
 import json
 import logger
@@ -49,9 +50,12 @@ def split(config_split, dataset_name, file_names, dataset_dir, split_dir_test, s
     split_name_validate = os.path.basename(split_dir_validate)
 
     if header.split_load:
-        file_config_split = open(file_path_config_split, "r")
-        config_split = json.load(file_config_split)
+        file_config_split = gzip.open(file_path_config_split, "r")
+        config_split_json_encoded = file_config_split.read()
         file_config_split.close()
+
+        config_split_json = config_split_json_encoded.decode("utf-8")
+        config_split = json.loads(config_split_json)
 
         file_names_test = config_split[dataset_name][split_name_test]
         file_names_train = config_split[dataset_name][split_name_train]
@@ -76,8 +80,11 @@ def split(config_split, dataset_name, file_names, dataset_dir, split_dir_test, s
         config_split[dataset_name][split_name_train] = file_names_train
         config_split[dataset_name][split_name_validate] = file_names_validate
 
-        with open(file_path_config_split, "w") as file_config_split:
-            json.dump(config_split, file_config_split, indent = 4)
+        config_split_json = json.dumps(config_split, indent = 4)
+        config_split_json_encoded = config_split_json.encode("utf-8")
+
+        with gzip.open(file_path_config_split, "w") as file_config_split:
+            file_config_split.write(config_split_json_encoded)
 
         logger.log_info("Saved splits for dataset \"" + dataset_name + "\" to \"" + file_path_config_split + "\".")
 
