@@ -484,7 +484,7 @@
             "color": "color--yellow-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--70-km/h"
+            "text": "text--70-kph"
         },
         "weights": {
             "color": 1.0,
@@ -499,7 +499,7 @@
             "color": "color--yellow-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": "text--75-km/h"
+            "text": "text--75-kph"
         },
         "weights": {
             "color": 1.0,
