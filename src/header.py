@@ -69,11 +69,14 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
+split_config_file_name = "split.json"
 split_generated_percentage_train = 0.8
 split_generated_percentage_validate = 0.1
+split_load = True
 split_original_percentage_train = 0.8
 split_original_percentage_validate = 0.1
 split_random_seed = 80241652
+split_save = False
 
 verify_dataset_dir_images_split = dataset_dir_images_split + "/original"
 

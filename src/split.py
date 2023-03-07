@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 
 import header
+import json
+import logger
 import os
 import random
 import tqdm
 
 def createSymlinks(dataset_name, split_name, file_names, dir_source, dir_target, create_config_symlinks):
     progress_bar = tqdm.tqdm(total = len(file_names))
-    progress_bar.set_description_str("Creating dataset split \"" + dataset_name + "/" + split_name + "\".")
+    progress_bar.set_description_str("[INFO]: Creating dataset split \"" + dataset_name + "/" + split_name + "\".")
     file_name_counter = 1
 
     for file_name in file_names:
@@ -37,18 +39,47 @@ def shuffleUniform(file_names):
 
     return file_names
 
-def split(dataset_name, file_names, dataset_dir, split_dir_test, split_dir_train, split_dir_validate, split_percentage_train, split_percentage_validate, create_config_symlinks = False):
-    split_point_validate_test = int(len(file_names) * (split_percentage_train + split_percentage_validate))
-    split_point_train_validate = int(len(file_names) * split_percentage_train)
-
-    shuffleUniform(file_names)
-
-    file_names_test = file_names[split_point_validate_test:]
-    file_names_train = file_names[:split_point_train_validate]
-    file_names_validate = file_names[split_point_train_validate:split_point_validate_test]
+def split(config_split, dataset_name, file_names, dataset_dir, split_dir_test, split_dir_train, split_dir_validate, split_percentage_train, split_percentage_validate, create_config_symlinks = False):
+    file_names_test = []
+    file_names_train = []
+    file_names_validate = []
+    file_path_config_split = os.path.join(header.config_dir, header.split_config_file_name)
     split_name_test = os.path.basename(split_dir_test)
     split_name_train = os.path.basename(split_dir_train)
     split_name_validate = os.path.basename(split_dir_validate)
+
+    if header.split_load:
+        file_config_split = open(file_path_config_split, "r")
+        config_split = json.load(file_config_split)
+        file_config_split.close()
+
+        file_names_test = config_split[dataset_name][split_name_test]
+        file_names_train = config_split[dataset_name][split_name_train]
+        file_names_validate = config_split[dataset_name][split_name_validate]
+
+        logger.log_info("Loaded splits for dataset \"" + dataset_name + "\" from \"" + file_path_config_split + "\".")
+    else:
+        split_point_validate_test = int(len(file_names) * (split_percentage_train + split_percentage_validate))
+        split_point_train_validate = int(len(file_names) * split_percentage_train)
+
+        shuffleUniform(file_names)
+
+        file_names_test = file_names[split_point_validate_test:]
+        file_names_train = file_names[:split_point_train_validate]
+        file_names_validate = file_names[split_point_train_validate:split_point_validate_test]
+
+        logger.log_info("Generated splits for dataset \"" + dataset_name + "\" from seed " + str(header.split_random_seed) + ".")
+
+    if header.split_save:
+        config_split[dataset_name] = {}
+        config_split[dataset_name][split_name_test] = file_names_test
+        config_split[dataset_name][split_name_train] = file_names_train
+        config_split[dataset_name][split_name_validate] = file_names_validate
+
+        with open(file_path_config_split, "w") as file_config_split:
+            json.dump(config_split, file_config_split, indent = 4)
+
+        logger.log_info("Saved splits for dataset \"" + dataset_name + "\" to \"" + file_path_config_split + "\".")
 
     createSymlinks(dataset_name, split_name_test, file_names_test, dataset_dir, split_dir_test, create_config_symlinks)
     createSymlinks(dataset_name, split_name_train, file_names_train, dataset_dir, split_dir_train, create_config_symlinks)
@@ -57,6 +88,8 @@ def split(dataset_name, file_names, dataset_dir, split_dir_test, split_dir_train
     return
 
 def main():
+    config_split = {}
+
     if not os.path.isdir(header.dataset_dir_images_split_generated):
         dataset_name = os.path.basename(header.dataset_dir_images_split_generated)
         file_names = os.listdir(header.dataset_dir_images_sliced_generated)
@@ -68,7 +101,7 @@ def main():
         os.makedirs(header.dataset_dir_images_split_generated_train, exist_ok = True)
         os.makedirs(header.dataset_dir_images_split_generated_validate, exist_ok = True)
 
-        split(dataset_name, file_names, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test, header.dataset_dir_images_split_generated_train, header.dataset_dir_images_split_generated_validate, header.split_generated_percentage_train, header.split_generated_percentage_validate, True)
+        split(config_split, dataset_name, file_names, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test, header.dataset_dir_images_split_generated_train, header.dataset_dir_images_split_generated_validate, header.split_generated_percentage_train, header.split_generated_percentage_validate, True)
 
     if not os.path.isdir(header.dataset_dir_images_split_original):
         dataset_name = os.path.basename(header.dataset_dir_images_split_original)
@@ -85,7 +118,7 @@ def main():
         os.makedirs(header.dataset_dir_images_split_original_train, exist_ok = True)
         os.makedirs(header.dataset_dir_images_split_original_validate, exist_ok = True)
 
-        split(dataset_name, file_names, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate, header.split_original_percentage_train, header.split_original_percentage_validate)
+        split(config_split, dataset_name, file_names, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate, header.split_original_percentage_train, header.split_original_percentage_validate)
 
     return
 
