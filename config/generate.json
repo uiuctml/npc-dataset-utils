@@ -1533,7 +1533,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle--adult--child",
+            "symbol": "symbol--bicycle--left--adult--child--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -1548,7 +1548,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--adult--child--bicycle",
+            "symbol": "symbol--adult--child--left--bicycle--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -1608,7 +1608,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--circle",
-            "symbol": "symbol--black-slash",
+            "symbol": "symbol--black-stripes",
             "text": "text--70"
         },
         "weights": {
@@ -1638,7 +1638,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--black-slash--no-parking",
+            "symbol": "symbol--black-stripes--no-parking",
             "text": "text--zone"
         },
         "weights": {
@@ -1653,7 +1653,7 @@
         "labels": {
             "color": "color--white-yellow",
             "shape": "shape--diamond",
-            "symbol": "symbol--black-slash--yellow-diamond",
+            "symbol": "symbol--black-stripes--yellow-diamond",
             "text": "text--undefined"
         },
         "weights": {
@@ -1683,7 +1683,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--black-slash",
+            "symbol": "symbol--black-stripes",
             "text": "text--zone--30"
         },
         "weights": {
@@ -2583,7 +2583,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash--arrow--curved--left",
+            "symbol": "symbol--red-slash--arrow--curved--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -2598,7 +2598,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash--arrow--curved--left",
+            "symbol": "symbol--red-slash--arrow--curved--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -2823,7 +2823,7 @@
         "labels": {
             "color": "color--red-blue",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash",
+            "symbol": "symbol--red-slash--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -3078,7 +3078,7 @@
         "labels": {
             "color": "color--red-blue",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash",
+            "symbol": "symbol--red-slash--g8",
             "text": "text--undefined"
         },
         "weights": {
@@ -3394,7 +3394,7 @@
             "color": "color--white-black",
             "shape": "shape--square",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--passing-lane-ahead"
         },
         "weights": {
             "color": 1.0,
@@ -3469,7 +3469,7 @@
             "color": "color--white-black",
             "shape": "shape--rectangle--wide",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--radar-enforced"
         },
         "weights": {
             "color": 1.0,
@@ -3588,7 +3588,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--bicycle--adult--child",
+            "symbol": "symbol--bicycle--top--adult--child--bottom",
             "text": "text--undefined"
         },
         "weights": {
@@ -3603,7 +3603,7 @@
         "labels": {
             "color": "color--blue-white",
             "shape": "shape--circle",
-            "symbol": "symbol--adult--child--bicycle",
+            "symbol": "symbol--adult--child--top--bicycle--bottom",
             "text": "text--undefined"
         },
         "weights": {
@@ -4158,7 +4158,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--arrow--curved--left",
+            "symbol": "symbol--arrow--curved--top-left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4173,7 +4173,7 @@
         "labels": {
             "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--curved--left",
+            "symbol": "symbol--arrow--curved--top-left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4188,7 +4188,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--arrow--curved--right",
+            "symbol": "symbol--arrow--curved--top-right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4203,7 +4203,7 @@
         "labels": {
             "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--curved--right",
+            "symbol": "symbol--arrow--curved--top-right",
             "text": "text--undefined"
         },
         "weights": {
@@ -5328,7 +5328,7 @@
         "labels": {
             "color": "color--red-orange",
             "shape": "shape--triangle",
-            "symbol": "symbol--roadworks",
+            "symbol": "symbol--roadworks--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -5358,7 +5358,7 @@
         "labels": {
             "color": "color--red-orange",
             "shape": "shape--triangle",
-            "symbol": "symbol--roadworks",
+            "symbol": "symbol--roadworks--g3",
             "text": "text--undefined"
         },
         "weights": {
