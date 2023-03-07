@@ -38,7 +38,7 @@ def verifyDatasetConfigUnused(config_dataset, config_generate):
         labels_dataset = dataset["labels"]
 
         for label_dataset in labels_dataset:
-            if label_dataset not in labels_dataset_set:
+            if label_dataset != "" and label_dataset not in labels_dataset_set:
                 logger.log_error("\"" + label_dataset + "\" is unused.")
 
     return
