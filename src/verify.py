@@ -5,8 +5,60 @@ import json
 import logger
 import os
 
-def verifyDatasetConfig():
+def verifyDatasetConfigMissing(config_dataset, config_generate):
+    labels_dataset_set_dataset = set()
+    labels_dataset_set_generate = set()
 
+    for dataset in config_dataset["datasets"]:
+        labels_dataset = dataset["labels"]
+
+        for label_dataset in labels_dataset:
+            labels_dataset_set_dataset.add(label_dataset)
+
+    for label_original in config_generate.keys():
+        if len(config_generate[label_original]["labels"]) > 0:
+            for dataset_name in config_generate[label_original]["labels"].keys():
+                labels_dataset_set_generate.add(config_generate[label_original]["labels"][dataset_name])
+
+    for label_dataset_generate in labels_dataset_set_generate:
+        if label_dataset_generate not in labels_dataset_set_dataset:
+            logger.log_error("\"" + label_dataset_generate + "\" is missing.")
+
+    return
+
+def verifyDatasetConfigUnused(config_dataset, config_generate):
+    labels_dataset_set = set()
+
+    for label_original in config_generate.keys():
+        if len(config_generate[label_original]["labels"]) > 0:
+            for dataset_name in config_generate[label_original]["labels"].keys():
+                labels_dataset_set.add(config_generate[label_original]["labels"][dataset_name])
+
+    for dataset in config_dataset["datasets"]:
+        labels_dataset = dataset["labels"]
+
+        for label_dataset in labels_dataset:
+            if label_dataset not in labels_dataset_set:
+                logger.log_error("\"" + label_dataset + "\" is unused.")
+
+    return
+
+def verifyDatasetConfig():
+    file_path_config_dataset = os.path.join(header.config_dir, header.dataset_config_file_name)
+    file_path_config_generate = os.path.join(header.config_dir, header.generate_config_file_name)
+
+    logger.log_info("Verifying \"" + file_path_config_dataset + "\"...")
+
+    file_config_dataset = open(file_path_config_dataset, "r")
+    config_dataset = json.load(file_config_dataset)
+    file_config_dataset.close()
+
+    file_config_generate = open(file_path_config_generate, "r")
+    config_generate = json.load(file_config_generate)
+    file_config_generate.close()
+
+    verifyDatasetConfigMissing(config_dataset, config_generate)
+    verifyDatasetConfigUnused(config_dataset, config_generate)
 
     return
 
@@ -32,7 +84,7 @@ def verifyGenerateConfigDuplicates(config_generate):
     label_map = {}
 
     for label_original in config_generate.keys():
-        if len(config_generate[label_original]["labels"]) != 0:
+        if len(config_generate[label_original]["labels"]) > 0:
             labels_dataset = ""
 
             for dataset_name in config_generate[label_original]["labels"].keys():
