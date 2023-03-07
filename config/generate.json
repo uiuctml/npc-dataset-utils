@@ -3,7 +3,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol--car-crash",
+            "symbol": "symbol--car-crash--top",
             "text": "text--undefined"
         },
         "weights": {
@@ -3183,7 +3183,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash--arrow--u-shape--down--g1",
+            "symbol": "symbol--red-slash--arrow--u-shape--down--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -3198,7 +3198,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--arrow--u-shape--down--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -3213,7 +3213,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol--red-slash--arrow--u-shape--down--g3",
+            "symbol": "symbol--red-slash--arrow--u-shape--down--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4008,7 +4008,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--added-lane-right",
+            "symbol": "symbol--added-lane--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4066,9 +4066,9 @@
     },
     "warning--bus-stop-ahead--g3": {
         "labels": {
-            "color": "color--orange-black",
+            "color": "color--yellow-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--human--bus",
+            "symbol": "symbol--bus--human",
             "text": "text--undefined"
         },
         "weights": {
@@ -4083,7 +4083,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--human",
+            "symbol": "symbol--two-children",
             "text": "text--undefined"
         },
         "weights": {
@@ -4098,7 +4098,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--human",
+            "symbol": "symbol--two-human",
             "text": "text--undefined"
         },
         "weights": {
@@ -4126,9 +4126,9 @@
     },
     "warning--crossroads--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--cross",
+            "symbol": "symbol--cross--black",
             "text": "text--undefined"
         },
         "weights": {
@@ -4171,7 +4171,7 @@
     },
     "warning--curve-left--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
@@ -4201,7 +4201,7 @@
     },
     "warning--curve-right--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
@@ -4216,7 +4216,7 @@
     },
     "warning--dip--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--dip",
             "text": "text--undefined"
@@ -4231,9 +4231,9 @@
     },
     "warning--divided-highway-ends--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--divided-highway-ends",
+            "symbol": "symbol--highway--divided-ends--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -4246,9 +4246,9 @@
     },
     "warning--divided-highway-ends--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--divided-highway-ends",
+            "symbol": "symbol--highway--divided-ends--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -4276,7 +4276,7 @@
     },
     "warning--domestic-animals--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--animal",
             "text": "text--undefined"
@@ -4293,7 +4293,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--double-curve--first-left",
+            "symbol": "symbol--reverse-curve--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4306,9 +4306,9 @@
     },
     "warning--double-curve-first-left--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--double-curve--first-left",
+            "symbol": "symbol--arrow--reverse-curve--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4323,7 +4323,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--double-curve--first-right",
+            "symbol": "symbol--reverse-curve--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4336,9 +4336,9 @@
     },
     "warning--double-curve-first-right--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--double-curve--first-right",
+            "symbol": "symbol--arrow--reverse-curve--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4353,7 +4353,7 @@
         "labels": {
             "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--dual-arrow--reverse-curve--right",
+            "symbol": "symbol--double-arrow--reverse-curve--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4366,7 +4366,7 @@
     },
     "warning--double-turn-first-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--double-turn--first-right",
             "text": "text--undefined"
@@ -4381,9 +4381,9 @@
     },
     "warning--dual-lanes-right-turn-or-go-straight--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--square",
-            "symbol": "symbol--arrow--up--dual-arrow--curved--right",
+            "symbol": "symbol--arrow--up--curved--right--arrow--curved--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4396,7 +4396,7 @@
     },
     "warning--emergency-vehicles--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--truck",
             "text": "text--undefined"
@@ -4411,7 +4411,7 @@
     },
     "warning--equestrians-crossing--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--human--horse",
             "text": "text--undefined"
@@ -4441,9 +4441,9 @@
     },
     "warning--falling-rocks-or-debris-right--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--vehicle-back--falling-rocks",
+            "symbol": "symbol--vehicle--falling-rock",
             "text": "text--undefined"
         },
         "weights": {
@@ -4456,7 +4456,7 @@
     },
     "warning--falling-rocks-or-debris-right--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--falling-rocks",
             "text": "text--undefined"
@@ -4486,9 +4486,9 @@
     },
     "warning--hairpin-curve-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--arrow--u-shape--down--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4503,7 +4503,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--arrow--u-shape--down--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4516,9 +4516,9 @@
     },
     "warning--hairpin-curve-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--u-shape--down",
+            "symbol": "symbol--arrow--u-shape--down--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4531,10 +4531,10 @@
     },
     "warning--hairpin-curve-right--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--rectangle--tall",
-            "symbol": "symbol--arrow--u-shape--down",
-            "text": "text--undefined"
+            "symbol": "symbol--arrow--u-shape--down--right",
+            "text": "text--300u"
         },
         "weights": {
             "color": 0.0,
@@ -4546,9 +4546,9 @@
     },
     "warning--height-restriction--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--down--arrow--up",
+            "symbol": "symbol--arrow--up--top--arrow--down--bottom",
             "text": "text--number"
         },
         "weights": {
@@ -4561,7 +4561,7 @@
     },
     "warning--horizontal-alignment-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--horizontal-alignment-left",
             "text": "text--undefined"
@@ -4576,9 +4576,9 @@
     },
     "warning--horizontal-alignment-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--horizontal-alignment-right",
+            "symbol": "symbol--horizontal-alignment--right--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -4591,9 +4591,9 @@
     },
     "warning--horizontal-alignment-right--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--horizontal-alignment-right",
+            "symbol": "symbol--horizontal-alignment--right--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -4606,9 +4606,9 @@
     },
     "warning--junction-with-a-side-road-acute-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--juction--road-acute-left",
+            "symbol": "symbol--junction--acute-left",
             "text": "text--undefined"
         },
         "weights": {
@@ -4621,9 +4621,9 @@
     },
     "warning--junction-with-a-side-road-acute-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--juction--road-acute-right",
+            "symbol": "symbol--junction--acute-right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4638,7 +4638,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--junction--road-perpendicular-left",
+            "symbol": "symbol--junction--left--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -4651,9 +4651,9 @@
     },
     "warning--junction-with-a-side-road-perpendicular-left--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--junction--road-perpendicular-left",
+            "symbol": "symbol--junction--left--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -4666,9 +4666,9 @@
     },
     "warning--junction-with-a-side-road-perpendicular-left--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--triangle",
-            "symbol": "symbol--junction--road-perpendicular-left",
+            "symbol": "symbol--junction--left--g4",
             "text": "text--undefined"
         },
         "weights": {
@@ -4683,7 +4683,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--junction--road-perpendicular-right",
+            "symbol": "symbol--junction--right--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -4696,9 +4696,9 @@
     },
     "warning--junction-with-a-side-road-perpendicular-right--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--junction--road-perpendicular-right",
+            "symbol": "symbol--junction--right--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -4711,7 +4711,7 @@
     },
     "warning--kangaloo-crossing--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--kangaroo",
             "text": "text--undefined"
@@ -4726,7 +4726,7 @@
     },
     "warning--loop-270-degree--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--loop-270-degree",
             "text": "text--undefined"
@@ -4741,7 +4741,7 @@
     },
     "warning--narrow-bridge--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--narrow-bridge",
             "text": "text--undefined"
@@ -4771,7 +4771,7 @@
     },
     "warning--offset-roads--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--offset-road",
             "text": "text--undefined"
@@ -4801,7 +4801,7 @@
     },
     "warning--other-danger--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--exclamation-mark",
             "text": "text--undefined"
@@ -4816,9 +4816,9 @@
     },
     "warning--pass-left-or-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--left-or--right",
+            "symbol": "symbol--arrow--left-or-right",
             "text": "text--undefined"
         },
         "weights": {
@@ -4831,7 +4831,7 @@
     },
     "warning--pass-left-or-right--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--down-left--arrow--down-right",
             "text": "text--undefined"
@@ -4846,9 +4846,9 @@
     },
     "warning--pedestrian-stumble-train--g1": {
         "labels": {
-            "color": "color--black-yellow",
+            "color": "color--black-orange",
             "shape": "shape--triangle",
-            "symbol": "symbol--human--train-font",
+            "symbol": "symbol--train-front--human",
             "text": "text--undefined"
         },
         "weights": {
@@ -4878,7 +4878,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--leg",
+            "symbol": "symbol--arrow--up--leg",
             "text": "text--undefined"
         },
         "weights": {
@@ -4906,7 +4906,7 @@
     },
     "warning--pedestrians-crossing--g12": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--black-orange",
             "shape": "shape--triangle",
             "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
@@ -4921,9 +4921,9 @@
     },
     "warning--pedestrians-crossing--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--human",
+            "symbol": "symbol--human--crossroad",
             "text": "text--undefined"
         },
         "weights": {
@@ -4951,9 +4951,9 @@
     },
     "warning--pedestrians-crossing--g9": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--human--crossroad",
+            "symbol": "symbol--child--adult--crossroad",
             "text": "text--undefined"
         },
         "weights": {
@@ -4966,7 +4966,7 @@
     },
     "warning--playground--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--human--ball",
             "text": "text--undefined"
@@ -4996,10 +4996,10 @@
     },
     "warning--railroad-crossing--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--circle",
             "symbol": "symbol--x",
-            "text": "text--r"
+            "text": "text--r--left--r--right"
         },
         "weights": {
             "color": 0.0,
@@ -5011,9 +5011,9 @@
     },
     "warning--railroad-crossing--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--railroad-crossing",
+            "symbol": "symbol--x--railway",
             "text": "text--undefined"
         },
         "weights": {
@@ -5028,7 +5028,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--x",
-            "symbol": "symbol--x",
+            "symbol": "symbol--undefined",
             "text": "text--undefined"
         },
         "weights": {
@@ -5056,7 +5056,7 @@
     },
     "warning--railroad-crossing-with-barriers--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--x--barrier",
             "text": "text--undefined"
@@ -5071,7 +5071,7 @@
     },
     "warning--railroad-crossing-with-barriers--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--fence",
             "text": "text--undefined"
@@ -5103,7 +5103,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--train--steam",
+            "symbol": "symbol--steam-train",
             "text": "text--undefined"
         },
         "weights": {
@@ -5116,9 +5116,9 @@
     },
     "warning--railroad-crossing-without-barriers--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--train--steam",
+            "symbol": "symbol--steam-train",
             "text": "text--undefined"
         },
         "weights": {
@@ -5131,9 +5131,9 @@
     },
     "warning--railroad-intersection--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--railroad-intersection",
+            "symbol": "symbol--railroad-intersection--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -5146,9 +5146,9 @@
     },
     "warning--railroad-intersection--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--railroad-intersection",
+            "symbol": "symbol--railroad-intersection--g4",
             "text": "text--undefined"
         },
         "weights": {
@@ -5191,7 +5191,7 @@
     },
     "warning--road-bump--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--bump",
             "text": "text--undefined"
@@ -5221,7 +5221,7 @@
     },
     "warning--road-narrows--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--road-narrow",
             "text": "text--undefined"
@@ -5251,7 +5251,7 @@
     },
     "warning--road-narrows-left--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--road-narrow--left",
             "text": "text--undefined"
@@ -5281,7 +5281,7 @@
     },
     "warning--road-narrows-right--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--road-narrow--right",
             "text": "text--undefined"
@@ -5296,7 +5296,7 @@
     },
     "warning--road-widens--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--road-widen",
             "text": "text--undefined"
@@ -5311,7 +5311,7 @@
     },
     "warning--road-widens-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--road-widen--right",
             "text": "text--undefined"
@@ -5326,7 +5326,7 @@
     },
     "warning--roadworks--g1": {
         "labels": {
-            "color": "color--red-yellow",
+            "color": "color--red-orange",
             "shape": "shape--triangle",
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
@@ -5343,7 +5343,7 @@
         "labels": {
             "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--roadworks",
+            "symbol": "symbol--roadworks--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -5356,7 +5356,7 @@
     },
     "warning--roadworks--g3": {
         "labels": {
-            "color": "color--red-yellow",
+            "color": "color--red-orange",
             "shape": "shape--triangle",
             "symbol": "symbol--roadworks",
             "text": "text--undefined"
@@ -5373,7 +5373,7 @@
         "labels": {
             "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--roadworks",
+            "symbol": "symbol--roadworks--g4",
             "text": "text--undefined"
         },
         "weights": {
@@ -5416,7 +5416,7 @@
     },
     "warning--roundabout--g25": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--roundabout",
             "text": "text--undefined"
@@ -5433,7 +5433,7 @@
         "labels": {
             "color": "color--yellow-black",
             "shape": "shape--triangle--extended-bottom",
-            "symbol": "symbol--human",
+            "symbol": "symbol--two-student",
             "text": "text--undefined"
         },
         "weights": {
@@ -5446,10 +5446,10 @@
     },
     "warning--shared-lane-motorcycles-bicycles--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--vehicle-front--human",
-            "text": "text--share-the-road"
+            "symbol": "symbol--vehicle--human",
+            "text": "text--undefined"
         },
         "weights": {
             "color": 0.0,
@@ -5461,9 +5461,9 @@
     },
     "warning--slippery-motorcycles--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--slippery-motocycle",
+            "symbol": "symbol--motorcycle--slippery",
             "text": "text--undefined"
         },
         "weights": {
@@ -5478,7 +5478,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--slippery-road-surface",
+            "symbol": "symbol--vehicle--slippery",
             "text": "text--undefined"
         },
         "weights": {
@@ -5491,9 +5491,9 @@
     },
     "warning--slippery-road-surface--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--slippery-road-surface",
+            "symbol": "symbol--vehicle--slippery",
             "text": "text--undefined"
         },
         "weights": {
@@ -5506,7 +5506,7 @@
     },
     "warning--steep-ascent--g7": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--steep-ascent",
             "text": "text--number"
@@ -5521,9 +5521,9 @@
     },
     "warning--stop-ahead--g9": {
         "labels": {
-            "color": "color--yellow-red",
+            "color": "color--orange-red",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--up",
+            "symbol": "symbol--arrow--up--octagon--red",
             "text": "text--undefined"
         },
         "weights": {
@@ -5551,7 +5551,7 @@
     },
     "warning--t-roads--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--t-road",
             "text": "text--undefined"
@@ -5566,10 +5566,10 @@
     },
     "warning--texts--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--text--g1"
         },
         "weights": {
             "color": 0.0,
@@ -5581,10 +5581,10 @@
     },
     "warning--texts--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--text--g2"
         },
         "weights": {
             "color": 0.0,
@@ -5596,10 +5596,10 @@
     },
     "warning--texts--g3": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--undefined",
-            "text": ""
+            "text": "text--text--g3"
         },
         "weights": {
             "color": 0.0,
@@ -5611,9 +5611,9 @@
     },
     "warning--traffic-merges-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--traffic-merges-left",
+            "symbol": "symbol--traffic-merges--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -5628,7 +5628,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--traffic-merges-left",
+            "symbol": "symbol--traffic-merges--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -5641,9 +5641,9 @@
     },
     "warning--traffic-merges-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--traffic-merges-right",
+            "symbol": "symbol--traffic-merges--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -5658,7 +5658,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--traffic-merges-right",
+            "symbol": "symbol--traffic-merges--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -5673,7 +5673,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--traffic-signals",
+            "symbol": "symbol--traffic-signal--verticle--g1",
             "text": "text--undefined"
         },
         "weights": {
@@ -5686,9 +5686,9 @@
     },
     "warning--traffic-signals--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--traffic-signals",
+            "symbol": "symbol--traffic-signal--verticle--g2",
             "text": "text--undefined"
         },
         "weights": {
@@ -5703,7 +5703,7 @@
         "labels": {
             "color": "color--black-yellow",
             "shape": "shape--diamond",
-            "symbol": "symbol--traffic-signals",
+            "symbol": "symbol--traffic-signal--verticle--g3",
             "text": "text--undefined"
         },
         "weights": {
@@ -5716,9 +5716,9 @@
     },
     "warning--traffic-signals--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--traffic-signals",
+            "symbol": "symbol--traffic-signal--horizontal",
             "text": "text--undefined"
         },
         "weights": {
@@ -5731,9 +5731,9 @@
     },
     "warning--trail-crossing--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--human--bicycle",
+            "symbol": "symbol--bicycle--human",
             "text": "text--undefined"
         },
         "weights": {
@@ -5761,7 +5761,7 @@
     },
     "warning--trucks-crossing--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--box-truck",
             "text": "text--undefined"
@@ -5776,7 +5776,7 @@
     },
     "warning--turn-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--curved--left",
             "text": "text--undefined"
@@ -5791,7 +5791,7 @@
     },
     "warning--turn-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--curved--right",
             "text": "text--undefined"
@@ -5806,7 +5806,7 @@
     },
     "warning--turn-right--g2": {
         "labels": {
-            "color": "color--black-yellow",
+            "color": "color--black-orange",
             "shape": "shape--triangle",
             "symbol": "symbol--curve--right",
             "text": "text--undefined"
@@ -5836,7 +5836,7 @@
     },
     "warning--two-way-traffic--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--arrow--down--arrow--up",
             "text": "text--undefined"
@@ -5851,7 +5851,7 @@
     },
     "warning--uneven-road--g2": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--uneven-road",
             "text": "text--undefined"
@@ -5881,9 +5881,9 @@
     },
     "warning--uneven-roads-ahead--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--uneven-road",
+            "symbol": "symbol--arrow--up--uneven-road",
             "text": "text--undefined"
         },
         "weights": {
@@ -5911,7 +5911,7 @@
     },
     "warning--wild-animals--g4": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--deer",
             "text": "text--undefined"
@@ -5926,9 +5926,9 @@
     },
     "warning--winding-road-first-left--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--up--winding",
+            "symbol": "symbol--arrow--up--winding--left",
             "text": "text--undefined"
         },
         "weights": {
@@ -5943,7 +5943,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--arrow--up--winding",
+            "symbol": "symbol--road--winding",
             "text": "text--undefined"
         },
         "weights": {
@@ -5956,9 +5956,9 @@
     },
     "warning--winding-road-first-right--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--arrow--up--winding",
+            "symbol": "symbol--arrow--up--winding--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -5973,7 +5973,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--triangle",
-            "symbol": "symbol--winding-arrow--up",
+            "symbol": "symbol--arrow--up--winding--right",
             "text": "text--undefined"
         },
         "weights": {
@@ -5986,7 +5986,7 @@
     },
     "warning--wombat-crossing--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
             "symbol": "symbol--wombat",
             "text": "text--undefined"
@@ -6001,9 +6001,9 @@
     },
     "warning--y-roads--g1": {
         "labels": {
-            "color": "color--yellow-black",
+            "color": "color--orange-black",
             "shape": "shape--diamond",
-            "symbol": "symbol--y",
+            "symbol": "symbol--y--black",
             "text": "text--undefined"
         },
         "weights": {
