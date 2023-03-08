@@ -146,9 +146,9 @@ def main():
         file_map[file_key] = file_name
 
     if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_generated):
-        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_train)
-        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_validate)
+        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test, True)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_train, True)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_validate, True)
 
     return
 

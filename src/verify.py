@@ -5,6 +5,46 @@ import json
 import logger
 import os
 
+def constructFileKeySetOriginal(dir_split):
+    file_key_set = set()
+
+    if os.path.isdir(dir_split):
+        dirs_label = os.listdir(dir_split)
+
+        for dir_label in dirs_label:
+            file_names = os.listdir(os.path.join(dir_split, dir_label))
+
+            for file_name in file_names:
+                file_key = file_name.split(header.dataset_file_extension_images)[0]
+
+                if file_key in file_key_set:
+                    logger.log_error("Duplicated file key \"" + file_key + "\" in \"" + dir_split + "\".")
+                    continue
+
+                file_key_set.add(file_key)
+
+    return file_key_set
+
+def constructFileKeySetGenerated(dir_split):
+    file_key_set = set()
+
+    if os.path.isdir(dir_split):
+        file_names = os.listdir(dir_split)
+
+        for file_name in file_names:
+            if file_name == header.dataset_config_file_name or file_name == header.generate_config_file_name:
+                continue
+
+            file_key = file_name.split(header.dataset_delimiter_file_name)[-1].split(header.dataset_file_extension_images)[0]
+
+            if file_key in file_key_set:
+                logger.log_error("Duplicated file key \"" + file_key + "\" in \"" + dir_split + "\".")
+                continue
+
+            file_key_set.add(file_key)
+
+    return file_key_set
+
 def verifyDatasetConfigMissing(config_dataset, config_generate):
     labels_dataset_set_dataset = set()
     labels_dataset_set_generate = set()
@@ -62,7 +102,7 @@ def verifyDatasetConfig():
 
     return
 
-def verifyDatasetSplitsOriginal():
+def verifyDatasetSplitsEmpty():
     if os.path.isdir(header.dataset_dir_images_split_original):
         dataset_dir_images_split_list = os.listdir(header.dataset_dir_images_split_original)
 
@@ -78,10 +118,42 @@ def verifyDatasetSplitsOriginal():
 
     return
 
+def verifyDatasetSplitsMatching():
+    file_key_set_generated_test = constructFileKeySetGenerated(header.dataset_dir_images_split_generated_test)
+    file_key_set_generated_train = constructFileKeySetGenerated(header.dataset_dir_images_split_generated_train)
+    file_key_set_generated_validate = constructFileKeySetGenerated(header.dataset_dir_images_split_generated_validate)
+    file_key_set_original_test = constructFileKeySetOriginal(header.dataset_dir_images_split_original_test)
+    file_key_set_original_train = constructFileKeySetOriginal(header.dataset_dir_images_split_original_train)
+    file_key_set_original_validate = constructFileKeySetOriginal(header.dataset_dir_images_split_original_validate)
+
+    if len(file_key_set_generated_test) != len(file_key_set_original_test):
+        logger.log_error("Mismatch between dataset splits \"" + header.dataset_dir_images_split_generated_test + "\" and \"" + header.dataset_dir_images_split_original_test + "\".")
+
+    if len(file_key_set_generated_train) != len(file_key_set_original_train):
+        logger.log_error("Mismatch between dataset splits \"" + header.dataset_dir_images_split_generated_train + "\" and \"" + header.dataset_dir_images_split_original_train + "\".")
+
+    if len(file_key_set_generated_validate) != len(file_key_set_original_validate):
+        logger.log_error("Mismatch between dataset splits \"" + header.dataset_dir_images_split_generated_validate + "\" and \"" + header.dataset_dir_images_split_original_validate + "\".")
+
+    for file_key_generated_test in file_key_set_generated_test:
+        if file_key_generated_test not in file_key_set_original_test:
+            logger.log_error("File key \"" + file_key_generated_test + "\" in \"" + header.dataset_dir_images_split_generated_test + "\" but not in \"" + header.dataset_dir_images_split_original_test + "\".")
+
+    for file_key_generated_train in file_key_set_generated_train:
+        if file_key_generated_train not in file_key_set_original_train:
+            logger.log_error("File key \"" + file_key_generated_train + "\" in \"" + header.dataset_dir_images_split_generated_train + "\" but not in \"" + header.dataset_dir_images_split_original_train + "\".")
+
+    for file_key_generated_validate in file_key_set_generated_validate:
+        if file_key_generated_validate not in file_key_set_original_validate:
+            logger.log_error("File key \"" + file_key_generated_validate + "\" in \"" + header.dataset_dir_images_split_generated_validate + "\" but not in \"" + header.dataset_dir_images_split_original_validate + "\".")
+
+    return
+
 def verifyDatasetSplits():
     logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
 
-    verifyDatasetSplitsOriginal()
+    verifyDatasetSplitsEmpty()
+    verifyDatasetSplitsMatching()
 
     return
 
