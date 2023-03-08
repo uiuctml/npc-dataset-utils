@@ -119,7 +119,7 @@ def main():
             file_keys.append(file_key)
 
             if file_key in file_map:
-                logger.log_error("Duplicated file key \"" + file_key + "\"")
+                logger.log_error("Duplicated file key \"" + file_key + "\".")
                 return
 
             file_map[file_key] = os.path.join(dir_label, file_name)
