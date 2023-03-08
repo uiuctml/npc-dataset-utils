@@ -1,22 +1,34 @@
 #!/usr/bin/env python3
 
+import glob
 import gzip
 import header
 import json
 import logger
 import os
-import random
+import random as rand
 import tqdm
 
-def createSymlinks(dataset_name, split_name, file_names, dir_source, dir_target, create_config_symlinks):
-    progress_bar = tqdm.tqdm(total = len(file_names))
-    progress_bar.set_description_str("[INFO]: Creating dataset split \"" + dataset_name + "/" + split_name + "\".")
-    file_name_counter = 1
+def shuffleUniform(file_keys):
+    random = rand.Random()
+    random.seed(header.split_random_seed)
+    random.shuffle(file_keys)
 
-    for file_name in file_names:
+    return file_keys
+
+def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target, create_config_symlinks = False):
+    file_name_counter = 1
+    split_name = os.path.basename(dir_target)
+    progress_bar = tqdm.tqdm(total = len(file_keys))
+
+    os.makedirs(dir_target, exist_ok = True)
+    progress_bar.set_description_str("[INFO]: Creating symlinks for \"" + dataset_name + "/" + split_name + "\"")
+
+    for file_key in file_keys:
         progress_bar.n = file_name_counter
         progress_bar.refresh()
 
+        file_name = file_map[file_key]
         dir_name_test = os.path.dirname(file_name)
 
         if dir_name_test != "":
@@ -34,98 +46,109 @@ def createSymlinks(dataset_name, split_name, file_names, dir_source, dir_target,
 
     return
 
-def shuffleUniform(file_names):
-    random.seed(header.split_random_seed)
-    random.shuffle(file_names)
+def generateSplits(file_keys, split_percentage_train, split_percentage_validate):
+    split_point_validate_test = int(len(file_keys) * (split_percentage_train + split_percentage_validate))
+    split_point_train_validate = int(len(file_keys) * split_percentage_train)
 
-    return file_names
+    shuffleUniform(file_keys)
 
-def split(config_split, dataset_name, file_names, dataset_dir, split_dir_test, split_dir_train, split_dir_validate, split_percentage_train, split_percentage_validate, create_config_symlinks = False):
-    file_names_test = []
-    file_names_train = []
-    file_names_validate = []
+    file_keys_test = file_keys[split_point_validate_test:]
+    file_keys_train = file_keys[:split_point_train_validate]
+    file_keys_validate = file_keys[split_point_train_validate:split_point_validate_test]
+
+    logger.log_info("Generated dataset splits from seed " + str(header.split_random_seed) + ".")
+
+    return (file_keys_test, file_keys_train, file_keys_validate)
+
+def loadSplits(split_dir_test, split_dir_train, split_dir_validate):
     file_path_config_split = os.path.join(header.config_dir, header.split_config_file_name)
     split_name_test = os.path.basename(split_dir_test)
     split_name_train = os.path.basename(split_dir_train)
     split_name_validate = os.path.basename(split_dir_validate)
 
-    if header.split_load:
-        file_config_split = gzip.open(file_path_config_split, "r")
-        config_split_json_encoded = file_config_split.read()
-        file_config_split.close()
+    file_config_split = gzip.open(file_path_config_split, "r")
+    config_split_json_encoded = file_config_split.read()
+    file_config_split.close()
 
-        config_split_json = config_split_json_encoded.decode("utf-8")
-        config_split = json.loads(config_split_json)
+    config_split_json = config_split_json_encoded.decode("utf-8")
+    config_split = json.loads(config_split_json)
 
-        file_names_test = config_split[dataset_name][split_name_test]
-        file_names_train = config_split[dataset_name][split_name_train]
-        file_names_validate = config_split[dataset_name][split_name_validate]
+    file_keys_test = config_split[split_name_test]
+    file_keys_train = config_split[split_name_train]
+    file_keys_validate = config_split[split_name_validate]
 
-        logger.log_info("Loaded splits for dataset \"" + dataset_name + "\" from \"" + file_path_config_split + "\".")
-    else:
-        split_point_validate_test = int(len(file_names) * (split_percentage_train + split_percentage_validate))
-        split_point_train_validate = int(len(file_names) * split_percentage_train)
+    logger.log_info("Loaded dataset splits from \"" + file_path_config_split + "\".")
 
-        shuffleUniform(file_names)
+    return (file_keys_test, file_keys_train, file_keys_validate)
 
-        file_names_test = file_names[split_point_validate_test:]
-        file_names_train = file_names[:split_point_train_validate]
-        file_names_validate = file_names[split_point_train_validate:split_point_validate_test]
+def saveSplits(file_keys_test, file_keys_train, file_keys_validate, split_dir_test, split_dir_train, split_dir_validate):
+    config_split = {}
+    file_path_config_split = os.path.join(header.config_dir, header.split_config_file_name)
+    split_name_test = os.path.basename(split_dir_test)
+    split_name_train = os.path.basename(split_dir_train)
+    split_name_validate = os.path.basename(split_dir_validate)
 
-        logger.log_info("Generated splits for dataset \"" + dataset_name + "\" from seed " + str(header.split_random_seed) + ".")
+    config_split[split_name_test] = file_keys_test
+    config_split[split_name_train] = file_keys_train
+    config_split[split_name_validate] = file_keys_validate
 
-    if header.split_save:
-        config_split[dataset_name] = {}
-        config_split[dataset_name][split_name_test] = file_names_test
-        config_split[dataset_name][split_name_train] = file_names_train
-        config_split[dataset_name][split_name_validate] = file_names_validate
+    config_split_json = json.dumps(config_split, indent = 4)
+    config_split_json_encoded = config_split_json.encode("utf-8")
 
-        config_split_json = json.dumps(config_split, indent = 4)
-        config_split_json_encoded = config_split_json.encode("utf-8")
+    with gzip.open(file_path_config_split, "w") as file_config_split:
+        file_config_split.write(config_split_json_encoded)
 
-        with gzip.open(file_path_config_split, "w") as file_config_split:
-            file_config_split.write(config_split_json_encoded)
-
-        logger.log_info("Saved splits for dataset \"" + dataset_name + "\" to \"" + file_path_config_split + "\".")
-
-    createSymlinks(dataset_name, split_name_test, file_names_test, dataset_dir, split_dir_test, create_config_symlinks)
-    createSymlinks(dataset_name, split_name_train, file_names_train, dataset_dir, split_dir_train, create_config_symlinks)
-    createSymlinks(dataset_name, split_name_validate, file_names_validate, dataset_dir, split_dir_validate, create_config_symlinks)
+    logger.log_info("Saved dataset splits to \"" + file_path_config_split + "\".")
 
     return
 
 def main():
-    config_split = {}
+    dataset_name = os.path.basename(header.dataset_dir_images_split_original)
+    file_keys = []
+    file_keys_test = []
+    file_keys_train = []
+    file_keys_validate = []
+    file_map = {}
+    dirs_label = os.listdir(header.dataset_dir_images_sliced_original)
 
-    if not os.path.isdir(header.dataset_dir_images_split_generated):
-        dataset_name = os.path.basename(header.dataset_dir_images_split_generated)
-        file_names = os.listdir(header.dataset_dir_images_sliced_generated)
+    for dir_label in dirs_label:
+        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced_original, dir_label))
 
-        file_names.remove(header.dataset_config_file_name)
-        file_names.remove(header.generate_config_file_name)
+        for file_name in file_names:
+            file_key = file_name.split(header.dataset_file_extension_images)[0]
+            file_keys.append(file_key)
 
-        os.makedirs(header.dataset_dir_images_split_generated_test, exist_ok = True)
-        os.makedirs(header.dataset_dir_images_split_generated_train, exist_ok = True)
-        os.makedirs(header.dataset_dir_images_split_generated_validate, exist_ok = True)
+            if file_key in file_map:
+                logger.log_error("Duplicated file key \"" + file_key + "\"")
+                return
 
-        split(config_split, dataset_name, file_names, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test, header.dataset_dir_images_split_generated_train, header.dataset_dir_images_split_generated_validate, header.split_generated_percentage_train, header.split_generated_percentage_validate, True)
+            file_map[file_key] = os.path.join(dir_label, file_name)
 
-    if not os.path.isdir(header.dataset_dir_images_split_original):
-        dataset_name = os.path.basename(header.dataset_dir_images_split_original)
-        file_names = []
-        dirs_label = os.listdir(header.dataset_dir_images_sliced_original)
+    if header.split_load:
+        (file_keys_test, file_keys_train, file_keys_validate) = loadSplits(header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
+    else:
+        (file_keys_test, file_keys_train, file_keys_validate) = generateSplits(file_keys, header.split_original_percentage_train, header.split_original_percentage_validate)
 
-        for dir_label in dirs_label:
-            file_names_label = os.listdir(os.path.join(header.dataset_dir_images_sliced_original, dir_label))
+        if header.split_save:
+            saveSplits(file_keys_test, file_keys_train, file_keys_validate, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
 
-            for file_name_label in file_names_label:
-                file_names.append(os.path.join(dir_label, file_name_label))
+    if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_original):
+        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_test)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_train)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_validate)
 
-        os.makedirs(header.dataset_dir_images_split_original_test, exist_ok = True)
-        os.makedirs(header.dataset_dir_images_split_original_train, exist_ok = True)
-        os.makedirs(header.dataset_dir_images_split_original_validate, exist_ok = True)
+    dataset_name = os.path.basename(header.dataset_dir_images_split_generated)
+    file_map = {}
+    file_names = os.listdir(header.dataset_dir_images_sliced_generated)
 
-        split(config_split, dataset_name, file_names, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate, header.split_original_percentage_train, header.split_original_percentage_validate)
+    for file_name in file_names:
+        file_key = file_name.split(header.dataset_delimiter_file_name)[-1].split(header.dataset_file_extension_images)[0]
+        file_map[file_key] = file_name
+
+    if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_generated):
+        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_train)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_validate)
 
     return
 
