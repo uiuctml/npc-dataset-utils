@@ -184,8 +184,6 @@
                 "symbol--arrow--reversible",
                 "symbol--bar--horizontal--black",
                 "symbol--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
-                "symbol---triple-truck--verticle",
-                "symbol---mini-triangle--left--right",
                 "symbol--car-crash",
                 "symbol--car-crash--top",
                 "symbol--added-lane--right",
@@ -264,7 +262,9 @@
                 "symbol--bicycle--top--adult--child--bottom",
                 "symbol--bicycle--left--adult--child--right",
                 "symbol--adult--child--top--bicycle--bottom",
-                "symbol--adult--child--left--bicycle--right"
+                "symbol--adult--child--left--bicycle--right",
+                "symbol--triple-truck-vertical",
+                "symbol--mini-triangle--left--right"
             ]
         },
         {

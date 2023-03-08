@@ -3933,7 +3933,7 @@
         "labels": {
             "color": "color--white-black",
             "shape": "shape--square",
-            "symbol": "symbol---triple-truck--verticle",
+            "symbol": "symbol--triple-truck-vertical",
             "text": "text--weight-limit"
         },
         "weights": {
@@ -3948,7 +3948,7 @@
         "labels": {
             "color": "color--red-white",
             "shape": "shape--circle",
-            "symbol": "symbol---mini-triangle--left--right",
+            "symbol": "symbol--mini-triangle--left--right",
             "text": "text--number--m"
         },
         "weights": {
