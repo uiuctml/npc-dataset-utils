@@ -61,6 +61,11 @@ label_viewer_count_col = 6
 
 log_level = type.LogLevel.trace
 
+slice_duplicates = {
+    "vfym8z46xdpftlzctrgl78": "other-sign",
+    "dchqt8ir2pap7ir940nab9315k": "other-sign",
+    "5phehhkikwa0z4jrbev9vc": "other-sign"
+}
 slice_dataset_dir_annotations = dataset_dir_annotations_original
 slice_dataset_dir_images = dataset_dir_images_original
 slice_process_count = multiprocessing.cpu_count()
@@ -70,6 +75,7 @@ slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
 split_config_file_name = "split.json.gz"
+split_create_symlinks = True
 split_generated_percentage_train = 0.8
 split_generated_percentage_validate = 0.1
 split_load = True

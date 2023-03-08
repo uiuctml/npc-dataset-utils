@@ -102,6 +102,9 @@ def slice(process_id, dataset_dir_annotations_list):
             label = object["label"]
             bbox = object["bbox"]
 
+            if key in header.slice_duplicates and label == header.slice_duplicates[key]:
+                continue
+
             bounding_box_upper_left_x = int(bbox["xmin"])
             bounding_box_upper_left_y = int(bbox["ymin"])
             bounding_box_lower_right_x = int(bbox["xmax"])
