@@ -33,6 +33,14 @@ dataset_label_undefined_keyword = "undefined"
 generate_config_file_name = "generate.json"
 generate_dataset_dir_images = dataset_dir_images_sliced_original
 
+group_config_file_name = "group.json"
+group_dataset_dir_images = dataset_dir_images_sliced_original
+group_viewer_center_height = 300
+group_viewer_center_width = 300
+group_viewer_side_count = 3
+group_viewer_side_height = 150
+group_viewer_side_width = 150
+
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
 label_dataset_dir_images = dataset_dir_images_sliced_original
