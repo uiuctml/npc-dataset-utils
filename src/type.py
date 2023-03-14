@@ -1,4 +1,6 @@
 import enum
+import PyQt5.QtCore
+import PyQt5.QtWidgets
 
 class LogLevel(enum.Enum):
     all = 6
@@ -29,3 +31,31 @@ class LogLevel(enum.Enum):
         if self.__class__ is other.__class__:
             return self.value < other.value
         return NotImplemented
+
+class QLabelClickable(PyQt5.QtWidgets.QLabel):
+    clicked_left = PyQt5.QtCore.pyqtSignal()
+    clicked_right = PyQt5.QtCore.pyqtSignal()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.mouse_position = None
+
+        return
+
+    def mousePressEvent(self, event):
+        if event.button() == PyQt5.QtCore.Qt.LeftButton or event.button() == PyQt5.QtCore.Qt.RightButton:
+            self.mouse_position = event.pos()
+
+        return
+
+    def mouseReleaseEvent(self, event):
+        if self.mouse_position is not None and self.mouse_position in self.rect() and event.pos() in self.rect():
+            if event.button() == PyQt5.QtCore.Qt.LeftButton:
+                self.clicked_left.emit()
+
+            if event.button() == PyQt5.QtCore.Qt.RightButton:
+                self.clicked_right.emit()
+
+        self.mouse_position = None
+
+        return

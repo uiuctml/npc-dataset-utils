@@ -6,11 +6,13 @@ import os
 import PyQt5.QtCore
 import PyQt5.QtGui
 import PyQt5.QtWidgets
+import type
 
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_file_key_application_control = PyQt5.QtWidgets.QComboBox()
 combo_box_label_application_control = PyQt5.QtWidgets.QComboBox()
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
+label_center_viewer_clicked = -1
 radio_button_test_viewer = PyQt5.QtWidgets.QRadioButton()
 radio_button_train_validate_viewer = PyQt5.QtWidgets.QRadioButton()
 
@@ -103,7 +105,7 @@ def slotComboBoxLabelApplicationControl():
 
     return
 
-def slotPushButtonSave():
+def slotPushButtonSaveApplicationControl():
     file_key = combo_box_file_key_application_control.currentText()
     group = ""
     label_text = combo_box_label_application_control.currentText()
@@ -119,8 +121,8 @@ def slotPushButtonSave():
 
     return
 
-def slotPushButtonSaveAndLast():
-    slotPushButtonSave()
+def slotPushButtonSaveAndLastApplicationControl():
+    slotPushButtonSaveApplicationControl()
 
     if combo_box_file_key_application_control.currentIndex() <= 0:
         return
@@ -129,13 +131,39 @@ def slotPushButtonSaveAndLast():
 
     return
 
-def slotPushButtonSaveAndNext():
-    slotPushButtonSave()
+def slotPushButtonSaveAndNextApplicationControl():
+    slotPushButtonSaveApplicationControl()
 
     if combo_box_file_key_application_control.currentIndex() >= combo_box_file_key_application_control.count() - 1:
         return
 
     combo_box_file_key_application_control.setCurrentIndex(combo_box_file_key_application_control.currentIndex() + 1)
+
+    return
+
+def slotLabelCenterViewerLeft():
+    global label_center_viewer_clicked
+
+    radio_button_train_validate_viewer.setChecked(True)
+
+    if label_center_viewer_clicked == 0:
+        label_center_viewer_clicked = -1
+        slotPushButtonSaveAndNextApplicationControl()
+    else:
+        label_center_viewer_clicked = 0
+
+    return
+
+def slotLabelCenterViewerRight():
+    global label_center_viewer_clicked
+
+    radio_button_test_viewer.setChecked(True)
+
+    if label_center_viewer_clicked == 1:
+        label_center_viewer_clicked = -1
+        slotPushButtonSaveAndNextApplicationControl()
+    else:
+        label_center_viewer_clicked = 1
 
     return
 
@@ -163,11 +191,11 @@ def createApplicationControlWidget():
     layout_application_control.addWidget(combo_box_file_key_application_control)
     layout_application_control.addWidget(push_button_save_application_control)
     layout_application_control.addWidget(push_button_save_and_next_application_control)
-    push_button_save_application_control.clicked.connect(slotPushButtonSave)
+    push_button_save_application_control.clicked.connect(slotPushButtonSaveApplicationControl)
     push_button_save_application_control.setText("Save")
-    push_button_save_and_last_application_control.clicked.connect(slotPushButtonSaveAndLast)
+    push_button_save_and_last_application_control.clicked.connect(slotPushButtonSaveAndLastApplicationControl)
     push_button_save_and_last_application_control.setText("Save && Last")
-    push_button_save_and_next_application_control.clicked.connect(slotPushButtonSaveAndNext)
+    push_button_save_and_next_application_control.clicked.connect(slotPushButtonSaveAndNextApplicationControl)
     push_button_save_and_next_application_control.setText("Save && Next")
 
     return group_box_application_control
@@ -188,13 +216,18 @@ def createViewerWidget():
     radio_button_train_validate_viewer.setText("Training && Validation")
 
     for i in range(0, count_viewer):
-        label = PyQt5.QtWidgets.QLabel()
+        label = None
 
         if i == header.group_viewer_side_count:
+            label = type.QLabelClickable()
             pixmap = PyQt5.QtGui.QPixmap(header.group_viewer_center_width, header.group_viewer_center_height)
+
+            label.clicked_left.connect(slotLabelCenterViewerLeft)
+            label.clicked_right.connect(slotLabelCenterViewerRight)
             label.setCursor(PyQt5.QtCore.Qt.PointingHandCursor)
             layout_viewer.addLayout(layout_radio_button_viewer, 1, i)
         else:
+            label = PyQt5.QtWidgets.QLabel()
             pixmap = PyQt5.QtGui.QPixmap(header.group_viewer_side_width, header.group_viewer_side_height)
 
         pixmap.fill(PyQt5.QtCore.Qt.black)
