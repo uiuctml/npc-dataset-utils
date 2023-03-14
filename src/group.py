@@ -16,6 +16,19 @@ file_config_group = open(os.path.join(header.config_dir, header.group_config_fil
 config_group = json.load(file_config_group)
 file_config_group.close()
 
+def updateComboBoxFileKeyApplicationControl():
+    label_text = combo_box_label_application_control.currentText()
+    file_path_images = os.path.join(header.group_dataset_dir_images, label_text)
+    file_names_images = sorted(os.listdir(file_path_images))
+
+    combo_box_file_key_application_control.clear()
+
+    for file_name_images in file_names_images:
+        file_key = file_name_images.split(header.dataset_file_extension_images)[0]
+        combo_box_file_key_application_control.addItem(file_key)
+
+    return
+
 def updateConfigGroup():
     with open(os.path.join(header.config_dir, header.group_config_file_name), "w") as file_config_group:
         json.dump(config_group, file_config_group, indent = 4)
@@ -67,6 +80,12 @@ def slotComboBoxFileKeyApplicationControl():
 
     return
 
+def slotComboBoxLabelApplicationControl():
+    updateComboBoxFileKeyApplicationControl()
+    updateViewerWidget()
+
+    return
+
 def slotPushButtonSave():
     # updateConfigGroup()
 
@@ -102,17 +121,11 @@ def createApplicationControlWidget():
     for label_text in config_group.keys():
         combo_box_label_application_control.addItem(label_text)
 
-    label_text = combo_box_label_application_control.currentText()
-    file_path_images = os.path.join(header.group_dataset_dir_images, label_text)
-    file_names_images = sorted(os.listdir(file_path_images))
-
-    for file_name_images in file_names_images:
-        file_key = file_name_images.split(header.dataset_file_extension_images)[0]
-        combo_box_file_key_application_control.addItem(file_key)
+    updateComboBoxFileKeyApplicationControl()
 
     combo_box_file_key_application_control.currentIndexChanged.connect(slotComboBoxFileKeyApplicationControl)
     combo_box_file_key_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
-    # combo_box_label_application_control.currentIndexChanged.connect(slotComboBoxApplicationControl)
+    combo_box_label_application_control.currentIndexChanged.connect(slotComboBoxLabelApplicationControl)
     combo_box_label_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
