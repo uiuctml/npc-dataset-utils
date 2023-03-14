@@ -8,8 +8,8 @@ import PyQt5.QtGui
 import PyQt5.QtWidgets
 
 application = PyQt5.QtWidgets.QApplication([])
+combo_box_file_key_application_control = PyQt5.QtWidgets.QComboBox()
 combo_box_label_application_control = PyQt5.QtWidgets.QComboBox()
-combo_box_key_application_control = PyQt5.QtWidgets.QComboBox()
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
 
 file_config_group = open(os.path.join(header.config_dir, header.group_config_file_name), "r")
@@ -22,47 +22,48 @@ def updateConfigGroup():
 
     return
 
-def updateApplicationControlWidget():
-    return
-
 def updateViewerWidget():
-    label_text = combo_box_application_control.currentText()
-    file_path_images = os.path.join(header.group_dataset_dir_images, label_text)
+    count_viewer = header.group_viewer_side_count * 2 + 1
+    file_key_index_current = combo_box_file_key_application_control.currentIndex()
+    file_key_index_start = max(file_key_index_current - header.group_viewer_side_count, 0)
+    file_key_index_end = min(file_key_index_current + header.group_viewer_side_count, combo_box_file_key_application_control.count() - 1)
+    label_text = combo_box_label_application_control.currentText()
 
-    if not os.path.isdir(file_path_images):
-        for i in range(0, header.group_viewer_count):
+    for i in range(0, count_viewer):
+        if i < header.group_viewer_side_count:
             label = group_box_viewer.layout().itemAt(i).widget()
-            pixmap = PyQt5.QtGui.QPixmap(header.group_viewer_side_width, header.group_viewer_side_height)
-            pixmap.fill(PyQt5.QtCore.Qt.black)
-            label.setPixmap(pixmap)
+        else:
+            label = group_box_viewer.layout().itemAt(i + 1).widget()
 
-        return
-
-    file_names_images = sorted(os.listdir(file_path_images))
-
-    for file_name_images in file_names_images:
-        file_path_image = os.path.join(header.group_dataset_dir_images, label_text, file_name_images)
-
-        if not os.path.isfile(file_path_image):
-            file_names_images.remove(file_path_image)
-
-    for i in range(0, group_box_viewer.layout().count()):
-        label = group_box_viewer.layout().itemAt(i).widget()
-
-        if i < len(file_names_images):
-            file_path_image = os.path.join(header.group_dataset_dir_images, label_text, file_names_images[i])
-            pixmap = PyQt5.QtGui.QPixmap(file_path_image)
-            label.setPixmap(pixmap.scaled(header.group_viewer_side_width, header.group_viewer_side_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
+        if i == header.group_viewer_side_count:
+            pixmap = PyQt5.QtGui.QPixmap(header.group_viewer_center_width, header.group_viewer_center_height)
         else:
             pixmap = PyQt5.QtGui.QPixmap(header.group_viewer_side_width, header.group_viewer_side_height)
-            pixmap.fill(PyQt5.QtCore.Qt.black)
-            label.setPixmap(pixmap)
+
+        pixmap.fill(PyQt5.QtCore.Qt.black)
+        label.setPixmap(pixmap)
+
+    for file_key_index in range(file_key_index_start, file_key_index_end + 1):
+        viewer_index = file_key_index + (header.group_viewer_side_count - file_key_index_current)
+        file_key = combo_box_file_key_application_control.itemText(file_key_index)
+        file_path_image = os.path.join(header.group_dataset_dir_images, label_text, file_key)
+
+        if viewer_index < header.group_viewer_side_count:
+            label = group_box_viewer.layout().itemAt(viewer_index).widget()
+        else:
+            label = group_box_viewer.layout().itemAt(viewer_index + 1).widget()
+
+        pixmap = PyQt5.QtGui.QPixmap(file_path_image)
+
+        if viewer_index == header.group_viewer_side_count:
+            label.setPixmap(pixmap.scaled(header.group_viewer_center_width, header.group_viewer_center_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
+        else:
+            label.setPixmap(pixmap.scaled(header.group_viewer_side_width, header.group_viewer_side_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
 
     return
 
-def slotComboBoxApplicationControl():
-    updateApplicationControlWidget()
-    # updateViewerWidget()
+def slotComboBoxFileKeyApplicationControl():
+    updateViewerWidget()
 
     return
 
@@ -74,10 +75,20 @@ def slotPushButtonSave():
 def slotPushButtonSaveAndLast():
     slotPushButtonSave()
 
+    if combo_box_file_key_application_control.currentIndex() <= 0:
+        return
+
+    combo_box_file_key_application_control.setCurrentIndex(combo_box_file_key_application_control.currentIndex() - 1)
+
     return
 
 def slotPushButtonSaveAndNext():
     slotPushButtonSave()
+
+    if combo_box_file_key_application_control.currentIndex() >= combo_box_file_key_application_control.count() - 1:
+        return
+
+    combo_box_file_key_application_control.setCurrentIndex(combo_box_file_key_application_control.currentIndex() + 1)
 
     return
 
@@ -91,17 +102,26 @@ def createApplicationControlWidget():
     for label_text in config_group.keys():
         combo_box_label_application_control.addItem(label_text)
 
-    combo_box_label_application_control.currentIndexChanged.connect(slotComboBoxApplicationControl)
+    label_text = combo_box_label_application_control.currentText()
+    file_path_images = os.path.join(header.group_dataset_dir_images, label_text)
+    file_names_images = sorted(os.listdir(file_path_images))
+
+    for file_name_images in file_names_images:
+        file_key = file_name_images.split(header.dataset_file_extension_images)[0]
+        combo_box_file_key_application_control.addItem(file_key)
+
+    combo_box_file_key_application_control.currentIndexChanged.connect(slotComboBoxFileKeyApplicationControl)
+    combo_box_file_key_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
+    # combo_box_label_application_control.currentIndexChanged.connect(slotComboBoxApplicationControl)
     combo_box_label_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
     group_box_application_control.setTitle("Application Control")
     layout_application_control.addWidget(push_button_save_and_last_application_control)
     layout_application_control.addWidget(combo_box_label_application_control)
-    layout_application_control.addWidget(combo_box_key_application_control)
+    layout_application_control.addWidget(combo_box_file_key_application_control)
     layout_application_control.addWidget(push_button_save_application_control)
     layout_application_control.addWidget(push_button_save_and_next_application_control)
-    # push_button_reload_viewer_application_control.clicked.connect(updateViewerWidget)
     push_button_save_application_control.clicked.connect(slotPushButtonSave)
     push_button_save_application_control.setText("Save")
     push_button_save_and_last_application_control.clicked.connect(slotPushButtonSaveAndLast)
@@ -164,7 +184,7 @@ def main():
     window.setLayout(createWindowLayout())
     window.setWindowTitle("Mapillary Dataset Grouping Tool")
 
-    slotComboBoxApplicationControl()
+    slotComboBoxFileKeyApplicationControl()
 
     window.show()
     window.setFixedSize(window.size())
