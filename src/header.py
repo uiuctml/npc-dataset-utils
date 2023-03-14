@@ -35,6 +35,8 @@ generate_dataset_dir_images = dataset_dir_images_sliced_original
 
 group_config_file_name = "group.json"
 group_dataset_dir_images = dataset_dir_images_sliced_original
+group_keyword_test = "test"
+group_keyword_train_validate = "train_validate"
 group_viewer_center_height = 300
 group_viewer_center_width = 300
 group_viewer_side_count = 3

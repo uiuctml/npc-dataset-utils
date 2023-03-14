@@ -11,6 +11,8 @@ application = PyQt5.QtWidgets.QApplication([])
 combo_box_file_key_application_control = PyQt5.QtWidgets.QComboBox()
 combo_box_label_application_control = PyQt5.QtWidgets.QComboBox()
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
+radio_button_test_viewer = PyQt5.QtWidgets.QRadioButton()
+radio_button_train_validate_viewer = PyQt5.QtWidgets.QRadioButton()
 
 file_config_group = open(os.path.join(header.config_dir, header.group_config_file_name), "r")
 config_group = json.load(file_config_group)
@@ -37,10 +39,25 @@ def updateConfigGroup():
 
 def updateViewerWidget():
     count_viewer = header.group_viewer_side_count * 2 + 1
+    file_key = combo_box_file_key_application_control.currentText()
     file_key_index_current = combo_box_file_key_application_control.currentIndex()
     file_key_index_start = max(file_key_index_current - header.group_viewer_side_count, 0)
     file_key_index_end = min(file_key_index_current + header.group_viewer_side_count, combo_box_file_key_application_control.count() - 1)
+    group = ""
     label_text = combo_box_label_application_control.currentText()
+
+    if file_key in config_group[label_text].keys():
+        group = config_group[label_text][file_key]
+
+    if group == header.group_keyword_test:
+        radio_button_test_viewer.setChecked(True)
+    elif group == header.group_keyword_train_validate:
+        radio_button_train_validate_viewer.setChecked(True)
+    else:
+        radio_button_test_viewer.setAutoExclusive(False)
+        radio_button_test_viewer.setChecked(False)
+        radio_button_train_validate_viewer.setChecked(False)
+        radio_button_test_viewer.setAutoExclusive(True)
 
     for i in range(0, count_viewer):
         if i < header.group_viewer_side_count:
@@ -87,7 +104,18 @@ def slotComboBoxLabelApplicationControl():
     return
 
 def slotPushButtonSave():
-    # updateConfigGroup()
+    file_key = combo_box_file_key_application_control.currentText()
+    group = ""
+    label_text = combo_box_label_application_control.currentText()
+
+    if radio_button_test_viewer.isChecked():
+        group = header.group_keyword_test
+    elif radio_button_train_validate_viewer.isChecked():
+        group = header.group_keyword_train_validate
+
+    config_group[label_text][file_key] = group
+
+    updateConfigGroup()
 
     return
 
@@ -148,18 +176,16 @@ def createViewerWidget():
     count_viewer = header.group_viewer_side_count * 2 + 1
     layout_radio_button_viewer = PyQt5.QtWidgets.QHBoxLayout()
     layout_viewer = PyQt5.QtWidgets.QGridLayout()
-    radio_button_testing_viewer = PyQt5.QtWidgets.QRadioButton()
-    radio_button_training_viewer = PyQt5.QtWidgets.QRadioButton()
 
     group_box_viewer.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_viewer.setLayout(layout_viewer)
     group_box_viewer.setTitle("Viewer")
-    layout_radio_button_viewer.addWidget(radio_button_training_viewer)
-    layout_radio_button_viewer.addWidget(radio_button_testing_viewer)
-    radio_button_testing_viewer.setSizePolicy(PyQt5.QtWidgets.QSizePolicy.Fixed, PyQt5.QtWidgets.QSizePolicy.Fixed)
-    radio_button_testing_viewer.setText("Testing")
-    radio_button_training_viewer.setSizePolicy(PyQt5.QtWidgets.QSizePolicy.Fixed, PyQt5.QtWidgets.QSizePolicy.Fixed)
-    radio_button_training_viewer.setText("Training && Validation")
+    layout_radio_button_viewer.addWidget(radio_button_train_validate_viewer)
+    layout_radio_button_viewer.addWidget(radio_button_test_viewer)
+    radio_button_test_viewer.setSizePolicy(PyQt5.QtWidgets.QSizePolicy.Fixed, PyQt5.QtWidgets.QSizePolicy.Fixed)
+    radio_button_test_viewer.setText("Testing")
+    radio_button_train_validate_viewer.setSizePolicy(PyQt5.QtWidgets.QSizePolicy.Fixed, PyQt5.QtWidgets.QSizePolicy.Fixed)
+    radio_button_train_validate_viewer.setText("Training && Validation")
 
     for i in range(0, count_viewer):
         label = PyQt5.QtWidgets.QLabel()
