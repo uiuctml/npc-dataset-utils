@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import glob
 import gzip
 import header
 import json
