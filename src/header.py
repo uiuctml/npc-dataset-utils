@@ -67,12 +67,19 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
-split_config_file_name = "split.json.gz"
+split_basis = type.SplitBasis.percentage
+split_config_file_name = "split_percentage.json.gz"
 split_create_symlinks = True
-split_generated_percentage_train = 0.8
-split_generated_percentage_validate = 0.1
 split_load = True
-split_original_percentage_train = 0.8
-split_original_percentage_validate = 0.1
-split_random_seed = 80241652
+split_percentage_train = 0.8
+split_percentage_validate = 0.1
+split_random_seed_percentage = 80241652
+split_random_seed_stats = 11558952
 split_save = False
+split_std_scaler = 1.3
+
+stats_config_file_name = "stats.json.gz"
+stats_data_loader_batch_size = 384
+stats_data_loader_worker_count = multiprocessing.cpu_count()
+stats_model_input_height = 224
+stats_model_input_width = 224
