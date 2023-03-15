@@ -67,8 +67,8 @@ slice_shared_memory_size_entry = 64
 slice_shared_memory_size_process = 256
 slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
 
-split_basis = type.SplitBasis.percentage
-split_config_file_name = "split_percentage.json.gz"
+split_basis = type.SplitBasis.statistics
+split_config_file_name = "split_statistics.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
