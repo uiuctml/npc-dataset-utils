@@ -10,38 +10,7 @@ import torch
 import torchvision
 import tqdm
 
-def saveAverageBrightnesses(average_brightnesses, file_keys):
-    average_brightnesses = average_brightnesses.cpu()
-    config = {}
-    file_path_config = os.path.join(header.config_dir, header.stats_config_file_name)
-
-    if os.path.isfile(file_path_config):
-        file_config = gzip.open(file_path_config, "r")
-        config_json_encoded = file_config.read()
-        file_config.close()
-
-        config_json = config_json_encoded.decode("utf-8")
-        config = json.loads(config_json)
-
-    config["average_brightnesses"] = {}
-
-    for (average_brightness, file_key) in zip(average_brightnesses, file_keys):
-        config["average_brightnesses"][file_key] = average_brightness.item()
-
-    with open(file_path_config, "w") as file_config:
-        json.dump(config, file_config, indent = 4)
-
-    config_json = json.dumps(config, indent = 4)
-    config_json_encoded = config_json.encode("utf-8")
-
-    with gzip.open(file_path_config, "w") as file_config:
-        file_config.write(config_json_encoded)
-
-    logger.log_info("Saved dataset splits to \"" + file_path_config + "\".")
-
-    return
-
-def main():
+def gatherStats():
     average_brightnesses = torch.Tensor()
     dataset_transforms = torchvision.transforms.Compose([
         torchvision.transforms.Resize((header.stats_model_input_height, header.stats_model_input_width)),
@@ -69,7 +38,59 @@ def main():
 
     progress_bar.close()
 
-    saveAverageBrightnesses(average_brightnesses, file_keys)
+    return (file_keys, average_brightnesses)
+
+def loadConfig():
+    config = {}
+    file_path_config = os.path.join(header.config_dir, header.stats_config_file_name)
+
+    if os.path.isfile(file_path_config):
+        file_config = gzip.open(file_path_config, "r")
+        config_json_encoded = file_config.read()
+        file_config.close()
+
+        config_json = config_json_encoded.decode("utf-8")
+        config = json.loads(config_json)
+
+    return config
+
+def saveConfig(config):
+    file_path_config = os.path.join(header.config_dir, header.stats_config_file_name)
+
+    with open(file_path_config, "w") as file_config:
+        json.dump(config, file_config, indent = 4)
+
+    config_json = json.dumps(config, indent = 4)
+    config_json_encoded = config_json.encode("utf-8")
+
+    with gzip.open(file_path_config, "w") as file_config:
+        file_config.write(config_json_encoded)
+
+    return
+
+def saveAverageBrightnesses(file_keys, average_brightnesses):
+    average_brightnesses = average_brightnesses.cpu()
+    config = loadConfig()
+    config["average_brightnesses"] = {}
+    file_path_config = os.path.join(header.config_dir, header.stats_config_file_name)
+
+    for (average_brightness, file_key) in zip(average_brightnesses, file_keys):
+        config["average_brightnesses"][file_key] = average_brightness.item()
+
+    saveConfig(config)
+    logger.log_info("Saved average brightnesses to \"" + file_path_config + "\".")
+
+    return
+
+def main():
+    average_brightnesses = None
+    file_keys = None
+
+    if header.stats_gather:
+        (file_keys, average_brightnesses) = gatherStats()
+
+    if header.stats_save and average_brightnesses is not None:
+        saveAverageBrightnesses(file_keys, average_brightnesses)
 
     return
 

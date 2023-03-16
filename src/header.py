@@ -81,5 +81,7 @@ split_std_scaler = 1.3
 stats_config_file_name = "stats.json.gz"
 stats_data_loader_batch_size = 384
 stats_data_loader_worker_count = multiprocessing.cpu_count()
+stats_gather = False
 stats_model_input_height = 224
 stats_model_input_width = 224
+stats_save = False
