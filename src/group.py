@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import gzip
 import header
 import json
 import os
@@ -16,9 +17,12 @@ label_center_viewer_clicked = -1
 radio_button_test_viewer = PyQt5.QtWidgets.QRadioButton()
 radio_button_train_validate_viewer = PyQt5.QtWidgets.QRadioButton()
 
-file_config_group = open(os.path.join(header.config_dir, header.group_config_file_name), "r")
-config_group = json.load(file_config_group)
+file_config_group = gzip.open(os.path.join(header.config_dir, header.group_config_file_name), "r")
+config_group_json_encoded = file_config_group.read()
 file_config_group.close()
+
+config_group_json = config_group_json_encoded.decode("utf-8")
+config_group = json.loads(config_group_json)
 
 def updateComboBoxFileKeyApplicationControl():
     label_text = combo_box_label_application_control.currentText()
@@ -34,8 +38,11 @@ def updateComboBoxFileKeyApplicationControl():
     return
 
 def updateConfigGroup():
-    with open(os.path.join(header.config_dir, header.group_config_file_name), "w") as file_config_group:
-        json.dump(config_group, file_config_group, indent = 4)
+    config_group_json = json.dumps(config_group, indent = 4)
+    config_group_json_encoded = config_group_json.encode("utf-8")
+
+    with gzip.open(os.path.join(header.config_dir, header.group_config_file_name), "w") as file_config_group:
+        file_config_group.write(config_group_json_encoded)
 
     return
 

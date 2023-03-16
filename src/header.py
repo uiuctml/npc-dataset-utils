@@ -33,7 +33,7 @@ dataset_label_undefined_keyword = "undefined"
 generate_config_file_name = "generate.json"
 generate_dataset_dir_images = dataset_dir_images_sliced_original
 
-group_config_file_name = "group.json"
+group_config_file_name = "group.json.gz"
 group_dataset_dir_images = dataset_dir_images_sliced_original
 group_keyword_test = "test"
 group_keyword_train_validate = "train_validate"
