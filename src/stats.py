@@ -5,7 +5,11 @@ import gzip
 import header
 import json
 import logger
+import matplotlib.pyplot
+import numpy
 import os
+import split
+import scipy.stats
 import torch
 import torchvision
 import tqdm
@@ -54,6 +58,49 @@ def loadConfig():
 
     return config
 
+def plotSplitDistributionAverageBrightnesses():
+    average_brightnesses = []
+    average_brightnesses_test = []
+    average_brightnesses_train = []
+    average_brightnesses_validate = []
+    config = loadConfig()
+    (file_keys_test, file_keys_train, file_keys_validate) = split.loadSplits(header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
+
+    average_brightnesses = list(config["average_brightnesses"].values())
+
+    for file_key_test in file_keys_test:
+        average_brightnesses_test.append(config["average_brightnesses"][file_key_test])
+
+    for file_key_train in file_keys_train:
+        average_brightnesses_train.append(config["average_brightnesses"][file_key_train])
+
+    for file_key_validate in file_keys_validate:
+        average_brightnesses_validate.append(config["average_brightnesses"][file_key_validate])
+
+    average_brightnesses = numpy.array(average_brightnesses)
+    average_brightnesses_test = numpy.array(average_brightnesses_test)
+    average_brightnesses_train = numpy.array(average_brightnesses_train)
+    average_brightnesses_validate = numpy.array(average_brightnesses_validate)
+    x_axis = numpy.arange(0, 1, 0.01)
+
+    average_brightnesses_pdf = scipy.stats.norm.pdf(x_axis, numpy.mean(average_brightnesses), numpy.std(average_brightnesses))
+    average_brightnesses_test_pdf = scipy.stats.norm.pdf(x_axis, numpy.mean(average_brightnesses_test), numpy.std(average_brightnesses_test))
+    average_brightnesses_train_pdf = scipy.stats.norm.pdf(x_axis, numpy.mean(average_brightnesses_train), numpy.std(average_brightnesses_train))
+    average_brightnesses_validate_pdf = scipy.stats.norm.pdf(x_axis, numpy.mean(average_brightnesses_validate), numpy.std(average_brightnesses_validate))
+
+    matplotlib.pyplot.figure()
+    matplotlib.pyplot.plot(x_axis, average_brightnesses_pdf, label = "Original")
+    matplotlib.pyplot.plot(x_axis, average_brightnesses_test_pdf, label = "Testing")
+    matplotlib.pyplot.plot(x_axis, average_brightnesses_train_pdf, label = "Training")
+    matplotlib.pyplot.plot(x_axis, average_brightnesses_validate_pdf, label = "Validation")
+    matplotlib.pyplot.title("Distribution of Average Brightness")
+    matplotlib.pyplot.xlabel("Average Brightness")
+    matplotlib.pyplot.ylabel("Probability Density")
+    matplotlib.pyplot.legend()
+    matplotlib.pyplot.show()
+
+    return
+
 def saveConfig(config):
     file_path_config = os.path.join(header.config_dir, header.stats_config_file_name)
 
@@ -91,6 +138,9 @@ def main():
 
     if header.stats_save and average_brightnesses is not None:
         saveAverageBrightnesses(file_keys, average_brightnesses)
+
+    if header.stats_plot:
+        plotSplitDistributionAverageBrightnesses()
 
     return
 

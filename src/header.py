@@ -84,4 +84,5 @@ stats_data_loader_worker_count = multiprocessing.cpu_count()
 stats_gather = False
 stats_model_input_height = 224
 stats_model_input_width = 224
+stats_plot = True
 stats_save = False
