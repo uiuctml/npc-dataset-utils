@@ -2,6 +2,23 @@ import enum
 import PyQt5.QtCore
 import PyQt5.QtWidgets
 
+class Corruption(enum.Enum):
+    gaussian_noise = 0
+    shot_noise = 1
+    impulse_noise = 2
+    defocus_blur = 3
+    glass_blur = 4
+    motion_blur = 5
+    zoom_blur = 6
+    snow = 7
+    frost = 8
+    fog = 9
+    brightness = 10
+    contrast = 11
+    elastic_transform = 12
+    pixelate = 13
+    jpeg_compression = 14
+
 class LogLevel(enum.Enum):
     all = 6
     trace = 5

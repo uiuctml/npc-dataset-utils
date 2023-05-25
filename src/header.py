@@ -2,6 +2,12 @@ import multiprocessing
 import type
 
 config_dir = "../config"
+
+corrupt_corruption = type.Corruption.snow
+corrupt_image_size = 224
+corrupt_random_seed = 42
+corrupt_severity = 5
+
 dataset_config_file_name = "dataset.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
@@ -15,6 +21,11 @@ dataset_dir_images_sliced = dataset_dir_images + "/sliced"
 dataset_dir_images_sliced_generated = dataset_dir_images_sliced + "/generated"
 dataset_dir_images_sliced_original = dataset_dir_images_sliced + "/original"
 dataset_dir_images_split = dataset_dir_images + "/split"
+dataset_dir_images_split_corrupted = dataset_dir_images_split + "/corrupted"
+dataset_dir_images_split_corrupted_original = dataset_dir_images_split_corrupted + "/original"
+dataset_dir_images_split_corrupted_original_test = dataset_dir_images_split_corrupted_original + "/test"
+dataset_dir_images_split_corrupted_generated = dataset_dir_images_split_corrupted + "/generated"
+dataset_dir_images_split_corrupted_generated_test = dataset_dir_images_split_corrupted_generated + "/test"
 dataset_dir_images_split_generated = dataset_dir_images_split + "/generated"
 dataset_dir_images_split_generated_test = dataset_dir_images_split_generated + "/test"
 dataset_dir_images_split_generated_train = dataset_dir_images_split_generated + "/train"
@@ -52,7 +63,7 @@ label_line_edit_width = 250
 label_viewer_count = 12
 label_viewer_count_col = 6
 
-log_level = type.LogLevel.trace
+log_level = type.LogLevel.debug
 
 slice_duplicates = {
     "vfym8z46xdpftlzctrgl78": "other-sign",
