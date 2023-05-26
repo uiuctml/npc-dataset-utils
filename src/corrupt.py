@@ -7,15 +7,9 @@ import matplotlib.pyplot
 import numpy
 import os
 import PIL.Image
-import random
 import tqdm
 import type
-
-def setSeed(seed):
-    random.seed(seed)
-    numpy.random.seed(seed)
-
-    return
+import utility
 
 def corrupt(image, corruption, severity):
     if corruption == type.Corruption.gaussian_noise:
@@ -82,7 +76,7 @@ def corruptOriginal(file_path_image):
     return
 
 def main():
-    setSeed(header.corrupt_random_seed)
+    utility.setSeed(header.corrupt_random_seed)
 
     file_path_image_counter = 0
     file_path_image_list = []

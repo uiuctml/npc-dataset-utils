@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import codecs
 import cv2
 import header
 import json
@@ -10,75 +9,51 @@ import multiprocessing.shared_memory
 import numpy
 import os
 import tqdm
-
-def readFromSharedMemory(shared_memory, process_id, entry_id):
-    start = process_id * header.slice_shared_memory_size_process + entry_id * header.slice_shared_memory_size_entry
-    size = int(shared_memory.buf[start])
-    end = start + 1 + size
-
-    if end >= header.slice_shared_memory_size_total:
-        logger.log_error("Shared memory segmentation fault")
-        return ""
-
-    return str(codecs.decode(shared_memory.buf[start + 1:end], "ascii"))
-
-def writeToSharedMemory(shared_memory, process_id, entry_id, data):
-    data = str(data)
-    start = process_id * header.slice_shared_memory_size_process + entry_id * header.slice_shared_memory_size_entry
-    end = start + 1 + len(data)
-
-    if end >= header.slice_shared_memory_size_total:
-        logger.log_error("Shared memory segmentation fault")
-        return
-
-    shared_memory.buf[start] = len(data)
-    shared_memory.buf[start + 1:end] = codecs.encode(data, "ascii")
-
-    return
+import utility
 
 def monitor():
-    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_shared_memory_name)
-    done = int(readFromSharedMemory(shared_memory, header.slice_process_count, 0))
+    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_parallel_shared_memory_name)
+    done = int(utility.readFromSharedMemory(shared_memory, header.parallel_process_count, 0))
     progress_bars = []
 
-    for process_id in range(0, header.slice_process_count):
-        file_name_annotations = readFromSharedMemory(shared_memory, process_id, 0)
-        file_annotations_counter = int(readFromSharedMemory(shared_memory, process_id, 1))
-        dataset_dir_annotations_list_size = int(readFromSharedMemory(shared_memory, process_id, 2))
+    for process_id in range(0, header.parallel_process_count):
+        file_name_annotations = utility.readFromSharedMemory(shared_memory, process_id, 0)
+        file_annotations_counter = int(utility.readFromSharedMemory(shared_memory, process_id, 1))
+        dataset_dir_annotations_list_size = int(utility.readFromSharedMemory(shared_memory, process_id, 2))
 
         progress_bar = tqdm.tqdm(total = dataset_dir_annotations_list_size, position = process_id, leave = False)
         progress_bar.set_description_str("Processing \"" + file_name_annotations + "\"")
         progress_bars.append(progress_bar)
 
     while not done:
-        for process_id in range(0, header.slice_process_count):
-            file_name_annotations = readFromSharedMemory(shared_memory, process_id, 0)
-            file_annotations_counter = int(readFromSharedMemory(shared_memory, process_id, 1))
-            dataset_dir_annotations_list_size = int(readFromSharedMemory(shared_memory, process_id, 2))
+        for process_id in range(0, header.parallel_process_count):
+            file_name_annotations = utility.readFromSharedMemory(shared_memory, process_id, 0)
+            file_annotations_counter = int(utility.readFromSharedMemory(shared_memory, process_id, 1))
+            dataset_dir_annotations_list_size = int(utility.readFromSharedMemory(shared_memory, process_id, 2))
             progress_bar = progress_bars[process_id]
             progress_bar.set_description_str("Processing \"" + file_name_annotations + "\"")
             progress_bar.n = file_annotations_counter
             progress_bar.refresh()
 
-        done = int(readFromSharedMemory(shared_memory, header.slice_process_count, 0))
+        done = int(utility.readFromSharedMemory(shared_memory, header.parallel_process_count, 0))
 
-    for process_id in range(0, header.slice_process_count):
+    for process_id in range(0, header.parallel_process_count):
         progress_bars[process_id].close()
 
     return
 
 def slice(process_id, dataset_dir_annotations_list):
     file_annotations_counter = 1
-    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_shared_memory_name)
+    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_parallel_shared_memory_name)
 
     for file_name_annotations in dataset_dir_annotations_list:
         file_key = file_name_annotations.split(".")[0]
         file_name_images = file_key + header.dataset_file_extension_images
         file_path_images = os.path.join(header.slice_dataset_dir_images, file_name_images)
 
-        writeToSharedMemory(shared_memory, process_id, 0, file_name_annotations)
-        writeToSharedMemory(shared_memory, process_id, 1, file_annotations_counter)
-        writeToSharedMemory(shared_memory, process_id, 2, len(dataset_dir_annotations_list))
+        utility.writeToSharedMemory(shared_memory, process_id, 0, file_name_annotations)
+        utility.writeToSharedMemory(shared_memory, process_id, 1, file_annotations_counter)
+        utility.writeToSharedMemory(shared_memory, process_id, 2, len(dataset_dir_annotations_list))
 
         file_annotations_counter += 1
         file_path_annotations = os.path.join(header.slice_dataset_dir_annotations, file_name_annotations)
@@ -144,23 +119,23 @@ def main():
         return
 
     dataset_dir_annotations_list = numpy.array(os.listdir(header.slice_dataset_dir_annotations))
-    dataset_dir_annotations_list_split = numpy.array_split(dataset_dir_annotations_list, header.slice_process_count)
+    dataset_dir_annotations_list_split = numpy.array_split(dataset_dir_annotations_list, header.parallel_process_count)
     processes = []
-    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_shared_memory_name, create = True, size = header.slice_shared_memory_size_total)
+    shared_memory = multiprocessing.shared_memory.SharedMemory(name = header.slice_parallel_shared_memory_name, create = True, size = header.parallel_shared_memory_size_total)
 
-    for process_id in range(0, header.slice_process_count):
+    for process_id in range(0, header.parallel_process_count):
         process = multiprocessing.Process(target = slice, args = (process_id, list(dataset_dir_annotations_list_split[process_id])))
         process.start()
         processes.append(process)
 
-    writeToSharedMemory(shared_memory, header.slice_process_count, 0, 0)
+    utility.writeToSharedMemory(shared_memory, header.parallel_process_count, 0, 0)
     process_monitor = multiprocessing.Process(target = monitor)
     process_monitor.start()
 
     for process in processes:
         process.join()
 
-    writeToSharedMemory(shared_memory, header.slice_process_count, 0, 1)
+    utility.writeToSharedMemory(shared_memory, header.parallel_process_count, 0, 1)
     process_monitor.join()
     shared_memory.unlink()
 

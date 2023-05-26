@@ -65,6 +65,11 @@ label_viewer_count_col = 6
 
 log_level = type.LogLevel.debug
 
+parallel_process_count = multiprocessing.cpu_count()
+parallel_shared_memory_size_entry = 64
+parallel_shared_memory_size_process = 256
+parallel_shared_memory_size_total = parallel_shared_memory_size_process * (parallel_process_count + 1)
+
 slice_duplicates = {
     "vfym8z46xdpftlzctrgl78": "other-sign",
     "dchqt8ir2pap7ir940nab9315k": "other-sign",
@@ -72,11 +77,7 @@ slice_duplicates = {
 }
 slice_dataset_dir_annotations = dataset_dir_annotations_original
 slice_dataset_dir_images = dataset_dir_images_original
-slice_process_count = multiprocessing.cpu_count()
-slice_shared_memory_name = "slice"
-slice_shared_memory_size_entry = 64
-slice_shared_memory_size_process = 256
-slice_shared_memory_size_total = slice_shared_memory_size_process * (slice_process_count + 1)
+slice_parallel_shared_memory_name = "slice"
 
 split_basis = type.SplitBasis.statistics
 split_config_file_name = "split_statistics.json.gz"
