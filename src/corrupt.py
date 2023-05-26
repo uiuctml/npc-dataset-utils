@@ -3,7 +3,7 @@
 import header
 import imagenet_c
 import logger
-import matplotlib.pyplot
+import multiprocessing
 import numpy
 import os
 import PIL.Image
@@ -54,16 +54,7 @@ def corruptOriginal(file_path_image):
     image = image.resize((header.corrupt_image_size, header.corrupt_image_size))
     image = numpy.array(image)
 
-    if header.log_level >= type.LogLevel.trace:
-        matplotlib.pyplot.imshow(image)
-        matplotlib.pyplot.show()
-
     image_corrupted = corrupt(image, header.corrupt_corruption, header.corrupt_severity)
-
-    if header.log_level >= type.LogLevel.trace:
-        matplotlib.pyplot.imshow(image_corrupted)
-        matplotlib.pyplot.show()
-
     image_corrupted = PIL.Image.fromarray(image_corrupted)
 
     file_dir_corruption_params = header.corrupt_corruption.name + "_" + str(header.corrupt_severity)
@@ -78,8 +69,9 @@ def corruptOriginal(file_path_image):
 def main():
     utility.setSeed(header.corrupt_random_seed)
 
-    file_path_image_counter = 0
+    file_path_image_counters = []
     file_path_image_list = []
+    progress_bars = []
 
     for file_dir_class in os.listdir(header.dataset_dir_images_split_original_test):
         file_path_class = os.path.join(header.dataset_dir_images_split_original_test, file_dir_class)
@@ -88,19 +80,62 @@ def main():
             file_path_image = os.path.join(file_path_class, file_name_image)
             file_path_image_list.append(file_path_image)
 
-    progress_bar = tqdm.tqdm(total = len(file_path_image_list))
+    file_path_image_list = numpy.array(file_path_image_list)
+    file_path_image_list_split = numpy.array_split(file_path_image_list, numpy.arange(header.parallel_process_count, len(file_path_image_list), header.parallel_process_count))
 
-    for file_path_image in file_path_image_list:
-        file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+    # Create progress bars
+    for process_id in range(0, header.parallel_process_count):
+        progress_bar_size = len(file_path_image_list) // header.parallel_process_count
 
-        progress_bar.set_description_str("[INFO]: Processing \"" + file_key + "\"")
-        progress_bar.n = file_path_image_counter
-        progress_bar.refresh()
-        file_path_image_counter += 1
+        if (len(file_path_image_list_split[-1]) != header.parallel_process_count and
+            process_id < len(file_path_image_list_split[-1])):
+            progress_bar_size += 1
 
-        corruptOriginal(file_path_image)
+        progress_bar = tqdm.tqdm(total = progress_bar_size, position = process_id, leave = False)
+        progress_bars.append(progress_bar)
+        file_path_image_counters.append(0)
 
-    progress_bar.close()
+    for file_path_image_list_process in file_path_image_list_split:
+        processes = []
+        process_exit_codes = []
+
+        if len(file_path_image_list_process) > header.parallel_process_count:
+            logger.log_warn("Not enough process.")
+
+        # Start processes
+        for (process_id, file_path_image) in enumerate(file_path_image_list_process):
+            args = (file_path_image,)
+            file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+            description = file_key[0:header.corrupt_progress_bar_description_length] + "..."
+            progress_bars[process_id].set_description_str("Processing \"" + description + "\"")
+            progress_bars[process_id].n = file_path_image_counters[process_id]
+            progress_bars[process_id].refresh()
+            file_path_image_counters[process_id] += 1
+
+            process = multiprocessing.Process(target = corruptOriginal, args = args)
+            process.start()
+            processes.append((process, args))
+
+        # Join processes
+        for (process, args) in processes:
+            process.join()
+            process_exit_codes.append((process.exitcode, args))
+
+        # Retry failed processes
+        for (process_exit_code, args) in process_exit_codes:
+            while process_exit_code != 0:
+                file_path_image = args[0]
+                file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+                logger.log_info("Failed on \"" + file_key + "\". Retrying...")
+
+                process = multiprocessing.Process(target = corruptOriginal, args = args)
+                process.start()
+                process.join()
+                process_exit_code = process.exitcode
+
+    # Close progress bars
+    for progress_bar in progress_bars:
+        progress_bar.close()
 
     return
 

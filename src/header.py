@@ -5,6 +5,7 @@ config_dir = "../config"
 
 corrupt_corruption = type.Corruption.snow
 corrupt_image_size = 224
+corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
 
