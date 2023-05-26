@@ -8,6 +8,7 @@ import multiprocessing
 import numpy
 import os
 import PIL.Image
+import sys
 import tqdm
 import type
 import utility
@@ -79,6 +80,52 @@ def corruptOriginal(file_path_image):
 
 def main():
     utility.setSeed(header.corrupt_random_seed)
+
+    if len(sys.argv) > 1:
+        corruption_imagenet_c = sys.argv[1]
+
+        if corruption_imagenet_c == type.CorruptionImageNetC.gaussian_noise.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.gaussian_noise
+        elif corruption_imagenet_c == type.CorruptionImageNetC.shot_noise.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.shot_noise
+        elif corruption_imagenet_c == type.CorruptionImageNetC.impulse_noise.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.impulse_noise
+        elif corruption_imagenet_c == type.CorruptionImageNetC.defocus_blur.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.defocus_blur
+        elif corruption_imagenet_c == type.CorruptionImageNetC.glass_blur.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.glass_blur
+        elif corruption_imagenet_c == type.CorruptionImageNetC.motion_blur.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.motion_blur
+        elif corruption_imagenet_c == type.CorruptionImageNetC.zoom_blur.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.zoom_blur
+        elif corruption_imagenet_c == type.CorruptionImageNetC.snow.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.snow
+        elif corruption_imagenet_c == type.CorruptionImageNetC.frost.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.frost
+        elif corruption_imagenet_c == type.CorruptionImageNetC.fog.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.fog
+        elif corruption_imagenet_c == type.CorruptionImageNetC.brightness.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.brightness
+        elif corruption_imagenet_c == type.CorruptionImageNetC.contrast.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.contrast
+        elif corruption_imagenet_c == type.CorruptionImageNetC.elastic_transform.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.elastic_transform
+        elif corruption_imagenet_c == type.CorruptionImageNetC.pixelate.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.pixelate
+        elif corruption_imagenet_c == type.CorruptionImageNetC.jpeg_compression.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.jpeg_compression
+        else:
+            logger.log_error("Unknown ImageNet-C corruption \"" + corruption_imagenet_c + "\". Quit")
+            exit(-1)
+
+    if len(sys.argv) > 2:
+        corruption_severity = sys.argv[2]
+
+        try:
+            header.corrupt_severity = int(corruption_severity)
+        except:
+            logger.log_error("Invalid corruption severity \"" + corruption_severity + "\". Quit")
+            exit(-1)
 
     file_path_image_counters = []
     file_path_image_list = []
