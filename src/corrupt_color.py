@@ -99,7 +99,7 @@ def modifyColor(image, cluster_id, cluster_freq, label):
 
 
 def corruptColor(image):
-    image = numpy.array(image)
+    image = np.array(image)
 
     # vectorized the image
     vectorized = image.reshape((-1, 3))

@@ -3,6 +3,7 @@ import type
 
 config_dir = "../config"
 
+corrupt_corruption_algorithm = type.CorruptionAlgorithm.imagenet_c
 corrupt_corruption_imagenet_c = type.CorruptionImageNetC.snow
 corrupt_image_size = 224
 corrupt_progress_bar_description_length = 15

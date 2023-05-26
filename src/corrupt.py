@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import corrupt_color
 import header
 import imagenet_c
 import logger
@@ -46,7 +47,7 @@ def corruptImageNetC(image, corruption, severity):
     elif corruption == type.CorruptionImageNetC.jpeg_compression:
         return imagenet_c.jpeg_compression(image, severity).astype(numpy.uint8)
 
-    logger.log_warn("Unknown corruption \"" + corruption.name + "\"")
+    logger.log_warn("Unknown ImageNet-C corruption \"" + corruption.name + "\"")
     return image
 
 def corruptOriginal(file_path_image):
@@ -54,10 +55,20 @@ def corruptOriginal(file_path_image):
     file_name_image = file_path_image.split("/")[-1]
 
     image = PIL.Image.open(file_path_image)
-    image_corrupted = corruptImageNetC(image, header.corrupt_corruption_imagenet_c, header.corrupt_severity)
+    image_corrupted = image
+    file_dir_corruption_params = "unknown"
+
+    if header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.imagenet_c:
+        image_corrupted = corruptImageNetC(image, header.corrupt_corruption_imagenet_c, header.corrupt_severity)
+        file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
+    elif header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.color:
+        image_corrupted = corrupt_color.corruptColor(image)
+        file_dir_corruption_params = "color"
+    else:
+        logger.log_warn("Unknown corruption algorithm \"" + header.corrupt_corruption_algorithm.name + "\"")
+
     image_corrupted = PIL.Image.fromarray(image_corrupted)
 
-    file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
     file_path_class_corrupted = os.path.join(header.dataset_dir_images_split_corrupted_original_test, file_dir_corruption_params, file_dir_class)
     file_path_image_corrupted = os.path.join(file_path_class_corrupted, file_name_image)
 
