@@ -93,7 +93,7 @@ def main():
 
         progress_bar = tqdm.tqdm(total = progress_bar_size, position = process_id, leave = False)
         progress_bars.append(progress_bar)
-        file_path_image_counters.append(0)
+        file_path_image_counters.append(1)
 
     for file_path_image_list_process in file_path_image_list_split:
         processes = []
