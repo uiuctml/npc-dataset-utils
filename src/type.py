@@ -2,7 +2,7 @@ import enum
 import PyQt5.QtCore
 import PyQt5.QtWidgets
 
-class Corruption(enum.Enum):
+class CorruptionImageNetC(enum.Enum):
     gaussian_noise = 0
     shot_noise = 1
     impulse_noise = 2
