@@ -15,7 +15,6 @@ import utility
 
 def corruptImageNetC(image, corruption, severity):
     image = image.resize((header.corrupt_image_size, header.corrupt_image_size))
-    image = numpy.array(image)
 
     if corruption == type.CorruptionImageNetC.gaussian_noise:
         return imagenet_c.gaussian_noise(image, severity).astype(numpy.uint8)
