@@ -77,6 +77,25 @@ def corruptOriginal(file_path_image):
 
     return
 
+def corruptGenerated(file_path_image):
+    file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
+    file_path_image_original = os.path.realpath(file_path_image)
+    file_path_class_image = "/".join(file_path_image_original.split("/")[-2:])
+    file_path_image_corrupted_original = os.path.join(header.dataset_dir_images_split_corrupted_original_test, file_dir_corruption_params, file_path_class_image)
+    file_name_image_generated = file_path_image.split("/")[-1]
+
+    file_path_corrupted = os.path.join(header.dataset_dir_images_split_corrupted_generated_test, file_dir_corruption_params)
+    file_path_image_corrupted = os.path.join(file_path_corrupted, file_name_image_generated)
+
+    os.makedirs(file_path_corrupted, exist_ok = True)
+
+    if file_path_image.split(".")[-1] == "json":
+        os.symlink(os.path.abspath(file_path_image_original), file_path_image_corrupted)
+    else:
+        os.symlink(os.path.abspath(file_path_image_corrupted_original), file_path_image_corrupted)
+
+    return
+
 def main():
     utility.setSeed(header.corrupt_random_seed)
 
@@ -126,15 +145,38 @@ def main():
             logger.log_error("Invalid corruption severity \"" + corruption_severity + "\". Quit")
             exit(-1)
 
+    file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
+    file_path_corruption_original = os.path.join(header.dataset_dir_images_split_corrupted_original_test, file_dir_corruption_params)
+    file_path_corruption_generated = os.path.join(header.dataset_dir_images_split_corrupted_generated_test, file_dir_corruption_params)
+    file_path_corruption = ""
     file_path_image_counters = []
     file_path_image_list = []
     progress_bars = []
 
-    for file_dir_class in os.listdir(header.dataset_dir_images_split_original_test):
-        file_path_class = os.path.join(header.dataset_dir_images_split_original_test, file_dir_class)
+    if header.corrupt_original:
+        file_path_corruption = file_path_corruption_original
+    else:
+        file_path_corruption = file_path_corruption_generated
 
-        for file_name_image in os.listdir(file_path_class):
-            file_path_image = os.path.join(file_path_class, file_name_image)
+    if os.path.isdir(file_path_corruption):
+        logger.log_info("Directory \"" + file_dir_corruption_params + "\" exists. Quit")
+        return
+
+    if not header.corrupt_original and not os.path.isdir(file_path_corruption_original):
+        logger.log_error("Missing original corruption for \"" + file_dir_corruption_params + "\". Quit")
+        return
+
+    # Gather image file paths
+    if header.corrupt_original:
+        for file_dir_class in os.listdir(header.dataset_dir_images_split_original_test):
+            file_path_class = os.path.join(header.dataset_dir_images_split_original_test, file_dir_class)
+
+            for file_name_image in os.listdir(file_path_class):
+                file_path_image = os.path.join(file_path_class, file_name_image)
+                file_path_image_list.append(file_path_image)
+    else:
+        for file_name_image in os.listdir(header.dataset_dir_images_split_generated_test):
+            file_path_image = os.path.join(header.dataset_dir_images_split_generated_test, file_name_image)
             file_path_image_list.append(file_path_image)
 
     file_path_image_list = numpy.array(file_path_image_list)
@@ -162,14 +204,26 @@ def main():
         # Start processes
         for (process_id, file_path_image) in enumerate(file_path_image_list_process):
             args = (file_path_image,)
-            file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+            file_key = ""
+
+            if header.corrupt_original:
+                file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+            else:
+                file_key = file_path_image.split(header.dataset_file_extension_images)[0].split(header.dataset_delimiter_file_name)[-1]
+
             description = file_key[0:header.corrupt_progress_bar_description_length] + "..."
+            process = None
+
             progress_bars[process_id].set_description_str("Processing \"" + description + "\"")
             progress_bars[process_id].n = file_path_image_counters[process_id]
             progress_bars[process_id].refresh()
             file_path_image_counters[process_id] += 1
 
-            process = multiprocessing.Process(target = corruptOriginal, args = args)
+            if header.corrupt_original:
+                process = multiprocessing.Process(target = corruptOriginal, args = args)
+            else:
+                process = multiprocessing.Process(target = corruptGenerated, args = args)
+
             process.start()
             processes.append((process, args))
 
@@ -182,10 +236,21 @@ def main():
         for (process_exit_code, args) in process_exit_codes:
             while process_exit_code != 0:
                 file_path_image = args[0]
-                file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+                file_key = ""
+
+                if header.corrupt_original:
+                    file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
+                else:
+                    file_key = file_path_image.split(header.dataset_file_extension_images)[0].split(header.dataset_delimiter_file_name)[-1]
+
+                process = None
                 logger.log_info("Failed on \"" + file_key + "\". Retrying...")
 
-                process = multiprocessing.Process(target = corruptOriginal, args = args)
+                if header.corrupt_original:
+                    process = multiprocessing.Process(target = corruptOriginal, args = args)
+                else:
+                    process = multiprocessing.Process(target = corruptGenerated, args = args)
+
                 process.start()
                 process.join()
                 process_exit_code = process.exitcode
