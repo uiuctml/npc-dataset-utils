@@ -17,37 +17,48 @@ def corruptImageNetC(image, corruption, severity):
     image = image.resize((header.corrupt_image_size, header.corrupt_image_size))
 
     if corruption == type.CorruptionImageNetC.gaussian_noise:
-        return imagenet_c.gaussian_noise(image, severity).astype(numpy.uint8)
+        image = imagenet_c.gaussian_noise(image, severity)
     elif corruption == type.CorruptionImageNetC.shot_noise:
-        return imagenet_c.shot_noise(image, severity).astype(numpy.uint8)
+        image = imagenet_c.shot_noise(image, severity)
     elif corruption == type.CorruptionImageNetC.impulse_noise:
-        return imagenet_c.impulse_noise(image, severity).astype(numpy.uint8)
+        image = imagenet_c.impulse_noise(image, severity)
     elif corruption == type.CorruptionImageNetC.defocus_blur:
-        return imagenet_c.defocus_blur(image, severity).astype(numpy.uint8)
+        image = imagenet_c.defocus_blur(image, severity)
     elif corruption == type.CorruptionImageNetC.glass_blur:
-        return imagenet_c.glass_blur(image, severity).astype(numpy.uint8)
+        image = imagenet_c.glass_blur(image, severity)
     elif corruption == type.CorruptionImageNetC.motion_blur:
-        return imagenet_c.motion_blur(image, severity).astype(numpy.uint8)
+        image = imagenet_c.motion_blur(image, severity)
     elif corruption == type.CorruptionImageNetC.zoom_blur:
-        return imagenet_c.zoom_blur(image, severity).astype(numpy.uint8)
+        image = imagenet_c.zoom_blur(image, severity)
     elif corruption == type.CorruptionImageNetC.snow:
-        return imagenet_c.snow(image, severity).astype(numpy.uint8)
+        image = imagenet_c.snow(image, severity)
     elif corruption == type.CorruptionImageNetC.frost:
-        return imagenet_c.frost(image, severity).astype(numpy.uint8)
+        image = imagenet_c.frost(image, severity)
     elif corruption == type.CorruptionImageNetC.fog:
-        return imagenet_c.fog(image, severity).astype(numpy.uint8)
+        image = imagenet_c.fog(image, severity)
     elif corruption == type.CorruptionImageNetC.brightness:
-        return imagenet_c.brightness(image, severity).astype(numpy.uint8)
+        image = imagenet_c.brightness(image, severity)
     elif corruption == type.CorruptionImageNetC.contrast:
-        return imagenet_c.contrast(image, severity).astype(numpy.uint8)
+        image = imagenet_c.contrast(image, severity)
     elif corruption == type.CorruptionImageNetC.elastic_transform:
-        return imagenet_c.elastic_transform(image, severity).astype(numpy.uint8)
+        image = imagenet_c.elastic_transform(image, severity)
     elif corruption == type.CorruptionImageNetC.pixelate:
-        return imagenet_c.pixelate(image, severity).astype(numpy.uint8)
+        image = imagenet_c.pixelate(image, severity)
     elif corruption == type.CorruptionImageNetC.jpeg_compression:
-        return imagenet_c.jpeg_compression(image, severity).astype(numpy.uint8)
+        image = imagenet_c.jpeg_compression(image, severity)
+    elif corruption == type.CorruptionImageNetC.speckle_noise:
+        image = imagenet_c.speckle_noise(image, severity)
+    elif corruption == type.CorruptionImageNetC.gaussian_blur:
+        image = imagenet_c.gaussian_blur(image, severity)
+    elif corruption == type.CorruptionImageNetC.spatter:
+        image = imagenet_c.spatter(image, severity)
+    elif corruption == type.CorruptionImageNetC.saturate:
+        image = imagenet_c.saturate(image, severity)
+    else:
+        logger.log_warn("Unknown ImageNet-C corruption \"" + corruption.name + "\"")
 
-    logger.log_warn("Unknown ImageNet-C corruption \"" + corruption.name + "\"")
+    image = numpy.array(image).astype(numpy.uint8)
+
     return image
 
 def corruptOriginal(file_path_image):
@@ -132,6 +143,14 @@ def main():
             header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.pixelate
         elif corruption_imagenet_c == type.CorruptionImageNetC.jpeg_compression.name:
             header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.jpeg_compression
+        elif corruption_imagenet_c == type.CorruptionImageNetC.speckle_noise.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.speckle_noise
+        elif corruption_imagenet_c == type.CorruptionImageNetC.gaussian_blur.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.gaussian_blur
+        elif corruption_imagenet_c == type.CorruptionImageNetC.spatter.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.spatter
+        elif corruption_imagenet_c == type.CorruptionImageNetC.saturate.name:
+            header.corrupt_corruption_imagenet_c = type.CorruptionImageNetC.saturate
         else:
             logger.log_error("Unknown ImageNet-C corruption \"" + corruption_imagenet_c + "\". Quit")
             exit(-1)

@@ -22,6 +22,10 @@ class CorruptionImageNetC(enum.Enum):
     elastic_transform = 12
     pixelate = 13
     jpeg_compression = 14
+    speckle_noise = 15
+    gaussian_blur = 16
+    spatter = 17
+    saturate = 18
 
 class LogLevel(enum.Enum):
     all = 6
