@@ -257,6 +257,7 @@ def createLabelingControlWidget():
     group_box_reduction.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_reduction.setLayout(layout_reduction)
     group_box_reduction.setTitle("Reduction")
+    group_box_reduction.setHidden(not header.label_enable_weight)
 
     layout_labeling_control.addLayout(layout_dataset)
     layout_labeling_control.addWidget(group_box_reduction)
@@ -302,6 +303,7 @@ def createLabelingControlWidget():
         group_box_label.setTitle("Label for \"" + dataset["name"] + "\"")
         group_box_weight.setLayout(layout_weight)
         group_box_weight.setTitle("Weight for \"" + dataset["name"] + "\"")
+        group_box_weight.setHidden(not header.label_enable_weight)
         layout_label.addWidget(combo_box_label, 0, 0)
         layout_label.addWidget(line_edit_label, 0, 1)
         layout_label.addWidget(push_button_add_label, 0, 2)

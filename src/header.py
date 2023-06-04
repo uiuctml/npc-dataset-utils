@@ -60,6 +60,7 @@ group_viewer_side_width = 150
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
 label_dataset_dir_images = dataset_dir_images_sliced_original
+label_enable_weight = False
 label_viewer_height = 150
 label_viewer_width = 150
 label_line_edit_width = 250
