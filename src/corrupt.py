@@ -172,18 +172,19 @@ def main():
     file_path_image_list = []
     progress_bars = []
 
-    if header.corrupt_original:
-        file_path_corruption = file_path_corruption_original
-    else:
-        file_path_corruption = file_path_corruption_generated
+    if header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.imagenet_c:
+        if header.corrupt_original:
+            file_path_corruption = file_path_corruption_original
+        else:
+            file_path_corruption = file_path_corruption_generated
 
-    if os.path.isdir(file_path_corruption):
-        logger.log_info("Directory \"" + file_dir_corruption_params + "\" exists. Quit")
-        return
+        if os.path.isdir(file_path_corruption):
+            logger.log_info("Directory \"" + file_dir_corruption_params + "\" exists. Quit")
+            return
 
-    if not header.corrupt_original and not os.path.isdir(file_path_corruption_original):
-        logger.log_error("Missing original corruption for \"" + file_dir_corruption_params + "\". Quit")
-        return
+        if not header.corrupt_original and not os.path.isdir(file_path_corruption_original):
+            logger.log_error("Missing original corruption for \"" + file_dir_corruption_params + "\". Quit")
+            return
 
     # Gather image file paths
     if header.corrupt_original:
