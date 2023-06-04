@@ -83,8 +83,8 @@ slice_dataset_dir_annotations = dataset_dir_annotations_original
 slice_dataset_dir_images = dataset_dir_images_original
 slice_parallel_shared_memory_name = "slice"
 
-split_basis = type.SplitBasis.statistics
-split_config_file_name = "split_statistics.json.gz"
+split_basis = type.SplitBasis.percentage
+split_config_file_name = "split_percentage.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
