@@ -89,7 +89,13 @@ def corruptOriginal(file_path_image):
     return
 
 def corruptGenerated(file_path_image):
-    file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
+    if header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.imagenet_c:
+        file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
+    elif header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.color:
+        file_dir_corruption_params = "color"
+    else:
+        logger.log_warn("Unknown corruption algorithm \"" + header.corrupt_corruption_algorithm.name + "\"")
+
     file_path_image_original = os.path.realpath(file_path_image)
     file_path_class_image = "/".join(file_path_image_original.split("/")[-2:])
     file_path_image_corrupted_original = os.path.join(header.dataset_dir_images_split_corrupted_original_test, file_dir_corruption_params, file_path_class_image)
