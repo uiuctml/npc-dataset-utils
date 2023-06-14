@@ -24,7 +24,7 @@ cd ImageNet-C/imagenet_c/
 python3 -m pip install -e .
 ```
 
-Before attempting to launch a script, please refer to `header.py` and ensure that all relevant parameters are properly set.
+Before attempting to launch a script, please refer to `header.py` and ensure that all relevant parameters, such as dataset image directory paths, ImageNet-C corruption type, etc., are properly set.
 
 ## Dataset Split Symlink Generation
 
