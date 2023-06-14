@@ -100,3 +100,7 @@ cd src/
 ```
 
 For the above adversarial attack scripts, please use `--help` to examine their respectively required arguments.
+
+## License
+
+This codebase is provided under the Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA) license, which can be viewed under `LICENSE`.
