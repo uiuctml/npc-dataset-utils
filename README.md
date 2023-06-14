@@ -40,7 +40,7 @@ cd src/
 
 ## Visual Attribute Rapid Labeling Interface
 
-The visual attribute rapid labeling interface allows for the efficient creation of visual attribute lables for the VISAT dataset.
+The visual attribute rapid labeling interface allows for the efficient creation of visual attribute labels for the VISAT dataset.
 
 Under the project directory, the labeling interface can be launched as follows:
 
@@ -52,7 +52,7 @@ cd src/
 
 ## Visual Attribute Symlink Generation
 
-To reduce storage footprint, the mapping between the 401 original class labels and the visual attribute labels is encoded as symlinks pointing to the actual dataset images. Please note that we plan to further improve the visual attribute encoding in the future by eliminating the creating of symlinks altogether. Instead, we shall create a custom data loader that directly parses encoding from the `visual_attribute_mappings.json` JSON file.
+To reduce storage footprint, the mapping between the 401 original class labels and the visual attribute labels is encoded as symlinks pointing to the actual dataset images. Please note that we plan to further improve the visual attribute encoding in the future by eliminating the creation of symlinks altogether. Instead, we shall create a custom data loader that directly parses encoding from the `visual_attribute_mappings.json` JSON file.
 
 Under the project directory, the visual attribute symlinks can be generated as follows:
 
