@@ -83,17 +83,20 @@ Under the project directory, an adversarial attack testing split for a base ResN
 ```bash
 cd src/
 ./pgd152.py
+```
 
 Under the project directory, an adversarial attack testing split for a base ViT-B/32 model can be generated as follows:
 
 ```bash
 cd src/
 ./pgdvit.py
+```
 
 Under the project directory, an adversarial attack testing split for an MTL model can be generated as follows:
 
 ```bash
 cd src/
 ./mtlattack.py
+```
 
 For the above adversarial attack scripts, please use `--help` to examine their respectively required arguments.
