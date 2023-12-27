@@ -1,10 +1,11 @@
+#!/usr/bin/env python3
+
 import header
 import json
 import logger
 import os
 import random
 import shutil
-
 
 def initialize_directories():
     mtsd_sign_labels = os.listdir(header.dataset_mtsd_test)
@@ -32,7 +33,6 @@ def sample_from_mtsd():
         mtsd_baseline_signs += mtsd_sub_signs[0]
         mtsd_sub_signs = mtsd_sub_sign[1:]
         mtsd_signs += mtsd_sub_signs
-        
 
     random.shuffle(mtsd_signs)
     signs_in_test = mtsd_baseline_signs + mtsd_signs[:int(header.ratio_for_mixing * header.test_dataset_size)-len(mtsd_baseline_signs)]
