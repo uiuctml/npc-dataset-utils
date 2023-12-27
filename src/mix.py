@@ -18,6 +18,7 @@ def initialize_directories():
         os.mkdir(path)
 
 def sample_from_mtsd():
+    mtsd_baseline_signs = []
     mtsd_signs = []
     mtsd_sign_dict = {}
     mtsd_sub_folders = os.listdir(header.dataset_mtsd_test)
@@ -27,10 +28,14 @@ def sample_from_mtsd():
         mtsd_image_location = {os.path.join(sub_folder_path, i) : sub_folder for i in os.listdir(sub_folder_path)}
         mtsd_sub_signs =  [os.path.join(sub_folder_path, i) for i in os.listdir(sub_folder_path)]
         mtsd_sign_dict = mtsd_sign_dict | mtsd_image_location
+        random.shuffle(mtsd_sub_signs)
+        mtsd_baseline_signs += mtsd_sub_signs[0]
+        mtsd_sub_signs = mtsd_sub_sign[1:]
         mtsd_signs += mtsd_sub_signs
+        
 
     random.shuffle(mtsd_signs)
-    signs_in_test = mtsd_signs[:int(header.ratio_for_mixing * header.test_dataset_size)]
+    signs_in_test = mtsd_baseline_signs + mtsd_signs[:int(header.ratio_for_mixing * header.test_dataset_size)-len(mtsd_baseline_signs)]
 
     logger.log_debug(signs_in_test[0])
     logger.log_debug(mtsd_sign_dict[signs_in_test[0]])
