@@ -43,10 +43,6 @@ dataset_file_name_split_test = "test.txt"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
-dataset_types = "/home/spn/Downloads/datasets"
-dataset_mtsd_test = dataset_types + "/MTSD/test"
-dataset_gtsrb_test = dataset_types + "/GTSRB/Train"
-dataset_mixed_test = dataset_types + "/MIXED/test"
 
 generate_config_file_name = "generate.json"
 generate_dataset_dir_images = dataset_dir_images_sliced_original
@@ -71,16 +67,16 @@ label_line_edit_width = 250
 label_viewer_count = 12
 label_viewer_count_col = 6
 
-mapping_file_path = dataset_types + "/GTSRB/mappings_to_mtsd.json"
-
-log_level = type.LogLevel.debug
+log_level = type.LogLevel.info
 
 parallel_process_count = multiprocessing.cpu_count()
 parallel_shared_memory_size_entry = 64
 parallel_shared_memory_size_process = 256
 parallel_shared_memory_size_total = parallel_shared_memory_size_process * (parallel_process_count + 1)
 
-ratio_for_mixing = 0.5
+mix_dataset_dir_images_split_mixed_test = dataset_dir_images_split + "/mixed" + "/test"
+mix_mapping_file_name_gtsrb = "gtsrb_to_mtsd.json"
+mix_ratio = 0.5
 
 slice_duplicates = {
     "vfym8z46xdpftlzctrgl78": "other-sign",
@@ -110,5 +106,3 @@ stats_model_input_height = 224
 stats_model_input_width = 224
 stats_plot = True
 stats_save = False
-
-test_dataset_size = 30000

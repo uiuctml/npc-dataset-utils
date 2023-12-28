@@ -1,0 +1,131 @@
+{
+   "0": {
+      "MTSD": "regulatory--maximum-speed-limit-20--g1"
+   },
+   "1": {
+      "MTSD": "regulatory--maximum-speed-limit-30--g1"
+   },
+   "2": {
+      "MTSD": "regulatory--maximum-speed-limit-50--g1"
+   },
+   "3": {
+      "MTSD": "regulatory--maximum-speed-limit-60--g1"
+   },
+   "4": {
+      "MTSD": "regulatory--maximum-speed-limit-70--g1"
+   },
+   "5": {
+      "MTSD": "regulatory--maximum-speed-limit-80--g1"
+   },
+   "6": {
+      "MTSD": "N/A"
+   },
+   "7": {
+      "MTSD": "regulatory--maximum-speed-limit-100--g1"
+   },
+   "8": {
+      "MTSD": "regulatory--maximum-speed-limit-120--g1"
+   },
+   "9": {
+      "MTSD": "regulatory--no-overtaking--g1"
+   },
+   "10": {
+      "MTSD": "regulatory--no-overtaking-by-heavy-goods-vehicles--g1"
+   },
+   "11": {
+      "MTSD": "warning--crossroads--g1"
+   },
+   "12": {
+      "MTSD": "regulatory--priority-road--g4"
+   },
+   "13": {
+      "MTSD": "regulatory--yield--g1"
+   },
+   "14": {
+      "MTSD": "regulatory--stop--g1"
+   },
+   "15": {
+      "MTSD": "regulatory--road-closed-to-vehicles--g3"
+   },
+   "16": {
+      "MTSD": "regulatory--no-heavy-goods-vehicles--g1"
+   },
+   "17": {
+      "MTSD": "regulatory--no-entry--g1"
+   },
+   "18": {
+      "MTSD": "warning--other-danger--g1"
+   },
+   "19": {
+      "MTSD": "warning--curve-left--g1"
+   },
+   "20": {
+      "MTSD": "warning--curve-right--g1"
+   },
+   "21": {
+      "MTSD": "warning--double-curve-first-left--g1"
+   },
+   "22": {
+      "MTSD": "warning--uneven-road--g6"
+   },
+   "23": {
+      "MTSD": "warning--slippery-road-surface--g1"
+   },
+   "24": {
+      "MTSD": "warning--road-narrows-right--g1"
+   },
+   "25": {
+      "MTSD": "warning--roadworks--g1"
+   },
+   "26": {
+      "MTSD": "warning--traffic-signals--g1"
+   },
+   "27": {
+      "MTSD": "warning--pedestrians-crossing--g1"
+   },
+   "28": {
+      "MTSD": "warning--children--g1"
+   },
+   "29": {
+      "MTSD": "warning--bicycles-crossing--g1"
+   },
+   "30": {
+      "MTSD": "N/A"
+   },
+   "31": {
+      "MTSD": "warning--wild-animals--g1"
+   },
+   "32": {
+      "MTSD": "regulatory--end-of-prohibition--g1"
+   },
+   "33": {
+      "MTSD": "regulatory--turn-right-ahead--g1"
+   },
+   "34": {
+      "MTSD": "regulatory--turn-left-ahead--g1"
+   },
+   "35": {
+      "MTSD": "regulatory--go-straight--g1"
+   },
+   "36": {
+      "MTSD": "regulatory--go-straight-or-turn-right--g1"
+   },
+   "37": {
+      "MTSD": "regulatory--go-straight-or-turn-left--g1"
+   },
+   "38": {
+      "MTSD": "regulatory--keep-right--g1"
+   },
+   "39": {
+      "MTSD": "regulatory--keep-left--g1"
+   },
+   "40": {
+      "MTSD": "regulatory--roundabout--g1"
+   },
+   "41": {
+      "MTSD": "N/A"
+   },
+   "42": {
+      "MTSD": "N/A"
+   }
+}
