@@ -10,13 +10,13 @@ import shutil
 
 def initialize_directories():
     mtsd_sign_labels = os.listdir(header.dataset_dir_images_split_original_test)
-    if not (os.path.isdir(header.mix_dataset_dir_images_split_mixed_test)):
-        os.makedirs(header.mix_dataset_dir_images_split_mixed_test, exist_ok = True)
+    if not (os.path.isdir(header.mix_dataset_dir_images_split_mixed)):
+        os.makedirs(header.mix_dataset_dir_images_split_mixed, exist_ok = True)
 
     for dir_name in mtsd_sign_labels:
-        if os.path.isdir(os.path.join(header.mix_dataset_dir_images_split_mixed_test, dir_name)):
+        if os.path.isdir(os.path.join(header.mix_dataset_dir_images_split_mixed, dir_name)):
             continue
-        path = os.path.join(header.mix_dataset_dir_images_split_mixed_test, dir_name)
+        path = os.path.join(header.mix_dataset_dir_images_split_mixed, dir_name)
         os.makedirs(path, exist_ok = True)
 
 def sample_from_mtsd():
@@ -47,7 +47,7 @@ def sample_from_mtsd():
 
     for sample in signs_in_test:
         source = sample
-        destination = os.path.join(header.mix_dataset_dir_images_split_mixed_test, mtsd_sign_dict[sample])
+        destination = os.path.join(header.mix_dataset_dir_images_split_mixed, mtsd_sign_dict[sample])
         temp = os.path.split(source)[1]
         destination = os.path.join(destination, temp)
         logger.log_debug(source)
@@ -78,7 +78,7 @@ def sample_from_gtsrb(arguments, mtsd_signs_count):
 
     for sample in signs_in_test:
         source = sample
-        destination = os.path.join(header.mix_dataset_dir_images_split_mixed_test, mappings[gtsrb_sign_dict[sample]]["MTSD"])
+        destination = os.path.join(header.mix_dataset_dir_images_split_mixed, mappings[gtsrb_sign_dict[sample]]["MTSD"])
         temp = os.path.split(source)[1]
         destination = os.path.join(destination, temp)
         logger.log_debug(source)
