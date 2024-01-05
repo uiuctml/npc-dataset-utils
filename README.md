@@ -50,18 +50,6 @@ cd src/
 
 ```
 
-## Visual Attribute Symlink Generation
-
-To reduce storage footprint, the mapping between the 401 original class labels and the visual attribute labels is encoded as symlinks pointing to the actual dataset images. Please note that we plan to further improve the visual attribute encoding in the future by eliminating the creation of symlinks altogether. Instead, we shall create a custom data loader that directly parses encoding from the `visual_attribute_mappings.json` JSON file.
-
-Under the project directory, the visual attribute symlinks can be generated as follows:
-
-```bash
-cd src/
-./generate.py
-
-```
-
 ## Distribution Shift Testing Split Generation
 
 The distribution shift testing splits are generated using either ImageNet-C corruptions or color quantization.
