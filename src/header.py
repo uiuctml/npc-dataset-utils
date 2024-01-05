@@ -44,19 +44,6 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
-generate_config_file_name = "generate.json"
-generate_dataset_dir_images = dataset_dir_images_sliced_original
-
-group_config_file_name = "group.json.gz"
-group_dataset_dir_images = dataset_dir_images_sliced_original
-group_keyword_test = "test"
-group_keyword_train_validate = "train_validate"
-group_viewer_center_height = 300
-group_viewer_center_width = 300
-group_viewer_side_count = 3
-group_viewer_side_height = 150
-group_viewer_side_width = 150
-
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
 label_dataset_dir_images = dataset_dir_images_sliced_original
@@ -85,6 +72,9 @@ slice_duplicates = {
 }
 slice_dataset_dir_annotations = dataset_dir_annotations_original
 slice_dataset_dir_images = dataset_dir_images_original
+slice_label_excluded = {
+    "other-sign"
+}
 slice_parallel_shared_memory_name = "slice"
 
 split_basis = type.SplitBasis.percentage
@@ -97,12 +87,3 @@ split_random_seed_percentage = 80241652
 split_random_seed_stats = 11558952
 split_save = False
 split_std_scaler = 1.3
-
-stats_config_file_name = "stats.json.gz"
-stats_data_loader_batch_size = 384
-stats_data_loader_worker_count = multiprocessing.cpu_count()
-stats_gather = False
-stats_model_input_height = 224
-stats_model_input_width = 224
-stats_plot = True
-stats_save = False
