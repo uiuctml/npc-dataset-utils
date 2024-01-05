@@ -5,20 +5,20 @@ import json
 import logger
 import os
 
-def verifyDatasetConfigMissing(config_dataset, config_generate):
+def verifyDatasetConfigMissing(config_dataset):
     labels_dataset_set_dataset = set()
     labels_dataset_set_generate = set()
 
-    for dataset in config_dataset["datasets"]:
+    for dataset in config_dataset["attributes"]:
         labels_dataset = dataset["labels"]
 
         for label_dataset in labels_dataset:
             labels_dataset_set_dataset.add(label_dataset)
 
-    for label_original in config_generate.keys():
-        if len(config_generate[label_original]["labels"]) > 0:
-            for dataset_name in config_generate[label_original]["labels"].keys():
-                labels_dataset_set_generate.add(config_generate[label_original]["labels"][dataset_name])
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                labels_dataset_set_generate.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
 
     for label_dataset_generate in labels_dataset_set_generate:
         if label_dataset_generate not in labels_dataset_set_dataset:
@@ -26,15 +26,15 @@ def verifyDatasetConfigMissing(config_dataset, config_generate):
 
     return
 
-def verifyDatasetConfigUnused(config_dataset, config_generate):
+def verifyDatasetConfigUnused(config_dataset):
     labels_dataset_set = set()
 
-    for label_original in config_generate.keys():
-        if len(config_generate[label_original]["labels"]) > 0:
-            for dataset_name in config_generate[label_original]["labels"].keys():
-                labels_dataset_set.add(config_generate[label_original]["labels"][dataset_name])
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                labels_dataset_set.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
 
-    for dataset in config_dataset["datasets"]:
+    for dataset in config_dataset["attributes"]:
         labels_dataset = dataset["labels"]
 
         for label_dataset in labels_dataset:
@@ -43,57 +43,15 @@ def verifyDatasetConfigUnused(config_dataset, config_generate):
 
     return
 
-def verifyDatasetConfig():
-    file_path_config_dataset = os.path.join(header.config_dir, header.dataset_config_file_name)
-    file_path_config_generate = os.path.join(header.config_dir, header.generate_config_file_name)
-
-    logger.log_info("Verifying \"" + file_path_config_dataset + "\"...")
-
-    file_config_dataset = open(file_path_config_dataset, "r")
-    config_dataset = json.load(file_config_dataset)
-    file_config_dataset.close()
-
-    file_config_generate = open(file_path_config_generate, "r")
-    config_generate = json.load(file_config_generate)
-    file_config_generate.close()
-
-    verifyDatasetConfigMissing(config_dataset, config_generate)
-    verifyDatasetConfigUnused(config_dataset, config_generate)
-
-    return
-
-def verifyDatasetSplitsEmpty():
-    if os.path.isdir(header.dataset_dir_images_split_original):
-        dataset_dir_images_split_list = os.listdir(header.dataset_dir_images_split_original)
-
-        for dataset_name_split in dataset_dir_images_split_list:
-            dataset_split = os.listdir(os.path.join(header.dataset_dir_images_split_original, dataset_name_split))
-
-            for dataset_dir_labels in dataset_split:
-                dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split_original, dataset_name_split, dataset_dir_labels)
-                dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
-
-                if len(dataset_dir_labels_split_list) == 0:
-                    logger.log_error("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
-
-    return
-
-def verifyDatasetSplits():
-    logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
-
-    verifyDatasetSplitsEmpty()
-
-    return
-
-def verifyGenerateConfigDuplicates(config_generate):
+def verifyDatasetConfigDuplicates(config_dataset):
     label_map = {}
 
-    for label_original in config_generate.keys():
-        if len(config_generate[label_original]["labels"]) > 0:
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
             labels_dataset = ""
 
-            for dataset_name in config_generate[label_original]["labels"].keys():
-                label_dataset = config_generate[label_original]["labels"][dataset_name]
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                label_dataset = config_dataset["mappings"][label_original]["labels"][dataset_name]
 
                 if labels_dataset != "":
                     labels_dataset += header.dataset_delimiter_file_name
@@ -114,63 +72,52 @@ def verifyGenerateConfigDuplicates(config_generate):
 
     return
 
-def verifyGenerateConfigLabels(config_generate):
-    for label_original in config_generate.keys():
-        if len(config_generate[label_original]["labels"]) == 0:
+def verifyDatasetConfigLabels(config_dataset):
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) == 0:
             logger.log_error("\"" + label_original + "\" does not contain any labels.")
         else:
-            for dataset_name in config_generate[label_original]["labels"].keys():
-                if config_generate[label_original]["labels"][dataset_name] == "":
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
                     logger.log_error("\"" + label_original + "\" contains an empty label for dataset \"" + dataset_name + "\".")
-                elif config_generate[label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
+                elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_error("\"" + label_original + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
 
     return
 
-def verifyGenerateConfigWeights(config_generate):
-    for label_original in config_generate.keys():
-        if len(config_generate[label_original]["weights"]) == 0:
-                logger.log_error("\"" + label_original + "\" does not contain any weights.")
-        else:
-            weights_sum = 0
+def verifyDatasetSplitsEmpty():
+    if os.path.isdir(header.dataset_dir_images_split_original):
+        dataset_dir_images_split_list = os.listdir(header.dataset_dir_images_split_original)
 
-            for dataset_name in config_generate[label_original]["weights"].keys():
-                weights_sum += config_generate[label_original]["weights"][dataset_name]
+        for dataset_name_split in dataset_dir_images_split_list:
+            dataset_split = os.listdir(os.path.join(header.dataset_dir_images_split_original, dataset_name_split))
 
-            if weights_sum == 0:
-                logger.log_error("\"" + label_original + "\" contains zero weights.")
+            for dataset_dir_labels in dataset_split:
+                dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split_original, dataset_name_split, dataset_dir_labels)
+                dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
-    return
-
-def verifyGenerateConfigReductions(config_generate):
-    for label_original in config_generate.keys():
-        reduction = config_generate[label_original]["reduction"]
-
-        if reduction == "":
-            logger.log_error("\"" + label_original + "\" contains an empty reduction.")
-
-    return
-
-def verifyGenerateConfig():
-    file_path_config_generate = os.path.join(header.config_dir, header.generate_config_file_name)
-
-    logger.log_info("Verifying \"" + file_path_config_generate + "\"...")
-
-    file_config_generate = open(file_path_config_generate, "r")
-    config_generate = json.load(file_config_generate)
-    file_config_generate.close()
-
-    verifyGenerateConfigDuplicates(config_generate)
-    verifyGenerateConfigLabels(config_generate)
-    verifyGenerateConfigWeights(config_generate)
-    verifyGenerateConfigReductions(config_generate)
+                if len(dataset_dir_labels_split_list) == 0:
+                    logger.log_error("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
 
     return
 
 def main():
-    verifyDatasetConfig()
-    verifyDatasetSplits()
-    verifyGenerateConfig()
+    file_path_config_dataset = os.path.join(header.config_dir, header.dataset_config_file_name)
+
+    logger.log_info("Verifying \"" + file_path_config_dataset + "\"...")
+
+    file_config_dataset = open(file_path_config_dataset, "r")
+    config_dataset = json.load(file_config_dataset)
+    file_config_dataset.close()
+
+    verifyDatasetConfigDuplicates(config_dataset)
+    verifyDatasetConfigLabels(config_dataset)
+    verifyDatasetConfigMissing(config_dataset)
+    verifyDatasetConfigUnused(config_dataset)
+
+    logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
+
+    verifyDatasetSplitsEmpty()
 
     return
 
