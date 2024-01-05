@@ -13,7 +13,6 @@ import sys
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
 combo_boxes_label_labeling_control = {}
-double_spin_boxes_weight_labeling_control = {}
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
 
 file_label_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
@@ -43,14 +42,6 @@ def updateLabelingControlWidget():
                     updateLabelConfig()
 
         combo_boxes_label_labeling_control[dataset_name].setCurrentText(label_text)
-
-    for dataset_name in double_spin_boxes_weight_labeling_control.keys():
-        if dataset_name not in label_config["mappings"][combo_box_application_control.currentText()]["weights"]:
-            double_spin_boxes_weight_labeling_control[dataset_name].setValue(0)
-            continue
-
-        weight_value = label_config["mappings"][combo_box_application_control.currentText()]["weights"][dataset_name]
-        double_spin_boxes_weight_labeling_control[dataset_name].setValue(weight_value)
 
     return
 
@@ -115,9 +106,6 @@ def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
 def pushButtonSaveSlot():
     for dataset_name in combo_boxes_label_labeling_control.keys():
         label_config["mappings"][combo_box_application_control.currentText()]["labels"][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
-
-    for dataset_name in double_spin_boxes_weight_labeling_control.keys():
-        label_config["mappings"][combo_box_application_control.currentText()]["weights"][dataset_name] = double_spin_boxes_weight_labeling_control[dataset_name].value()
 
     updateLabelConfig()
 
@@ -203,11 +191,8 @@ def createLabelingControlWidget():
 
     for (i, dataset) in enumerate(label_config["attributes"]):
         combo_box_label = PyQt5.QtWidgets.QComboBox()
-        double_spin_box_weight = PyQt5.QtWidgets.QDoubleSpinBox()
         group_box_label = PyQt5.QtWidgets.QGroupBox()
-        group_box_weight = PyQt5.QtWidgets.QGroupBox()
         layout_label = PyQt5.QtWidgets.QGridLayout()
-        layout_weight = PyQt5.QtWidgets.QGridLayout()
         line_edit_label = PyQt5.QtWidgets.QLineEdit()
         push_button_add_label = PyQt5.QtWidgets.QPushButton()
         push_button_remove_label = PyQt5.QtWidgets.QPushButton()
@@ -221,19 +206,13 @@ def createLabelingControlWidget():
 
         combo_box_label.setFixedWidth(header.label_combo_box_width)
         combo_box_label.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
-        double_spin_box_weight.setMinimum(-1 * sys.float_info.max)
         group_box_label.setLayout(layout_label)
         group_box_label.setTitle("Label for \"" + dataset["name"] + "\"")
-        group_box_weight.setLayout(layout_weight)
-        group_box_weight.setTitle("Weight for \"" + dataset["name"] + "\"")
-        group_box_weight.setHidden(not header.label_enable_weight)
         layout_label.addWidget(combo_box_label, 0, 0)
         layout_label.addWidget(line_edit_label, 0, 1)
         layout_label.addWidget(push_button_add_label, 0, 2)
         layout_label.addWidget(push_button_remove_label, 0, 3)
         layout_dataset.addWidget(group_box_label, i, 0)
-        layout_dataset.addWidget(group_box_weight, i, 1)
-        layout_weight.addWidget(double_spin_box_weight)
         line_edit_label.setFixedWidth(header.label_line_edit_width)
         line_edit_label.setText(dataset["name"] + "--")
         push_button_add_label.clicked.connect(functools.partial(pushButtonAddLabelSlot, dataset["name"], combo_box_label, line_edit_label))
@@ -242,7 +221,6 @@ def createLabelingControlWidget():
         push_button_remove_label.setText("Remove Label")
 
         combo_boxes_label_labeling_control[dataset["name"]] = combo_box_label
-        double_spin_boxes_weight_labeling_control[dataset["name"]] = double_spin_box_weight
 
     return group_box_labeling_control
 
