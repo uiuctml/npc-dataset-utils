@@ -85,7 +85,7 @@ def slice(process_id, dataset_dir_annotations_list):
             bounding_box_lower_right_x = int(bbox["xmax"])
             bounding_box_lower_right_y = int(bbox["ymax"])
 
-            dataset_dir_images_sliced_label = os.path.join(header.dataset_dir_images_sliced_original, label)
+            dataset_dir_images_sliced_label = os.path.join(header.dataset_dir_images_sliced, label)
 
             if not os.path.isdir(dataset_dir_images_sliced_label):
                 os.makedirs(dataset_dir_images_sliced_label, exist_ok = True)
@@ -111,7 +111,7 @@ def slice(process_id, dataset_dir_annotations_list):
     return
 
 def main():
-    if os.path.isdir(header.dataset_dir_images_sliced_original):
+    if os.path.isdir(header.dataset_dir_images_sliced):
         return
 
     if not os.path.isdir(header.slice_dataset_dir_annotations):

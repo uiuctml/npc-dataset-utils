@@ -169,10 +169,10 @@ def main():
     file_keys_train = []
     file_keys_validate = []
     file_map = {}
-    dirs_label = os.listdir(header.dataset_dir_images_sliced_original)
+    dirs_label = os.listdir(header.dataset_dir_images_sliced)
 
     for dir_label in dirs_label:
-        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced_original, dir_label))
+        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced, dir_label))
 
         for file_name in file_names:
             file_key = file_name.split(header.dataset_file_extension_images)[0]
@@ -193,22 +193,9 @@ def main():
             saveSplits(file_keys_test, file_keys_train, file_keys_validate, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
 
     if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_original):
-        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_test)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_train)
-        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_original, header.dataset_dir_images_split_original_validate)
-
-    dataset_name = os.path.basename(header.dataset_dir_images_split_generated)
-    file_map = {}
-    file_names = os.listdir(header.dataset_dir_images_sliced_generated)
-
-    for file_name in file_names:
-        file_key = file_name.split(header.dataset_delimiter_file_name)[-1].split(header.dataset_file_extension_images)[0]
-        file_map[file_key] = file_name
-
-    if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_generated):
-        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_test, True)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_train, True)
-        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced_generated, header.dataset_dir_images_split_generated_validate, True)
+        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_test)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_train)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_validate)
 
     return
 

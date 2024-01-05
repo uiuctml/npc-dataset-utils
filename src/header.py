@@ -16,13 +16,9 @@ dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../mapillary-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
-dataset_dir_annotations_generated = dataset_dir_annotations + "/generated"
-dataset_dir_annotations_original = dataset_dir_annotations + "/original"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
 dataset_dir_images_sliced = dataset_dir_images + "/sliced"
-dataset_dir_images_sliced_generated = dataset_dir_images_sliced + "/generated"
-dataset_dir_images_sliced_original = dataset_dir_images_sliced + "/original"
 dataset_dir_images_split = dataset_dir_images + "/split"
 dataset_dir_images_split_corrupted = dataset_dir_images_split + "/corrupted"
 dataset_dir_images_split_corrupted_original = dataset_dir_images_split_corrupted + "/original"
@@ -46,7 +42,7 @@ dataset_label_undefined_keyword = "undefined"
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
-label_dataset_dir_images = dataset_dir_images_sliced_original
+label_dataset_dir_images = dataset_dir_images_sliced
 label_enable_weight = False
 label_viewer_height = 150
 label_viewer_width = 150
@@ -70,7 +66,7 @@ slice_duplicates = {
     "dchqt8ir2pap7ir940nab9315k": "other-sign",
     "5phehhkikwa0z4jrbev9vc": "other-sign"
 }
-slice_dataset_dir_annotations = dataset_dir_annotations_original
+slice_dataset_dir_annotations = dataset_dir_annotations
 slice_dataset_dir_images = dataset_dir_images_original
 slice_label_excluded = {
     "other-sign"
