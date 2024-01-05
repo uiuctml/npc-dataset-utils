@@ -10,7 +10,7 @@ corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
 
-dataset_config_file_name = "dataset.json"
+dataset_config_file_name = "visat.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../mapillary-dataset"
