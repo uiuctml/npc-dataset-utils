@@ -10,7 +10,7 @@ import random as rand
 import tqdm
 import type
 
-def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target, create_config_symlinks = False):
+def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target):
     file_name_counter = 1
     split_name = os.path.basename(dir_target)
     progress_bar = tqdm.tqdm(total = len(file_keys))
@@ -32,10 +32,6 @@ def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target, cr
 
         file_name_counter += 1
 
-    if create_config_symlinks:
-        os.symlink(os.path.abspath(os.path.join(dir_source, header.dataset_config_file_name)), os.path.join(dir_target, header.dataset_config_file_name))
-        os.symlink(os.path.abspath(os.path.join(dir_source, header.generate_config_file_name)), os.path.join(dir_target, header.generate_config_file_name))
-
     progress_bar.close()
 
     return
@@ -47,15 +43,7 @@ def shuffleUniform(file_keys, random_seed):
 
     return file_keys
 
-def thresholdOutsideSTD(value, mean, std):
-    std_scaled = std * header.split_std_scaler
-
-    if value > (mean + std_scaled) or value < (mean - std_scaled):
-        return True
-
-    return False
-
-def generateSplitsByPercentage(file_keys):
+def generateSplits(file_keys):
     split_point_validate_test = int(len(file_keys) * (header.split_percentage_train + header.split_percentage_validate))
     split_point_train_validate = int(len(file_keys) * header.split_percentage_train)
 
@@ -68,57 +56,6 @@ def generateSplitsByPercentage(file_keys):
     logger.log_info("Generated dataset splits from seed " + str(header.split_random_seed_percentage) + ".")
 
     return (file_keys_test, file_keys_train, file_keys_validate)
-
-def generateSplitsByStatistics(file_keys):
-    config_stats = {}
-    file_path_config_stats = os.path.join(header.config_dir, header.stats_config_file_name)
-
-    if os.path.isfile(file_path_config_stats):
-        file_config_stats = gzip.open(file_path_config_stats, "r")
-        config_stats_json_encoded = file_config_stats.read()
-        file_config_stats.close()
-
-        config_stats_json = config_stats_json_encoded.decode("utf-8")
-        config_stats = json.loads(config_stats_json)
-
-    average_brightnesses = numpy.array(list(config_stats["average_brightnesses"].values()))
-
-    average_brightnesses_mean = numpy.mean(average_brightnesses)
-    average_brightnesses_std = numpy.std(average_brightnesses)
-
-    file_keys_test = []
-    file_keys_train_validate = []
-
-    for file_key in file_keys:
-        average_brightness = config_stats["average_brightnesses"][file_key]
-
-        if thresholdOutsideSTD(average_brightness, average_brightnesses_mean, average_brightnesses_std):
-            file_keys_test.append(file_key)
-        else:
-            file_keys_train_validate.append(file_key)
-
-    logger.log_info("Generated testing dataset split from \"" + file_path_config_stats + "\".")
-
-    split_point_train_validate = int(len(file_keys_train_validate) * header.split_percentage_train)
-
-    shuffleUniform(file_keys_train_validate, header.split_random_seed_stats)
-
-    file_keys_train = file_keys_train_validate[:split_point_train_validate]
-    file_keys_validate = file_keys_train_validate[split_point_train_validate:]
-
-    logger.log_info("Generated training and validation dataset splits from seed " + str(header.split_random_seed_stats) + ".")
-
-    return (file_keys_test, file_keys_train, file_keys_validate)
-
-def generateSplits(file_keys):
-    if header.split_basis == type.SplitBasis.percentage:
-        return generateSplitsByPercentage(file_keys)
-    elif header.split_basis == type.SplitBasis.statistics:
-        return generateSplitsByStatistics(file_keys)
-
-    logger.log_warn("Unknown split basis.")
-
-    return generateSplitsByPercentage(file_keys)
 
 def loadSplits(split_dir_test, split_dir_train, split_dir_validate):
     file_path_config_split = os.path.join(header.config_dir, header.split_config_file_name)
@@ -194,8 +131,8 @@ def main():
 
     if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_original):
         createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_test)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_train)
         createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_validate)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_train)
 
     return
 

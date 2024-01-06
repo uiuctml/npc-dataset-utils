@@ -65,13 +65,10 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_basis = type.SplitBasis.percentage
 split_config_file_name = "split_percentage.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1
-split_random_seed_percentage = 80241652
-split_random_seed_stats = 11558952
+split_random_seed_percentage = 22333376
 split_save = False
-split_std_scaler = 1.3

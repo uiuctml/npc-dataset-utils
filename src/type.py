@@ -84,7 +84,3 @@ class QLabelClickable(PyQt5.QtWidgets.QLabel):
         self.mouse_position = None
 
         return
-
-class SplitBasis(enum.Enum):
-    percentage = 0,
-    statistics = 1
