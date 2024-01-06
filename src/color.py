@@ -1,21 +1,12 @@
-#!/usr/bin/env python3
-
-import header
-import os
 import cv2
 import random
 import numpy as np
-import matplotlib.pyplot as plt
-import tqdm
 
-IMSHOW = False
 CRITERIA_MAX_ITER = 100
 CRITERIA_EPSILON = 1.0
 k = 3
 ATTEMPTS = 100
 RGB_THRESHOLD = 35
-VAR_THRESHOLD = 10
-
 
 def clusterId(label):
     # find the most frequent cluster_id & its frequency
@@ -48,7 +39,6 @@ def clusterId(label):
         cluster_freq = frequency[cluster_id]
 
     return cluster_id, cluster_freq
-
 
 def modifyColor(image, cluster_id, cluster_freq, label):
     width, height, channel = image.shape
@@ -97,7 +87,6 @@ def modifyColor(image, cluster_id, cluster_freq, label):
 
     return
 
-
 def corruptColor(image):
     image = np.array(image)
 
@@ -127,34 +116,3 @@ def corruptColor(image):
     modifyColor(image_color_shifted, cluster_id, cluster_freq, label)
 
     return image_color_shifted
-
-
-def main():
-    file_path_image_counter = 0
-    file_path_image_list = []
-
-    for file_dir_class in os.listdir(header.dataset_dir_images_split_original_test):
-        file_path_class = os.path.join(header.dataset_dir_images_split_original_test, file_dir_class)
-
-        for file_name_image in os.listdir(file_path_class):
-            file_path_image = os.path.join(file_path_class, file_name_image)
-            file_path_image_list.append(file_path_image)
-
-    progress_bar = tqdm.tqdm(total=len(file_path_image_list))
-
-    for file_path_image in file_path_image_list:
-        file_key = file_path_image.split(header.dataset_file_extension_images)[0].split("/")[-1]
-        progress_bar.set_description_str("[INFO]: Processing \" %s \"" % file_key)
-        progress_bar.n = file_path_image_counter
-        progress_bar.refresh()
-        file_path_image_counter += 1
-
-        colorShiftOriginal(file_path_image)
-
-    progress_bar.close()
-
-    return
-
-
-if __name__ == "__main__":
-    main()

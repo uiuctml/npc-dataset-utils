@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import corrupt_color
+import color
 import header
 import imagenet_c
 import logger
@@ -73,7 +73,7 @@ def corrupt(file_path_image):
         image_corrupted = corruptImageNetC(image, header.corrupt_corruption_imagenet_c, header.corrupt_severity)
         file_dir_corruption_params = header.corrupt_corruption_imagenet_c.name + "_" + str(header.corrupt_severity)
     elif header.corrupt_corruption_algorithm == type.CorruptionAlgorithm.color:
-        image_corrupted = corrupt_color.corruptColor(image)
+        image_corrupted = color.corruptColor(image)
         file_dir_corruption_params = "color"
     else:
         logger.log_warn("Unknown corruption algorithm \"" + header.corrupt_corruption_algorithm.name + "\"")
