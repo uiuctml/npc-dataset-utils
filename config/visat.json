@@ -121,7 +121,6 @@
                 "symbol--red-slash--motorway",
                 "symbol--red-slash--pedestrian",
                 "symbol--living-street",
-                "symbol--red-slash",
                 "symbol--arrow--vehicle-front",
                 "symbol--arrow",
                 "symbol--pedestrian--crossroad",
@@ -149,16 +148,10 @@
                 "symbol--red-slash--motorcycle",
                 "symbol--red-slash--human--motorcycle",
                 "symbol--vehicle-front",
-                "symbol--red-slash--box-truck--g4",
-                "symbol--red-slash--box-truck--g2",
                 "symbol--red-slash--arrow--overtaking",
                 "symbol--dual-vehicle",
-                "symbol--red-slash--dual-vehicle--g4",
-                "symbol--red-slash--dual-vehicle--g5",
                 "symbol--vehicle--heavy-goods--vehicle",
                 "symbol--red-slash--human",
-                "symbol--red-slash--arrow--curved--right--g1",
-                "symbol--red-slash--arrow--curved--right--g2",
                 "symbol--red-slash--arrow--right",
                 "symbol--red-x",
                 "symbol--red-slash--arrow--up",
@@ -182,9 +175,6 @@
                 "symbol--curve--right",
                 "symbol--bicycle--human",
                 "symbol--traffic-signal--horizontal",
-                "symbol--traffic-signal--verticle--g2",
-                "symbol--traffic-signal--verticle--g3",
-                "symbol--traffic-signal--verticle--g1",
                 "symbol--traffic-merges--right",
                 "symbol--traffic-merges--left",
                 "symbol--arrow--up--octagon--red",
@@ -192,10 +182,6 @@
                 "symbol--motorcycle--slippery",
                 "symbol--vehicle--human",
                 "symbol--two-student",
-                "symbol--roadworks--g2",
-                "symbol--roadworks--g4",
-                "symbol--railroad-intersection--g3",
-                "symbol--railroad-intersection--g4",
                 "symbol--steam-train",
                 "symbol--x--railway",
                 "symbol--child--adult--crossroad",
@@ -203,15 +189,8 @@
                 "symbol--arrow--left-or-right",
                 "symbol--train-front--human",
                 "symbol--human--bicycle",
-                "symbol--junction--right--g3",
-                "symbol--junction--right--g1",
-                "symbol--junction--left--g4",
-                "symbol--junction--left--g3",
-                "symbol--junction--left--g1",
                 "symbol--junction--acute-right",
                 "symbol--junction--acute-left",
-                "symbol--horizontal-alignment--right--g1",
-                "symbol--horizontal-alignment--right--g3",
                 "symbol--arrow--up--top--arrow--down--bottom",
                 "symbol--arrow--u-shape--down--left",
                 "symbol--red-slash--arrow--u-shape--down--right",
@@ -223,8 +202,6 @@
                 "symbol--reverse-curve--right",
                 "symbol--arrow--reverse-curve--left",
                 "symbol--reverse-curve--left",
-                "symbol--highway--divided-ends--g1",
-                "symbol--highway--divided-ends--g2",
                 "symbol--cross--black",
                 "symbol--two-human",
                 "symbol--two-children",
@@ -235,18 +212,39 @@
                 "symbol--black-stripes",
                 "symbol--black-stripes--no-parking",
                 "symbol--black-stripes--yellow-diamond",
-                "symbol--red-slash--arrow--curved--g1",
-                "symbol--red-slash--arrow--curved--g2",
-                "symbol--red-slash--g1",
                 "symbol--arrow--curved--top-left",
                 "symbol--arrow--curved--top-right",
-                "symbol--roadworks--g1",
                 "symbol--bicycle--top--adult--child--bottom",
                 "symbol--bicycle--left--adult--child--right",
                 "symbol--adult--child--top--bicycle--bottom",
                 "symbol--adult--child--left--bicycle--right",
                 "symbol--triple-truck-vertical",
-                "symbol--mini-triangle--left--right"
+                "symbol--mini-triangle--left--right",
+                "symbol--red-slash--box-truck--forward",
+                "symbol--red-slash--box-truck--backward",
+                "symbol--red-slash--dual-vehicle--forward",
+                "symbol--red-slash--dual-vehicle--backward",
+                "symbol--red-slash--arrow--curved--right--backward",
+                "symbol--red-slash--arrow--curved--right--forward",
+                "symbol--traffic-signal--vertical--no-outline",
+                "symbol--traffic-signal--vertical--multi-directional",
+                "symbol--traffic-signal--vertical--outline",
+                "symbol--roadworks--right",
+                "symbol--roadworks--left",
+                "symbol--roadworks--left--no-pile",
+                "symbol--railroad-intersection--cross",
+                "symbol--railroad-intersection--t",
+                "symbol--junction--left",
+                "symbol--junction--left--graphical",
+                "symbol--junction--right",
+                "symbol--horizontal-alignment--right--left-branch",
+                "symbol--horizontal-alignment--right--right-branch",
+                "symbol--highway--divided-ends--merged",
+                "symbol--highway--divided-ends--bidirectional",
+                "symbol--red-slash--arrow--curved--left--backward",
+                "symbol--red-slash--arrow--curved--left--forward",
+                "symbol--red-slash--forward",
+                "symbol--red-slash--backward"
             ]
         },
         {
@@ -324,26 +322,24 @@
                 "text--do-not-stop-on-tracks",
                 "text--do-not-block-intersection",
                 "text--zone--30",
-                "text--no-parking-or-no-stopping--g2",
-                "text--no-parking-or-no-stopping--g1",
-                "text--no-parking-or-no-stopping--g3",
                 "text--no-parking",
-                "text--no-turn-on-red--g1",
-                "text--no-turn-on-red--g2",
                 "text--no-turn-on-red",
-                "text--stop--g10",
                 "text--stop-signal",
                 "text--four-lines",
                 "text--maximum--60",
                 "text--number--t",
                 "text--number--m",
-                "text--text--g3",
-                "text--text--g2",
-                "text--text--g1",
                 "text--r--left--r--right",
                 "text--300u",
                 "text--radar-enforced",
-                "text--passing-lane-ahead"
+                "text--passing-lane-ahead",
+                "text--no-parking-or-no-stopping--bold-no",
+                "text--no-parking-or-no-stopping",
+                "text--no-turn-on-red--four-lines",
+                "text--stop--foreign",
+                "text--assorted--one-word",
+                "text--assorted--three-words",
+                "text--assorted--two-words"
             ]
         }
     ],
@@ -936,7 +932,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--forward",
                 "text": "text--p"
             }
         },
@@ -1688,7 +1684,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--box-truck--g2",
+                "symbol": "symbol--red-slash--box-truck--backward",
                 "text": "text--undefined"
             }
         },
@@ -1696,7 +1692,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--box-truck--g4",
+                "symbol": "symbol--red-slash--box-truck--forward",
                 "text": "text--undefined"
             }
         },
@@ -1720,7 +1716,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--g1",
+                "symbol": "symbol--red-slash--arrow--curved--left--backward",
                 "text": "text--undefined"
             }
         },
@@ -1728,7 +1724,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--g2",
+                "symbol": "symbol--red-slash--arrow--curved--left--forward",
                 "text": "text--undefined"
             }
         },
@@ -1824,7 +1820,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--dual-vehicle--g4",
+                "symbol": "symbol--red-slash--dual-vehicle--forward",
                 "text": "text--undefined"
             }
         },
@@ -1832,7 +1828,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--dual-vehicle--g5",
+                "symbol": "symbol--red-slash--dual-vehicle--backward",
                 "text": "text--undefined"
             }
         },
@@ -1848,7 +1844,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--backward",
                 "text": "text--undefined"
             }
         },
@@ -1856,7 +1852,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--backward",
                 "text": "text--p"
             }
         },
@@ -1864,7 +1860,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--backward",
                 "text": "text--e"
             }
         },
@@ -1872,8 +1868,8 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--no-parking-or-no-stopping--g1"
+                "symbol": "symbol--arrow--double-sided",
+                "text": "text--no-parking-or-no-stopping"
             }
         },
         "regulatory--no-parking-or-no-stopping--g2": {
@@ -1881,7 +1877,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol": "symbol--undefined",
-                "text": "text--no-parking-or-no-stopping--g2"
+                "text": "text--no-parking-or-no-stopping"
             }
         },
         "regulatory--no-parking-or-no-stopping--g3": {
@@ -1889,7 +1885,7 @@
                 "color": "color--white",
                 "shape": "shape--rectangle--tall",
                 "symbol": "symbol--undefined",
-                "text": "text--no-parking-or-no-stopping--g3"
+                "text": "text--no-parking-or-no-stopping--bold-no"
             }
         },
         "regulatory--no-pedestrians--g1": {
@@ -1928,7 +1924,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--right--g1",
+                "symbol": "symbol--red-slash--arrow--curved--right--backward",
                 "text": "text--undefined"
             }
         },
@@ -1936,7 +1932,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--right--g2",
+                "symbol": "symbol--red-slash--arrow--curved--right--forward",
                 "text": "text--undefined"
             }
         },
@@ -1968,7 +1964,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol": "symbol--arrow--double-sided",
                 "text": "text--no-parking"
             }
         },
@@ -1976,7 +1972,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--forward",
                 "text": "text--s"
             }
         },
@@ -1984,7 +1980,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--g1",
+                "symbol": "symbol--red-slash--forward",
                 "text": "text--undefined"
             }
         },
@@ -2009,7 +2005,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol": "symbol--undefined",
-                "text": "text--no-turn-on-red--g1"
+                "text": "text--no-turn-on-red--four-lines"
             }
         },
         "regulatory--no-turn-on-red--g2": {
@@ -2017,7 +2013,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol": "symbol--undefined",
-                "text": "text--no-turn-on-red--g2"
+                "text": "text--no-turn-on-red"
             }
         },
         "regulatory--no-turn-on-red--g3": {
@@ -2224,7 +2220,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash",
+                "symbol": "symbol--red-slash--backward",
                 "text": "text--undefined"
             }
         },
@@ -2281,7 +2277,7 @@
                 "color": "color--red",
                 "shape": "shape--octagon",
                 "symbol": "symbol--undefined",
-                "text": "text--stop--g10"
+                "text": "text--stop--foreign"
             }
         },
         "regulatory--stop--g2": {
@@ -2600,7 +2596,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--highway--divided-ends--g1",
+                "symbol": "symbol--highway--divided-ends--merged",
                 "text": "text--undefined"
             }
         },
@@ -2608,7 +2604,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--highway--divided-ends--g2",
+                "symbol": "symbol--highway--divided-ends--bidirectional",
                 "text": "text--undefined"
             }
         },
@@ -2784,7 +2780,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--horizontal-alignment--right--g1",
+                "symbol": "symbol--horizontal-alignment--right--left-branch",
                 "text": "text--undefined"
             }
         },
@@ -2792,7 +2788,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--horizontal-alignment--right--g3",
+                "symbol": "symbol--horizontal-alignment--right--right-branch",
                 "text": "text--undefined"
             }
         },
@@ -2816,7 +2812,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--junction--left--g1",
+                "symbol": "symbol--junction--left",
                 "text": "text--undefined"
             }
         },
@@ -2824,15 +2820,15 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--left--g3",
+                "symbol": "symbol--junction--left",
                 "text": "text--undefined"
             }
         },
         "warning--junction-with-a-side-road-perpendicular-left--g4": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--triangle",
-                "symbol": "symbol--junction--left--g4",
+                "shape": "shape--diamond",
+                "symbol": "symbol--junction--left--graphical",
                 "text": "text--undefined"
             }
         },
@@ -2840,7 +2836,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--junction--right--g1",
+                "symbol": "symbol--junction--right",
                 "text": "text--undefined"
             }
         },
@@ -2848,7 +2844,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--right--g3",
+                "symbol": "symbol--junction--right",
                 "text": "text--undefined"
             }
         },
@@ -3080,7 +3076,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--railroad-intersection--g3",
+                "symbol": "symbol--railroad-intersection--cross",
                 "text": "text--undefined"
             }
         },
@@ -3088,7 +3084,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--railroad-intersection--g4",
+                "symbol": "symbol--railroad-intersection--t",
                 "text": "text--undefined"
             }
         },
@@ -3184,7 +3180,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--g1",
+                "symbol": "symbol--roadworks--right",
                 "text": "text--undefined"
             }
         },
@@ -3192,7 +3188,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--roadworks--g2",
+                "symbol": "symbol--roadworks--left",
                 "text": "text--undefined"
             }
         },
@@ -3200,7 +3196,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--g2",
+                "symbol": "symbol--roadworks--left",
                 "text": "text--undefined"
             }
         },
@@ -3208,7 +3204,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--roadworks--g4",
+                "symbol": "symbol--roadworks--left--no-pile",
                 "text": "text--undefined"
             }
         },
@@ -3216,7 +3212,7 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--g1",
+                "symbol": "symbol--roadworks--right",
                 "text": "text--undefined"
             }
         },
@@ -3313,7 +3309,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol": "symbol--undefined",
-                "text": "text--text--g1"
+                "text": "text--assorted--one-word"
             }
         },
         "warning--texts--g2": {
@@ -3321,7 +3317,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol": "symbol--undefined",
-                "text": "text--text--g2"
+                "text": "text--assorted--three-words"
             }
         },
         "warning--texts--g3": {
@@ -3329,7 +3325,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol": "symbol--undefined",
-                "text": "text--text--g3"
+                "text": "text--assorted--two-words"
             }
         },
         "warning--traffic-merges-left--g1": {
@@ -3368,7 +3364,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--traffic-signal--verticle--g1",
+                "symbol": "symbol--traffic-signal--vertical--no-outline",
                 "text": "text--undefined"
             }
         },
@@ -3376,7 +3372,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-signal--verticle--g2",
+                "symbol": "symbol--traffic-signal--vertical--multi-directional",
                 "text": "text--undefined"
             }
         },
@@ -3384,7 +3380,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-signal--verticle--g3",
+                "symbol": "symbol--traffic-signal--vertical--outline",
                 "text": "text--undefined"
             }
         },
