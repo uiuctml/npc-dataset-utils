@@ -97,9 +97,11 @@ def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
     for dataset in label_config["attributes"]:
         if dataset["name"] == dataset_name:
             dataset["labels"].append(label_text)
+            dataset["labels"].sort()
             updateLabelConfig()
 
     combo_box.addItem(label_text)
+    combo_box.model().sort(0)
 
     return
 
@@ -255,7 +257,17 @@ def createWindowLayout():
 
     return layout_window
 
+def sortLabelConfigAttributes(label_config):
+    for attribute in label_config["attributes"]:
+        attribute["labels"].sort()
+
+    updateLabelConfig()
+
+    return
+
 def main():
+    sortLabelConfigAttributes(label_config)
+
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
