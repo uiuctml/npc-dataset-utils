@@ -5,44 +5,6 @@ import json
 import logger
 import os
 
-def verifyDatasetConfigMissing(config_dataset):
-    labels_dataset_set_dataset = set()
-    labels_dataset_set_generate = set()
-
-    for dataset in config_dataset["attributes"]:
-        labels_dataset = dataset["labels"]
-
-        for label_dataset in labels_dataset:
-            labels_dataset_set_dataset.add(label_dataset)
-
-    for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                labels_dataset_set_generate.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
-
-    for label_dataset_generate in labels_dataset_set_generate:
-        if label_dataset_generate not in labels_dataset_set_dataset:
-            logger.log_error("\"" + label_dataset_generate + "\" is missing.")
-
-    return
-
-def verifyDatasetConfigUnused(config_dataset):
-    labels_dataset_set = set()
-
-    for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                labels_dataset_set.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
-
-    for dataset in config_dataset["attributes"]:
-        labels_dataset = dataset["labels"]
-
-        for label_dataset in labels_dataset:
-            if label_dataset != "" and label_dataset not in labels_dataset_set:
-                logger.log_error("\"" + label_dataset + "\" is unused.")
-
-    return
-
 def verifyDatasetConfigDuplicates(config_dataset):
     label_map = {}
 
@@ -82,6 +44,44 @@ def verifyDatasetConfigLabels(config_dataset):
                     logger.log_error("\"" + label_original + "\" contains an empty label for dataset \"" + dataset_name + "\".")
                 elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
                     logger.log_error("\"" + label_original + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
+
+    return
+
+def verifyDatasetConfigMissing(config_dataset):
+    labels_dataset_set_dataset = set()
+    labels_dataset_set_generate = set()
+
+    for dataset in config_dataset["attributes"]:
+        labels_dataset = dataset["labels"]
+
+        for label_dataset in labels_dataset:
+            labels_dataset_set_dataset.add(label_dataset)
+
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                labels_dataset_set_generate.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
+
+    for label_dataset_generate in labels_dataset_set_generate:
+        if label_dataset_generate not in labels_dataset_set_dataset:
+            logger.log_error("\"" + label_dataset_generate + "\" is missing.")
+
+    return
+
+def verifyDatasetConfigUnused(config_dataset):
+    labels_dataset_set = set()
+
+    for label_original in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
+            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
+                labels_dataset_set.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
+
+    for dataset in config_dataset["attributes"]:
+        labels_dataset = dataset["labels"]
+
+        for label_dataset in labels_dataset:
+            if label_dataset != "" and label_dataset not in labels_dataset_set:
+                logger.log_error("\"" + label_dataset + "\" is unused.")
 
     return
 
