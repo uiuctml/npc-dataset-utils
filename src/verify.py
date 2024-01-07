@@ -30,41 +30,53 @@ def verifyDatasetConfigDuplicates(config_dataset):
 
         if len(labels_original_list) > 1:
             labels_original = ", ".join(labels_original_list)
-            logger.log_error("\"" + labels_original + "\" contain identical labels.")
+            logger.log_warn("\"" + labels_original + "\" contain identical labels.")
 
     return
 
 def verifyDatasetConfigLabels(config_dataset):
     for label_original in config_dataset["mappings"].keys():
         if len(config_dataset["mappings"][label_original]["labels"]) == 0:
-            logger.log_error("\"" + label_original + "\" does not contain any labels.")
+            logger.log_warn("\"" + label_original + "\" does not contain any labels.")
         else:
             for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
                 if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
-                    logger.log_error("\"" + label_original + "\" contains an empty label for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("\"" + label_original + "\" contains an empty label for dataset \"" + dataset_name + "\".")
                 elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
-                    logger.log_error("\"" + label_original + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("\"" + label_original + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
 
     return
 
 def verifyDatasetConfigMissing(config_dataset):
+    names_dataset_set = set()
     labels_dataset_set_dataset = set()
     labels_dataset_set_generate = set()
 
     for dataset in config_dataset["attributes"]:
+        name_dataset = dataset["name"]
         labels_dataset = dataset["labels"]
+        names_dataset_set.add(name_dataset)
 
         for label_dataset in labels_dataset:
             labels_dataset_set_dataset.add(label_dataset)
 
     for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                labels_dataset_set_generate.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
+        labels_decomposed = config_dataset["mappings"][label_original]["labels"]
+
+        for name_dataset_set in names_dataset_set:
+            if name_dataset_set not in labels_decomposed.keys():
+                logger.log_warn("Missing attribute \"" + name_dataset_set + "\" in \"" + label_original + "\".")
+
+        if len(labels_decomposed) > 0:
+            for dataset_name in labels_decomposed.keys():
+                labels_dataset_set_generate.add(labels_decomposed[dataset_name])
+
+                if dataset_name not in names_dataset_set:
+                    logger.log_warn("Unknown attribute \"" + dataset_name + "\" in \"" + label_original + "\".")
 
     for label_dataset_generate in labels_dataset_set_generate:
         if label_dataset_generate not in labels_dataset_set_dataset:
-            logger.log_error("\"" + label_dataset_generate + "\" is missing.")
+            logger.log_warn("\"" + label_dataset_generate + "\" is missing.")
 
     return
 
@@ -81,7 +93,7 @@ def verifyDatasetConfigUnused(config_dataset):
 
         for label_dataset in labels_dataset:
             if label_dataset != "" and label_dataset not in labels_dataset_set:
-                logger.log_error("\"" + label_dataset + "\" is unused.")
+                logger.log_warn("\"" + label_dataset + "\" is unused.")
 
     return
 
@@ -97,7 +109,7 @@ def verifyDatasetSplitsEmpty():
                 dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
                 if len(dataset_dir_labels_split_list) == 0:
-                    logger.log_error("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
+                    logger.log_warn("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
 
     return
 
