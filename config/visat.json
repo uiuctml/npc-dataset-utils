@@ -17,234 +17,182 @@
             "labels": [
                 "",
                 "shape--circle",
+                "shape--cross",
                 "shape--diamond",
                 "shape--octagon",
-                "shape--rectangle--tall",
-                "shape--rectangle--wide",
+                "shape--rectangle-tall",
+                "shape--rectangle-wide",
                 "shape--shield",
-                "shape--shield--inverted",
+                "shape--shield-inverted",
                 "shape--square",
                 "shape--triangle",
-                "shape--triangle--extended-bottom",
-                "shape--triangle--inverted",
-                "shape--x"
+                "shape--triangle-extended-bottom",
+                "shape--triangle-inverted"
             ]
         },
         {
-            "name": "symbol",
+            "name": "symbol-a",
             "labels": [
                 "",
-                "symbol--added-lane--right",
-                "symbol--adult--child",
-                "symbol--adult--child--left--bicycle--right",
-                "symbol--adult--child--top--bicycle--bottom",
-                "symbol--airplane",
-                "symbol--animal",
-                "symbol--arrow",
-                "symbol--arrow--curved--down-left",
-                "symbol--arrow--curved--left",
-                "symbol--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
-                "symbol--arrow--curved--left--arrow--up--curved--left",
-                "symbol--arrow--curved--left--arrow--up--curved--right",
-                "symbol--arrow--curved--right",
-                "symbol--arrow--curved--top-left",
-                "symbol--arrow--curved--top-right",
-                "symbol--arrow--double-sided",
-                "symbol--arrow--down",
-                "symbol--arrow--down--arrow--up",
-                "symbol--arrow--down-left",
-                "symbol--arrow--down-left--arrow--down-right",
-                "symbol--arrow--down-right",
-                "symbol--arrow--left",
-                "symbol--arrow--left-or-right",
-                "symbol--arrow--priority",
-                "symbol--arrow--reverse-curve--left",
-                "symbol--arrow--reverse-curve--right",
-                "symbol--arrow--reversible",
-                "symbol--arrow--right",
-                "symbol--arrow--right--truck-back",
-                "symbol--arrow--u-shape--down",
-                "symbol--arrow--u-shape--down--left",
-                "symbol--arrow--u-shape--down--right",
-                "symbol--arrow--up",
-                "symbol--arrow--up--curved--left",
-                "symbol--arrow--up--curved--left--arrow--curved--right",
-                "symbol--arrow--up--curved--right",
-                "symbol--arrow--up--curved--right--arrow--curved--right",
-                "symbol--arrow--up--leg",
-                "symbol--arrow--up--octagon--red",
-                "symbol--arrow--up--top--arrow--down--bottom",
-                "symbol--arrow--up--uneven-road",
-                "symbol--arrow--up--winding--left",
-                "symbol--arrow--up--winding--right",
-                "symbol--arrow--up-right",
-                "symbol--arrow--vehicle-front",
-                "symbol--bar--horizontal--black",
-                "symbol--bicycle",
-                "symbol--bicycle--human",
-                "symbol--bicycle--left--adult--child--right",
-                "symbol--bicycle--rectangle--red",
-                "symbol--bicycle--top--adult--child--bottom",
-                "symbol--black-slash",
-                "symbol--black-stripes",
-                "symbol--black-stripes--no-parking",
-                "symbol--black-stripes--yellow-diamond",
-                "symbol--box-truck",
-                "symbol--box-truck--arrow--curved--right",
-                "symbol--bump",
-                "symbol--bus",
-                "symbol--bus--human",
-                "symbol--camp",
-                "symbol--car-crash",
-                "symbol--car-crash--top",
-                "symbol--chevron--left",
-                "symbol--chevron--right",
-                "symbol--chevron--up",
-                "symbol--child--adult--crossroad",
-                "symbol--children--two",
-                "symbol--circle--red",
-                "symbol--cross--black",
-                "symbol--crossroad",
-                "symbol--crossroads",
-                "symbol--curve--right",
-                "symbol--dead-end",
-                "symbol--deer",
-                "symbol--diamond--yellow",
-                "symbol--dip",
-                "symbol--disabled-person",
-                "symbol--double-arrow--curved--left",
-                "symbol--double-arrow--reverse-curve--right",
-                "symbol--double-turn--first-right",
-                "symbol--dual-vehicle",
-                "symbol--exclamation-mark",
-                "symbol--falling-rocks",
-                "symbol--fence",
-                "symbol--gasoline-pump",
-                "symbol--green-circle",
-                "symbol--hat",
-                "symbol--highway--divided-ends--bidirectional",
-                "symbol--highway--divided-ends--merged",
-                "symbol--horizontal-alignment--right--left-branch",
-                "symbol--horizontal-alignment--right--right-branch",
-                "symbol--horizontal-alignment-left",
-                "symbol--human",
-                "symbol--human--ball",
-                "symbol--human--bicycle",
-                "symbol--human--crossroad",
-                "symbol--human--horse",
-                "symbol--human--nabla",
-                "symbol--human--seesaw",
-                "symbol--human--sign",
-                "symbol--human--stair",
-                "symbol--human--table--parasols",
-                "symbol--junction--acute-left",
-                "symbol--junction--acute-right",
-                "symbol--junction--left",
-                "symbol--junction--left--graphical",
-                "symbol--junction--right",
-                "symbol--kangaroo",
-                "symbol--keep-right",
-                "symbol--living-street",
-                "symbol--lodging",
-                "symbol--loop-270-degree",
-                "symbol--mini-triangle--left--right",
-                "symbol--mini-triangle--top--bottom",
-                "symbol--minimum-safe-distance",
-                "symbol--moped--bicycle",
-                "symbol--motocycle--bicycle",
-                "symbol--motorcycle--slippery",
-                "symbol--motorcycle--vehicle-front",
-                "symbol--motorway",
-                "symbol--narrow-bridge",
-                "symbol--offset-road",
-                "symbol--pedestrain-crossing",
-                "symbol--pedestrian--crossroad",
-                "symbol--priority-route",
-                "symbol--railroad-intersection--cross",
-                "symbol--railroad-intersection--t",
-                "symbol--rectangle--wide--white",
-                "symbol--red-cross",
-                "symbol--red-slash--arrow--curved--left--backward",
-                "symbol--red-slash--arrow--curved--left--forward",
-                "symbol--red-slash--arrow--curved--right--backward",
-                "symbol--red-slash--arrow--curved--right--forward",
-                "symbol--red-slash--arrow--left",
-                "symbol--red-slash--arrow--overtaking",
-                "symbol--red-slash--arrow--right",
-                "symbol--red-slash--arrow--u-shape--down--left",
-                "symbol--red-slash--arrow--u-shape--down--right",
-                "symbol--red-slash--arrow--up",
-                "symbol--red-slash--backward",
-                "symbol--red-slash--bicycle",
-                "symbol--red-slash--box-truck--backward",
-                "symbol--red-slash--box-truck--bus",
-                "symbol--red-slash--box-truck--forward",
-                "symbol--red-slash--building",
-                "symbol--red-slash--bus",
-                "symbol--red-slash--cargo-truck",
-                "symbol--red-slash--dual-vehicle--backward",
-                "symbol--red-slash--dual-vehicle--forward",
-                "symbol--red-slash--forward",
-                "symbol--red-slash--human",
-                "symbol--red-slash--human--bicycle",
-                "symbol--red-slash--human--motorcycle",
-                "symbol--red-slash--living-street",
-                "symbol--red-slash--motorcycle",
-                "symbol--red-slash--motorway",
-                "symbol--red-slash--pedestrian",
-                "symbol--red-slash--vehicle-front",
-                "symbol--red-x",
-                "symbol--reverse-curve--left",
-                "symbol--reverse-curve--right",
-                "symbol--road--winding",
-                "symbol--road-bump",
-                "symbol--road-narrow",
-                "symbol--road-narrow--left",
-                "symbol--road-narrow--right",
-                "symbol--road-widen",
-                "symbol--road-widen--right",
-                "symbol--roadworks--left",
-                "symbol--roadworks--left--no-pile",
-                "symbol--roadworks--right",
-                "symbol--roundabout",
-                "symbol--safety-area",
-                "symbol--steam-train",
-                "symbol--steep-ascent",
-                "symbol--stripe--right",
-                "symbol--t-road",
-                "symbol--telephone",
-                "symbol--towed-car",
-                "symbol--traffic-merges--left",
-                "symbol--traffic-merges--right",
-                "symbol--traffic-signal--horizontal",
-                "symbol--traffic-signal--vertical--multi-directional",
-                "symbol--traffic-signal--vertical--no-outline",
-                "symbol--traffic-signal--vertical--outline",
-                "symbol--trailer-camping",
-                "symbol--train-front",
-                "symbol--train-front--human",
-                "symbol--tram",
-                "symbol--triple-truck-vertical",
-                "symbol--truck",
-                "symbol--two-children",
-                "symbol--two-human",
-                "symbol--two-student",
-                "symbol--undefined",
-                "symbol--uneven-road",
-                "symbol--utensil",
-                "symbol--vehicle--dangerous-goods",
-                "symbol--vehicle--falling-rock",
-                "symbol--vehicle--heavy-goods--vehicle",
-                "symbol--vehicle--human",
-                "symbol--vehicle--slippery",
-                "symbol--vehicle-front",
-                "symbol--vehicle-front--motorcycle",
-                "symbol--vehicle-trailer",
-                "symbol--wombat",
-                "symbol--x",
-                "symbol--x--barrier",
-                "symbol--x--railway",
-                "symbol--y--black"
+                "symbol-a--airplane",
+                "symbol-a--bed",
+                "symbol-a--black-stripes--no-parking",
+                "symbol-a--building",
+                "symbol-a--bump",
+                "symbol-a--bus",
+                "symbol-a--bus-front",
+                "symbol-a--camp",
+                "symbol-a--car-crash",
+                "symbol-a--chevron--left",
+                "symbol-a--chevron--right",
+                "symbol-a--chevron--up",
+                "symbol-a--circle--red",
+                "symbol-a--circle-green",
+                "symbol-a--cow",
+                "symbol-a--cross",
+                "symbol-a--cross",
+                "symbol-a--crossroad",
+                "symbol-a--crossroads",
+                "symbol-a--dead-end",
+                "symbol-a--deer",
+                "symbol-a--diamond",
+                "symbol-a--dip",
+                "symbol-a--disabled",
+                "symbol-a--double-arrow--reverse-curve--right",
+                "symbol-a--exclamation-mark",
+                "symbol-a--fence",
+                "symbol-a--gasoline-pump",
+                "symbol-a--hat",
+                "symbol-a--highway",
+                "symbol-a--horizontal-alignment--right--left-branch",
+                "symbol-a--horizontal-alignment--right--right-branch",
+                "symbol-a--horizontal-alignment-left",
+                "symbol-a--horse",
+                "symbol-a--junction--acute-left",
+                "symbol-a--junction--acute-right",
+                "symbol-a--junction--left",
+                "symbol-a--junction--left--graphical",
+                "symbol-a--junction--right",
+                "symbol-a--kangaroo",
+                "symbol-a--keep-right",
+                "symbol-a--legs",
+                "symbol-a--living-street",
+                "symbol-a--narrow-bridge",
+                "symbol-a--octogon",
+                "symbol-a--offset-road",
+                "symbol-a--pedestrain-one",
+                "symbol-a--pedestrain-two",
+                "symbol-a--pedestrain-two-top",
+                "symbol-a--pedestrian--crossroad",
+                "symbol-a--priority-route",
+                "symbol-a--railroad-control",
+                "symbol-a--railroad-intersection--cross",
+                "symbol-a--railroad-intersection--t",
+                "symbol-a--rectangle-wide",
+                "symbol-a--reverse-curve--left",
+                "symbol-a--reverse-curve--right",
+                "symbol-a--road-bump",
+                "symbol-a--road-narrows",
+                "symbol-a--road-narrows--left",
+                "symbol-a--road-narrows--right",
+                "symbol-a--road-widens",
+                "symbol-a--road-widens--right",
+                "symbol-a--roadworks--left",
+                "symbol-a--roadworks--left--no-pile",
+                "symbol-a--roadworks--right",
+                "symbol-a--safety-area",
+                "symbol-a--seesaw",
+                "symbol-a--steep-ascent",
+                "symbol-a--stripe--right",
+                "symbol-a--t-roads",
+                "symbol-a--telephone",
+                "symbol-a--towed-car",
+                "symbol-a--traffic-signal--horizontal",
+                "symbol-a--traffic-signal--vertical--multi-directional",
+                "symbol-a--traffic-signal--vertical--no-outline",
+                "symbol-a--traffic-signal--vertical--outline",
+                "symbol-a--trailer",
+                "symbol-a--train",
+                "symbol-a--train-front",
+                "symbol-a--truck",
+                "symbol-a--truck-back",
+                "symbol-a--truck-fire",
+                "symbol-a--truck-two",
+                "symbol-a--undefined",
+                "symbol-a--utensil",
+                "symbol-a--vehicle-front",
+                "symbol-a--vehicle-truck",
+                "symbol-a--vehicle-two",
+                "symbol-a--wombat",
+                "symbol-a--y--roads"
+            ]
+        },
+        {
+            "name": "symbol-b",
+            "labels": [
+                "",
+                "symbol-b--arrow",
+                "symbol-b--arrow--curved--down-left",
+                "symbol-b--arrow--curved--left",
+                "symbol-b--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
+                "symbol-b--arrow--curved--left--arrow--up--curved--left",
+                "symbol-b--arrow--curved--left--arrow--up--curved--right",
+                "symbol-b--arrow--curved--right",
+                "symbol-b--arrow--double-sided",
+                "symbol-b--arrow--down",
+                "symbol-b--arrow--down--arrow--up",
+                "symbol-b--arrow--down-left",
+                "symbol-b--arrow--down-left--arrow--down-right",
+                "symbol-b--arrow--down-right",
+                "symbol-b--arrow--left",
+                "symbol-b--arrow--priority",
+                "symbol-b--arrow--reversible",
+                "symbol-b--arrow--right",
+                "symbol-b--arrow--u-shape--down",
+                "symbol-b--arrow--u-shape--down--left",
+                "symbol-b--arrow--u-shape--down--right",
+                "symbol-b--arrow--up",
+                "symbol-b--arrow--up--curved--left",
+                "symbol-b--arrow--up--curved--left--arrow--curved--right",
+                "symbol-b--arrow--up--curved--right",
+                "symbol-b--arrow--up--curved--right--arrow--curved--right",
+                "symbol-b--arrow--up--winding",
+                "symbol-b--arrow--up--winding--left",
+                "symbol-b--arrow--up--winding--right",
+                "symbol-b--arrow--up-right",
+                "symbol-b--arrow-bidirectional",
+                "symbol-b--arrow-bidirectional-divided",
+                "symbol-b--arrow-double-reverse-curve-right",
+                "symbol-b--arrow-double-turn-right",
+                "symbol-b--arrow-loop",
+                "symbol-b--arrow-merge",
+                "symbol-b--arrow-merge-left",
+                "symbol-b--arrow-merge-right",
+                "symbol-b--arrow-reverse-curve-left",
+                "symbol-b--arrow-reverse-curve-right",
+                "symbol-b--arrow-roundabout",
+                "symbol-b--arrow-split",
+                "symbol-b--bicycle",
+                "symbol-b--bicycle-front",
+                "symbol-b--bicycle-two",
+                "symbol-b--falling-rocks",
+                "symbol-b--soccer-playing",
+                "symbol-b--stairs",
+                "symbol-b--table--parasol",
+                "symbol-b--traffic-control",
+                "symbol-b--train",
+                "symbol-b--undefined"
+            ]
+        },
+        {
+            "name": "symbol-c",
+            "labels": [
+                "",
+                "symbol-c--slash-backward",
+                "symbol-c--slash-double",
+                "symbol-c--slash-forward",
+                "symbol-c--stripe-forward",
+                "symbol-c--undefined"
             ]
         },
         {
@@ -257,7 +205,6 @@
                 "text--120",
                 "text--15",
                 "text--15-mph",
-                "text--2",
                 "text--20",
                 "text--20-mph",
                 "text--25",
@@ -281,19 +228,18 @@
                 "text--80",
                 "text--90",
                 "text--alphanumeric",
-                "text--assorted--one-word",
-                "text--assorted--three-words",
-                "text--assorted--two-words",
+                "text--assorted--four-lines",
+                "text--assorted--one-line",
+                "text--assorted--three-lines",
+                "text--assorted--two-lines",
                 "text--bike-lane",
                 "text--bike-route",
                 "text--center-lane-only",
                 "text--central-lane--chinese",
-                "text--detour--spanish",
                 "text--do-not-block-intersection",
                 "text--do-not-stop-on-tracks",
                 "text--e",
                 "text--exit",
-                "text--four-lines",
                 "text--free--german",
                 "text--h",
                 "text--keep-left",
@@ -304,22 +250,14 @@
                 "text--maximum--60",
                 "text--minimum--40",
                 "text--no-parking",
-                "text--no-parking-or-no-stopping",
-                "text--no-parking-or-no-stopping--bold-no",
-                "text--no-turn",
                 "text--no-turn-on-red",
                 "text--no-turn-on-red--four-lines",
+                "text--no-turns",
                 "text--no-u-turn",
-                "text--number",
-                "text--number--m",
-                "text--number--t",
                 "text--one-way",
                 "text--only",
                 "text--p",
-                "text--passing-lane-ahead",
                 "text--r",
-                "text--r--left--r--right",
-                "text--radar-enforced",
                 "text--road-closed",
                 "text--s",
                 "text--safety-area--chinese",
@@ -331,10 +269,10 @@
                 "text--speed-limit--55",
                 "text--speed-limit--65",
                 "text--stop",
-                "text--stop--foreign",
                 "text--stop--japanese",
                 "text--stop-here-on-red",
-                "text--stop-signal",
+                "text--turning-vehicles",
+                "text--two-hour-parking",
                 "text--undefined",
                 "text--weight-limit",
                 "text--wrong-way",
@@ -348,23 +286,29 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--car-crash--top",
+                "symbol-a": "symbol-a--car-crash",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--both-directions--g1": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--double-sided",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--double-sided",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--buses--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--bus",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -372,7 +316,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--left",
+                "symbol-a": "symbol-a--chevron--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -380,23 +326,29 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--left",
+                "symbol-a": "symbol-a--chevron--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--chevron-left--g3": {
             "labels": {
                 "color": "color--black",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--chevron--left",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--chevron--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--chevron-left--g4": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--chevron--left",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--chevron--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -404,7 +356,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--left",
+                "symbol-a": "symbol-a--chevron--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -412,23 +366,29 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--right",
+                "symbol-a": "symbol-a--chevron--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--chevron-right--g3": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--chevron--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--chevron--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--chevron-right--g4": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--chevron--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--chevron--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -436,7 +396,9 @@
             "labels": {
                 "color": "color--red",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--right",
+                "symbol-a": "symbol-a--chevron--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -444,31 +406,39 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--chevron--right",
+                "symbol-a": "symbol-a--chevron--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--distance--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--up",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
         "complementary--distance--g2": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--undefined",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
         "complementary--distance--g3": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--undefined",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
@@ -476,7 +446,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--free--german"
             }
         },
@@ -484,7 +456,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--double-sided",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--double-sided",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -492,7 +466,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -500,7 +476,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -508,7 +486,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -516,7 +496,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--down-left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -524,7 +506,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -532,7 +516,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--15-mph"
             }
         },
@@ -540,7 +526,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--20-mph"
             }
         },
@@ -548,7 +536,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--25-mph"
             }
         },
@@ -556,7 +546,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--30-mph"
             }
         },
@@ -564,7 +556,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--35-mph"
             }
         },
@@ -572,7 +566,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--40-mph"
             }
         },
@@ -580,7 +576,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--45-mph"
             }
         },
@@ -588,7 +586,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--50-mph"
             }
         },
@@ -596,7 +596,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--55-mph"
             }
         },
@@ -604,7 +606,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--70-kph"
             }
         },
@@ -612,39 +616,49 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--75-kph"
             }
         },
         "complementary--obstacle-delineator--g1": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--chevron--up",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--chevron--up",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--obstacle-delineator--g2": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--stripe--right",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--stripe--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--one-direction-left--g1": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--left",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--one-direction-right--g1": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -652,7 +666,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -660,31 +676,39 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--priority-route",
+                "symbol-a": "symbol-a--priority-route",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--tow-away-zone--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--towed-car",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--towed-car",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--trucks--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--box-truck",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "complementary--trucks-turn-right--g1": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--box-truck--arrow--curved--right",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -692,7 +716,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -700,7 +726,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -708,7 +736,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--airplane",
+                "symbol-a": "symbol-a--airplane",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -716,7 +746,9 @@
             "labels": {
                 "color": "color--green",
                 "shape": "shape--square",
-                "symbol": "symbol--airplane",
+                "symbol-a": "symbol-a--airplane",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -724,7 +756,9 @@
             "labels": {
                 "color": "color--green",
                 "shape": "shape--square",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--bike-route"
             }
         },
@@ -732,7 +766,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--h"
             }
         },
@@ -740,7 +776,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--camp",
+                "symbol-a": "symbol-a--camp",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -748,15 +786,19 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--down",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--central-lane--chinese"
             }
         },
         "information--children--g1": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--triangle--extended-bottom",
-                "symbol": "symbol--children--two",
+                "shape": "shape--triangle-extended-bottom",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -764,7 +806,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--dead-end",
+                "symbol-a": "symbol-a--dead-end",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -772,7 +816,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--bicycle--rectangle--red",
+                "symbol-a": "symbol-a--dead-end",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -780,7 +826,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--disabled-person",
+                "symbol-a": "symbol-a--disabled",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -788,15 +836,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--red-cross",
+                "symbol-a": "symbol-a--cross",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "information--end-of-built-up-area--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--red-slash--building",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--building",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -804,7 +856,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash--vehicle-front",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -812,15 +866,19 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash--living-street",
+                "symbol-a": "symbol-a--living-street",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
         "information--end-of-motorway--g1": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--red-slash--motorway",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--highway",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -828,7 +886,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash--pedestrian",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -836,7 +896,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--utensil",
+                "symbol-a": "symbol-a--utensil",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -844,7 +906,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--gasoline-pump",
+                "symbol-a": "symbol-a--gasoline-pump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -852,7 +916,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--gasoline-pump",
+                "symbol-a": "symbol-a--gasoline-pump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -860,15 +926,19 @@
             "labels": {
                 "color": "color--green",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--exit"
             }
         },
         "information--highway-interstate-route--g2": {
             "labels": {
                 "color": "color--green",
-                "shape": "shape--shield--inverted",
-                "symbol": "symbol--undefined",
+                "shape": "shape--shield-inverted",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
@@ -876,7 +946,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--h"
             }
         },
@@ -884,7 +956,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--shield",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
@@ -892,7 +966,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle-front",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -900,7 +976,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--living-street",
+                "symbol-a": "symbol-a--living-street",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -908,7 +986,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--lodging",
+                "symbol-a": "symbol-a--bed",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -916,7 +996,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--40"
             }
         },
@@ -924,7 +1006,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--motorway",
+                "symbol-a": "symbol-a--highway",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -932,7 +1016,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash--forward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--p"
             }
         },
@@ -940,7 +1026,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
         },
@@ -948,7 +1036,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--hat",
+                "symbol-a": "symbol-a--hat",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
         },
@@ -956,15 +1046,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--e"
             }
         },
         "information--parking--g45": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--vehicle-front",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--arrow",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
         },
@@ -972,7 +1066,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
         },
@@ -980,7 +1076,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
         },
@@ -988,15 +1086,19 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--pedestrian--crossroad",
+                "symbol-a": "symbol-a--pedestrian--crossroad",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "information--pedestrians-crossing--g2": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--triangle--extended-bottom",
-                "symbol": "symbol--pedestrain-crossing",
+                "shape": "shape--triangle-extended-bottom",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1004,15 +1106,19 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--road-bump",
+                "symbol-a": "symbol-a--road-bump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "information--safety-area--g2": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--safety-area",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--safety-area",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--safety-area--chinese"
             }
         },
@@ -1020,7 +1126,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--human--stair",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--stairs",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1028,7 +1136,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--telephone",
+                "symbol-a": "symbol-a--telephone",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1036,7 +1146,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--telephone",
+                "symbol-a": "symbol-a--telephone",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1044,7 +1156,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--trailer-camping",
+                "symbol-a": "symbol-a--trailer",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1052,7 +1166,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--bus",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1060,7 +1176,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1068,7 +1186,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--bike-lane"
             }
         },
@@ -1076,7 +1196,9 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--square",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--bike-lane"
             }
         },
@@ -1084,7 +1206,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--bus",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1092,15 +1216,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--left",
-                "text": "text--detour--spanish"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--one-line"
             }
         },
         "regulatory--do-not-block-intersection--g1": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--do-not-block-intersection"
             }
         },
@@ -1108,7 +1236,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--do-not-stop-on-tracks"
             }
         },
@@ -1116,7 +1246,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up--curved--left--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--left--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -1124,7 +1256,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--left--arrow--up--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left--arrow--up--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -1132,7 +1266,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--double-arrow--curved--left",
+                "symbol-a": "symbol-a--double-arrow--reverse-curve--right",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--no-u-turn"
             }
         },
@@ -1140,7 +1276,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--left--arrow--up--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left--arrow--up--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -1148,7 +1286,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up--curved--right--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--right--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -1156,7 +1296,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--bicycle--left--adult--child--right",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1164,7 +1306,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--adult--child--left--bicycle--right",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1172,7 +1316,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1180,7 +1326,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--bus",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1188,7 +1336,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--black-slash",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--stripe-forward",
                 "text": "text--30"
             }
         },
@@ -1196,7 +1346,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--black-stripes",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--stripe-forward",
                 "text": "text--70"
             }
         },
@@ -1204,7 +1356,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--black-slash",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--70"
             }
         },
@@ -1212,7 +1366,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--black-stripes--no-parking",
+                "symbol-a": "symbol-a--black-stripes--no-parking",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--stripe-forward",
                 "text": "text--zone"
             }
         },
@@ -1220,7 +1376,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--diamond",
-                "symbol": "symbol--black-stripes--yellow-diamond",
+                "symbol-a": "symbol-a--diamond",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--stripe-forward",
                 "text": "text--undefined"
             }
         },
@@ -1228,15 +1386,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--black-slash",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
         "regulatory--end-of-speed-limit-zone--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--black-stripes",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--stripe-forward",
                 "text": "text--zone--30"
             }
         },
@@ -1244,7 +1406,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--down--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1252,7 +1416,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1260,7 +1426,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -1268,7 +1436,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1276,7 +1446,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1284,7 +1456,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1292,7 +1466,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1300,7 +1476,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1308,7 +1486,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--mini-triangle--top--bottom",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
@@ -1316,15 +1496,19 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--down-left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "regulatory--keep-left--g2": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--down-left",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--keep-left"
             }
         },
@@ -1332,7 +1516,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1340,7 +1526,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1348,7 +1536,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--keep-right",
+                "symbol-a": "symbol-a--keep-right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1356,7 +1546,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--right--truck-back",
+                "symbol-a": "symbol-a--truck-back",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1364,7 +1556,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--left-lane-must-turn-left"
             }
         },
@@ -1372,7 +1566,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--green-circle",
+                "symbol-a": "symbol-a--circle-green",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--left-turn-yield-on-green"
             }
         },
@@ -1380,7 +1576,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--10"
             }
         },
@@ -1388,7 +1586,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--100"
             }
         },
@@ -1396,7 +1596,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--maximum--100"
             }
         },
@@ -1404,7 +1606,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--110"
             }
         },
@@ -1412,7 +1616,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--120"
             }
         },
@@ -1420,7 +1626,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--15"
             }
         },
@@ -1428,7 +1636,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--20"
             }
         },
@@ -1436,7 +1646,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--25"
             }
         },
@@ -1444,7 +1656,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--25"
             }
         },
@@ -1452,7 +1666,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--30"
             }
         },
@@ -1460,7 +1676,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--30"
             }
         },
@@ -1468,7 +1686,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--35"
             }
         },
@@ -1476,7 +1696,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--40"
             }
         },
@@ -1484,7 +1706,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--40"
             }
         },
@@ -1492,7 +1716,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--minimum--40"
             }
         },
@@ -1500,7 +1726,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--45"
             }
         },
@@ -1508,7 +1736,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--45"
             }
         },
@@ -1516,7 +1746,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--5"
             }
         },
@@ -1524,7 +1756,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--50"
             }
         },
@@ -1532,7 +1766,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--maximum--50"
             }
         },
@@ -1540,7 +1776,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--55"
             }
         },
@@ -1548,7 +1786,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--60"
             }
         },
@@ -1556,7 +1796,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--speed-limit--65"
             }
         },
@@ -1564,7 +1806,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--70"
             }
         },
@@ -1572,7 +1816,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--80"
             }
         },
@@ -1580,7 +1826,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--90"
             }
         },
@@ -1588,7 +1836,9 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--100"
             }
         },
@@ -1596,7 +1846,9 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--60"
             }
         },
@@ -1604,7 +1856,9 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--80"
             }
         },
@@ -1612,7 +1866,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--minimum-safe-distance",
+                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
         },
@@ -1620,7 +1876,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--motocycle--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle-two",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1628,7 +1886,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1636,7 +1896,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1644,7 +1906,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--human--bicycle",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1652,7 +1916,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--bus",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1660,7 +1926,9 @@
             "labels": {
                 "color": "color--red",
                 "shape": "shape--circle",
-                "symbol": "symbol--rectangle--wide--white",
+                "symbol-a": "symbol-a--rectangle-wide",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1668,7 +1936,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--human--table--parasols",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--table--parasol",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1676,7 +1946,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--box-truck",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1684,7 +1956,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--box-truck--backward",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1692,7 +1966,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--box-truck--forward",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1700,7 +1976,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--cargo-truck",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1708,7 +1986,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--box-truck--bus",
+                "symbol-a": "symbol-a--truck-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1716,7 +1996,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--left--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1724,7 +2006,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--left--forward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1732,7 +2016,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1740,7 +2026,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--moped--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle-two",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1748,7 +2036,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle-trailer",
+                "symbol-a": "symbol-a--trailer",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1756,7 +2046,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--motorcycle--vehicle-front",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1764,7 +2056,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle-front--motorcycle",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1772,7 +2066,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle-front",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1780,7 +2076,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--vehicle-front",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1788,7 +2086,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--human--motorcycle",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1796,7 +2096,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--motorcycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1804,7 +2106,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--dual-vehicle",
+                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1812,7 +2116,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--overtaking",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1820,7 +2126,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--dual-vehicle--forward",
+                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1828,7 +2136,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--dual-vehicle--backward",
+                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1836,7 +2146,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle--heavy-goods--vehicle",
+                "symbol-a": "symbol-a--vehicle-truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1844,7 +2156,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1852,7 +2166,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--p"
             }
         },
@@ -1860,7 +2176,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--e"
             }
         },
@@ -1868,31 +2186,39 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--double-sided",
-                "text": "text--no-parking-or-no-stopping"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--double-sided",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--four-lines"
             }
         },
         "regulatory--no-parking-or-no-stopping--g2": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--no-parking-or-no-stopping"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--four-lines"
             }
         },
         "regulatory--no-parking-or-no-stopping--g3": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--undefined",
-                "text": "text--no-parking-or-no-stopping--bold-no"
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--no-parking"
             }
         },
         "regulatory--no-pedestrians--g1": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1900,7 +2226,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1908,7 +2236,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--red-slash--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1916,7 +2246,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--human--bicycle",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -1924,7 +2256,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--right--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1932,7 +2266,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--curved--right--forward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1940,7 +2276,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1948,7 +2286,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-x",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--undefined"
             }
         },
@@ -1956,7 +2296,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-x",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--e"
             }
         },
@@ -1964,7 +2306,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--double-sided",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--double-sided",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--no-parking"
             }
         },
@@ -1972,7 +2316,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--forward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--s"
             }
         },
@@ -1980,7 +2326,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--forward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -1988,7 +2336,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -1996,7 +2346,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2004,7 +2356,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--no-turn-on-red--four-lines"
             }
         },
@@ -2012,7 +2366,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--no-turn-on-red"
             }
         },
@@ -2020,7 +2376,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--circle--red",
+                "symbol-a": "symbol-a--circle--red",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--no-turn-on-red"
             }
         },
@@ -2028,15 +2386,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--no-turn"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--no-turns"
             }
         },
         "regulatory--no-u-turn--g1": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--u-shape--down--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -2044,7 +2406,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--u-shape--down--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2052,7 +2416,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--arrow--u-shape--down--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
         },
@@ -2060,15 +2426,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--vehicle--dangerous-goods",
+                "symbol-a": "symbol-a--truck-back",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "regulatory--one-way-left--g1": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--left",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2076,23 +2446,29 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--one-way"
             }
         },
         "regulatory--one-way-left--g3": {
             "labels": {
                 "color": "color--black",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--left",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--one-way"
             }
         },
         "regulatory--one-way-right--g1": {
             "labels": {
                 "color": "color--blue",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2100,15 +2476,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--one-way"
             }
         },
         "regulatory--one-way-right--g3": {
             "labels": {
                 "color": "color--black",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--one-way"
             }
         },
@@ -2116,7 +2496,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2124,15 +2506,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--2"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--two-hour-parking"
             }
         },
         "regulatory--pass-on-either-side--g1": {
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--down-left--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2140,7 +2526,9 @@
             "labels": {
                 "color": "color--green",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--double-sided",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--double-sided",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2148,15 +2536,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--passing-lane-ahead"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--three-lines"
             }
         },
         "regulatory--pedestrians-only--g1": {
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--adult--child",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2164,7 +2556,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2172,7 +2566,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--priority",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--priority",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2180,23 +2576,29 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--diamond",
-                "symbol": "symbol--diamond--yellow",
+                "symbol-a": "symbol-a--diamond",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "regulatory--radar-enforced--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--undefined",
-                "text": "text--radar-enforced"
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--two-lines"
             }
         },
         "regulatory--reversible-lanes--g2": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--reversible",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--reversible",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--center-lane-only"
             }
         },
@@ -2204,15 +2606,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-x",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--undefined"
             }
         },
         "regulatory--road-closed--g2": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--undefined",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--road-closed"
             }
         },
@@ -2220,7 +2626,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--red-slash--backward",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
         },
@@ -2228,7 +2636,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2236,7 +2646,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--roundabout",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-roundabout",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2244,7 +2656,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--roundabout",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-roundabout",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2252,7 +2666,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--bicycle--top--adult--child--bottom",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2260,7 +2676,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--adult--child--top--bicycle--bottom",
+                "symbol-a": "symbol-a--pedestrain-two-top",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2268,7 +2686,9 @@
             "labels": {
                 "color": "color--red",
                 "shape": "shape--octagon",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--stop"
             }
         },
@@ -2276,31 +2696,39 @@
             "labels": {
                 "color": "color--red",
                 "shape": "shape--octagon",
-                "symbol": "symbol--undefined",
-                "text": "text--stop--foreign"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--two-lines"
             }
         },
         "regulatory--stop--g2": {
             "labels": {
                 "color": "color--red",
-                "shape": "shape--triangle--inverted",
-                "symbol": "symbol--undefined",
+                "shape": "shape--triangle-inverted",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--stop--japanese"
             }
         },
         "regulatory--stop-here-on-red-or-flashing-light--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--down-left",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--stop-here-on-red"
             }
         },
         "regulatory--stop-here-on-red-or-flashing-light--g2": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--curved--down-left",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--down-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--stop-here-on-red"
             }
         },
@@ -2308,23 +2736,29 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--bar--horizontal--black",
-                "text": "text--stop-signal"
+                "symbol-a": "symbol-a--rectangle-wide",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--two-lines"
             }
         },
         "regulatory--text-four-lines--g1": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
-                "text": "text--four-lines"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--four-lines"
             }
         },
         "regulatory--triple-lanes-turn-left-center-lane--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left--arrow--curved--left--up--arrow--up--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -2332,7 +2766,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--maximum--60"
             }
         },
@@ -2340,7 +2776,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2348,7 +2786,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -2356,7 +2796,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2364,7 +2806,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2372,7 +2816,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2380,7 +2826,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2388,7 +2836,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
         },
@@ -2396,7 +2846,9 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2404,7 +2856,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2412,15 +2866,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--human--nabla",
-                "text": "text--undefined"
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--arrow",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--turning-vehicles"
             }
         },
         "regulatory--u-turn--g1": {
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--u-shape--down",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2428,15 +2886,19 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined",
-                "text": "text--number--t"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--one-line"
             }
         },
         "regulatory--weight-limit-with-trucks--g1": {
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol": "symbol--triple-truck-vertical",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--weight-limit"
             }
         },
@@ -2444,23 +2906,29 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol": "symbol--mini-triangle--left--right",
-                "text": "text--number--m"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--alphanumeric"
             }
         },
         "regulatory--wrong-way--g1": {
             "labels": {
                 "color": "color--red",
-                "shape": "shape--rectangle--wide",
-                "symbol": "symbol--undefined",
+                "shape": "shape--rectangle-wide",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--wrong-way"
             }
         },
         "regulatory--yield--g1": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--triangle--inverted",
-                "symbol": "symbol--undefined",
+                "shape": "shape--triangle-inverted",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2468,7 +2936,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--car-crash",
+                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2476,7 +2946,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--added-lane--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2484,7 +2956,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2492,7 +2966,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--bicycle",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2500,7 +2976,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--bicycle",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2508,7 +2986,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--bus--human",
+                "symbol-a": "symbol-a--bus-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2516,7 +2996,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--two-children",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2524,7 +3006,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--two-human",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2532,7 +3016,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--crossroads",
+                "symbol-a": "symbol-a--crossroads",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2540,7 +3026,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--cross--black",
+                "symbol-a": "symbol-a--cross",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2548,7 +3036,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--x",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--undefined"
             }
         },
@@ -2556,7 +3046,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow--curved--top-left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2564,7 +3056,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--curved--top-left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2572,7 +3066,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow--curved--top-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2580,7 +3076,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--curved--top-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2588,7 +3086,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--dip",
+                "symbol-a": "symbol-a--dip",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2596,7 +3096,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--highway--divided-ends--merged",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-merge",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2604,7 +3106,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--highway--divided-ends--bidirectional",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-bidirectional-divided",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2612,7 +3116,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--animal",
+                "symbol-a": "symbol-a--cow",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2620,7 +3126,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--animal",
+                "symbol-a": "symbol-a--cow",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2628,7 +3136,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--reverse-curve--left",
+                "symbol-a": "symbol-a--reverse-curve--left",
+                "symbol-b": "symbol-b--arrow-reverse-curve-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2636,7 +3146,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--reverse-curve--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-reverse-curve-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2644,7 +3156,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--reverse-curve--right",
+                "symbol-a": "symbol-a--reverse-curve--right",
+                "symbol-b": "symbol-b--arrow-reverse-curve-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2652,7 +3166,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--reverse-curve--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-reverse-curve-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2660,7 +3176,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--double-arrow--reverse-curve--right",
+                "symbol-a": "symbol-a--double-arrow--reverse-curve--right",
+                "symbol-b": "symbol-b--arrow-double-reverse-curve-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2668,7 +3186,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--double-turn--first-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-double-turn-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2676,7 +3196,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--square",
-                "symbol": "symbol--arrow--up--curved--right--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--curved--right--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2684,7 +3206,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--truck",
+                "symbol-a": "symbol-a--truck-fire",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2692,7 +3216,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--horse",
+                "symbol-a": "symbol-a--horse",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2700,7 +3226,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--falling-rocks",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--falling-rocks",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2708,7 +3236,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--vehicle--falling-rock",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--falling-rocks",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2716,7 +3246,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--falling-rocks",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--falling-rocks",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2724,7 +3256,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--sign",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--traffic-control",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2732,7 +3266,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--u-shape--down--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2740,7 +3276,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow--u-shape--down--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2748,15 +3286,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--u-shape--down--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "warning--hairpin-curve-right--g4": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--rectangle--tall",
-                "symbol": "symbol--arrow--u-shape--down--right",
+                "shape": "shape--rectangle-tall",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--u-shape--down",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--300u"
             }
         },
@@ -2764,15 +3306,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--top--arrow--down--bottom",
-                "text": "text--number"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--alphanumeric"
             }
         },
         "warning--horizontal-alignment-left--g1": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--horizontal-alignment-left",
+                "symbol-a": "symbol-a--horizontal-alignment-left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2780,7 +3326,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--horizontal-alignment--right--left-branch",
+                "symbol-a": "symbol-a--horizontal-alignment--right--left-branch",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2788,7 +3336,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--horizontal-alignment--right--right-branch",
+                "symbol-a": "symbol-a--horizontal-alignment--right--right-branch",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2796,7 +3346,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--acute-left",
+                "symbol-a": "symbol-a--junction--acute-left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2804,7 +3356,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--acute-right",
+                "symbol-a": "symbol-a--junction--acute-right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2812,7 +3366,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--junction--left",
+                "symbol-a": "symbol-a--junction--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2820,7 +3376,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--left",
+                "symbol-a": "symbol-a--junction--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2828,7 +3386,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--left--graphical",
+                "symbol-a": "symbol-a--junction--left--graphical",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2836,7 +3396,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--junction--right",
+                "symbol-a": "symbol-a--junction--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2844,7 +3406,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--junction--right",
+                "symbol-a": "symbol-a--junction--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2852,7 +3416,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--kangaroo",
+                "symbol-a": "symbol-a--kangaroo",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2860,7 +3426,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--loop-270-degree",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-loop",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2868,7 +3436,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--narrow-bridge",
+                "symbol-a": "symbol-a--narrow-bridge",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2876,7 +3446,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--narrow-bridge",
+                "symbol-a": "symbol-a--narrow-bridge",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2884,7 +3456,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--offset-road",
+                "symbol-a": "symbol-a--offset-road",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2892,7 +3466,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--exclamation-mark",
+                "symbol-a": "symbol-a--exclamation-mark",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2900,7 +3476,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--exclamation-mark",
+                "symbol-a": "symbol-a--exclamation-mark",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2908,7 +3486,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--left-or-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-split",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2916,7 +3496,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--down-left--arrow--down-right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--down-left--arrow--down-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2924,7 +3506,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--train-front--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--train",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2932,7 +3516,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--human--crossroad",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2940,7 +3526,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--leg",
+                "symbol-a": "symbol-a--legs",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2948,7 +3536,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--crossroad",
+                "symbol-a": "symbol-a--crossroad",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2956,7 +3546,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--human--crossroad",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2964,7 +3556,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--crossroad",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2972,7 +3566,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2980,7 +3576,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--child--adult--crossroad",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2988,7 +3586,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--ball",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--soccer-playing",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -2996,7 +3596,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--human--seesaw",
+                "symbol-a": "symbol-a--seesaw",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3004,23 +3606,29 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--circle",
-                "symbol": "symbol--x",
-                "text": "text--r--left--r--right"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
+                "text": "text--r"
             }
         },
         "warning--railroad-crossing--g3": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--x--railway",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--undefined"
             }
         },
         "warning--railroad-crossing--g4": {
             "labels": {
                 "color": "color--white",
-                "shape": "shape--x",
-                "symbol": "symbol--undefined",
+                "shape": "shape--cross",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3028,7 +3636,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--fence",
+                "symbol-a": "symbol-a--fence",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3036,7 +3646,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--x--barrier",
+                "symbol-a": "symbol-a--railroad-control",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3044,7 +3656,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--fence",
+                "symbol-a": "symbol-a--fence",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3052,7 +3666,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--train-front",
+                "symbol-a": "symbol-a--train-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3060,7 +3676,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--steam-train",
+                "symbol-a": "symbol-a--train",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3068,7 +3686,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--steam-train",
+                "symbol-a": "symbol-a--train",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3076,7 +3696,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--railroad-intersection--cross",
+                "symbol-a": "symbol-a--railroad-intersection--cross",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3084,7 +3706,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--railroad-intersection--t",
+                "symbol-a": "symbol-a--railroad-intersection--t",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3092,7 +3716,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--r"
             }
         },
@@ -3100,7 +3726,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--bump",
+                "symbol-a": "symbol-a--bump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3108,7 +3736,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--bump",
+                "symbol-a": "symbol-a--bump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3116,7 +3746,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--road-narrow",
+                "symbol-a": "symbol-a--road-narrows",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3124,7 +3756,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--road-narrow",
+                "symbol-a": "symbol-a--road-narrows",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3132,7 +3766,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--road-narrow--left",
+                "symbol-a": "symbol-a--road-narrows--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3140,7 +3776,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--road-narrow--left",
+                "symbol-a": "symbol-a--road-narrows--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3148,7 +3786,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--road-narrow--right",
+                "symbol-a": "symbol-a--road-narrows--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3156,7 +3796,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--road-narrow--right",
+                "symbol-a": "symbol-a--road-narrows--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3164,7 +3806,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--road-widen",
+                "symbol-a": "symbol-a--road-widens",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3172,7 +3816,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--road-widen--right",
+                "symbol-a": "symbol-a--road-widens--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3180,7 +3826,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--right",
+                "symbol-a": "symbol-a--roadworks--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3188,7 +3836,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--roadworks--left",
+                "symbol-a": "symbol-a--roadworks--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3196,7 +3846,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--left",
+                "symbol-a": "symbol-a--roadworks--left",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3204,7 +3856,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--roadworks--left--no-pile",
+                "symbol-a": "symbol-a--roadworks--left--no-pile",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3212,7 +3866,9 @@
             "labels": {
                 "color": "color--black",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks--right",
+                "symbol-a": "symbol-a--roadworks--right",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3220,7 +3876,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roundabout",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-roundabout",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3228,15 +3886,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--roundabout",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-roundabout",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
         "warning--school-zone--g2": {
             "labels": {
                 "color": "color--yellow",
-                "shape": "shape--triangle--extended-bottom",
-                "symbol": "symbol--two-student",
+                "shape": "shape--triangle-extended-bottom",
+                "symbol-a": "symbol-a--pedestrain-two",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3244,7 +3906,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--vehicle--human",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3252,7 +3916,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--motorcycle--slippery",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--bicycle-front",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3260,7 +3926,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--vehicle--slippery",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3268,7 +3936,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--vehicle--slippery",
+                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3276,15 +3946,19 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--steep-ascent",
-                "text": "text--number"
+                "symbol-a": "symbol-a--steep-ascent",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--undefined"
             }
         },
         "warning--stop-ahead--g9": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--octagon--red",
+                "symbol-a": "symbol-a--octogon",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3292,7 +3966,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--t-road",
+                "symbol-a": "symbol-a--t-roads",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3300,7 +3976,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--t-road",
+                "symbol-a": "symbol-a--t-roads",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3308,31 +3986,39 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--undefined",
-                "text": "text--assorted--one-word"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--one-line"
             }
         },
         "warning--texts--g2": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--undefined",
-                "text": "text--assorted--three-words"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--three-lines"
             }
         },
         "warning--texts--g3": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--undefined",
-                "text": "text--assorted--two-words"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "text": "text--assorted--two-lines"
             }
         },
         "warning--traffic-merges-left--g1": {
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-merges--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-merge-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3340,7 +4026,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--traffic-merges--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-merge-left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3348,7 +4036,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-merges--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-merge-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3356,7 +4046,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--traffic-merges--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-merge-right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3364,7 +4056,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--traffic-signal--vertical--no-outline",
+                "symbol-a": "symbol-a--traffic-signal--vertical--no-outline",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3372,7 +4066,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-signal--vertical--multi-directional",
+                "symbol-a": "symbol-a--traffic-signal--vertical--multi-directional",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3380,7 +4076,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-signal--vertical--outline",
+                "symbol-a": "symbol-a--traffic-signal--vertical--outline",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3388,7 +4086,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--traffic-signal--horizontal",
+                "symbol-a": "symbol-a--traffic-signal--horizontal",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3396,7 +4096,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--bicycle--human",
+                "symbol-a": "symbol-a--pedestrain-one",
+                "symbol-b": "symbol-b--bicycle",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3404,7 +4106,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--tram",
+                "symbol-a": "symbol-a--bus",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3412,7 +4116,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--box-truck",
+                "symbol-a": "symbol-a--truck",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3420,7 +4126,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--curved--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3428,7 +4136,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--curved--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3436,7 +4146,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--triangle",
-                "symbol": "symbol--curve--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--curved--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3444,7 +4156,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow--down--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-bidirectional",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3452,7 +4166,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--down--arrow--up",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow-bidirectional",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3460,7 +4176,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--uneven-road",
+                "symbol-a": "symbol-a--bump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3468,7 +4186,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--uneven-road",
+                "symbol-a": "symbol-a--bump",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3476,7 +4196,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--uneven-road",
+                "symbol-a": "symbol-a--bump",
+                "symbol-b": "symbol-b--arrow--up",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3484,7 +4206,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--deer",
+                "symbol-a": "symbol-a--deer",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3492,7 +4216,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--deer",
+                "symbol-a": "symbol-a--deer",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3500,7 +4226,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--winding--left",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--winding--left",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3508,7 +4236,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--road--winding",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--winding",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3516,7 +4246,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--arrow--up--winding--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--winding--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3524,7 +4256,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow--up--winding--right",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--arrow--up--winding--right",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3532,7 +4266,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--wombat",
+                "symbol-a": "symbol-a--wombat",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         },
@@ -3540,7 +4276,9 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol": "symbol--y--black",
+                "symbol-a": "symbol-a--y--roads",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
         }
