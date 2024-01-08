@@ -32,10 +32,17 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
+attribute_combo_box_width = 250
+attribute_config_file_name = dataset_config_file_name
+attribute_dataset_dir_images = dataset_dir_images_sliced
+attribute_viewer_height = 150
+attribute_viewer_width = 150
+attribute_viewer_count = 24
+attribute_viewer_count_col = 6
+
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
 label_dataset_dir_images = dataset_dir_images_sliced
-label_enable_weight = False
 label_viewer_height = 150
 label_viewer_width = 150
 label_line_edit_width = 250

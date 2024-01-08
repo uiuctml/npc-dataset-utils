@@ -288,7 +288,7 @@ def main():
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
-    window.setWindowTitle("Mapillary Dataset Labeling Tool")
+    window.setWindowTitle("VISAT Labeling Tool")
 
     comboBoxApplicationControlSlot()
 
