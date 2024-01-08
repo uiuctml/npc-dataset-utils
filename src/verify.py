@@ -30,20 +30,20 @@ def verifyDatasetConfigDuplicates(config_dataset):
 
         if len(labels_original_list) > 1:
             labels_original = ", ".join(labels_original_list)
-            logger.log_warn("\"" + labels_original + "\" contain identical labels.")
+            logger.log_warn("\"" + labels_original + "\" contain identical attributes.")
 
     return
 
 def verifyDatasetConfigLabels(config_dataset):
     for label_original in config_dataset["mappings"].keys():
         if len(config_dataset["mappings"][label_original]["labels"]) == 0:
-            logger.log_warn("\"" + label_original + "\" does not contain any labels.")
+            logger.log_warn("\"" + label_original + "\" does not contain any attributes.")
         else:
             for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
                 if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
-                    logger.log_warn("\"" + label_original + "\" contains an empty label for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("\"" + label_original + "\" contains no attributes for dataset \"" + dataset_name + "\".")
                 elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
-                    logger.log_warn("\"" + label_original + "\" contains an invalid label for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("\"" + label_original + "\" contains an invalid attribute for dataset \"" + dataset_name + "\".")
 
     return
 
@@ -61,6 +61,11 @@ def verifyDatasetConfigMissing(config_dataset):
             labels_dataset_set_dataset.add(label_dataset)
 
     for label_original in config_dataset["mappings"].keys():
+        labels_original = os.listdir(header.dataset_dir_images_split_original_train)
+
+        if label_original not in labels_original:
+            logger.log_warn("Unknown label \"" + label_original + "\".")
+
         labels_decomposed = config_dataset["mappings"][label_original]["labels"]
 
         for name_dataset_set in names_dataset_set:
