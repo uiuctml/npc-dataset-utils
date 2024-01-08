@@ -30,20 +30,20 @@ def verifyDatasetConfigDuplicates(config_dataset):
 
         if len(labels_original_list) > 1:
             labels_original = ", ".join(labels_original_list)
-            logger.log_warn("\"" + labels_original + "\" contain identical attributes.")
+            logger.log_warn("Identical attributes: \"" + labels_original + "\".")
 
     return
 
 def verifyDatasetConfigLabels(config_dataset):
     for label_original in config_dataset["mappings"].keys():
         if len(config_dataset["mappings"][label_original]["labels"]) == 0:
-            logger.log_warn("\"" + label_original + "\" does not contain any attributes.")
+            logger.log_warn("Missing attributes: \"" + label_original + "\".")
         else:
             for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
                 if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
-                    logger.log_warn("\"" + label_original + "\" contains no attributes for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("Empty attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
                 elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
-                    logger.log_warn("\"" + label_original + "\" contains an invalid attribute for dataset \"" + dataset_name + "\".")
+                    logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
 
     return
 
@@ -64,24 +64,24 @@ def verifyDatasetConfigMissing(config_dataset):
         labels_original = os.listdir(header.dataset_dir_images_split_original_train)
 
         if label_original not in labels_original:
-            logger.log_warn("Unknown label \"" + label_original + "\".")
+            logger.log_warn("Unknown label: \"" + label_original + "\".")
 
         labels_decomposed = config_dataset["mappings"][label_original]["labels"]
 
         for name_dataset_set in names_dataset_set:
             if name_dataset_set not in labels_decomposed.keys():
-                logger.log_warn("Missing attribute \"" + name_dataset_set + "\" in \"" + label_original + "\".")
+                logger.log_warn("Missing attribute: \"" + name_dataset_set + "\", \"" + label_original + "\".")
 
         if len(labels_decomposed) > 0:
             for dataset_name in labels_decomposed.keys():
                 labels_dataset_set_generate.add(labels_decomposed[dataset_name])
 
                 if dataset_name not in names_dataset_set:
-                    logger.log_warn("Unknown attribute \"" + dataset_name + "\" in \"" + label_original + "\".")
+                    logger.log_warn("Unknown attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
 
     for label_dataset_generate in labels_dataset_set_generate:
         if label_dataset_generate not in labels_dataset_set_dataset:
-            logger.log_warn("\"" + label_dataset_generate + "\" is missing.")
+            logger.log_warn("Missing label: \"" + label_dataset_generate + "\".")
 
     return
 
@@ -98,7 +98,7 @@ def verifyDatasetConfigUnused(config_dataset):
 
         for label_dataset in labels_dataset:
             if label_dataset != "" and label_dataset not in labels_dataset_set:
-                logger.log_warn("\"" + label_dataset + "\" is unused.")
+                logger.log_warn("Unused attribute: \"" + label_dataset + "\".")
 
     return
 
@@ -114,7 +114,7 @@ def verifyDatasetSplitsEmpty():
                 dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
                 if len(dataset_dir_labels_split_list) == 0:
-                    logger.log_warn("\"" + dataset_dir_labels + "\" has no data for dataset split \"" + dataset_name_split + "\".")
+                    logger.log_warn("Empty label: \"" + dataset_dir_labels + "\", \"" + dataset_name_split + "\".")
 
     return
 
