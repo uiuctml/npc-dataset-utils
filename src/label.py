@@ -155,6 +155,13 @@ def pushButtonRemoveLabelSlot(dataset_name, combo_box):
 
     combo_box.removeItem(combo_box.currentIndex())
 
+    label_text_index = combo_box.findText(dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword)
+
+    if label_text_index >= 0:
+        combo_box.setCurrentIndex(label_text_index)
+    else:
+        combo_box.setCurrentIndex(0)
+
     return
 
 def createApplicationControlWidget():
