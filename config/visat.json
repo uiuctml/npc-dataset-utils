@@ -40,6 +40,9 @@
                 "symbol-a--bus",
                 "symbol-a--bus-front",
                 "symbol-a--camp",
+                "symbol-a--car",
+                "symbol-a--car-truck",
+                "symbol-a--car-two",
                 "symbol-a--chevron-left",
                 "symbol-a--chevron-right",
                 "symbol-a--chevron-up",
@@ -84,18 +87,12 @@
                 "symbol-a--traffic-signal-vertical-no-outline",
                 "symbol-a--traffic-signal-vertical-outline",
                 "symbol-a--trailer",
-                "symbol-a--train",
-                "symbol-a--train-front",
                 "symbol-a--truck",
                 "symbol-a--truck-back",
                 "symbol-a--truck-fire",
                 "symbol-a--truck-two",
                 "symbol-a--undefined",
                 "symbol-a--utensils",
-                "symbol-a--vehicle-front",
-                "symbol-a--vehicle-towed",
-                "symbol-a--vehicle-truck",
-                "symbol-a--vehicle-two",
                 "symbol-a--wombat"
             ]
         },
@@ -103,48 +100,49 @@
             "name": "symbol-b",
             "labels": [
                 "",
-                "symbol-b--arrow",
+                "symbol-b--arrow-assorted",
                 "symbol-b--arrow-bidirectional",
                 "symbol-b--arrow-bidirectional-divided",
-                "symbol-b--arrow-curved-down-left",
-                "symbol-b--arrow-curved-left",
-                "symbol-b--arrow-curved-left--arrow-curved-left-up--arrow-up-curved-right",
-                "symbol-b--arrow-curved-left--arrow-up-curved-left",
-                "symbol-b--arrow-curved-left--arrow-up-curved-right",
-                "symbol-b--arrow-curved-right",
-                "symbol-b--arrow-double-reverse-curve-right",
+                "symbol-b--arrow-consecutive-turns-left",
+                "symbol-b--arrow-consecutive-turns-right",
+                "symbol-b--arrow-consecutive-turns-right-tilted",
                 "symbol-b--arrow-double-sided",
-                "symbol-b--arrow-double-turn-right",
                 "symbol-b--arrow-down",
                 "symbol-b--arrow-down-left",
-                "symbol-b--arrow-down-left--arrow-down-right",
+                "symbol-b--arrow-down-left-curved",
                 "symbol-b--arrow-down-right",
+                "symbol-b--arrow-keep-left",
                 "symbol-b--arrow-keep-right",
+                "symbol-b--arrow-keep-right-divided",
+                "symbol-b--arrow-keep-right-two",
                 "symbol-b--arrow-left",
+                "symbol-b--arrow-left-curved",
                 "symbol-b--arrow-loop",
                 "symbol-b--arrow-merge",
                 "symbol-b--arrow-merge-left",
                 "symbol-b--arrow-merge-right",
-                "symbol-b--arrow-reverse-curve-left",
-                "symbol-b--arrow-reverse-curve-right",
-                "symbol-b--arrow-reversible",
                 "symbol-b--arrow-right",
+                "symbol-b--arrow-right-curved",
                 "symbol-b--arrow-roundabout",
                 "symbol-b--arrow-split",
                 "symbol-b--arrow-t-down",
                 "symbol-b--arrow-t-left",
                 "symbol-b--arrow-t-left-graphical",
                 "symbol-b--arrow-t-right",
+                "symbol-b--arrow-three-left-and-left-up-and-right",
+                "symbol-b--arrow-two-down-left-right",
+                "symbol-b--arrow-two-left-and-left-up",
+                "symbol-b--arrow-two-left-and-up-right",
+                "symbol-b--arrow-two-left-up-and-right",
+                "symbol-b--arrow-two-opposite-turns",
+                "symbol-b--arrow-two-up-right-and-right",
                 "symbol-b--arrow-u",
                 "symbol-b--arrow-u-left",
                 "symbol-b--arrow-u-right",
                 "symbol-b--arrow-up",
                 "symbol-b--arrow-up-curved-left",
-                "symbol-b--arrow-up-curved-left--arrow-curved-right",
                 "symbol-b--arrow-up-curved-right",
-                "symbol-b--arrow-up-curved-right--arrow-curved-right",
                 "symbol-b--arrow-up-right",
-                "symbol-b--arrow-up-winding",
                 "symbol-b--arrow-up-winding-left",
                 "symbol-b--arrow-up-winding-right",
                 "symbol-b--arrow-y",
@@ -161,9 +159,10 @@
                 "symbol-b--house",
                 "symbol-b--soccer-playing",
                 "symbol-b--stairs",
-                "symbol-b--table--parasol",
+                "symbol-b--street-stand",
                 "symbol-b--traffic-control",
                 "symbol-b--train",
+                "symbol-b--train-front",
                 "symbol-b--undefined"
             ]
         },
@@ -269,7 +268,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -669,7 +668,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--rectangle-wide",
-                "symbol-a": "symbol-a--vehicle-towed",
+                "symbol-a": "symbol-a--car-truck",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -690,7 +689,7 @@
                 "color": "color--yellow",
                 "shape": "shape--rectangle-tall",
                 "symbol-a": "symbol-a--truck",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -700,7 +699,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -710,7 +709,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -839,7 +838,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
@@ -849,7 +848,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--house",
                 "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
@@ -949,7 +948,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -959,7 +958,7 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--house",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -1039,8 +1038,8 @@
             "labels": {
                 "color": "color--blue",
                 "shape": "shape--rectangle-tall",
-                "symbol-a": "symbol-a--vehicle-front",
-                "symbol-b": "symbol-b--arrow",
+                "symbol-a": "symbol-a--car",
+                "symbol-b": "symbol-b--arrow-assorted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
@@ -1050,7 +1049,7 @@
                 "color": "color--blue",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow",
+                "symbol-b": "symbol-b--arrow-assorted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--p"
             }
@@ -1230,7 +1229,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-up-curved-left--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-two-left-up-and-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -1240,7 +1239,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left--arrow-up-curved-right",
+                "symbol-b": "symbol-b--arrow-two-left-and-up-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -1250,7 +1249,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--no-u-turn"
             }
@@ -1260,7 +1259,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left--arrow-up-curved-left",
+                "symbol-b": "symbol-b--arrow-two-left-and-left-up",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -1270,7 +1269,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-up-curved-right--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-two-up-right-and-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -1520,7 +1519,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-keep-right",
+                "symbol-b": "symbol-b--arrow-keep-right-divided",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -1849,7 +1848,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
@@ -1920,7 +1919,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--person",
-                "symbol-b": "symbol-b--table--parasol",
+                "symbol-b": "symbol-b--street-stand",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
@@ -1980,7 +1979,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
@@ -1990,7 +1989,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
@@ -2029,7 +2028,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--bicycle",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -2039,7 +2038,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--bicycle",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
@@ -2049,7 +2048,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -2059,7 +2058,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
@@ -2089,7 +2088,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -2109,7 +2108,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
@@ -2119,7 +2118,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
@@ -2129,7 +2128,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--vehicle-truck",
+                "symbol-a": "symbol-a--car-truck",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -2240,7 +2239,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
@@ -2250,7 +2249,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--slash-forward",
                 "text": "text--undefined"
             }
@@ -2500,7 +2499,7 @@
                 "color": "color--blue",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-down-left--arrow-down-right",
+                "symbol-b": "symbol-b--arrow-two-down-left-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2580,7 +2579,7 @@
                 "color": "color--white",
                 "shape": "shape--rectangle-tall",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-reversible",
+                "symbol-b": "symbol-b--arrow-two-opposite-turns",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--center-lane-only"
             }
@@ -2710,7 +2709,7 @@
                 "color": "color--white",
                 "shape": "shape--rectangle-tall",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-down-left",
+                "symbol-b": "symbol-b--arrow-down-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--stop-here-on-red"
             }
@@ -2740,7 +2739,7 @@
                 "color": "color--white",
                 "shape": "shape--rectangle-wide",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left--arrow-curved-left-up--arrow-up-curved-right",
+                "symbol-b": "symbol-b--arrow-three-left-and-left-up-and-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -2770,7 +2769,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -2790,7 +2789,7 @@
                 "color": "color--blue",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2820,7 +2819,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--only"
             }
@@ -2830,7 +2829,7 @@
                 "color": "color--blue",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2840,7 +2839,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2850,7 +2849,7 @@
                 "color": "color--yellow",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--person",
-                "symbol-b": "symbol-b--arrow",
+                "symbol-b": "symbol-b--arrow-assorted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--turning-vehicles"
             }
@@ -2919,7 +2918,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--vehicle-two",
+                "symbol-a": "symbol-a--car-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -3030,7 +3029,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3040,7 +3039,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3050,7 +3049,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3060,7 +3059,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3120,7 +3119,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-reverse-curve-left",
+                "symbol-b": "symbol-b--arrow-consecutive-turns-left",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3130,7 +3129,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-reverse-curve-left",
+                "symbol-b": "symbol-b--arrow-keep-left",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3140,7 +3139,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-reverse-curve-right",
+                "symbol-b": "symbol-b--arrow-consecutive-turns-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3150,7 +3149,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-reverse-curve-right",
+                "symbol-b": "symbol-b--arrow-keep-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3160,7 +3159,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-double-reverse-curve-right",
+                "symbol-b": "symbol-b--arrow-keep-right-two",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3170,7 +3169,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-double-turn-right",
+                "symbol-b": "symbol-b--arrow-consecutive-turns-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3219,7 +3218,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--falling-rocks",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -3290,7 +3289,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow",
+                "symbol-b": "symbol-b--arrow-assorted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--alphanumeric"
             }
@@ -3480,7 +3479,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-down-left--arrow-down-right",
+                "symbol-b": "symbol-b--arrow-two-down-left-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3649,8 +3648,8 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol-a": "symbol-a--train-front",
-                "symbol-b": "symbol-b--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--train-front",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3659,8 +3658,8 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol-a": "symbol-a--train",
-                "symbol-b": "symbol-b--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--train",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3669,8 +3668,8 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--train",
-                "symbol-b": "symbol-b--undefined",
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--train",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3889,7 +3888,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -3909,7 +3908,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -3919,7 +3918,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--vehicle-front",
+                "symbol-a": "symbol-a--car",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -4110,7 +4109,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-left",
+                "symbol-b": "symbol-b--arrow-left-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -4120,7 +4119,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -4130,7 +4129,7 @@
                 "color": "color--yellow",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-right-curved",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -4220,7 +4219,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-up-winding",
+                "symbol-b": "symbol-b--arrow-consecutive-turns-right-tilted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
