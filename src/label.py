@@ -8,7 +8,6 @@ import PyQt5.QtCore
 import PyQt5.QtGui
 import PyQt5.QtWidgets
 import random
-import sys
 
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
@@ -87,6 +86,11 @@ def comboBoxApplicationControlSlot():
 
     return
 
+def comboBoxLabelingControlSlot(combo_box_label, line_edit_label):
+    line_edit_label.setText(combo_box_label.currentText())
+
+    return
+
 def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
     label_text = line_edit.text().lower()
 
@@ -102,6 +106,11 @@ def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
 
     combo_box.addItem(label_text)
     combo_box.model().sort(0)
+
+    label_text_index = combo_box.findText(label_text)
+
+    if label_text_index >= 0:
+        combo_box.setCurrentIndex(label_text_index)
 
     return
 
@@ -206,6 +215,7 @@ def createLabelingControlWidget():
         for label_text in dataset["labels"]:
             combo_box_label.addItem(label_text)
 
+        combo_box_label.currentIndexChanged.connect(functools.partial(comboBoxLabelingControlSlot, combo_box_label, line_edit_label))
         combo_box_label.setFixedWidth(header.label_combo_box_width)
         combo_box_label.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
         group_box_label.setLayout(layout_label)
