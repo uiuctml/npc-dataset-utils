@@ -91,7 +91,6 @@
                 "symbol-a--truck-cargo",
                 "symbol-a--truck-two",
                 "symbol-a--undefined",
-                "symbol-a--utensils",
                 "symbol-a--wombat"
             ]
         },
@@ -103,8 +102,8 @@
                 "symbol-b--arrow-bidirectional",
                 "symbol-b--arrow-bidirectional-divided",
                 "symbol-b--arrow-consecutive-turns-left",
+                "symbol-b--arrow-consecutive-turns-left-tilted",
                 "symbol-b--arrow-consecutive-turns-right",
-                "symbol-b--arrow-consecutive-turns-right-tilted",
                 "symbol-b--arrow-double-sided",
                 "symbol-b--arrow-down",
                 "symbol-b--arrow-down-left",
@@ -112,8 +111,6 @@
                 "symbol-b--arrow-down-right",
                 "symbol-b--arrow-keep-left",
                 "symbol-b--arrow-keep-right",
-                "symbol-b--arrow-keep-right-divided",
-                "symbol-b--arrow-keep-right-two",
                 "symbol-b--arrow-left",
                 "symbol-b--arrow-left-curved",
                 "symbol-b--arrow-left-curved-smooth",
@@ -131,8 +128,8 @@
                 "symbol-b--arrow-t-left-graphical",
                 "symbol-b--arrow-t-right",
                 "symbol-b--arrow-three-left-and-left-up-and-right",
-                "symbol-b--arrow-two-down-left-right",
                 "symbol-b--arrow-two-down-up",
+                "symbol-b--arrow-two-keep-right",
                 "symbol-b--arrow-two-left-and-left-up",
                 "symbol-b--arrow-two-left-and-up-right",
                 "symbol-b--arrow-two-left-up-and-right",
@@ -244,8 +241,8 @@
                 "text--s",
                 "text--safety-area-chinese",
                 "text--stop",
-                "text--stop-japanese",
                 "text--stop-here-on-red",
+                "text--stop-japanese",
                 "text--turning-vehicles",
                 "text--two-hour-parking",
                 "text--undefined",
@@ -870,9 +867,9 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--utensils",
+                "symbol-a": "symbol-a--undefined",
                 "symbol-b": "symbol-b--undefined",
-                "symbol-c": "symbol-c--undefined",
+                "symbol-c": "symbol-c--slash-double",
                 "text": "text--undefined"
             }
         },
@@ -1511,7 +1508,7 @@
                 "color": "color--white",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-keep-right-divided",
+                "symbol-b": "symbol-b--arrow-keep-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2491,7 +2488,7 @@
                 "color": "color--blue",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-two-down-left-right",
+                "symbol-b": "symbol-b--arrow-down",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -2870,7 +2867,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--square",
-                "symbol-a": "symbol-a--truck",
+                "symbol-a": "symbol-a--truck-two",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--weight-limit"
@@ -3151,7 +3148,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-keep-right-two",
+                "symbol-b": "symbol-b--arrow-two-keep-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3471,7 +3468,7 @@
                 "color": "color--yellow",
                 "shape": "shape--diamond",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-two-down-left-right",
+                "symbol-b": "symbol-b--arrow-down",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -3481,7 +3478,7 @@
                 "color": "color--yellow",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--person",
-                "symbol-b": "symbol-b--train",
+                "symbol-b": "symbol-b--train-front",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -4211,7 +4208,7 @@
                 "color": "color--white",
                 "shape": "shape--triangle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-consecutive-turns-right-tilted",
+                "symbol-b": "symbol-b--arrow-consecutive-turns-left-tilted",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
