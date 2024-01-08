@@ -37,6 +37,7 @@
                 "symbol-a--airplane",
                 "symbol-a--bed",
                 "symbol-a--bump",
+                "symbol-a--bump-multiple",
                 "symbol-a--bus",
                 "symbol-a--bus-front",
                 "symbol-a--camp",
@@ -135,6 +136,7 @@
                 "symbol-b--arrow-two-left-and-up-right",
                 "symbol-b--arrow-two-left-up-and-right",
                 "symbol-b--arrow-two-opposite-turns",
+                "symbol-b--arrow-two-up",
                 "symbol-b--arrow-two-up-right-and-right",
                 "symbol-b--arrow-u",
                 "symbol-b--arrow-u-left",
@@ -1879,7 +1881,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--undefined",
+                "symbol-b": "symbol-b--bicycle",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
@@ -1958,7 +1960,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--circle",
-                "symbol-a": "symbol-a--undefined",
+                "symbol-a": "symbol-a--truck",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
@@ -2099,7 +2101,7 @@
                 "color": "color--white",
                 "shape": "shape--circle",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-up",
+                "symbol-b": "symbol-b--arrow-two-up",
                 "symbol-c": "symbol-c--slash-backward",
                 "text": "text--undefined"
             }
@@ -3179,7 +3181,7 @@
                 "color": "color--yellow",
                 "shape": "shape--square",
                 "symbol-a": "symbol-a--undefined",
-                "symbol-b": "symbol-b--arrow-up-curved-right--arrow-curved-right",
+                "symbol-b": "symbol-b--arrow-two-up-right-and-right",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
             }
@@ -4158,7 +4160,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--bump",
+                "symbol-a": "symbol-a--bump-multiple",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -4168,7 +4170,7 @@
             "labels": {
                 "color": "color--white",
                 "shape": "shape--triangle",
-                "symbol-a": "symbol-a--bump",
+                "symbol-a": "symbol-a--bump-multiple",
                 "symbol-b": "symbol-b--undefined",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
@@ -4178,7 +4180,7 @@
             "labels": {
                 "color": "color--yellow",
                 "shape": "shape--diamond",
-                "symbol-a": "symbol-a--bump",
+                "symbol-a": "symbol-a--bump-multiple",
                 "symbol-b": "symbol-b--arrow-up",
                 "symbol-c": "symbol-c--undefined",
                 "text": "text--undefined"
