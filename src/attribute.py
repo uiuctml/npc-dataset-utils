@@ -9,18 +9,28 @@ import PyQt5.QtGui
 import PyQt5.QtWidgets
 import random
 
+attribute_config = {}
 application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control_attribute = PyQt5.QtWidgets.QComboBox()
 combo_box_application_control_label = PyQt5.QtWidgets.QComboBox()
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
 
-file_attribute_config = open(os.path.join(header.config_dir, header.attribute_config_file_name), "r")
-attribute_config = json.load(file_attribute_config)
-file_attribute_config.close()
-
 def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = False):
     attribute = combo_box_application_control_attribute.currentText()
     label_attribute = combo_box_application_control_label.currentText()
+
+    if attribute == "" or label_attribute == "":
+        for i in range(0, group_box_viewer.layout().count()):
+            label_viewer = group_box_viewer.layout().itemAt(i).layout().itemAt(0).widget()
+            label_label = group_box_viewer.layout().itemAt(i).layout().itemAt(1).widget()
+            pixmap = PyQt5.QtGui.QPixmap(header.attribute_viewer_width, header.attribute_viewer_height)
+            pixmap.fill(PyQt5.QtCore.Qt.black)
+
+            label_viewer.setPixmap(pixmap)
+            label_label.setText("N/A")
+
+        return
+
     labels_original = []
     file_paths_image = []
 
@@ -102,18 +112,34 @@ def pushButtonNextLabelSlot():
 
     return
 
-def createApplicationControlWidget():
-    group_box_application_control = PyQt5.QtWidgets.QGroupBox()
-    layout_application_control = PyQt5.QtWidgets.QHBoxLayout()
-    push_button_shuffle_viewer_images_application_control = PyQt5.QtWidgets.QPushButton()
-    push_button_shuffle_viewer_labels_application_control = PyQt5.QtWidgets.QPushButton()
-    push_button_last_label_application_control = PyQt5.QtWidgets.QPushButton()
-    push_button_next_label_application_control = PyQt5.QtWidgets.QPushButton()
+def pushButtonReloadSlot():
+    global attribute_config
+
+    file_attribute_config = open(os.path.join(header.config_dir, header.attribute_config_file_name), "r")
+    attribute_config = json.load(file_attribute_config)
+    file_attribute_config.close()
+
+    combo_box_application_control_attribute.clear()
 
     for attribute in attribute_config["attributes"]:
         combo_box_application_control_attribute.addItem(attribute["name"])
 
     comboBoxApplicationControlAttributeSlot()
+
+    return
+
+def createApplicationControlWidget():
+    group_box_application_control = PyQt5.QtWidgets.QGroupBox()
+    layout_application_control = PyQt5.QtWidgets.QVBoxLayout()
+    layout_application_control_upper = PyQt5.QtWidgets.QHBoxLayout()
+    layout_application_control_lower = PyQt5.QtWidgets.QHBoxLayout()
+    push_button_shuffle_viewer_images_application_control = PyQt5.QtWidgets.QPushButton()
+    push_button_shuffle_viewer_labels_application_control = PyQt5.QtWidgets.QPushButton()
+    push_button_last_label_application_control = PyQt5.QtWidgets.QPushButton()
+    push_button_next_label_application_control = PyQt5.QtWidgets.QPushButton()
+    push_button_reload_application_control = PyQt5.QtWidgets.QPushButton()
+
+    pushButtonReloadSlot()
 
     combo_box_application_control_attribute.currentIndexChanged.connect(comboBoxApplicationControlAttributeSlot)
     combo_box_application_control_attribute.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
@@ -122,12 +148,15 @@ def createApplicationControlWidget():
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
     group_box_application_control.setTitle("Application Control")
-    layout_application_control.addWidget(push_button_last_label_application_control)
-    layout_application_control.addWidget(combo_box_application_control_attribute)
-    layout_application_control.addWidget(combo_box_application_control_label)
-    layout_application_control.addWidget(push_button_shuffle_viewer_images_application_control)
-    layout_application_control.addWidget(push_button_shuffle_viewer_labels_application_control)
-    layout_application_control.addWidget(push_button_next_label_application_control)
+    layout_application_control.addLayout(layout_application_control_upper)
+    layout_application_control.addLayout(layout_application_control_lower)
+    layout_application_control_lower.addWidget(push_button_last_label_application_control)
+    layout_application_control_lower.addWidget(push_button_reload_application_control)
+    layout_application_control_lower.addWidget(push_button_shuffle_viewer_images_application_control)
+    layout_application_control_lower.addWidget(push_button_shuffle_viewer_labels_application_control)
+    layout_application_control_lower.addWidget(push_button_next_label_application_control)
+    layout_application_control_upper.addWidget(combo_box_application_control_attribute)
+    layout_application_control_upper.addWidget(combo_box_application_control_label)
     push_button_shuffle_viewer_images_application_control.clicked.connect(functools.partial(updateViewerWidget, True, False))
     push_button_shuffle_viewer_images_application_control.setText("Shuffle Viewer Images")
     push_button_shuffle_viewer_labels_application_control.clicked.connect(functools.partial(updateViewerWidget, False, True))
@@ -136,6 +165,8 @@ def createApplicationControlWidget():
     push_button_last_label_application_control.setText("Last Label")
     push_button_next_label_application_control.clicked.connect(pushButtonNextLabelSlot)
     push_button_next_label_application_control.setText("Next Label")
+    push_button_reload_application_control.clicked.connect(pushButtonReloadSlot)
+    push_button_reload_application_control.setText("Reload")
 
     return group_box_application_control
 
@@ -177,7 +208,6 @@ def createWindowLayout():
     return layout_window
 
 def main():
-
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
