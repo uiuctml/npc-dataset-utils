@@ -10,7 +10,7 @@ corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
 
-dataset_config_file_name = "visat.json"
+dataset_config_file_name = "mtsd.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../mapillary-dataset"
@@ -72,7 +72,7 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_config_file_name = "split_percentage.json.gz"
+split_config_file_name = "split_mtsd.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
