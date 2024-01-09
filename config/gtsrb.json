@@ -7,6 +7,12 @@
             ]
         },
         {
+            "name": "overlay",
+            "labels": [
+                ""
+            ]
+        },
+        {
             "name": "shape",
             "labels": [
                 ""
@@ -14,12 +20,6 @@
         },
         {
             "name": "symbol",
-            "labels": [
-                ""
-            ]
-        },
-        {
-            "name": "border",
             "labels": [
                 ""
             ]
@@ -71,5 +71,349 @@
         "42": "regulatory--end-of-no-overtaking-by-heavy-goods-vehicles"
     },
     "mappings": {
+        "regulatory--maximum-speed-limit-20": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-30": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-50": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-60": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-70": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-80": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--end-of-maximum-speed-limit-80": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-100": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--maximum-speed-limit-120": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--no-overtaking": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--no-overtaking-by-heavy-goods-vehicles": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--crossroads": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--priority-road": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--yield": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--stop": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--road-closed-to-vehicles": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--no-heavy-goods-vehicles": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--no-entry": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--other-danger": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--curve-left": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--curve-right": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--double-curve-first-left": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--uneven-road": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--slippery-road-surface": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--road-narrows-right": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--roadworks": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--traffic-signals": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--pedestrians-crossing": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--children": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--bicycles-crossing": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--emergency-vehicles": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "warning--wild-animals": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--end-of-prohibition": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--turn-right-ahead": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--turn-left-ahead": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--go-straight": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--go-straight-or-turn-right": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--go-straight-or-turn-left": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--keep-right": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--keep-left": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--roundabout": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--end-of-no-overtaking": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        },
+        "regulatory--end-of-no-overtaking-by-heavy-goods-vehicles": {
+            "labels": {
+                "color": "",
+                "overlay": "",
+                "shape": "",
+                "symbol": ""
+            }
+        }
     }
 }
