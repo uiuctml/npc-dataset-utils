@@ -61,7 +61,7 @@ def verifyDatasetConfigMissing(config_dataset):
             labels_dataset_set_dataset.add(label_dataset)
 
     for label_original in config_dataset["mappings"].keys():
-        labels_original = os.listdir(header.dataset_dir_images_split_original_train)
+        labels_original = os.listdir(header.dataset_dir_images_sliced)
 
         if label_original not in labels_original:
             logger.log_warn("Unknown label: \"" + label_original + "\".")
