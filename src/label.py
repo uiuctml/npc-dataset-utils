@@ -176,6 +176,7 @@ def createApplicationControlWidget():
         combo_box_application_control.addItem(label_text)
 
     combo_box_application_control.currentIndexChanged.connect(comboBoxApplicationControlSlot)
+    combo_box_application_control.model().sort(0)
     combo_box_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
