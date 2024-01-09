@@ -87,7 +87,8 @@ def comboBoxApplicationControlSlot():
     return
 
 def comboBoxLabelingControlSlot(combo_box_label, line_edit_label):
-    line_edit_label.setText(combo_box_label.currentText())
+    if combo_box_label.currentText() != "":
+        line_edit_label.setText(combo_box_label.currentText())
 
     return
 
