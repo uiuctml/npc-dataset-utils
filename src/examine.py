@@ -23,7 +23,7 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
         for i in range(0, group_box_viewer.layout().count()):
             label_viewer = group_box_viewer.layout().itemAt(i).layout().itemAt(0).widget()
             label_label = group_box_viewer.layout().itemAt(i).layout().itemAt(1).widget()
-            pixmap = PyQt5.QtGui.QPixmap(header.attribute_viewer_width, header.attribute_viewer_height)
+            pixmap = PyQt5.QtGui.QPixmap(header.examine_viewer_width, header.examine_viewer_height)
             pixmap.fill(PyQt5.QtCore.Qt.black)
 
             label_viewer.setPixmap(pixmap)
@@ -41,7 +41,7 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
             labels_original.append(label_original)
 
     for label_original in labels_original:
-        file_path_images = os.path.join(header.attribute_dataset_dir_images, label_original)
+        file_path_images = os.path.join(header.examine_dataset_dir_images, label_original)
 
         if not os.path.isdir(file_path_images):
             continue
@@ -52,7 +52,7 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
             file_names_images = random.sample(file_names_images, len(file_names_images))
 
         for file_name_images in file_names_images:
-            file_path_image = os.path.join(header.attribute_dataset_dir_images, label_original, file_name_images)
+            file_path_image = os.path.join(header.examine_dataset_dir_images, label_original, file_name_images)
 
             if os.path.isfile(file_path_image):
                 file_paths_image.append((file_path_image, label_original))
@@ -71,11 +71,11 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
             label_original_elided = label_label_font_metrics.elidedText(label_original, PyQt5.QtCore.Qt.ElideRight, label_label.width())
             pixmap = PyQt5.QtGui.QPixmap(file_paths_image[i][0])
 
-            label_viewer.setPixmap(pixmap.scaled(header.attribute_viewer_width, header.attribute_viewer_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
+            label_viewer.setPixmap(pixmap.scaled(header.examine_viewer_width, header.examine_viewer_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
             label_label.setText(label_original_elided)
             label_label.setToolTip(label_original)
         else:
-            pixmap = PyQt5.QtGui.QPixmap(header.attribute_viewer_width, header.attribute_viewer_height)
+            pixmap = PyQt5.QtGui.QPixmap(header.examine_viewer_width, header.examine_viewer_height)
             pixmap.fill(PyQt5.QtCore.Qt.black)
 
             label_viewer.setPixmap(pixmap)
@@ -115,7 +115,7 @@ def pushButtonNextLabelSlot():
 def pushButtonReloadSlot():
     global attribute_config
 
-    file_attribute_config = open(os.path.join(header.config_dir, header.attribute_config_file_name), "r")
+    file_attribute_config = open(os.path.join(header.config_dir, header.examine_config_file_name), "r")
     attribute_config = json.load(file_attribute_config)
     file_attribute_config.close()
 
@@ -177,11 +177,11 @@ def createViewerWidget():
     group_box_viewer.setLayout(layout_viewer)
     group_box_viewer.setTitle("Viewer")
 
-    for i in range(0, header.attribute_viewer_count):
+    for i in range(0, header.examine_viewer_count):
         label_label = PyQt5.QtWidgets.QLabel()
         label_viewer = PyQt5.QtWidgets.QLabel()
         layout = PyQt5.QtWidgets.QVBoxLayout()
-        pixmap = PyQt5.QtGui.QPixmap(header.attribute_viewer_width, header.attribute_viewer_height)
+        pixmap = PyQt5.QtGui.QPixmap(header.examine_viewer_width, header.examine_viewer_height)
 
         pixmap.fill(PyQt5.QtCore.Qt.black)
 
@@ -190,7 +190,7 @@ def createViewerWidget():
 
         layout.addWidget(label_viewer)
         layout.addWidget(label_label)
-        layout_viewer.addLayout(layout, i // header.attribute_viewer_count_col, i % header.attribute_viewer_count_col)
+        layout_viewer.addLayout(layout, i // header.examine_viewer_count_col, i % header.examine_viewer_count_col)
 
     return group_box_viewer
 

@@ -10,10 +10,10 @@ corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
 
-dataset_config_file_name = "mtsd.json"
+dataset_config_file_name = "gtsrb.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../mapillary-dataset"
+dataset_dir = "../../gtsrb-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
@@ -25,20 +25,23 @@ dataset_dir_images_split_original = dataset_dir_images_split + "/original"
 dataset_dir_images_split_original_test = dataset_dir_images_split_original + "/test"
 dataset_dir_images_split_original_train = dataset_dir_images_split_original + "/train"
 dataset_dir_images_split_original_validate = dataset_dir_images_split_original + "/validate"
-dataset_file_extension_annotations = ".json"
-dataset_file_extension_images = ".jpg"
+dataset_file_extension_annotations = ".csv"
+dataset_file_extension_images = ".png"
 dataset_file_name_split_test = "test.txt"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
-attribute_combo_box_width = 250
-attribute_config_file_name = dataset_config_file_name
-attribute_dataset_dir_images = dataset_dir_images_sliced
-attribute_viewer_height = 150
-attribute_viewer_width = 150
-attribute_viewer_count = 24
-attribute_viewer_count_col = 6
+examine_combo_box_width = 250
+examine_config_file_name = dataset_config_file_name
+examine_dataset_dir_images = dataset_dir_images_sliced
+examine_viewer_height = 150
+examine_viewer_width = 150
+examine_viewer_count = 24
+examine_viewer_count_col = 6
+
+gtsrb_config_file_name = dataset_config_file_name
+gtsrb_dataset_dir_images = dataset_dir_images_sliced
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
