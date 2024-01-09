@@ -15,13 +15,19 @@ def main():
     progress_bar = tqdm.tqdm(total = len(dir_names))
 
     for dir_name in dir_names:
+        if dir_name not in gtsrb_config["labels"]:
+            dir_name_counter += 1
+            continue
+
         label_name = gtsrb_config["labels"][dir_name]
 
         progress_bar.set_description_str("[INFO]: Renaming \"" + dir_name + "\" to \"" + label_name + "\"")
         progress_bar.n = dir_name_counter
         progress_bar.refresh()
 
-        os.rename(os.path.join(header.gtsrb_dataset_dir_images, dir_name), os.path.join(header.gtsrb_dataset_dir_images, label_name))
+        if os.path.isdir(os.path.join(header.gtsrb_dataset_dir_images, dir_name)):
+            os.rename(os.path.join(header.gtsrb_dataset_dir_images, dir_name), os.path.join(header.gtsrb_dataset_dir_images, label_name))
+
         dir_name_counter += 1
 
     progress_bar.close()
