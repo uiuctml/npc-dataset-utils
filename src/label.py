@@ -176,9 +176,10 @@ def createApplicationControlWidget():
     for label_text in label_config["mappings"].keys():
         combo_box_application_control.addItem(label_text)
 
-    combo_box_application_control.currentIndexChanged.connect(comboBoxApplicationControlSlot)
     combo_box_application_control.model().sort(0)
     combo_box_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
+    combo_box_application_control.setCurrentIndex(0)
+    combo_box_application_control.currentIndexChanged.connect(comboBoxApplicationControlSlot)
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
     group_box_application_control.setTitle("Application Control")
