@@ -36,7 +36,7 @@ def updateLabelingControlWidget():
             combo_boxes_label_labeling_control[dataset_name].addItem(label_text)
 
             for dataset in label_config["attributes"]:
-                if dataset["name"] == dataset_name and label_text not in dataset["labels"]:
+                if dataset["name"] == dataset_name:
                     dataset["labels"].append(label_text)
                     updateLabelConfig()
 
@@ -133,8 +133,15 @@ def pushButtonReloadSlot():
 
     sortLabelConfigAttributes(label_config)
 
-    for combo_box_label_labeling_control in combo_boxes_label_labeling_control.values():
-        combo_box_label_labeling_control.clear()
+    for dataset in label_config["attributes"]:
+        if "" not in dataset["labels"]:
+            dataset["labels"].insert(0, "")
+            updateLabelConfig()
+
+        combo_boxes_label_labeling_control[dataset["name"]].clear()
+
+        for label_text in dataset["labels"]:
+            combo_boxes_label_labeling_control[dataset["name"]].addItem(label_text)
 
     combo_box_application_control.clear()
 
@@ -204,8 +211,6 @@ def createApplicationControlWidget():
     push_button_save_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_save_and_last_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_save_and_next_application_control = PyQt5.QtWidgets.QPushButton()
-
-    pushButtonReloadSlot()
 
     combo_box_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
     combo_box_application_control.currentIndexChanged.connect(comboBoxApplicationControlSlot)
@@ -318,15 +323,21 @@ def sortLabelConfigAttributes(label_config):
     return
 
 def main():
+    global label_config
+
+    file_label_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
+    label_config = json.load(file_label_config)
+    file_label_config.close()
+
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
     window.setWindowTitle("VISAT Labeling Tool")
 
-    comboBoxApplicationControlSlot()
-
     window.show()
     window.setFixedSize(window.size())
+
+    pushButtonReloadSlot()
 
     exit(application.exec())
 

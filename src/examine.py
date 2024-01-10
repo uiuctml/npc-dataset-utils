@@ -139,8 +139,6 @@ def createApplicationControlWidget():
     push_button_next_label_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_reload_application_control = PyQt5.QtWidgets.QPushButton()
 
-    pushButtonReloadSlot()
-
     combo_box_application_control_attribute.currentIndexChanged.connect(comboBoxApplicationControlAttributeSlot)
     combo_box_application_control_attribute.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
     combo_box_application_control_label.currentIndexChanged.connect(functools.partial(updateViewerWidget, False, False))
@@ -208,6 +206,12 @@ def createWindowLayout():
     return layout_window
 
 def main():
+    global attribute_config
+
+    file_attribute_config = open(os.path.join(header.config_dir, header.examine_config_file_name), "r")
+    attribute_config = json.load(file_attribute_config)
+    file_attribute_config.close()
+
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
@@ -216,7 +220,7 @@ def main():
     window.show()
     window.setFixedSize(window.size())
 
-    updateViewerWidget()
+    pushButtonReloadSlot()
 
     exit(application.exec())
 
