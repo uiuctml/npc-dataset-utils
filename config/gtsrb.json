@@ -29,16 +29,6 @@
             ]
         },
         {
-            "name": "symbol-general",
-            "labels": [
-                "",
-                "symbol-general--arrows",
-                "symbol-general--assorted",
-                "symbol-general--numbers",
-                "symbol-general--undefined"
-            ]
-        },
-        {
             "name": "symbol-arrow",
             "labels": [
                 "",
@@ -52,21 +42,6 @@
                 "symbol-arrow--up-and-left",
                 "symbol-arrow--up-and-right",
                 "symbol-arrow--undefined"
-            ]
-        },
-        {
-            "name": "symbol-number",
-            "labels": [
-                "",
-                "symbol-number--100",
-                "symbol-number--120",
-                "symbol-number--20",
-                "symbol-number--30",
-                "symbol-number--50",
-                "symbol-number--60",
-                "symbol-number--70",
-                "symbol-number--80",
-                "symbol-number--undefined"
             ]
         },
         {
@@ -89,6 +64,31 @@
                 "symbol-assorted--traffic-signal",
                 "symbol-assorted--truck",
                 "symbol-assorted--undefined"
+            ]
+        },
+        {
+            "name": "symbol-general",
+            "labels": [
+                "",
+                "symbol-general--arrows",
+                "symbol-general--assorted",
+                "symbol-general--numbers",
+                "symbol-general--undefined"
+            ]
+        },
+        {
+            "name": "symbol-number",
+            "labels": [
+                "",
+                "symbol-number--100",
+                "symbol-number--120",
+                "symbol-number--20",
+                "symbol-number--30",
+                "symbol-number--50",
+                "symbol-number--60",
+                "symbol-number--70",
+                "symbol-number--80",
+                "symbol-number--undefined"
             ]
         }
     ],
@@ -143,10 +143,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--20",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--20"
             }
         },
         "regulatory--maximum-speed-limit-30": {
@@ -154,10 +154,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--30",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--30"
             }
         },
         "regulatory--maximum-speed-limit-50": {
@@ -165,10 +165,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--50",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--50"
             }
         },
         "regulatory--maximum-speed-limit-60": {
@@ -176,10 +176,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--60",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--60"
             }
         },
         "regulatory--maximum-speed-limit-70": {
@@ -187,10 +187,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--70",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--70"
             }
         },
         "regulatory--maximum-speed-limit-80": {
@@ -198,10 +198,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--80",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--80"
             }
         },
         "regulatory--end-of-maximum-speed-limit-80": {
@@ -209,10 +209,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--80",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--80"
             }
         },
         "regulatory--maximum-speed-limit-100": {
@@ -220,10 +220,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--100",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--100"
             }
         },
         "regulatory--maximum-speed-limit-120": {
@@ -231,10 +231,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--numbers",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--120",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--numbers",
+                "symbol-number": "symbol-number--120"
             }
         },
         "regulatory--no-overtaking": {
@@ -242,10 +242,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--car-two"
+                "symbol-assorted": "symbol-assorted--car-two",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--no-overtaking-by-heavy-goods-vehicles": {
@@ -253,10 +253,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--car-truck"
+                "symbol-assorted": "symbol-assorted--car-truck",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--crossroads": {
@@ -264,10 +264,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--up",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--priority-road": {
@@ -275,10 +275,10 @@
                 "color": "color--white",
                 "overlay": "overlay--undefined",
                 "shape": "shape--diamond",
-                "symbol-general": "symbol-general--undefined",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--undefined",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--yield": {
@@ -286,10 +286,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--undefined",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--undefined",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--stop": {
@@ -297,10 +297,10 @@
                 "color": "color--red",
                 "overlay": "overlay--undefined",
                 "shape": "shape--octagon",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--stop"
+                "symbol-assorted": "symbol-assorted--stop",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--road-closed-to-vehicles": {
@@ -308,10 +308,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--undefined",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--undefined",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--no-heavy-goods-vehicles": {
@@ -319,10 +319,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--truck"
+                "symbol-assorted": "symbol-assorted--truck",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--no-entry": {
@@ -330,10 +330,10 @@
                 "color": "color--red",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--undefined",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--undefined",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--other-danger": {
@@ -341,10 +341,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--exclamation-mark"
+                "symbol-assorted": "symbol-assorted--exclamation-mark",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--curve-left": {
@@ -352,10 +352,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--left",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--curve-right": {
@@ -363,10 +363,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--right",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--double-curve-first-left": {
@@ -374,10 +374,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--consecutive-turns",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--uneven-road": {
@@ -385,10 +385,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--bump"
+                "symbol-assorted": "symbol-assorted--bump",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--slippery-road-surface": {
@@ -396,10 +396,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--car"
+                "symbol-assorted": "symbol-assorted--car",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--road-narrows-right": {
@@ -407,10 +407,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--road-narrows"
+                "symbol-assorted": "symbol-assorted--road-narrows",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--roadworks": {
@@ -418,10 +418,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--roadworks"
+                "symbol-assorted": "symbol-assorted--roadworks",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--traffic-signals": {
@@ -429,10 +429,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--traffic-signal"
+                "symbol-assorted": "symbol-assorted--traffic-signal",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--pedestrians-crossing": {
@@ -440,10 +440,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--person"
+                "symbol-assorted": "symbol-assorted--person",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--children": {
@@ -451,10 +451,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--person-two"
+                "symbol-assorted": "symbol-assorted--person-two",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--bicycles-crossing": {
@@ -462,10 +462,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--bicycle"
+                "symbol-assorted": "symbol-assorted--bicycle",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--ice-or-snow": {
@@ -473,10 +473,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--ice-or-snow"
+                "symbol-assorted": "symbol-assorted--ice-or-snow",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "warning--wild-animals": {
@@ -484,10 +484,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--deer"
+                "symbol-assorted": "symbol-assorted--deer",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--end-of-prohibition": {
@@ -495,10 +495,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--undefined",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--undefined",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--turn-right-ahead": {
@@ -506,10 +506,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--right",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--turn-left-ahead": {
@@ -517,10 +517,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--left",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--go-straight": {
@@ -528,10 +528,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--up",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--go-straight-or-turn-right": {
@@ -539,10 +539,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--up-and-right",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--go-straight-or-turn-left": {
@@ -550,10 +550,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--up-and-left",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--keep-right": {
@@ -561,10 +561,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--down-right",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--keep-left": {
@@ -572,10 +572,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--down-left",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--roundabout": {
@@ -583,10 +583,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--arrows",
                 "symbol-arrow": "symbol-arrow--roundabout",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--undefined"
+                "symbol-assorted": "symbol-assorted--undefined",
+                "symbol-general": "symbol-general--arrows",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--end-of-no-overtaking": {
@@ -594,10 +594,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--car-two"
+                "symbol-assorted": "symbol-assorted--car-two",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         },
         "regulatory--end-of-no-overtaking-by-heavy-goods-vehicles": {
@@ -605,10 +605,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-general": "symbol-general--assorted",
                 "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-number": "symbol-number--undefined",
-                "symbol-assorted": "symbol-assorted--car-truck"
+                "symbol-assorted": "symbol-assorted--car-truck",
+                "symbol-general": "symbol-general--assorted",
+                "symbol-number": "symbol-number--undefined"
             }
         }
     }
