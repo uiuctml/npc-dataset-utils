@@ -29,42 +29,66 @@
             ]
         },
         {
-            "name": "symbol",
+            "name": "symbol-a",
             "labels": [
                 "",
-                "symbol--100",
-                "symbol--120",
-                "symbol--20",
-                "symbol--30",
-                "symbol--50",
-                "symbol--60",
-                "symbol--70",
-                "symbol--80",
-                "symbol--arrow-consecutive-turns",
-                "symbol--arrow-down-left",
-                "symbol--arrow-down-right",
-                "symbol--arrow-left",
-                "symbol--arrow-right",
-                "symbol--arrow-roundabout",
-                "symbol--arrow-up",
-                "symbol--arrow-up-and-left",
-                "symbol--arrow-up-and-right",
-                "symbol--bicycle",
-                "symbol--bump",
-                "symbol--car",
-                "symbol--car-truck",
-                "symbol--car-two",
-                "symbol--deer",
-                "symbol--exclamation-mark",
-                "symbol--ice-or-snow",
-                "symbol--person",
-                "symbol--person-two",
-                "symbol--road-narrows",
-                "symbol--roadworks",
-                "symbol--stop",
-                "symbol--traffic-signal",
-                "symbol--truck",
-                "symbol--undefined"
+                "symbol-a--arrows",
+                "symbol-a--assorted",
+                "symbol-a--numbers",
+                "symbol-a--undefined"
+            ]
+        },
+        {
+            "name": "symbol-b",
+            "labels": [
+                "",
+                "symbol-b--arrow-consecutive-turns",
+                "symbol-b--arrow-down-left",
+                "symbol-b--arrow-down-right",
+                "symbol-b--arrow-left",
+                "symbol-b--arrow-right",
+                "symbol-b--arrow-roundabout",
+                "symbol-b--arrow-up",
+                "symbol-b--arrow-up-and-left",
+                "symbol-b--arrow-up-and-right",
+                "symbol-b--undefined"
+            ]
+        },
+        {
+            "name": "symbol-c",
+            "labels": [
+                "",
+                "symbol-c--100",
+                "symbol-c--120",
+                "symbol-c--20",
+                "symbol-c--30",
+                "symbol-c--50",
+                "symbol-c--60",
+                "symbol-c--70",
+                "symbol-c--80",
+                "symbol-c--undefined"
+            ]
+        },
+        {
+            "name": "symbol-d",
+            "labels": [
+                "",
+                "symbol-d--bicycle",
+                "symbol-d--bump",
+                "symbol-d--car",
+                "symbol-d--car-truck",
+                "symbol-d--car-two",
+                "symbol-d--deer",
+                "symbol-d--exclamation-mark",
+                "symbol-d--ice-or-snow",
+                "symbol-d--person",
+                "symbol-d--person-two",
+                "symbol-d--road-narrows",
+                "symbol-d--roadworks",
+                "symbol-d--stop",
+                "symbol-d--traffic-signal",
+                "symbol-d--truck",
+                "symbol-d--undefined"
             ]
         }
     ],
@@ -119,7 +143,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--20"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--20",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-30": {
@@ -127,7 +154,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--30"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--30",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-50": {
@@ -135,7 +165,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--50"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--50",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-60": {
@@ -143,7 +176,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--60"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--60",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-70": {
@@ -151,7 +187,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--70"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--70",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-80": {
@@ -159,7 +198,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--80"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--80",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--end-of-maximum-speed-limit-80": {
@@ -167,7 +209,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol": "symbol--80"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--80",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-100": {
@@ -175,7 +220,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--100"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--100",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--maximum-speed-limit-120": {
@@ -183,7 +231,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--120"
+                "symbol-a": "symbol-a--numbers",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--120",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--no-overtaking": {
@@ -191,7 +242,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--car-two"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--car-two"
             }
         },
         "regulatory--no-overtaking-by-heavy-goods-vehicles": {
@@ -199,7 +253,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--car-truck"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--car-truck"
             }
         },
         "warning--crossroads": {
@@ -207,7 +264,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow-up"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-up",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--priority-road": {
@@ -215,7 +275,10 @@
                 "color": "color--white",
                 "overlay": "overlay--undefined",
                 "shape": "shape--diamond",
-                "symbol": "symbol--undefined"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--yield": {
@@ -223,7 +286,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--undefined"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--stop": {
@@ -231,7 +297,10 @@
                 "color": "color--red",
                 "overlay": "overlay--undefined",
                 "shape": "shape--octagon",
-                "symbol": "symbol--stop"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--stop"
             }
         },
         "regulatory--road-closed-to-vehicles": {
@@ -239,7 +308,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--no-heavy-goods-vehicles": {
@@ -247,7 +319,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--circle",
-                "symbol": "symbol--truck"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--truck"
             }
         },
         "regulatory--no-entry": {
@@ -255,7 +330,10 @@
                 "color": "color--red",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "warning--other-danger": {
@@ -263,7 +341,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--exclamation-mark"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--exclamation-mark"
             }
         },
         "warning--curve-left": {
@@ -271,7 +352,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow-left"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-left",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "warning--curve-right": {
@@ -279,7 +363,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow-right"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-right",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "warning--double-curve-first-left": {
@@ -287,7 +374,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--arrow-consecutive-turns"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-consecutive-turns",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "warning--uneven-road": {
@@ -295,7 +385,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--bump"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--bump"
             }
         },
         "warning--slippery-road-surface": {
@@ -303,7 +396,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--car"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--car"
             }
         },
         "warning--road-narrows-right": {
@@ -311,7 +407,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--road-narrows"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--road-narrows"
             }
         },
         "warning--roadworks": {
@@ -319,7 +418,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--roadworks"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--roadworks"
             }
         },
         "warning--traffic-signals": {
@@ -327,7 +429,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--traffic-signal"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--traffic-signal"
             }
         },
         "warning--pedestrians-crossing": {
@@ -335,7 +440,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--person"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--person"
             }
         },
         "warning--children": {
@@ -343,7 +451,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--person-two"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--person-two"
             }
         },
         "warning--bicycles-crossing": {
@@ -351,7 +462,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--bicycle"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--bicycle"
             }
         },
         "warning--ice-or-snow": {
@@ -359,7 +473,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--ice-or-snow"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--ice-or-snow"
             }
         },
         "warning--wild-animals": {
@@ -367,7 +484,10 @@
                 "color": "color--white",
                 "overlay": "overlay--border",
                 "shape": "shape--triangle",
-                "symbol": "symbol--deer"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--deer"
             }
         },
         "regulatory--end-of-prohibition": {
@@ -375,7 +495,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol": "symbol--undefined"
+                "symbol-a": "symbol-a--undefined",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--turn-right-ahead": {
@@ -383,7 +506,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-right"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-right",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--turn-left-ahead": {
@@ -391,7 +517,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-left"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-left",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--go-straight": {
@@ -399,7 +528,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-up"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-up",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--go-straight-or-turn-right": {
@@ -407,7 +539,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-up-and-right"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-up-and-right",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--go-straight-or-turn-left": {
@@ -415,7 +550,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-up-and-left"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-up-and-left",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--keep-right": {
@@ -423,7 +561,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-down-right"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-down-right",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--keep-left": {
@@ -431,7 +572,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-down-left"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-down-left",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--roundabout": {
@@ -439,7 +583,10 @@
                 "color": "color--blue",
                 "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol": "symbol--arrow-roundabout"
+                "symbol-a": "symbol-a--arrows",
+                "symbol-b": "symbol-b--arrow-roundabout",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--undefined"
             }
         },
         "regulatory--end-of-no-overtaking": {
@@ -447,7 +594,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol": "symbol--car-two"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--car-two"
             }
         },
         "regulatory--end-of-no-overtaking-by-heavy-goods-vehicles": {
@@ -455,7 +605,10 @@
                 "color": "color--white",
                 "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol": "symbol--car-truck"
+                "symbol-a": "symbol-a--assorted",
+                "symbol-b": "symbol-b--undefined",
+                "symbol-c": "symbol-c--undefined",
+                "symbol-d": "symbol-d--car-truck"
             }
         }
     }
