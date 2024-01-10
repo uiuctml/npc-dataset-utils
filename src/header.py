@@ -75,7 +75,7 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_config_file_name = "split_mtsd.json.gz"
+split_config_file_name = "gtsrb_split.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
