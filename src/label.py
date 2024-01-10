@@ -36,7 +36,7 @@ def updateLabelingControlWidget():
             combo_boxes_label_labeling_control[dataset_name].addItem(label_text)
 
             for dataset in label_config["attributes"]:
-                if dataset["name"] == dataset_name:
+                if dataset["name"] == dataset_name and label_text not in dataset["labels"]:
                     dataset["labels"].append(label_text)
                     updateLabelConfig()
 
@@ -132,6 +132,9 @@ def pushButtonReloadSlot():
     file_label_config.close()
 
     sortLabelConfigAttributes(label_config)
+
+    for combo_box_label_labeling_control in combo_boxes_label_labeling_control.values():
+        combo_box_label_labeling_control.clear()
 
     combo_box_application_control.clear()
 
