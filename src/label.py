@@ -13,10 +13,7 @@ application = PyQt5.QtWidgets.QApplication([])
 combo_box_application_control = PyQt5.QtWidgets.QComboBox()
 combo_boxes_label_labeling_control = {}
 group_box_viewer = PyQt5.QtWidgets.QGroupBox()
-
-file_label_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
-label_config = json.load(file_label_config)
-file_label_config.close()
+label_config = {}
 
 def updateLabelConfig():
     with open(os.path.join(header.config_dir, header.label_config_file_name), "w") as file_label_config:
@@ -26,6 +23,9 @@ def updateLabelConfig():
 
 def updateLabelingControlWidget():
     for dataset_name in combo_boxes_label_labeling_control.keys():
+        if combo_box_application_control.currentText() == "":
+            continue
+
         if dataset_name not in label_config["mappings"][combo_box_application_control.currentText()]["labels"]:
             combo_boxes_label_labeling_control[dataset_name].setCurrentText("")
             continue
@@ -45,6 +45,15 @@ def updateLabelingControlWidget():
     return
 
 def updateViewerWidget():
+    if combo_box_application_control.currentText() == "":
+        for i in range(0, header.label_viewer_count):
+            label = group_box_viewer.layout().itemAt(i).widget()
+            pixmap = PyQt5.QtGui.QPixmap(header.label_viewer_width, header.label_viewer_height)
+            pixmap.fill(PyQt5.QtCore.Qt.black)
+            label.setPixmap(pixmap)
+
+        return
+
     label_text = combo_box_application_control.currentText()
     file_path_images = os.path.join(header.label_dataset_dir_images, label_text)
 
@@ -115,6 +124,47 @@ def pushButtonAddLabelSlot(dataset_name, combo_box, line_edit):
 
     return
 
+def pushButtonReloadSlot():
+    global label_config
+
+    file_label_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
+    label_config = json.load(file_label_config)
+    file_label_config.close()
+
+    sortLabelConfigAttributes(label_config)
+
+    combo_box_application_control.clear()
+
+    for label_text in label_config["mappings"].keys():
+        combo_box_application_control.addItem(label_text)
+
+    combo_box_application_control.model().sort(0)
+    combo_box_application_control.setCurrentIndex(0)
+
+    return
+
+def pushButtonRemoveLabelSlot(dataset_name, combo_box):
+    label_text = combo_box.currentText()
+
+    if label_text == "":
+        return
+
+    for dataset in label_config["attributes"]:
+        if dataset["name"] == dataset_name:
+            dataset["labels"].remove(label_text)
+            updateLabelConfig()
+
+    combo_box.removeItem(combo_box.currentIndex())
+
+    label_text_index = combo_box.findText(dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword)
+
+    if label_text_index >= 0:
+        combo_box.setCurrentIndex(label_text_index)
+    else:
+        combo_box.setCurrentIndex(0)
+
+    return
+
 def pushButtonSaveSlot():
     for dataset_name in combo_boxes_label_labeling_control.keys():
         label_config["mappings"][combo_box_application_control.currentText()]["labels"][dataset_name] = combo_boxes_label_labeling_control[dataset_name].currentText()
@@ -143,51 +193,30 @@ def pushButtonSaveAndNextSlot():
 
     return
 
-def pushButtonRemoveLabelSlot(dataset_name, combo_box):
-    label_text = combo_box.currentText()
-
-    if label_text == "":
-        return
-
-    for dataset in label_config["attributes"]:
-        if dataset["name"] == dataset_name:
-            dataset["labels"].remove(label_text)
-            updateLabelConfig()
-
-    combo_box.removeItem(combo_box.currentIndex())
-
-    label_text_index = combo_box.findText(dataset_name + header.dataset_delimiter_label + header.dataset_label_undefined_keyword)
-
-    if label_text_index >= 0:
-        combo_box.setCurrentIndex(label_text_index)
-    else:
-        combo_box.setCurrentIndex(0)
-
-    return
-
 def createApplicationControlWidget():
     group_box_application_control = PyQt5.QtWidgets.QGroupBox()
     layout_application_control = PyQt5.QtWidgets.QGridLayout()
+    push_button_reload_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_shuffle_viewer_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_save_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_save_and_last_application_control = PyQt5.QtWidgets.QPushButton()
     push_button_save_and_next_application_control = PyQt5.QtWidgets.QPushButton()
 
-    for label_text in label_config["mappings"].keys():
-        combo_box_application_control.addItem(label_text)
+    pushButtonReloadSlot()
 
-    combo_box_application_control.model().sort(0)
     combo_box_application_control.view().setVerticalScrollBarPolicy(PyQt5.QtCore.Qt.ScrollBarAsNeeded)
-    combo_box_application_control.setCurrentIndex(0)
     combo_box_application_control.currentIndexChanged.connect(comboBoxApplicationControlSlot)
     group_box_application_control.setAlignment(PyQt5.QtCore.Qt.AlignHCenter)
     group_box_application_control.setLayout(layout_application_control)
     group_box_application_control.setTitle("Application Control")
     layout_application_control.addWidget(push_button_save_and_last_application_control, 0, 0)
-    layout_application_control.addWidget(combo_box_application_control, 0, 1)
-    layout_application_control.addWidget(push_button_shuffle_viewer_application_control, 0, 2)
-    layout_application_control.addWidget(push_button_save_application_control, 0, 3)
-    layout_application_control.addWidget(push_button_save_and_next_application_control, 0, 4)
+    layout_application_control.addWidget(push_button_reload_application_control, 0, 1)
+    layout_application_control.addWidget(combo_box_application_control, 0, 2)
+    layout_application_control.addWidget(push_button_shuffle_viewer_application_control, 0, 3)
+    layout_application_control.addWidget(push_button_save_application_control, 0, 4)
+    layout_application_control.addWidget(push_button_save_and_next_application_control, 0, 5)
+    push_button_reload_application_control.clicked.connect(pushButtonReloadSlot)
+    push_button_reload_application_control.setText("Reload")
     push_button_shuffle_viewer_application_control.clicked.connect(updateViewerWidget)
     push_button_shuffle_viewer_application_control.setText("Shuffle Viewer")
     push_button_save_application_control.clicked.connect(pushButtonSaveSlot)
@@ -286,8 +315,6 @@ def sortLabelConfigAttributes(label_config):
     return
 
 def main():
-    sortLabelConfigAttributes(label_config)
-
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
