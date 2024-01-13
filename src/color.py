@@ -1,4 +1,5 @@
 import cv2
+import header
 import random
 import numpy as np
 
@@ -7,6 +8,17 @@ CRITERIA_EPSILON = 1.0
 k = 3
 ATTEMPTS = 100
 RGB_THRESHOLD = 35
+
+# Dataset-wide approach - corruptColor MUST take average_brightness passed from corrupt.py
+def normalizeBrightness(image):
+    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    h, s, v = cv2.split(hsv)
+    local_brightness = np.mean(v)
+    ratio = header.corrupt_mean_brightness / local_brightness
+    v = np.clip(v * ratio, 0, 255).astype(np.uint8)
+    adjusted_hsv = cv2.merge([h, s, v])
+    adjusted_image = cv2.cvtColor(adjusted_hsv, cv2.COLOR_HSV2BGR)
+    return adjusted_image
 
 def clusterId(label):
     # find the most frequent cluster_id & its frequency
@@ -89,9 +101,10 @@ def modifyColor(image, cluster_id, cluster_freq, label):
 
 def corruptColor(image):
     image = np.array(image)
+    image_normalized = normalizeBrightness(image)
 
     # vectorized the image
-    vectorized = image.reshape((-1, 3))
+    vectorized = image_normalized.reshape((-1, 3))
     vectorized = np.float32(vectorized)
 
     # k-means clustering
