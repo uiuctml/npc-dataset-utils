@@ -3,22 +3,31 @@ import header
 import random
 import numpy as np
 
-CRITERIA_MAX_ITER = 100
+
+CRITERIA_MAX_ITER = 200
 CRITERIA_EPSILON = 1.0
 k = 3
 ATTEMPTS = 100
 RGB_THRESHOLD = 35
 
-# Dataset-wide approach - corruptColor MUST take average_brightness passed from corrupt.py
-def normalizeBrightness(image):
-    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-    h, s, v = cv2.split(hsv)
-    local_brightness = np.mean(v)
-    ratio = header.corrupt_mean_brightness / local_brightness
-    v = np.clip(v * ratio, 0, 255).astype(np.uint8)
-    adjusted_hsv = cv2.merge([h, s, v])
-    adjusted_image = cv2.cvtColor(adjusted_hsv, cv2.COLOR_HSV2BGR)
-    return adjusted_image
+PRE_CLAHE_CLIPLIMIT = 0.5
+PRE_CLAHE_GRIDSIZE = (8, 8)
+PRE_FILTER_DIAMETER = 6
+PRE_FILTER_SIGMA_COLOR = 75  
+PRE_FILTER_SIGMA_SPACE = 75 
+
+def preprocessImage(image):
+    # Apply CLAHE contrast enhancement
+    image_lab = cv2.cvtColor(image, cv2.COLOR_BGR2Lab)
+    l, a, b = cv2.split(image_lab)
+
+    clahe = cv2.createCLAHE(clipLimit=PRE_CLAHE_CLIPLIMIT, tileGridSize=PRE_CLAHE_GRIDSIZE)
+    l_clahe = clahe.apply(l)
+    lab_clahe = cv2.merge((l_clahe, a, b))
+    adjusted_image = cv2.cvtColor(lab_clahe, cv2.COLOR_Lab2BGR)
+    filtered_image = cv2.bilateralFilter(adjusted_image, PRE_FILTER_DIAMETER, PRE_FILTER_SIGMA_COLOR, PRE_FILTER_SIGMA_SPACE)
+
+    return filtered_image
 
 def clusterId(label):
     # find the most frequent cluster_id & its frequency
@@ -101,10 +110,10 @@ def modifyColor(image, cluster_id, cluster_freq, label):
 
 def corruptColor(image):
     image = np.array(image)
-    image_normalized = normalizeBrightness(image)
+    image_preprocess = preprocessImage(image)
 
     # vectorized the image
-    vectorized = image_normalized.reshape((-1, 3))
+    vectorized = image_preprocess.reshape((-1, 3))
     vectorized = np.float32(vectorized)
 
     # k-means clustering

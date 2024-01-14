@@ -16,7 +16,7 @@ def calculate_means():
     for sub_folder in database_dir:
       sub_folder_path = os.path.join(header.dataset_dir_images_split_original_test, sub_folder)
       images = os.listdir(sub_folder_path)
-      total_images += images
+      total_images += len(images)
       for image in images:
         file_path_image = os.path.join(sub_folder_path, image)
         image = cv2.imread(file_path_image)
@@ -24,7 +24,8 @@ def calculate_means():
         h, s, v = cv2.split(image_hsv)
         total_brightness += np.mean(v)
     mean_brightness = total_brightness / total_images
-    logger.log_info("Mean brightness:" + mean_brightness)
+    logger.log_info("Mean brightness:" + str(mean_brightness))
+    
 
 def main():
     calculate_means()

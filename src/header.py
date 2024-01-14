@@ -3,13 +3,13 @@ import type
 
 config_dir = "../config"
 
-corrupt_corruption_algorithm = type.CorruptionAlgorithm.imagenet_c
+corrupt_corruption_algorithm = type.CorruptionAlgorithm.color
 corrupt_corruption_imagenet_c = type.CorruptionImageNetC.snow
 corrupt_image_size = 224
 corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
-corrupt_mean_brightness = 0.5
+corrupt_mean_brightness = 96.4035582351791
 
 dataset_config_file_name = "gtsrb.json"
 dataset_delimiter_file_name = "---"
