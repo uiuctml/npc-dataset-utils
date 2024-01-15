@@ -9,7 +9,6 @@ corrupt_image_size = 224
 corrupt_progress_bar_description_length = 15
 corrupt_random_seed = 42
 corrupt_severity = 5
-corrupt_mean_brightness = 96.4035582351791
 
 dataset_config_file_name = "gtsrb.json"
 dataset_delimiter_file_name = "---"

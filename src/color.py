@@ -10,23 +10,28 @@ k = 3
 ATTEMPTS = 100
 RGB_THRESHOLD = 35
 
-PRE_CLAHE_CLIPLIMIT = 0.5
+PRE_CLAHE_CLIPLIMIT = 1
 PRE_CLAHE_GRIDSIZE = (8, 8)
-PRE_FILTER_DIAMETER = 6
+PRE_FILTER_DIAMETER = 3
 PRE_FILTER_SIGMA_COLOR = 75  
 PRE_FILTER_SIGMA_SPACE = 75 
 
 def preprocessImage(image):
     # Apply CLAHE contrast enhancement
-    image_lab = cv2.cvtColor(image, cv2.COLOR_BGR2Lab)
-    l, a, b = cv2.split(image_lab)
+    image_prefilter = cv2.bilateralFilter(image, PRE_FILTER_DIAMETER, PRE_FILTER_SIGMA_COLOR, PRE_FILTER_SIGMA_SPACE)
+
+    image_hsv = cv2.cvtColor(image_prefilter, cv2.COLOR_BGR2HSV)
+    h, s, v = cv2.split(image_hsv)
 
     clahe = cv2.createCLAHE(clipLimit=PRE_CLAHE_CLIPLIMIT, tileGridSize=PRE_CLAHE_GRIDSIZE)
-    l_clahe = clahe.apply(l)
-    lab_clahe = cv2.merge((l_clahe, a, b))
-    adjusted_image = cv2.cvtColor(lab_clahe, cv2.COLOR_Lab2BGR)
+    s_clahe = clahe.apply(s)
+    v_clahe = clahe.apply(v)
+    hsv_clahe = cv2.merge((h, s_clahe, v_clahe))
+    adjusted_image = cv2.cvtColor(hsv_clahe, cv2.COLOR_HSV2BGR)
+
     filtered_image = cv2.bilateralFilter(adjusted_image, PRE_FILTER_DIAMETER, PRE_FILTER_SIGMA_COLOR, PRE_FILTER_SIGMA_SPACE)
 
+    # filtered_image = image
     return filtered_image
 
 def clusterId(label):
