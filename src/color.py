@@ -2,6 +2,7 @@ import cv2
 import header
 import random
 import numpy as np
+import logger
 
 
 CRITERIA_MAX_ITER = 200
@@ -28,41 +29,52 @@ def preprocessImage(image):
     v_clahe = clahe.apply(v)
     hsv_clahe = cv2.merge((h, s_clahe, v_clahe))
     adjusted_image = cv2.cvtColor(hsv_clahe, cv2.COLOR_HSV2BGR)
-
     filtered_image = cv2.bilateralFilter(adjusted_image, PRE_FILTER_DIAMETER, PRE_FILTER_SIGMA_COLOR, PRE_FILTER_SIGMA_SPACE)
-
-    # filtered_image = image
+    filtered_image = image
     return filtered_image
 
 def clusterId(label):
-    # find the most frequent cluster_id & its frequency
+    # Find the most frequent cluster_id & its frequency
     unique, frequency = np.unique(label, return_counts = True)
     index = np.argmax(frequency)
+    
     cluster_id = unique[index]
     cluster_freq = frequency[index]
 
-    # check the pixel position variance of the cluster
+    # Check each pixel's average distance from center of image
     width, height = label.shape
     center = (width//2, height//2)
 
     cluster_id_var = []
 
     for (id, freq) in zip(unique, frequency):
-        cluster_var = 0
+        cluster_var = 0.0
         for i in range(width):
             for j in range(height):
                 if label[i, j] == id:
-                    cluster_var += ((abs(i-center[0]) + abs(j-center[1]))**2)**(1/2)
+                    dist = ((abs(i-center[0]) + abs(j-center[1]))**2)**(1/2)
+                    if dist > width*3/4:
+                        dist = dist**4
+                    cluster_var += dist
         cluster_var //= freq
         cluster_id_var.append((id, cluster_var))
 
     cluster_id_var.sort(key=lambda x: x[1])
-
+    logger.log_debug("Orig Cluster_id: "+str(cluster_id)+"  ")
+    logger.log_debug(cluster_id_var)
     # the cluster_id pixel has too large variance
     if cluster_id == cluster_id_var[-1][0]:
         indices = np.argsort(frequency)
+        logger.log_debug("Frequency" + str(frequency))
+        logger.log_debug("Indices" + str((indices)))
         cluster_id = indices[-2]
         cluster_freq = frequency[cluster_id]
+        logger.log_debug("New Cluster_id: "+str(cluster_id)+"  ")
+
+    else:  
+        logger.log_debug("Orig cluster")
+
+    # cluster_id = cluster_id_var[0][0]
 
     return cluster_id, cluster_freq
 
@@ -113,6 +125,25 @@ def modifyColor(image, cluster_id, cluster_freq, label):
 
     return
 
+def debugColor(image, label, target):
+    width, height = label.shape
+    for i in range(width):
+        for j in range(height):
+            cluster_id = label[i, j]
+            if cluster_id == target:
+                image[i,j] = [255,255,255]
+            elif cluster_id == 0:
+            # Color cluster 0 red
+                image[i, j] = [0, 0, 255] # Red color in BGR format
+            elif cluster_id == 1:
+            # Color cluster 1 blue
+                image[i, j] = [255, 0, 0] # Blue color in BGR format
+            elif cluster_id == 2:
+            # Color cluster 2 green
+                image[i, j] = [0, 255, 0] # Green color in BGR format
+
+
+
 def corruptColor(image):
     image = np.array(image)
     image_preprocess = preprocessImage(image)
@@ -142,4 +173,6 @@ def corruptColor(image):
     image_color_shifted = np.copy(image)
     modifyColor(image_color_shifted, cluster_id, cluster_freq, label)
 
+    # Debug
+    # debugColor(image_color_shifted,label,cluster_id)
     return image_color_shifted
