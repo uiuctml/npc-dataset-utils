@@ -37,9 +37,6 @@ def clusterId(label):
     # Find the most frequent cluster_id & its frequency
     unique, frequency = np.unique(label, return_counts = True)
     index = np.argmax(frequency)
-    
-    cluster_id = unique[index]
-    cluster_freq = frequency[index]
 
     # Check each pixel's average distance from center of image
     width, height = label.shape
@@ -60,21 +57,10 @@ def clusterId(label):
         cluster_id_var.append((id, cluster_var))
 
     cluster_id_var.sort(key=lambda x: x[1])
-    logger.log_debug("Orig Cluster_id: "+str(cluster_id)+"  ")
-    logger.log_debug(cluster_id_var)
-    # the cluster_id pixel has too large variance
-    if cluster_id == cluster_id_var[-1][0]:
-        indices = np.argsort(frequency)
-        logger.log_debug("Frequency" + str(frequency))
-        logger.log_debug("Indices" + str((indices)))
-        cluster_id = indices[-2]
-        cluster_freq = frequency[cluster_id]
-        logger.log_debug("New Cluster_id: "+str(cluster_id)+"  ")
 
-    else:  
-        logger.log_debug("Orig cluster")
+    cluster_id = cluster_id_var[0][0]
+    cluster_freq = frequency[cluster_id]
 
-    # cluster_id = cluster_id_var[0][0]
 
     return cluster_id, cluster_freq
 
@@ -175,4 +161,5 @@ def corruptColor(image):
 
     # Debug
     # debugColor(image_color_shifted,label,cluster_id)
+
     return image_color_shifted
