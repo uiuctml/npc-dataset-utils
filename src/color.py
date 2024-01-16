@@ -1,9 +1,6 @@
 import cv2
-import header
 import random
 import numpy as np
-import logger
-
 
 CRITERIA_MAX_ITER = 200
 CRITERIA_EPSILON = 1.0
@@ -14,8 +11,8 @@ RGB_THRESHOLD = 35
 PRE_CLAHE_CLIPLIMIT = 1
 PRE_CLAHE_GRIDSIZE = (8, 8)
 PRE_FILTER_DIAMETER = 3
-PRE_FILTER_SIGMA_COLOR = 75  
-PRE_FILTER_SIGMA_SPACE = 75 
+PRE_FILTER_SIGMA_COLOR = 75
+PRE_FILTER_SIGMA_SPACE = 75
 
 def preprocessImage(image):
     # Apply CLAHE contrast enhancement
@@ -128,8 +125,6 @@ def debugColor(image, label, target):
             # Color cluster 2 green
                 image[i, j] = [0, 255, 0] # Green color in BGR format
 
-
-
 def corruptColor(image):
     image = np.array(image)
     image_preprocess = preprocessImage(image)
@@ -147,12 +142,6 @@ def corruptColor(image):
     # find the cluster_id of background color
     label = label.reshape((image.shape[:2]))
     cluster_id, cluster_freq = clusterId(label)
-
-    # # find the most frequent cluster_id & its frequency (original method)
-    # unique, freq = np.unique(label, return_counts=True)
-    # index = np.argmax(freq)
-    # cluster_id = unique[index]
-    # cluster_freq = freq[index]
 
     # modify the color
     label = label.reshape((image.shape[:2]))
