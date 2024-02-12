@@ -10,15 +10,6 @@
             ]
         },
         {
-            "name": "overlay",
-            "labels": [
-                "",
-                "overlay--border",
-                "overlay--slash",
-                "overlay--undefined"
-            ]
-        },
-        {
             "name": "shape",
             "labels": [
                 "",
@@ -29,66 +20,51 @@
             ]
         },
         {
-            "name": "symbol-arrow",
+            "name": "symbol",
             "labels": [
                 "",
-                "symbol-arrow--consecutive-turns",
-                "symbol-arrow--down-left",
-                "symbol-arrow--down-right",
-                "symbol-arrow--left",
-                "symbol-arrow--right",
-                "symbol-arrow--roundabout",
-                "symbol-arrow--up",
-                "symbol-arrow--up-and-left",
-                "symbol-arrow--up-and-right",
-                "symbol-arrow--undefined"
+                "symbol--arrow--consecutive-turns",
+                "symbol--arrow--down-left",
+                "symbol--arrow--down-right",
+                "symbol--arrow--left",
+                "symbol--arrow--right",
+                "symbol--arrow--roundabout",
+                "symbol--arrow--up",
+                "symbol--arrow--up-and-left",
+                "symbol--arrow--up-and-right",
+                "symbol--bicycle",
+                "symbol--bump",
+                "symbol--car",
+                "symbol--car-truck",
+                "symbol--car-two",
+                "symbol--deer",
+                "symbol--exclamation-mark",
+                "symbol--ice-or-snow",
+                "symbol--person",
+                "symbol--person-two",
+                "symbol--road-narrows",
+                "symbol--roadworks",
+                "symbol--slash",
+                "symbol--text",
+                "symbol--traffic-signal",
+                "symbol--truck",
+                "symbol--undefined"
             ]
         },
         {
-            "name": "symbol-assorted",
+            "name": "text",
             "labels": [
                 "",
-                "symbol-assorted--bicycle",
-                "symbol-assorted--bump",
-                "symbol-assorted--car",
-                "symbol-assorted--car-truck",
-                "symbol-assorted--car-two",
-                "symbol-assorted--deer",
-                "symbol-assorted--exclamation-mark",
-                "symbol-assorted--ice-or-snow",
-                "symbol-assorted--person",
-                "symbol-assorted--person-two",
-                "symbol-assorted--road-narrows",
-                "symbol-assorted--roadworks",
-                "symbol-assorted--stop",
-                "symbol-assorted--traffic-signal",
-                "symbol-assorted--truck",
-                "symbol-assorted--undefined"
-            ]
-        },
-        {
-            "name": "symbol-general",
-            "labels": [
-                "",
-                "symbol-general--arrows",
-                "symbol-general--assorted",
-                "symbol-general--numbers",
-                "symbol-general--undefined"
-            ]
-        },
-        {
-            "name": "symbol-number",
-            "labels": [
-                "",
-                "symbol-number--100",
-                "symbol-number--120",
-                "symbol-number--20",
-                "symbol-number--30",
-                "symbol-number--50",
-                "symbol-number--60",
-                "symbol-number--70",
-                "symbol-number--80",
-                "symbol-number--undefined"
+                "text--100",
+                "text--120",
+                "text--20",
+                "text--30",
+                "text--50",
+                "text--60",
+                "text--70",
+                "text--80",
+                "text--stop",
+                "text--undefined"
             ]
         }
     ],
@@ -140,475 +116,346 @@
     "mappings": {
         "regulatory--maximum-speed-limit-20": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--20"
+                "symbol": "symbol--text",
+                "text": "text--20"
             }
         },
         "regulatory--maximum-speed-limit-30": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--30"
+                "symbol": "symbol--text",
+                "text": "text--30"
             }
         },
         "regulatory--maximum-speed-limit-50": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--50"
+                "symbol": "symbol--text",
+                "text": "text--50"
             }
         },
         "regulatory--maximum-speed-limit-60": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--60"
+                "symbol": "symbol--text",
+                "text": "text--60"
             }
         },
         "regulatory--maximum-speed-limit-70": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--70"
+                "symbol": "symbol--text",
+                "text": "text--70"
             }
         },
         "regulatory--maximum-speed-limit-80": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--80"
+                "symbol": "symbol--text",
+                "text": "text--80"
             }
         },
         "regulatory--end-of-maximum-speed-limit-80": {
             "labels": {
                 "color": "color--white",
-                "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--80"
+                "symbol": "symbol--text",
+                "text": "text--80"
             }
         },
         "regulatory--maximum-speed-limit-100": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--100"
+                "symbol": "symbol--text",
+                "text": "text--100"
             }
         },
         "regulatory--maximum-speed-limit-120": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--numbers",
-                "symbol-number": "symbol-number--120"
+                "symbol": "symbol--text",
+                "text": "text--120"
             }
         },
         "regulatory--no-overtaking": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--car-two",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--car-two",
+                "text": "text--undefined"
             }
         },
         "regulatory--no-overtaking-by-heavy-goods-vehicles": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--car-truck",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--car-truck",
+                "text": "text--undefined"
             }
         },
         "warning--crossroads": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--up",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--up",
+                "text": "text--undefined"
             }
         },
         "regulatory--priority-road": {
             "labels": {
                 "color": "color--white",
-                "overlay": "overlay--undefined",
                 "shape": "shape--diamond",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--undefined",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--undefined",
+                "text": "text--undefined"
             }
         },
         "regulatory--yield": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--undefined",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--undefined",
+                "text": "text--undefined"
             }
         },
         "regulatory--stop": {
             "labels": {
                 "color": "color--red",
-                "overlay": "overlay--undefined",
                 "shape": "shape--octagon",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--stop",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--text",
+                "text": "text--stop"
             }
         },
         "regulatory--road-closed-to-vehicles": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--undefined",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--undefined",
+                "text": "text--undefined"
             }
         },
         "regulatory--no-heavy-goods-vehicles": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--truck",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--truck",
+                "text": "text--undefined"
             }
         },
         "regulatory--no-entry": {
             "labels": {
                 "color": "color--red",
-                "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--undefined",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--slash",
+                "text": "text--undefined"
             }
         },
         "warning--other-danger": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--exclamation-mark",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--exclamation-mark",
+                "text": "text--undefined"
             }
         },
         "warning--curve-left": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--left",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--left",
+                "text": "text--undefined"
             }
         },
         "warning--curve-right": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--right",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--right",
+                "text": "text--undefined"
             }
         },
         "warning--double-curve-first-left": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--consecutive-turns",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--consecutive-turns",
+                "text": "text--undefined"
             }
         },
         "warning--uneven-road": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--bump",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--bump",
+                "text": "text--undefined"
             }
         },
         "warning--slippery-road-surface": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--car",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--car",
+                "text": "text--undefined"
             }
         },
         "warning--road-narrows-right": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--road-narrows",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--road-narrows",
+                "text": "text--undefined"
             }
         },
         "warning--roadworks": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--roadworks",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--roadworks",
+                "text": "text--undefined"
             }
         },
         "warning--traffic-signals": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--traffic-signal",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--traffic-signal",
+                "text": "text--undefined"
             }
         },
         "warning--pedestrians-crossing": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--person",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--person",
+                "text": "text--undefined"
             }
         },
         "warning--children": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--person-two",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--person-two",
+                "text": "text--undefined"
             }
         },
         "warning--bicycles-crossing": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--bicycle",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--bicycle",
+                "text": "text--undefined"
             }
         },
         "warning--ice-or-snow": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--ice-or-snow",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--ice-or-snow",
+                "text": "text--undefined"
             }
         },
         "warning--wild-animals": {
             "labels": {
-                "color": "color--white",
-                "overlay": "overlay--border",
+                "color": "color--red",
                 "shape": "shape--triangle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--deer",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--deer",
+                "text": "text--undefined"
             }
         },
         "regulatory--end-of-prohibition": {
             "labels": {
                 "color": "color--white",
-                "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--undefined",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--undefined",
+                "text": "text--undefined"
             }
         },
         "regulatory--turn-right-ahead": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--right",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--right",
+                "text": "text--undefined"
             }
         },
         "regulatory--turn-left-ahead": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--left",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--left",
+                "text": "text--undefined"
             }
         },
         "regulatory--go-straight": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--up",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--up",
+                "text": "text--undefined"
             }
         },
         "regulatory--go-straight-or-turn-right": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--up-and-right",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--up-and-right",
+                "text": "text--undefined"
             }
         },
         "regulatory--go-straight-or-turn-left": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--up-and-left",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--up-and-left",
+                "text": "text--undefined"
             }
         },
         "regulatory--keep-right": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--down-right",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--down-right",
+                "text": "text--undefined"
             }
         },
         "regulatory--keep-left": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--down-left",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--down-left",
+                "text": "text--undefined"
             }
         },
         "regulatory--roundabout": {
             "labels": {
                 "color": "color--blue",
-                "overlay": "overlay--undefined",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--roundabout",
-                "symbol-assorted": "symbol-assorted--undefined",
-                "symbol-general": "symbol-general--arrows",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--arrow--roundabout",
+                "text": "text--undefined"
             }
         },
         "regulatory--end-of-no-overtaking": {
             "labels": {
                 "color": "color--white",
-                "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--car-two",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--car-two",
+                "text": "text--undefined"
             }
         },
         "regulatory--end-of-no-overtaking-by-heavy-goods-vehicles": {
             "labels": {
                 "color": "color--white",
-                "overlay": "overlay--slash",
                 "shape": "shape--circle",
-                "symbol-arrow": "symbol-arrow--undefined",
-                "symbol-assorted": "symbol-assorted--car-truck",
-                "symbol-general": "symbol-general--assorted",
-                "symbol-number": "symbol-number--undefined"
+                "symbol": "symbol--car-truck",
+                "text": "text--undefined"
             }
         }
     }
