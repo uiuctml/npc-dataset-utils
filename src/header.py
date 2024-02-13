@@ -60,10 +60,6 @@ parallel_shared_memory_size_entry = 64
 parallel_shared_memory_size_process = 256
 parallel_shared_memory_size_total = parallel_shared_memory_size_process * (parallel_process_count + 1)
 
-mix_dataset_dir_images_split_mixed = dataset_dir_images_split + "/mixed"
-mix_mapping_file_name_gtsrb = "gtsrb_to_mtsd.json"
-mix_ratio = 0.5
-
 slice_duplicates = {
     "vfym8z46xdpftlzctrgl78": "other-sign",
     "dchqt8ir2pap7ir940nab9315k": "other-sign",
