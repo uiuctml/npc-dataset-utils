@@ -1,0 +1,90 @@
+{
+    "attributes": [
+        {
+            "name": "color",
+            "labels": [
+                "",
+                "color--purple",
+                "color--red",
+                "color--white",
+                "color--yellow"
+            ]
+        },
+        {
+            "name": "petal",
+            "labels": [
+                "",
+                "petal--dense",
+                "petal--sparse"
+            ]
+        },
+        {
+            "name": "center",
+            "labels": [
+                "",
+                "center--concealed",
+                "center--distinct"
+            ]
+        }
+    ],
+    "labels": {
+        "0": "sunflower",
+        "1": "buttercup",
+        "2": "snowdrop",
+        "3": "dandelion",
+        "4": "tigerlily",
+        "5": "daisy",
+        "6": "fritillary"
+    },
+    "mappings": {
+        "sunflower": {
+            "labels": {
+                "color": "color--yellow",
+                "petal": "petal--dense",
+                "center": "center--distinct"
+            }
+        },
+        "buttercup": {
+            "labels": {
+                "color": "color--yellow",
+                "petal": "petal--sparse",
+                "center": "center--concealed"
+            }
+        },
+        "snowdrop": {
+            "labels": {
+                "color": "color--white",
+                "petal": "petal--sparse",
+                "center": "center--concealed"
+            }
+        },
+        "dandelion": {
+            "labels": {
+                "color": "color--yellow",
+                "petal": "petal--dense",
+                "center": "center--concealed"
+            }
+        },
+        "tigerlily": {
+            "labels": {
+                "color": "color--red",
+                "petal": "petal--sparse",
+                "center": "center--concealed"
+            }
+        },
+        "daisy": {
+            "labels": {
+                "color": "color--white",
+                "petal": "petal--dense",
+                "center": "center--distinct"
+            }
+        },
+        "fritillary": {
+            "labels": {
+                "color": "color--purple",
+                "petal": "petal--sparse",
+                "center": "center--concealed"
+            }
+        }
+    }
+}
