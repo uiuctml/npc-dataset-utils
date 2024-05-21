@@ -1,6 +1,14 @@
 {
     "attributes": [
         {
+            "name": "tail",
+            "labels": [
+                "",
+                "tail--no",
+                "tail--yes"
+            ]
+        },
+        {
             "name": "color",
             "labels": [
                 "",
@@ -29,17 +37,21 @@
                 "shape--swallow-like",
                 "shape--upright-perching_water-like"
             ]
-        },
-        {
-            "name": "tail",
-            "labels": [
-                "",
-                "tail--no",
-                "tail--yes"
-            ]
         }
     ],
-    "labels": {},
+    "labels": {
+        "0": "010.Red_winged_Blackbird",
+        "1": "014.Indigo_Bunting",
+        "2": "024.Red_faced_Cormorant",
+        "3": "046.Gadwall",
+        "4": "047.American_Goldfinch",
+        "5": "053.Western_Grebe",
+        "6": "070.Green_Violetear",
+        "7": "075.Green_Jay",
+        "8": "101.White_Pelican",
+        "9": "104.American_Pipit",
+        "10": "140.Summer_Tanager"
+    },
     "mappings": {
         "010.Red_winged_Blackbird": {
             "labels": {
