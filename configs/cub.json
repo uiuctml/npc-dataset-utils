@@ -4,14 +4,14 @@
             "name": "bill-shape",
             "labels": [
                 "",
+                "all-purpose",
+                "cone",
                 "curved-(up-or-down)",
                 "dagger",
                 "hooked",
-                "needle",
                 "hooked-seabird",
+                "needle",
                 "spatulate",
-                "all-purpose",
-                "cone",
                 "specialized"
             ]
         },
@@ -19,105 +19,105 @@
             "name": "wing-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "upperparts-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "underparts-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "breast-pattern",
             "labels": [
                 "",
+                "multi-colored",
                 "solid",
                 "spotted",
-                "striped",
-                "multi-colored"
+                "striped"
             ]
         },
         {
             "name": "back-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "tail-shape",
             "labels": [
                 "",
-                "forked-tail",
-                "rounded-tail",
-                "notched-tail",
                 "fan-shaped-tail",
+                "forked-tail",
+                "notched-tail",
                 "pointed-tail",
+                "rounded-tail",
                 "squared-tail"
             ]
         },
@@ -125,100 +125,100 @@
             "name": "upper-tail-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "head-pattern",
             "labels": [
                 "",
-                "spotted",
-                "malar",
+                "capped",
                 "crested",
-                "masked",
-                "unique-pattern",
                 "eyebrow",
-                "eyering",
-                "plain",
                 "eyeline",
+                "eyering",
+                "malar",
+                "masked",
+                "plain",
+                "spotted",
                 "striped",
-                "capped"
+                "unique-pattern"
             ]
         },
         {
             "name": "breast-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "throat-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "eye-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
@@ -234,95 +234,95 @@
             "name": "forehead-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "under-tail-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "nape-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "belly-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "wing-shape",
             "labels": [
                 "",
-                "rounded-wings",
-                "pointed-wings",
                 "broad-wings",
-                "tapered-wings",
-                "long-wings"
+                "long-wings",
+                "pointed-wings",
+                "rounded-wings",
+                "tapered-wings"
             ]
         },
         {
@@ -330,9 +330,9 @@
             "labels": [
                 "",
                 "large-(16---32-in)",
+                "medium-(9---16-in)",
                 "small-(5---9-in)",
                 "very-large-(32---72-in)",
-                "medium-(9---16-in)",
                 "very-small-(3---5-in)"
             ]
         },
@@ -340,144 +340,144 @@
             "name": "shape",
             "labels": [
                 "",
-                "upright-perching-water-like",
                 "chicken-like-marsh",
-                "long-legged-like",
                 "duck-like",
-                "owl-like",
                 "gull-like",
-                "hummingbird-like",
-                "pigeon-like",
-                "tree-clinging-like",
                 "hawk-like",
+                "hummingbird-like",
+                "long-legged-like",
+                "owl-like",
+                "perching-like",
+                "pigeon-like",
                 "sandpiper-like",
-                "upland-ground-like",
                 "swallow-like",
-                "perching-like"
+                "tree-clinging-like",
+                "upland-ground-like",
+                "upright-perching-water-like"
             ]
         },
         {
             "name": "back-pattern",
             "labels": [
                 "",
+                "multi-colored",
                 "solid",
                 "spotted",
-                "striped",
-                "multi-colored"
+                "striped"
             ]
         },
         {
             "name": "tail-pattern",
             "labels": [
                 "",
+                "multi-colored",
                 "solid",
                 "spotted",
-                "striped",
-                "multi-colored"
+                "striped"
             ]
         },
         {
             "name": "belly-pattern",
             "labels": [
                 "",
+                "multi-colored",
                 "solid",
                 "spotted",
-                "striped",
-                "multi-colored"
+                "striped"
             ]
         },
         {
             "name": "primary-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "leg-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "bill-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "crown-color",
             "labels": [
                 "",
+                "black",
                 "blue",
                 "brown",
-                "iridescent",
-                "purple",
-                "rufous",
-                "grey",
-                "yellow",
-                "olive",
+                "buff",
                 "green",
-                "pink",
+                "grey",
+                "iridescent",
+                "olive",
                 "orange",
-                "black",
-                "white",
+                "pink",
+                "purple",
                 "red",
-                "buff"
+                "rufous",
+                "white",
+                "yellow"
             ]
         },
         {
             "name": "wing-pattern",
             "labels": [
                 "",
+                "multi-colored",
                 "solid",
                 "spotted",
-                "striped",
-                "multi-colored"
+                "striped"
             ]
         }
     ]
