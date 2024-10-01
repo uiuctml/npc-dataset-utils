@@ -3,14 +3,7 @@ import type
 
 config_dir = "../configs"
 
-corrupt_corruption_algorithm = type.CorruptionAlgorithm.imagenet_c
-corrupt_corruption_imagenet_c = type.CorruptionImageNetC.snow
-corrupt_image_size = 224
-corrupt_progress_bar_description_length = 15
-corrupt_random_seed = 42
-corrupt_severity = 5
-
-dataset_config_file_name = "gtsrb.json"
+dataset_config_file_name = "cub.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../cub-dataset"
@@ -27,11 +20,14 @@ dataset_dir_images_split_original_train = dataset_dir_images_split_original + "/
 dataset_dir_images_split_original_validate = dataset_dir_images_split_original + "/validate"
 dataset_dir_images_split_spn = dataset_dir_images_split + "/spn"
 dataset_file_extension_annotations = ".csv"
-dataset_file_extension_images = ".png"
+dataset_file_extension_images = ".jpg"
 dataset_file_name_split_test = "test.txt"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
+
+cub_dir_attributes = dataset_dir_annotations + "/attributes"
+cub_file_name_attributes = "attributes.txt"
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name

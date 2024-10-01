@@ -1,0 +1,484 @@
+{
+    "attributes": [
+        {
+            "name": "bill-shape",
+            "labels": [
+                "",
+                "curved-(up-or-down)",
+                "dagger",
+                "hooked",
+                "needle",
+                "hooked-seabird",
+                "spatulate",
+                "all-purpose",
+                "cone",
+                "specialized"
+            ]
+        },
+        {
+            "name": "wing-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "upperparts-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "underparts-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "breast-pattern",
+            "labels": [
+                "",
+                "solid",
+                "spotted",
+                "striped",
+                "multi-colored"
+            ]
+        },
+        {
+            "name": "back-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "tail-shape",
+            "labels": [
+                "",
+                "forked-tail",
+                "rounded-tail",
+                "notched-tail",
+                "fan-shaped-tail",
+                "pointed-tail",
+                "squared-tail"
+            ]
+        },
+        {
+            "name": "upper-tail-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "head-pattern",
+            "labels": [
+                "",
+                "spotted",
+                "malar",
+                "crested",
+                "masked",
+                "unique-pattern",
+                "eyebrow",
+                "eyering",
+                "plain",
+                "eyeline",
+                "striped",
+                "capped"
+            ]
+        },
+        {
+            "name": "breast-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "throat-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "eye-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "bill-length",
+            "labels": [
+                "",
+                "about-the-same-as-head",
+                "longer-than-head",
+                "shorter-than-head"
+            ]
+        },
+        {
+            "name": "forehead-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "under-tail-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "nape-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "belly-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "wing-shape",
+            "labels": [
+                "",
+                "rounded-wings",
+                "pointed-wings",
+                "broad-wings",
+                "tapered-wings",
+                "long-wings"
+            ]
+        },
+        {
+            "name": "size",
+            "labels": [
+                "",
+                "large-(16---32-in)",
+                "small-(5---9-in)",
+                "very-large-(32---72-in)",
+                "medium-(9---16-in)",
+                "very-small-(3---5-in)"
+            ]
+        },
+        {
+            "name": "shape",
+            "labels": [
+                "",
+                "upright-perching-water-like",
+                "chicken-like-marsh",
+                "long-legged-like",
+                "duck-like",
+                "owl-like",
+                "gull-like",
+                "hummingbird-like",
+                "pigeon-like",
+                "tree-clinging-like",
+                "hawk-like",
+                "sandpiper-like",
+                "upland-ground-like",
+                "swallow-like",
+                "perching-like"
+            ]
+        },
+        {
+            "name": "back-pattern",
+            "labels": [
+                "",
+                "solid",
+                "spotted",
+                "striped",
+                "multi-colored"
+            ]
+        },
+        {
+            "name": "tail-pattern",
+            "labels": [
+                "",
+                "solid",
+                "spotted",
+                "striped",
+                "multi-colored"
+            ]
+        },
+        {
+            "name": "belly-pattern",
+            "labels": [
+                "",
+                "solid",
+                "spotted",
+                "striped",
+                "multi-colored"
+            ]
+        },
+        {
+            "name": "primary-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "leg-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "bill-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "crown-color",
+            "labels": [
+                "",
+                "blue",
+                "brown",
+                "iridescent",
+                "purple",
+                "rufous",
+                "grey",
+                "yellow",
+                "olive",
+                "green",
+                "pink",
+                "orange",
+                "black",
+                "white",
+                "red",
+                "buff"
+            ]
+        },
+        {
+            "name": "wing-pattern",
+            "labels": [
+                "",
+                "solid",
+                "spotted",
+                "striped",
+                "multi-colored"
+            ]
+        }
+    ]
+}
