@@ -1,7 +1,7 @@
 import multiprocessing
 import type
 
-config_dir = "../config"
+config_dir = "../configs"
 
 corrupt_corruption_algorithm = type.CorruptionAlgorithm.imagenet_c
 corrupt_corruption_imagenet_c = type.CorruptionImageNetC.snow
@@ -13,7 +13,7 @@ corrupt_severity = 5
 dataset_config_file_name = "gtsrb.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../gtsrb-dataset"
+dataset_dir = "../../cub-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
@@ -72,7 +72,7 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_config_file_name = "gtsrb_split.json.gz"
+split_config_file_name = "cub_split.json.gz"
 split_create_symlinks = True
 split_load = True
 split_percentage_train = 0.8
