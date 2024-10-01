@@ -21,7 +21,7 @@ def readAttributes():
         if attribute_split[0] not in config_attributes:
             config_attributes[attribute_split[0]] = []
 
-        config_attributes[attribute_split[0]].append(attribute_split[1])
+        config_attributes[attribute_split[0]].append(attribute)
         config_attributes_map[line_split[0]] = attribute
 
     file_config.close()
