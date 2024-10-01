@@ -28,6 +28,8 @@ dataset_label_undefined_keyword = "undefined"
 
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
 cub_file_name_attributes = "attributes.txt"
+cub_file_name_images = "images.txt"
+cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name

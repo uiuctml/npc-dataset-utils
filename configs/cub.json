@@ -11,6 +11,7 @@
                 "bill-shape--hooked",
                 "bill-shape--hooked-seabird",
                 "bill-shape--needle",
+                "bill-shape--none",
                 "bill-shape--spatulate",
                 "bill-shape--specialized"
             ]
@@ -26,6 +27,7 @@
                 "wing-color--green",
                 "wing-color--grey",
                 "wing-color--iridescent",
+                "wing-color--none",
                 "wing-color--olive",
                 "wing-color--orange",
                 "wing-color--pink",
@@ -47,6 +49,7 @@
                 "upperparts-color--green",
                 "upperparts-color--grey",
                 "upperparts-color--iridescent",
+                "upperparts-color--none",
                 "upperparts-color--olive",
                 "upperparts-color--orange",
                 "upperparts-color--pink",
@@ -68,6 +71,7 @@
                 "underparts-color--green",
                 "underparts-color--grey",
                 "underparts-color--iridescent",
+                "underparts-color--none",
                 "underparts-color--olive",
                 "underparts-color--orange",
                 "underparts-color--pink",
@@ -83,6 +87,7 @@
             "labels": [
                 "",
                 "breast-pattern--multi-colored",
+                "breast-pattern--none",
                 "breast-pattern--solid",
                 "breast-pattern--spotted",
                 "breast-pattern--striped"
@@ -99,6 +104,7 @@
                 "back-color--green",
                 "back-color--grey",
                 "back-color--iridescent",
+                "back-color--none",
                 "back-color--olive",
                 "back-color--orange",
                 "back-color--pink",
@@ -115,6 +121,7 @@
                 "",
                 "tail-shape--fan-shaped-tail",
                 "tail-shape--forked-tail",
+                "tail-shape--none",
                 "tail-shape--notched-tail",
                 "tail-shape--pointed-tail",
                 "tail-shape--rounded-tail",
@@ -132,6 +139,7 @@
                 "upper-tail-color--green",
                 "upper-tail-color--grey",
                 "upper-tail-color--iridescent",
+                "upper-tail-color--none",
                 "upper-tail-color--olive",
                 "upper-tail-color--orange",
                 "upper-tail-color--pink",
@@ -153,6 +161,7 @@
                 "head-pattern--eyering",
                 "head-pattern--malar",
                 "head-pattern--masked",
+                "head-pattern--none",
                 "head-pattern--plain",
                 "head-pattern--spotted",
                 "head-pattern--striped",
@@ -170,6 +179,7 @@
                 "breast-color--green",
                 "breast-color--grey",
                 "breast-color--iridescent",
+                "breast-color--none",
                 "breast-color--olive",
                 "breast-color--orange",
                 "breast-color--pink",
@@ -191,6 +201,7 @@
                 "throat-color--green",
                 "throat-color--grey",
                 "throat-color--iridescent",
+                "throat-color--none",
                 "throat-color--olive",
                 "throat-color--orange",
                 "throat-color--pink",
@@ -211,6 +222,7 @@
                 "eye-color--buff",
                 "eye-color--green",
                 "eye-color--grey",
+                "eye-color--none",
                 "eye-color--olive",
                 "eye-color--orange",
                 "eye-color--pink",
@@ -227,6 +239,7 @@
                 "",
                 "bill-length--about-the-same-as-head",
                 "bill-length--longer-than-head",
+                "bill-length--none",
                 "bill-length--shorter-than-head"
             ]
         },
@@ -241,6 +254,7 @@
                 "forehead-color--green",
                 "forehead-color--grey",
                 "forehead-color--iridescent",
+                "forehead-color--none",
                 "forehead-color--olive",
                 "forehead-color--orange",
                 "forehead-color--pink",
@@ -262,6 +276,7 @@
                 "under-tail-color--green",
                 "under-tail-color--grey",
                 "under-tail-color--iridescent",
+                "under-tail-color--none",
                 "under-tail-color--olive",
                 "under-tail-color--orange",
                 "under-tail-color--pink",
@@ -283,6 +298,7 @@
                 "nape-color--green",
                 "nape-color--grey",
                 "nape-color--iridescent",
+                "nape-color--none",
                 "nape-color--olive",
                 "nape-color--orange",
                 "nape-color--pink",
@@ -304,6 +320,7 @@
                 "belly-color--green",
                 "belly-color--grey",
                 "belly-color--iridescent",
+                "belly-color--none",
                 "belly-color--olive",
                 "belly-color--orange",
                 "belly-color--pink",
@@ -320,6 +337,7 @@
                 "",
                 "wing-shape--broad-wings",
                 "wing-shape--long-wings",
+                "wing-shape--none",
                 "wing-shape--pointed-wings",
                 "wing-shape--rounded-wings",
                 "wing-shape--tapered-wings"
@@ -331,6 +349,7 @@
                 "",
                 "size--large-(16---32-in)",
                 "size--medium-(9---16-in)",
+                "size--none",
                 "size--small-(5---9-in)",
                 "size--very-large-(32---72-in)",
                 "size--very-small-(3---5-in)"
@@ -346,6 +365,7 @@
                 "shape--hawk-like",
                 "shape--hummingbird-like",
                 "shape--long-legged-like",
+                "shape--none",
                 "shape--owl-like",
                 "shape--perching-like",
                 "shape--pigeon-like",
@@ -361,6 +381,7 @@
             "labels": [
                 "",
                 "back-pattern--multi-colored",
+                "back-pattern--none",
                 "back-pattern--solid",
                 "back-pattern--spotted",
                 "back-pattern--striped"
@@ -371,6 +392,7 @@
             "labels": [
                 "",
                 "tail-pattern--multi-colored",
+                "tail-pattern--none",
                 "tail-pattern--solid",
                 "tail-pattern--spotted",
                 "tail-pattern--striped"
@@ -381,6 +403,7 @@
             "labels": [
                 "",
                 "belly-pattern--multi-colored",
+                "belly-pattern--none",
                 "belly-pattern--solid",
                 "belly-pattern--spotted",
                 "belly-pattern--striped"
@@ -397,6 +420,7 @@
                 "primary-color--green",
                 "primary-color--grey",
                 "primary-color--iridescent",
+                "primary-color--none",
                 "primary-color--olive",
                 "primary-color--orange",
                 "primary-color--pink",
@@ -418,6 +442,7 @@
                 "leg-color--green",
                 "leg-color--grey",
                 "leg-color--iridescent",
+                "leg-color--none",
                 "leg-color--olive",
                 "leg-color--orange",
                 "leg-color--pink",
@@ -439,6 +464,7 @@
                 "bill-color--green",
                 "bill-color--grey",
                 "bill-color--iridescent",
+                "bill-color--none",
                 "bill-color--olive",
                 "bill-color--orange",
                 "bill-color--pink",
@@ -460,6 +486,7 @@
                 "crown-color--green",
                 "crown-color--grey",
                 "crown-color--iridescent",
+                "crown-color--none",
                 "crown-color--olive",
                 "crown-color--orange",
                 "crown-color--pink",
@@ -475,10 +502,12 @@
             "labels": [
                 "",
                 "wing-pattern--multi-colored",
+                "wing-pattern--none",
                 "wing-pattern--solid",
                 "wing-pattern--spotted",
                 "wing-pattern--striped"
             ]
         }
-    ]
+    ],
+    "mappings": {}
 }
