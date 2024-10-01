@@ -57,7 +57,7 @@ def readMappings(attributes):
     for line in file_image_attribute_labels.readlines():
         line = line.rstrip()
         line_split = line.split(' ')
-        image_name = images_mapattributes[line_split[0]]
+        image_name = images_map[line_split[0]]
 
         if line_split[2] == "0":
             continue
