@@ -1,0 +1,306 @@
+{
+    "attributes": [
+        {
+            "name": "bill-shape",
+            "labels": [
+                "",
+                "bill-shape--all-purpose",
+                "bill-shape--curved-(up-or-down)",
+                "bill-shape--needle",
+                "bill-shape--none",
+                "bill-shape--spatulate"
+            ]
+        },
+        {
+            "name": "wing-color",
+            "labels": [
+                "",
+                "wing-color--black",
+                "wing-color--blue",
+                "wing-color--grey",
+                "wing-color--none",
+                "wing-color--orange",
+                "wing-color--red",
+                "wing-color--rufous"
+            ]
+        },
+        {
+            "name": "upperparts-color",
+            "labels": [
+                "",
+                "upperparts-color--black",
+                "upperparts-color--blue",
+                "upperparts-color--grey",
+                "upperparts-color--none",
+                "upperparts-color--orange",
+                "upperparts-color--red",
+                "upperparts-color--rufous"
+            ]
+        },
+        {
+            "name": "underparts-color",
+            "labels": [
+                "",
+                "underparts-color--black",
+                "underparts-color--blue",
+                "underparts-color--buff",
+                "underparts-color--grey",
+                "underparts-color--none",
+                "underparts-color--orange",
+                "underparts-color--red",
+                "underparts-color--rufous"
+            ]
+        },
+        {
+            "name": "breast-pattern",
+            "labels": [
+                "",
+                "breast-pattern--none",
+                "breast-pattern--spotted",
+                "breast-pattern--striped"
+            ]
+        },
+        {
+            "name": "back-color",
+            "labels": [
+                "",
+                "back-color--black",
+                "back-color--blue",
+                "back-color--grey",
+                "back-color--none",
+                "back-color--orange",
+                "back-color--red",
+                "back-color--rufous"
+            ]
+        },
+        {
+            "name": "tail-shape",
+            "labels": [
+                "",
+                "tail-shape--none",
+                "tail-shape--rounded-tail"
+            ]
+        },
+        {
+            "name": "upper-tail-color",
+            "labels": [
+                "",
+                "upper-tail-color--black",
+                "upper-tail-color--blue",
+                "upper-tail-color--none",
+                "upper-tail-color--orange",
+                "upper-tail-color--red",
+                "upper-tail-color--rufous"
+            ]
+        },
+        {
+            "name": "head-pattern",
+            "labels": [
+                "",
+                "head-pattern--eyering",
+                "head-pattern--none",
+                "head-pattern--unique-pattern"
+            ]
+        },
+        {
+            "name": "breast-color",
+            "labels": [
+                "",
+                "breast-color--black",
+                "breast-color--blue",
+                "breast-color--grey",
+                "breast-color--none",
+                "breast-color--orange",
+                "breast-color--red",
+                "breast-color--rufous"
+            ]
+        },
+        {
+            "name": "throat-color",
+            "labels": [
+                "",
+                "throat-color--black",
+                "throat-color--grey",
+                "throat-color--none",
+                "throat-color--orange",
+                "throat-color--red",
+                "throat-color--rufous"
+            ]
+        },
+        {
+            "name": "eye-color",
+            "labels": [
+                "",
+                "eye-color--buff",
+                "eye-color--none",
+                "eye-color--orange"
+            ]
+        },
+        {
+            "name": "bill-length",
+            "labels": [
+                "",
+                "bill-length--longer-than-head",
+                "bill-length--none",
+                "bill-length--shorter-than-head"
+            ]
+        },
+        {
+            "name": "forehead-color",
+            "labels": [
+                "",
+                "forehead-color--black",
+                "forehead-color--blue",
+                "forehead-color--grey",
+                "forehead-color--none",
+                "forehead-color--orange",
+                "forehead-color--rufous"
+            ]
+        },
+        {
+            "name": "under-tail-color",
+            "labels": [
+                "",
+                "under-tail-color--black",
+                "under-tail-color--blue",
+                "under-tail-color--none",
+                "under-tail-color--orange",
+                "under-tail-color--red",
+                "under-tail-color--rufous"
+            ]
+        },
+        {
+            "name": "nape-color",
+            "labels": [
+                "",
+                "nape-color--black",
+                "nape-color--blue",
+                "nape-color--grey",
+                "nape-color--none",
+                "nape-color--orange",
+                "nape-color--red",
+                "nape-color--rufous"
+            ]
+        },
+        {
+            "name": "belly-color",
+            "labels": [
+                "",
+                "belly-color--black",
+                "belly-color--blue",
+                "belly-color--buff",
+                "belly-color--grey",
+                "belly-color--none",
+                "belly-color--orange",
+                "belly-color--red",
+                "belly-color--rufous"
+            ]
+        },
+        {
+            "name": "wing-shape",
+            "labels": [
+                "",
+                "wing-shape--none",
+                "wing-shape--rounded-wings"
+            ]
+        },
+        {
+            "name": "size",
+            "labels": [
+                "",
+                "size--large-(16---32-in)",
+                "size--medium-(9---16-in)",
+                "size--none",
+                "size--very-large-(32---72-in)"
+            ]
+        },
+        {
+            "name": "shape",
+            "labels": [
+                "",
+                "shape--long-legged-like",
+                "shape--none",
+                "shape--perching-like",
+                "shape--swallow-like"
+            ]
+        },
+        {
+            "name": "back-pattern",
+            "labels": [
+                "",
+                "back-pattern--multi-colored",
+                "back-pattern--none",
+                "back-pattern--spotted",
+                "back-pattern--striped"
+            ]
+        },
+        {
+            "name": "tail-pattern",
+            "labels": [
+                "",
+                "tail-pattern--multi-colored",
+                "tail-pattern--none",
+                "tail-pattern--spotted",
+                "tail-pattern--striped"
+            ]
+        },
+        {
+            "name": "primary-color",
+            "labels": [
+                "",
+                "primary-color--black",
+                "primary-color--blue",
+                "primary-color--grey",
+                "primary-color--none",
+                "primary-color--orange",
+                "primary-color--red",
+                "primary-color--rufous"
+            ]
+        },
+        {
+            "name": "leg-color",
+            "labels": [
+                "",
+                "leg-color--none",
+                "leg-color--orange",
+                "leg-color--red",
+                "leg-color--rufous"
+            ]
+        },
+        {
+            "name": "bill-color",
+            "labels": [
+                "",
+                "bill-color--buff",
+                "bill-color--none",
+                "bill-color--orange",
+                "bill-color--red",
+                "bill-color--rufous"
+            ]
+        },
+        {
+            "name": "crown-color",
+            "labels": [
+                "",
+                "crown-color--black",
+                "crown-color--blue",
+                "crown-color--buff",
+                "crown-color--grey",
+                "crown-color--none",
+                "crown-color--orange",
+                "crown-color--rufous"
+            ]
+        },
+        {
+            "name": "wing-pattern",
+            "labels": [
+                "",
+                "wing-pattern--none",
+                "wing-pattern--solid",
+                "wing-pattern--spotted",
+                "wing-pattern--striped"
+            ]
+        }
+    ],
+    "mappings": {}
+}

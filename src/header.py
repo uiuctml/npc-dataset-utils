@@ -19,6 +19,7 @@ dataset_dir_images_split_original_test = dataset_dir_images_split_original + "/t
 dataset_dir_images_split_original_train = dataset_dir_images_split_original + "/train"
 dataset_dir_images_split_original_validate = dataset_dir_images_split_original + "/validate"
 dataset_dir_images_split_spn = dataset_dir_images_split + "/spn"
+dataset_dir_splits = dataset_dir + "/splits"
 dataset_file_extension_annotations = ".csv"
 dataset_file_extension_images = ".jpg"
 dataset_file_name_split_test = "test.txt"
@@ -27,9 +28,11 @@ dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
+cub_dir_splits_cbm = dataset_dir_splits + "/cbm"
 cub_file_name_attributes = "attributes.txt"
 cub_file_name_images = "images.txt"
 cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
+cub_file_name_split_cbm_train = "train.pkl"
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name
