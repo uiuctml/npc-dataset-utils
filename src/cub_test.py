@@ -6,6 +6,7 @@ import logger
 import os
 
 attributes_whitelist = {"bill-shape", "wing-color", "belly-color", "breast-color", "bill-length", "shape"}
+class_whitelist = {"089.Hooded_Merganser", "012.Yellow_headed_Blackbird", "068.Ruby_throated_Hummingbird", "167.Hooded_Warbler"}
 
 def readAttributes():
     attributes = {}
@@ -54,15 +55,29 @@ def readMappings(attributes):
     for line in file_images.readlines():
         line = line.rstrip()
         line_split = line.split(' ')
-        images_map[line_split[0]] = line_split[1]
-        mappings[line_split[1]] = {"labels": labels_default.copy()}
+        image_name = line_split[1]
+        class_name = image_name.split('/')[0]
+
+        if class_name not in class_whitelist:
+            continue
+
+        images_map[line_split[0]] = image_name
+        mappings[image_name] = {"labels": labels_default.copy()}
 
     file_images.close()
 
     for line in file_image_attribute_labels.readlines():
         line = line.rstrip()
         line_split = line.split(' ')
+
+        if line_split[0] not in images_map:
+            continue
+
         image_name = images_map[line_split[0]]
+        class_name = image_name.split('/')[0]
+
+        if class_name not in class_whitelist:
+            continue
 
         if line_split[2] == "0":
             continue
