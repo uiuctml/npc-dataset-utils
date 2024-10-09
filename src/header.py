@@ -32,7 +32,9 @@ cub_dir_splits_cbm = dataset_dir_splits + "/cbm"
 cub_file_name_attributes = "attributes.txt"
 cub_file_name_images = "images.txt"
 cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
+cub_file_name_split_cbm_test = "test.pkl"
 cub_file_name_split_cbm_train = "train.pkl"
+cub_file_name_split_cbm_validate = "val.pkl"
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name
