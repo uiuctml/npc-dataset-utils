@@ -8,6 +8,24 @@ import os
 attributes_whitelist = {"bill-shape", "wing-color", "belly-color", "breast-color", "bill-length", "shape"}
 class_whitelist = {"089.Hooded_Merganser", "012.Yellow_headed_Blackbird", "068.Ruby_throated_Hummingbird", "167.Hooded_Warbler"}
 
+def pruneAttributes(attributes, mappings):
+    attributes_map = {}
+
+    for attribute in attributes:
+        attribute["labels"] = [""]
+        attributes_map[attribute["name"]] = set()
+
+    for image_name in mappings.keys():
+        labels = mappings[image_name]["labels"]
+
+        for attribute_name in labels.keys():
+            attributes_map[attribute_name].add(labels[attribute_name])
+
+    for attribute in attributes:
+        attribute["labels"] += sorted(list(attributes_map[attribute["name"]]))
+
+    return attributes
+
 def readAttributes():
     attributes = {}
     attributes_list = []
@@ -103,7 +121,7 @@ def main():
     attributes = readAttributes()
     mappings = readMappings(attributes)
     config = {}
-    config["attributes"] = attributes[0]
+    config["attributes"] = pruneAttributes(attributes[0], mappings)
     config["mappings"] = mappings
     file_name_config_list = header.dataset_config_file_name.split('.')
     file_name_config = '.'.join([file_name_config_list[0] + "_test", file_name_config_list[1]])
