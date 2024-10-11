@@ -102,6 +102,7 @@ def main():
     attributes = readAttributes()
     mappings = readMappings(attributes)
     config = {}
+    config["instance_wise"] = True
     config["attributes"] = attributes[0]
     config["mappings"] = mappings
     file_name_config_list = header.dataset_config_file_name.split('.')

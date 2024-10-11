@@ -1,4 +1,5 @@
 {
+    "instance_wise": true,
     "attributes": [
         {
             "name": "bill-shape",

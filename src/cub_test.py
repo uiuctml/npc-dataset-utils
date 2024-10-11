@@ -121,6 +121,7 @@ def main():
     attributes = readAttributes()
     mappings = readMappings(attributes)
     config = {}
+    config["instance_wise"] = True
     config["attributes"] = pruneAttributes(attributes[0], mappings)
     config["mappings"] = mappings
     file_name_config_list = header.dataset_config_file_name.split('.')
