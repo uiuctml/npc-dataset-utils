@@ -18,6 +18,19 @@ def getLabelsAttribute(dataset_config):
 def getLabelsOriginal(dataset_config):
     return list(dataset_config["mappings"].keys())
 
+def getLabelsOriginalInstanceWise(dataset_config):
+    labels_original = []
+    labels_original_set = set()
+
+    for image_name in dataset_config["mappings"].keys():
+        class_name = image_name.split('/')[0]
+
+        if class_name not in labels_original_set:
+            labels_original.append(class_name)
+            labels_original_set.add(class_name)
+
+    return labels_original
+
 def getIndicesFromLabelsAttribute(labels_attribute):
     indices = {}
 
