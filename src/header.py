@@ -3,7 +3,7 @@ import type
 
 config_dir = "../configs"
 
-dataset_config_file_name = "cub_test.json"
+dataset_config_file_name = "cub.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../cub-test-dataset"
