@@ -77,6 +77,7 @@ slice_parallel_shared_memory_name = "slice"
 
 split_config_file_name = "cub_test_split.json.gz"
 split_create_symlinks = True
+split_dataset_dir_images = dataset_dir_images_sliced
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1

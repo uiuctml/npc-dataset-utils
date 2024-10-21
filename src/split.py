@@ -130,9 +130,9 @@ def main():
             saveSplits(file_keys_test, file_keys_train, file_keys_validate, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
 
     if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_original):
-        createSymlinks(dataset_name, file_keys_test, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_test)
-        createSymlinks(dataset_name, file_keys_validate, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_validate)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.dataset_dir_images_sliced, header.dataset_dir_images_split_original_train)
+        createSymlinks(dataset_name, file_keys_test, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_test)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_validate)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_train)
 
     return
 
