@@ -37,11 +37,13 @@ def readAttributes():
     return (attributes_list, attributes_map)
 
 def readMappings(attributes):
+    blacklist = set()
     file_images = open(os.path.join(header.dataset_dir_annotations, header.cub_file_name_images), 'r')
     file_image_attribute_labels = open(os.path.join(header.cub_dir_attributes, header.cub_file_name_image_attribute_labels), 'r')
     images_map = {}
     labels_default = {}
     mappings = {}
+    mappings_filtered = {}
 
     for attribute in attributes[0]:
         labels_default[attribute["name"]] = header.dataset_delimiter_label.join([attribute["name"], "none"])
@@ -57,30 +59,43 @@ def readMappings(attributes):
     for line in file_image_attribute_labels.readlines():
         line = line.rstrip()
         line_split = line.split(' ')
-        image_name = images_map[line_split[0]]
+        attribute_id = line_split[1]
+        attribute_present = line_split[2]
+        certainty_id = line_split[3]
+        image_id = line_split[0]
+        image_name = images_map[image_id]
 
-        if line_split[2] == "0":
+        if image_name in blacklist:
+            continue
+
+        if int(certainty_id) < 3:
+            blacklist.add(image_name)
+            continue
+
+        if attribute_present == "0":
             continue
 
         logger.log_info_raw("[INFO]: Reading mappings for \"" + image_name + "\"", end = '\r')
 
-        attribute = attributes[1][line_split[1]]
+        attribute = attributes[1][attribute_id]
         attribute_name = attribute.split(header.dataset_delimiter_label)[0]
 
-        if isinstance(mappings[image_name]["labels"][attribute_name], str):
-            if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
-                mappings[image_name]["labels"][attribute_name] = attribute
-            else:
-                logger.log_warn("Multiple values for attribute \"" + attribute_name + "\" for instance \"" + image_name + "\".")
-                mappings[image_name]["labels"][attribute_name] = [mappings[image_name]["labels"][attribute_name], attribute]
-        elif isinstance(mappings[image_name]["labels"][attribute_name], list):
-            mappings[image_name]["labels"][attribute_name].append(attribute)
+        if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+            mappings[image_name]["labels"][attribute_name] = attribute
+        else:
+            blacklist.add(image_name)
+            continue
 
     file_image_attribute_labels.close()
 
     logger.log_info_raw()
+    logger.log_info("Filtered " + str(len(blacklist)) + "/" + str(len(images_map)) + " images.")
 
-    return mappings
+    for image_name in mappings.keys():
+        if image_name not in blacklist:
+            mappings_filtered[image_name] = mappings[image_name]
+
+    return mappings_filtered
 
 def main():
     attributes = readAttributes()
