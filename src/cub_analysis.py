@@ -55,10 +55,8 @@ def getRandomDisjointClasses(classes_disjoint, labels_map, max = 4):
 
 def main():
     config = {}
-    file_name_config_list = header.dataset_config_file_name.split('.')
-    file_name_config = '.'.join([file_name_config_list[0] + "_test", file_name_config_list[1]])
 
-    with open(os.path.join(header.config_dir, file_name_config), 'r') as file_config:
+    with open(os.path.join(header.config_dir, header.cub_analysis_config_file_name), 'r') as file_config:
         config = json.load(file_config)
 
     labels_map = countUniqueAttributes(config)
