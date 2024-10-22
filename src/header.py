@@ -27,6 +27,7 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
+cub_analysis_balance_threshold = 0
 cub_analysis_config_file_name = dataset_config_file_name
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
 cub_dir_splits_cbm = dataset_dir_splits + "/cbm"
@@ -36,6 +37,8 @@ cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
 cub_file_name_split_cbm_test = "test.pkl"
 cub_file_name_split_cbm_train = "train.pkl"
 cub_file_name_split_cbm_validate = "val.pkl"
+cub_filter_by_attribute_uniqueness = False
+cub_filter_by_certainty = False
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name

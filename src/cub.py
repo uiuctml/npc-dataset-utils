@@ -68,7 +68,7 @@ def readMappings(attributes):
         if image_name in blacklist:
             continue
 
-        if int(certainty_id) < 3:
+        if header.cub_filter_by_certainty and int(certainty_id) < 3:
             blacklist.add(image_name)
             continue
 
@@ -82,7 +82,7 @@ def readMappings(attributes):
 
         if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
             mappings[image_name]["labels"][attribute_name] = attribute
-        else:
+        elif header.cub_filter_by_attribute_uniqueness:
             blacklist.add(image_name)
             continue
 
