@@ -3,10 +3,10 @@ import type
 
 config_dir = "../configs"
 
-dataset_config_file_name = "cub.json"
+dataset_config_file_name = "mnist.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../cub-test-dataset"
+dataset_dir = "../../mnist-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
@@ -62,6 +62,13 @@ label_viewer_count_col = 6
 
 log_level = type.LogLevel.info
 
+mnist_dir_images_addition = dataset_dir_images + "/addition"
+mnist_file_extension_images = ".png"
+mnist_file_name_images_test = "t10k-images-idx3-ubyte"
+mnist_file_name_images_train = "train-images-idx3-ubyte"
+mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
+mnist_file_name_labels_train = "train-labels-idx1-ubyte"
+
 parallel_process_count = multiprocessing.cpu_count()
 parallel_shared_memory_size_entry = 64
 parallel_shared_memory_size_process = 256
@@ -79,7 +86,7 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_config_file_name = "cub_test_split.json.gz"
+split_config_file_name = "mnist_split.json.gz"
 split_create_symlinks = True
 split_dataset_dir_images = dataset_dir_images_sliced
 split_load = True
