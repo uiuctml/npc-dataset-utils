@@ -1,6 +1,7 @@
 import codecs
 import header
 import logger
+import natsort
 import numpy
 import random
 
@@ -29,7 +30,7 @@ def getLabelsOriginalInstanceWise(dataset_config):
             labels_original.append(class_name)
             labels_original_set.add(class_name)
 
-    return labels_original
+    return natsort.natsorted(labels_original)
 
 def getIndicesFromLabelsAttribute(labels_attribute):
     indices = {}
