@@ -62,6 +62,7 @@ label_viewer_count_col = 6
 
 log_level = type.LogLevel.info
 
+mnist_attributes = ["number-first", "number-second"]
 mnist_dir_images_addition = dataset_dir_images + "/addition"
 mnist_file_extension_images = ".png"
 mnist_file_name_images_test = "t10k-images-idx3-ubyte"

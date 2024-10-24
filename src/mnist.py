@@ -53,11 +53,10 @@ def saveImages(images, labels):
     return
 
 def createAdditionAttributes():
-    attributes = ["number-first", "number-second"]
     classes = [""] + sorted(os.listdir(header.dataset_dir_images_sliced))
     config_attributes = []
 
-    for attribute_name in attributes:
+    for attribute_name in header.mnist_attributes:
         attribute = {}
         attribute["name"] = attribute_name
         attribute["labels"] = classes
@@ -86,6 +85,7 @@ def createAdditionDataset():
         progress_bar.n = image_combined_count + 1
         progress_bar.refresh()
         image_combined_count += 1
+        labels = {}
 
         file_path_first = file_paths[i]
         file_path_second = file_paths[i + 1]
@@ -103,7 +103,10 @@ def createAdditionDataset():
         os.makedirs(os.path.join(header.mnist_dir_images_addition, class_combined), exist_ok = True)
         cv2.imwrite(file_path_combined, image_combined)
 
-        # TODO fill in dataset config mappings
+        labels[header.mnist_attributes[0]] = class_first
+        labels[header.mnist_attributes[1]] = class_second
+        config_mappings[os.path.join(class_combined, file_name_combined)] = {}
+        config_mappings[os.path.join(class_combined, file_name_combined)]["labels"] = labels
 
     progress_bar.close()
 
