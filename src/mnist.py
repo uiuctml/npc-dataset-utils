@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+import cv2
 import header
 import itertools
+import json
 import logger
 import numpy
 import os
@@ -31,7 +33,7 @@ def saveImages(images, labels):
     progress_bar = tqdm.tqdm(total = image_count)
     progress_bar.set_description_str("[INFO]: Saving images")
 
-    os.mkdir(header.dataset_dir_images_sliced)
+    os.makedirs(header.dataset_dir_images_sliced, exist_ok = True)
 
     for i in range(0, image_count):
         image = PIL.Image.fromarray(images[i])
@@ -50,26 +52,69 @@ def saveImages(images, labels):
 
     return
 
+def createAdditionAttributes():
+    attributes = ["number-first", "number-second"]
+    classes = [""] + sorted(os.listdir(header.dataset_dir_images_sliced))
+    config_attributes = []
+
+    for attribute_name in attributes:
+        attribute = {}
+        attribute["name"] = attribute_name
+        attribute["labels"] = classes
+        config_attributes.append(attribute)
+
+    return config_attributes
+
 def createAdditionDataset():
+    class_file_counts = []
     classes = os.listdir(header.dataset_dir_images_sliced)
+    config = {}
+    config_mappings = {}
+    image_combined_count = 0
 
-    # TODO Create dataset config file and fill in attributes
+    for class_index in classes:
+        class_file_counts.append(len(os.listdir(os.path.join(header.dataset_dir_images_sliced, class_index))))
 
-    os.mkdir(header.mnist_dir_images_addition)
+    for pair_class_file_count in itertools.product(class_file_counts, class_file_counts):
+        image_combined_count += pair_class_file_count[0] * pair_class_file_count[1]
+
+    progress_bar = tqdm.tqdm(total = image_combined_count)
+    progress_bar.set_description_str("[INFO]: Creating addition dataset")
+    image_combined_count = 0
+
+    os.makedirs(header.mnist_dir_images_addition, exist_ok = True)
 
     for pair_class in itertools.product(classes, classes):
         file_names_first = os.listdir(os.path.join(header.dataset_dir_images_sliced, pair_class[0]))
         file_names_second = os.listdir(os.path.join(header.dataset_dir_images_sliced, pair_class[1]))
 
         for pair_file_name in itertools.product(file_names_first, file_names_second):
+            progress_bar.n = image_combined_count + 1
+            progress_bar.refresh()
+            image_combined_count += 1
+
             class_combined = str(int(pair_class[0]) + int(pair_class[1]))
             file_name_combined = pair_file_name[0].split('.')[0] + '_' + pair_file_name[1].split('.')[0] + header.mnist_file_extension_images
             file_path_first = os.path.join(header.dataset_dir_images_sliced, pair_class[0], pair_file_name[0])
             file_path_second = os.path.join(header.dataset_dir_images_sliced, pair_class[1], pair_file_name[1])
             file_path_combined = os.path.join(header.mnist_dir_images_addition, class_combined, file_name_combined)
+            image_first = cv2.imread(file_path_first)
+            image_second = cv2.imread(file_path_second)
+            image_combined = cv2.hconcat([image_first, image_second])
 
-            # TODO combine images and save
-            # TODO fill in mappings
+            os.makedirs(os.path.join(header.mnist_dir_images_addition, class_combined), exist_ok = True)
+            cv2.imwrite(file_path_combined, image_combined)
+
+            # TODO fill in dataset config mappings
+
+    progress_bar.close()
+
+    config["instance_wise"] = True
+    config["attributes"] = createAdditionAttributes()
+    config["mappings"] = config_mappings
+
+    with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
+        json.dump(config, file_config, indent = 4)
 
     return
 
