@@ -2,7 +2,6 @@
 
 import cv2
 import header
-import itertools
 import json
 import logger
 import numpy
@@ -10,6 +9,7 @@ import os
 import PIL.Image
 import struct
 import tqdm
+import utility
 
 def extractImages(file_name_images):
     with open(os.path.join(header.dataset_dir_images_original, file_name_images),"rb") as file:
@@ -66,46 +66,44 @@ def createAdditionAttributes():
     return config_attributes
 
 def createAdditionDataset():
-    class_file_counts = []
     classes = os.listdir(header.dataset_dir_images_sliced)
     config = {}
     config_mappings = {}
+    file_paths = []
     image_combined_count = 0
 
     for class_index in classes:
-        class_file_counts.append(len(os.listdir(os.path.join(header.dataset_dir_images_sliced, class_index))))
+        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced, class_index))
+        file_paths += [os.path.join(header.dataset_dir_images_sliced, class_index, file_name) for file_name in file_names]
 
-    for pair_class_file_count in itertools.product(class_file_counts, class_file_counts):
-        image_combined_count += pair_class_file_count[0] * pair_class_file_count[1]
-
-    progress_bar = tqdm.tqdm(total = image_combined_count)
+    file_paths = utility.shuffleUniform(file_paths, header.mnist_random_seed)
+    progress_bar = tqdm.tqdm(total = len(file_paths) // 2)
     progress_bar.set_description_str("[INFO]: Creating addition dataset")
-    image_combined_count = 0
 
     os.makedirs(header.mnist_dir_images_addition, exist_ok = True)
 
-    for pair_class in itertools.product(classes, classes):
-        file_names_first = os.listdir(os.path.join(header.dataset_dir_images_sliced, pair_class[0]))
-        file_names_second = os.listdir(os.path.join(header.dataset_dir_images_sliced, pair_class[1]))
+    for i in range(0, len(file_paths) - 1, 2):
+        progress_bar.n = image_combined_count + 1
+        progress_bar.refresh()
+        image_combined_count += 1
 
-        for pair_file_name in itertools.product(file_names_first, file_names_second):
-            progress_bar.n = image_combined_count + 1
-            progress_bar.refresh()
-            image_combined_count += 1
+        file_path_first = file_paths[i]
+        file_path_second = file_paths[i + 1]
+        class_first = os.path.basename(os.path.dirname(file_path_first))
+        class_second = os.path.basename(os.path.dirname(file_path_second))
+        class_combined = str(int(class_first) + int(class_second))
+        file_name_first = os.path.basename(file_path_first)
+        file_name_second = os.path.basename(file_path_second)
+        file_name_combined = file_name_first.split('.')[0] + '_' + file_name_second.split('.')[0] + header.mnist_file_extension_images
+        file_path_combined = os.path.join(header.mnist_dir_images_addition, class_combined, file_name_combined)
+        image_first = cv2.imread(file_path_first)
+        image_second = cv2.imread(file_path_second)
+        image_combined = cv2.hconcat([image_first, image_second])
 
-            class_combined = str(int(pair_class[0]) + int(pair_class[1]))
-            file_name_combined = pair_file_name[0].split('.')[0] + '_' + pair_file_name[1].split('.')[0] + header.mnist_file_extension_images
-            file_path_first = os.path.join(header.dataset_dir_images_sliced, pair_class[0], pair_file_name[0])
-            file_path_second = os.path.join(header.dataset_dir_images_sliced, pair_class[1], pair_file_name[1])
-            file_path_combined = os.path.join(header.mnist_dir_images_addition, class_combined, file_name_combined)
-            image_first = cv2.imread(file_path_first)
-            image_second = cv2.imread(file_path_second)
-            image_combined = cv2.hconcat([image_first, image_second])
+        os.makedirs(os.path.join(header.mnist_dir_images_addition, class_combined), exist_ok = True)
+        cv2.imwrite(file_path_combined, image_combined)
 
-            os.makedirs(os.path.join(header.mnist_dir_images_addition, class_combined), exist_ok = True)
-            cv2.imwrite(file_path_combined, image_combined)
-
-            # TODO fill in dataset config mappings
+        # TODO fill in dataset config mappings
 
     progress_bar.close()
 

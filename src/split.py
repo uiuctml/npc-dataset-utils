@@ -4,11 +4,9 @@ import gzip
 import header
 import json
 import logger
-import numpy
 import os
-import random as rand
 import tqdm
-import type
+import utility
 
 def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target):
     file_name_counter = 1
@@ -36,18 +34,11 @@ def createSymlinks(dataset_name, file_keys, file_map, dir_source, dir_target):
 
     return
 
-def shuffleUniform(file_keys, random_seed):
-    random = rand.Random()
-    random.seed(random_seed)
-    random.shuffle(file_keys)
-
-    return file_keys
-
 def generateSplits(file_keys):
     split_point_validate_test = int(len(file_keys) * (header.split_percentage_train + header.split_percentage_validate))
     split_point_train_validate = int(len(file_keys) * header.split_percentage_train)
 
-    shuffleUniform(file_keys, header.split_random_seed_percentage)
+    file_keys = utility.shuffleUniform(file_keys, header.split_random_seed_percentage)
 
     file_keys_test = file_keys[split_point_validate_test:]
     file_keys_train = file_keys[:split_point_train_validate]

@@ -68,6 +68,7 @@ mnist_file_name_images_test = "t10k-images-idx3-ubyte"
 mnist_file_name_images_train = "train-images-idx3-ubyte"
 mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
+mnist_random_seed = 42
 
 parallel_process_count = multiprocessing.cpu_count()
 parallel_shared_memory_size_entry = 64

@@ -69,6 +69,13 @@ def setSeed(seed):
 
     return
 
+def shuffleUniform(list, seed):
+    rand = random.Random()
+    rand.seed(seed)
+    rand.shuffle(list)
+
+    return list
+
 def writeToSharedMemory(shared_memory, process_id, entry_id, data):
     data = str(data)
     start = process_id * header.parallel_shared_memory_size_process + entry_id * header.parallel_shared_memory_size_entry
