@@ -97,10 +97,10 @@ def main():
     file_keys_train = []
     file_keys_validate = []
     file_map = {}
-    dirs_label = os.listdir(header.dataset_dir_images_sliced)
+    dirs_label = os.listdir(header.split_dataset_dir_images)
 
     for dir_label in dirs_label:
-        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced, dir_label))
+        file_names = os.listdir(os.path.join(header.split_dataset_dir_images, dir_label))
 
         for file_name in file_names:
             file_key = file_name.split(header.dataset_file_extension_images)[0]
