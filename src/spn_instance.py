@@ -12,7 +12,7 @@ def main():
     file_dataset_config.close()
 
     labels_attribute = utility.getLabelsAttribute(dataset_config)
-    labels_original = utility.getLabelsOriginalInstanceWise(dataset_config)
+    labels_original = utility.getLabelsOriginal(dataset_config)
     indices_attribute = utility.getIndicesFromLabelsAttribute(labels_attribute)
     indices_original = utility.getIndicesFromLabelsOriginal(labels_original)
 
