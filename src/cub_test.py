@@ -19,7 +19,11 @@ def pruneAttributes(attributes, mappings):
         labels = mappings[image_name]["labels"]
 
         for attribute_name in labels.keys():
-            attributes_map[attribute_name].add(labels[attribute_name])
+            if isinstance(labels[attribute_name], list):
+                for label in labels[attribute_name]:
+                    attributes_map[attribute_name].add(label)
+            else:
+                attributes_map[attribute_name].add(labels[attribute_name])
 
     for attribute in attributes:
         attribute["labels"] += sorted(list(attributes_map[attribute["name"]]))
@@ -108,8 +112,13 @@ def readMappings(attributes):
         attribute = attributes[1][line_split[1]]
         attribute_name = attribute.split(header.dataset_delimiter_label)[0]
 
-        if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
-            mappings[image_name]["labels"][attribute_name] = attribute
+        if isinstance(mappings[image_name]["labels"][attribute_name], list):
+            mappings[image_name]["labels"][attribute_name].append(attribute)
+        else:
+            if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+                mappings[image_name]["labels"][attribute_name] = attribute
+            else:
+                mappings[image_name]["labels"][attribute_name] = [mappings[image_name]["labels"][attribute_name], attribute]
 
     file_image_attribute_labels.close()
 

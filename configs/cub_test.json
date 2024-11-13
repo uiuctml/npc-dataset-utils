@@ -50,6 +50,8 @@
                 "breast-color--olive",
                 "breast-color--orange",
                 "breast-color--pink",
+                "breast-color--purple",
+                "breast-color--red",
                 "breast-color--white",
                 "breast-color--yellow"
             ]
@@ -110,7 +112,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0108_7937.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
@@ -121,7 +126,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--orange"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -171,9 +179,16 @@
             "labels": {
                 "bill-shape": "bill-shape--cone",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--iridescent",
+                "breast-color": [
+                    "breast-color--iridescent",
+                    "breast-color--yellow"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--iridescent",
+                "belly-color": [
+                    "belly-color--iridescent",
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -183,7 +198,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -200,10 +218,16 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0082_8577.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--orange",
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--orange"
+                ],
                 "shape": "shape--gull-like"
             }
         },
@@ -213,7 +237,11 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--orange",
+                    "belly-color--black"
+                ],
                 "shape": "shape--tree-clinging-like"
             }
         },
@@ -240,7 +268,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0017_8511.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--none",
@@ -253,7 +284,10 @@
                 "wing-color": "wing-color--buff",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -263,7 +297,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -271,7 +308,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -283,7 +323,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -300,8 +343,14 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0034_7736.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--hawk-like"
@@ -323,7 +372,10 @@
                 "wing-color": "wing-color--none",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--tree-clinging-like"
             }
         },
@@ -333,7 +385,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -341,7 +396,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--pigeon-like"
@@ -383,14 +441,20 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--orange",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--orange",
+                "belly-color": [
+                    "belly-color--orange",
+                    "belly-color--black"
+                ],
                 "shape": "shape--swallow-like"
             }
         },
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0042_8574.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--none",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
@@ -410,7 +474,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0024_8586.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
@@ -431,7 +498,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--orange"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -441,7 +511,10 @@
             "labels": {
                 "bill-shape": "bill-shape--cone",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -453,7 +526,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -461,7 +537,10 @@
             "labels": {
                 "bill-shape": "bill-shape--dagger",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--orange",
+                "breast-color": [
+                    "breast-color--orange",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--hummingbird-like"
@@ -490,7 +569,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0038_8689.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
@@ -500,8 +582,16 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0013_8362.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -541,9 +631,15 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -560,7 +656,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0059_8079.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
@@ -570,7 +669,10 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0100_8407.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--black",
@@ -580,8 +682,14 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0053_8410.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--perching-like"
@@ -640,20 +748,37 @@
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0073_8442.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
         "012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0012_8443.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--orange",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--orange",
+                    "belly-color--black"
+                ],
                 "shape": "shape--sandpiper-like"
             }
         },
@@ -663,7 +788,10 @@
                 "wing-color": "wing-color--black",
                 "breast-color": "breast-color--orange",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--orange",
+                "belly-color": [
+                    "belly-color--orange",
+                    "belly-color--black"
+                ],
                 "shape": "shape--upland-ground-like"
             }
         },
@@ -681,9 +809,18 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--iridescent",
+                "breast-color": [
+                    "breast-color--iridescent",
+                    "breast-color--grey",
+                    "breast-color--green",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--iridescent",
+                "belly-color": [
+                    "belly-color--iridescent",
+                    "belly-color--green",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -700,7 +837,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0123_57745.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--olive",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--white",
@@ -710,7 +850,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0054_57364.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--curved-(up-or-down)",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--buff",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--buff",
@@ -723,7 +866,10 @@
                 "wing-color": "wing-color--brown",
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -741,26 +887,43 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--olive",
+                "breast-color": [
+                    "breast-color--olive",
+                    "breast-color--green",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--olive",
+                "belly-color": [
+                    "belly-color--olive",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0049_57891.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--none",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--none",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0064_57387.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--olive",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--green",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--iridescent",
@@ -770,7 +933,11 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0007_57388.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--iridescent",
+                    "wing-color--green"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--white",
@@ -780,8 +947,14 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0072_57391.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--white",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--white",
+                    "breast-color--red"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--iridescent",
                 "shape": "shape--hummingbird-like"
@@ -801,7 +974,10 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--brown",
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--hummingbird-like"
@@ -810,7 +986,11 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0090_57411.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--iridescent",
+                "wing-color": [
+                    "wing-color--iridescent",
+                    "wing-color--yellow",
+                    "wing-color--green"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--buff",
@@ -830,10 +1010,19 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0042_57431.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--olive",
-                "breast-color": "breast-color--orange",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--green"
+                ],
+                "breast-color": [
+                    "breast-color--orange",
+                    "breast-color--red"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--olive",
+                "belly-color": [
+                    "belly-color--olive",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -850,7 +1039,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0024_57969.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--buff",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--buff",
@@ -861,9 +1053,15 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--green",
+                "breast-color": [
+                    "breast-color--green",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--green",
+                "belly-color": [
+                    "belly-color--green",
+                    "belly-color--white"
+                ],
                 "shape": "shape--swallow-like"
             }
         },
@@ -871,16 +1069,25 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--grey",
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0014_57477.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--olive",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--grey",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--grey",
@@ -890,7 +1097,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0095_57990.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--white",
@@ -900,7 +1110,11 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0096_57505.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--none",
@@ -931,9 +1145,15 @@
             "labels": {
                 "bill-shape": "bill-shape--dagger",
                 "wing-color": "wing-color--olive",
-                "breast-color": "breast-color--olive",
+                "breast-color": [
+                    "breast-color--olive",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--olive",
+                "belly-color": [
+                    "belly-color--olive",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -953,7 +1173,10 @@
                 "wing-color": "wing-color--grey",
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -980,7 +1203,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0079_58075.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
@@ -991,9 +1217,15 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--blue",
+                "breast-color": [
+                    "breast-color--blue",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--blue",
+                "belly-color": [
+                    "belly-color--blue",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1011,7 +1243,10 @@
             "labels": {
                 "bill-shape": "bill-shape--dagger",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--pink",
+                "breast-color": [
+                    "breast-color--pink",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--olive",
                 "shape": "shape--hummingbird-like"
@@ -1040,7 +1275,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0048_57222.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--blue",
+                "wing-color": [
+                    "wing-color--blue",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
@@ -1051,7 +1289,10 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--grey",
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--hummingbird-like"
@@ -1063,7 +1304,11 @@
                 "wing-color": "wing-color--none",
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--iridescent",
+                "belly-color": [
+                    "belly-color--iridescent",
+                    "belly-color--olive",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1081,9 +1326,16 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--iridescent",
+                "breast-color": [
+                    "breast-color--iridescent",
+                    "breast-color--olive",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--green",
+                "belly-color": [
+                    "belly-color--green",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1091,9 +1343,15 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--iridescent",
-                "breast-color": "breast-color--grey",
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--white",
+                "belly-color": [
+                    "belly-color--white",
+                    "belly-color--red"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1111,9 +1369,15 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--grey",
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--olive"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--green",
+                "belly-color": [
+                    "belly-color--green",
+                    "belly-color--black"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1130,10 +1394,25 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0013_57212.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--black",
+                    "breast-color--white",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--grey",
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1150,20 +1429,32 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0046_57225.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--white"
+                ],
                 "shape": "shape--perching-like"
             }
         },
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0003_58269.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--grey",
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1180,10 +1471,22 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0010_58285.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--white",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--white",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--white",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1200,7 +1503,10 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0084_58311.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--needle",
-                "wing-color": "wing-color--olive",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--white",
@@ -1211,9 +1517,15 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--brown",
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--longer-than-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--tree-clinging-like"
             }
         },
@@ -1230,10 +1542,19 @@
         "068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0131_57813.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--green"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--green"
+                ],
                 "shape": "shape--swallow-like"
             }
         },
@@ -1241,9 +1562,16 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white",
+                    "breast-color--red"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--black",
+                "belly-color": [
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--hummingbird-like"
             }
         },
@@ -1261,7 +1589,10 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--red",
-                "breast-color": "breast-color--pink",
+                "breast-color": [
+                    "breast-color--pink",
+                    "breast-color--orange"
+                ],
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--swallow-like"
@@ -1271,7 +1602,10 @@
             "labels": {
                 "bill-shape": "bill-shape--dagger",
                 "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--white",
+                "breast-color": [
+                    "breast-color--white",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1280,7 +1614,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0015_79132.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1293,14 +1630,20 @@
                 "wing-color": "wing-color--brown",
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--none",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--white"
+                ],
                 "shape": "shape--duck-like"
             }
         },
         "089.Hooded_Merganser/Hooded_Merganser_0085_79146.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
@@ -1330,8 +1673,17 @@
         "089.Hooded_Merganser/Hooded_Merganser_0073_796726.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--purple",
+                    "breast-color--grey"
+                ],
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--black",
                 "shape": "shape--gull-like"
@@ -1340,8 +1692,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0053_796728.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--gull-like"
@@ -1350,20 +1708,41 @@
         "089.Hooded_Merganser/Hooded_Merganser_0037_796731.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--orange",
-                "breast-color": "breast-color--pink",
+                "wing-color": [
+                    "wing-color--orange",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--pink",
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--orange",
+                "belly-color": [
+                    "belly-color--orange",
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--upright-perching-water-like"
             }
         },
         "089.Hooded_Merganser/Hooded_Merganser_0021_796732.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--black",
+                "belly-color": [
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--upright-perching-water-like"
             }
         },
@@ -1410,18 +1789,35 @@
         "089.Hooded_Merganser/Hooded_Merganser_0012_796748.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--duck-like"
             }
         },
         "089.Hooded_Merganser/Hooded_Merganser_0048_796749.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--hummingbird-like"
@@ -1430,8 +1826,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0011_796750.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--perching-like"
@@ -1440,7 +1842,12 @@
         "089.Hooded_Merganser/Hooded_Merganser_0013_796754.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
@@ -1450,7 +1857,11 @@
         "089.Hooded_Merganser/Hooded_Merganser_0066_796755.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--hooked-seabird",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--white",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1460,7 +1871,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0076_796756.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--hooked-seabird",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--none",
@@ -1470,8 +1884,16 @@
         "089.Hooded_Merganser/Hooded_Merganser_0074_796757.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1500,7 +1922,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0046_796764.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1510,10 +1935,19 @@
         "089.Hooded_Merganser/Hooded_Merganser_0079_796768.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--duck-like"
             }
         },
@@ -1530,8 +1964,15 @@
         "089.Hooded_Merganser/Hooded_Merganser_0036_796771.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--chicken-like-marsh"
@@ -1550,7 +1991,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0090_796774.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--white",
+                "wing-color": [
+                    "wing-color--white",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1561,7 +2005,10 @@
             "labels": {
                 "bill-shape": "bill-shape--needle",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--black",
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--longer-than-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--gull-like"
@@ -1580,8 +2027,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0086_796780.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--specialized",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--chicken-like-marsh"
@@ -1590,8 +2043,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0002_796781.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--chicken-like-marsh"
@@ -1600,10 +2059,19 @@
         "089.Hooded_Merganser/Hooded_Merganser_0026_796782.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--hooked-seabird",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--black",
+                "belly-color": [
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--duck-like"
             }
         },
@@ -1611,7 +2079,10 @@
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
                 "wing-color": "wing-color--buff",
-                "breast-color": "breast-color--black",
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1621,7 +2092,10 @@
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
                 "wing-color": "wing-color--buff",
-                "breast-color": "breast-color--black",
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1643,7 +2117,10 @@
                 "wing-color": "wing-color--none",
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--black",
+                "belly-color": [
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--upright-perching-water-like"
             }
         },
@@ -1660,7 +2137,11 @@
         "089.Hooded_Merganser/Hooded_Merganser_0075_78977.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--white",
@@ -1670,8 +2151,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0018_78979.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1680,8 +2167,16 @@
         "089.Hooded_Merganser/Hooded_Merganser_0040_78984.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--olive",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--olive",
+                    "wing-color--orange",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1691,7 +2186,10 @@
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
                 "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--brown",
                 "shape": "shape--duck-like"
@@ -1700,8 +2198,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0025_78996.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--white",
                 "shape": "shape--duck-like"
@@ -1710,10 +2214,22 @@
         "089.Hooded_Merganser/Hooded_Merganser_0062_78998.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
-                "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--grey",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
+                "bill-length": [
+                    "bill-length--about-the-same-as-head",
+                    "bill-length--shorter-than-head"
+                ],
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--white"
+                ],
                 "shape": "shape--duck-like"
             }
         },
@@ -1730,8 +2246,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0009_79012.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--black",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1770,27 +2292,50 @@
         "089.Hooded_Merganser/Hooded_Merganser_0032_79032.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--curved-(up-or-down)",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--black",
+                    "belly-color--white"
+                ],
                 "shape": "shape--sandpiper-like"
             }
         },
         "089.Hooded_Merganser/Hooded_Merganser_0016_79079.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--grey",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
-                "belly-color": "belly-color--brown",
+                "belly-color": [
+                    "belly-color--brown",
+                    "belly-color--grey",
+                    "belly-color--buff"
+                ],
                 "shape": "shape--hawk-like"
             }
         },
         "089.Hooded_Merganser/Hooded_Merganser_0064_79040.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1800,8 +2345,15 @@
         "089.Hooded_Merganser/Hooded_Merganser_0020_79046.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--brown",
+                    "breast-color--buff"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--buff",
                 "shape": "shape--duck-like"
@@ -1810,8 +2362,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0070_79054.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--orange",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--orange",
+                    "wing-color--white"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--chicken-like-marsh"
@@ -1820,8 +2378,14 @@
         "089.Hooded_Merganser/Hooded_Merganser_0068_79057.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--black",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--black",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
                 "shape": "shape--duck-like"
@@ -1830,7 +2394,11 @@
         "089.Hooded_Merganser/Hooded_Merganser_0028_79061.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black",
+                    "wing-color--white"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1840,7 +2408,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0063_79064.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--dagger",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1850,7 +2421,10 @@
         "089.Hooded_Merganser/Hooded_Merganser_0093_79075.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--spatulate",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--white",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--none",
@@ -1870,10 +2444,21 @@
         "167.Hooded_Warbler/Hooded_Warbler_0043_164864.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--yellow"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -1891,7 +2476,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -1900,7 +2488,11 @@
         "167.Hooded_Warbler/Hooded_Warbler_0028_164883.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -1910,8 +2502,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0012_164891.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -1920,7 +2518,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0051_164892.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -1930,8 +2531,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0042_164895.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--tree-clinging-like"
@@ -1960,10 +2567,19 @@
         "167.Hooded_Warbler/Hooded_Warbler_0003_164915.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--grey",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
+                "breast-color": [
+                    "breast-color--grey",
+                    "breast-color--yellow"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--grey",
+                "belly-color": [
+                    "belly-color--grey",
+                    "belly-color--yellow"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -1980,8 +2596,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0124_164923.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -1990,7 +2612,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0125_164925.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -2000,8 +2625,15 @@
         "167.Hooded_Warbler/Hooded_Warbler_0039_164928.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--olive"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2010,7 +2642,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0070_164930.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2020,7 +2655,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0128_164620.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2030,7 +2668,11 @@
         "167.Hooded_Warbler/Hooded_Warbler_0084_164944.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2040,8 +2682,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0072_22097.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2050,8 +2698,16 @@
         "167.Hooded_Warbler/Hooded_Warbler_0104_164982.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow",
+                    "wing-color--olive",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2071,7 +2727,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--none",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2080,8 +2739,15 @@
         "167.Hooded_Warbler/Hooded_Warbler_0035_165040.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2090,8 +2756,15 @@
         "167.Hooded_Warbler/Hooded_Warbler_0115_165041.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--iridescent",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--iridescent",
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2130,7 +2803,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0117_165106.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--buff",
@@ -2140,7 +2816,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0078_165123.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2170,7 +2849,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0116_164630.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -2191,7 +2873,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--green",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2200,7 +2885,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0122_164635.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2211,7 +2899,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--olive",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--olive"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2220,8 +2911,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0089_164640.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2240,8 +2937,14 @@
         "167.Hooded_Warbler/Hooded_Warbler_0112_164650.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--buff"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2280,10 +2983,19 @@
         "167.Hooded_Warbler/Hooded_Warbler_0058_164674.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--olive"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--white"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--white"
+                ],
                 "shape": "shape--perching-like"
             }
         },
@@ -2291,7 +3003,10 @@
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
                 "wing-color": "wing-color--olive",
-                "breast-color": "breast-color--yellow",
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--perching-like"
@@ -2300,7 +3015,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0033_165213.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2310,7 +3028,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0001_164704.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2320,7 +3041,11 @@
         "167.Hooded_Warbler/Hooded_Warbler_0134_164708.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--grey",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2330,7 +3055,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0095_164709.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--brown",
+                "wing-color": [
+                    "wing-color--brown",
+                    "wing-color--yellow"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2340,7 +3068,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0019_164710.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--cone",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--none",
                 "belly-color": "belly-color--yellow",
@@ -2370,7 +3101,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0036_164779.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -2390,7 +3124,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0011_164801.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--black",
+                "wing-color": [
+                    "wing-color--black",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--yellow",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -2400,7 +3137,11 @@
         "167.Hooded_Warbler/Hooded_Warbler_0101_164806.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--grey",
+                "wing-color": [
+                    "wing-color--grey",
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--grey",
@@ -2410,7 +3151,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0041_164807.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--buff"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--about-the-same-as-head",
                 "belly-color": "belly-color--yellow",
@@ -2420,7 +3164,10 @@
         "167.Hooded_Warbler/Hooded_Warbler_0135_164824.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--olive"
+                ],
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
@@ -2430,10 +3177,16 @@
         "167.Hooded_Warbler/Hooded_Warbler_0130_164826.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
                 "breast-color": "breast-color--none",
                 "bill-length": "bill-length--shorter-than-head",
-                "belly-color": "belly-color--iridescent",
+                "belly-color": [
+                    "belly-color--iridescent",
+                    "belly-color--yellow"
+                ],
                 "shape": "shape--tree-clinging-like"
             }
         },
@@ -2443,15 +3196,24 @@
                 "wing-color": "wing-color--none",
                 "breast-color": "breast-color--black",
                 "bill-length": "bill-length--none",
-                "belly-color": "belly-color--yellow",
+                "belly-color": [
+                    "belly-color--yellow",
+                    "belly-color--black"
+                ],
                 "shape": "shape--perching-like"
             }
         },
         "167.Hooded_Warbler/Hooded_Warbler_0016_164837.jpg": {
             "labels": {
                 "bill-shape": "bill-shape--all-purpose",
-                "wing-color": "wing-color--yellow",
-                "breast-color": "breast-color--yellow",
+                "wing-color": [
+                    "wing-color--yellow",
+                    "wing-color--black"
+                ],
+                "breast-color": [
+                    "breast-color--yellow",
+                    "breast-color--black"
+                ],
                 "bill-length": "bill-length--shorter-than-head",
                 "belly-color": "belly-color--yellow",
                 "shape": "shape--swallow-like"
