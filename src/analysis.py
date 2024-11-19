@@ -85,9 +85,8 @@ def countAttributeClassOccurrences(config):
 
     return class_occurrences
 
-def computeAttributeClassSpread(config):
+def computeAttributeClassSpread(class_occurrences):
     class_spreads = {}
-    class_occurrences = countAttributeClassOccurrences(config)
     classes = class_occurrences["classes"]
 
     for attribute_name in class_occurrences.keys():
@@ -106,10 +105,28 @@ def computeAttributeClassSpread(config):
 
     return class_spreads
 
-def analyzeAttributeClassSpread(class_spreads):
+def computeCategoryClassSpread(class_occurrences):
+    class_spreads = {}
+    classes = class_occurrences["classes"]
+
+    for attribute_name in class_occurrences.keys():
+        if attribute_name == "classes":
+            continue
+
+        for attribute_category in class_occurrences[attribute_name].keys():
+            class_spread = len(class_occurrences[attribute_name][attribute_category]) / classes
+            class_spreads[attribute_category] = class_spread
+
+    class_spreads = dict(sorted(class_spreads.items(), key=lambda item: item[1], reverse = True))
+
+    return class_spreads
+
+def filterAttribute(attribute_class_spreads):
+    attributes_filtered = []
+
     for attribute_type in attribute_types.keys():
         for attribute_name in attribute_types[attribute_type]:
-            if class_spreads[attribute_name] <= attribute_type_thresholds[attribute_type]:
+            if attribute_class_spreads[attribute_name] <= attribute_type_thresholds[attribute_type]:
                 continue
 
             tabs_attribute_name = "\t"
@@ -121,9 +138,19 @@ def analyzeAttributeClassSpread(class_spreads):
             if len(attribute_type) <= 5:
                 tabs_attribute_type = "\t "
 
-            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread > " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(class_spreads[attribute_name]))
+            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread > " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(attribute_class_spreads[attribute_name]))
 
-    return
+            attributes_filtered.append(attribute_name)
+
+    return attributes_filtered
+
+def filterAttributeCategory(config, category_class_spreads, attributes_filtered):
+    categories_filtered = {}
+
+    for attribute_name in attributes_filtered:
+        pass
+
+    return categories_filtered
 
 def computeMatrixASize(config):
     classes = set()
@@ -157,53 +184,6 @@ def computeMatrixASize(config):
 
     return
 
-def countUniqueAttributes(config):
-    labels_map = {}
-    mappings = config["mappings"]
-
-    for image_name in mappings.keys():
-        class_name = int(image_name.split('.')[0])
-
-        if class_name not in labels_map:
-            labels_map[class_name] = set()
-
-    for image_name in mappings.keys():
-        class_name = int(image_name.split('.')[0])
-        labels = json.dumps(mappings[image_name]["labels"])
-        labels_map[class_name].add(labels)
-
-    return labels_map
-
-def findDisjointClasses(labels_map):
-    classes_disjoint = {}
-
-    for class_name in labels_map.keys():
-        classes_disjoint[class_name] = []
-
-    for class_name in labels_map.keys():
-        for class_name_other in labels_map.keys():
-            if class_name == class_name_other:
-                continue
-
-            if (labels_map[class_name].isdisjoint(labels_map[class_name_other])):
-                classes_disjoint[class_name].append(class_name_other)
-
-    return classes_disjoint
-
-def getRandomDisjointClasses(classes_disjoint, labels_map, max = 4):
-    class_name = random.choice(list(classes_disjoint.keys()))
-    classes_disjoint_random = {class_name}
-    count = 1
-
-    while count < max:
-        class_name_random = random.choice(classes_disjoint[class_name])
-
-        if classes_disjoint_random.issubset(classes_disjoint[class_name_random]) and len(labels_map[class_name_random]) > 1:
-            classes_disjoint_random.add(class_name_random)
-            count += 1
-
-    return classes_disjoint_random
-
 def main():
     config = {}
 
@@ -211,22 +191,11 @@ def main():
         config = json.load(file_config)
 
     computeMatrixASize(config)
-
-    attribute_class_spreads = computeAttributeClassSpread(config)
-    analyzeAttributeClassSpread(attribute_class_spreads)
-
-    labels_map = countUniqueAttributes(config)
-    classes_disjoint = findDisjointClasses(labels_map)
-    classes_disjoint_random = getRandomDisjointClasses(classes_disjoint, labels_map)
-
-    for class_name in labels_map.keys():
-        logger.log_debug("Total unique attributes for class " + str(class_name) + ": " + str(len(labels_map[class_name])))
-
-    for class_name in classes_disjoint.keys():
-        logger.log_debug("List of classes having disjoint attributes with class " + str(class_name) + ": ")
-        logger.log_debug(classes_disjoint[class_name])
-
-    logger.log_debug("List of random classes having disjoint attributes with each other: " + str(classes_disjoint_random))
+    class_occurrences = countAttributeClassOccurrences(config)
+    attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
+    category_class_spreads = computeCategoryClassSpread(class_occurrences)
+    attributes_filtered = filterAttribute(attribute_class_spreads)
+    filterAttributeCategory(config, category_class_spreads, attributes_filtered)
 
     return
 
