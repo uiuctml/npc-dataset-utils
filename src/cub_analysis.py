@@ -39,8 +39,8 @@ def countAttributeClassOccurrences(config):
 
     return class_occurrences
 
-def computeAttributeBalanceScore(config):
-    balance_scores = {}
+def computeAttributeClassSpread(config):
+    class_spreads = {}
     class_occurrences = countAttributeClassOccurrences(config)
     classes = class_occurrences["classes"]
 
@@ -48,15 +48,15 @@ def computeAttributeBalanceScore(config):
         if attribute_name == "classes":
             continue
 
-        balance_score = 0
+        class_spread = 0
 
         for attribute_category in class_occurrences[attribute_name].keys():
-            balance_score += (len(class_occurrences[attribute_name][attribute_category]) / classes)
+            class_spread += (len(class_occurrences[attribute_name][attribute_category]) / classes)
 
-        balance_score /= len(list(class_occurrences[attribute_name].keys()))
-        balance_scores[attribute_name] = round(balance_score, 2)
+        class_spread /= len(list(class_occurrences[attribute_name].keys()))
+        class_spreads[attribute_name] = round(class_spread, 2)
 
-    return balance_scores
+    return class_spreads
 
 def countUniqueAttributes(config):
     labels_map = {}
@@ -111,22 +111,22 @@ def main():
     with open(os.path.join(header.config_dir, header.cub_analysis_config_file_name), 'r') as file_config:
         config = json.load(file_config)
 
-    attribute_balance_scores = computeAttributeBalanceScore(config)
-    attribute_balance_scores = dict(sorted(attribute_balance_scores.items(), key=lambda item: item[1], reverse = True))
+    attribute_class_spreads = computeAttributeClassSpread(config)
+    attribute_class_spreads = dict(sorted(attribute_class_spreads.items(), key=lambda item: item[1], reverse = True))
     labels_map = countUniqueAttributes(config)
     classes_disjoint = findDisjointClasses(labels_map)
     classes_disjoint_random = getRandomDisjointClasses(classes_disjoint, labels_map)
 
-    for attribute_name in attribute_balance_scores.keys():
-        if attribute_balance_scores[attribute_name] < header.cub_analysis_balance_threshold:
+    for attribute_name in attribute_class_spreads.keys():
+        if attribute_class_spreads[attribute_name] < header.cub_analysis_balance_threshold:
             continue
 
         tabs = "\t"
 
-        if len(attribute_name) <= 5:
+        if len(attribute_name) <= 9:
             tabs = "\t\t"
 
-        logger.log_info("Attribute with balance score >= " + str(int(header.cub_analysis_balance_threshold * 100)) + "%: " "\"" + attribute_name + "\"," + tabs + str(attribute_balance_scores[attribute_name]))
+        logger.log_info("Attribute with class spread >= " + str(int(header.cub_analysis_balance_threshold * 100)) + "%: " "\"" + attribute_name + "\"," + tabs + str(attribute_class_spreads[attribute_name]))
 
     for class_name in labels_map.keys():
         logger.log_debug("Total unique attributes for class " + str(class_name) + ": " + str(len(labels_map[class_name])))
