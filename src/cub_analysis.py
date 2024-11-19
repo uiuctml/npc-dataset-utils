@@ -46,10 +46,10 @@ attribute_types = {
 }
 
 attribute_type_thresholds = {
-    "color": 0,
-    "shape": 0,
-    "size": 0,
-    "pattern": 0
+    "color": 0.51,
+    "shape": 0.62,
+    "size": 0.61,
+    "pattern": 0.72
 }
 
 def countAttributeClassOccurrences(config):
@@ -109,19 +109,19 @@ def computeAttributeClassSpread(config):
 def analyzeAttributeClassSpread(class_spreads):
     for attribute_type in attribute_types.keys():
         for attribute_name in attribute_types[attribute_type]:
-            if class_spreads[attribute_name] < attribute_type_thresholds[attribute_type]:
+            if class_spreads[attribute_name] <= attribute_type_thresholds[attribute_type]:
                 continue
 
             tabs_attribute_name = "\t"
             tabs_attribute_type = " "
 
-            if len(attribute_name) <= 11:
+            if len(attribute_name) <= 9:
                 tabs_attribute_name = "\t\t"
 
             if len(attribute_type) <= 5:
                 tabs_attribute_type = "\t "
 
-            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread >= " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(class_spreads[attribute_name]))
+            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread > " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(class_spreads[attribute_name]))
 
     return
 
