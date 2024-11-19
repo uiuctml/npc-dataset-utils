@@ -6,6 +6,52 @@ import logger
 import os
 import random
 
+attribute_types = {
+    "color": [
+        "primary-color",
+        "upperparts-color",
+        "wing-color",
+        "bill-color",
+        "underparts-color",
+        "back-color",
+        "nape-color",
+        "leg-color",
+        "breast-color",
+        "under-tail-color",
+        "crown-color",
+        "forehead-color",
+        "belly-color",
+        "upper-tail-color",
+        "throat-color",
+        "eye-color"
+    ],
+    "shape": [
+        "tail-shape",
+        "wing-shape",
+        "shape",
+        "bill-shape"
+    ],
+    "size": [
+        "size",
+        "bill-length"
+    ],
+    "pattern": [
+        "wing-pattern",
+        "head-pattern",
+        "back-pattern",
+        "tail-pattern",
+        "breast-pattern",
+        "belly-pattern"
+    ]
+}
+
+attribute_type_thresholds = {
+    "color": 0,
+    "shape": 0,
+    "size": 0,
+    "pattern": 0
+}
+
 def countAttributeClassOccurrences(config):
     class_occurrences = {}
     classes = set()
@@ -56,7 +102,28 @@ def computeAttributeClassSpread(config):
         class_spread /= len(list(class_occurrences[attribute_name].keys()))
         class_spreads[attribute_name] = round(class_spread, 2)
 
+    class_spreads = dict(sorted(class_spreads.items(), key=lambda item: item[1], reverse = True))
+
     return class_spreads
+
+def analyzeAttributeClassSpread(class_spreads):
+    for attribute_type in attribute_types.keys():
+        for attribute_name in attribute_types[attribute_type]:
+            if class_spreads[attribute_name] < attribute_type_thresholds[attribute_type]:
+                continue
+
+            tabs_attribute_name = "\t"
+            tabs_attribute_type = " "
+
+            if len(attribute_name) <= 11:
+                tabs_attribute_name = "\t\t"
+
+            if len(attribute_type) <= 5:
+                tabs_attribute_type = "\t "
+
+            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread >= " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(class_spreads[attribute_name]))
+
+    return
 
 def countUniqueAttributes(config):
     labels_map = {}
@@ -112,21 +179,11 @@ def main():
         config = json.load(file_config)
 
     attribute_class_spreads = computeAttributeClassSpread(config)
-    attribute_class_spreads = dict(sorted(attribute_class_spreads.items(), key=lambda item: item[1], reverse = True))
+    analyzeAttributeClassSpread(attribute_class_spreads)
+
     labels_map = countUniqueAttributes(config)
     classes_disjoint = findDisjointClasses(labels_map)
     classes_disjoint_random = getRandomDisjointClasses(classes_disjoint, labels_map)
-
-    for attribute_name in attribute_class_spreads.keys():
-        if attribute_class_spreads[attribute_name] < header.cub_analysis_balance_threshold:
-            continue
-
-        tabs = "\t"
-
-        if len(attribute_name) <= 9:
-            tabs = "\t\t"
-
-        logger.log_info("Attribute with class spread >= " + str(int(header.cub_analysis_balance_threshold * 100)) + "%: " "\"" + attribute_name + "\"," + tabs + str(attribute_class_spreads[attribute_name]))
 
     for class_name in labels_map.keys():
         logger.log_debug("Total unique attributes for class " + str(class_name) + ": " + str(len(labels_map[class_name])))
