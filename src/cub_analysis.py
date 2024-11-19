@@ -25,10 +25,15 @@ def countAttributeClassOccurrences(config):
         classes.add(class_name)
 
         for attribute_name in mappings[image_name]["labels"].keys():
-            attribute_category = mappings[image_name]["labels"][attribute_name]
+            attribute_categories = mappings[image_name]["labels"][attribute_name]
 
-            if attribute_category != header.dataset_delimiter_label.join([attribute_name, "none"]):
-                class_occurrences[attribute_name][attribute_category].add(class_name)
+            if isinstance(attribute_categories, list):
+                for attribute_category in attribute_categories:
+                    if attribute_category != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                        class_occurrences[attribute_name][attribute_category].add(class_name)
+            else:
+                if attribute_categories != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                    class_occurrences[attribute_name][attribute_categories].add(class_name)
 
     class_occurrences["classes"] = len(classes)
 
