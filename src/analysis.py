@@ -125,6 +125,38 @@ def analyzeAttributeClassSpread(class_spreads):
 
     return
 
+def computeMatrixASize(config):
+    classes = set()
+    cols = 1
+    rows = 0
+
+    for attribute in config["attributes"]:
+        count_categories = 0
+
+        for attribute_category in attribute["labels"]:
+            if attribute_category == "":
+                continue
+
+            count_categories += 1
+
+        logger.log_info("Number of categories for \"" + attribute["name"] + "\": " + str(count_categories) + ".")
+
+        cols *= count_categories
+
+    for image_name in config["mappings"].keys():
+        class_name = image_name.split('.')[0]
+        classes.add(class_name)
+
+    logger.log_info("Number of classes: " + str(len(classes)) + ".")
+
+    rows = len(classes)
+    bytes = rows * cols * 4
+    gigabytes = bytes / 1000000000
+
+    logger.log_info("\"" + header.analysis_config_file_name + "\" yields a " + str(gigabytes) + " GB matrix A.")
+
+    return
+
 def countUniqueAttributes(config):
     labels_map = {}
     mappings = config["mappings"]
@@ -177,6 +209,8 @@ def main():
 
     with open(os.path.join(header.config_dir, header.analysis_config_file_name), 'r') as file_config:
         config = json.load(file_config)
+
+    computeMatrixASize(config)
 
     attribute_class_spreads = computeAttributeClassSpread(config)
     analyzeAttributeClassSpread(attribute_class_spreads)
