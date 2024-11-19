@@ -175,7 +175,7 @@ def getRandomDisjointClasses(classes_disjoint, labels_map, max = 4):
 def main():
     config = {}
 
-    with open(os.path.join(header.config_dir, header.cub_analysis_config_file_name), 'r') as file_config:
+    with open(os.path.join(header.config_dir, header.analysis_config_file_name), 'r') as file_config:
         config = json.load(file_config)
 
     attribute_class_spreads = computeAttributeClassSpread(config)
