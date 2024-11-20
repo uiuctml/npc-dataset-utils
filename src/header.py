@@ -27,7 +27,10 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
+analysis_compute_matrix_a_size = True
 analysis_config_file_name = dataset_config_file_name
+analysis_filter_attributes_categories = False
+analysis_filter_classes_instances = True
 analysis_threshold_max = False
 
 cub_dir_attributes = dataset_dir_annotations + "/attributes"

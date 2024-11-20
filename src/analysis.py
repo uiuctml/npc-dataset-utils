@@ -248,17 +248,23 @@ def main():
     with open(os.path.join(header.config_dir, header.analysis_config_file_name), 'r') as file_config:
         config = json.load(file_config)
 
-    computeMatrixASize(config)
-    class_occurrences = countAttributeClassOccurrences(config)
-    attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
-    category_class_spreads = computeCategoryClassSpread(class_occurrences)
+    if header.analysis_compute_matrix_a_size:
+        computeMatrixASize(config)
 
-    if len(attribute_whitelist) <= 0:
-        attribute_whitelist = filterAttribute(attribute_class_spreads)
-    else:
-        logger.log_info("Manual attribute whitelist used.")
+    if header.analysis_filter_attributes_categories:
+        class_occurrences = countAttributeClassOccurrences(config)
+        attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
+        category_class_spreads = computeCategoryClassSpread(class_occurrences)
 
-    filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
+        if len(attribute_whitelist) <= 0:
+            attribute_whitelist = filterAttribute(attribute_class_spreads)
+        else:
+            logger.log_info("Manual attribute whitelist used.")
+
+        filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
+
+    if header.analysis_filter_classes_instances:
+        pass
 
     return
 
