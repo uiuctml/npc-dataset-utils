@@ -5,6 +5,16 @@ import json
 import logger
 import os
 
+attribute_whitelist = [
+    "bill-shape",
+    "shape",
+    "head-pattern",
+    "wing-pattern",
+    "wing-color",
+    "belly-color",
+    "back-color"
+]
+
 attribute_types = {
     "color": [
         "primary-color",
@@ -52,15 +62,13 @@ attribute_type_thresholds = {
 }
 
 attribute_category_thresholds = {
-    "primary-color": 0.9,
-    "upperparts-color": 0.9,
-    "tail-shape": 0.9,
-    "wing-shape": 0.9,
-    "size": 0.9,
-    "bill-length": 0.9,
-    "wing-pattern": 0.9,
-    "head-pattern": 0.9,
-    "back-pattern": 0.9,
+    "bill-shape": 0.4,
+    "shape": 0.4,
+    "head-pattern": 0.7,
+    "wing-pattern": 1.0,
+    "wing-color": 0.3,
+    "belly-color": 0.3,
+    "back-color": 0.3,
 }
 
 def countAttributeClassOccurrences(config):
@@ -133,28 +141,36 @@ def computeCategoryClassSpread(class_occurrences):
     return class_spreads
 
 def filterAttribute(attribute_class_spreads):
-    attributes_whitelist = []
+    attribute_whitelist = []
 
     for attribute_type in attribute_types.keys():
         for attribute_name in attribute_types[attribute_type]:
-            if attribute_class_spreads[attribute_name] < attribute_type_thresholds[attribute_type]:
-                continue
+            if header.analysis_threshold_max:
+                if attribute_class_spreads[attribute_name] < attribute_type_thresholds[attribute_type]:
+                    continue
+            else:
+                if attribute_class_spreads[attribute_name] > attribute_type_thresholds[attribute_type]:
+                    continue
 
             spaces = " "
+            inequality = ">"
+
+            if not header.analysis_threshold_max:
+                inequality = "<"
 
             if len(attribute_type) <= 5:
                 spaces = "\t "
 
-            logger.log_info("Attribute type \"" + attribute_type + "\"" + spaces + "with class spread >= " + str(attribute_type_thresholds[attribute_type]) + ":\t" + str(attribute_class_spreads[attribute_name]) + "\tfor \"" + attribute_name + "\".")
+            logger.log_info("Attribute type \"" + attribute_type + "\"" + spaces + "with class spread " + inequality + "= " + str(attribute_type_thresholds[attribute_type]) + ":\t" + str(attribute_class_spreads[attribute_name]) + "\tfor \"" + attribute_name + "\".")
 
-            attributes_whitelist.append(attribute_name)
+            attribute_whitelist.append(attribute_name)
 
-    return attributes_whitelist
+    return attribute_whitelist
 
-def filterAttributeCategory(config, category_class_spreads, attributes_whitelist):
+def filterAttributeCategory(config, category_class_spreads, attribute_whitelist):
     categories_whitelist = {}
 
-    for attribute_name in attributes_whitelist:
+    for attribute_name in attribute_whitelist:
         for attribute in config["attributes"]:
             if attribute["name"] != attribute_name:
                 continue
@@ -165,16 +181,29 @@ def filterAttributeCategory(config, category_class_spreads, attributes_whitelist
                 if category_name == "":
                     continue
 
-                if category_class_spreads[category_name] < attribute_category_thresholds[attribute_name]:
-                    continue
+                if attribute_name not in attribute_category_thresholds:
+                    logger.log_fatal("Missing attribute category threshold for \"" + attribute_name + "\". Quit.")
+                    exit(-1)
+
+                if header.analysis_threshold_max:
+                    if category_class_spreads[category_name] < attribute_category_thresholds[attribute_name]:
+                        continue
+                else:
+                    if category_class_spreads[category_name] > attribute_category_thresholds[attribute_name]:
+                        continue
 
                 categories_whitelist[attribute_name][category_name] = category_class_spreads[category_name]
 
             categories_whitelist[attribute_name] = dict(sorted(categories_whitelist[attribute_name].items(), key=lambda item: item[1], reverse = True))
 
+    inequality = ">"
+
+    if not header.analysis_threshold_max:
+        inequality = "<"
+
     for attribute_name in categories_whitelist.keys():
         for category_name in categories_whitelist[attribute_name].keys():
-            logger.log_info("Attribute category with class spread >= " + str(attribute_category_thresholds[attribute_name]) + ":\t" + str(category_class_spreads[category_name]) + "\tfor \"" + category_name + "\".")
+            logger.log_info("Attribute category with class spread " + inequality + "= " + str(attribute_category_thresholds[attribute_name]) + ":\t" + str(category_class_spreads[category_name]) + "\tfor \"" + category_name + "\".")
 
     logger.log_info("attribute_category_whitelist =", json.dumps(categories_whitelist, indent = 4))
 
@@ -213,6 +242,7 @@ def computeMatrixASize(config):
     return
 
 def main():
+    global attribute_whitelist
     config = {}
 
     with open(os.path.join(header.config_dir, header.analysis_config_file_name), 'r') as file_config:
@@ -222,8 +252,13 @@ def main():
     class_occurrences = countAttributeClassOccurrences(config)
     attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
     category_class_spreads = computeCategoryClassSpread(class_occurrences)
-    attributes_whitelist = filterAttribute(attribute_class_spreads)
-    filterAttributeCategory(config, category_class_spreads, attributes_whitelist)
+
+    if len(attribute_whitelist) <= 0:
+        attribute_whitelist = filterAttribute(attribute_class_spreads)
+    else:
+        logger.log_info("Manual attribute whitelist used.")
+
+    filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
 
     return
 

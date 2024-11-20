@@ -28,6 +28,7 @@ dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "undefined"
 
 analysis_config_file_name = dataset_config_file_name
+analysis_threshold_max = False
 
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
 cub_dir_splits_cbm = dataset_dir_splits + "/cbm"

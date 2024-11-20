@@ -6,55 +6,55 @@ import logger
 import os
 
 attribute_category_whitelist = {
-    "primary-color": {
-        "primary-color--black": 0.995,
-        "primary-color--grey": 0.985,
-        "primary-color--brown": 0.92,
-        "primary-color--white": 0.92
+    "bill-shape": {
+        "bill-shape--curved-(up-or-down)": 0.385,
+        "bill-shape--hooked-seabird": 0.375,
+        "bill-shape--needle": 0.285,
+        "bill-shape--specialized": 0.24,
+        "bill-shape--spatulate": 0.235,
+        "bill-shape--none": 0.0
     },
-    "upperparts-color": {
-        "upperparts-color--black": 0.995,
-        "upperparts-color--grey": 0.99,
-        "upperparts-color--white": 0.96,
-        "upperparts-color--brown": 0.945
+    "shape": {
+        "shape--duck-like": 0.315,
+        "shape--long-legged-like": 0.215,
+        "shape--owl-like": 0.155,
+        "shape--none": 0.0
     },
-    "tail-shape": {
-        "tail-shape--pointed-tail": 1.0,
-        "tail-shape--notched-tail": 0.995,
-        "tail-shape--rounded-tail": 0.995,
-        "tail-shape--squared-tail": 0.975,
-        "tail-shape--fan-shaped-tail": 0.96
-    },
-    "wing-shape": {
-        "wing-shape--pointed-wings": 1.0,
-        "wing-shape--rounded-wings": 1.0,
-        "wing-shape--tapered-wings": 0.96
-    },
-    "size": {
-        "size--small-(5---9-in)": 0.99,
-        "size--very-small-(3---5-in)": 0.93
-    },
-    "bill-length": {
-        "bill-length--shorter-than-head": 0.975,
-        "bill-length--about-the-same-as-head": 0.965
+    "head-pattern": {
+        "head-pattern--masked": 0.675,
+        "head-pattern--unique-pattern": 0.625,
+        "head-pattern--spotted": 0.54,
+        "head-pattern--crested": 0.46,
+        "head-pattern--none": 0.0
     },
     "wing-pattern": {
         "wing-pattern--multi-colored": 0.995,
         "wing-pattern--striped": 0.98,
-        "wing-pattern--solid": 0.965
+        "wing-pattern--solid": 0.965,
+        "wing-pattern--spotted": 0.775,
+        "wing-pattern--none": 0.0
     },
-    "head-pattern": {
-        "head-pattern--eyering": 0.99,
-        "head-pattern--plain": 0.98,
-        "head-pattern--eyeline": 0.96,
-        "head-pattern--capped": 0.925,
-        "head-pattern--malar": 0.92,
-        "head-pattern--eyebrow": 0.915
+    "wing-color": {
+        "wing-color--green": 0.27,
+        "wing-color--rufous": 0.24,
+        "wing-color--purple": 0.21,
+        "wing-color--pink": 0.2,
+        "wing-color--none": 0.0
     },
-    "back-pattern": {
-        "back-pattern--multi-colored": 0.99,
-        "back-pattern--solid": 0.98,
-        "back-pattern--striped": 0.94
+    "belly-color": {
+        "belly-color--blue": 0.295,
+        "belly-color--green": 0.255,
+        "belly-color--rufous": 0.225,
+        "belly-color--pink": 0.205,
+        "belly-color--purple": 0.12,
+        "belly-color--none": 0.0
+    },
+    "back-color": {
+        "back-color--green": 0.26,
+        "back-color--rufous": 0.23,
+        "back-color--pink": 0.19,
+        "back-color--purple": 0.19,
+        "back-color--none": 0.0
     }
 }
 class_whitelist = {}
