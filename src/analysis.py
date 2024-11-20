@@ -52,15 +52,15 @@ attribute_type_thresholds = {
 }
 
 attribute_category_thresholds = {
-    "primary-color": 0.7,
-    "upperparts-color": 0.7,
-    "tail-shape": 0.7,
-    "wing-shape": 0.7,
-    "size": 0.7,
-    "bill-length": 0.7,
-    "wing-pattern": 0.7,
-    "head-pattern": 0.7,
-    "back-pattern": 0.7
+    "primary-color": 0.9,
+    "upperparts-color": 0.9,
+    "tail-shape": 0.9,
+    "wing-shape": 0.9,
+    "size": 0.9,
+    "bill-length": 0.9,
+    "wing-pattern": 0.9,
+    "head-pattern": 0.9,
+    "back-pattern": 0.9,
 }
 
 def countAttributeClassOccurrences(config):
@@ -176,7 +176,7 @@ def filterAttributeCategory(config, category_class_spreads, attributes_whitelist
         for category_name in categories_whitelist[attribute_name].keys():
             logger.log_info("Attribute category with class spread >= " + str(attribute_category_thresholds[attribute_name]) + ":\t" + str(category_class_spreads[category_name]) + "\tfor \"" + category_name + "\".")
 
-    logger.log_info("Category whitelist:", categories_whitelist)
+    logger.log_info("attribute_category_whitelist =", json.dumps(categories_whitelist, indent = 4))
 
     return categories_whitelist
 
