@@ -5,7 +5,66 @@ import json
 import logger
 import os
 
-attributes_whitelist = {}
+attribute_category_whitelist = {
+    "primary-color": {
+        "primary-color--black": 0.995,
+        "primary-color--grey": 0.985,
+        "primary-color--brown": 0.92,
+        "primary-color--white": 0.92,
+        "primary-color--buff": 0.89
+    },
+    "upperparts-color": {
+        "upperparts-color--black": 0.995,
+        "upperparts-color--grey": 0.99,
+        "upperparts-color--white": 0.96,
+        "upperparts-color--brown": 0.945,
+        "upperparts-color--buff": 0.895
+    },
+    "tail-shape": {
+        "tail-shape--pointed-tail": 1.0,
+        "tail-shape--notched-tail": 0.995,
+        "tail-shape--rounded-tail": 0.995,
+        "tail-shape--squared-tail": 0.975,
+        "tail-shape--fan-shaped-tail": 0.96
+    },
+    "wing-shape": {
+        "wing-shape--pointed-wings": 1.0,
+        "wing-shape--rounded-wings": 1.0,
+        "wing-shape--tapered-wings": 0.96,
+        "wing-shape--broad-wings": 0.875,
+        "wing-shape--long-wings": 0.845
+    },
+    "size": {
+        "size--small-(5---9-in)": 0.99,
+        "size--very-small-(3---5-in)": 0.93,
+        "size--medium-(9---16-in)": 0.875
+    },
+    "bill-length": {
+        "bill-length--shorter-than-head": 0.975,
+        "bill-length--about-the-same-as-head": 0.965
+    },
+    "wing-pattern": {
+        "wing-pattern--multi-colored": 0.995,
+        "wing-pattern--striped": 0.98,
+        "wing-pattern--solid": 0.965,
+        "wing-pattern--spotted": 0.775
+    },
+    "head-pattern": {
+        "head-pattern--eyering": 0.99,
+        "head-pattern--plain": 0.98,
+        "head-pattern--eyeline": 0.96,
+        "head-pattern--capped": 0.925,
+        "head-pattern--malar": 0.92,
+        "head-pattern--eyebrow": 0.915,
+        "head-pattern--striped": 0.795
+    },
+    "back-pattern": {
+        "back-pattern--multi-colored": 0.99,
+        "back-pattern--solid": 0.98,
+        "back-pattern--striped": 0.94,
+        "back-pattern--spotted": 0.72
+    }
+}
 class_whitelist = {}
 
 def pruneAttributes(attributes, mappings):
@@ -41,16 +100,18 @@ def readAttributes():
         line_split = line.split(' ')
         attribute = '-'.join(line_split[1].split('_')[1:])
         attribute_split = attribute.split("::")
-        attribute = header.dataset_delimiter_label.join(attribute_split)
+        attribute_name = attribute_split[0]
+        attribute_category = header.dataset_delimiter_label.join(attribute_split)
 
-        if len(attributes_whitelist) > 0 and attribute_split[0] not in attributes_whitelist:
+        if len(attribute_category_whitelist) > 0 and attribute_name not in attribute_category_whitelist:
             continue
 
-        if attribute_split[0] not in attributes:
-            attributes[attribute_split[0]] = [header.dataset_delimiter_label.join([attribute_split[0], "none"])]
+        if attribute_name not in attributes:
+            attributes[attribute_name] = [header.dataset_delimiter_label.join([attribute_name, "none"])]
 
-        attributes[attribute_split[0]].append(attribute)
-        attributes_map[line_split[0]] = attribute
+        if len(attribute_category_whitelist) > 0 and attribute_category in attribute_category_whitelist[attribute_name]:
+            attributes[attribute_name].append(attribute_category)
+            attributes_map[line_split[0]] = attribute_category
 
     file_attributes.close()
 
@@ -110,16 +171,17 @@ def readMappings(attributes):
         if line_split[1] not in attributes[1]:
             continue
 
-        attribute = attributes[1][line_split[1]]
-        attribute_name = attribute.split(header.dataset_delimiter_label)[0]
+        attribute_category = attributes[1][line_split[1]]
+        attribute_name = attribute_category.split(header.dataset_delimiter_label)[0]
 
-        if isinstance(mappings[image_name]["labels"][attribute_name], list):
-            mappings[image_name]["labels"][attribute_name].append(attribute)
-        else:
-            if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
-                mappings[image_name]["labels"][attribute_name] = attribute
+        if len(attribute_category_whitelist) > 0 and attribute_category in attribute_category_whitelist[attribute_name]:
+            if isinstance(mappings[image_name]["labels"][attribute_name], list):
+                mappings[image_name]["labels"][attribute_name].append(attribute_category)
             else:
-                mappings[image_name]["labels"][attribute_name] = [mappings[image_name]["labels"][attribute_name], attribute]
+                if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+                    mappings[image_name]["labels"][attribute_name] = attribute_category
+                else:
+                    mappings[image_name]["labels"][attribute_name] = [mappings[image_name]["labels"][attribute_name], attribute_category]
 
     file_image_attribute_labels.close()
 
