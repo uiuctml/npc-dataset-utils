@@ -65,39 +65,6 @@ attribute_category_thresholds = {
 }
 instance_none_threshold = 0.05
 
-def countAttributeClassOccurrences(config):
-    class_occurrences = {}
-    classes = set()
-    mappings = config["mappings"]
-
-    for attribute in config["attributes"]:
-        class_occurrences[attribute["name"]] = {}
-
-        for attribute_category in attribute["labels"]:
-            if attribute_category == "":
-                continue
-
-            class_occurrences[attribute["name"]][attribute_category] = set()
-
-    for image_name in mappings.keys():
-        class_name = int(image_name.split('.')[0])
-        classes.add(class_name)
-
-        for attribute_name in mappings[image_name]["labels"].keys():
-            attribute_categories = mappings[image_name]["labels"][attribute_name]
-
-            if isinstance(attribute_categories, list):
-                for attribute_category in attribute_categories:
-                    if attribute_category != header.dataset_delimiter_label.join([attribute_name, "none"]):
-                        class_occurrences[attribute_name][attribute_category].add(class_name)
-            else:
-                if attribute_categories != header.dataset_delimiter_label.join([attribute_name, "none"]):
-                    class_occurrences[attribute_name][attribute_categories].add(class_name)
-
-    class_occurrences["classes"] = len(classes)
-
-    return class_occurrences
-
 def computeAttributeClassSpread(class_occurrences):
     class_spreads = {}
     classes = class_occurrences["classes"]
@@ -133,6 +100,71 @@ def computeCategoryClassSpread(class_occurrences):
     class_spreads = dict(sorted(class_spreads.items(), key=lambda item: item[1], reverse = True))
 
     return class_spreads
+
+def computeMatrixASize(config):
+    classes = set()
+    cols = 1
+    rows = 0
+
+    for attribute in config["attributes"]:
+        count_categories = 0
+
+        for attribute_category in attribute["labels"]:
+            if attribute_category == "":
+                continue
+
+            count_categories += 1
+
+        logger.log_info("Number of categories for \"" + attribute["name"] + "\": " + str(count_categories) + ".")
+
+        cols *= count_categories
+
+    for image_name in config["mappings"].keys():
+        class_name = image_name.split('.')[0]
+        classes.add(class_name)
+
+    logger.log_info("Number of classes: " + str(len(classes)) + ".")
+
+    rows = len(classes)
+    bytes = rows * cols * 4
+    gigabytes = bytes / 1000000000
+
+    logger.log_info("\"" + header.analysis_config_file_name + "\" yields a " + str(gigabytes) + " GB matrix A.")
+
+    return
+
+def countAttributeClassOccurrences(config):
+    class_occurrences = {}
+    classes = set()
+    mappings = config["mappings"]
+
+    for attribute in config["attributes"]:
+        class_occurrences[attribute["name"]] = {}
+
+        for attribute_category in attribute["labels"]:
+            if attribute_category == "":
+                continue
+
+            class_occurrences[attribute["name"]][attribute_category] = set()
+
+    for image_name in mappings.keys():
+        class_name = int(image_name.split('.')[0])
+        classes.add(class_name)
+
+        for attribute_name in mappings[image_name]["labels"].keys():
+            attribute_categories = mappings[image_name]["labels"][attribute_name]
+
+            if isinstance(attribute_categories, list):
+                for attribute_category in attribute_categories:
+                    if attribute_category != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                        class_occurrences[attribute_name][attribute_category].add(class_name)
+            else:
+                if attribute_categories != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                    class_occurrences[attribute_name][attribute_categories].add(class_name)
+
+    class_occurrences["classes"] = len(classes)
+
+    return class_occurrences
 
 def filterAttribute(attribute_class_spreads):
     attribute_whitelist = set()
@@ -234,38 +266,6 @@ def filterNoneInstances(config):
     logger.log_info("Filtered " + str(len(instance_blacklist)) + " of " + str(len(mappings)) + " instances with perceptage of none attribute categories >= " + str(instance_none_threshold) + ".")
 
     return instance_blacklist
-
-def computeMatrixASize(config):
-    classes = set()
-    cols = 1
-    rows = 0
-
-    for attribute in config["attributes"]:
-        count_categories = 0
-
-        for attribute_category in attribute["labels"]:
-            if attribute_category == "":
-                continue
-
-            count_categories += 1
-
-        logger.log_info("Number of categories for \"" + attribute["name"] + "\": " + str(count_categories) + ".")
-
-        cols *= count_categories
-
-    for image_name in config["mappings"].keys():
-        class_name = image_name.split('.')[0]
-        classes.add(class_name)
-
-    logger.log_info("Number of classes: " + str(len(classes)) + ".")
-
-    rows = len(classes)
-    bytes = rows * cols * 4
-    gigabytes = bytes / 1000000000
-
-    logger.log_info("\"" + header.analysis_config_file_name + "\" yields a " + str(gigabytes) + " GB matrix A.")
-
-    return
 
 def main():
     global attribute_whitelist
