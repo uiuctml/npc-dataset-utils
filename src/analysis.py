@@ -5,16 +5,13 @@ import json
 import logger
 import os
 
-attribute_whitelist = [
+attribute_whitelist = {
     "bill-shape",
     "shape",
-    "head-pattern",
     "wing-pattern",
     "wing-color",
-    "belly-color",
-    "back-color"
-]
-
+    "belly-color"
+}
 attribute_types = {
     "color": [
         "primary-color",
@@ -53,23 +50,20 @@ attribute_types = {
         "belly-pattern"
     ]
 }
-
 attribute_type_thresholds = {
     "color": 0.52,
     "shape": 0.63,
     "size": 0.64,
     "pattern": 0.73
 }
-
 attribute_category_thresholds = {
-    "bill-shape": 0.4,
-    "shape": 0.4,
-    "head-pattern": 0.7,
+    "bill-shape": 1.0,
+    "shape": 1.0,
     "wing-pattern": 1.0,
-    "wing-color": 0.3,
-    "belly-color": 0.3,
-    "back-color": 0.3,
+    "wing-color": 1.0,
+    "belly-color": 1.0
 }
+instance_none_threshold = 0.05
 
 def countAttributeClassOccurrences(config):
     class_occurrences = {}
@@ -141,7 +135,7 @@ def computeCategoryClassSpread(class_occurrences):
     return class_spreads
 
 def filterAttribute(attribute_class_spreads):
-    attribute_whitelist = []
+    attribute_whitelist = set()
 
     for attribute_type in attribute_types.keys():
         for attribute_name in attribute_types[attribute_type]:
@@ -163,7 +157,7 @@ def filterAttribute(attribute_class_spreads):
 
             logger.log_info("Attribute type \"" + attribute_type + "\"" + spaces + "with class spread " + inequality + "= " + str(attribute_type_thresholds[attribute_type]) + ":\t" + str(attribute_class_spreads[attribute_name]) + "\tfor \"" + attribute_name + "\".")
 
-            attribute_whitelist.append(attribute_name)
+            attribute_whitelist.add(attribute_name)
 
     return attribute_whitelist
 
@@ -208,6 +202,38 @@ def filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
     logger.log_info("attribute_category_whitelist =", json.dumps(categories_whitelist, indent = 4))
 
     return categories_whitelist
+
+def filterNoneInstances(config):
+    instance_blacklist = set()
+    mappings = config["mappings"]
+
+    for image_name in mappings.keys():
+        count_category_none = 0
+        count_category_total = 0
+
+        for attribute_name in mappings[image_name]["labels"].keys():
+            category_names = mappings[image_name]["labels"][attribute_name]
+
+            if isinstance(category_names, list):
+                for category_name in category_names:
+                    if category_name.split(header.dataset_delimiter_label)[-1] == "none":
+                        count_category_none += 1
+
+                    count_category_total += 1
+            else:
+                if category_names.split(header.dataset_delimiter_label)[-1] == "none":
+                        count_category_none += 1
+
+                count_category_total += 1
+
+        percentage_category_none = count_category_none / count_category_total
+
+        if percentage_category_none >= instance_none_threshold:
+            instance_blacklist.add(image_name)
+
+    logger.log_info("Filtered " + str(len(instance_blacklist)) + " of " + str(len(mappings)) + " instances with perceptage of none attribute categories >= " + str(instance_none_threshold) + ".")
+
+    return instance_blacklist
 
 def computeMatrixASize(config):
     classes = set()
@@ -264,7 +290,7 @@ def main():
         filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
 
     if header.analysis_filter_classes_instances:
-        pass
+        filterNoneInstances(config)
 
     return
 

@@ -6,26 +6,53 @@ import logger
 import os
 
 attribute_category_whitelist = {
+    "belly-color": {
+        "belly-color--grey": 0.955,
+        "belly-color--white": 0.93,
+        "belly-color--buff": 0.885,
+        "belly-color--black": 0.845,
+        "belly-color--brown": 0.755,
+        "belly-color--yellow": 0.575,
+        "belly-color--orange": 0.46,
+        "belly-color--iridescent": 0.35,
+        "belly-color--olive": 0.34,
+        "belly-color--red": 0.335,
+        "belly-color--blue": 0.295,
+        "belly-color--green": 0.255,
+        "belly-color--rufous": 0.225,
+        "belly-color--pink": 0.205,
+        "belly-color--purple": 0.12,
+        "belly-color--none": 0.0
+    },
+    "wing-color": {
+        "wing-color--black": 1.0,
+        "wing-color--grey": 0.99,
+        "wing-color--brown": 0.96,
+        "wing-color--buff": 0.915,
+        "wing-color--white": 0.91,
+        "wing-color--yellow": 0.495,
+        "wing-color--iridescent": 0.45,
+        "wing-color--orange": 0.435,
+        "wing-color--blue": 0.415,
+        "wing-color--olive": 0.365,
+        "wing-color--red": 0.31,
+        "wing-color--green": 0.27,
+        "wing-color--rufous": 0.24,
+        "wing-color--purple": 0.21,
+        "wing-color--pink": 0.2,
+        "wing-color--none": 0.0
+    },
     "bill-shape": {
+        "bill-shape--all-purpose": 0.98,
+        "bill-shape--cone": 0.905,
+        "bill-shape--dagger": 0.79,
+        "bill-shape--hooked": 0.42,
         "bill-shape--curved-(up-or-down)": 0.385,
         "bill-shape--hooked-seabird": 0.375,
         "bill-shape--needle": 0.285,
         "bill-shape--specialized": 0.24,
         "bill-shape--spatulate": 0.235,
         "bill-shape--none": 0.0
-    },
-    "shape": {
-        "shape--duck-like": 0.315,
-        "shape--long-legged-like": 0.215,
-        "shape--owl-like": 0.155,
-        "shape--none": 0.0
-    },
-    "head-pattern": {
-        "head-pattern--masked": 0.675,
-        "head-pattern--unique-pattern": 0.625,
-        "head-pattern--spotted": 0.54,
-        "head-pattern--crested": 0.46,
-        "head-pattern--none": 0.0
     },
     "wing-pattern": {
         "wing-pattern--multi-colored": 0.995,
@@ -34,27 +61,21 @@ attribute_category_whitelist = {
         "wing-pattern--spotted": 0.775,
         "wing-pattern--none": 0.0
     },
-    "wing-color": {
-        "wing-color--green": 0.27,
-        "wing-color--rufous": 0.24,
-        "wing-color--purple": 0.21,
-        "wing-color--pink": 0.2,
-        "wing-color--none": 0.0
-    },
-    "belly-color": {
-        "belly-color--blue": 0.295,
-        "belly-color--green": 0.255,
-        "belly-color--rufous": 0.225,
-        "belly-color--pink": 0.205,
-        "belly-color--purple": 0.12,
-        "belly-color--none": 0.0
-    },
-    "back-color": {
-        "back-color--green": 0.26,
-        "back-color--rufous": 0.23,
-        "back-color--pink": 0.19,
-        "back-color--purple": 0.19,
-        "back-color--none": 0.0
+    "shape": {
+        "shape--perching-like": 0.955,
+        "shape--pigeon-like": 0.91,
+        "shape--sandpiper-like": 0.815,
+        "shape--swallow-like": 0.815,
+        "shape--tree-clinging-like": 0.795,
+        "shape--hummingbird-like": 0.74,
+        "shape--upland-ground-like": 0.71,
+        "shape--gull-like": 0.655,
+        "shape--hawk-like": 0.64,
+        "shape--chicken-like-marsh": 0.485,
+        "shape--upright-perching-water-like": 0.43,
+        "shape--duck-like": 0.315,
+        "shape--long-legged-like": 0.215,
+        "shape--owl-like": 0.155
     }
 }
 class_whitelist = {}
