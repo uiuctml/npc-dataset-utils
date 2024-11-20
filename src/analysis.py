@@ -4,7 +4,6 @@ import header
 import json
 import logger
 import os
-import random
 
 attribute_types = {
     "color": [
@@ -46,10 +45,22 @@ attribute_types = {
 }
 
 attribute_type_thresholds = {
-    "color": 0.51,
-    "shape": 0.62,
-    "size": 0.61,
-    "pattern": 0.72
+    "color": 0.52,
+    "shape": 0.63,
+    "size": 0.64,
+    "pattern": 0.73
+}
+
+attribute_category_thresholds = {
+    "primary-color": 0.7,
+    "upperparts-color": 0.7,
+    "tail-shape": 0.7,
+    "wing-shape": 0.7,
+    "size": 0.7,
+    "bill-length": 0.7,
+    "wing-pattern": 0.7,
+    "head-pattern": 0.7,
+    "back-pattern": 0.7
 }
 
 def countAttributeClassOccurrences(config):
@@ -122,35 +133,52 @@ def computeCategoryClassSpread(class_occurrences):
     return class_spreads
 
 def filterAttribute(attribute_class_spreads):
-    attributes_filtered = []
+    attributes_whitelist = []
 
     for attribute_type in attribute_types.keys():
         for attribute_name in attribute_types[attribute_type]:
-            if attribute_class_spreads[attribute_name] <= attribute_type_thresholds[attribute_type]:
+            if attribute_class_spreads[attribute_name] < attribute_type_thresholds[attribute_type]:
                 continue
 
-            tabs_attribute_name = "\t"
-            tabs_attribute_type = " "
-
-            if len(attribute_name) <= 9:
-                tabs_attribute_name = "\t\t"
+            spaces = " "
 
             if len(attribute_type) <= 5:
-                tabs_attribute_type = "\t "
+                spaces = "\t "
 
-            logger.log_info("Attribute type \"" + attribute_type + "\"" + tabs_attribute_type + "with class spread > " + str(attribute_type_thresholds[attribute_type]) + ": " "\"" + attribute_name + "\"," + tabs_attribute_name + str(attribute_class_spreads[attribute_name]))
+            logger.log_info("Attribute type \"" + attribute_type + "\"" + spaces + "with class spread >= " + str(attribute_type_thresholds[attribute_type]) + ":\t" + str(attribute_class_spreads[attribute_name]) + "\tfor \"" + attribute_name + "\".")
 
-            attributes_filtered.append(attribute_name)
+            attributes_whitelist.append(attribute_name)
 
-    return attributes_filtered
+    return attributes_whitelist
 
-def filterAttributeCategory(config, category_class_spreads, attributes_filtered):
-    categories_filtered = {}
+def filterAttributeCategory(config, category_class_spreads, attributes_whitelist):
+    categories_whitelist = {}
 
-    for attribute_name in attributes_filtered:
-        pass
+    for attribute_name in attributes_whitelist:
+        for attribute in config["attributes"]:
+            if attribute["name"] != attribute_name:
+                continue
 
-    return categories_filtered
+            categories_whitelist[attribute_name] = {}
+
+            for category_name in attribute["labels"]:
+                if category_name == "":
+                    continue
+
+                if category_class_spreads[category_name] < attribute_category_thresholds[attribute_name]:
+                    continue
+
+                categories_whitelist[attribute_name][category_name] = category_class_spreads[category_name]
+
+            categories_whitelist[attribute_name] = dict(sorted(categories_whitelist[attribute_name].items(), key=lambda item: item[1], reverse = True))
+
+    for attribute_name in categories_whitelist.keys():
+        for category_name in categories_whitelist[attribute_name].keys():
+            logger.log_info("Attribute category with class spread >= " + str(attribute_category_thresholds[attribute_name]) + ":\t" + str(category_class_spreads[category_name]) + "\tfor \"" + category_name + "\".")
+
+    logger.log_info("Category whitelist:", categories_whitelist)
+
+    return categories_whitelist
 
 def computeMatrixASize(config):
     classes = set()
@@ -194,8 +222,8 @@ def main():
     class_occurrences = countAttributeClassOccurrences(config)
     attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
     category_class_spreads = computeCategoryClassSpread(class_occurrences)
-    attributes_filtered = filterAttribute(attribute_class_spreads)
-    filterAttributeCategory(config, category_class_spreads, attributes_filtered)
+    attributes_whitelist = filterAttribute(attribute_class_spreads)
+    filterAttributeCategory(config, category_class_spreads, attributes_whitelist)
 
     return
 
