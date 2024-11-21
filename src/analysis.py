@@ -267,6 +267,42 @@ def filterNoneInstances(config):
 
     return instance_blacklist
 
+def filterSparseInstances(config):
+    categories_occurrences = {}
+    instance_blacklist = set()
+    mappings = config["mappings"]
+
+    for image_name in mappings.keys():
+        class_name = int(image_name.split('.')[0])
+        categories = ""
+
+        if class_name not in categories_occurrences:
+            categories_occurrences[class_name] = {}
+
+        for attribute_name in mappings[image_name]["labels"].keys():
+            category_names = mappings[image_name]["labels"][attribute_name]
+
+            if isinstance(category_names, list):
+                for category_name in category_names:
+                    categories += category_name
+            else:
+                categories += category_names
+
+        if categories not in categories_occurrences[class_name]:
+            categories_occurrences[class_name][categories] = 1
+        else:
+            categories_occurrences[class_name][categories] += 1
+
+    categories_occurrences_values = {}
+
+    for class_name in categories_occurrences.keys():
+        categories_occurrences[class_name] = dict(sorted(categories_occurrences[class_name].items(), key=lambda item: item[1], reverse = True))
+        categories_occurrences_values[class_name] = list(categories_occurrences[class_name].values())
+
+    logger.log_info("Category occurrences:", json.dumps(categories_occurrences_values))
+
+    return
+
 def main():
     global attribute_whitelist
     config = {}
@@ -290,7 +326,7 @@ def main():
         filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
 
     if header.analysis_filter_classes_instances:
-        filterNoneInstances(config)
+        filterSparseInstances(config)
 
     return
 
