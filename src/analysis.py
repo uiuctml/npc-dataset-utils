@@ -4,6 +4,7 @@ import header
 import json
 import logger
 import os
+import utility
 
 attribute_whitelist = {
     "bill-shape",
@@ -301,7 +302,49 @@ def filterSparseInstances(config):
 
     logger.log_info("Category occurrences:", json.dumps(categories_occurrences_values))
 
-    return
+    return instance_blacklist
+
+def filterOverlappingClasses(config, seed = header.analysis_random_seed):
+    class_attribute_sets = {}
+    class_list_random = []
+    class_whitelist = set()
+    mappings = config["mappings"]
+
+    for image_name in mappings.keys():
+        class_name = image_name.split('/')[0]
+        class_list_random.append(class_name)
+        categories = ""
+
+        if class_name not in class_attribute_sets:
+            class_attribute_sets[class_name] = set()
+
+        for attribute_name in mappings[image_name]["labels"].keys():
+            category_names = mappings[image_name]["labels"][attribute_name]
+
+            if isinstance(category_names, list):
+                for category_name in category_names:
+                    categories += category_name
+            else:
+                categories += category_names
+
+        class_attribute_sets[class_name].add(categories)
+
+    class_list_random = utility.shuffleUniform(class_list_random, seed)
+    class_whitelist.add(class_list_random.pop(0))
+
+    while len(class_list_random) > 0:
+        class_name_random = class_list_random.pop(0)
+        is_disjoint = True
+
+        for class_name_whitelist in class_whitelist:
+            if not class_attribute_sets[class_name_random].isdisjoint(class_attribute_sets[class_name_whitelist]):
+                is_disjoint = False
+                break
+
+        if is_disjoint:
+            class_whitelist.add(class_name_random)
+
+    return class_whitelist
 
 def main():
     global attribute_whitelist
@@ -326,7 +369,23 @@ def main():
         filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
 
     if header.analysis_filter_classes_instances:
-        filterSparseInstances(config)
+        class_whitelist_best = set()
+
+        for epoch in range(header.analysis_filter_classes_instances_epochs):
+            logger.log_info("Epoch: " + str(epoch) + ".")
+
+            class_whitelist = filterOverlappingClasses(config, epoch)
+
+            if len(class_whitelist) > len(class_whitelist_best):
+                class_whitelist_best = class_whitelist
+
+            logger.log_info("Length of class whitelist: " + str(len(class_whitelist)) + ".")
+            logger.log_info("Length of longest class whitelist: " + str(len(class_whitelist_best)) + ".")
+
+        class_whitelist_best = sorted(list(class_whitelist_best))
+
+        logger.log_info("class_whitelist =", json.dumps(class_whitelist_best, indent = 4))
+        logger.log_info("Length of longest class whitelist: " + str(len(class_whitelist_best)) + ".")
 
     return
 

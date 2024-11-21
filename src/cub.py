@@ -78,7 +78,29 @@ attribute_category_whitelist = {
         "shape--owl-like": 0.155
     }
 }
-class_whitelist = {}
+class_whitelist = {
+    "007.Parakeet_Auklet",
+    "013.Bobolink",
+    "014.Indigo_Bunting",
+    "015.Lazuli_Bunting",
+    "016.Painted_Bunting",
+    "025.Pelagic_Cormorant",
+    "028.Brown_Creeper",
+    "036.Northern_Flicker",
+    "040.Olive_sided_Flycatcher",
+    "042.Vermilion_Flycatcher",
+    "066.Western_Gull",
+    "068.Ruby_throated_Hummingbird",
+    "082.Ringed_Kingfisher",
+    "090.Red_breasted_Merganser",
+    "092.Nighthawk",
+    "095.Baltimore_Oriole",
+    "101.White_Pelican",
+    "147.Least_Tern",
+    "163.Cape_May_Warbler",
+    "184.Louisiana_Waterthrush",
+    "190.Red_cockaded_Woodpecker"
+}
 
 def pruneAttributes(attributes, mappings):
     attributes_map = {}
