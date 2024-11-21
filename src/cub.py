@@ -4,6 +4,7 @@ import header
 import json
 import logger
 import os
+import tqdm
 
 attribute_category_whitelist = {
     "belly-color": {
@@ -224,6 +225,34 @@ def readMappings(attributes):
 
     return mappings
 
+def generateFilteredDatasetDirectory(config):
+    if os.path.exists(header.cub_dataset_dir_images_filtered):
+        logger.log_info("Filtered dataset directory exists. Skip.")
+        return
+
+    counter = 1
+    progress_bar = tqdm.tqdm(total = len(config["mappings"]))
+
+    progress_bar.set_description_str("[INFO]: Creating filtered dataset directory")
+
+    for image_name in config["mappings"]:
+        image_name_split = image_name.split('/')
+        class_name = image_name_split[0]
+        file_name = image_name_split[1]
+        dir_class_sliced =  os.path.join(header.dataset_dir_images_sliced, class_name)
+        dir_class_filtered = os.path.join(header.cub_dataset_dir_images_filtered, class_name)
+
+        os.makedirs(dir_class_filtered, exist_ok = True)
+        os.symlink(os.path.abspath(os.path.join(dir_class_sliced, file_name)), os.path.join(dir_class_filtered, file_name))
+
+        progress_bar.n = counter
+        progress_bar.refresh()
+        counter += 1
+
+    progress_bar.close()
+
+    return
+
 def main():
     attributes = readAttributes()
     mappings = readMappings(attributes)
@@ -234,6 +263,8 @@ def main():
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)
+
+    generateFilteredDatasetDirectory(config)
 
     return
 

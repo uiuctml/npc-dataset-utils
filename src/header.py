@@ -35,6 +35,7 @@ analysis_filter_classes_instances_epochs = 50
 analysis_random_seed = 42
 analysis_threshold_max = False
 
+cub_dataset_dir_images_filtered = dataset_dir_images + "/filtered"
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
 cub_dir_splits_cbm = dataset_dir_splits + "/cbm"
 cub_file_name_attributes = "attributes.txt"
