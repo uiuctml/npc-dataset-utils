@@ -103,3 +103,5 @@ split_percentage_train = 0.8
 split_percentage_validate = 0.1
 split_random_seed_percentage = 22333376
 split_save = False
+
+spn_random_seed = 42
