@@ -56,7 +56,7 @@ def readAttributes():
     for attribute_name in attributes_types.keys():
         attribute = {}
         attribute["name"] = attribute_name
-        labels = []
+        labels = [header.dataset_delimiter_label.join([attribute_name, "none"])]
 
         for label in attributes_types[attribute_name]:
             labels.append(header.dataset_delimiter_label.join([attribute_name, label]))
@@ -120,6 +120,8 @@ def readMappings():
         for category_name in matrix[class_name]:
             for attribute_name in attributes_types.keys():
                 if category_name in attributes_types[attribute_name]:
+                    category_name = header.dataset_delimiter_label.join([attribute_name, category_name])
+
                     if isinstance(mappings[class_name]["labels"][attribute_name], list):
                         mappings[class_name]["labels"][attribute_name].append(category_name)
                     else:
