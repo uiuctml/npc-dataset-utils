@@ -1,4 +1,76 @@
 {
-    "attributes": {},
+    "attributes": [
+        {
+            "name": "color",
+            "labels": [
+                "",
+                "color--gray",
+                "color--orange",
+                "color--blue",
+                "color--red",
+                "color--brown",
+                "color--black",
+                "color--yellow",
+                "color--white"
+            ]
+        },
+        {
+            "name": "patterns",
+            "labels": [
+                "",
+                "patterns--spots",
+                "patterns--patches",
+                "patterns--stripes"
+            ]
+        },
+        {
+            "name": "texture",
+            "labels": [
+                "",
+                "texture--furry",
+                "texture--hairless",
+                "texture--toughskin"
+            ]
+        },
+        {
+            "name": "physique",
+            "labels": [
+                "",
+                "physique--lean",
+                "physique--bulbous"
+            ]
+        },
+        {
+            "name": "feature",
+            "labels": [
+                "",
+                "feature--tail",
+                "feature--pads",
+                "feature--flippers",
+                "feature--longneck",
+                "feature--hooves",
+                "feature--paws",
+                "feature--hands",
+                "feature--longleg"
+            ]
+        },
+        {
+            "name": "weapon",
+            "labels": [
+                "",
+                "weapon--tusks",
+                "weapon--horns",
+                "weapon--claws"
+            ]
+        },
+        {
+            "name": "limb",
+            "labels": [
+                "",
+                "limb--quadrapedal",
+                "limb--bipedal"
+            ]
+        }
+    ],
     "mappings": {}
 }

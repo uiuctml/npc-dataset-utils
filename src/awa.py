@@ -52,7 +52,19 @@ attributes_types = {
 class_whitelist = {}
 
 def readAttributes():
-    return {}
+    attributes = []
+
+    for attribute_name in attributes_types.keys():
+        attribute = {}
+        attribute["name"] = attribute_name
+        attribute["labels"] = [""]
+
+        for label in attributes_types[attribute_name]:
+            attribute["labels"].append(header.dataset_delimiter_label.join([attribute_name, label]))
+
+        attributes.append(attribute)
+
+    return attributes
 
 def readMappings():
     return {}
