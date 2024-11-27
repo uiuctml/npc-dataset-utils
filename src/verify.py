@@ -18,7 +18,11 @@ def verifyDatasetConfigDuplicates(config_dataset):
                 if labels_dataset != "":
                     labels_dataset += header.dataset_delimiter_file_name
 
-                labels_dataset += label_dataset
+                if isinstance(label_dataset, list):
+                    for label in label_dataset:
+                        labels_dataset += label
+                else:
+                    labels_dataset += label_dataset
 
             if labels_dataset not in label_map:
                 label_map[labels_dataset] = [label_original]
@@ -42,8 +46,16 @@ def verifyDatasetConfigLabels(config_dataset):
             for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
                 if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
                     logger.log_warn("Empty attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
-                elif config_dataset["mappings"][label_original]["labels"][dataset_name].split(header.dataset_delimiter_label)[0] != dataset_name:
-                    logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+                else:
+                    labels = config_dataset["mappings"][label_original]["labels"][dataset_name]
+
+                    if isinstance(labels, list):
+                        for label in labels:
+                            if label.split(header.dataset_delimiter_label)[0] != dataset_name:
+                                logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+                    else:
+                        if labels.split(header.dataset_delimiter_label)[0] != dataset_name:
+                            logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
 
     return
 
@@ -74,7 +86,11 @@ def verifyDatasetConfigMissing(config_dataset):
 
         if len(labels_decomposed) > 0:
             for dataset_name in labels_decomposed.keys():
-                labels_dataset_set_generate.add(labels_decomposed[dataset_name])
+                if isinstance(labels_decomposed[dataset_name], list):
+                    for label in labels_decomposed[dataset_name]:
+                        labels_dataset_set_generate.add(label)
+                else:
+                    labels_dataset_set_generate.add(labels_decomposed[dataset_name])
 
                 if dataset_name not in names_dataset_set:
                     logger.log_warn("Unknown attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
@@ -91,7 +107,13 @@ def verifyDatasetConfigUnused(config_dataset):
     for label_original in config_dataset["mappings"].keys():
         if len(config_dataset["mappings"][label_original]["labels"]) > 0:
             for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                labels_dataset_set.add(config_dataset["mappings"][label_original]["labels"][dataset_name])
+                labels = config_dataset["mappings"][label_original]["labels"][dataset_name]
+
+                if isinstance(labels, list):
+                    for label in labels:
+                        labels_dataset_set.add(label)
+                else:
+                    labels_dataset_set.add(labels)
 
     for dataset in config_dataset["attributes"]:
         labels_dataset = dataset["labels"]
