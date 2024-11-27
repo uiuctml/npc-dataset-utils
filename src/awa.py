@@ -69,8 +69,15 @@ def readAttributes():
 def readMappings():
     classes = []
     categories = []
+    categories_types = []
     labels_default = {}
     mappings = {}
+    matrix = {}
+
+    for values in attributes_types.values():
+        categories_types += list(values)
+
+    categories_types = set(categories_types)
 
     with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_classes), 'r') as file_classes:
         for line in file_classes.readlines():
@@ -82,11 +89,44 @@ def readMappings():
             line = line.rstrip()
             categories.append(line.split('\t')[1])
 
+    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_matrix), 'r') as file_matrix:
+        index_classes = 0
+
+        for line in file_matrix.readlines():
+            line = line.rstrip()
+            flags = line.split(' ')
+            index_categories = 0
+
+            matrix[classes[index_classes]] = []
+
+            for flag in flags:
+                if flag == '1':
+                    category_name = categories[index_categories]
+
+                    if category_name in categories_types:
+                        matrix[classes[index_classes]].append(category_name)
+
+                index_categories += 1
+
+            index_classes += 1
+
     for attribute_name in attributes_types.keys():
         labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, "none"])
 
     for class_name in classes:
         mappings[class_name] = {"labels": labels_default.copy()}
+
+    for class_name in matrix.keys():
+        for category_name in matrix[class_name]:
+            for attribute_name in attributes_types.keys():
+                if category_name in attributes_types[attribute_name]:
+                    if isinstance(mappings[class_name]["labels"][attribute_name], list):
+                        mappings[class_name]["labels"][attribute_name].append(category_name)
+                    else:
+                        if mappings[class_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+                            mappings[class_name]["labels"][attribute_name] = category_name
+                        else:
+                            mappings[class_name]["labels"][attribute_name] = [mappings[class_name]["labels"][attribute_name], category_name]
 
     return mappings
 

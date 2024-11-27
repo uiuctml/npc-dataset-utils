@@ -77,548 +77,1008 @@
             "labels": {
                 "color": "color--none",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "grizzly+bear": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": "paws",
+                "weapon": "claws",
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "killer+whale": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": [
+                    "bulbous",
+                    "lean"
+                ],
+                "feature": [
+                    "flippers",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
                 "limb": "limb--none"
             }
         },
         "beaver": {
             "labels": {
-                "color": "color--none",
+                "color": "brown",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "dalmatian": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": [
+                    "furry",
+                    "hairless"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "paws",
+                    "longleg",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "persian+cat": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "white",
+                    "blue",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "horse": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "patches",
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "longneck",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "german+shepherd": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "patches",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "longleg",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "blue+whale": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "blue",
+                    "gray"
+                ],
+                "patterns": "spots",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "flippers",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
                 "limb": "limb--none"
             }
         },
         "siamese+cat": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "patches",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "longleg",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "skunk": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white"
+                ],
+                "patterns": "stripes",
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "mole": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": [
+                    "bulbous",
+                    "lean"
+                ],
+                "feature": "paws",
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "tiger": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "white",
+                    "orange"
+                ],
+                "patterns": "stripes",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "hippopotamus": {
             "labels": {
-                "color": "color--none",
+                "color": "gray",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
                 "feature": "feature--none",
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "leopard": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "brown",
+                    "yellow"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "paws",
+                    "longleg",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "moose": {
             "labels": {
-                "color": "color--none",
+                "color": "brown",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "longneck",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "spider+monkey": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "hands",
+                    "paws",
+                    "longleg",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "humpback+whale": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "blue",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "flippers",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
                 "limb": "limb--none"
             }
         },
         "elephant": {
             "labels": {
-                "color": "color--none",
+                "color": "gray",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "longleg",
+                    "tail"
+                ],
+                "weapon": "tusks",
+                "limb": "quadrapedal"
             }
         },
         "gorilla": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "hands",
+                    "longleg"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "ox": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "hooves",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "fox": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "brown",
+                    "orange",
+                    "red"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "sheep": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "white"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": "hooves",
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "seal": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "spots",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
                 "physique": "physique--none",
-                "feature": "feature--none",
+                "feature": [
+                    "flippers",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
                 "limb": "limb--none"
             }
         },
         "chimpanzee": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "hands",
+                    "longleg",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "hamster": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "patches",
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "squirrel": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
+                "texture": "furry",
                 "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "rhinoceros": {
             "labels": {
-                "color": "color--none",
+                "color": "gray",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": "hooves",
+                "weapon": [
+                    "horns",
+                    "tusks"
+                ],
+                "limb": "quadrapedal"
             }
         },
         "rabbit": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": "patches",
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "bat": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
+                "texture": [
+                    "furry",
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "lean",
                 "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "weapon": "claws",
+                "limb": "bipedal"
             }
         },
         "giraffe": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
+                "color": [
+                    "brown",
+                    "orange",
+                    "yellow"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
                 "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "physique": "lean",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "longneck",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "wolf": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "chihuahua": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "rat": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": [
+                    "bulbous",
+                    "lean"
+                ],
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "weasel": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "otter": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": [
+                    "bulbous",
+                    "lean"
+                ],
+                "feature": [
+                    "flippers",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "buffalo": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "black",
+                    "brown"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": "hooves",
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "zebra": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white"
+                ],
+                "patterns": "stripes",
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "longneck",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "giant+panda": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "white"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": "furry",
+                "physique": "bulbous",
+                "feature": [
+                    "pads",
+                    "paws"
+                ],
+                "weapon": "claws",
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "deer": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": "brown",
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "hooves",
+                    "longleg",
+                    "longneck",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "bobcat": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "brown",
+                    "orange",
+                    "yellow"
+                ],
+                "patterns": "spots",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "pig": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "black",
+                    "white",
+                    "brown",
+                    "gray"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "hooves",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "lion": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "brown",
+                    "yellow"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": "furry",
+                "physique": [
+                    "bulbous",
+                    "lean"
+                ],
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "mouse": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "white",
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
+                "texture": "furry",
                 "physique": "physique--none",
-                "feature": "feature--none",
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "polar+bear": {
             "labels": {
-                "color": "color--none",
+                "color": "white",
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "pads",
+                    "paws"
+                ],
+                "weapon": "claws",
+                "limb": [
+                    "bipedal",
+                    "quadrapedal"
+                ]
             }
         },
         "collie": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "color": [
+                    "white",
+                    "brown"
+                ],
+                "patterns": "patches",
+                "texture": "furry",
+                "physique": "lean",
+                "feature": [
+                    "paws",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
-                "limb": "limb--none"
+                "limb": "quadrapedal"
             }
         },
         "walrus": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "brown",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": "flippers",
+                "weapon": "tusks",
                 "limb": "limb--none"
             }
         },
         "raccoon": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
+                "color": [
+                    "black",
+                    "white",
+                    "gray"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots",
+                    "stripes"
+                ],
+                "texture": "furry",
                 "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "feature": [
+                    "pads",
+                    "paws",
+                    "tail"
+                ],
+                "weapon": "claws",
+                "limb": "quadrapedal"
             }
         },
         "cow": {
             "labels": {
-                "color": "color--none",
-                "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
-                "weapon": "weapon--none",
-                "limb": "limb--none"
+                "color": [
+                    "black",
+                    "white",
+                    "brown"
+                ],
+                "patterns": [
+                    "patches",
+                    "spots"
+                ],
+                "texture": [
+                    "furry",
+                    "toughskin"
+                ],
+                "physique": "bulbous",
+                "feature": [
+                    "hooves",
+                    "tail"
+                ],
+                "weapon": "horns",
+                "limb": "quadrapedal"
             }
         },
         "dolphin": {
             "labels": {
-                "color": "color--none",
+                "color": [
+                    "white",
+                    "blue",
+                    "gray"
+                ],
                 "patterns": "patterns--none",
-                "texture": "texture--none",
-                "physique": "physique--none",
-                "feature": "feature--none",
+                "texture": [
+                    "hairless",
+                    "toughskin"
+                ],
+                "physique": "lean",
+                "feature": [
+                    "flippers",
+                    "tail"
+                ],
                 "weapon": "weapon--none",
                 "limb": "limb--none"
             }
