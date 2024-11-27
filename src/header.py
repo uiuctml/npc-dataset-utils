@@ -3,10 +3,10 @@ import type
 
 config_dir = "../configs"
 
-dataset_config_file_name = "cub.json"
+dataset_config_file_name = "awa2.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../../datasets/cub-dataset"
+dataset_dir = "../../../datasets/awa2-dataset"
 dataset_dir_annotations = dataset_dir + "/annotations"
 dataset_dir_images = dataset_dir + "/images"
 dataset_dir_images_original = dataset_dir_images + "/original"
@@ -95,9 +95,9 @@ slice_label_excluded = {
 }
 slice_parallel_shared_memory_name = "slice"
 
-split_config_file_name = "cub_split.json.gz"
+split_config_file_name = "awa2_split.json.gz"
 split_create_symlinks = True
-split_dataset_dir_images = cub_dataset_dir_images_filtered
+split_dataset_dir_images = dataset_dir_images_sliced
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1
