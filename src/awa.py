@@ -49,7 +49,6 @@ attributes_types = {
         "quadrapedal"
     },
 }
-class_whitelist = {}
 
 def readAttributes():
     attributes = []
@@ -57,17 +56,39 @@ def readAttributes():
     for attribute_name in attributes_types.keys():
         attribute = {}
         attribute["name"] = attribute_name
-        attribute["labels"] = [""]
+        labels = []
 
         for label in attributes_types[attribute_name]:
-            attribute["labels"].append(header.dataset_delimiter_label.join([attribute_name, label]))
+            labels.append(header.dataset_delimiter_label.join([attribute_name, label]))
 
+        attribute["labels"] = [""] + sorted(labels)
         attributes.append(attribute)
 
     return attributes
 
 def readMappings():
-    return {}
+    classes = []
+    categories = []
+    labels_default = {}
+    mappings = {}
+
+    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_classes), 'r') as file_classes:
+        for line in file_classes.readlines():
+            line = line.rstrip()
+            classes.append(line.split('\t')[1])
+
+    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_predicates), 'r') as file_predicates:
+        for line in file_predicates.readlines():
+            line = line.rstrip()
+            categories.append(line.split('\t')[1])
+
+    for attribute_name in attributes_types.keys():
+        labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, "none"])
+
+    for class_name in classes:
+        mappings[class_name] = {"labels": labels_default.copy()}
+
+    return mappings
 
 def main():
     config = {}

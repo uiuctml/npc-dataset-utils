@@ -4,22 +4,22 @@
             "name": "color",
             "labels": [
                 "",
+                "color--black",
+                "color--blue",
+                "color--brown",
                 "color--gray",
                 "color--orange",
-                "color--blue",
                 "color--red",
-                "color--brown",
-                "color--black",
-                "color--yellow",
-                "color--white"
+                "color--white",
+                "color--yellow"
             ]
         },
         {
             "name": "patterns",
             "labels": [
                 "",
-                "patterns--spots",
                 "patterns--patches",
+                "patterns--spots",
                 "patterns--stripes"
             ]
         },
@@ -36,41 +36,592 @@
             "name": "physique",
             "labels": [
                 "",
-                "physique--lean",
-                "physique--bulbous"
+                "physique--bulbous",
+                "physique--lean"
             ]
         },
         {
             "name": "feature",
             "labels": [
                 "",
-                "feature--tail",
-                "feature--pads",
                 "feature--flippers",
-                "feature--longneck",
-                "feature--hooves",
-                "feature--paws",
                 "feature--hands",
-                "feature--longleg"
+                "feature--hooves",
+                "feature--longleg",
+                "feature--longneck",
+                "feature--pads",
+                "feature--paws",
+                "feature--tail"
             ]
         },
         {
             "name": "weapon",
             "labels": [
                 "",
-                "weapon--tusks",
+                "weapon--claws",
                 "weapon--horns",
-                "weapon--claws"
+                "weapon--tusks"
             ]
         },
         {
             "name": "limb",
             "labels": [
                 "",
-                "limb--quadrapedal",
-                "limb--bipedal"
+                "limb--bipedal",
+                "limb--quadrapedal"
             ]
         }
     ],
-    "mappings": {}
+    "mappings": {
+        "antelope": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "grizzly+bear": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "killer+whale": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "beaver": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "dalmatian": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "persian+cat": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "horse": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "german+shepherd": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "blue+whale": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "siamese+cat": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "skunk": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "mole": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "tiger": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "hippopotamus": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "leopard": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "moose": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "spider+monkey": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "humpback+whale": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "elephant": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "gorilla": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "ox": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "fox": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "sheep": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "seal": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "chimpanzee": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "hamster": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "squirrel": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "rhinoceros": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "rabbit": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "bat": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "giraffe": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "wolf": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "chihuahua": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "rat": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "weasel": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "otter": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "buffalo": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "zebra": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "giant+panda": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "deer": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "bobcat": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "pig": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "lion": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "mouse": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "polar+bear": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "collie": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "walrus": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "raccoon": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "cow": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        },
+        "dolphin": {
+            "labels": {
+                "color": "color--none",
+                "patterns": "patterns--none",
+                "texture": "texture--none",
+                "physique": "physique--none",
+                "feature": "feature--none",
+                "weapon": "weapon--none",
+                "limb": "limb--none"
+            }
+        }
+    }
 }
