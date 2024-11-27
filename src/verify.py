@@ -127,6 +127,10 @@ def main():
     config_dataset = json.load(file_config_dataset)
     file_config_dataset.close()
 
+    if "instance_wise" in config_dataset and config_dataset["instance_wise"]:
+        logger.log_fatal("Instance-wise dataset not supported. Quit.")
+        exit(-1)
+
     verifyDatasetConfigDuplicates(config_dataset)
     verifyDatasetConfigLabels(config_dataset)
     verifyDatasetConfigMissing(config_dataset)
