@@ -70,7 +70,17 @@ def main():
                     line = ""
 
                     for attribute_name in attributes.keys():
-                        index_label_attribute = indices_attribute[attribute_name][attributes[attribute_name]]
+                        if isinstance(attributes[attribute_name], list):
+                            count_categories = len(categories[attribute_name])
+
+                            if count_categories <= 0:
+                                logger.log_fatal("Empty attribute. Quit.")
+                                exit(-1)
+
+                            index_label_attribute = random.randint(0, count_categories - 1)
+                        else:
+                            index_label_attribute = indices_attribute[attribute_name][attributes[attribute_name]]
+
                         line += str(index_label_attribute) + ","
 
                     index_label_original = indices_original[label_original]
