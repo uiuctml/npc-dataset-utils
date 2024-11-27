@@ -37,13 +37,9 @@ analysis_threshold_max = False
 
 cub_dataset_dir_images_filtered = dataset_dir_images + "/filtered"
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
-cub_dir_splits_cbm = dataset_dir_splits + "/cbm"
 cub_file_name_attributes = "attributes.txt"
 cub_file_name_images = "images.txt"
 cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
-cub_file_name_split_cbm_test = "test.pkl"
-cub_file_name_split_cbm_train = "train.pkl"
-cub_file_name_split_cbm_validate = "val.pkl"
 cub_filter_by_attribute_uniqueness = False
 cub_filter_by_certainty = False
 
