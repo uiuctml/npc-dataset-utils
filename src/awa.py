@@ -2,10 +2,53 @@
 
 import header
 import json
-import logger
 import os
 
-attribute_whitelist = {}
+attributes_types = {
+    "color": {
+        "black",
+        "white",
+        "blue",
+        "brown",
+        "gray",
+        "orange",
+        "red",
+        "yellow"
+    },
+    "patterns": {
+        "patches",
+        "spots",
+        "stripes"
+    },
+    "texture": {
+        "furry",
+        "hairless",
+        "toughskin"
+    },
+    "physique": {
+        "bulbous",
+        "lean"
+    },
+    "feature": {
+        "flippers",
+        "hands",
+        "hooves",
+        "pads",
+        "paws",
+        "longleg",
+        "longneck",
+        "tail"
+    },
+    "weapon": {
+        "horns",
+        "claws",
+        "tusks"
+    },
+    "limb": {
+        "bipedal",
+        "quadrapedal"
+    },
+}
 class_whitelist = {}
 
 def readAttributes():

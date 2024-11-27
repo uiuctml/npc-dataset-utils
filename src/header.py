@@ -35,6 +35,10 @@ analysis_filter_classes_instances_epochs = 50
 analysis_random_seed = 42
 analysis_threshold_max = False
 
+awa_file_name_classes = "classes.txt"
+awa_file_name_matrix = "predicate-matrix-binary.txt"
+awa_file_name_predicates = "predicates.txt"
+
 cub_dataset_dir_images_filtered = dataset_dir_images + "/filtered"
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
 cub_file_name_attributes = "attributes.txt"
