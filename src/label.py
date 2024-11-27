@@ -3,6 +3,7 @@
 import functools
 import header
 import json
+import logger
 import os
 import PyQt5.QtCore
 import PyQt5.QtGui
@@ -328,6 +329,10 @@ def main():
     file_label_config = open(os.path.join(header.config_dir, header.label_config_file_name), "r")
     label_config = json.load(file_label_config)
     file_label_config.close()
+
+    if "instance_wise" in label_config and label_config["instance_wise"]:
+        logger.log_fatal("Instance-wise dataset not supported. Quit.")
+        exit(-1)
 
     window = PyQt5.QtWidgets.QWidget()
 

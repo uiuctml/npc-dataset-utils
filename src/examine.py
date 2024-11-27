@@ -3,6 +3,7 @@
 import functools
 import header
 import json
+import logger
 import os
 import PyQt5.QtCore
 import PyQt5.QtGui
@@ -211,6 +212,10 @@ def main():
     file_attribute_config = open(os.path.join(header.config_dir, header.examine_config_file_name), "r")
     attribute_config = json.load(file_attribute_config)
     file_attribute_config.close()
+
+    if "instance_wise" in attribute_config and attribute_config["instance_wise"]:
+        logger.log_fatal("Instance-wise dataset not supported. Quit.")
+        exit(-1)
 
     window = PyQt5.QtWidgets.QWidget()
 
