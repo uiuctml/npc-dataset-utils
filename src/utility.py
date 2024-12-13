@@ -53,6 +53,28 @@ def getIndicesFromLabelsOriginal(labels_original):
 
     return labels_to_indices
 
+def pruneAttributes(attributes, mappings):
+    attributes_map = {}
+
+    for attribute in attributes:
+        attribute["labels"] = [""]
+        attributes_map[attribute["name"]] = set()
+
+    for image_name in mappings.keys():
+        labels = mappings[image_name]["labels"]
+
+        for attribute_name in labels.keys():
+            if isinstance(labels[attribute_name], list):
+                for label in labels[attribute_name]:
+                    attributes_map[attribute_name].add(label)
+            else:
+                attributes_map[attribute_name].add(labels[attribute_name])
+
+    for attribute in attributes:
+        attribute["labels"] += sorted(list(attributes_map[attribute["name"]]))
+
+    return attributes
+
 def readFromSharedMemory(shared_memory, process_id, entry_id):
     start = process_id * header.parallel_shared_memory_size_process + entry_id * header.parallel_shared_memory_size_entry
     size = int(shared_memory.buf[start])

@@ -3,6 +3,7 @@
 import header
 import json
 import os
+import utility
 
 attributes_types = {
     "color": {
@@ -15,39 +16,33 @@ attributes_types = {
         "red",
         "yellow"
     },
-    "patterns": {
+    "surface": {
         "patches",
         "spots",
-        "stripes"
-    },
-    "texture": {
+        "stripes",
         "furry",
         "hairless",
         "toughskin"
     },
-    "physique": {
+    "body": {
         "bulbous",
-        "lean"
+        "lean",
+        "bipedal",
+        "quadrapedal",
+        "longleg",
+        "longneck",
+        "tail",
+        "horns",
+        "tusks"
     },
-    "feature": {
+    "limb": {
         "flippers",
         "hands",
         "hooves",
         "pads",
         "paws",
-        "longleg",
-        "longneck",
-        "tail"
-    },
-    "weapon": {
-        "horns",
-        "claws",
-        "tusks"
-    },
-    "limb": {
-        "bipedal",
-        "quadrapedal"
-    },
+        "claws"
+    }
 }
 
 def readAttributes():
@@ -133,9 +128,11 @@ def readMappings():
     return mappings
 
 def main():
+    attributes = readAttributes()
+    mappings = readMappings()
     config = {}
-    config["attributes"] = readAttributes()
-    config["mappings"] = readMappings()
+    config["attributes"] = utility.pruneAttributes(attributes, mappings)
+    config["mappings"] = mappings
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)

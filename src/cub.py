@@ -5,6 +5,7 @@ import json
 import logger
 import os
 import tqdm
+import utility
 
 attribute_category_whitelist = {
     "belly-color": {
@@ -102,28 +103,6 @@ class_whitelist = {
     "184.Louisiana_Waterthrush",
     "190.Red_cockaded_Woodpecker"
 }
-
-def pruneAttributes(attributes, mappings):
-    attributes_map = {}
-
-    for attribute in attributes:
-        attribute["labels"] = [""]
-        attributes_map[attribute["name"]] = set()
-
-    for image_name in mappings.keys():
-        labels = mappings[image_name]["labels"]
-
-        for attribute_name in labels.keys():
-            if isinstance(labels[attribute_name], list):
-                for label in labels[attribute_name]:
-                    attributes_map[attribute_name].add(label)
-            else:
-                attributes_map[attribute_name].add(labels[attribute_name])
-
-    for attribute in attributes:
-        attribute["labels"] += sorted(list(attributes_map[attribute["name"]]))
-
-    return attributes
 
 def readAttributes():
     attributes = {}
@@ -258,7 +237,7 @@ def main():
     mappings = readMappings(attributes)
     config = {}
     config["instance_wise"] = True
-    config["attributes"] = pruneAttributes(attributes[0], mappings)
+    config["attributes"] = utility.pruneAttributes(attributes[0], mappings)
     config["mappings"] = mappings
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
