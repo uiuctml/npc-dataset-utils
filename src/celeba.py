@@ -6,6 +6,10 @@ import logger
 import os
 import utility
 
+attribute_blacklist = {
+    "male"
+}
+
 def readMatrix():
     attributes = []
     count_instances = -1
@@ -55,6 +59,9 @@ def processAttributes(matrix, attributes):
     balance_scores = {}
 
     for attribute_name in attributes:
+        if attribute_name in attribute_blacklist:
+            continue
+
         count_false = 0
         count_true = 0
 
