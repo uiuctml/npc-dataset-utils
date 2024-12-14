@@ -356,36 +356,37 @@ def main():
     if header.analysis_compute_matrix_a_size:
         computeMatrixASize(config)
 
-    if header.analysis_filter_attributes_categories:
-        class_occurrences = countAttributeClassOccurrences(config)
-        attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
-        category_class_spreads = computeCategoryClassSpread(class_occurrences)
+    if header.analysis_config_file_name == "cub.json":
+        if header.analysis_cub_filter_attributes_categories:
+            class_occurrences = countAttributeClassOccurrences(config)
+            attribute_class_spreads = computeAttributeClassSpread(class_occurrences)
+            category_class_spreads = computeCategoryClassSpread(class_occurrences)
 
-        if len(attribute_whitelist) <= 0:
-            attribute_whitelist = filterAttribute(attribute_class_spreads)
-        else:
-            logger.log_info("Manual attribute whitelist used.")
+            if len(attribute_whitelist) <= 0:
+                attribute_whitelist = filterAttribute(attribute_class_spreads)
+            else:
+                logger.log_info("Manual attribute whitelist used.")
 
-        filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
+            filterAttributeCategory(config, category_class_spreads, attribute_whitelist)
 
-    if header.analysis_filter_classes_instances:
-        class_whitelist_best = set()
+        if header.analysis_cub_filter_classes_instances:
+            class_whitelist_best = set()
 
-        for epoch in range(header.analysis_filter_classes_instances_epochs):
-            logger.log_info("Epoch: " + str(epoch) + ".")
+            for epoch in range(header.analysis_cub_filter_classes_instances_epochs):
+                logger.log_info("Epoch: " + str(epoch) + ".")
 
-            class_whitelist = filterOverlappingClasses(config, epoch)
+                class_whitelist = filterOverlappingClasses(config, epoch)
 
-            if len(class_whitelist) > len(class_whitelist_best):
-                class_whitelist_best = class_whitelist
+                if len(class_whitelist) > len(class_whitelist_best):
+                    class_whitelist_best = class_whitelist
 
-            logger.log_info("Length of class whitelist: " + str(len(class_whitelist)) + ".")
+                logger.log_info("Length of class whitelist: " + str(len(class_whitelist)) + ".")
+                logger.log_info("Length of longest class whitelist: " + str(len(class_whitelist_best)) + ".")
+
+            class_whitelist_best = sorted(list(class_whitelist_best))
+
+            logger.log_info("class_whitelist =", json.dumps(class_whitelist_best, indent = 4))
             logger.log_info("Length of longest class whitelist: " + str(len(class_whitelist_best)) + ".")
-
-        class_whitelist_best = sorted(list(class_whitelist_best))
-
-        logger.log_info("class_whitelist =", json.dumps(class_whitelist_best, indent = 4))
-        logger.log_info("Length of longest class whitelist: " + str(len(class_whitelist_best)) + ".")
 
     return
 

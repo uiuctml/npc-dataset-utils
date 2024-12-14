@@ -29,9 +29,9 @@ dataset_label_undefined_keyword = "undefined"
 
 analysis_compute_matrix_a_size = True
 analysis_config_file_name = dataset_config_file_name
-analysis_filter_attributes_categories = False
-analysis_filter_classes_instances = False
-analysis_filter_classes_instances_epochs = 50
+analysis_cub_filter_attributes_categories = False
+analysis_cub_filter_classes_instances = False
+analysis_cub_filter_classes_instances_epochs = 50
 analysis_random_seed = 42
 analysis_threshold_max = False
 
