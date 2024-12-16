@@ -10,6 +10,53 @@ attribute_blacklist = {
     "male"
 }
 
+attribute_types = {
+    "mouth": [
+        "mouth-slightly-open",
+        "smiling"
+    ],
+    "face": [
+        "high-cheekbones",
+        "oval-face"
+    ],
+    "cosmetic": [
+        "heavy-makeup",
+        "wearing-lipstick"
+    ],
+    "hair": [
+        "wavy-hair"
+    ],
+    "appearance": [
+        "attractive"
+    ],
+}
+
+def computeAttributeBalanceScores(matrix, attributes):
+    balance_scores = {}
+
+    for attribute_name in attributes:
+        if attribute_name in attribute_blacklist:
+            continue
+
+        count_false = 0
+        count_true = 0
+
+        logger.log_info_raw("\033[K[INFO]: Processing attribute \"" + attribute_name + "\"", end = '\r')
+
+        for instance_name in matrix.keys():
+            if matrix[instance_name][attribute_name]:
+                count_true += 1
+            else:
+                count_false += 1
+
+        balance_scores[attribute_name] = abs(count_true - count_false)
+
+    logger.log_info_raw()
+
+    balance_scores = dict(sorted(balance_scores.items(), key=lambda item: item[1], reverse = False))
+
+    return balance_scores
+
 def readMatrix():
     attributes = []
     count_instances = -1
@@ -56,34 +103,36 @@ def readMatrix():
     return (matrix, attributes)
 
 def processAttributes(matrix, attributes):
-    balance_scores = {}
+    if len(attribute_types) <= 0:
+        attribute_name = "attributes"
+        balance_scores = computeAttributeBalanceScores(matrix, attributes)
+        labels = list(balance_scores.keys())[:header.celeba_count_attributes]
 
-    for attribute_name in attributes:
-        if attribute_name in attribute_blacklist:
-            continue
+        for i in range(len(labels)):
+            labels[i] = header.dataset_delimiter_label.join([attribute_name, labels[i]])
 
-        count_false = 0
-        count_true = 0
+        labels.append(header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]))
 
-        logger.log_info_raw("\033[K[INFO]: Processing attribute \"" + attribute_name + "\"", end = '\r')
+        attributes = []
+        attribute = {}
+        attribute["name"] = attribute_name
+        attribute["labels"] = [""] + sorted(labels)
+        attributes.append(attribute)
+    else:
+        attributes = []
 
-        for instance_name in matrix.keys():
-            if matrix[instance_name][attribute_name]:
-                count_true += 1
-            else:
-                count_false += 1
+        for attribute_name in attribute_types.keys():
+            labels = attribute_types[attribute_name]
 
-        balance_scores[attribute_name] = abs(count_true - count_false)
+            for i in range(len(labels)):
+                labels[i] = header.dataset_delimiter_label.join([attribute_name, labels[i]])
 
-    logger.log_info_raw()
+            labels.append(header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]))
 
-    balance_scores = dict(sorted(balance_scores.items(), key=lambda item: item[1], reverse = False))
-    labels = list(balance_scores.keys())[:header.celeba_count_attributes]
-
-    attribute = {}
-    attribute["name"] = "attributes"
-    attribute["labels"] = [""] + sorted(labels)
-    attributes = [attribute]
+            attribute = {}
+            attribute["name"] = attribute_name
+            attribute["labels"] = [""] + sorted(labels)
+            attributes.append(attribute)
 
     return attributes
 
