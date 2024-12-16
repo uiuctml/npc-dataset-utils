@@ -25,7 +25,7 @@ dataset_file_extension_images = ".jpg"
 dataset_file_name_split_test = "test.txt"
 dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
-dataset_label_undefined_keyword = "undefined"
+dataset_label_undefined_keyword = "none"
 
 analysis_compute_matrix_a_size = True
 analysis_config_file_name = dataset_config_file_name

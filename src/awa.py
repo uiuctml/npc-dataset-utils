@@ -51,7 +51,7 @@ def readAttributes():
     for attribute_name in attributes_types.keys():
         attribute = {}
         attribute["name"] = attribute_name
-        labels = [header.dataset_delimiter_label.join([attribute_name, "none"])]
+        labels = [header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])]
 
         for label in attributes_types[attribute_name]:
             labels.append(header.dataset_delimiter_label.join([attribute_name, label]))
@@ -106,7 +106,7 @@ def readMappings():
             index_classes += 1
 
     for attribute_name in attributes_types.keys():
-        labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, "none"])
+        labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])
 
     for class_name in classes:
         mappings[class_name] = {"labels": labels_default.copy()}
@@ -120,7 +120,7 @@ def readMappings():
                     if isinstance(mappings[class_name]["labels"][attribute_name], list):
                         mappings[class_name]["labels"][attribute_name].append(category_name)
                     else:
-                        if mappings[class_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+                        if mappings[class_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]):
                             mappings[class_name]["labels"][attribute_name] = category_name
                         else:
                             mappings[class_name]["labels"][attribute_name] = [mappings[class_name]["labels"][attribute_name], category_name]

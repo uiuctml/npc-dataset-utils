@@ -157,10 +157,10 @@ def countAttributeClassOccurrences(config):
 
             if isinstance(attribute_categories, list):
                 for attribute_category in attribute_categories:
-                    if attribute_category != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                    if attribute_category != header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]):
                         class_occurrences[attribute_name][attribute_category].add(class_name)
             else:
-                if attribute_categories != header.dataset_delimiter_label.join([attribute_name, "none"]):
+                if attribute_categories != header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]):
                     class_occurrences[attribute_name][attribute_categories].add(class_name)
 
     class_occurrences["classes"] = len(classes)
@@ -249,12 +249,12 @@ def filterNoneInstances(config):
 
             if isinstance(category_names, list):
                 for category_name in category_names:
-                    if category_name.split(header.dataset_delimiter_label)[-1] == "none":
+                    if category_name.split(header.dataset_delimiter_label)[-1] == header.dataset_label_undefined_keyword:
                         count_category_none += 1
 
                     count_category_total += 1
             else:
-                if category_names.split(header.dataset_delimiter_label)[-1] == "none":
+                if category_names.split(header.dataset_delimiter_label)[-1] == header.dataset_label_undefined_keyword:
                         count_category_none += 1
 
                 count_category_total += 1

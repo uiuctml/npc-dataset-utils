@@ -122,7 +122,7 @@ def readAttributes():
             continue
 
         if attribute_name not in attributes:
-            attributes[attribute_name] = [header.dataset_delimiter_label.join([attribute_name, "none"])]
+            attributes[attribute_name] = [header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])]
 
         if len(attribute_category_whitelist) <= 0 or attribute_category in attribute_category_whitelist[attribute_name]:
             attributes[attribute_name].append(attribute_category)
@@ -148,7 +148,7 @@ def readMappings(attributes):
     mappings = {}
 
     for attribute in attributes[0]:
-        labels_default[attribute["name"]] = header.dataset_delimiter_label.join([attribute["name"], "none"])
+        labels_default[attribute["name"]] = header.dataset_delimiter_label.join([attribute["name"], header.dataset_label_undefined_keyword])
 
     for line in file_images.readlines():
         line = line.rstrip()
@@ -193,7 +193,7 @@ def readMappings(attributes):
             if isinstance(mappings[image_name]["labels"][attribute_name], list):
                 mappings[image_name]["labels"][attribute_name].append(attribute_category)
             else:
-                if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, "none"]):
+                if mappings[image_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]):
                     mappings[image_name]["labels"][attribute_name] = attribute_category
                 else:
                     mappings[image_name]["labels"][attribute_name] = [mappings[image_name]["labels"][attribute_name], attribute_category]
