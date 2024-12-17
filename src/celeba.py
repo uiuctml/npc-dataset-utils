@@ -136,16 +136,51 @@ def processAttributes(matrix, attributes):
 
     return attributes
 
-def processMappings():
+def processMappings(matrix, attributes):
+    labels_default = {}
     mappings = {}
+
+    for attribute in attributes:
+        attribute_name = attribute["name"]
+        labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])
+
+    for instance_name in matrix.keys():
+        mappings[instance_name] = {"labels": labels_default.copy()}
+
+    for instance_name in matrix.keys():
+        logger.log_info_raw("\033[K[INFO]: Processing instance \"" + instance_name + "\"", end = '\r')
+
+        for attribute in attributes:
+            for label in attribute["labels"]:
+                if label == "":
+                    continue
+
+                label_split = label.split(header.dataset_delimiter_label)
+                attribute_name = label_split[0]
+                category_name = label_split[1]
+
+                if category_name == header.dataset_label_undefined_keyword:
+                    continue
+
+                if matrix[instance_name][category_name] == True:
+                    if isinstance(mappings[instance_name]["labels"][attribute_name], list):
+                        mappings[instance_name]["labels"][attribute_name].append(label)
+                    else:
+                        if mappings[instance_name]["labels"][attribute_name] == header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword]):
+                            mappings[instance_name]["labels"][attribute_name] = label
+                        else:
+                            mappings[instance_name]["labels"][attribute_name] = [mappings[instance_name]["labels"][attribute_name], label]
+
+    logger.log_info_raw()
 
     return mappings
 
 def main():
     (matrix, attributes) = readMatrix()
     attributes = processAttributes(matrix, attributes)
-    mappings = processMappings()
+    mappings = processMappings(matrix, attributes)
     config = {}
+    config["instance_wise"] = True
     config["attributes"] = attributes
     # TODO config["attributes"] = utility.pruneAttributes(attributes, mappings)
     config["mappings"] = mappings

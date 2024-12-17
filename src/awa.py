@@ -5,7 +5,7 @@ import json
 import os
 import utility
 
-attributes_types = {
+attribute_types = {
     "color": {
         "black",
         "white",
@@ -48,12 +48,12 @@ attributes_types = {
 def readAttributes():
     attributes = []
 
-    for attribute_name in attributes_types.keys():
+    for attribute_name in attribute_types.keys():
         attribute = {}
         attribute["name"] = attribute_name
         labels = [header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])]
 
-        for label in attributes_types[attribute_name]:
+        for label in attribute_types[attribute_name]:
             labels.append(header.dataset_delimiter_label.join([attribute_name, label]))
 
         attribute["labels"] = [""] + sorted(labels)
@@ -69,7 +69,7 @@ def readMappings():
     mappings = {}
     matrix = {}
 
-    for values in attributes_types.values():
+    for values in attribute_types.values():
         categories_types += list(values)
 
     categories_types = set(categories_types)
@@ -105,7 +105,7 @@ def readMappings():
 
             index_classes += 1
 
-    for attribute_name in attributes_types.keys():
+    for attribute_name in attribute_types.keys():
         labels_default[attribute_name] = header.dataset_delimiter_label.join([attribute_name, header.dataset_label_undefined_keyword])
 
     for class_name in classes:
@@ -113,8 +113,8 @@ def readMappings():
 
     for class_name in matrix.keys():
         for category_name in matrix[class_name]:
-            for attribute_name in attributes_types.keys():
-                if category_name in attributes_types[attribute_name]:
+            for attribute_name in attribute_types.keys():
+                if category_name in attribute_types[attribute_name]:
                     category_name = header.dataset_delimiter_label.join([attribute_name, category_name])
 
                     if isinstance(mappings[class_name]["labels"][attribute_name], list):
