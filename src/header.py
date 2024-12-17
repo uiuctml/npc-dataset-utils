@@ -40,7 +40,9 @@ awa_file_name_matrix = "predicate-matrix-binary.txt"
 awa_file_name_predicates = "predicates.txt"
 
 celeba_count_attributes = 8
+celeba_dataset_dir_images_labeled = dataset_dir_images + "/labeled"
 celeba_file_name_attributes = "list_attr_celeba.txt"
+celeba_random_seed = 42
 
 cub_dataset_dir_images_filtered = dataset_dir_images + "/filtered"
 cub_dir_attributes = dataset_dir_annotations + "/attributes"
