@@ -53,7 +53,7 @@ def generateLabeledDatasetDirectory(mappings):
     return
 
 def assignClasses(mappings):
-    attribute_assignments = set()
+    attribute_assignments = {}
     attribute_assignments_map = {}
     class_assignment = 0
     class_assignments_map = {}
@@ -73,18 +73,25 @@ def assignClasses(mappings):
             else:
                 attribute_assignment += attribute_values
 
-        attribute_assignments.add(attribute_assignment)
+        if attribute_assignment in attribute_assignments:
+            attribute_assignments[attribute_assignment] += 1
+        else:
+            attribute_assignments[attribute_assignment] = 1
+
         attribute_assignments_map[instance_name] = attribute_assignment
 
     logger.log_info_raw()
 
-    attribute_assignments = list(attribute_assignments)
-    attribute_assignments = utility.shuffleUniform(attribute_assignments, header.celeba_random_seed)
-    attribute_assignments = list(zip(attribute_assignments[::2], attribute_assignments[1::2]))
+    attribute_assignments = dict(sorted(attribute_assignments.items(), key=lambda item: item[1], reverse = False))
+    attribute_assignments = list(attribute_assignments.keys())
 
-    for attribute_assignment_pair in attribute_assignments:
-        class_assignments_map[attribute_assignment_pair[0]] = class_assignment
-        class_assignments_map[attribute_assignment_pair[1]] = class_assignment
+    attribute_assignments_a = attribute_assignments[:(len(attribute_assignments) // 2)].copy()
+    attribute_assignments_b = attribute_assignments[(len(attribute_assignments) // 2):].copy()
+    attribute_assignments_b.reverse()
+
+    for (attribute_assignment_a, attribute_assignment_b) in zip(attribute_assignments_a, attribute_assignments_b):
+        class_assignments_map[attribute_assignment_a] = class_assignment
+        class_assignments_map[attribute_assignment_b] = class_assignment
         class_assignment += 1
 
     for instance_name in mappings.keys():
