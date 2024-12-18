@@ -121,7 +121,7 @@ def computeMatrixASize(config):
         cols *= count_categories
 
     for image_name in config["mappings"].keys():
-        class_name = image_name.split('.')[0]
+        class_name = image_name.split('/')[0]
         classes.add(class_name)
 
     logger.log_info("Number of classes: " + str(len(classes)) + ".")
