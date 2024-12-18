@@ -37,7 +37,7 @@ def generateLabeledDatasetDirectory(mappings):
         return
 
     for instance_name in mappings:
-        logger.log_info_raw("\033[K[INFO]: Processing instance \"" + instance_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Creating symlink for instance \"" + instance_name + "\"...", end = '\r')
 
         instance_name_split = instance_name.split('/')
         class_name = instance_name_split[0]
@@ -60,7 +60,7 @@ def assignClasses(mappings):
     mappings_assigned = {}
 
     for instance_name in mappings.keys():
-        logger.log_info_raw("\033[K[INFO]: Processing instance \"" + instance_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Reading attributes for instance \"" + instance_name + "\"...", end = '\r')
 
         attribute_assignment = ""
 
@@ -88,7 +88,7 @@ def assignClasses(mappings):
         class_assignment += 1
 
     for instance_name in mappings.keys():
-        logger.log_info_raw("\033[K[INFO]: Processing instance \"" + instance_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Assigning class for instance \"" + instance_name + "\"...", end = '\r')
 
         attribute_assignment = attribute_assignments_map[instance_name]
         class_assignment = class_assignments_map[attribute_assignment]
@@ -113,7 +113,7 @@ def computeAttributeBalanceScores(matrix, attributes):
         count_false = 0
         count_true = 0
 
-        logger.log_info_raw("\033[K[INFO]: Processing attribute \"" + attribute_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Computing balance score for attribute \"" + attribute_name + "\"...", end = '\r')
 
         for instance_name in matrix.keys():
             if matrix[instance_name][attribute_name]:
@@ -158,7 +158,7 @@ def readMatrix():
             logger.log_fatal("Invalid attribute values. Quit.")
             exit(-1)
 
-        logger.log_info_raw("\033[K[INFO]: Reading instance \"" + instance_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Reading instance \"" + instance_name + "\"...", end = '\r')
 
         matrix[instance_name] = {}
 
@@ -220,7 +220,7 @@ def processMappings(matrix, attributes):
         mappings[instance_name] = {"labels": labels_default.copy()}
 
     for instance_name in matrix.keys():
-        logger.log_info_raw("\033[K[INFO]: Processing instance \"" + instance_name + "\"", end = '\r')
+        logger.log_info_raw("\033[K[INFO]: Processing mapping for \"" + instance_name + "\"...", end = '\r')
 
         for attribute in attributes:
             for label in attribute["labels"]:
