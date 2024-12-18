@@ -42,11 +42,10 @@ def generateLabeledDatasetDirectory(mappings):
         instance_name_split = instance_name.split('/')
         class_name = instance_name_split[0]
         file_name = instance_name_split[1]
-        dir_class_sliced =  os.path.join(header.dataset_dir_images_sliced, class_name)
         dir_class_labeled = os.path.join(header.celeba_dataset_dir_images_labeled, class_name)
 
         os.makedirs(dir_class_labeled, exist_ok = True)
-        os.symlink(os.path.abspath(os.path.join(dir_class_sliced, file_name)), os.path.join(dir_class_labeled, file_name))
+        os.symlink(os.path.abspath(os.path.join(header.dataset_dir_images_sliced, file_name)), os.path.join(dir_class_labeled, file_name))
 
     logger.log_info_raw()
 
