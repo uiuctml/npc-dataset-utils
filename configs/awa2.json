@@ -1,4 +1,5 @@
 {
+    "multi_hot": true,
     "attributes": [
         {
             "name": "color",

@@ -136,6 +136,7 @@ def main():
     attributes = readAttributes()
     mappings = readMappings()
     config = {}
+    config["multi_hot"] = True
     config["attributes"] = utility.pruneAttributes(attributes, mappings)
     config["mappings"] = mappings
 

@@ -217,6 +217,10 @@ def main():
         logger.log_fatal("Instance-wise dataset not supported. Quit.")
         exit(-1)
 
+    if "multi_hot" in attribute_config and attribute_config["multi_hot"]:
+        logger.log_fatal("Multi-hot dataset not supported. Quit.")
+        exit(-1)
+
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())

@@ -260,6 +260,7 @@ def main():
     mappings = assignClasses(mappings)
     config = {}
     config["instance_wise"] = True
+    config["multi_hot"] = True
     config["attributes"] = attributes
     config["attributes"] = utility.pruneAttributes(attributes, mappings)
     config["mappings"] = mappings
