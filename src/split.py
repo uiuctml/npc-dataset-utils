@@ -124,6 +124,8 @@ def main():
         createSymlinks(dataset_name, file_keys_test, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_test)
         createSymlinks(dataset_name, file_keys_validate, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_validate)
         createSymlinks(dataset_name, file_keys_train, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_train)
+    else:
+        logger.log_info("Split symlink directories exist in \"" + header.dataset_dir_splits_instances + "\". Skip.")
 
     return
 

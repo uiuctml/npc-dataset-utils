@@ -2,6 +2,7 @@
 
 import header
 import json
+import logger
 import os
 import utility
 
@@ -46,6 +47,8 @@ attribute_types = {
 }
 
 def readAttributes():
+    logger.log_info("Reading attributes...")
+
     attributes = []
 
     for attribute_name in attribute_types.keys():
@@ -62,6 +65,8 @@ def readAttributes():
     return attributes
 
 def readMappings():
+    logger.log_info("Reading mappings...")
+
     classes = []
     categories = []
     categories_types = []
@@ -136,6 +141,8 @@ def main():
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)
+
+    logger.log_info("Saved dataset configurations to \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\".")
 
     return
 

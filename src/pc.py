@@ -8,6 +8,10 @@ import random
 import utility
 
 def main():
+    if os.path.exists(header.dataset_dir_splits_pc):
+        logger.log_info("PC dataset splits exist in \"" + header.dataset_dir_splits_pc + "\". Skip.")
+        return
+
     utility.setSeed(header.pc_random_seed)
 
     file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
@@ -32,7 +36,7 @@ def main():
         categories[attribute_name] = attribute_categories
 
     for i in range(len(dirs_dataset_original)):
-        logger.log_info("Generating PC dataset from \"" + dirs_dataset_original[i] + "\".")
+        logger.log_info("Generating PC dataset split from \"" + dirs_dataset_original[i] + "\".")
 
         lines = []
 
