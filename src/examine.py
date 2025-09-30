@@ -224,7 +224,7 @@ def main():
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
-    window.setWindowTitle("NPC Label Examination Tool")
+    window.setWindowTitle("NPC Attribute Label Examination Utility")
 
     window.show()
     window.setFixedSize(window.size())
