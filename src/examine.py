@@ -220,7 +220,7 @@ def main():
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
-    window.setWindowTitle("VISAT Examination Tool")
+    window.setWindowTitle("NPC Label Examination Tool")
 
     window.show()
     window.setFixedSize(window.size())

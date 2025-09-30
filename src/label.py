@@ -337,7 +337,7 @@ def main():
     window = PyQt5.QtWidgets.QWidget()
 
     window.setLayout(createWindowLayout())
-    window.setWindowTitle("VISAT Labeling Tool")
+    window.setWindowTitle("NPC Labeling Tool")
 
     window.show()
     window.setFixedSize(window.size())
