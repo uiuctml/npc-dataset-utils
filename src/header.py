@@ -1,4 +1,4 @@
-import multiprocessing
+import os
 import type
 
 config_dir = "../configs"
@@ -7,24 +7,17 @@ dataset_config_file_name = "awa2.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
 dataset_dir = "../../../datasets/awa2-dataset"
-dataset_dir_annotations = dataset_dir + "/annotations"
-dataset_dir_images = dataset_dir + "/images"
-dataset_dir_images_original = dataset_dir_images + "/original"
-dataset_dir_images_sliced = dataset_dir_images + "/sliced"
-dataset_dir_images_split = dataset_dir_images + "/split"
-dataset_dir_images_split_corrupted = dataset_dir_images_split + "/corrupted"
-dataset_dir_images_split_corrupted_test = dataset_dir_images_split_corrupted + "/test"
-dataset_dir_images_split_original = dataset_dir_images_split + "/original"
-dataset_dir_images_split_original_test = dataset_dir_images_split_original + "/test"
-dataset_dir_images_split_original_train = dataset_dir_images_split_original + "/train"
-dataset_dir_images_split_original_validate = dataset_dir_images_split_original + "/validate"
-dataset_dir_images_split_spn = dataset_dir_images_split + "/spn"
-dataset_dir_splits = dataset_dir + "/splits"
-dataset_file_extension_annotations = ".csv"
+dataset_dir_annotations = os.path.join(dataset_dir, "annotations")
+dataset_dir_instances = os.path.join(dataset_dir, "instances")
+dataset_dir_instances_original = os.path.join(dataset_dir_instances, "original")
+dataset_dir_instances_processed = os.path.join(dataset_dir_instances, "processed")
+dataset_dir_splits = os.path.join(dataset_dir, "splits")
+dataset_dir_splits_instances = os.path.join(dataset_dir_splits, "instances")
+dataset_dir_splits_instances_test = os.path.join(dataset_dir_splits_instances, "test")
+dataset_dir_splits_instances_train = os.path.join(dataset_dir_splits_instances, "train")
+dataset_dir_splits_instances_validate = os.path.join(dataset_dir_splits_instances, "validate")
+dataset_dir_splits_spn = os.path.join(dataset_dir_splits, "spn")
 dataset_file_extension_images = ".jpg"
-dataset_file_name_split_test = "test.txt"
-dataset_file_name_split_train = "train.txt"
-dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "none"
 
 awa2_file_name_classes = "classes.txt"
@@ -32,24 +25,23 @@ awa2_file_name_matrix = "predicate-matrix-binary.txt"
 awa2_file_name_predicates = "predicates.txt"
 
 celeba_count_attributes = 8
-celeba_dataset_dir_images_labeled = dataset_dir_images + "/labeled"
 celeba_file_name_attributes = "list_attr_celeba.txt"
 celeba_random_seed = 42
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name
-examine_dataset_dir_images = dataset_dir_images_sliced
+examine_dataset_dir_images = dataset_dir_instances_processed
 examine_viewer_height = 150
 examine_viewer_width = 150
 examine_viewer_count = 24
 examine_viewer_count_col = 6
 
 gtsrb_config_file_name = dataset_config_file_name
-gtsrb_dataset_dir_images = dataset_dir_images_sliced
+gtsrb_dataset_dir_images = dataset_dir_instances_processed
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
-label_dataset_dir_images = dataset_dir_images_sliced
+label_dataset_dir_images = dataset_dir_instances_processed
 label_viewer_height = 150
 label_viewer_width = 150
 label_line_edit_width = 250
@@ -59,7 +51,7 @@ label_viewer_count_col = 6
 log_level = type.LogLevel.info
 
 mnist_attributes = ["number-first", "number-second"]
-mnist_dir_images_addition = dataset_dir_images + "/addition"
+mnist_dir_images_addition = dataset_dir_instances + "/addition"
 mnist_file_extension_images = ".png"
 mnist_file_name_images_test = "t10k-images-idx3-ubyte"
 mnist_file_name_images_train = "train-images-idx3-ubyte"
@@ -69,7 +61,7 @@ mnist_random_seed = 42
 
 split_config_file_name = "awa2_split.json.gz"
 split_create_symlinks = True
-split_dataset_dir_images = dataset_dir_images_sliced
+split_dataset_dir_images = dataset_dir_instances_processed
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1

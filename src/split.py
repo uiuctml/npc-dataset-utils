@@ -91,7 +91,7 @@ def saveSplits(file_keys_test, file_keys_train, file_keys_validate, split_dir_te
     return
 
 def main():
-    dataset_name = os.path.basename(header.dataset_dir_images_split_original)
+    dataset_name = os.path.basename(header.dataset_dir_splits_instances)
     file_keys = []
     file_keys_test = []
     file_keys_train = []
@@ -113,17 +113,17 @@ def main():
             file_map[file_key] = os.path.join(dir_label, file_name)
 
     if header.split_load:
-        (file_keys_test, file_keys_train, file_keys_validate) = loadSplits(header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
+        (file_keys_test, file_keys_train, file_keys_validate) = loadSplits(header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate)
     else:
         (file_keys_test, file_keys_train, file_keys_validate) = generateSplits(file_keys)
 
         if header.split_save:
-            saveSplits(file_keys_test, file_keys_train, file_keys_validate, header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate)
+            saveSplits(file_keys_test, file_keys_train, file_keys_validate, header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate)
 
-    if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_images_split_original):
-        createSymlinks(dataset_name, file_keys_test, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_test)
-        createSymlinks(dataset_name, file_keys_validate, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_validate)
-        createSymlinks(dataset_name, file_keys_train, file_map, header.split_dataset_dir_images, header.dataset_dir_images_split_original_train)
+    if header.split_create_symlinks and not os.path.isdir(header.dataset_dir_splits_instances):
+        createSymlinks(dataset_name, file_keys_test, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_test)
+        createSymlinks(dataset_name, file_keys_validate, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_validate)
+        createSymlinks(dataset_name, file_keys_train, file_map, header.split_dataset_dir_images, header.dataset_dir_splits_instances_train)
 
     return
 

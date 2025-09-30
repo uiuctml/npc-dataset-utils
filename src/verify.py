@@ -73,7 +73,7 @@ def verifyDatasetConfigMissing(config_dataset):
             labels_dataset_set_dataset.add(label_dataset)
 
     for label_original in config_dataset["mappings"].keys():
-        labels_original = os.listdir(header.dataset_dir_images_sliced)
+        labels_original = os.listdir(header.dataset_dir_instances_processed)
 
         if label_original not in labels_original:
             logger.log_warn("Unknown label: \"" + label_original + "\".")
@@ -125,14 +125,14 @@ def verifyDatasetConfigUnused(config_dataset):
     return
 
 def verifyDatasetSplitsEmpty():
-    if os.path.isdir(header.dataset_dir_images_split_original):
-        dataset_dir_images_split_list = os.listdir(header.dataset_dir_images_split_original)
+    if os.path.isdir(header.dataset_dir_splits_instances):
+        dataset_dir_images_split_list = os.listdir(header.dataset_dir_splits_instances)
 
         for dataset_name_split in dataset_dir_images_split_list:
-            dataset_split = os.listdir(os.path.join(header.dataset_dir_images_split_original, dataset_name_split))
+            dataset_split = os.listdir(os.path.join(header.dataset_dir_splits_instances, dataset_name_split))
 
             for dataset_dir_labels in dataset_split:
-                dataset_dir_labels_split = os.path.join(header.dataset_dir_images_split_original, dataset_name_split, dataset_dir_labels)
+                dataset_dir_labels_split = os.path.join(header.dataset_dir_splits_instances, dataset_name_split, dataset_dir_labels)
                 dataset_dir_labels_split_list = os.listdir(dataset_dir_labels_split)
 
                 if len(dataset_dir_labels_split_list) == 0:
@@ -158,7 +158,7 @@ def main():
     verifyDatasetConfigMissing(config_dataset)
     verifyDatasetConfigUnused(config_dataset)
 
-    logger.log_info("Verifying \"" + header.dataset_dir_images_split + "\"...")
+    logger.log_info("Verifying \"" + header.dataset_dir_splits + "\"...")
 
     verifyDatasetSplitsEmpty()
 

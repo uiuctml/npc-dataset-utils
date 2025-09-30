@@ -12,7 +12,7 @@ import tqdm
 import utility
 
 def extractImages(file_name_images):
-    with open(os.path.join(header.dataset_dir_images_original, file_name_images),"rb") as file:
+    with open(os.path.join(header.dataset_dir_instances_original, file_name_images),"rb") as file:
         (magic, image_count) = struct.unpack(">II", file.read(8))
         (image_height, image_width) = struct.unpack(">II", file.read(8))
         images = numpy.fromfile(file, dtype = numpy.dtype(numpy.uint8).newbyteorder('>'))
@@ -33,13 +33,13 @@ def saveImages(images, labels):
     progress_bar = tqdm.tqdm(total = image_count)
     progress_bar.set_description_str("[INFO]: Saving images")
 
-    os.makedirs(header.dataset_dir_images_sliced, exist_ok = True)
+    os.makedirs(header.dataset_dir_instances_processed, exist_ok = True)
 
     for i in range(0, image_count):
         image = PIL.Image.fromarray(images[i])
         label = labels[i]
         file_name_image = str(i).rjust(len(str(image_count)), '0') + header.mnist_file_extension_images
-        file_path_label = os.path.join(header.dataset_dir_images_sliced, str(label))
+        file_path_label = os.path.join(header.dataset_dir_instances_processed, str(label))
         progress_bar.n = i + 1
         progress_bar.refresh()
 
@@ -53,7 +53,7 @@ def saveImages(images, labels):
     return
 
 def createAdditionAttributes():
-    classes = [""] + sorted(os.listdir(header.dataset_dir_images_sliced))
+    classes = [""] + sorted(os.listdir(header.dataset_dir_instances_processed))
     config_attributes = []
 
     for attribute_name in header.mnist_attributes:
@@ -65,15 +65,15 @@ def createAdditionAttributes():
     return config_attributes
 
 def createAdditionDataset():
-    classes = os.listdir(header.dataset_dir_images_sliced)
+    classes = os.listdir(header.dataset_dir_instances_processed)
     config = {}
     config_mappings = {}
     file_paths = []
     image_combined_count = 0
 
     for class_index in classes:
-        file_names = os.listdir(os.path.join(header.dataset_dir_images_sliced, class_index))
-        file_paths += [os.path.join(header.dataset_dir_images_sliced, class_index, file_name) for file_name in file_names]
+        file_names = os.listdir(os.path.join(header.dataset_dir_instances_processed, class_index))
+        file_paths += [os.path.join(header.dataset_dir_instances_processed, class_index, file_name) for file_name in file_names]
 
     file_paths = utility.shuffleUniform(file_paths, header.mnist_random_seed)
     progress_bar = tqdm.tqdm(total = len(file_paths) // 2)
@@ -120,7 +120,7 @@ def createAdditionDataset():
     return
 
 def main():
-    if not os.path.exists(header.dataset_dir_images_sliced):
+    if not os.path.exists(header.dataset_dir_instances_processed):
         images_test = extractImages(header.mnist_file_name_images_test)
         images_train = extractImages(header.mnist_file_name_images_train)
         labels_test = extractLabels(header.mnist_file_name_labels_test)

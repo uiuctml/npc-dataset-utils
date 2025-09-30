@@ -20,7 +20,7 @@ def main():
     indices_original = utility.getIndicesFromLabelsOriginal(labels_original)
 
     categories = {}
-    dirs_dataset_original = [header.dataset_dir_images_split_original_test, header.dataset_dir_images_split_original_train, header.dataset_dir_images_split_original_validate]
+    dirs_dataset_original = [header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate]
 
     for attribute in dataset_config["attributes"]:
         attribute_name = attribute["name"]
@@ -89,11 +89,11 @@ def main():
 
         lines[-1] = lines[-1].rstrip("\n")
 
-        if not os.path.exists(header.dataset_dir_images_split_spn):
-            os.makedirs(header.dataset_dir_images_split_spn, exist_ok = True)
+        if not os.path.exists(header.dataset_dir_splits_spn):
+            os.makedirs(header.dataset_dir_splits_spn, exist_ok = True)
 
         file_name_spn_dataset = os.path.basename(dirs_dataset_original[i]) + ".txt"
-        file_path_spn_dataset = os.path.join(header.dataset_dir_images_split_spn, file_name_spn_dataset)
+        file_path_spn_dataset = os.path.join(header.dataset_dir_splits_spn, file_name_spn_dataset)
 
         with open(file_path_spn_dataset, "w+") as file_dataset_spn:
             file_dataset_spn.writelines(lines)
