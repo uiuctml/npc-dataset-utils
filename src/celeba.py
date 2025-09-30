@@ -31,9 +31,9 @@ attribute_types = {
     ],
 }
 
-def generateLabeledDatasetDirectory(mappings):
+def generateProcessedInstanceDirectory(mappings):
     if os.path.exists(header.dataset_dir_instances_processed):
-        logger.log_info("Labeled dataset directory exists. Skip.")
+        logger.log_info("Processed instance directory exists. Skip.")
         return
 
     for instance_name in mappings:
@@ -105,7 +105,7 @@ def assignClasses(mappings):
 
     logger.log_info_raw()
 
-    generateLabeledDatasetDirectory(mappings_assigned)
+    generateProcessedInstanceDirectory(mappings_assigned)
 
     return mappings_assigned
 
@@ -267,6 +267,8 @@ def main():
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)
+
+    logger.log_info("Saved dataset configurations to \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\".")
 
     return
 
