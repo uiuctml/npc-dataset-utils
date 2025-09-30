@@ -3,10 +3,11 @@ import type
 
 config_dir = "../configs"
 
-dataset_config_file_name = "awa2.json"
+dataset_prefix = "awa2"
+dataset_config_file_name = dataset_prefix + ".json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../datasets/awa2"
+dataset_dir = os.path.join("../../datasets", dataset_prefix)
 dataset_dir_annotations = os.path.join(dataset_dir, "annotations")
 dataset_dir_instances = os.path.join(dataset_dir, "instances")
 dataset_dir_instances_archived = os.path.join(dataset_dir_instances, "archived")
@@ -56,7 +57,7 @@ mnist_random_seed = 42
 
 pc_random_seed = 42
 
-split_config_file_name = "awa2_split.json.gz"
+split_config_file_name = dataset_prefix + "_split.json.gz"
 split_create_symlinks = True
 split_dataset_dir_images = dataset_dir_instances_processed
 split_load = True
