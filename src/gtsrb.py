@@ -11,7 +11,7 @@ def main():
     file_gtsrb_config.close()
 
     dir_name_counter = 1
-    dir_names = os.listdir(header.gtsrb_dataset_dir_images)
+    dir_names = os.listdir(header.dataset_dir_instances_processed)
     progress_bar = tqdm.tqdm(total = len(dir_names))
 
     for dir_name in dir_names:
@@ -25,8 +25,8 @@ def main():
         progress_bar.n = dir_name_counter
         progress_bar.refresh()
 
-        if os.path.isdir(os.path.join(header.gtsrb_dataset_dir_images, dir_name)):
-            os.rename(os.path.join(header.gtsrb_dataset_dir_images, dir_name), os.path.join(header.gtsrb_dataset_dir_images, label_name))
+        if os.path.isdir(os.path.join(header.dataset_dir_instances_processed, dir_name)):
+            os.rename(os.path.join(header.dataset_dir_instances_processed, dir_name), os.path.join(header.dataset_dir_instances_processed, label_name))
 
         dir_name_counter += 1
 

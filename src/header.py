@@ -9,6 +9,7 @@ dataset_delimiter_label = "--"
 dataset_dir = "../../../datasets/awa2-dataset"
 dataset_dir_annotations = os.path.join(dataset_dir, "annotations")
 dataset_dir_instances = os.path.join(dataset_dir, "instances")
+dataset_dir_instances_archived = os.path.join(dataset_dir_instances, "archived")
 dataset_dir_instances_original = os.path.join(dataset_dir_instances, "original")
 dataset_dir_instances_processed = os.path.join(dataset_dir_instances, "processed")
 dataset_dir_splits = os.path.join(dataset_dir, "splits")
@@ -26,18 +27,13 @@ awa2_file_name_predicates = "predicates.txt"
 
 celeba_count_attributes = 8
 celeba_file_name_attributes = "list_attr_celeba.txt"
-celeba_random_seed = 42
 
-examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name
 examine_dataset_dir_images = dataset_dir_instances_processed
 examine_viewer_height = 150
 examine_viewer_width = 150
 examine_viewer_count = 24
 examine_viewer_count_col = 6
-
-gtsrb_config_file_name = dataset_config_file_name
-gtsrb_dataset_dir_images = dataset_dir_instances_processed
 
 label_combo_box_width = 250
 label_config_file_name = dataset_config_file_name
@@ -51,7 +47,6 @@ label_viewer_count_col = 6
 log_level = type.LogLevel.info
 
 mnist_attributes = ["number-first", "number-second"]
-mnist_dir_images_addition = dataset_dir_instances + "/addition"
 mnist_file_extension_images = ".png"
 mnist_file_name_images_test = "t10k-images-idx3-ubyte"
 mnist_file_name_images_train = "train-images-idx3-ubyte"
