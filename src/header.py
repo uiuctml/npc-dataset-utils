@@ -27,14 +27,6 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "none"
 
-analysis_compute_matrix_a_size = True
-analysis_config_file_name = dataset_config_file_name
-analysis_cub_filter_attributes_categories = False
-analysis_cub_filter_classes_instances = False
-analysis_cub_filter_classes_instances_epochs = 50
-analysis_random_seed = 42
-analysis_threshold_max = False
-
 awa_file_name_classes = "classes.txt"
 awa_file_name_matrix = "predicate-matrix-binary.txt"
 awa_file_name_predicates = "predicates.txt"
@@ -43,14 +35,6 @@ celeba_count_attributes = 8
 celeba_dataset_dir_images_labeled = dataset_dir_images + "/labeled"
 celeba_file_name_attributes = "list_attr_celeba.txt"
 celeba_random_seed = 42
-
-cub_dataset_dir_images_filtered = dataset_dir_images + "/filtered"
-cub_dir_attributes = dataset_dir_annotations + "/attributes"
-cub_file_name_attributes = "attributes.txt"
-cub_file_name_images = "images.txt"
-cub_file_name_image_attribute_labels = "image_attribute_labels.txt"
-cub_filter_by_attribute_uniqueness = False
-cub_filter_by_certainty = False
 
 examine_combo_box_width = 250
 examine_config_file_name = dataset_config_file_name
@@ -82,23 +66,6 @@ mnist_file_name_images_train = "train-images-idx3-ubyte"
 mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
 mnist_random_seed = 42
-
-parallel_process_count = multiprocessing.cpu_count()
-parallel_shared_memory_size_entry = 64
-parallel_shared_memory_size_process = 256
-parallel_shared_memory_size_total = parallel_shared_memory_size_process * (parallel_process_count + 1)
-
-slice_duplicates = {
-    "vfym8z46xdpftlzctrgl78": "other-sign",
-    "dchqt8ir2pap7ir940nab9315k": "other-sign",
-    "5phehhkikwa0z4jrbev9vc": "other-sign"
-}
-slice_dataset_dir_annotations = dataset_dir_annotations
-slice_dataset_dir_images = dataset_dir_images_original
-slice_label_excluded = {
-    "other-sign"
-}
-slice_parallel_shared_memory_name = "slice"
 
 split_config_file_name = "awa2_split.json.gz"
 split_create_symlinks = True

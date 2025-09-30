@@ -1,4 +1,3 @@
-*.txt
-.idea/
-dataset/
+# Directories
+.vscode/
 __pycache__/
