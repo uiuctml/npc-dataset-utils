@@ -74,17 +74,17 @@ def readMappings():
 
     categories_types = set(categories_types)
 
-    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_classes), 'r') as file_classes:
+    with open(os.path.join(header.dataset_dir_annotations, header.awa2_file_name_classes), 'r') as file_classes:
         for line in file_classes.readlines():
             line = line.rstrip()
             classes.append(line.split('\t')[1])
 
-    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_predicates), 'r') as file_predicates:
+    with open(os.path.join(header.dataset_dir_annotations, header.awa2_file_name_predicates), 'r') as file_predicates:
         for line in file_predicates.readlines():
             line = line.rstrip()
             categories.append(line.split('\t')[1])
 
-    with open(os.path.join(header.dataset_dir_annotations, header.awa_file_name_matrix), 'r') as file_matrix:
+    with open(os.path.join(header.dataset_dir_annotations, header.awa2_file_name_matrix), 'r') as file_matrix:
         index_classes = 0
 
         for line in file_matrix.readlines():

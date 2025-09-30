@@ -27,9 +27,9 @@ dataset_file_name_split_train = "train.txt"
 dataset_file_name_split_validate = "val.txt"
 dataset_label_undefined_keyword = "none"
 
-awa_file_name_classes = "classes.txt"
-awa_file_name_matrix = "predicate-matrix-binary.txt"
-awa_file_name_predicates = "predicates.txt"
+awa2_file_name_classes = "classes.txt"
+awa2_file_name_matrix = "predicate-matrix-binary.txt"
+awa2_file_name_predicates = "predicates.txt"
 
 celeba_count_attributes = 8
 celeba_dataset_dir_images_labeled = dataset_dir_images + "/labeled"
