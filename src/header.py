@@ -6,7 +6,7 @@ config_dir = "../configs"
 dataset_config_file_name = "awa2.json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = "../../../datasets/awa2-dataset"
+dataset_dir = "../../datasets/awa2"
 dataset_dir_annotations = os.path.join(dataset_dir, "annotations")
 dataset_dir_instances = os.path.join(dataset_dir, "instances")
 dataset_dir_instances_archived = os.path.join(dataset_dir_instances, "archived")
@@ -17,7 +17,7 @@ dataset_dir_splits_instances = os.path.join(dataset_dir_splits, "instances")
 dataset_dir_splits_instances_test = os.path.join(dataset_dir_splits_instances, "test")
 dataset_dir_splits_instances_train = os.path.join(dataset_dir_splits_instances, "train")
 dataset_dir_splits_instances_validate = os.path.join(dataset_dir_splits_instances, "validate")
-dataset_dir_splits_spn = os.path.join(dataset_dir_splits, "spn")
+dataset_dir_splits_pc = os.path.join(dataset_dir_splits, "pc")
 dataset_file_extension_images = ".jpg"
 dataset_label_undefined_keyword = "none"
 
@@ -54,6 +54,8 @@ mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
 mnist_random_seed = 42
 
+pc_random_seed = 42
+
 split_config_file_name = "awa2_split.json.gz"
 split_create_symlinks = True
 split_dataset_dir_images = dataset_dir_instances_processed
@@ -62,5 +64,3 @@ split_percentage_train = 0.8
 split_percentage_validate = 0.1
 split_random_seed_percentage = 22333376
 split_save = False
-
-spn_random_seed = 42

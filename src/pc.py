@@ -8,7 +8,7 @@ import random
 import utility
 
 def main():
-    utility.setSeed(header.spn_random_seed)
+    utility.setSeed(header.pc_random_seed)
 
     file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
     dataset_config = json.load(file_dataset_config)
@@ -32,7 +32,7 @@ def main():
         categories[attribute_name] = attribute_categories
 
     for i in range(len(dirs_dataset_original)):
-        logger.log_info("Generating SPN dataset from \"" + dirs_dataset_original[i] + "\".")
+        logger.log_info("Generating PC dataset from \"" + dirs_dataset_original[i] + "\".")
 
         lines = []
 
@@ -89,14 +89,14 @@ def main():
 
         lines[-1] = lines[-1].rstrip("\n")
 
-        if not os.path.exists(header.dataset_dir_splits_spn):
-            os.makedirs(header.dataset_dir_splits_spn, exist_ok = True)
+        if not os.path.exists(header.dataset_dir_splits_pc):
+            os.makedirs(header.dataset_dir_splits_pc, exist_ok = True)
 
-        file_name_spn_dataset = os.path.basename(dirs_dataset_original[i]) + ".txt"
-        file_path_spn_dataset = os.path.join(header.dataset_dir_splits_spn, file_name_spn_dataset)
+        file_name_pc_dataset = os.path.basename(dirs_dataset_original[i]) + ".txt"
+        file_path_pc_dataset = os.path.join(header.dataset_dir_splits_pc, file_name_pc_dataset)
 
-        with open(file_path_spn_dataset, "w+") as file_dataset_spn:
-            file_dataset_spn.writelines(lines)
+        with open(file_path_pc_dataset, "w+") as file_dataset_pc:
+            file_dataset_pc.writelines(lines)
 
     return
 
