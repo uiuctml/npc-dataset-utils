@@ -28,10 +28,10 @@ def extractLabels(file_name_labels):
 
     return labels
 
-def saveImages(images, labels):
+def createOriginalInstances(images, labels):
     image_count = images.shape[0]
     progress_bar = tqdm.tqdm(total = image_count)
-    progress_bar.set_description_str("[INFO]: Saving images")
+    progress_bar.set_description_str("[INFO]: Creating original instances")
 
     os.makedirs(header.dataset_dir_instances_original, exist_ok = True)
 
@@ -64,7 +64,7 @@ def createAdditionAttributes():
 
     return config_attributes
 
-def createAdditionDataset():
+def createProcessedInstances():
     classes = os.listdir(header.dataset_dir_instances_original)
     config = {}
     config_mappings = {}
@@ -77,7 +77,7 @@ def createAdditionDataset():
 
     file_paths = utility.shuffleUniform(file_paths, header.mnist_random_seed)
     progress_bar = tqdm.tqdm(total = len(file_paths) // 2)
-    progress_bar.set_description_str("[INFO]: Creating addition dataset")
+    progress_bar.set_description_str("[INFO]: Creating processed instances")
 
     os.makedirs(header.dataset_dir_instances_processed, exist_ok = True)
 
@@ -117,6 +117,8 @@ def createAdditionDataset():
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)
 
+    logger.log_info("Saved dataset configurations to \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\".")
+
     return
 
 def main():
@@ -135,14 +137,14 @@ def main():
         logger.log_debug("Training label array shape:", labels_train.shape)
         logger.log_debug("Combined label array shape:", labels.shape)
 
-        saveImages(images, labels)
+        createOriginalInstances(images, labels)
     else:
-        logger.log_info("Images exist. Skip.")
+        logger.log_info("Original instance directory exists. Skip.")
 
     if not os.path.exists(header.dataset_dir_instances_processed):
-        createAdditionDataset()
+        createProcessedInstances()
     else:
-        logger.log_info("Addition dataset exists. Skip.")
+        logger.log_info("Processed instance directory exists. Skip.")
 
     return
 
