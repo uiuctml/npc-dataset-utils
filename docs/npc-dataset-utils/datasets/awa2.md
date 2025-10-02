@@ -61,7 +61,7 @@ cd npc/datasets/awa2/archives/Animals_with_Attributes2
 mv -v JPEGImages ../../instances/original
 ```
 
-Verify that `npc/datasets/awa2/instances/original` contains 50 directories, one for each class/category.
+Verify that `npc/datasets/awa2/instances/original` contains 50 directories, one for each class.
 
 Optionally, write-protect `npc/datasets/awa2/instances/original` to preserve the original instance files:
 
