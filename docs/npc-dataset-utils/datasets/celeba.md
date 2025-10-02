@@ -19,7 +19,7 @@ The [CelebFaces Attributes (CelebA)](https://mmlab.ie.cuhk.edu.hk/projects/Celeb
 Within the NPC project, the attribute labeling of the CelebA dataset is:
 
 - **Instance-Wise:** Instances may have different attribute labels, even if they belong to the same class.
-- **Multi-Hot:** Each attribute may be assigned multiple values, e.g., an object may be labeled with more than one color.
+- **Multi-Hot:** Each attribute labeling may be assigned multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 
@@ -39,7 +39,7 @@ cd npc/datasets/celeba/archives
 unzip img_align_celeba.zip
 ```
 
-Verify that the extracted directory `img_align_celeba` appears under `npc/datasets/celeba/archives`.
+Verify the existence of the extracted directory `npc/datasets/celeba/archives/img_align_celeba`.
 
 ## Dataset Annotations
 

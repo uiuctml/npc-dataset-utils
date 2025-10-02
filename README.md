@@ -62,7 +62,7 @@ mkdir -pv awa2 celeba gtsrb mnist
 
 ## Setting Up the Datasets
 
-Detailed instructions for setting up and organizing dataset contents within npc/datasets are provided in the following documents:
+Detailed instructions for setting up and organizing dataset contents within `npc/datasets` are provided in the following documents:
 
 - [Animals with Attributes 2 (AwA2)](docs/npc-dataset-utils/datasets/awa2.md)
 - [CelebFaces Attributes (CelebA)](docs/npc-dataset-utils/datasets/celeba.md)

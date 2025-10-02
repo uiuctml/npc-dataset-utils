@@ -20,7 +20,7 @@ The [German Traffic Sign Recognition Benchmark (GTSRB)](https://www.kaggle.com/d
 Within the NPC project, the attribute labeling of the GTSRB dataset is created using the [NPC Attribute Labeling Utility](docs/npc-dataset-utils/utilities/label.md). The labeling is:
 
 - **Class-Wise:** All instances within the same class share identical attribute labels.
-- **One-Hot:** Each attribute is assigned a single value, e.g., an object is labeled with a single color, typically the most prominent one, even if multiple colors are present.
+- **One-Hot:** Each attribute labeling is assigned a single value, e.g., an object is labeled with a single color, typically the most prominent one, even if multiple colors are present.
 
 ## Initial Directory Structure
 
@@ -40,7 +40,7 @@ cd npc/datasets/gtsrb/archives
 unzip archive.zip -d GTSRB
 ```
 
-Verify that the extracted directory `GTSRB` appears under `npc/datasets/gtsrb/archives`.
+Verify the existence of the extracted directory `npc/datasets/gtsrb/archives/GTSRB`.
 
 ## Dataset Annotations
 

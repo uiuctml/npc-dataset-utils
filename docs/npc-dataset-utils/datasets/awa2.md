@@ -20,7 +20,7 @@ The [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/) dataset co
 Within the NPC project, the attribute labeling of the AwA2 dataset is:
 
 - **Class-Wise:** All instances within the same class share identical attribute labels.
-- **Multi-Hot:** Each attribute may be assigned multiple values, e.g., an object may be labeled with more than one color.
+- **Multi-Hot:** Each attribute labeling may be assigned multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 
@@ -40,7 +40,7 @@ cd npc/datasets/awa2/archives
 unzip AwA2-data.zip
 ```
 
-Verify that the extracted directory `Animals_with_Attributes2` appears under `npc/datasets/awa2/archives`.
+Verify the existence of the extracted directory `npc/datasets/awa2/archives/Animals_with_Attributes2`.
 
 ## Dataset Annotations
 
