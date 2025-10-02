@@ -1,3 +1,10 @@
+"""
+@file   type.py
+@author Simon Yu
+@date   02/06/2023
+@brief  Global types.
+"""
+
 import enum
 import PyQt5.QtCore
 import PyQt5.QtWidgets

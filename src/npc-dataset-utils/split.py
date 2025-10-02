@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   split.py
+@author Simon Yu
+@date   01/25/2023
+@brief  Script for splitting datasets.
+"""
+
 import gzip
 import header
 import json

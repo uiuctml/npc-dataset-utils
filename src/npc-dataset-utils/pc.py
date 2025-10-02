@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   pc.py
+@author Simon Yu
+@date   10/09/2024
+@brief  Script for PC datasets.
+"""
+
 import header
 import json
 import logger

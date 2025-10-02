@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   label.py
+@author Simon Yu
+@date   01/02/2023
+@brief  NPC Attribute Labeling Utility.
+"""
+
 import functools
 import header
 import json

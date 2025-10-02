@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   gtsrb.py
+@author Simon Yu
+@date   01/09/2024
+@brief  Script for GTSRB dataset.
+"""
+
 import header
 import json
 import logger

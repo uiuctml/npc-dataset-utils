@@ -10,3 +10,5 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 ```
 
 The current implementation of the labeling utility only supports creating class-wise, one-hot attribute labels.
+
+Written by [Simon Yu](https://www.simonyu.net/).

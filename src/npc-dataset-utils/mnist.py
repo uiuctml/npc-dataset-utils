@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   mnist.py
+@author Simon Yu
+@date   10/24/2024
+@brief  Script for MNIST dataset.
+"""
+
 import cv2
 import header
 import json

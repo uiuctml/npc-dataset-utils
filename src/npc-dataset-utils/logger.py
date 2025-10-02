@@ -1,3 +1,10 @@
+"""
+@file   logger.py
+@author Simon Yu
+@date   12/17/2022
+@brief  Logging functions.
+"""
+
 import header
 import type
 

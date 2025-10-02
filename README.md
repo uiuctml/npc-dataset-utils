@@ -21,7 +21,7 @@ This codebase provides utilities for processing and manipulating datasets for th
 
 Scripts are provided for each dataset to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf).
 
-Certain datasets, such as GTSRB, lack attribute labels. To address this, the codebase includes a set of Qt-based graphical software that allows users to create and examine attribute labels for any dataset. A verification script is included to check the consistency and correctness of user-created labels.
+Certain datasets, such as GTSRB, lack attribute labels. To address this, the codebase includes a set of Qt-based graphical software that allows users to create and examine attribute labels for any dataset. A verification script is included to check the dataset configurations for the consistency and correctness of user-created labels.
 
 In addition, utility scripts are available for splitting datasets into training, validation, and testing subsets, and for generating Probabilistic Circuit (PC) datasets from those splits. These PC datasets are then used by the `learnspn` project to construct and generate PCs.
 
@@ -30,7 +30,7 @@ In addition, utility scripts are available for splitting datasets into training,
 This project was developed and tested on Ubuntu 22.04 LTS and requires the following system packages:
 
 ```bash
-apt install python3-natsort python3-numpy python3-opencv python3-pil python3-pyqt5 python3-tqdm unzip
+apt install libgl1-mesa-dev python3-natsort python3-numpy python3-opencv python3-pil python3-pyqt5 python3-tqdm unzip
 ```
 
 Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional efforts. However, these platforms are not officially supported.

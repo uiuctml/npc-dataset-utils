@@ -1,3 +1,10 @@
+"""
+@file   header.py
+@author Simon Yu
+@date   12/17/2022
+@brief  Project header file.
+"""
+
 import os
 import type
 

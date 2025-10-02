@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   awa2.py
+@author Simon Yu
+@date   11/27/2024
+@brief  Script for AwA2 dataset.
+"""
+
 import header
 import json
 import logger

@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   celeba.py
+@author Simon Yu
+@date   12/13/2024
+@brief  Script for CelebA dataset.
+"""
+
 import header
 import json
 import logger

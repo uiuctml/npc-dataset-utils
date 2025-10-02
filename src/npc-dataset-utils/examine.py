@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   examine.py
+@author Simon Yu
+@date   01/08/2024
+@brief  NPC Attribute Examining Utility.
+"""
+
 import functools
 import header
 import json

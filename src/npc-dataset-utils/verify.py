@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+@file   verify.py
+@author Simon Yu
+@date   01/23/2023
+@brief  Script for verifying dataset configurations.
+"""
+
 import header
 import json
 import logger

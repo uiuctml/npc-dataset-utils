@@ -1,3 +1,10 @@
+"""
+@file   utility.py
+@author Simon Yu
+@date   05/26/2023
+@brief  Utility functions.
+"""
+
 import natsort
 import numpy
 import random
