@@ -1,94 +1,93 @@
-# VISAT Dataset Tools
+# NPC Dataset Utilities
 
-## Overview
+## Table of Contents
 
-This codebase contains tools and scripts for creating and processing the VISAT open dataset.
+1. [Project Overview](#project-overview)
+1. [Project Prerequisites](#project-prerequisites)
+1. [Project Hierarchy](#project-hierarchy)
+1. [Setting Up the Datasets](#setting-up-the-datasets)
+1. [NPC Attribute Utilities](#npc-attribute-utilities)
+1. [Acknowledgements](#acknowledgements)
+1. [License](#license)
 
-## Prerequisites
+## Project Overview
 
-This codebase was developed on Ubuntu 20.04 LTS and requires the following packages:
+This codebase contains utilities for processing and manipulating datasets for the Neural Probabilistic Circuit (NPC) project. The NPC project focuses on the following four datasets:
 
- - (apt) python3-pip [20.0.2-5ubuntu1.8]
- - (apt) python3-opencv [4.2.0+dfsg-5]
- - (pip) pyqt5 [5.15.2]
- - (pip) scikit-image [0.18.0]
- - (pip) tqdm [4.64.1]
+- [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/)
+- [CelebFaces Attributes (CelebA)](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+- [German Traffic Sign Recognition Benchmark (GTSRB)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
+- [Modified National Institute of Standards and Technology (MNIST)](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
-Additionally, the ImageNet-C codebase is also required and can be installed as follows:
+This project provides scripts for each of the datasets above to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf).
 
-```bash
-git clone https://github.com/hendrycks/robustness.git
-cd robustness/
-git checkout 8190fe3
-cd ImageNet-C/imagenet_c/
-python3 -m pip install -e .
-```
+Certain datasets, such as GTSRB, do not include attribute labels. To address this, the codebase offers a set of Qt-based graphical software that allow users to create and examine attribute labels for any dataset. A verification script is included to ensure the consistency and correctness of user-created labels.
 
-Before attempting to launch a script, please refer to `header.py` and ensure that all relevant parameters, such as dataset image directory paths, ImageNet-C corruption type, etc., are properly set.
+Finally, the codebase provides additional utility scripts to split datasets into training, validation, and testing subsets, and to generate Probabilistic Circuit (PC) datasets from those splits. These PC datasets are then used by the `learnspn` project to construct and generate PCs.
 
-## Dataset Split Symlink Generation
+## Project Prerequisites
 
-To reduce storage footprint, the dataset splits are encoded as symlinks pointing to the actual dataset images.
-
-Under the project directory, the dataset split symlinks can be generated as follows:
+This project was developed and tested on Ubuntu 22.04 LTS and requires the following system packages:
 
 ```bash
-cd src/
-./split.py
-
+apt install python3-natsort python3-numpy python3-opencv python3-pil python3-pyqt5 python3-tqdm unzip
 ```
 
-## Visual Attribute Rapid Labeling Interface
+Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional efforts. However, these platforms are not officially supported.
 
-The visual attribute rapid labeling interface allows for the efficient creation of visual attribute labels for the VISAT dataset.
+Before running any script, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on specific parameters is provided in later sections.
 
-Under the project directory, the labeling interface can be launched as follows:
+## Project Hierarchy
+
+This project is part of the NPC pipeline. To ensure compatibility and maintain consistent references across the pipeline, organize the project directories as follows:
+
+    npc
+    ├── datasets
+    │   ├── awa2
+    │   ├── celeba
+    │   ├── gtsrb
+    │   └── mnist
+    ├── learnspn
+    ├── npc-dataset-utils
+    └── npc-models
+
+All subsequent instructions assume the above project hierarchy.
+
+The `npc/datasets` directory does not exist by default. Create the initial directory structure as follows:
 
 ```bash
-cd src/
-./label.py
-
+cd npc/datasets
+mkdir -pv awa2 celeba gtsrb mnist
 ```
 
-## Distribution Shift Testing Split Generation
+## Setting Up the Datasets
 
-The distribution shift testing splits are generated using either ImageNet-C corruptions or color quantization.
+The detailed instructions on setting up the datasets and organizing dataset contents within `npc/datasets` is provided as follows:
 
-Under the project directory, a distribution shift testing split can be generated as follows:
+- [Animals with Attributes 2 (AwA2)](docs/npc-dataset-utils/datasets/awa2.md)
+- [CelebFaces Attributes (CelebA)](docs/npc-dataset-utils/datasets/celeba.md)
+- [German Traffic Sign Recognition Benchmark (GTSRB)](docs/npc-dataset-utils/datasets/gtsrb.md)
+- [Modified National Institute of Standards and Technology (MNIST)](docs/npc-dataset-utils/datasets/mnist.md)
 
-```bash
-cd src/
-./corrupt.py
+## NPC Attribute Utilities
 
-```
+The NPC Attribute Labeling Utility enables users to create and examine dataset attribute labels.
 
-## Adversarial Attack Testing Split Generation
+![NPC Attribute Labeling Utility](docs/npc-dataset-utils/images/label.png)
+![NPC Attribute Examining Utility](docs/npc-dataset-utils/images/examine.png)
 
-The adversarial attack testing splits are generated using projected gradient descent (PGD).
+Detailed instructions on how to operate the software is provided below:
 
-Under the project directory, an adversarial attack testing split for a base ResNet-152 model can be generated as follows:
+- [NPC Attribute Labeling Utility](docs/npc-dataset-utils/utilities/label.md)
+- [NPC Attribute Examining Utility](docs/npc-dataset-utils/utilities/examine.md)
 
-```bash
-cd src/
-./pgd152.py
-```
+## Acknowledgements
 
-Under the project directory, an adversarial attack testing split for a base ViT-B/32 model can be generated as follows:
-
-```bash
-cd src/
-./pgdvit.py
-```
-
-Under the project directory, an adversarial attack testing split for an MTL model can be generated as follows:
-
-```bash
-cd src/
-./mtlattack.py
-```
-
-For the above adversarial attack scripts, please use `--help` to examine their respectively required arguments.
+I would like to express my gratitude to Rahim Khan, Tommy Tang,
+Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementations, testing, and experiments for the NPC projects.
 
 ## License
 
-This codebase is provided under the Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA) license, which can be viewed under `LICENSE`.
+This codebase is provided under the [Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license, which can be viewed under `LICENSE`.
+
+Written by [Simon Yu](https://www.simonyu.net/).
