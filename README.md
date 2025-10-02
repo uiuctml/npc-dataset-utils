@@ -56,11 +56,13 @@ All subsequent instructions assume the above project hierarchy.
 The `npc/datasets` directory does not exist by default. Create the initial directory structure as follows:
 
 ```bash
-cd npc/datasets
-mkdir -pv awa2 celeba gtsrb mnist
+cd npc
+mkdir -pv datasets/awa2 datasets/celeba datasets/gtsrb datasets/mnist
 ```
 
 ## Setting Up the Datasets
+
+The NPC pipeline relies on multiple datasets, each requiring setup steps to ensure compatibility and reproducibility. To clarify this process, dedicated setup guides are provided for each dataset, covering directory structures, file handling, processing, configuration, and PC dataset generation.
 
 Detailed instructions for setting up and organizing dataset contents within `npc/datasets` are provided in the following documents:
 
@@ -71,7 +73,11 @@ Detailed instructions for setting up and organizing dataset contents within `npc
 
 ## NPC Attribute Utilities
 
-The NPC attribute utilities allow users to create and review dataset attribute labels. Detailed usage instructions are available in the following documents:
+The NPC attribute utilities provide graphical interfaces for labeling dataset attributes within the NPC pipeline. These utilities are especially important for datasets that lack native attribute annotations, such as GTSRB, enabling users to define, edit, and review attributes in a consistent format that downstream components expect.
+
+Together, the utilities streamline both the creation of new attribute labels and the examination of labeled data across classes, helping ensure the correctness, consistency, and validity of the attribute labels created for datasets used in the NPC project.
+
+Detailed usage instructions are available in the following documents:
 
 - [NPC Attribute Labeling Utility](docs/npc-dataset-utils/utilities/label.md)
 - [NPC Attribute Examining Utility](docs/npc-dataset-utils/utilities/examine.md)
