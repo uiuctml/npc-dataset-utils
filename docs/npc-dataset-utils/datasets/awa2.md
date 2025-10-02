@@ -9,25 +9,26 @@
 1. [Dataset Instances](#dataset-instances)
 1. [Dataset Processing and Configurations](#dataset-processing-and-configurations)
 1. [Dataset Splits](#dataset-splits)
+1. [Dataset Verification](#dataset-verification)
 1. [PC Datasets](#pc-datasets)
 1. [Final Directory Structure](#final-directory-structure)
 
 ## Overview
 
-The AwA2 dataset consists of 37322 images of 50 animals classes, with 85 numeric attribute values for each class. Within the scope of the NPC project, the attribute labeling of the AwA2 dataset is _class-wise_, meaning all instances under the same class have the same attribute labeling, and _multi-hot_, meaning the labeled attribute categories may have more than one values, e.g., an object may have more than one color.
+The Animals with Attributes 2 (AwA2) dataset consists of 37322 images of 50 animal classes, with 85 numeric attribute values for each class. Within the NPC project, the attribute labeling of the AwA2 dataset is _class-wise_, where all instances within the same class share identical attribute labels, and _multi-hot_, where the labeled attribute categories may have multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 
-Start by creating the following directories under `npc/datasets/awa2` as follows:
+Start by creating the following directories under `npc/datasets/awa2`:
 
 ```bash
 cd npc/datasets/awa2
-mkdir -pv annotations archives instances/original
+mkdir -pv annotations archives instances
 ```
 
 ## Download Dataset
 
-Download [AwA2-data.zip](https://cvml.ista.ac.at/AwA2/AwA2-data.zip) and save the archive under `npc/datasets/awa2/archives` for future reference. Then, extract the downloaded archive as follows:
+Download [AwA2-data.zip](https://cvml.ista.ac.at/AwA2/AwA2-data.zip) and place the archive under `npc/datasets/awa2/archives` for future reference. Then, extract the archive:
 
 ```bash
 cd npc/datasets/awa2/archives
@@ -36,7 +37,7 @@ unzip AwA2-data.zip
 
 ## Dataset Annotations
 
-Place the original dataset annotation files under `npc/datasets/awa2/annotations` as follows:
+Move the original annotation files into `npc/datasets/awa2/annotations`:
 
 ```bash
 cd npc/datasets/awa2/archives/Animals_with_Attributes2
@@ -45,7 +46,7 @@ mv -v predicate-matrix-binary.txt ../../annotations
 mv -v predicates.txt ../../annotations
 ```
 
-Optionally, write-protect `npc/datasets/awa2/annotations` to prevent modifications to the original annotation files as follows:
+Optionally, write-protect `npc/datasets/awa2/annotations` to preserve the original annotation files:
 
 ```bash
 chmod -Rv a-w npc/datasets/awa2/annotations
@@ -53,38 +54,39 @@ chmod -Rv a-w npc/datasets/awa2/annotations
 
 ## Dataset Instances
 
-Place all dataset instances under `npc/datasets/awa2/instances/original` as follows:
+Move all dataset instances into `npc/datasets/awa2/instances/original`:
 
 ```bash
-mv -v Animals_with_Attributes2/JPEGImages/* npc/datasets/awa2/instances/original
+cd npc/datasets/awa2/archives/Animals_with_Attributes2
+mv -v JPEGImages ../../instances/original
 ```
 
-Verify the number of categories under `npc/datasets/awa2/instances/original` to be 50.
+Verify that `npc/datasets/awa2/instances/original` contains 50 directories, one for each class/category.
 
-Optionally, write-protect `npc/datasets/awa2/instances/original` to prevent modifications to the original instance files as follows:
+Optionally, write-protect `npc/datasets/awa2/instances/original` to preserve the original instance files:
 
 ```bash
 chmod -Rv a-w npc/datasets/awa2/instances/original
 ```
 
-At this point, `npc/datasets/awa2/archives/Animals_with_Attributes2`, extracted from `npc/datasets/awa2/archives/AwA2-data.zip`, is no longer needed and may be removed.
+After this step, the extracted directory `npc/datasets/awa2/archives/Animals_with_Attributes2` from `npc/datasets/awa2/archives/AwA2-data.zip` is no longer required and shall be removed.
 
 ## Dataset Processing and Configurations
 
-For the NPC project, there are no manipulations done to the original AwA2 instances. To ensure compatibility, however, create a symlink that points to `npc/datasets/awa2/instances/original` as follows:
+For the NPC project, the original AwA2 instances are left unmodified. To maintain compatibility, create a symlink named `processed` that points to `npc/datasets/awa2/instances/original`:
 
 ```bash
 cd npc/datasets/awa2/instances
 ln -sv original processed
 ```
 
-At this point, the AwA2 dataset is ready to be configured. First, set parameters in `header.py` as follows:
+At this point, the AwA2 dataset is ready to be configured. First, update the following parameter in `header.py`:
 
 ```python
 dataset_prefix = "awa2"
 ```
 
-Then, configure the dataset as follows:
+Next, configure the dataset:
 
 ```bash
 cd npc/npc-dataset-utils/src/npc-dataset-utils
@@ -95,27 +97,38 @@ The generated dataset configurations are stored as `npc/npc-dataset-utils/config
 
 ## Dataset Splits
 
-The processed instances of the dataset can be split into three subsets, training, validation, and test, as follows:
+The processed instances of the dataset can be split into training, validation, and testing subsets:
 
 ```bash
 cd npc/npc-dataset-utils/src/npc-dataset-utils
 ./split.py
 ```
 
-The generated splits from processed instances are stored under `npc/datasets/awa2/splits/instances` in the form of symlinks.
+The generated splits are stored under `npc/datasets/awa2/splits/instances`. These splits are created as symlinks pointing to the processed instances.
 
-By default, `split.py` loads the existing split configurations under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones such that each subsequent splitting of the dataset is deterministic and can be replicated across different environments. However, in the case where generating a brand-new split is needed, set parameters in `header.py` as follows:
+By default, `split.py` loads existing split configurations under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones. This behavior ensures that the splits are deterministic and can be consistently reproduced across different environments. To generate new random splits, update the following parameters in `header.py`:
 
 ```python
 split_load = False
 split_save = True
 ```
 
-The above parameters enable `split.py` to generate new, random split configurations, compress them, and save them as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Other aspects of `split.py`, such as random seed, split percentages, etc., may also be configured using the additional parameters in `header.py`.
+With the above parameters, `split.py` generates, compresses, and saves new split configurations as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
+
+## Dataset Verification
+
+Once the dataset has been processed and configured, run the verification to check for any duplicated, invalid, missing, or unused attributes in the dataset configurations, as well as any empty categories within the dataset splits.
+
+```bash
+cd npc/npc-dataset-utils/src/npc-dataset-utils
+./verify.py
+```
+
+Note that `verify.py` does not currently support instance-wise datasets.
 
 ## PC Datasets
 
-After splitting the dataset, the PC datasets, used by the `learnspn` project to generate PCs, are then generated from the splits as follows:
+After the dataset has been split, generate the PC datasets, which are used by the `learnspn` project to construct PCs, as follows:
 
 ```bash
 cd npc/npc-dataset-utils/src/npc-dataset-utils
@@ -126,7 +139,7 @@ The generated PC datasets are stored under `npc/datasets/awa2/splits/pc`.
 
 ## Final Directory Structure
 
-In the end, the directory structure for the AwA2 is as follows:
+After completing all steps above, the AwA2 dataset directory structure should resemble the following:
 
     npc
     ├── datasets
