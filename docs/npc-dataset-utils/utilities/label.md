@@ -32,7 +32,16 @@ The NPC Attribute Labeling Utility provides the foundation for rapidly and effic
 
 ## Running the Utility
 
-The utility can be launched as follows:
+Before launching the utility, verify the following parameters in `header.py`:
+
+```python
+label_config_file_name = dataset_config_file_name
+label_dataset_dir_images = dataset_dir_instances_processed
+```
+
+These parameters default to the values shown above, but can be modified to point to any dataset configuration file and dataset instance directory on the file system.
+
+Once configured, launch the utility with:
 
 ```bash
 cd npc/npc-dataset-utils/src/npc-dataset-utils
@@ -45,9 +54,9 @@ Note that the current implementation supports only class-wise, one-hot attribute
 
 The Viewer Panel displays a random collection of instances from the selected class, providing visual context to assist with attribute labeling:
 
-- The displayed collection can be refreshed by clicking the `Shuffle Viewer` button in the Application Control Panel.
+- The displayed instances can be randomized by clicking the `Shuffle Viewer` button in the Application Control Panel.
 - The size, number of images, layout, and appearance of the Viewer Panel can be customized through parameters in `header.py`.
-- The panel can be collapsed or expanded by dragging the bar directly below.
+- The panel can be collapsed or expanded by dragging the bar directly below the panel.
 
 ## Labeling Control Panel
 
@@ -56,19 +65,18 @@ The Labeling Control Panel allows users to create and label the selected class w
 - For each attribute, users may label the selected class by selecting an existing attribute value from the drop-down menu on the left.
 - To add a new attribute value, type it into the text box and click `Add Label`.
 - The currently selected attribute value in the drop-down menu can be removed with `Remove Label`.
-- The panel can be collapsed or expanded towards either top or bottom by dragging the bar directly above or below it.
+- The panel can be collapsed or expanded towards either top or bottom by dragging the bar directly above or below the panel.
 
 ## Application Control Panel
 
 The Application Control Panel provides controls for managing the labeling process and navigating through the dataset:
 
-- `Save & Last` saves progress and returns to the previous class in sequence.
-- `Reload` reloads dataset configurations if changes are made directly to the configuration files while the utility is running.
+- `Save & Last` and `Save & Next` save progress and navigate through classes sequentially.
+- `Reload` reloads dataset configurations if changes are made directly to the configuration file while the utility is running.
 - The drop-down menu in the middle of the panel allows direct and random access to any class.
 - `Shuffle Viewer` draws new random instances from the selected class to be displayed in the Viewer Panel.
 - `Save` immediately saves the current labeling for the selected class.
-- `Save & Next` saves progress and advances to the next class in sequence.
-- The panel can be collapsed or expanded by dragging the bar directly above it.
+- The panel can be collapsed or expanded by dragging the bar directly above the panel.
 
 Note that `Reload` does not pick up attribute additions or removals made directly in the dataset configuration files.
 
