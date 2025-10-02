@@ -15,7 +15,7 @@
 
 ## Overview
 
-The Animals with Attributes 2 (AwA2) dataset consists of 37322 images of 50 animal classes, with 85 numeric attribute values for each class. Within the NPC project, the attribute labeling of the AwA2 dataset is _class-wise_, where all instances within the same class share identical attribute labels, and _multi-hot_, where the labeled attribute categories may have multiple values, e.g., an object may be labeled with more than one color.
+The [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/) dataset consists of 37,322 images of 50 animal classes, with 85 numeric attribute values for each class. Within the NPC project, the attribute labeling of the AwA2 dataset is _class-wise_, where all instances within the same class share identical attribute labels, and _multi-hot_, where the labeled attribute categories may have multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 

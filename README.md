@@ -84,7 +84,7 @@ Preview of the NPC attribute utilities:
 ## Acknowledgements
 
 I would like to express my gratitude to Rahim Khan, Tommy Tang,
-Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementations, testing, and experiments for the NPC projects.
+Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementations, testing, and experiments for the NPC project.
 
 ## License
 
