@@ -14,7 +14,12 @@
 
 ## Overview
 
-The [CelebFaces Attributes (CelebA)](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset consists of 202,599 face images and 40 binary attribute annotations for each image. Within the NPC project, the attribute labeling of the CelebA dataset is _instance-wise_, where instances may have different attribute labels even if they are from the same class, and _multi-hot_, where the labeled attribute categories may have multiple values, e.g., an object may be labeled with more than one color.
+The [CelebFaces Attributes (CelebA)](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset consists of 202,599 face images and 40 binary attribute annotations for each image.
+
+Within the NPC project, the attribute labeling of the CelebA dataset is:
+
+- **Instance-Wise:** Instances may have different attribute labels, even if they belong to the same class.
+- **Multi-Hot:** Each attribute may be assigned multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 
@@ -69,6 +74,7 @@ First, set the following parameter in `header.py`:
 
 ```python
 dataset_prefix = "celeba"
+dataset_file_extension_images = ".jpg"
 ```
 
 Next, process and configure the dataset:
@@ -78,7 +84,9 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 ./celeba.py
 ```
 
-The processed dataset instances are stored under `npc/datasets/celeba/instances/processed` as symlinks. The generated dataset configurations are stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba.json`.
+The processed dataset instances are stored under `npc/datasets/celeba/instances/processed` as symlinks.
+
+The generated dataset configurations are stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba.json`.
 
 ## Dataset Splits
 

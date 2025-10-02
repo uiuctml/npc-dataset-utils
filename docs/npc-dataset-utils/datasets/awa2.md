@@ -15,7 +15,12 @@
 
 ## Overview
 
-The [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/) dataset consists of 37,322 images of 50 animal classes, with 85 numeric attribute values for each class. Within the NPC project, the attribute labeling of the AwA2 dataset is _class-wise_, where all instances within the same class share identical attribute labels, and _multi-hot_, where the labeled attribute categories may have multiple values, e.g., an object may be labeled with more than one color.
+The [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/) dataset consists of 37,322 images of 50 animal classes, with 85 numerical attribute values for each class.
+
+Within the NPC project, the attribute labeling of the AwA2 dataset is:
+
+- **Class-Wise:** All instances within the same class share identical attribute labels.
+- **Multi-Hot:** Each attribute may be assigned multiple values, e.g., an object may be labeled with more than one color.
 
 ## Initial Directory Structure
 
@@ -71,7 +76,7 @@ Optionally, write-protect `npc/datasets/awa2/instances/original` to preserve the
 chmod -Rv a-w npc/datasets/awa2/instances/original
 ```
 
-After this step, the extracted directory `npc/datasets/awa2/archives/Animals_with_Attributes2` from `npc/datasets/awa2/archives/AwA2-data.zip` is no longer required and shall be removed.
+After this step, the extracted directory `npc/datasets/awa2/archives/Animals_with_Attributes2` from `npc/datasets/awa2/archives/AwA2-data.zip` is no longer required and may be removed.
 
 ## Dataset Processing and Configurations
 
@@ -86,6 +91,7 @@ At this point, the AwA2 dataset is ready to be configured. First, set the follow
 
 ```python
 dataset_prefix = "awa2"
+dataset_file_extension_images = ".jpg"
 ```
 
 Next, configure the dataset:
