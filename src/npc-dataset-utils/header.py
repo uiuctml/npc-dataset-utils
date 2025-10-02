@@ -1,13 +1,13 @@
 import os
 import type
 
-config_dir = "../configs"
+config_dir = "../../configs/npc-dataset-utils"
 
 dataset_prefix = "awa2"
 dataset_config_file_name = dataset_prefix + ".json"
 dataset_delimiter_file_name = "---"
 dataset_delimiter_label = "--"
-dataset_dir = os.path.join("../../datasets", dataset_prefix)
+dataset_dir = os.path.join("../../../datasets", dataset_prefix)
 dataset_dir_annotations = os.path.join(dataset_dir, "annotations")
 dataset_dir_instances = os.path.join(dataset_dir, "instances")
 dataset_dir_instances_archived = os.path.join(dataset_dir_instances, "archived")
