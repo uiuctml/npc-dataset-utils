@@ -1,6 +1,12 @@
-# NPC Attribute Labeling Utility
+# NPC Attribute Examining Utility
 
 ## Table of Contents
+
+1. [Overview](#overview)
+2. [Preview](#preview)
+3. [Running the Utility](#running-the-utility)
+4. [Viewer Panel](#viewer-panel)
+5. [Application Control Panel](#application-control-panel)
 
 ## Overview
 
