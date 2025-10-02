@@ -35,6 +35,8 @@ cd npc/datasets/awa2/archives
 unzip AwA2-data.zip
 ```
 
+Verify that the extracted directory `Animals_with_Attributes2` appears under `npc/datasets/awa2/archives`.
+
 ## Dataset Annotations
 
 Move the original annotation files into `npc/datasets/awa2/annotations`:
@@ -54,7 +56,7 @@ chmod -Rv a-w npc/datasets/awa2/annotations
 
 ## Dataset Instances
 
-Move all dataset instances into `npc/datasets/awa2/instances/original`:
+Move dataset instances into `npc/datasets/awa2/instances`:
 
 ```bash
 cd npc/datasets/awa2/archives/Animals_with_Attributes2
@@ -80,7 +82,7 @@ cd npc/datasets/awa2/instances
 ln -sv original processed
 ```
 
-At this point, the AwA2 dataset is ready to be configured. First, update the following parameter in `header.py`:
+At this point, the AwA2 dataset is ready to be configured. First, set the following parameter in `header.py`:
 
 ```python
 dataset_prefix = "awa2"
