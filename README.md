@@ -12,18 +12,18 @@
 
 ## Project Overview
 
-This codebase contains utilities for processing and manipulating datasets for the Neural Probabilistic Circuit (NPC) project. The NPC project focuses on the following four datasets:
+This codebase provides utilities for processing and manipulating datasets for the Neural Probabilistic Circuit (NPC) project. The NPC project focuses on the following four datasets:
 
 - [Animals with Attributes 2 (AwA2)](https://cvml.ista.ac.at/AwA2/)
 - [CelebFaces Attributes (CelebA)](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 - [German Traffic Sign Recognition Benchmark (GTSRB)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
 - [Modified National Institute of Standards and Technology (MNIST)](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
-This project provides scripts for each of the datasets above to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf).
+Scripts are provided for each dataset to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf).
 
-Certain datasets, such as GTSRB, do not include attribute labels. To address this, the codebase offers a set of Qt-based graphical software that allow users to create and examine attribute labels for any dataset. A verification script is included to ensure the consistency and correctness of user-created labels.
+Certain datasets, such as GTSRB, lack attribute labels. To address this, the codebase includes a set of Qt-based graphical software that allow users to create and examine attribute labels for any dataset. A verification script is included to check the consistency and correctness of user-created labels.
 
-Finally, the codebase provides additional utility scripts to split datasets into training, validation, and testing subsets, and to generate Probabilistic Circuit (PC) datasets from those splits. These PC datasets are then used by the `learnspn` project to construct and generate PCs.
+In addition, utility scripts are available for splitting datasets into training, validation, and testing subsets, and for generating Probabilistic Circuit (PC) datasets from those splits. These PC datasets are then used by the `learnspn` project to construct and generate PCs.
 
 ## Project Prerequisites
 
@@ -62,7 +62,7 @@ mkdir -pv awa2 celeba gtsrb mnist
 
 ## Setting Up the Datasets
 
-The detailed instructions on setting up the datasets and organizing dataset contents within `npc/datasets` is provided as follows:
+Detailed instructions for setting up and organizing dataset contents within npc/datasets are provided in the following documents:
 
 - [Animals with Attributes 2 (AwA2)](docs/npc-dataset-utils/datasets/awa2.md)
 - [CelebFaces Attributes (CelebA)](docs/npc-dataset-utils/datasets/celeba.md)
@@ -71,15 +71,15 @@ The detailed instructions on setting up the datasets and organizing dataset cont
 
 ## NPC Attribute Utilities
 
-The NPC Attribute Labeling Utility enables users to create and examine dataset attribute labels.
-
-![NPC Attribute Labeling Utility](docs/npc-dataset-utils/images/label.png)
-![NPC Attribute Examining Utility](docs/npc-dataset-utils/images/examine.png)
-
-Detailed instructions on how to operate the software is provided below:
+The NPC attribute utilities allow users to create and review dataset attribute labels. Detailed usage instructions are available in the following documents:
 
 - [NPC Attribute Labeling Utility](docs/npc-dataset-utils/utilities/label.md)
 - [NPC Attribute Examining Utility](docs/npc-dataset-utils/utilities/examine.md)
+
+Preview of the NPC attribute utilities:
+
+![NPC Attribute Labeling Utility](docs/npc-dataset-utils/images/label.png)
+![NPC Attribute Examining Utility](docs/npc-dataset-utils/images/examine.png)
 
 ## Acknowledgements
 
@@ -88,6 +88,6 @@ Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementat
 
 ## License
 
-This codebase is provided under the [Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license, which can be viewed under `LICENSE`.
+This codebase is released under the [Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license, which can be viewed under `LICENSE`.
 
 Written by [Simon Yu](https://www.simonyu.net/).
