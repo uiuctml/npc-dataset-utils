@@ -4,7 +4,7 @@
 @file   verify.py
 @author Simon Yu
 @date   01/23/2023
-@brief  Script for verifying dataset configurations.
+@brief  Script for verifying dataset configuration.
 """
 
 import header

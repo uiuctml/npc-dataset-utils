@@ -7,7 +7,7 @@
 1. [Download Dataset](#download-dataset)
 1. [Dataset Annotations](#dataset-annotations)
 1. [Dataset Instances](#dataset-instances)
-1. [Dataset Processing and Configurations](#dataset-processing-and-configurations)
+1. [Dataset Processing and Configuration](#dataset-processing-and-configuration)
 1. [Dataset Splits](#dataset-splits)
 1. [PC Datasets](#pc-datasets)
 1. [Final Directory Structure](#final-directory-structure)
@@ -68,7 +68,7 @@ Optionally, write-protect `npc/datasets/celeba/instances/original` to preserve t
 chmod -Rv a-w npc/datasets/celeba/instances/original
 ```
 
-## Dataset Processing and Configurations
+## Dataset Processing and Configuration
 
 First, set the following parameter in `header.py`:
 
@@ -86,7 +86,7 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 
 The processed dataset instances are stored under `npc/datasets/celeba/instances/processed` as symlinks.
 
-The generated dataset configurations are stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba.json`.
+The generated dataset configuration is stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba.json`.
 
 ## Dataset Splits
 
@@ -99,14 +99,14 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 
 The generated splits are stored under `npc/datasets/celeba/splits/instances`. These splits are created as symlinks pointing to the processed instances.
 
-By default, `split.py` loads existing split configurations under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones. This behavior ensures that the splits are deterministic and can be consistently reproduced across different environments. To generate new random splits, update the following parameters in `header.py`:
+By default, `split.py` loads the existing split configuration under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones. This behavior ensures that the splits are deterministic and can be consistently reproduced across different environments. To generate new random splits, update the following parameters in `header.py`:
 
 ```python
 split_load = False
 split_save = True
 ```
 
-With the above parameters, `split.py` generates, compresses, and saves new split configurations as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
+With the above parameters, `split.py` generates, compresses, and saves the new split configuration as `npc/npc-dataset-utils/configs/npc-dataset-utils/celeba_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
 
 ## PC Datasets
 

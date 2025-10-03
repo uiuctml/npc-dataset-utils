@@ -7,7 +7,7 @@
 1. [Download Dataset](#download-dataset)
 1. [Dataset Annotations](#dataset-annotations)
 1. [Dataset Instances](#dataset-instances)
-1. [Dataset Processing and Configurations](#dataset-processing-and-configurations)
+1. [Dataset Processing and Configuration](#dataset-processing-and-configuration)
 1. [Dataset Splits](#dataset-splits)
 1. [Dataset Verification](#dataset-verification)
 1. [PC Datasets](#pc-datasets)
@@ -78,7 +78,7 @@ chmod -Rv a-w npc/datasets/awa2/instances/original
 
 After this step, the extracted directory `npc/datasets/awa2/archives/Animals_with_Attributes2` from `npc/datasets/awa2/archives/AwA2-data.zip` is no longer required and may be removed.
 
-## Dataset Processing and Configurations
+## Dataset Processing and Configuration
 
 For the NPC project, the original AwA2 instances are left unmodified. To maintain compatibility, create a symlink named `processed` that points to `npc/datasets/awa2/instances/original`:
 
@@ -101,7 +101,7 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 ./awa2.py
 ```
 
-The generated dataset configurations are stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2.json`.
+The generated dataset configuration is stored as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2.json`.
 
 ## Dataset Splits
 
@@ -114,18 +114,18 @@ cd npc/npc-dataset-utils/src/npc-dataset-utils
 
 The generated splits are stored under `npc/datasets/awa2/splits/instances`. These splits are created as symlinks pointing to the processed instances.
 
-By default, `split.py` loads existing split configurations under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones. This behavior ensures that the splits are deterministic and can be consistently reproduced across different environments. To generate new random splits, update the following parameters in `header.py`:
+By default, `split.py` loads the existing split configuration under `npc/npc-dataset-utils/configs/npc-dataset-utils` instead of generating new ones. This behavior ensures that the splits are deterministic and can be consistently reproduced across different environments. To generate new random splits, update the following parameters in `header.py`:
 
 ```python
 split_load = False
 split_save = True
 ```
 
-With the above parameters, `split.py` generates, compresses, and saves new split configurations as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
+With the above parameters, `split.py` generates, compresses, and saves the new split configuration as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
 
 ## Dataset Verification
 
-Once the dataset has been processed and configured, run the verification to check for any duplicated, invalid, missing, or unused attributes in the dataset configurations, as well as any empty categories within the dataset splits.
+Once the dataset has been processed and configured, run the verification to check for any duplicated, invalid, missing, or unused attributes in the dataset configuration, as well as any empty categories within the dataset splits.
 
 ```bash
 cd npc/npc-dataset-utils/src/npc-dataset-utils

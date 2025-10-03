@@ -21,7 +21,7 @@ Key features of the utility include:
 
 - A Viewer Panel that presents random instances from the selected class to provide visual context while labeling.
 - A Labeling Control Panel for assigning existing attribute values, adding new labels, or removing existing ones.
-- An Application Control Panel for saving progress, navigating among classes/categories, reloading configurations, or shuffling displayed instances.
+- An Application Control Panel for saving progress, navigating among classes/categories, reloading dataset configuration, or shuffling displayed instances.
 - Support for class-wise, one-hot attribute labeling for any datasets with user-definable attributes.
 
 The NPC Attribute Labeling Utility provides the foundation for rapidly and efficiently annotating datasets with attributes, enabling their use in downstream tasks across the NPC pipeline.
@@ -72,7 +72,7 @@ The Labeling Control Panel allows users to create and label the selected class w
 The Application Control Panel provides controls for managing the labeling process and navigating through the dataset:
 
 - `Save & Last` and `Save & Next` save progress and navigate through classes sequentially.
-- `Reload` reloads dataset configurations if changes are made directly to the configuration file while the utility is running.
+- `Reload` reloads the dataset configuration if changes are made directly to the configuration file while the utility is running.
 - The drop-down menu in the middle of the panel allows direct and random access to any class.
 - `Shuffle Viewer` draws new random instances from the selected class to be displayed in the Viewer Panel.
 - `Save` immediately saves the current labeling for the selected class.

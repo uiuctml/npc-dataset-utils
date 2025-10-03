@@ -56,7 +56,7 @@ The Application Control Panel provides controls for navigating through attribute
 - `Last Label` and `Next Label` navigate through attribute values sequentially.
 - `Shuffle Viewer Images` draws new random instances for the selected attribute value to be displayed in the Viewer Panel.
 - `Shuffle Viewer Labels` draws a new random set of classes for the selected attribute value to be displayed in the Viewer Panel.
-- `Reload` reloads dataset configurations if changes are made directly to the configuration file while the utility is running.
+- `Reload` reloads the dataset configuration if changes are made directly to the configuration file while the utility is running.
 - The panel can be collapsed or expanded by dragging the bar directly above the panel.
 
 Written by [Simon Yu](https://www.simonyu.net/).
