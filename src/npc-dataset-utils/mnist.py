@@ -123,8 +123,7 @@ def createProcessedInstances():
 
     with open(os.path.join(header.config_dir, header.dataset_config_file_name), 'w') as file_config:
         json.dump(config, file_config, indent = 4)
-
-    logger.log_info("Saved dataset configuration to \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\".")
+        logger.log_info("Saved dataset configuration to \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\".")
 
     return
 
