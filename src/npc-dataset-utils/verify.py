@@ -85,19 +85,19 @@ def verifyDatasetConfigMissing(config_dataset):
         if label_class not in labels_class:
             logger.log_warn("Unknown label: \"" + label_class + "\".")
 
-        labels_decomposed = config_dataset["mappings"][label_class]["labels"]
+        labels_attribute = config_dataset["mappings"][label_class]["labels"]
 
         for name_dataset_set in names_dataset_set:
-            if name_dataset_set not in labels_decomposed.keys():
+            if name_dataset_set not in labels_attribute.keys():
                 logger.log_warn("Missing attribute: \"" + name_dataset_set + "\", \"" + label_class + "\".")
 
-        if len(labels_decomposed) > 0:
-            for dataset_name in labels_decomposed.keys():
-                if isinstance(labels_decomposed[dataset_name], list):
-                    for label in labels_decomposed[dataset_name]:
+        if len(labels_attribute) > 0:
+            for dataset_name in labels_attribute.keys():
+                if isinstance(labels_attribute[dataset_name], list):
+                    for label in labels_attribute[dataset_name]:
                         labels_dataset_set_generate.add(label)
                 else:
-                    labels_dataset_set_generate.add(labels_decomposed[dataset_name])
+                    labels_dataset_set_generate.add(labels_attribute[dataset_name])
 
                 if dataset_name not in names_dataset_set:
                     logger.log_warn("Unknown attribute: \"" + dataset_name + "\", \"" + label_class + "\".")
