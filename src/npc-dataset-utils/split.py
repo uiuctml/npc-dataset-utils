@@ -45,13 +45,13 @@ def generateSplits(file_keys):
     split_point_validate_test = int(len(file_keys) * (header.split_percentage_train + header.split_percentage_validate))
     split_point_train_validate = int(len(file_keys) * header.split_percentage_train)
 
-    file_keys = utility.shuffleUniform(file_keys, header.split_random_seed)
+    file_keys = utility.shuffleUniform(file_keys, header.split_seed)
 
     file_keys_test = file_keys[split_point_validate_test:]
     file_keys_train = file_keys[:split_point_train_validate]
     file_keys_validate = file_keys[split_point_train_validate:split_point_validate_test]
 
-    logger.log_info("Generated dataset splits from seed " + str(header.split_random_seed) + ".")
+    logger.log_info("Generated dataset splits from seed " + str(header.split_seed) + ".")
 
     return (file_keys_test, file_keys_train, file_keys_validate)
 

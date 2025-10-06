@@ -82,7 +82,7 @@ def createProcessedInstances():
         file_names = os.listdir(os.path.join(header.dataset_dir_instances_original, class_index))
         file_paths += [os.path.join(header.dataset_dir_instances_original, class_index, file_name) for file_name in file_names]
 
-    file_paths = utility.shuffleUniform(file_paths, header.mnist_random_seed)
+    file_paths = utility.shuffleUniform(file_paths, header.seed)
     progress_bar = tqdm.tqdm(total = len(file_paths) // 2)
     progress_bar.set_description_str("[INFO]: Creating processed instances")
 

@@ -9,6 +9,8 @@ import os
 import type
 
 config_dir = "../../configs/npc-dataset-utils"
+log_level = type.LogLevel.info
+seed = 42
 
 dataset_prefix = "awa2"
 dataset_config_file_name = dataset_prefix + ".json"
@@ -52,17 +54,12 @@ label_line_edit_width = 250
 label_viewer_count = 12
 label_viewer_count_col = 6
 
-log_level = type.LogLevel.info
-
 mnist_attributes = ["number-first", "number-second"]
 mnist_file_extension_images = ".png"
 mnist_file_name_images_test = "t10k-images-idx3-ubyte"
 mnist_file_name_images_train = "train-images-idx3-ubyte"
 mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
-mnist_random_seed = 42
-
-pc_random_seed = 42
 
 split_config_file_name = dataset_prefix + "_split.json.gz"
 split_create_symlinks = True
@@ -70,5 +67,5 @@ split_dataset_dir_images = dataset_dir_instances_processed
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1
-split_random_seed = 22333376
+split_seed = 22333376
 split_save = False

@@ -20,19 +20,19 @@ def getLabelsAttribute(dataset_config):
 
     return labels_attribute
 
-def getLabelsOriginal(dataset_config):
+def getLabelsClass(dataset_config):
     if "instance_wise" in dataset_config and dataset_config["instance_wise"]:
-        labels_original = []
-        labels_original_set = set()
+        labels_class = []
+        labels_class_set = set()
 
         for image_name in dataset_config["mappings"].keys():
             class_name = image_name.split('/')[0]
 
-            if class_name not in labels_original_set:
-                labels_original.append(class_name)
-                labels_original_set.add(class_name)
+            if class_name not in labels_class_set:
+                labels_class.append(class_name)
+                labels_class_set.add(class_name)
 
-        return natsort.natsorted(labels_original)
+        return natsort.natsorted(labels_class)
     else:
         return list(dataset_config["mappings"].keys())
 
@@ -49,11 +49,11 @@ def getIndicesFromLabelsAttribute(labels_attribute):
 
     return indices
 
-def getIndicesFromLabelsOriginal(labels_original):
+def getIndicesFromLabelsClass(labels_class):
     labels_to_indices = {}
 
-    for i in range(len(labels_original)):
-        labels_to_indices[labels_original[i]] = i
+    for i in range(len(labels_class)):
+        labels_to_indices[labels_class[i]] = i
 
     return labels_to_indices
 

@@ -19,19 +19,19 @@ def main():
         logger.log_info("PC dataset splits exist in \"" + header.dataset_dir_splits_pc + "\". Skip.")
         return
 
-    utility.setSeed(header.pc_random_seed)
+    utility.setSeed(header.seed)
 
     file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
     dataset_config = json.load(file_dataset_config)
     file_dataset_config.close()
 
     labels_attribute = utility.getLabelsAttribute(dataset_config)
-    labels_original = utility.getLabelsOriginal(dataset_config)
+    labels_class = utility.getLabelsClass(dataset_config)
     indices_attribute = utility.getIndicesFromLabelsAttribute(labels_attribute)
-    indices_original = utility.getIndicesFromLabelsOriginal(labels_original)
+    indices_class = utility.getIndicesFromLabelsClass(labels_class)
 
     categories = {}
-    dirs_dataset_original = [header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate]
+    dirs_dataset_splt = [header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate]
 
     for attribute in dataset_config["attributes"]:
         attribute_name = attribute["name"]
@@ -42,15 +42,15 @@ def main():
 
         categories[attribute_name] = attribute_categories
 
-    for i in range(len(dirs_dataset_original)):
-        logger.log_info("Generating PC dataset split from \"" + dirs_dataset_original[i] + "\".")
+    for i in range(len(dirs_dataset_splt)):
+        logger.log_info("Generating PC dataset split from \"" + dirs_dataset_splt[i] + "\".")
 
         lines = []
 
         if "instance_wise" in dataset_config and dataset_config["instance_wise"]:
-            for label_original in os.listdir(dirs_dataset_original[i]):
-                for instance_name in os.listdir(os.path.join(dirs_dataset_original[i], label_original)):
-                    image_name = os.path.join(label_original, instance_name)
+            for label_class in os.listdir(dirs_dataset_splt[i]):
+                for instance_name in os.listdir(os.path.join(dirs_dataset_splt[i], label_class)):
+                    image_name = os.path.join(label_class, instance_name)
                     attributes = dataset_config["mappings"][image_name]["labels"]
                     line = ""
 
@@ -70,14 +70,14 @@ def main():
 
                         line += str(index_label_attribute) + ","
 
-                    index_label_original = indices_original[label_original]
-                    line += str(index_label_original) + "\n"
+                    index_label_class = indices_class[label_class]
+                    line += str(index_label_class) + "\n"
                     lines.append(line)
         else:
-            for label_original in labels_original:
-                attributes = dataset_config["mappings"][label_original]["labels"]
+            for label_class in labels_class:
+                attributes = dataset_config["mappings"][label_class]["labels"]
 
-                for _ in os.listdir(os.path.join(dirs_dataset_original[i], label_original)):
+                for _ in os.listdir(os.path.join(dirs_dataset_splt[i], label_class)):
                     line = ""
 
                     for attribute_name in attributes.keys():
@@ -94,8 +94,8 @@ def main():
 
                         line += str(index_label_attribute) + ","
 
-                    index_label_original = indices_original[label_original]
-                    line += str(index_label_original) + "\n"
+                    index_label_class = indices_class[label_class]
+                    line += str(index_label_class) + "\n"
                     lines.append(line)
 
         lines[-1] = lines[-1].rstrip("\n")
@@ -103,11 +103,13 @@ def main():
         if not os.path.exists(header.dataset_dir_splits_pc):
             os.makedirs(header.dataset_dir_splits_pc, exist_ok = True)
 
-        file_name_pc_dataset = os.path.basename(dirs_dataset_original[i]) + ".txt"
+        file_name_pc_dataset = os.path.basename(dirs_dataset_splt[i]) + ".txt"
         file_path_pc_dataset = os.path.join(header.dataset_dir_splits_pc, file_name_pc_dataset)
 
         with open(file_path_pc_dataset, "w+") as file_dataset_pc:
             file_dataset_pc.writelines(lines)
+
+        logger.log_info("Saved PC dataset split to \"" + file_path_pc_dataset + "\".")
 
     return
 

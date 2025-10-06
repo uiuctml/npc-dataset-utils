@@ -39,17 +39,17 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
 
         return
 
-    labels_original = []
+    labels_class = []
     file_paths_image = []
 
-    for label_original in attribute_config["mappings"]:
-        label_attribute_current = attribute_config["mappings"][label_original]["labels"][attribute]
+    for label_class in attribute_config["mappings"]:
+        label_attribute_current = attribute_config["mappings"][label_class]["labels"][attribute]
 
         if label_attribute_current == label_attribute:
-            labels_original.append(label_original)
+            labels_class.append(label_class)
 
-    for label_original in labels_original:
-        file_path_images = os.path.join(header.examine_dataset_dir_images, label_original)
+    for label_class in labels_class:
+        file_path_images = os.path.join(header.examine_dataset_dir_images, label_class)
 
         if not os.path.isdir(file_path_images):
             continue
@@ -60,10 +60,10 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
             file_names_images = random.sample(file_names_images, len(file_names_images))
 
         for file_name_images in file_names_images:
-            file_path_image = os.path.join(header.examine_dataset_dir_images, label_original, file_name_images)
+            file_path_image = os.path.join(header.examine_dataset_dir_images, label_class, file_name_images)
 
             if os.path.isfile(file_path_image):
-                file_paths_image.append((file_path_image, label_original))
+                file_paths_image.append((file_path_image, label_class))
                 break
 
     for i in range(0, group_box_viewer.layout().count()):
@@ -74,14 +74,14 @@ def updateViewerWidget(shuffle_viewer_images = True, shuffle_viewer_labels = Fal
             file_paths_image = random.sample(file_paths_image, len(file_paths_image))
 
         if i < len(file_paths_image):
-            label_original = file_paths_image[i][1]
+            label_class = file_paths_image[i][1]
             label_label_font_metrics = PyQt5.QtGui.QFontMetrics(label_label.font())
-            label_original_elided = label_label_font_metrics.elidedText(label_original, PyQt5.QtCore.Qt.ElideRight, label_label.width())
+            label_class_elided = label_label_font_metrics.elidedText(label_class, PyQt5.QtCore.Qt.ElideRight, label_label.width())
             pixmap = PyQt5.QtGui.QPixmap(file_paths_image[i][0])
 
             label_viewer.setPixmap(pixmap.scaled(header.examine_viewer_width, header.examine_viewer_height, PyQt5.QtCore.Qt.IgnoreAspectRatio))
-            label_label.setText(label_original_elided)
-            label_label.setToolTip(label_original)
+            label_label.setText(label_class_elided)
+            label_label.setToolTip(label_class)
         else:
             pixmap = PyQt5.QtGui.QPixmap(header.examine_viewer_width, header.examine_viewer_height)
             pixmap.fill(PyQt5.QtCore.Qt.black)

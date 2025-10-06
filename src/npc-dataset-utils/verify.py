@@ -15,12 +15,12 @@ import os
 def verifyDatasetConfigDuplicates(config_dataset):
     label_map = {}
 
-    for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
+    for label_class in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_class]["labels"]) > 0:
             labels_dataset = ""
 
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                label_dataset = config_dataset["mappings"][label_original]["labels"][dataset_name]
+            for dataset_name in config_dataset["mappings"][label_class]["labels"].keys():
+                label_dataset = config_dataset["mappings"][label_class]["labels"][dataset_name]
 
                 if labels_dataset != "":
                     labels_dataset += header.dataset_delimiter_file_name
@@ -32,37 +32,37 @@ def verifyDatasetConfigDuplicates(config_dataset):
                     labels_dataset += label_dataset
 
             if labels_dataset not in label_map:
-                label_map[labels_dataset] = [label_original]
+                label_map[labels_dataset] = [label_class]
             else:
-                label_map[labels_dataset].append(label_original)
+                label_map[labels_dataset].append(label_class)
 
     for label_dataset in label_map.keys():
-        labels_original_list = label_map[label_dataset]
+        labels_class_list = label_map[label_dataset]
 
-        if len(labels_original_list) > 1:
-            labels_original = ", ".join(labels_original_list)
-            logger.log_warn("Identical attributes: \"" + labels_original + "\".")
+        if len(labels_class_list) > 1:
+            labels_class = ", ".join(labels_class_list)
+            logger.log_warn("Identical attributes: \"" + labels_class + "\".")
 
     return
 
 def verifyDatasetConfigLabels(config_dataset):
-    for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) == 0:
-            logger.log_warn("Missing attributes: \"" + label_original + "\".")
+    for label_class in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_class]["labels"]) == 0:
+            logger.log_warn("Missing attributes: \"" + label_class + "\".")
         else:
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                if config_dataset["mappings"][label_original]["labels"][dataset_name] == "":
-                    logger.log_warn("Empty attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+            for dataset_name in config_dataset["mappings"][label_class]["labels"].keys():
+                if config_dataset["mappings"][label_class]["labels"][dataset_name] == "":
+                    logger.log_warn("Empty attribute: \"" + dataset_name + "\", \"" + label_class + "\".")
                 else:
-                    labels = config_dataset["mappings"][label_original]["labels"][dataset_name]
+                    labels = config_dataset["mappings"][label_class]["labels"][dataset_name]
 
                     if isinstance(labels, list):
                         for label in labels:
                             if label.split(header.dataset_delimiter_label)[0] != dataset_name:
-                                logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+                                logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_class + "\".")
                     else:
                         if labels.split(header.dataset_delimiter_label)[0] != dataset_name:
-                            logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+                            logger.log_warn("Invalid attribute: \"" + dataset_name + "\", \"" + label_class + "\".")
 
     return
 
@@ -79,17 +79,17 @@ def verifyDatasetConfigMissing(config_dataset):
         for label_dataset in labels_dataset:
             labels_dataset_set_dataset.add(label_dataset)
 
-    for label_original in config_dataset["mappings"].keys():
-        labels_original = os.listdir(header.dataset_dir_instances_processed)
+    for label_class in config_dataset["mappings"].keys():
+        labels_class = os.listdir(header.dataset_dir_instances_processed)
 
-        if label_original not in labels_original:
-            logger.log_warn("Unknown label: \"" + label_original + "\".")
+        if label_class not in labels_class:
+            logger.log_warn("Unknown label: \"" + label_class + "\".")
 
-        labels_decomposed = config_dataset["mappings"][label_original]["labels"]
+        labels_decomposed = config_dataset["mappings"][label_class]["labels"]
 
         for name_dataset_set in names_dataset_set:
             if name_dataset_set not in labels_decomposed.keys():
-                logger.log_warn("Missing attribute: \"" + name_dataset_set + "\", \"" + label_original + "\".")
+                logger.log_warn("Missing attribute: \"" + name_dataset_set + "\", \"" + label_class + "\".")
 
         if len(labels_decomposed) > 0:
             for dataset_name in labels_decomposed.keys():
@@ -100,7 +100,7 @@ def verifyDatasetConfigMissing(config_dataset):
                     labels_dataset_set_generate.add(labels_decomposed[dataset_name])
 
                 if dataset_name not in names_dataset_set:
-                    logger.log_warn("Unknown attribute: \"" + dataset_name + "\", \"" + label_original + "\".")
+                    logger.log_warn("Unknown attribute: \"" + dataset_name + "\", \"" + label_class + "\".")
 
     for label_dataset_generate in labels_dataset_set_generate:
         if label_dataset_generate not in labels_dataset_set_dataset:
@@ -111,10 +111,10 @@ def verifyDatasetConfigMissing(config_dataset):
 def verifyDatasetConfigUnused(config_dataset):
     labels_dataset_set = set()
 
-    for label_original in config_dataset["mappings"].keys():
-        if len(config_dataset["mappings"][label_original]["labels"]) > 0:
-            for dataset_name in config_dataset["mappings"][label_original]["labels"].keys():
-                labels = config_dataset["mappings"][label_original]["labels"][dataset_name]
+    for label_class in config_dataset["mappings"].keys():
+        if len(config_dataset["mappings"][label_class]["labels"]) > 0:
+            for dataset_name in config_dataset["mappings"][label_class]["labels"].keys():
+                labels = config_dataset["mappings"][label_class]["labels"][dataset_name]
 
                 if isinstance(labels, list):
                     for label in labels:
