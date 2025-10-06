@@ -35,6 +35,8 @@ apt install libgl1-mesa-dev python3-natsort python3-numpy python3-opencv python3
 
 Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional efforts. However, these platforms are not officially supported.
 
+This project is designed to run directly without any Python virtual environments, e.g., Conda. Using such environments is unnecessary and not recommended. The project is best run natively on Ubuntu 22.04 LTS. Additionally, do not install Python packages via `pip` unless explicitly instructed.
+
 Before running any script, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on specific parameters are provided in later sections.
 
 ## Project Hierarchy
