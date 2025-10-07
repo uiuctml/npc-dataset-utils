@@ -10,25 +10,74 @@
 import header
 import json
 import logger
+import natsort
 import os
 import random
 import utility
+
+def getLabelsAttribute(dataset_config):
+    labels_attribute = {}
+
+    for attribute in dataset_config["attributes"]:
+        if "" in attribute["labels"]:
+            attribute["labels"].remove("")
+
+        labels_attribute[attribute["name"]] = attribute["labels"]
+
+    return labels_attribute
+
+def getLabelsClass(dataset_config):
+    if "instance_wise" in dataset_config and dataset_config["instance_wise"]:
+        labels_class = []
+        labels_class_set = set()
+
+        for image_name in dataset_config["mappings"].keys():
+            class_name = image_name.split('/')[0]
+
+            if class_name not in labels_class_set:
+                labels_class.append(class_name)
+                labels_class_set.add(class_name)
+
+        return natsort.natsorted(labels_class)
+    else:
+        return list(dataset_config["mappings"].keys())
+
+def getIndicesFromLabelsAttribute(labels_attribute):
+    indices = {}
+
+    for attribute in labels_attribute.keys():
+        labels_to_indices = {}
+
+        for i in range(len(labels_attribute[attribute])):
+            labels_to_indices[labels_attribute[attribute][i]] = i
+
+        indices[attribute] = labels_to_indices
+
+    return indices
+
+def getIndicesFromLabelsClass(labels_class):
+    labels_to_indices = {}
+
+    for i in range(len(labels_class)):
+        labels_to_indices[labels_class[i]] = i
+
+    return labels_to_indices
 
 def main():
     if os.path.exists(header.dataset_dir_splits_pc):
         logger.log_info("PC dataset splits exist in \"" + header.dataset_dir_splits_pc + "\". Skip.")
         return
 
-    utility.setSeed(header.seed)
+    random.seed(header.seed)
 
     file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
     dataset_config = json.load(file_dataset_config)
     file_dataset_config.close()
 
-    labels_attribute = utility.getLabelsAttribute(dataset_config)
-    labels_class = utility.getLabelsClass(dataset_config)
-    indices_attribute = utility.getIndicesFromLabelsAttribute(labels_attribute)
-    indices_class = utility.getIndicesFromLabelsClass(labels_class)
+    labels_attribute = getLabelsAttribute(dataset_config)
+    labels_class = getLabelsClass(dataset_config)
+    indices_attribute = getIndicesFromLabelsAttribute(labels_attribute)
+    indices_class = getIndicesFromLabelsClass(labels_class)
 
     categories = {}
     dirs_dataset_splt = [header.dataset_dir_splits_instances_test, header.dataset_dir_splits_instances_train, header.dataset_dir_splits_instances_validate]

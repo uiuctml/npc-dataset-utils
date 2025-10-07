@@ -5,57 +5,7 @@
 @brief  Utility functions.
 """
 
-import natsort
-import numpy
 import random
-
-def getLabelsAttribute(dataset_config):
-    labels_attribute = {}
-
-    for attribute in dataset_config["attributes"]:
-        if "" in attribute["labels"]:
-            attribute["labels"].remove("")
-
-        labels_attribute[attribute["name"]] = attribute["labels"]
-
-    return labels_attribute
-
-def getLabelsClass(dataset_config):
-    if "instance_wise" in dataset_config and dataset_config["instance_wise"]:
-        labels_class = []
-        labels_class_set = set()
-
-        for image_name in dataset_config["mappings"].keys():
-            class_name = image_name.split('/')[0]
-
-            if class_name not in labels_class_set:
-                labels_class.append(class_name)
-                labels_class_set.add(class_name)
-
-        return natsort.natsorted(labels_class)
-    else:
-        return list(dataset_config["mappings"].keys())
-
-def getIndicesFromLabelsAttribute(labels_attribute):
-    indices = {}
-
-    for attribute in labels_attribute.keys():
-        labels_to_indices = {}
-
-        for i in range(len(labels_attribute[attribute])):
-            labels_to_indices[labels_attribute[attribute][i]] = i
-
-        indices[attribute] = labels_to_indices
-
-    return indices
-
-def getIndicesFromLabelsClass(labels_class):
-    labels_to_indices = {}
-
-    for i in range(len(labels_class)):
-        labels_to_indices[labels_class[i]] = i
-
-    return labels_to_indices
 
 def pruneAttributes(attributes, mappings):
     attributes_map = {}
@@ -78,12 +28,6 @@ def pruneAttributes(attributes, mappings):
         attribute["labels"] += sorted(list(attributes_map[attribute["name"]]))
 
     return attributes
-
-def setSeed(seed):
-    random.seed(seed)
-    numpy.random.seed(seed)
-
-    return
 
 def shuffleUniform(list, seed):
     rand = random.Random()
