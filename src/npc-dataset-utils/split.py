@@ -72,7 +72,7 @@ def loadSplits(split_dir_test, split_dir_train, split_dir_validate):
     file_keys_train = config_split[split_name_train]
     file_keys_validate = config_split[split_name_validate]
 
-    logger.log_info("Loaded dataset splits from \"" + file_path_config_split + "\".")
+    logger.log_info("Loaded dataset splits \"" + file_path_config_split + "\".")
 
     return (file_keys_test, file_keys_train, file_keys_validate)
 

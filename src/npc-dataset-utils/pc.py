@@ -43,7 +43,7 @@ def main():
         categories[attribute_name] = attribute_categories
 
     for i in range(len(dirs_dataset_splt)):
-        logger.log_info("Generating PC dataset split from \"" + dirs_dataset_splt[i] + "\".")
+        logger.log_info("Generating PC dataset split \"" + dirs_dataset_splt[i] + "\".")
 
         lines = []
 
