@@ -121,7 +121,7 @@ split_load = False
 split_save = True
 ```
 
-With the above parameters, `split.py` generates, compresses, and saves the new split configuration as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Additional aspects of split.py, e.g., random seed, split percentages, may also be customized via parameters in `header.py`.
+With the above parameters, `split.py` generates, compresses, and saves the new split configuration as `npc/npc-dataset-utils/configs/npc-dataset-utils/awa2_split.json.gz`. Additional aspects of split.py, e.g., split percentages, may also be customized via parameters in `header.py`.
 
 ## Dataset Verification
 

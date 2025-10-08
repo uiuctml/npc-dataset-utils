@@ -67,5 +67,4 @@ split_dataset_dir_images = dataset_dir_instances_processed
 split_load = True
 split_percentage_train = 0.8
 split_percentage_validate = 0.1
-split_seed = 22333376
 split_save = False
