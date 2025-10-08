@@ -98,7 +98,8 @@ Preview of the NPC attribute utilities:
 ![NPC Attribute Examining Utility](docs/npc-dataset-utils/images/examine.png)
 
 ## Publications
-Upon using this project, cite the following publications:
+
+Upon using this project, cite any relevant publications listed below:
 
 ### Neural Probabilistic Circuit (NPC)
 
