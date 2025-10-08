@@ -1,4 +1,4 @@
-# NPC Dataset Utilities
+# Neural Probabilistic Circuit Dataset Utilities
 
 ## Table of Contents
 
