@@ -34,18 +34,16 @@ This project requires the following system packages:
 Ubuntu:
 
 ```bash
-apt install libgl1-mesa-dev python3-natsort python3-numpy python3-opencv python3-pil python3-pyqt5 python3-tqdm unzip
+apt install libgl1-mesa-dev python3-venv unzip
 ```
 
 Arch Linux:
 
 ```bash
-pacman -S mesa python-natsort python-numpy python-opencv python-pillow python-pyqt5 python-tqdm unzip
+pacman -S mesa unzip
 ```
 
 This project was developed on Ubuntu and tested on both Ubuntu and Arch Linux. Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional setup. However, these platforms are not officially supported.
-
-This project is designed to run directly on the operating system, without any Python virtual environments such as Conda. Using such environments is unnecessary and not recommended. Additionally, avoid installing Python packages via `pip` unless explicitly instructed. Packages from the system package manager are preferred.
 
 ## Project Hierarchy
 
@@ -59,9 +57,22 @@ This project is part of the NPC pipeline. To ensure compatibility and maintain c
     │   └── mnist
     ├── learnspn
     ├── npc-dataset-utils
-    └── npc-models
+    ├── npc-models
+    └── npc-venv
 
 All subsequent instructions assume the above project hierarchy.
+
+This project is designed to run within a dedicated Python virtual environment. Create and activate the environment as follows:
+
+```bash
+cd npc
+deactivate
+python3 -m venv npc-venv
+source npc-venv/bin/activate
+python3 -m pip install -r npc-dataset-utils/requirements.txt
+```
+
+Always ensure the virtual environment is activated before running the project.
 
 The `npc/datasets` directory does not exist by default. Create the initial directory structure as follows:
 
