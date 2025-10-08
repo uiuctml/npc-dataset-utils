@@ -57,7 +57,7 @@ Move dataset instances into `npc/datasets/celeba/instances`:
 
 ```bash
 cd npc/datasets/celeba/archives
-mv -v img_align_celeba ../../instances/original
+mv -v img_align_celeba ../instances/original
 ```
 
 Verify that `npc/datasets/celeba/instances/original` contains 202,599 files, one for each instance.
