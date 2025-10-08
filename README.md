@@ -34,13 +34,13 @@ This project requires the following system packages:
 Ubuntu:
 
 ```bash
-apt install libgl1-mesa-dev python3-venv unzip
+apt install libgl1-mesa-dev python3.10 python3-venv unzip
 ```
 
 Arch Linux:
 
 ```bash
-pacman -S mesa unzip
+yay -S mesa python310 unzip
 ```
 
 This project was developed on Ubuntu and tested on both Ubuntu and Arch Linux. Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional setup. However, these platforms are not officially supported.
@@ -67,9 +67,9 @@ This project is designed to run within a simple Python virtual environment. Crea
 ```bash
 cd npc
 deactivate
-python3 -m venv npc-venv
+python3.10 -m venv npc-venv
 source npc-venv/bin/activate
-python3 -m pip install -r npc-dataset-utils/requirements.txt
+python3.10 -m pip install -r npc-dataset-utils/requirements.txt
 ```
 
 Always ensure the virtual environment is activated before running the project.
