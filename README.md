@@ -7,8 +7,10 @@
 1. [Project Hierarchy](#project-hierarchy)
 1. [Setting Up the Datasets](#setting-up-the-datasets)
 1. [NPC Attribute Utilities](#npc-attribute-utilities)
+1. [Publications](#publications)
 1. [Acknowledgements](#acknowledgements)
 1. [License](#license)
+1. [Contact](#contact)
 
 ## Project Overview
 
@@ -27,17 +29,23 @@ In addition, utility scripts are available for splitting datasets into training,
 
 ## Project Prerequisites
 
-This project was developed and tested on Ubuntu 22.04 LTS and requires the following system packages:
+This project requires the following system packages:
+
+Ubuntu:
 
 ```bash
 apt install libgl1-mesa-dev python3-natsort python3-numpy python3-opencv python3-pil python3-pyqt5 python3-tqdm unzip
 ```
 
-Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional efforts. However, these platforms are not officially supported.
+Arch Linux:
 
-This project is designed to run directly without any Python virtual environments, e.g., Conda. Using such environments is unnecessary and not recommended. The project is best run natively on Ubuntu 22.04 LTS. Additionally, do not install Python packages via `pip` unless explicitly instructed.
+```bash
+pacman -S mesa python-natsort python-numpy python-opencv python-pillow python-pyqt5 python-tqdm unzip
+```
 
-Before running any script, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on specific parameters are provided in later sections.
+This project was developed on Ubuntu and tested on both Ubuntu and Arch Linux. Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional setup. However, these platforms are not officially supported.
+
+This project is designed to run directly on the operating system, without any Python virtual environments such as Conda. Using such environments is unnecessary and not recommended. Additionally, avoid installing Python packages via `pip` unless explicitly instructed. Packages from the system package manager are preferred.
 
 ## Project Hierarchy
 
@@ -89,13 +97,97 @@ Preview of the NPC attribute utilities:
 ![NPC Attribute Labeling Utility](docs/npc-dataset-utils/images/label.png)
 ![NPC Attribute Examining Utility](docs/npc-dataset-utils/images/examine.png)
 
+## Publications
+Upon using this project, cite the following publications:
+
+### Neural Probabilistic Circuit (NPC)
+
+```
+@article{chen2025neural,
+  title={Neural probabilistic circuits: Enabling compositional and interpretable predictions through logical reasoning},
+  author={Chen, Weixin and Yu, Simon and Shao, Huajie and Sha, Lui and Zhao, Han},
+  journal={arXiv preprint arXiv:2501.07021},
+  year={2025}
+}
+```
+
+```
+@inproceedings{chenneural,
+  title={Neural Probabilistic Circuits: An Overview},
+  author={Chen, Weixin and Yu, Simon and Shao, Huajie and Sha, Lui and Zhao, Han},
+  booktitle={Eighth Workshop on Tractable Probabilistic Modeling}
+}
+```
+
+### Animals with Attributes 2 (AwA2)
+
+```
+@inproceedings{xian2017zero,
+  title={Zero-shot learning-the good, the bad and the ugly},
+  author={Xian, Yongqin and Schiele, Bernt and Akata, Zeynep},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={4582--4591},
+  year={2017}
+}
+```
+
+### CelebFaces Attributes (CelebA)
+
+```
+@inproceedings{liu2015deep,
+  title={Deep learning face attributes in the wild},
+  author={Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={3730--3738},
+  year={2015}
+}
+```
+
+### German Traffic Sign Recognition Benchmark (GTSRB)
+
+```
+@article{stallkamp2012man,
+  title={Man vs. computer: Benchmarking machine learning algorithms for traffic sign recognition},
+  author={Stallkamp, Johannes and Schlipsing, Marc and Salmen, Jan and Igel, Christian},
+  journal={Neural networks},
+  volume={32},
+  pages={323--332},
+  year={2012},
+  publisher={Elsevier}
+}
+```
+
+### Modified National Institute of Standards and Technology (MNIST)
+
+```
+@article{lecun2010mnist,
+  title={MNIST handwritten digit database},
+  author={LeCun, Yann and Cortes, Corinna and Burges, Chris and others},
+  year={2010},
+  publisher={Florham Park, NJ, USA}
+}
+```
+
+```
+@article{manhaeve2018deepproblog,
+  title={Deepproblog: Neural probabilistic logic programming},
+  author={Manhaeve, Robin and Dumancic, Sebastijan and Kimmig, Angelika and Demeester, Thomas and De Raedt, Luc},
+  journal={Advances in neural information processing systems},
+  volume={31},
+  year={2018}
+}
+```
+
 ## Acknowledgements
 
-I would like to express my gratitude to Rahim Khan, Tommy Tang,
-Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementations, testing, and experiments for the NPC project.
+Special thanks to Rahim Khan, Tommy Tang, Alex Tanthiptham, and Trusha Vernekar for their contributions to the implementation, testing, and experiments involved in this project.
 
 ## License
 
 This codebase is released under the [Creative Commons Attribution NonCommercial ShareAlike (CC BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license, which can be viewed under `LICENSE`.
+
+## Contact
+
+For questions, feedback, or comments, open an issue or reach out to [Simon Yu](mailto:simonyu@simonyu.net).
 
 Written by [Simon Yu](https://www.simonyu.net/).

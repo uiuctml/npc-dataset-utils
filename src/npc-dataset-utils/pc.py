@@ -13,7 +13,6 @@ import logger
 import natsort
 import os
 import random
-import utility
 
 def getLabelsAttribute(dataset_config):
     labels_attribute = {}
