@@ -3,8 +3,8 @@
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-1. [Project Prerequisites](#project-prerequisites)
 1. [Project Hierarchy](#project-hierarchy)
+1. [Project Prerequisites](#project-prerequisites)
 1. [Setting Up the Datasets](#setting-up-the-datasets)
 1. [NPC Attribute Utilities](#npc-attribute-utilities)
 1. [Publications](#publications)
@@ -27,6 +27,32 @@ Certain datasets, such as GTSRB, lack attribute labels. To address this, the cod
 
 In addition, utility scripts are available for splitting datasets into training, validation, and testing subsets, and for generating Probabilistic Circuit (PC) datasets from those splits. These PC datasets are then used by the `learnspn` project to construct and generate PCs.
 
+## Project Hierarchy
+
+This project is part of the NPC pipeline. To ensure compatibility and maintain consistent references across the pipeline, organize the project directories as follows:
+
+    npc
+    ├── datasets
+    │   ├── awa2
+    │   ├── celeba
+    │   ├── gtsrb
+    │   └── mnist
+    ├── learnspn
+    ├── npc-dataset-utils
+    ├── npc-models
+    └── venv
+
+All subsequent instructions assume the above project hierarchy.
+
+The `npc/datasets` directory does not exist by default. Create the initial directory structure as follows:
+
+```bash
+cd npc
+mkdir -pv datasets/awa2 datasets/celeba datasets/gtsrb datasets/mnist
+```
+
+Before running the project, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on certain parameters are provided in later sections.
+
 ## Project Prerequisites
 
 This project requires the following system packages:
@@ -45,23 +71,6 @@ yay -S mesa python310 unzip
 
 This project was developed on Ubuntu and tested on both Ubuntu and Arch Linux. Other Linux distributions, macOS, or Windows Subsystem for Linux (WSL) may also work with additional setup. However, these platforms are not officially supported.
 
-## Project Hierarchy
-
-This project is part of the NPC pipeline. To ensure compatibility and maintain consistent references across the pipeline, organize the project directories as follows:
-
-    npc
-    ├── datasets
-    │   ├── awa2
-    │   ├── celeba
-    │   ├── gtsrb
-    │   └── mnist
-    ├── learnspn
-    ├── npc-dataset-utils
-    ├── npc-models
-    └── venv
-
-All subsequent instructions assume the above project hierarchy.
-
 This project is designed to run within a simple Python virtual environment. Create and activate the environment as follows:
 
 ```bash
@@ -73,15 +82,6 @@ python3.10 -m pip install -r npc-dataset-utils/requirements.txt
 ```
 
 Always ensure the virtual environment is activated before running the project.
-
-The `npc/datasets` directory does not exist by default. Create the initial directory structure as follows:
-
-```bash
-cd npc
-mkdir -pv datasets/awa2 datasets/celeba datasets/gtsrb datasets/mnist
-```
-
-Before running the project, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on certain parameters are provided in later sections.
 
 ## Setting Up the Datasets
 
