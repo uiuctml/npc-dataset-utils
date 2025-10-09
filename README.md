@@ -21,7 +21,7 @@ This codebase provides utilities for processing and manipulating datasets for th
 - [German Traffic Sign Recognition Benchmark (GTSRB)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
 - [Modified National Institute of Standards and Technology (MNIST)](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
-Scripts are provided for each dataset to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf).
+Scripts are provided for each dataset to process and organize them into the format and structure required by the NPC pipeline. For the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/hash/dc5d637ed5e62c36ecb73b654b05ba2a-Abstract.html).
 
 Certain datasets, such as GTSRB, lack attribute labels. To address this, the codebase includes [NPC Attribute Utilities](#npc-attribute-utilities), which allows users to create and examine attribute labels for any dataset. A verification script is also included to check the dataset configuration for the consistency and correctness of user-created labels.
 
@@ -80,6 +80,8 @@ The `npc/datasets` directory does not exist by default. Create the initial direc
 cd npc
 mkdir -pv datasets/awa2 datasets/celeba datasets/gtsrb datasets/mnist
 ```
+
+Before running the project, review `header.py` and ensure that all relevant parameters are set to the desired values. More detailed instructions on certain parameters are provided in later sections.
 
 ## Setting Up the Datasets
 

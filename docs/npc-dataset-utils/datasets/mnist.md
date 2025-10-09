@@ -16,7 +16,7 @@
 
 The [Modified National Institute of Standards and Technology (MNIST)](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset consists of 70,000 images of handwritten digits.
 
-Within the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/dc5d637ed5e62c36ecb73b654b05ba2a-Paper.pdf). In the processed MNIST Addition dataset:
+Within the NPC project, the MNIST dataset is further processed into the _MNIST Addition_ dataset, as described in this [paper](https://proceedings.neurips.cc/paper_files/paper/2018/hash/dc5d637ed5e62c36ecb73b654b05ba2a-Abstract.html). In the processed MNIST Addition dataset:
 
 - The original class annotations (digit labels) are treated as attribute annotations.
 - The sum of digit pairs becomes the new class annotation, which can be automatically computed.
