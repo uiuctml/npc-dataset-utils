@@ -35,6 +35,35 @@ def extractLabels(file_name_labels):
 
     return labels
 
+def loadFilePaths():
+    if not os.path.isfile(os.path.join(header.config_dir, header.dataset_config_file_name)):
+        logger.log_fatal("Failed to load dataset configuration \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\". Quit.")
+        exit(-1)
+
+    file_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
+    config = json.load(file_config)
+    file_config.close()
+
+    classes = os.listdir(header.dataset_dir_instances_original)
+    file_paths = []
+    map_instance_class = {}
+
+    for class_index in classes:
+        file_names = os.listdir(os.path.join(header.dataset_dir_instances_original, class_index))
+
+        for file_name in file_names:
+            instance = file_name.split('.')[0]
+            map_instance_class[instance] = class_index
+
+    for instance_processed in config["mappings"].keys():
+        instance_first = instance_processed.split('/')[1].split('_')[0]
+        instance_second = instance_processed.split('_')[1].split('.')[0]
+
+        file_paths.append(os.path.join(header.dataset_dir_instances_original, map_instance_class[instance_first], instance_first + header.dataset_file_extension_images))
+        file_paths.append(os.path.join(header.dataset_dir_instances_original, map_instance_class[instance_second], instance_second + header.dataset_file_extension_images))
+
+    return file_paths
+
 def createOriginalInstances(images, labels):
     image_count = images.shape[0]
     progress_bar = tqdm.tqdm(total = image_count)
@@ -72,17 +101,26 @@ def createAdditionAttributes():
     return config_attributes
 
 def createProcessedInstances():
-    classes = os.listdir(header.dataset_dir_instances_original)
     config = {}
     config_mappings = {}
     file_paths = []
     image_combined_count = 0
 
-    for class_index in classes:
-        file_names = os.listdir(os.path.join(header.dataset_dir_instances_original, class_index))
-        file_paths += [os.path.join(header.dataset_dir_instances_original, class_index, file_name) for file_name in file_names]
+    if header.mnist_load:
+        logger.log_info("Loading dataset configuration \"" + os.path.join(header.config_dir, header.dataset_config_file_name) + "\"...")
 
-    file_paths = utility.shuffleUniform(file_paths, header.seed)
+        file_paths = loadFilePaths()
+    else:
+        logger.log_info("Generating random addition pairs...")
+
+        classes = os.listdir(header.dataset_dir_instances_original)
+
+        for class_index in classes:
+            file_names = os.listdir(os.path.join(header.dataset_dir_instances_original, class_index))
+            file_paths += [os.path.join(header.dataset_dir_instances_original, class_index, file_name) for file_name in file_names]
+
+        file_paths = utility.shuffleUniform(file_paths, header.seed)
+
     progress_bar = tqdm.tqdm(total = len(file_paths) // 2)
     progress_bar.set_description_str("[INFO]: Creating processed instances")
 

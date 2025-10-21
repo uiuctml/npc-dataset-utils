@@ -60,6 +60,7 @@ mnist_file_name_images_test = "t10k-images-idx3-ubyte"
 mnist_file_name_images_train = "train-images-idx3-ubyte"
 mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
+mnist_load = True
 
 split_config_file_name = dataset_prefix + "_split.json.gz"
 split_create_symlinks = True
