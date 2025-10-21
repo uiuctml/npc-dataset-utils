@@ -62,6 +62,9 @@ mnist_file_name_labels_test = "t10k-labels-idx1-ubyte"
 mnist_file_name_labels_train = "train-labels-idx1-ubyte"
 mnist_load = True
 
+pc_load = True
+pc_dataset_dir_split = os.path.join("../../data/npc-dataset-utils/pc", dataset_prefix)
+
 split_config_file_name = dataset_prefix + "_split.json.gz"
 split_create_symlinks = True
 split_dataset_dir_images = dataset_dir_instances_processed

@@ -13,6 +13,7 @@ import logger
 import natsort
 import os
 import random
+import shutil
 
 def getLabelsAttribute(dataset_config):
     labels_attribute = {}
@@ -62,11 +63,7 @@ def getIndicesFromLabelsClass(labels_class):
 
     return labels_to_indices
 
-def main():
-    if os.path.exists(header.dataset_dir_splits_pc):
-        logger.log_info("PC dataset splits exist in \"" + header.dataset_dir_splits_pc + "\". Skip.")
-        return
-
+def generatePCDatasets():
     random.seed(header.seed)
 
     file_dataset_config = open(os.path.join(header.config_dir, header.dataset_config_file_name), "r")
@@ -158,6 +155,17 @@ def main():
             file_dataset_pc.writelines(lines)
 
         logger.log_info("Saved PC dataset split to \"" + file_path_pc_dataset + "\".")
+
+def main():
+    if os.path.exists(header.dataset_dir_splits_pc):
+        logger.log_info("PC dataset splits exist in \"" + header.dataset_dir_splits_pc + "\". Skip.")
+        return
+
+    if header.pc_load:
+        shutil.copytree(header.pc_dataset_dir_split, header.dataset_dir_splits_pc)
+        logger.log_info("Saved PC dataset splits to \"" + header.dataset_dir_splits_pc + "\".")
+    else:
+        generatePCDatasets()
 
     return
 
